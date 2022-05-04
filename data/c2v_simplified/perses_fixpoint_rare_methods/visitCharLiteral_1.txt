@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/rakam-io__rakam/rakam-parser/src/main/java/com/facebook/presto/sql/RakamExpressionFormatter_visitCharLiteral.java
+method_name = visitCharLiteral
+method_body = @Override protected String visitCharLiteral(CharLiteral node, Void context) { return "CHAR " + formatStringLiteral(node.getValue()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 03:50:32.090736", "score": "0.4465", "loss": "2.0002", "code": "class T { @Override protected String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); } }"}
+{"time": "2021-01-25 03:57:37.323332", "score": "0.491", "loss": "1.6477", "code": "class T { @Override protected String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral( ); } }"}
+{"time": "2021-01-25 03:58:17.271484", "score": "0.2916", "loss": "2.8243", "code": "class T { String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral( ); } }"}
+{"time": "2021-01-25 04:04:00.303377", "score": "0.4448", "loss": "2.5191", "code": "class T { String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral ; } }"}
+
+Minimal simplified code:
+class T {
+                    String visitCharLiteral(CharLiteral node, Void context) { return "CHAR " + formatStringLiteral                 ; }
+}
+
+

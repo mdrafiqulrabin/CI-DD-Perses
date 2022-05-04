@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/WsSession_getOpenSessions.java
+method_name = getOpenSessions
+method_body = @Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 10:45:36.667892", "score": "0.2266", "loss": "3.0289", "code": "class T { @Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); } }"}
+{"time": "2021-01-24 10:49:17.975239", "score": "0.2261", "loss": "2.6226", "code": "class T { @Override public Set<Session> getOpenSessions() { return webSocketContainer.getOpenSessions(localEndpoint.getClass()); } }"}
+{"time": "2021-01-24 10:52:03.401115", "score": "0.8594", "loss": "0.673", "code": "class T { @Override public Set<Session> getOpenSessions() { return webSocketContainer.getOpenSessions( ); } }"}
+{"time": "2021-01-24 10:54:02.818262", "score": "0.8194", "loss": "0.7322", "code": "class T { Set<Session> getOpenSessions() { return webSocketContainer.getOpenSessions( ); } }"}
+
+Minimal simplified code:
+class T {
+                 Set<Session> getOpenSessions() {               return webSocketContainer.getOpenSessions(                        ); }
+}
+
+

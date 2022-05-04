@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/taggable/taggable-impl/impl/src/java/org/sakaiproject/taggable/impl/TaggingManagerImpl_createTagList.java
+method_name = createTagList
+method_body = public TagList createTagList(List<TagColumn> columns) { return new TagListImpl(columns); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:11:03.493649", "score": "0.3323", "loss": "7.405", "code": "class T { public TagList createTagList(List<TagColumn> columns) { return new TagListImpl(columns); } }"}
+{"time": "2021-01-24 06:12:42.141679", "score": "0.4983", "loss": "1.9721", "code": "class T { public TagList createTagList(List<TagColumn> columns) { return new TagListImpl( ); } }"}
+{"time": "2021-01-24 06:12:52.935735", "score": "0.4983", "loss": "1.9721", "code": "class T { TagList createTagList(List<TagColumn> columns) { return new TagListImpl( ); } }"}
+{"time": "2021-01-24 06:13:41.383410", "score": "0.7339", "loss": "1.2002", "code": "class T { TagList createTagList( ) { return new TagListImpl( ); } }"}
+
+Minimal simplified code:
+class T {
+       TagList createTagList(                       ) { return new TagListImpl(       ); }
+}
+
+

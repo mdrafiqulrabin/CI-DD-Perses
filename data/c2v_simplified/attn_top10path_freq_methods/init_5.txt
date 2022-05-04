@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_init.java
+method_name = init
+method_body = @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter("attribute"); }
+
+topk path-contexts:
+[0.1418] servletexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),fconfig
+[0.0935] servletexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr0),fconfig
+[0.0768] filterconfig,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr3),getinitparameter
+[0.0458] fconfig,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr3),getinitparameter
+[0.0442] filterconfig,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),filterconfig
+[0.0436] servletexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),filterconfig
+[0.0424] filterconfig,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr0),fconfig
+[0.0414] filterconfig,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),attribute
+[0.0386] filterconfig,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),fconfig
+[0.0366] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),filterconfig
+
+topk terminals:
+['servletexception', 'fconfig', 'servletexception', 'fconfig', 'filterconfig', 'getinitparameter', 'fconfig', 'getinitparameter', 'filterconfig', 'filterconfig', 'servletexception', 'filterconfig', 'filterconfig', 'fconfig', 'filterconfig', 'attribute', 'filterconfig', 'fconfig', 'void', 'filterconfig']
+

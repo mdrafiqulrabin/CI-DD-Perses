@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/StringUtils_upperFirstLetter.java
+method_name = upperFirstLetter
+method_body = public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return ""; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 18:11:39.593393", "score": "0.2945", "loss": "1.7626", "code": "class T { public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); } }"}
+{"time": "2021-01-24 18:20:37.567324", "score": "0.342", "loss": "1.4549", "code": "class T { public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:23:53.447171", "score": "0.3324", "loss": "1.6162", "code": "class T { public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase( )) return s; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:27:07.865440", "score": "0.3324", "loss": "1.6162", "code": "class T { String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase( )) return s; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:27:47.514619", "score": "0.3324", "loss": "1.6162", "code": "class T { String upperFirstLetter( String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase( )) return s; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:28:27.126828", "score": "0.48", "loss": "1.077", "code": "class T { String upperFirstLetter( String s) { if (s == null || s.length() == 0) return ; if (!Character.isLowerCase( )) return s; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:29:06.684804", "score": "0.4484", "loss": "1.2058", "code": "class T { String upperFirstLetter( String s) { if (s == null || s.length() == 0) return ; if (!Character.isLowerCase( )) return ; return String.valueOf( ) + s.substring(1); } }"}
+{"time": "2021-01-24 18:29:46.290779", "score": "0.31", "loss": "1.5825", "code": "class T { String upperFirstLetter( String s) { if (s == null || s.length() == 0) return ; if (!Character.isLowerCase( )) return ; return String.valueOf( ) + s.substring( ); } }"}
+
+Minimal simplified code:
+class T {
+              String upperFirstLetter(      String s) { if (s == null || s.length() == 0) return   ; if (!Character.isLowerCase(           )) return  ; return String.valueOf(                         ) + s.substring( ); }
+}
+
+

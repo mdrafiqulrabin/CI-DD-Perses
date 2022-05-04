@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ouya__ouya-sdk-examples/Twine/ControllerExample/src/media/base/android/java/src/org/chromium/media/MediaCodecBridge_presentationTimeMicroseconds.java
+method_name = presentationTimeMicroseconds
+method_body = @CalledByNative("DequeueOutputResult") private long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:35:03.545583", "score": "0.4425", "loss": "1.78", "code": "class T { @CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; } }"}
+{"time": "2021-01-25 04:38:11.069508", "score": "0.4425", "loss": "1.78", "code": "class T { @CalledByNative(\"DequeueOutputResult\") long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; } }"}
+{"time": "2021-01-25 04:40:07.269304", "score": "0.7757", "loss": "0.2918", "code": "class T { @CalledByNative(\"DequeueOutputResult\") long presentationTimeMicroseconds() { return ; } }"}
+
+Minimal simplified code:
+class T {
+@CalledByNative("DequeueOutputResult")         long presentationTimeMicroseconds() { return                              ; }
+}
+
+

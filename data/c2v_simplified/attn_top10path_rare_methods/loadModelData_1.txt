@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/g3d/MG3dModelLoader_loadModelData.java
+method_name = loadModelData
+method_body = @Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); }
+
+topk path-contexts:
+[0.1614] modeldata,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),filehandle
+[0.1186] modelloader,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),parsemodel
+[0.1162] filehandle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),modelloader
+[0.1091] modeldata,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),filehandle
+[0.1065] filehandle,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),modelloader
+[0.0643] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),modelloader
+[0.0606] parameters,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),modelloader
+[0.0451] filehandle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),parsemodel
+[0.0417] filehandle,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),parsemodel
+[0.0323] parameters,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),parsemodel
+
+topk terminals:
+['modeldata', 'filehandle', 'modelloader', 'parsemodel', 'filehandle', 'modelloader', 'modeldata', 'filehandle', 'filehandle', 'modelloader', 'METHOD_NAME', 'modelloader', 'parameters', 'modelloader', 'filehandle', 'parsemodel', 'filehandle', 'parsemodel', 'parameters', 'parsemodel']
+

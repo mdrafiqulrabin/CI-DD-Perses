@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { Log.i(LOG_TAG, "onCreate"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); }
+
+topk path-contexts for sub-token: on
+[0.6311] super,SuperExpr0|MethodCallExpr|NameExpr2,on|create
+[0.1505] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.1014] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0201] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,on|create
+[0.0195] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,on|create
+[0.0137] log|tag,NameExpr2|MethodCallExpr|StringLiteralExpr3,on|create
+[0.0106] on|create,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0046] on|create,StringLiteralExpr3|MethodCallExpr|NameExpr3,i
+[0.0043] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,log|tag
+[0.0042] log|tag,NameExpr2|MethodCallExpr|NameExpr3,i
+
+topk terminals for sub-token: on
+['super', 'on|create', 'void', 'on|create', 'METHOD_NAME', 'on|create', 'void', 'on|create', 'METHOD_NAME', 'on|create', 'log|tag', 'on|create', 'on|create', 'on|create', 'on|create', 'i', 'void', 'log|tag', 'log|tag', 'i']
+
+topk path-contexts for sub-token: create
+[0.3915] super,SuperExpr0|MethodCallExpr|NameExpr2,on|create
+[0.1966] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.1928] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.1645] on|create,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0210] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,on|create
+[0.0146] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,on|create
+[0.0053] log|tag,NameExpr2|MethodCallExpr|StringLiteralExpr3,on|create
+[0.0038] i,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0037] log,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0016] on|create,StringLiteralExpr3|MethodCallExpr|NameExpr3,i
+
+topk terminals for sub-token: create
+['super', 'on|create', 'METHOD_NAME', 'on|create', 'void', 'on|create', 'on|create', 'on|create', 'METHOD_NAME', 'on|create', 'void', 'on|create', 'log|tag', 'on|create', 'i', 'on|create', 'log', 'on|create', 'on|create', 'i']
+

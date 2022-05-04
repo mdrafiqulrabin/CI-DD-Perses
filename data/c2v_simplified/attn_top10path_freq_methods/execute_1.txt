@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StartTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/start").toString()); }
+
+topk path-contexts:
+[0.5499] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(StringLiteralExpr1),start
+[0.1086] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0699] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0624] start,(StringLiteralExpr1)^(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0594] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0411] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.0144] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0137] createquerystring,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr1)^(MethodCallExpr)_(NameExpr2),execute
+[0.0135] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(NameExpr2),tostring
+[0.0118] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+[0.0118] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+
+topk terminals:
+['buildexception', 'start', 'execute', 'createquerystring', 'METHOD_NAME', 'createquerystring', 'start', 'createquerystring', 'buildexception', 'createquerystring', 'super', 'execute', 'buildexception', 'super', 'createquerystring', 'execute', 'buildexception', 'tostring', 'buildexception', 'execute', 'buildexception', 'execute']
+

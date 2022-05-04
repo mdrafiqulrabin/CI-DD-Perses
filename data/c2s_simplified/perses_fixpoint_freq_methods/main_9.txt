@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/georgewfraser__vscode-javac/src/main/java/org/javacs/Main_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName("org.javacs.Main", true, langTools); Method run = main.getMethod("run"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, "Failed", e); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:25:49.164411", "score": "0.9947", "loss": "0.0068", "code": "class T { public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Method run = main.getMethod(\"run\"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } } }"}
+{"time": "2020-12-21 11:26:38.581377", "score": "0.9939", "loss": "0.0125", "code": "class T { public static void main(String[] args) { } }"}
+{"time": "2020-12-21 11:26:59.633897", "score": "0.7634", "loss": "0.5046", "code": "class T { public static void main(String args) { } }"}
+{"time": "2020-12-21 11:27:10.120471", "score": "0.7634", "loss": "0.5046", "code": "class T { void main(String args) { } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args) {                                                                                                                                                                                                                                                              }
+}
+
+

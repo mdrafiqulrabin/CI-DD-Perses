@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/external/warc/src/main/java/com/digitalpebble/stormcrawler/warc/GzipHdfsBolt_withFsUrl.java
+method_name = withFsUrl
+method_body = public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:05:58.653756", "score": "0.4768", "loss": "0.9482", "code": "class T { public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; } }"}
+{"time": "2021-01-24 03:07:19.988133", "score": "0.5558", "loss": "2.5065", "code": "class T { public GzipHdfsBolt withFsUrl( ) { this.fsUrl = fsUrl; return this; } }"}
+{"time": "2021-01-24 03:07:41.837619", "score": "0.5558", "loss": "2.5065", "code": "class T { GzipHdfsBolt withFsUrl( ) { this.fsUrl = fsUrl; return this; } }"}
+
+Minimal simplified code:
+class T {
+       GzipHdfsBolt withFsUrl(            ) { this.fsUrl = fsUrl; return this; }
+}
+
+

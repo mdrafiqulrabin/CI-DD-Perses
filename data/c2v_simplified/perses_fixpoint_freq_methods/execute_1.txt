@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StartTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/start").toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 19:04:01.489983", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/start\").toString()); } }"}
+{"time": "2020-12-28 19:07:02.805701", "score": "0.9992", "loss": "0.0009", "code": "class T { @Override public void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-28 19:08:17.596609", "score": "0.9994", "loss": "0.0007", "code": "class T { void execute() throws BuildException { super.execute(); } }"}
+
+Minimal simplified code:
+class T {
+                 void execute()                       { super.execute();                                                  }
+}
+
+

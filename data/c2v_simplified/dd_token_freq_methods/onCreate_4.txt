@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/north2016__PianoView/Vpager/src/com/test/vp/MainActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }
+predict, score, loss = onCreate, 1.0, 0.0
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:49:33.334689", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }"}
+{"time": "2020-12-26 22:49:36.012897", "n_pass": [10, 2, 2], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); ; InitTabViews(); InitViewPager(); }"}
+{"time": "2020-12-26 22:49:38.688608", "n_pass": [20, 3, 3], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);  InitViewPager(); }"}
+{"time": "2020-12-26 22:49:44.433449", "n_pass": [37, 5, 4], "score": "1.0", "loss": "0.0", "code": "protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState);  InitViewPager(); }"}
+{"time": "2020-12-26 22:49:47.097784", "n_pass": [39, 6, 5], "score": "1.0", "loss": "0.0", "code": "protected void onCreate() { super.onCreate(savedInstanceState);  InitViewPager(); }"}
+{"time": "2020-12-26 22:49:49.744826", "n_pass": [41, 7, 6], "score": "1.0", "loss": "0.0", "code": "protected void onCreate() {onCreate(savedInstanceState);  InitViewPager(); }"}
+{"time": "2020-12-26 22:49:53.996993", "n_pass": [67, 8, 7], "score": "1.0", "loss": "0.0", "code": "protected void onCreate() {onCreate(savedInstanceState);InitViewPager(); }"}
+{"time": "2020-12-26 22:49:56.659873", "n_pass": [71, 9, 8], "score": "1.0", "loss": "0.0", "code": " void onCreate() {onCreate(savedInstanceState);InitViewPager(); }"}
+{"time": "2020-12-26 22:49:59.308579", "n_pass": [72, 10, 9], "score": "1.0", "loss": "0.0", "code": "void onCreate() {onCreate(savedInstanceState);InitViewPager(); }"}
+{"time": "2020-12-26 22:50:04.392041", "n_pass": [99, 11, 10], "score": "1.0", "loss": "0.0", "code": "void onCreate(){onCreate(savedInstanceState);InitViewPager(); }"}
+{"time": "2020-12-26 22:50:09.674251", "n_pass": [103, 13, 11], "score": "0.8883", "loss": "0.1627", "code": "void onCreate(){onCreate();InitViewPager(); }"}
+{"time": "2020-12-26 22:50:12.298574", "n_pass": [110, 14, 12], "score": "0.8883", "loss": "0.1627", "code": "void onCreate(){onCreate();InitViewPager();}"}
+
+Minimal simplified code:
+void onCreate(){onCreate();InitViewPager();}
+

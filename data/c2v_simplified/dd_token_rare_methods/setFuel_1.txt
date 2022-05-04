@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/main/java/erogenousbeef/bigreactors/common/multiblock/helpers/FuelContainer_setFuel.java
+method_name = setFuel
+method_body = public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }
+predict, score, loss = setFuel, 0.49257543683052063, 1.0749154090881348
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:48:39.437051", "n_pass": [1, 1, 1], "score": "0.4926", "loss": "1.0749", "code": "public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-20 07:48:42.436491", "n_pass": [20, 2, 2], "score": "0.4926", "loss": "1.0749", "code": "void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-20 07:48:51.163643", "n_pass": [70, 4, 3], "score": "0.4926", "loss": "1.0749", "code": "void setFuel(ReactantStack newFuel){ setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-20 07:48:53.770029", "n_pass": [72, 5, 4], "score": "0.4926", "loss": "1.0749", "code": "void setFuel(ReactantStack newFuel){setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-20 07:48:56.415933", "n_pass": [77, 6, 5], "score": "0.4926", "loss": "1.0749", "code": "void setFuel(ReactantStack newFuel){setReactant(FUEL,newFuel); }"}
+{"time": "2021-01-20 07:48:59.057157", "n_pass": [81, 7, 6], "score": "0.4926", "loss": "1.0749", "code": "void setFuel(ReactantStack newFuel){setReactant(FUEL,newFuel);}"}
+
+Minimal simplified code:
+void setFuel(ReactantStack newFuel){setReactant(FUEL,newFuel);}
+

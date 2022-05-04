@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/policy/Rule_getServiceTypeName.java
+method_name = getServiceTypeName
+method_body = public String getServiceTypeName() { return (serviceTypeName); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:47:28.305990", "score": "0.4639", "loss": "0.8241", "code": "class T { public String getServiceTypeName() { return (serviceTypeName); } }"}
+{"time": "2021-01-24 19:51:10.516112", "score": "0.9712", "loss": "0.0351", "code": "class T { public String getServiceTypeName() { return serviceTypeName ; } }"}
+{"time": "2021-01-24 19:51:50.263840", "score": "0.9712", "loss": "0.0351", "code": "class T { String getServiceTypeName() { return serviceTypeName ; } }"}
+
+Minimal simplified code:
+class T {
+       String getServiceTypeName() { return  serviceTypeName ; }
+}
+
+

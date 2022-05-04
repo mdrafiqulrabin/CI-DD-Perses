@@ -1,0 +1,42 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/util/src/main/java/org/kaazing/gateway/util/Utils_getLongB.java
+method_name = getLongB
+method_body = private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }
+predict, score, loss = getLongB, 0.5875850319862366, 0.8540176153182983
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:55:11.431504", "n_pass": [1, 1, 1], "score": "0.9704", "loss": "0.0681", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:14.103858", "n_pass": [23, 2, 2], "score": "0.7917", "loss": "0.4063", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1),get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:16.763388", "n_pass": [25, 3, 3], "score": "0.6591", "loss": "0.6898", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1),get(index + 3), bb.get(index5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:22.093139", "n_pass": [53, 5, 4], "score": "0.8845", "loss": "0.222", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get,get(index + 3), bb.get(index5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:27.416853", "n_pass": [87, 7, 5], "score": "0.9128", "loss": "0.177", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3), bb.get(index5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:30.059222", "n_pass": [90, 8, 6], "score": "0.9272", "loss": "0.1465", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),(index5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:32.702299", "n_pass": [92, 9, 7], "score": "0.7908", "loss": "0.4848", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),(index5)get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:35.364703", "n_pass": [99, 10, 8], "score": "0.7908", "loss": "0.4848", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),(index5)get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:38.434208", "n_pass": [111, 11, 9], "score": "0.6918", "loss": "0.697", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:42.248475", "n_pass": [164, 12, 10], "score": "0.8082", "loss": "0.439", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(+ 6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:44.870437", "n_pass": [165, 13, 11], "score": "0.8191", "loss": "0.4188", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(6), bb.get(index + 7)); }"}
+{"time": "2021-01-20 06:55:47.504828", "n_pass": [168, 14, 12], "score": "0.864", "loss": "0.27", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(6), get(index + 7)); }"}
+{"time": "2021-01-20 06:55:50.135583", "n_pass": [170, 15, 13], "score": "0.8835", "loss": "0.2309", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(6), get(+ 7)); }"}
+{"time": "2021-01-20 06:55:52.770776", "n_pass": [171, 16, 14], "score": "0.8839", "loss": "0.2301", "code": " long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:55:55.430802", "n_pass": [175, 17, 15], "score": "0.8839", "loss": "0.2301", "code": "long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb(index + 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:55:58.887102", "n_pass": [186, 18, 16], "score": "0.3863", "loss": "1.7441", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb.get(index), bb(index + 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:56:01.513389", "n_pass": [189, 19, 17], "score": "0.4137", "loss": "1.6493", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index), bb(index + 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:56:04.132924", "n_pass": [192, 20, 18], "score": "0.7135", "loss": "0.6484", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index + 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:56:11.404491", "n_pass": [258, 21, 19], "score": "0.7135", "loss": "0.6484", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+ 3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:56:14.026543", "n_pass": [259, 22, 20], "score": "0.7135", "loss": "0.6484", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+3),get(6), get(7)); }"}
+{"time": "2021-01-20 06:56:16.659511", "n_pass": [263, 23, 21], "score": "0.7345", "loss": "0.6231", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+3),(6), get(7)); }"}
+{"time": "2021-01-20 06:56:19.292700", "n_pass": [268, 24, 22], "score": "0.7345", "loss": "0.6231", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+3),(6),get(7)); }"}
+{"time": "2021-01-20 06:56:21.938389", "n_pass": [269, 25, 23], "score": "0.7855", "loss": "0.4897", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+3),(6),(7)); }"}
+{"time": "2021-01-20 06:56:24.570373", "n_pass": [275, 26, 24], "score": "0.7855", "loss": "0.4897", "code": "long getLongB(ByteBuffer bb, int index) { makeLong(bb(index),(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:28.008237", "n_pass": [285, 27, 25], "score": "0.7855", "loss": "0.4897", "code": "long getLongB(ByteBuffer bb,int index) { makeLong(bb(index),(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:30.639904", "n_pass": [290, 28, 26], "score": "0.7855", "loss": "0.4897", "code": "long getLongB(ByteBuffer bb,int index){ makeLong(bb(index),(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:33.300364", "n_pass": [292, 29, 27], "score": "0.7855", "loss": "0.4897", "code": "long getLongB(ByteBuffer bb,int index){makeLong(bb(index),(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:35.927281", "n_pass": [295, 30, 28], "score": "0.7102", "loss": "0.6961", "code": "long getLongB(ByteBuffer bb,int index){makeLong((index),(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:38.556326", "n_pass": [299, 31, 29], "score": "0.5202", "loss": "1.1561", "code": "long getLongB(ByteBuffer bb,int index){makeLong((index)(index+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:41.191349", "n_pass": [301, 32, 30], "score": "0.5282", "loss": "1.1336", "code": "long getLongB(ByteBuffer bb,int index){makeLong((index)(+3),(6),(7));}"}
+{"time": "2021-01-20 06:56:43.829867", "n_pass": [302, 33, 31], "score": "0.5037", "loss": "1.2039", "code": "long getLongB(ByteBuffer bb,int index){makeLong((index)(3),(6),(7));}"}
+
+Minimal simplified code:
+long getLongB(ByteBuffer bb,int index){makeLong((index)(3),(6),(7));}
+

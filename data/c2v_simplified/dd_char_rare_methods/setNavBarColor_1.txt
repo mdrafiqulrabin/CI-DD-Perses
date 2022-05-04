@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/BarUtils_setNavBarColor.java
+method_name = setNavBarColor
+method_body = @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }
+predict, score, loss = setNavBarColor, 0.43738222122192383, 0.9106701612472534
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:42:48.650263", "n_pass": [1, 1, 1], "score": "0.4374", "loss": "0.9107", "code": "@RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:42:51.260717", "n_pass": [8, 2, 2], "score": "0.5365", "loss": "0.643", "code": "public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:42:55.111042", "n_pass": [40, 3, 3], "score": "0.5829", "loss": "0.556", "code": "public static void setNavBarColor(@NonNull w window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:42:57.732801", "n_pass": [41, 4, 4], "score": "0.5433", "loss": "0.6204", "code": "public static void setNavBarColor(@NonNull w window, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:43:16.953742", "n_pass": [84, 11, 5], "score": "0.5471", "loss": "0.6272", "code": "public staoid setNavBarColor(@NonNull w window, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:43:20.780743", "n_pass": [89, 12, 6], "score": "0.5516", "loss": "0.6173", "code": "public staoid setNavBarColor(@ll w window, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:43:23.391593", "n_pass": [91, 13, 7], "score": "0.6574", "loss": "0.434", "code": "public staoid setNavBarColor(@ll w w, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:43:36.390281", "n_pass": [103, 18, 8], "score": "0.6574", "loss": "0.434", "code": "publioid setNavBarColor(@ll w w, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:43:50.643528", "n_pass": [119, 23, 9], "score": "0.5884", "loss": "0.5423", "code": "oid setNavBarColor(@ll w w, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:44:04.884919", "n_pass": [165, 28, 10], "score": "0.5683", "loss": "0.5735", "code": "d setNavBarColor(@ll w w, @nal int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:44:10.388637", "n_pass": [180, 29, 11], "score": "0.4991", "loss": "0.7215", "code": "d setNavBarColor(@ll w w, @nal int co) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:44:13.012290", "n_pass": [182, 30, 12], "score": "0.5766", "loss": "0.5774", "code": "d setNavBarColor(@ll w w, @nal int co) {ndow.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:44:15.613077", "n_pass": [183, 31, 13], "score": "0.5666", "loss": "0.6046", "code": "d setNavBarColor(@ll w w, @nal int co) {w.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:44:43.891824", "n_pass": [263, 40, 14], "score": "0.5064", "loss": "0.7282", "code": "d setNavBarColor(@ll w w, @nal t co) {w.setNavigationBarColor(color); }"}
+{"time": "2021-01-23 17:45:15.369067", "n_pass": [280, 52, 15], "score": "0.7575", "loss": "0.5783", "code": "d setNavBarColor(@ll w w, @nal t co) {w.setNavigationBarColor(cor); }"}
+{"time": "2021-01-23 17:45:17.981497", "n_pass": [281, 53, 16], "score": "0.6233", "loss": "0.5734", "code": "d setNavBarColor(@ll w w, @nal t co) {w.setNavigationBarColor(c); }"}
+{"time": "2021-01-23 17:45:27.147992", "n_pass": [302, 54, 17], "score": "0.6523", "loss": "0.5196", "code": "d setNavBarColor(@l w w, @nal t co) {w.setNavigationBarColor(c); }"}
+{"time": "2021-01-23 17:45:29.789476", "n_pass": [309, 55, 18], "score": "0.6523", "loss": "0.5196", "code": "d setNavBarColor(@l w w,@nal t co) {w.setNavigationBarColor(c); }"}
+{"time": "2021-01-23 17:45:32.390135", "n_pass": [311, 56, 19], "score": "0.5314", "loss": "0.7595", "code": "d setNavBarColor(@l w w,@al t co) {w.setNavigationBarColor(c); }"}
+{"time": "2021-01-23 17:45:34.993800", "n_pass": [312, 57, 20], "score": "0.602", "loss": "0.6131", "code": "d setNavBarColor(@l w w,@l t co) {w.setNavigationBarColor(c); }"}
+{"time": "2021-01-23 17:47:12.012010", "n_pass": [417, 91, 21], "score": "0.6045", "loss": "0.8819", "code": "d setNavBarColor(@l w w,@l t co) {w.setNavigationBarColor(); }"}
+{"time": "2021-01-23 17:47:14.620848", "n_pass": [420, 92, 22], "score": "0.6045", "loss": "0.8819", "code": "d setNavBarColor(@l w w,@l t co) {w.setNavigationBarColor();}"}
+{"time": "2021-01-23 17:47:23.768551", "n_pass": [451, 93, 23], "score": "0.6954", "loss": "0.9363", "code": "d setNavBarColor(@l w w,@l t o) {w.setNavigationBarColor();}"}
+{"time": "2021-01-23 17:47:26.373121", "n_pass": [454, 94, 24], "score": "0.6954", "loss": "0.9363", "code": "d setNavBarColor(@l w w,@l t o){w.setNavigationBarColor();}"}
+
+Minimal simplified code:
+d setNavBarColor(@l w w,@l t o){w.setNavigationBarColor();}
+

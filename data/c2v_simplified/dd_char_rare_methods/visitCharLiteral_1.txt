@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/rakam-io__rakam/rakam-parser/src/main/java/com/facebook/presto/sql/RakamExpressionFormatter_visitCharLiteral.java
+method_name = visitCharLiteral
+method_body = @Override protected String visitCharLiteral(CharLiteral node, Void context) { return "CHAR " + formatStringLiteral(node.getValue()); }
+predict, score, loss = visitCharLiteral, 0.4464840888977051, 2.000187635421753
+
+Trace of simplified code(s):
+{"time": "2021-01-23 22:37:40.646476", "n_pass": [1, 1, 1], "score": "0.4465", "loss": "2.0002", "code": "@Override protected String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-23 22:37:49.698451", "n_pass": [45, 4, 2], "score": "0.4498", "loss": "1.9899", "code": "@Overridted String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-23 22:37:53.663350", "n_pass": [56, 5, 3], "score": "0.4498", "loss": "1.9899", "code": "@Overridted String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + forLiteral(node.getValue()); }"}
+{"time": "2021-01-23 22:37:56.414505", "n_pass": [58, 6, 4], "score": "0.4726", "loss": "2.0617", "code": "@Overridted String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + forLiteral(nlue()); }"}
+{"time": "2021-01-23 22:38:00.402423", "n_pass": [101, 7, 5], "score": "0.4726", "loss": "2.0617", "code": "@Oveted String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + forLiteral(nlue()); }"}
+{"time": "2021-01-23 22:38:03.551679", "n_pass": [103, 8, 6], "score": "0.501", "loss": "1.19", "code": "@Oveted ng visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + forLiteral(nlue()); }"}
+{"time": "2021-01-23 22:38:13.440426", "n_pass": [115, 11, 7], "score": "0.2361", "loss": "2.3494", "code": "@Oveted ng visitCharLiteral(CharLiteral node, Void cxt) { return \"CHAR \" + forLiteral(nlue()); }"}
+{"time": "2021-01-23 22:38:16.158228", "n_pass": [122, 12, 8], "score": "0.2361", "loss": "2.3494", "code": "@Oveted ng visitCharLiteral(CharLiteral node, Void cxt) { return \"CHAR \" + feral(nlue()); }"}
+{"time": "2021-01-23 22:38:34.798815", "n_pass": [196, 18, 9], "score": "0.2361", "loss": "2.3494", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void cxt) { return \"CHAR \" + feral(nlue()); }"}
+{"time": "2021-01-23 22:39:09.365388", "n_pass": [221, 29, 10], "score": "0.4485", "loss": "1.2164", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" + feral(nlue()); }"}
+{"time": "2021-01-23 22:39:17.594495", "n_pass": [232, 32, 11], "score": "0.4485", "loss": "1.2164", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" +eral(nlue()); }"}
+{"time": "2021-01-23 22:39:20.340678", "n_pass": [233, 33, 12], "score": "0.5285", "loss": "1.0101", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" +al(nlue()); }"}
+{"time": "2021-01-23 22:39:23.097299", "n_pass": [234, 34, 13], "score": "0.4992", "loss": "0.9317", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" +(nlue()); }"}
+{"time": "2021-01-23 22:39:25.836461", "n_pass": [236, 35, 14], "score": "0.4974", "loss": "0.9348", "code": "@Oted ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" +(n()); }"}
+{"time": "2021-01-23 22:39:28.562450", "n_pass": [240, 36, 15], "score": "0.4485", "loss": "1.2597", "code": "@Od ng visitCharLiteral(CharLiteral node, Void c) { return \"CHAR \" +(n()); }"}
+{"time": "2021-01-23 22:39:54.591624", "n_pass": [261, 44, 16], "score": "0.6494", "loss": "0.8122", "code": "@Od ng visitCharLiteral(CharLiteral node, id c) { return \"CHAR \" +(n()); }"}
+{"time": "2021-01-23 22:39:57.327066", "n_pass": [270, 45, 17], "score": "0.6108", "loss": "0.8876", "code": "@Od ng visitCharLiteral(CharLiteral node, id c) { return \"AR \" +(n()); }"}
+{"time": "2021-01-23 22:40:00.035956", "n_pass": [271, 46, 18], "score": "0.5961", "loss": "0.9439", "code": "@Od ng visitCharLiteral(CharLiteral node, id c) { return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:23.402430", "n_pass": [296, 53, 19], "score": "0.3889", "loss": "1.5796", "code": "@Od ng visitCharLiteral(CharLiteral no, id c) { return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:47.692448", "n_pass": [397, 59, 20], "score": "0.3889", "loss": "1.5796", "code": "@Od ng visitCharLiteral(CharLiteral no,id c) { return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:50.412682", "n_pass": [398, 60, 21], "score": "0.3868", "loss": "1.5665", "code": "@Od ng visitCharLiteral(CharLiteral no,d c) { return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:53.137612", "n_pass": [403, 61, 22], "score": "0.3868", "loss": "1.5665", "code": "@Od ng visitCharLiteral(CharLiteral no,d c){ return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:55.851496", "n_pass": [405, 62, 23], "score": "0.3868", "loss": "1.5665", "code": "@Od ng visitCharLiteral(CharLiteral no,d c){return \" \" +(n()); }"}
+{"time": "2021-01-23 22:40:58.592136", "n_pass": [412, 63, 24], "score": "0.3868", "loss": "1.5665", "code": "@Od ng visitCharLiteral(CharLiteral no,d c){return\" \" +(n()); }"}
+{"time": "2021-01-23 22:41:01.301666", "n_pass": [414, 64, 25], "score": "0.3915", "loss": "1.5112", "code": "@Od ng visitCharLiteral(CharLiteral no,d c){return\"\" +(n()); }"}
+{"time": "2021-01-23 22:41:04.046743", "n_pass": [416, 65, 26], "score": "0.3915", "loss": "1.5112", "code": "@Od ng visitCharLiteral(CharLiteral no,d c){return\"\"+(n()); }"}
+{"time": "2021-01-23 22:41:06.787735", "n_pass": [425, 66, 27], "score": "0.6649", "loss": "0.6555", "code": "@d ng visitCharLiteral(CharLiteral no,d c){return\"\"+(n()); }"}
+{"time": "2021-01-23 22:41:10.356461", "n_pass": [428, 67, 28], "score": "0.6569", "loss": "0.4579", "code": "@d g visitCharLiteral(CharLiteral no,d c){return\"\"+(n()); }"}
+{"time": "2021-01-23 22:41:51.015862", "n_pass": [460, 79, 29], "score": "0.6075", "loss": "0.5474", "code": "@d g visitCharLiteral(CharLiteral o,d c){return\"\"+(n()); }"}
+{"time": "2021-01-23 22:42:32.941396", "n_pass": [523, 91, 30], "score": "0.6075", "loss": "0.5474", "code": "@d g visitCharLiteral(CharLiteral o,d c){return\"\"+(n());}"}
+
+Minimal simplified code:
+@d g visitCharLiteral(CharLiteral o,d c){return""+(n());}
+

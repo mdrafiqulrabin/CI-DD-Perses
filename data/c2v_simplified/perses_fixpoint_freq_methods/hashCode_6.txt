@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/main/java/br/com/six2six/fixturefactory/Property_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 03:32:00.459430", "score": "1.0", "loss": "0.0", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; } }"}
+{"time": "2020-12-29 03:35:02.930233", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; } }"}
+{"time": "2020-12-29 03:36:18.215187", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public int hashCode() { final int prime = 31; } }"}
+{"time": "2020-12-29 03:37:33.707242", "score": "0.981", "loss": "0.0256", "code": "class T { @Override public int hashCode() { final int prime ; } }"}
+{"time": "2020-12-29 03:38:13.420607", "score": "0.8128", "loss": "0.3689", "code": "class T { int hashCode() { final int prime ; } }"}
+
+Minimal simplified code:
+class T {
+                 int hashCode() {       int prime     ;                                                                                                  }
+}
+
+

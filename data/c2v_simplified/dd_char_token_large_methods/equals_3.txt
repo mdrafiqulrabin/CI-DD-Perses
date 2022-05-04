@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/equals_3.txt
+method_name = equals
+method_body = boolean equals(Object obj){if(this==NTRUSigningKeyGenerationParameters)if(B){}if(basisType=other){returnfalse;}if(1){}if(d){}if(other){}if(hashAlg){if(other){}}if((other())){}if((keyNormBound)(other)){}if(Double){}if((other)){}if(Double()){}if(polyType)if(sparse){}}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 19:14:29.711214", "n_pass": [1, 1, 1], "score": "0.2349", "loss": "2.4177", "code": "boolean equals(Object obj){if(this==NTRUSigningKeyGenerationParameters)if(B){}if(basisType=other){returnfalse;}if(1){}if(d){}if(other){}if(hashAlg){if(other){}}if((other())){}if((keyNormBound)(other)){}if(Double){}if((other)){}if(Double()){}if(polyType)if(sparse){}}"}
+{"time": "2021-01-22 19:14:34.959261", "n_pass": [10, 3, 2], "score": "0.4022", "loss": "1.9039", "code": "boolean equals(Object obj){if(this==NTRUSigningKeyGenerationParameters)if(B){}if(basisType=other){returnfalse;}if(1){}if(d){}if(othe){}if(Double){}if((other)){}if(Double()){}if(polyType)if(sparse){}}"}
+{"time": "2021-01-22 19:14:40.185368", "n_pass": [20, 5, 3], "score": "0.7693", "loss": "0.6202", "code": "boolean equals(Object obj){if(this==NTRUSigningKeyGenerationParameters)if(B){}if(basisType=other){returnfalse;}if(1){}if(d){}if(otheuble()){}if(polyType)if(sparse){}}"}
+{"time": "2021-01-22 19:14:42.794913", "n_pass": [22, 6, 4], "score": "0.6781", "loss": "1.2081", "code": "boolean equals(Object obj){if(thiters)if(B){}if(basisType=other){returnfalse;}if(1){}if(d){}if(otheuble()){}if(polyType)if(sparse){}}"}
+{"time": "2021-01-22 19:14:45.432825", "n_pass": [35, 7, 5], "score": "0.7024", "loss": "1.0758", "code": "boolean equals(Object obj){if(thbasisType=other){returnfalse;}if(1){}if(d){}if(otheuble()){}if(polyType)if(sparse){}}"}
+{"time": "2021-01-22 19:14:48.067973", "n_pass": [39, 8, 6], "score": "0.969", "loss": "0.0956", "code": "boolean equals(Object obj){if(thbasisType=other){returnfalse;}if(1){}if(d){}if(otheype)if(sparse){}}"}
+{"time": "2021-01-22 19:14:50.672171", "n_pass": [58, 9, 7], "score": "0.9776", "loss": "0.0483", "code": "boolean equals(Object obj){if(thbasisType=other){returnfalse;}if(1){}if(d){}if(othparse){}}"}
+{"time": "2021-01-22 19:14:53.685044", "n_pass": [64, 10, 8], "score": "0.9829", "loss": "0.0412", "code": "boolean equals(Object obj){if(the=other){returnfalse;}if(1){}if(d){}if(othparse){}}"}
+{"time": "2021-01-22 19:14:56.290809", "n_pass": [69, 11, 9], "score": "0.9843", "loss": "0.0364", "code": "boolean equals(Object obj){if(the=other){returnfalse;}if(1){}if(dparse){}}"}
+{"time": "2021-01-22 19:14:59.322210", "n_pass": [97, 12, 10], "score": "0.9678", "loss": "0.0702", "code": "boolean equals(Object obj){if(the=other){returnfalse;}if(1){}if(e){}}"}
+{"time": "2021-01-22 19:15:01.921024", "n_pass": [99, 13, 11], "score": "0.5089", "loss": "1.7115", "code": "ean equals(Object obj){if(the=other){returnfalse;}if(1){}if(e){}}"}
+{"time": "2021-01-22 19:15:27.852715", "n_pass": [161, 22, 12], "score": "0.4497", "loss": "1.7843", "code": "ean equals(Object obj){if(e=other){returnfalse;}if(1){}if(e){}}"}
+{"time": "2021-01-22 19:15:30.471101", "n_pass": [162, 23, 13], "score": "0.6944", "loss": "0.9964", "code": "ean equals(Object obj){if(other){returnfalse;}if(1){}if(e){}}"}
+{"time": "2021-01-22 19:16:00.827606", "n_pass": [189, 34, 14], "score": "0.2265", "loss": "2.8531", "code": "ean equals(Object j){if(other){returnfalse;}if(1){}if(e){}}"}
+{"time": "2021-01-22 19:17:13.995899", "n_pass": [317, 61, 15], "score": "0.2292", "loss": "2.3602", "code": "an equals(Object j){if(other){returnfalse;}if(1){}if(e){}}"}
+
+Minimal simplified code:
+an equals(Object j){if(other){returnfalse;}if(1){}if(e){}}
+

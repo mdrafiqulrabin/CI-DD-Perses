@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/SelectNode_getHavingClause.java
+method_name = getHavingClause
+method_body = public ValueNode getHavingClause() { return havingClause; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 02:01:20.623577", "score": "0.4955", "loss": "1.1377", "code": "class T { public ValueNode getHavingClause() { return havingClause; } }"}
+{"time": "2021-01-25 02:05:09.795947", "score": "0.4955", "loss": "1.1377", "code": "class T { ValueNode getHavingClause() { return havingClause; } }"}
+
+Minimal simplified code:
+class T {
+       ValueNode getHavingClause() { return havingClause; }
+}
+
+

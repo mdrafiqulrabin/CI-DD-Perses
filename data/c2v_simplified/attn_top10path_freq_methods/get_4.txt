@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/AsyncChannelWrapperSecure_get.java
+method_name = get
+method_body = @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { Long result = wrapped.get(timeout, unit); if (result.longValue() > Integer.MAX_VALUE) { throw new ExecutionException(sm.getString("asyncChannelWrapperSecure.tooBig", result), null); } return new Integer(result.intValue()); }
+
+topk path-contexts:
+[0.1155] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:greater)_(FieldAccessExpr1)_(NameExpr0),integer
+[0.0962] wrapped,(NameExpr0)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(PrimitiveType0),int
+[0.0722] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(ClassOrInterfaceType7),timeoutexception
+[0.0565] unit,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType6),executionexception
+[0.0478] int,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),timeout
+[0.0330] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),executionexception
+[0.0288] timeout,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType5),interruptedexception
+[0.0285] long,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType5),interruptedexception
+[0.0248] timeunit,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType6),executionexception
+[0.0245] timeoutexception,(ClassOrInterfaceType7)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),executionexception
+
+topk terminals:
+['executionexception', 'integer', 'wrapped', 'int', 'executionexception', 'timeoutexception', 'unit', 'executionexception', 'int', 'timeout', 'executionexception', 'executionexception', 'timeout', 'interruptedexception', 'long', 'interruptedexception', 'timeunit', 'executionexception', 'timeoutexception', 'executionexception']
+

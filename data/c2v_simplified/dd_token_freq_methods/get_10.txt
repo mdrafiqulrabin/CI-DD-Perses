@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap_get.java
+method_name = get
+method_body = @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }
+predict, score, loss = get, 0.964958131313324, 0.04421645775437355
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:53:46.675125", "n_pass": [1, 1, 1], "score": "0.965", "loss": "0.0442", "code": "@Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:53:49.972206", "n_pass": [44, 2, 2], "score": "0.9699", "loss": "0.0421", "code": "public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:53:52.637872", "n_pass": [46, 3, 3], "score": "0.3939", "loss": "1.168", "code": "public V get() { if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:01.103481", "n_pass": [92, 5, 4], "score": "0.3939", "loss": "1.168", "code": "public V get(){ if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:03.765598", "n_pass": [94, 6, 5], "score": "0.3939", "loss": "1.168", "code": "public V get(){if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:06.469458", "n_pass": [96, 7, 6], "score": "0.3939", "loss": "1.168", "code": "public V get(){if(key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:14.626645", "n_pass": [102, 10, 7], "score": "0.7421", "loss": "0.3414", "code": "public V get(){if(key == null) { null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:17.314901", "n_pass": [103, 11, 8], "score": "0.7319", "loss": "0.356", "code": "public V get(){if(key == null) {; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:20.008358", "n_pass": [104, 12, 9], "score": "0.7319", "loss": "0.356", "code": "public V get(){if(key == null) {} return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:22.684306", "n_pass": [106, 13, 10], "score": "0.8594", "loss": "0.2612", "code": "public V get(){if(key == null) {} map.get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:25.358128", "n_pass": [107, 14, 11], "score": "0.7344", "loss": "0.5835", "code": "public V get(){if(key == null) {} get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:28.146660", "n_pass": [113, 15, 12], "score": "0.7344", "loss": "0.5835", "code": " V get(){if(key == null) {} get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:30.830757", "n_pass": [114, 16, 13], "score": "0.7344", "loss": "0.5835", "code": "V get(){if(key == null) {} get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:34.794649", "n_pass": [123, 17, 14], "score": "0.472", "loss": "1.4681", "code": "V get(){if(key= null) {} get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:37.459519", "n_pass": [124, 18, 15], "score": "0.9212", "loss": "0.1797", "code": "V get(){if(keynull) {} get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:42.884140", "n_pass": [161, 19, 16], "score": "0.9212", "loss": "0.1797", "code": "V get(){if(keynull) {}get(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:45.520863", "n_pass": [162, 20, 17], "score": "0.9924", "loss": "0.0095", "code": "V get(){if(keynull) {}(createLookupKey(key)); }"}
+{"time": "2020-12-26 23:54:48.154765", "n_pass": [164, 21, 18], "score": "0.9862", "loss": "0.015", "code": "V get(){if(keynull) {}((key)); }"}
+{"time": "2020-12-26 23:54:50.811646", "n_pass": [170, 22, 19], "score": "0.9862", "loss": "0.015", "code": "V get(){if(keynull) {}((key));}"}
+{"time": "2020-12-26 23:54:59.999954", "n_pass": [183, 25, 20], "score": "0.9862", "loss": "0.015", "code": "V get(){if(keynull){}((key));}"}
+
+Minimal simplified code:
+V get(){if(keynull){}((key));}
+

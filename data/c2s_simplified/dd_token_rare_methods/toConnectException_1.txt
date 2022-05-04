@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/bulk/BulkProcessor_toConnectException.java
+method_name = toConnectException
+method_body = private static ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }
+predict, score, loss = toConnectException, 0.2480872, 1.8404332
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:12:15.618772", "n_pass": [1, 1, 1], "score": "0.2481", "loss": "1.8404", "code": "private static ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-20 05:12:20.323691", "n_pass": [44, 4, 2], "score": "0.2481", "loss": "1.8404", "code": " ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-20 05:12:22.977107", "n_pass": [56, 6, 3], "score": "0.3354", "loss": "1.5524", "code": " ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return(t); } }"}
+{"time": "2021-01-20 05:12:27.010721", "n_pass": [103, 8, 4], "score": "0.3354", "loss": "1.5524", "code": "ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return(t); } }"}
+{"time": "2021-01-20 05:12:29.797707", "n_pass": [124, 9, 5], "score": "0.2728", "loss": "1.8014", "code": "ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } { return(t); } }"}
+{"time": "2021-01-20 05:12:31.135509", "n_pass": [126, 10, 6], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } {(t); } }"}
+{"time": "2021-01-20 05:12:38.989127", "n_pass": [191, 11, 7], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } {(t);} }"}
+{"time": "2021-01-20 05:12:40.304570", "n_pass": [192, 12, 8], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:42.706300", "n_pass": [202, 13, 9], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){ if (t instanceof ConnectException) { return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:44.050147", "n_pass": [204, 14, 10], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if (t instanceof ConnectException) { return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:45.366122", "n_pass": [206, 15, 11], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException) { return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:46.681617", "n_pass": [214, 16, 12], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){ return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:48.014812", "n_pass": [216, 17, 13], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return (ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:49.697576", "n_pass": [218, 18, 14], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return(ConnectException) t; } {(t);}}"}
+{"time": "2021-01-20 05:12:51.014796", "n_pass": [222, 19, 15], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return(ConnectException)t; } {(t);}}"}
+{"time": "2021-01-20 05:12:53.639756", "n_pass": [225, 21, 16], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return(ConnectException)t;} {(t);}}"}
+{"time": "2021-01-20 05:12:54.945311", "n_pass": [227, 22, 17], "score": "0.2743", "loss": "1.7844", "code": "ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return(ConnectException)t;}{(t);}}"}
+
+Minimal simplified code:
+ConnectException toConnectException(Throwable t){if(t instanceof ConnectException){return(ConnectException)t;}{(t);}}
+

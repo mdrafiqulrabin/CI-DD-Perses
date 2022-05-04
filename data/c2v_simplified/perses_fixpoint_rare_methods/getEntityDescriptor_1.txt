@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-schema/openam-liberty-schema/src/main/java/com/sun/identity/liberty/ws/meta/jaxb/impl/EntitiesDescriptorTypeImpl_getEntityDescriptor.java
+method_name = getEntityDescriptor
+method_body = public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 20:20:24.884904", "score": "0.3199", "loss": "1.3808", "code": "class T { public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); } }"}
+{"time": "2021-01-24 20:26:47.119342", "score": "0.8046", "loss": "0.3704", "code": "class T { public java.util.List getEntityDescriptor() { return _getEntityDescriptor ; } }"}
+{"time": "2021-01-24 20:27:26.657461", "score": "0.7733", "loss": "0.3666", "code": "class T { public java .List getEntityDescriptor() { return _getEntityDescriptor ; } }"}
+{"time": "2021-01-24 20:28:45.821886", "score": "0.7733", "loss": "0.3666", "code": "class T { java .List getEntityDescriptor() { return _getEntityDescriptor ; } }"}
+
+Minimal simplified code:
+class T {
+       java     .List getEntityDescriptor() { return _getEntityDescriptor  ; }
+}
+
+

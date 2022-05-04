@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/channel/TestRemoteProcessException_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 07:01:09.750424", "score": "0.9999", "loss": "0.0001", "code": "class T { @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); } }"}
+{"time": "2020-12-29 07:04:12.561850", "score": "0.987", "loss": "0.0142", "code": "class T { @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); } }"}
+{"time": "2020-12-29 07:05:28.231809", "score": "0.9964", "loss": "0.0037", "code": "class T { @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); } }"}
+{"time": "2020-12-29 07:06:43.803299", "score": "0.998", "loss": "0.0021", "code": "class T { @Before public void setUp() throws Exception { channel1 = new GroupChannel(); } }"}
+{"time": "2020-12-29 07:07:59.287727", "score": "0.9247", "loss": "0.0791", "code": "class T { @Before public void setUp() throws Exception { channel1 = GroupChannel ; } }"}
+{"time": "2020-12-29 07:09:18.463735", "score": "0.9247", "loss": "0.0791", "code": "class T { @Before void setUp() throws Exception { channel1 = GroupChannel ; } }"}
+{"time": "2020-12-29 07:10:37.724639", "score": "0.615", "loss": "0.4909", "code": "class T { @Before void setUp() { channel1 = GroupChannel ; } }"}
+
+Minimal simplified code:
+class T {
+@Before        void setUp()                  { channel1 =     GroupChannel  ;                                                                                                                                                                                                                                               }
+}
+
+

@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/cloud-content/impl/src/main/java/coza/opencollab/sakai/cloudcontent/BlobStoreFileSystemHandler_deleteContainerIfEmpty.java
+method_name = deleteContainerIfEmpty
+method_body = private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }
+
+topk path-contexts for sub-token: delete
+[0.1619] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1149] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0738] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0548] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0541] container,NameExpr2|MethodCallExpr|NameExpr3,delete|container|if|empty
+[0.0425] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0391] container,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0321] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|blob|store
+[0.0211] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0198] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+
+topk terminals for sub-token: delete
+['void', 'METHOD_NAME', 'METHOD_NAME', 'delete|container|if|empty', 'string', 'delete|container|if|empty', 'delete|empty|containers', 'delete|container|if|empty', 'container', 'delete|container|if|empty', 'METHOD_NAME', 'delete|empty|containers', 'container', 'delete|container|if|empty', 'METHOD_NAME', 'get|blob|store', 'void', 'string', 'string', 'delete|empty|containers']
+
+topk path-contexts for sub-token: container
+[0.1123] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0854] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|blob|store
+[0.0818] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0686] get|blob|store,NameExpr1|MethodCallExpr0|MethodCallExpr|NameExpr2,container
+[0.0620] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0610] container,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0600] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0529] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|blob|store
+[0.0486] container,NameExpr2|MethodCallExpr|NameExpr3,delete|container|if|empty
+[0.0416] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+
+topk terminals for sub-token: container
+['METHOD_NAME', 'delete|empty|containers', 'METHOD_NAME', 'get|blob|store', 'string', 'delete|empty|containers', 'get|blob|store', 'container', 'METHOD_NAME', 'delete|container|if|empty', 'container', 'delete|empty|containers', 'string', 'delete|container|if|empty', 'delete|empty|containers', 'get|blob|store', 'container', 'delete|container|if|empty', 'delete|empty|containers', 'delete|container|if|empty']
+
+topk path-contexts for sub-token: if
+[0.1430] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.1425] container,NameExpr2|MethodCallExpr|NameExpr3,delete|container|if|empty
+[0.1067] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0992] container,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0571] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0524] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0355] get|blob|store,NameExpr1|MethodCallExpr0|MethodCallExpr|NameExpr2,container
+[0.0302] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0253] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|blob|store
+[0.0218] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,container
+
+topk terminals for sub-token: if
+['METHOD_NAME', 'delete|container|if|empty', 'container', 'delete|container|if|empty', 'string', 'delete|container|if|empty', 'container', 'delete|container|if|empty', 'void', 'METHOD_NAME', 'delete|empty|containers', 'delete|container|if|empty', 'get|blob|store', 'container', 'METHOD_NAME', 'delete|empty|containers', 'METHOD_NAME', 'get|blob|store', 'delete|empty|containers', 'container']
+
+topk path-contexts for sub-token: empty
+[0.2748] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.1313] container,NameExpr2|MethodCallExpr|NameExpr3,delete|container|if|empty
+[0.1276] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.1053] container,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0841] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0652] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0449] delete|empty|containers,NameExpr0|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,delete|container|if|empty
+[0.0241] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0173] container,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|NameExpr0,delete|empty|containers
+[0.0046] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,container
+
+topk terminals for sub-token: empty
+['METHOD_NAME', 'delete|container|if|empty', 'container', 'delete|container|if|empty', 'string', 'delete|container|if|empty', 'container', 'delete|container|if|empty', 'METHOD_NAME', 'delete|empty|containers', 'void', 'METHOD_NAME', 'delete|empty|containers', 'delete|container|if|empty', 'string', 'delete|empty|containers', 'container', 'delete|empty|containers', 'void', 'container']
+

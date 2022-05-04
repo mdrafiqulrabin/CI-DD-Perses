@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/connector/Request_addPathParameter.java
+method_name = addPathParameter
+method_body = protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:20:11.302989", "score": "0.4633", "loss": "1.3055", "code": "class T { protected void addPathParameter(String name, String value) { pathParameters.put(name, value); } }"}
+{"time": "2021-01-24 04:21:41.596639", "score": "0.4627", "loss": "1.4764", "code": "class T { protected void addPathParameter(String name, String value) { pathParameters.put(name ); } }"}
+{"time": "2021-01-24 04:21:52.340294", "score": "0.4627", "loss": "1.4764", "code": "class T { void addPathParameter(String name, String value) { pathParameters.put(name ); } }"}
+
+Minimal simplified code:
+class T {
+          void addPathParameter(String name, String value) { pathParameters.put(name       ); }
+}
+
+

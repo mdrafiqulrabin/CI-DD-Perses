@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/WsSession_getOpenSessions.java
+method_name = getOpenSessions
+method_body = @Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }
+predict, score, loss = getOpenSessions, 0.22663463652133942, 3.0289065837860107
+
+Trace of simplified code(s):
+{"time": "2021-01-23 14:35:16.983191", "n_pass": [1, 1, 1], "score": "0.2266", "loss": "3.0289", "code": "@Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-23 14:35:22.621443", "n_pass": [20, 3, 2], "score": "0.3909", "loss": "2.3633", "code": " Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-23 14:35:31.293493", "n_pass": [48, 6, 3], "score": "0.4473", "loss": "1.2452", "code": " Set<Session> getOpenSessions() { checkState(); ebSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-23 14:35:33.893680", "n_pass": [49, 7, 4], "score": "0.4759", "loss": "1.1651", "code": " Set<Session> getOpenSessions() { checkState(); Container.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-23 14:35:39.099451", "n_pass": [53, 9, 5], "score": "0.1955", "loss": "2.7012", "code": " Set<Session> getOpenSessions() { checkState(); Container.getOpenSessions(lint.getClass()); }"}
+{"time": "2021-01-23 14:35:41.698023", "n_pass": [54, 10, 6], "score": "0.8029", "loss": "0.4414", "code": " Set<Session> getOpenSessions() { checkState(); Container.getOpenSessions(lass()); }"}
+{"time": "2021-01-23 14:35:44.715888", "n_pass": [61, 11, 7], "score": "0.7924", "loss": "0.4415", "code": " Set<Session> getOpenSessions() { checkSContainer.getOpenSessions(lass()); }"}
+{"time": "2021-01-23 14:35:47.316221", "n_pass": [62, 12, 8], "score": "0.6445", "loss": "0.8516", "code": " Set<Session> getOpenSessions() { checkS.getOpenSessions(lass()); }"}
+{"time": "2021-01-23 14:36:01.114022", "n_pass": [95, 17, 9], "score": "0.5419", "loss": "1.8203", "code": " Set<Ses> getOpenSessions() { checkS.getOpenSessions(lass()); }"}
+{"time": "2021-01-23 14:36:04.948864", "n_pass": [101, 18, 10], "score": "0.8353", "loss": "0.5461", "code": " Set<Ses> getOpenSessions() { ch.getOpenSessions(lass()); }"}
+{"time": "2021-01-23 14:36:37.821094", "n_pass": [153, 30, 11], "score": "0.8695", "loss": "0.5024", "code": " Set<Ses> getOpenSessions() { ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:36:40.425726", "n_pass": [156, 31, 12], "score": "0.8695", "loss": "0.5024", "code": "et<Ses> getOpenSessions() { ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:36:43.419665", "n_pass": [159, 32, 13], "score": "0.6387", "loss": "2.031", "code": "et<S> getOpenSessions() { ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:37:11.328419", "n_pass": [236, 41, 14], "score": "0.6387", "loss": "2.031", "code": "et<S>getOpenSessions() { ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:37:20.033673", "n_pass": [254, 42, 15], "score": "0.6387", "loss": "2.031", "code": "et<S>getOpenSessions(){ ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:37:22.632130", "n_pass": [256, 43, 16], "score": "0.6387", "loss": "2.031", "code": "et<S>getOpenSessions(){ch.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:37:25.236380", "n_pass": [257, 44, 17], "score": "0.6621", "loss": "1.9634", "code": "et<S>getOpenSessions(){h.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:38:09.615408", "n_pass": [281, 61, 18], "score": "0.6621", "loss": "1.9634", "code": "t<S>getOpenSessions(){h.getOpenSessions(l()); }"}
+{"time": "2021-01-23 14:39:01.178141", "n_pass": [333, 78, 19], "score": "0.6621", "loss": "1.9634", "code": "t<S>getOpenSessions(){h.getOpenSessions(l());}"}
+
+Minimal simplified code:
+t<S>getOpenSessions(){h.getOpenSessions(l());}
+

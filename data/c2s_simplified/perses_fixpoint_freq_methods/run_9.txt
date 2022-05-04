@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/jsp/applet/Clock2_run.java
+method_name = run
+method_body = @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:23:22.441155", "score": "0.9955", "loss": "0.0093", "code": "class T { @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } } }"}
+{"time": "2020-12-21 11:23:59.825870", "score": "0.9843", "loss": "0.043", "code": "class T { @Override public void run() { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-21 11:24:27.747945", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override public void run() { } }"}
+{"time": "2020-12-21 11:24:48.774761", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override void run() { } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run()                                                           {                                                                          }
+}
+
+

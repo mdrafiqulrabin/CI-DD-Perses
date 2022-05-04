@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/ParserController_parseTagFileDirectives.java
+method_name = parseTagFileDirectives
+method_body = public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean isTagFileSave = isTagFile; boolean directiveOnlySave = directiveOnly; isTagFile = true; directiveOnly = true; Node.Nodes page = doParse(inFileName, null, jar); directiveOnly = directiveOnlySave; isTagFile = isTagFileSave; return page; }
+
+topk path-contexts:
+[0.1379] infilename,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),directiveonly
+[0.0844] jar,(NameExpr3)^(MethodCallExpr)_(NameExpr4),doparse
+[0.0670] jasperexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(NameExpr1),directiveonly
+[0.0584] directiveonly,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),doparse
+[0.0451] doparse,(NameExpr4)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),directiveonly
+[0.0378] ioexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),doparse
+[0.0374] directiveonly,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),directiveonly
+[0.0369] jar,(NameExpr3)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),directiveonly
+[0.0308] jasperexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),doparse
+[0.0296] infilename,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),istagfile
+
+topk terminals:
+['infilename', 'directiveonly', 'jar', 'doparse', 'jasperexception', 'directiveonly', 'directiveonly', 'doparse', 'doparse', 'directiveonly', 'ioexception', 'doparse', 'directiveonly', 'directiveonly', 'jar', 'directiveonly', 'jasperexception', 'doparse', 'infilename', 'istagfile']
+

@@ -1,0 +1,42 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/async/Stockticker_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }
+predict, score, loss = equals, 0.99120504, 0.011486188
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:51:41.376673", "n_pass": [1, 1, 1], "score": "0.9912", "loss": "0.0115", "code": "@Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-27 23:51:42.749342", "n_pass": [20, 2, 2], "score": "0.9493", "loss": "0.099", "code": "oolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-27 23:51:44.082427", "n_pass": [22, 3, 3], "score": "0.9101", "loss": "0.227", "code": "oolean equals(Object other) { if (otck) { return this.symbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-27 23:51:45.559496", "n_pass": [42, 4, 4], "score": "0.5287", "loss": "1.3192", "code": "oolean equals(Object other) { if (otck) { retsymbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-27 23:51:48.676411", "n_pass": [75, 6, 5], "score": "0.6713", "loss": "0.8407", "code": "oolean equals(Object other) { if (otck) {ymbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-27 23:51:51.357684", "n_pass": [82, 8, 6], "score": "0.6444", "loss": "0.8904", "code": "oolean equals(Object other) { if (otck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:51:54.148605", "n_pass": [87, 10, 7], "score": "0.7191", "loss": "0.671", "code": "an equals(Object other) { if (otck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:51:56.228841", "n_pass": [91, 11, 8], "score": "0.4981", "loss": "1.2576", "code": "an equals(Ob other) { if (otck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:01.046509", "n_pass": [147, 14, 9], "score": "0.3112", "loss": "2.0032", "code": "an equals(Ob oer) { if (otck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:02.384077", "n_pass": [148, 15, 10], "score": "0.6063", "loss": "1.0524", "code": "an equals(Ob o) { if (otck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:03.783915", "n_pass": [153, 16, 11], "score": "0.6215", "loss": "1.0756", "code": "an equals(Ob o) { if (ck) {ymbol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:05.116284", "n_pass": [157, 17, 12], "score": "0.5835", "loss": "1.1967", "code": "an equals(Ob o) { if (ck) {yol.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:06.478243", "n_pass": [158, 18, 13], "score": "0.6751", "loss": "0.9389", "code": "an equals(Ob o) { if (ck) {y.equals(((Stock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:11.896352", "n_pass": [164, 22, 14], "score": "0.6832", "loss": "0.8062", "code": "an equals(Ob o) { if (ck) {y.equals(((ock) other).s); } return false; }"}
+{"time": "2020-12-27 23:52:13.255419", "n_pass": [167, 23, 15], "score": "0.5385", "loss": "1.2272", "code": "an equals(Ob o) { if (ck) {y.equals(((ock) or).s); } return false; }"}
+{"time": "2020-12-27 23:52:25.237394", "n_pass": [255, 29, 16], "score": "0.5385", "loss": "1.2272", "code": "an equals(Ob o) { if (ck) {y.equals(((ock)or).s); } return false; }"}
+{"time": "2020-12-27 23:52:26.635657", "n_pass": [256, 30, 17], "score": "0.6432", "loss": "0.871", "code": "an equals(Ob o) { if (ck) {y.equals(((ock)r).s); } return false; }"}
+{"time": "2020-12-27 23:52:27.977824", "n_pass": [257, 31, 18], "score": "0.3508", "loss": "1.7602", "code": "an equals(Ob o) { if (ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:33.370036", "n_pass": [271, 35, 19], "score": "0.2874", "loss": "2.0084", "code": "n equals(Ob o) { if (ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:37.921653", "n_pass": [281, 36, 20], "score": "0.4287", "loss": "1.5268", "code": "n equals(b o) { if (ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:39.269424", "n_pass": [286, 37, 21], "score": "0.4287", "loss": "1.5268", "code": "n equals(b o){ if (ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:40.609964", "n_pass": [288, 38, 22], "score": "0.4287", "loss": "1.5268", "code": "n equals(b o){if (ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:41.974050", "n_pass": [291, 39, 23], "score": "0.4287", "loss": "1.5268", "code": "n equals(b o){if(ck) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:43.305755", "n_pass": [293, 40, 24], "score": "0.5935", "loss": "1.0933", "code": "n equals(b o){if(k) {y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:44.656414", "n_pass": [296, 41, 25], "score": "0.5935", "loss": "1.0933", "code": "n equals(b o){if(k){y.equals(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:54.255930", "n_pass": [305, 48, 26], "score": "0.5059", "loss": "1.3049", "code": "n equals(b o){if(k){y.equal(((ock)).s); } return false; }"}
+{"time": "2020-12-27 23:52:55.609252", "n_pass": [309, 49, 27], "score": "0.4143", "loss": "1.6178", "code": "n equals(b o){if(k){y.equal(((ck)).s); } return false; }"}
+{"time": "2020-12-27 23:52:56.974777", "n_pass": [310, 50, 28], "score": "0.4513", "loss": "1.4839", "code": "n equals(b o){if(k){y.equal(((k)).s); } return false; }"}
+{"time": "2020-12-27 23:53:16.292810", "n_pass": [377, 60, 29], "score": "0.4513", "loss": "1.4839", "code": "n equals(b o){if(k){y.equal(((k)).s);} return false; }"}
+{"time": "2020-12-27 23:53:17.671254", "n_pass": [378, 61, 30], "score": "0.4513", "loss": "1.4839", "code": "n equals(b o){if(k){y.equal(((k)).s);}return false; }"}
+{"time": "2020-12-27 23:53:27.487451", "n_pass": [392, 68, 31], "score": "0.4513", "loss": "1.4839", "code": "n equals(b o){if(k){y.equal(((k)).s);}return false;}"}
+
+Minimal simplified code:
+n equals(b o){if(k){y.equal(((k)).s);}return false;}
+

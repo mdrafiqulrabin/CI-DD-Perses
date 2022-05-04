@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/helper/ObjectIdMapper_getIdForObject.java
+method_name = getIdForObject
+method_body = @Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }
+predict, score, loss = getIdForObject, 0.29758352041244507, 2.5550193786621094
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:49:03.005955", "n_pass": [1, 1, 1], "score": "0.2976", "loss": "2.555", "code": "@Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:05.625159", "n_pass": [20, 2, 2], "score": "0.3033", "loss": "2.1965", "code": " Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:17.797131", "n_pass": [84, 5, 3], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:21.226583", "n_pass": [92, 6, 4], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){ synchronized (mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:23.847570", "n_pass": [94, 7, 5], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized (mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:26.469252", "n_pass": [96, 8, 6], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized(mSync) { return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:29.093583", "n_pass": [100, 9, 7], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized(mSync){ return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:31.713662", "n_pass": [102, 10, 8], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized(mSync){return mObjectToIdMap.get(object); } }"}
+{"time": "2021-01-20 06:49:49.887565", "n_pass": [141, 16, 9], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized(mSync){return mObjectToIdMap.get(object);} }"}
+{"time": "2021-01-20 06:49:52.517324", "n_pass": [142, 17, 10], "score": "0.3033", "loss": "2.1965", "code": "Integer getIdForObject(Object object){synchronized(mSync){return mObjectToIdMap.get(object);}}"}
+
+Minimal simplified code:
+Integer getIdForObject(Object object){synchronized(mSync){return mObjectToIdMap.get(object);}}
+

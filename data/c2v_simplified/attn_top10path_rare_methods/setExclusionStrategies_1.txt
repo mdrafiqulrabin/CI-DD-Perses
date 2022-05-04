@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/json-iterator__java/src/main/java/com/jsoniter/extra/GsonCompatibilityMode_setExclusionStrategies.java
+method_name = setExclusionStrategies
+method_body = public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }
+
+topk path-contexts:
+[0.3779] exclusionstrategy,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),addserializationexclusionstrategy
+[0.1252] exclusionstrategy,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),addserializationexclusionstrategy
+[0.0787] strategies,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),exclusionstrategy
+[0.0747] builder,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),exclusionstrategy
+[0.0711] exclusionstrategy,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),exclusionstrategy
+[0.0492] strategies,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),addserializationexclusionstrategy
+[0.0324] strategies,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),exclusionstrategy
+[0.0314] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),exclusionstrategy
+[0.0263] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),addserializationexclusionstrategy
+[0.0234] exclusionstrategy,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(NameExpr1),strategies
+
+topk terminals:
+['exclusionstrategy', 'addserializationexclusionstrategy', 'exclusionstrategy', 'addserializationexclusionstrategy', 'strategies', 'exclusionstrategy', 'builder', 'exclusionstrategy', 'exclusionstrategy', 'exclusionstrategy', 'strategies', 'addserializationexclusionstrategy', 'strategies', 'exclusionstrategy', 'METHOD_NAME', 'exclusionstrategy', 'METHOD_NAME', 'addserializationexclusionstrategy', 'exclusionstrategy', 'strategies']
+

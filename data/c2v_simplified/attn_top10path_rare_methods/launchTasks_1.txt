@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/jmh/java/org/apache/aurora/benchmark/fakes/FakeSchedulerDriver_launchTasks.java
+method_name = launchTasks
+method_body = @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }
+
+topk path-contexts:
+[0.4147] protos,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),offerid
+[0.1717] offerid,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),tasks
+[0.1510] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),offerid
+[0.0519] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),tasks
+[0.0474] tasks,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NullLiteralExpr0),null
+[0.0320] offerid,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NullLiteralExpr0),null
+[0.0267] offerid,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),protos
+[0.0239] protos,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),tasks
+[0.0106] offerid,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),protos
+[0.0105] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),protos
+
+topk terminals:
+['protos', 'offerid', 'offerid', 'tasks', 'METHOD_NAME', 'offerid', 'METHOD_NAME', 'tasks', 'tasks', 'null', 'offerid', 'null', 'offerid', 'protos', 'protos', 'tasks', 'offerid', 'protos', 'METHOD_NAME', 'protos']
+

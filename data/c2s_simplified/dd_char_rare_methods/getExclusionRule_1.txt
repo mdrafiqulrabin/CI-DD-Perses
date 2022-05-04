@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/calendar/calendar-impl/impl/src/java/org/sakaiproject/calendar/impl/GenericCalendarImporter_getExclusionRule.java
+method_name = getExclusionRule
+method_body = public RecurrenceRule getExclusionRule() { return this.exclusionRule; }
+predict, score, loss = getExclusionRule, 0.4555693, 0.89255095
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:24:19.840604", "n_pass": [1, 1, 1], "score": "0.4556", "loss": "0.8926", "code": "public RecurrenceRule getExclusionRule() { return this.exclusionRule; }"}
+{"time": "2021-01-23 11:24:21.508734", "n_pass": [8, 2, 2], "score": "0.7809", "loss": "0.3762", "code": "Rule getExclusionRule() { return this.exclusionRule; }"}
+{"time": "2021-01-23 11:24:32.996446", "n_pass": [71, 9, 3], "score": "0.8197", "loss": "0.2532", "code": "le getExclusionRule() { return this.exclusionRule; }"}
+{"time": "2021-01-23 11:24:37.121606", "n_pass": [86, 10, 4], "score": "0.6474", "loss": "1.2395", "code": "le getExclusionRule() { returnhis.exclusionRule; }"}
+{"time": "2021-01-23 11:24:38.400593", "n_pass": [87, 11, 5], "score": "0.6888", "loss": "1.0745", "code": "le getExclusionRule() { returns.exclusionRule; }"}
+{"time": "2021-01-23 11:24:49.177335", "n_pass": [106, 17, 6], "score": "0.8049", "loss": "1.3691", "code": "le getExclusionRule() { turns.exclusionRule; }"}
+{"time": "2021-01-23 11:24:51.737699", "n_pass": [108, 19, 7], "score": "0.724", "loss": "1.4823", "code": "le getExclusionRule() { tus.exclusionRule; }"}
+{"time": "2021-01-23 11:25:02.573347", "n_pass": [127, 25, 8], "score": "0.6627", "loss": "1.0754", "code": "le getExclusionRule() { s.exclusionRule; }"}
+{"time": "2021-01-23 11:25:27.307095", "n_pass": [195, 41, 9], "score": "0.8002", "loss": "1.0693", "code": "l getExclusionRule() { s.exclusionRule; }"}
+{"time": "2021-01-23 11:25:34.515872", "n_pass": [215, 42, 10], "score": "0.8002", "loss": "1.0693", "code": "l getExclusionRule(){ s.exclusionRule; }"}
+{"time": "2021-01-23 11:25:35.794368", "n_pass": [217, 43, 11], "score": "0.8002", "loss": "1.0693", "code": "l getExclusionRule(){s.exclusionRule; }"}
+{"time": "2021-01-23 11:26:07.304088", "n_pass": [273, 62, 12], "score": "0.8002", "loss": "1.0693", "code": "l getExclusionRule(){s.exclusionRule;}"}
+
+Minimal simplified code:
+l getExclusionRule(){s.exclusionRule;}
+

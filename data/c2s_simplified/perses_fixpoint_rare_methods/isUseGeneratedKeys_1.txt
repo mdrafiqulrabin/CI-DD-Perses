@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_isUseGeneratedKeys.java
+method_name = isUseGeneratedKeys
+method_body = public boolean isUseGeneratedKeys() { return useGeneratedKeys; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:35:09.651827", "score": "0.4829", "loss": "0.7915", "code": "class T { public boolean isUseGeneratedKeys() { return useGeneratedKeys; } }"}
+{"time": "2021-01-24 08:36:08.674176", "score": "0.4829", "loss": "0.7915", "code": "class T { boolean isUseGeneratedKeys() { return useGeneratedKeys; } }"}
+
+Minimal simplified code:
+class T {
+       boolean isUseGeneratedKeys() { return useGeneratedKeys; }
+}
+
+

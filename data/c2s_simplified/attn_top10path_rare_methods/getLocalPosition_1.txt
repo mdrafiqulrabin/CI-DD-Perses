@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/scene3d/SimpleNode_getLocalPosition.java
+method_name = getLocalPosition
+method_body = @Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }
+
+topk path-contexts for sub-token: get
+[0.0979] local|position,NameExpr2|MethodCallExpr|NameExpr3,set
+[0.0899] vector,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0856] vector,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,set
+[0.0855] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,set
+[0.0753] vector,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,out
+[0.0609] out,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,set
+[0.0571] vector,ClassOrInterfaceType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,vector
+[0.0412] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.0400] out,NameExpr0|MethodCallExpr|NameExpr2,local|position
+[0.0391] out,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,vector
+
+topk terminals for sub-token: get
+['local|position', 'set', 'vector', 'METHOD_NAME', 'vector', 'set', 'METHOD_NAME', 'set', 'vector', 'out', 'out', 'set', 'vector', 'vector', 'METHOD_NAME', 'local|position', 'out', 'local|position', 'out', 'vector']
+
+topk path-contexts for sub-token: local
+[0.1802] out,NameExpr0|MethodCallExpr|NameExpr2,local|position
+[0.1503] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.1497] out,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.1201] vector,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.0694] vector,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0548] local|position,NameExpr2|MethodCallExpr|NameExpr3,set
+[0.0283] vector,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,out
+[0.0209] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,vector
+[0.0201] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,out
+[0.0197] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,set
+
+topk terminals for sub-token: local
+['out', 'local|position', 'METHOD_NAME', 'local|position', 'out', 'local|position', 'vector', 'local|position', 'vector', 'METHOD_NAME', 'local|position', 'set', 'vector', 'out', 'override', 'vector', 'METHOD_NAME', 'out', 'METHOD_NAME', 'set']
+
+topk path-contexts for sub-token: position
+[0.2252] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.1665] vector,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.1235] out,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,local|position
+[0.1101] vector,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0877] out,NameExpr0|MethodCallExpr|NameExpr2,local|position
+[0.0585] local|position,NameExpr2|MethodCallExpr|NameExpr3,set
+[0.0456] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,vector
+[0.0187] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,set
+[0.0182] vector,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,out
+[0.0147] vector,ClassOrInterfaceType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,vector
+
+topk terminals for sub-token: position
+['METHOD_NAME', 'local|position', 'vector', 'local|position', 'out', 'local|position', 'vector', 'METHOD_NAME', 'out', 'local|position', 'local|position', 'set', 'override', 'vector', 'METHOD_NAME', 'set', 'vector', 'out', 'vector', 'vector']
+

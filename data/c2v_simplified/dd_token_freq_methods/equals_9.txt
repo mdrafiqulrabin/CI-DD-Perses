@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/Key_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }
+predict, score, loss = equals, 0.9999475479125977, 5.94836674281396e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:40:34.950191", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:37.650075", "n_pass": [25, 2, 2], "score": "0.9999", "loss": "0.0001", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:40.366572", "n_pass": [48, 3, 3], "score": "0.9999", "loss": "0.0001", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) && Objects.equals && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:43.065555", "n_pass": [57, 4, 4], "score": "0.9999", "loss": "0.0001", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null ||o.getClass()) { return false; } Key that = (Key) && Objects.equals && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:45.752230", "n_pass": [69, 5, 5], "score": "0.9999", "loss": "0.0001", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) { return false; } Key that = (Key) && Objects.equals && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:48.442222", "n_pass": [105, 6, 6], "score": "0.9996", "loss": "0.0006", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } Key that = (Key) && Objects.equals && Objects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:51.131355", "n_pass": [110, 7, 7], "score": "0.9985", "loss": "0.0017", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } Key that = (Key) && Objects.equalsObjects.equals(id, that.id); }"}
+{"time": "2020-12-26 23:40:53.793423", "n_pass": [112, 8, 8], "score": "0.9989", "loss": "0.0013", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } Key that = (Key) && Objects.equalsObjects.equals(id); }"}
+{"time": "2020-12-26 23:40:56.493702", "n_pass": [114, 9, 9], "score": "0.9906", "loss": "0.0139", "code": " boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } Key that = (Key) && Objects.equalsObjects.equals(id); }"}
+{"time": "2020-12-26 23:40:59.153968", "n_pass": [119, 10, 10], "score": "0.9674", "loss": "0.0545", "code": " boolean equals(Object o) { if (thiso) { return true; } if (oo.getClass()) {; } Key that = (Key) && Objects.equalsObjects.equals(id); }"}
+{"time": "2020-12-26 23:41:01.811813", "n_pass": [121, 11, 11], "score": "0.9518", "loss": "0.066", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } Key that = (Key) && Objects.equalsObjects.equals(id); }"}
+{"time": "2020-12-26 23:41:04.481155", "n_pass": [130, 12, 12], "score": "0.9026", "loss": "0.1648", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } Key that = (Key) &&Objects.equals(id); }"}
+{"time": "2020-12-26 23:41:07.954907", "n_pass": [176, 13, 13], "score": "0.9101", "loss": "0.1425", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } Key that = (Key) &&equals(id); }"}
+{"time": "2020-12-26 23:41:11.266038", "n_pass": [189, 14, 14], "score": "0.9101", "loss": "0.1425", "code": " boolean equals(Object o) { if (thiso) {} if (oo.getClass()) {; } Key that = (Key) &&equals(id); }"}
+{"time": "2020-12-26 23:41:13.936559", "n_pass": [193, 15, 15], "score": "0.9213", "loss": "0.1037", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {; } Key that = (Key) &&equals(id); }"}
+{"time": "2020-12-26 23:41:16.609240", "n_pass": [197, 16, 16], "score": "0.9213", "loss": "0.1037", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} Key that = (Key) &&equals(id); }"}
+{"time": "2020-12-26 23:41:19.250060", "n_pass": [199, 17, 17], "score": "0.982", "loss": "0.0357", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} that = (Key) &&equals(id); }"}
+{"time": "2020-12-26 23:41:22.332933", "n_pass": [204, 18, 18], "score": "0.8888", "loss": "0.172", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} that = (Key) equals(id); }"}
+{"time": "2020-12-26 23:41:31.475413", "n_pass": [277, 19, 19], "score": "0.8624", "loss": "0.2944", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:34.249099", "n_pass": [282, 20, 20], "score": "0.8624", "loss": "0.2944", "code": "boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:37.875243", "n_pass": [291, 21, 21], "score": "0.8624", "loss": "0.2944", "code": "boolean equals(Object o){ if (thiso) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:40.620775", "n_pass": [293, 22, 22], "score": "0.8624", "loss": "0.2944", "code": "boolean equals(Object o){if (thiso) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:43.499924", "n_pass": [295, 23, 23], "score": "0.8624", "loss": "0.2944", "code": "boolean equals(Object o){if(thiso) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:46.322816", "n_pass": [297, 24, 24], "score": "0.9494", "loss": "0.0986", "code": "boolean equals(Object o){if(o) {} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:49.075039", "n_pass": [300, 25, 25], "score": "0.9494", "loss": "0.0986", "code": "boolean equals(Object o){if(o){} if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:51.855753", "n_pass": [303, 26, 26], "score": "0.9494", "loss": "0.0986", "code": "boolean equals(Object o){if(o){}if (ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:54.649494", "n_pass": [305, 27, 27], "score": "0.9494", "loss": "0.0986", "code": "boolean equals(Object o){if(o){}if(ogetClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:41:57.426497", "n_pass": [307, 28, 28], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()) {} that = (Key) (id); }"}
+{"time": "2020-12-26 23:42:00.216431", "n_pass": [312, 29, 29], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){} that = (Key) (id); }"}
+{"time": "2020-12-26 23:42:02.971905", "n_pass": [315, 30, 30], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){}that = (Key) (id); }"}
+{"time": "2020-12-26 23:42:05.758165", "n_pass": [317, 31, 31], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){}that= (Key) (id); }"}
+{"time": "2020-12-26 23:42:08.552270", "n_pass": [319, 32, 32], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){}that=(Key) (id); }"}
+{"time": "2020-12-26 23:42:11.327661", "n_pass": [323, 33, 33], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){}that=(Key)(id); }"}
+{"time": "2020-12-26 23:42:15.409939", "n_pass": [359, 34, 34], "score": "0.9549", "loss": "0.1016", "code": "boolean equals(Object o){if(o){}if(getClass()){}that=(Key)(id);}"}
+
+Minimal simplified code:
+boolean equals(Object o){if(o){}if(getClass()){}that=(Key)(id);}
+

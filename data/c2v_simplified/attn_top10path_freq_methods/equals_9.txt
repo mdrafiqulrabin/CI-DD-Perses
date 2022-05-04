@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/Key_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }
+
+topk path-contexts:
+[0.2802] objects,(NameExpr0)^(MethodCallExpr)^(BinaryExpr:and)_(MethodCallExpr1)_(FieldAccessExpr3)_(NameExpr0),that
+[0.1688] that,(NameExpr0)^(FieldAccessExpr3)^(MethodCallExpr)^(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr4),equals
+[0.0847] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0528] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(BinaryExpr:and)_(MethodCallExpr0)_(FieldAccessExpr3)_(NameExpr2),index
+[0.0393] this,(ThisExpr0)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),key
+[0.0253] that,(NameExpr0)^(FieldAccessExpr3)^(MethodCallExpr)^(BinaryExpr:and)^(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr2),id
+[0.0246] o,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(BinaryExpr:and)_(MethodCallExpr0)_(NameExpr2),index
+[0.0227] getclass,(NameExpr2)^(MethodCallExpr)^(BinaryExpr:notEquals)^(BinaryExpr:or)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),key
+[0.0179] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(BinaryExpr:or)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr2),getclass
+[0.0157] this,(ThisExpr0)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:or)_(BinaryExpr:notEquals)_(MethodCallExpr0)_(NameExpr1),getclass
+
+topk terminals:
+['objects', 'that', 'that', 'equals', 'METHOD_NAME', 'false', 'METHOD_NAME', 'index', 'this', 'key', 'that', 'id', 'o', 'index', 'getclass', 'key', 'null', 'getclass', 'this', 'getclass']
+

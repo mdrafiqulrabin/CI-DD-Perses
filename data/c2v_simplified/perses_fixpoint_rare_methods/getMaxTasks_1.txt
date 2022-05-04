@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/tribes/transport/ReceiverBase_getMaxTasks.java
+method_name = getMaxTasks
+method_body = public int getMaxTasks() { return maxTasks; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 11:08:27.636719", "score": "0.4888", "loss": "0.788", "code": "class T { public int getMaxTasks() { return maxTasks; } }"}
+{"time": "2021-01-24 11:12:09.356348", "score": "0.4888", "loss": "0.788", "code": "class T { int getMaxTasks() { return maxTasks; } }"}
+
+Minimal simplified code:
+class T {
+       int getMaxTasks() { return maxTasks; }
+}
+
+

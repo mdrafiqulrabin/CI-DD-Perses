@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javamelody__javamelody/javamelody-core/src/main/java/net/bull/javamelody/internal/model/Collector_deleteObsoleteFiles.java
+method_name = deleteObsoleteFiles
+method_body = void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(getApplication()); final long serGzDiskUsage = JRobin.deleteObsoleteJRobinFiles(getApplication()); diskUsage = rrdDiskUsage + serGzDiskUsage; LOG.debug("Obsolete files deleted. JavaMelody disk usage: " + diskUsage / 1024 + " KB"); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:13:14.410331", "score": "0.1754", "loss": "3.9735", "code": "class T { void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(getApplication()); final long serGzDiskUsage = JRobin.deleteObsoleteJRobinFiles(getApplication()); diskUsage = rrdDiskUsage + serGzDiskUsage; LOG.debug(\"Obsolete files deleted. JavaMelody disk usage: \" + diskUsage / 1024 + \" KB\"); } }"}
+{"time": "2021-01-24 08:14:02.569751", "score": "0.4439", "loss": "1.9172", "code": "class T { void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(getApplication()); final long serGzDiskUsage = JRobin.deleteObsoleteJRobinFiles(getApplication()); } }"}
+{"time": "2021-01-24 08:14:23.855540", "score": "0.56", "loss": "1.7983", "code": "class T { void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(getApplication()); } }"}
+{"time": "2021-01-24 08:15:16.743206", "score": "0.3839", "loss": "2.4717", "code": "class T { void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles( ); } }"}
+{"time": "2021-01-24 08:15:27.435870", "score": "0.2528", "loss": "2.9096", "code": "class T { void deleteObsoleteFiles() { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles( ); } }"}
+{"time": "2021-01-24 08:15:38.130330", "score": "0.2528", "loss": "2.9096", "code": "class T { void deleteObsoleteFiles() { long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles( ); } }"}
+
+Minimal simplified code:
+class T {
+void deleteObsoleteFiles()                    {       long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(                );                                                                                                                                                                                                                     }
+}
+
+

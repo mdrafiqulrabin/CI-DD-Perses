@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/authentication/service/LoginState_getSharedState.java
+method_name = getSharedState
+method_body = public Map getSharedState() { return sharedState; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:40:02.955390", "score": "0.3259", "loss": "2.2093", "code": "class T { public Map getSharedState() { return sharedState; } }"}
+{"time": "2021-01-24 19:43:44.843225", "score": "0.3259", "loss": "2.2093", "code": "class T { Map getSharedState() { return sharedState; } }"}
+
+Minimal simplified code:
+class T {
+       Map getSharedState() { return sharedState; }
+}
+
+

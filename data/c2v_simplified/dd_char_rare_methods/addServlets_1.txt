@@ -1,0 +1,52 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/http/TestBug49158_addServlets.java
+method_name = addServlets
+method_body = public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext("", System.getProperty("java.io.tmpdir")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping("/" + path, path); }
+predict, score, loss = addServlets, 0.33402684330940247, 1.635058879852295
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:45:52.183647", "n_pass": [1, 1, 1], "score": "0.334", "loss": "1.6351", "code": "public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:45:55.243353", "n_pass": [44, 2, 2], "score": "0.334", "loss": "1.6351", "code": " void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:45:58.280867", "n_pass": [48, 3, 3], "score": "0.2826", "loss": "1.8928", "code": " void addServlets(Tomcat tomcat) { Contex.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:46:11.972347", "n_pass": [97, 8, 4], "score": "0.3563", "loss": "1.6007", "code": " void addServlets(Tomcat tomcat) { Contex.addContext(\"\", System.getProperty(\"java.ir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:46:22.545611", "n_pass": [102, 12, 5], "score": "0.3407", "loss": "1.6194", "code": " void addServlets(Tomcat tomcat) { Contex.addContext(\"\", System.getProperty(\"java.ir\")); Tomcat.addServlet(ctx, path, tBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:46:25.173279", "n_pass": [104, 13, 6], "score": "0.3407", "loss": "1.6194", "code": " void addServlets(Tomcat tomcat) { Contex.addContext(\"\", System.getProperty(\"java.ir\")); Tomcat.addServlet(ctx, path, tBug491et()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-23 13:46:35.697895", "n_pass": [110, 17, 7], "score": "0.317", "loss": "1.8472", "code": " void addServlets(Tomcat tomcat) { Contex.addContext(\"\", System.getProperty(\"java.ir\")); Tomcat.addServlet(ctx, path, tBug491et()); ctx.addServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:39.138229", "n_pass": [118, 18, 8], "score": "0.5054", "loss": "0.9177", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", System.getProperty(\"java.ir\")); Tomcat.addServlet(ctx, path, tBug491et()); ctx.addServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:41.766587", "n_pass": [121, 19, 9], "score": "0.4933", "loss": "1.104", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx, path, tBug491et()); ctx.addServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:49.677614", "n_pass": [128, 22, 10], "score": "0.4274", "loss": "1.5074", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,tBug491et()); ctx.addServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:52.310796", "n_pass": [129, 23, 11], "score": "0.4427", "loss": "1.4548", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); ctx.addServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:54.932154", "n_pass": [131, 24, 12], "score": "0.5051", "loss": "1.5833", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); ServletMapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:46:57.574516", "n_pass": [132, 25, 13], "score": "0.4524", "loss": "1.873", "code": " void addServlets(Tomcat tomcat) { Contextext(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:03.655464", "n_pass": [141, 27, 14], "score": "0.4681", "loss": "1.8253", "code": " void addServlets(Tomcat tomcat) {text(\"\", Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:14.989764", "n_pass": [196, 31, 15], "score": "0.3884", "loss": "1.6067", "code": " void addServlets(Tomcat tomcat) {text( Systeoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:17.605399", "n_pass": [197, 32, 16], "score": "0.3884", "loss": "1.6067", "code": " void addServlets(Tomcat tomcat) {text(steoperty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:20.239854", "n_pass": [198, 33, 17], "score": "0.3884", "loss": "1.6067", "code": " void addServlets(Tomcat tomcat) {text(operty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:22.884729", "n_pass": [199, 34, 18], "score": "0.4476", "loss": "1.6066", "code": " void addServlets(Tomcat tomcat) {text(rty(\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:25.498401", "n_pass": [200, 35, 19], "score": "0.5011", "loss": "1.186", "code": " void addServlets(Tomcat tomcat) {text((\"java.ir\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:28.141425", "n_pass": [202, 36, 20], "score": "0.5052", "loss": "1.2", "code": " void addServlets(Tomcat tomcat) {text((\"jar\")); Tomcat.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:30.780856", "n_pass": [205, 37, 21], "score": "0.5589", "loss": "0.8728", "code": " void addServlets(Tomcat tomcat) {text((\"jar\")); To.addServlet(ctx,et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:38.666768", "n_pass": [209, 40, 22], "score": "0.6337", "loss": "0.8275", "code": " void addServlets(Tomcat tomcat) {text((\"jar\")); To.addServlet(et()); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:41.294029", "n_pass": [210, 41, 23], "score": "0.6046", "loss": "1.6602", "code": " void addServlets(Tomcat tomcat) {text((\"jar\")); To.addServlet(); Mapping(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:43.909452", "n_pass": [212, 42, 24], "score": "0.2892", "loss": "3.0784", "code": " void addServlets(Tomcat tomcat) {text((\"jar\")); To.addServlet(); Mng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:46.540296", "n_pass": [217, 43, 25], "score": "0.1699", "loss": "4.1428", "code": "id addServlets(Tomcat tomcat) {text((\"jar\")); To.addServlet(); Mng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:50.785009", "n_pass": [223, 44, 26], "score": "0.1968", "loss": "4.9668", "code": "id addServlets(cat tomcat) {text((\"jar\")); To.addServlet(); Mng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:47:56.007500", "n_pass": [232, 46, 27], "score": "0.2142", "loss": "4.7814", "code": "id addServlets(cat tomcat) {text((\"jar\")).addServlet(); Mng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:48:16.296800", "n_pass": [303, 53, 28], "score": "0.2845", "loss": "4.1198", "code": "id addServlets(cat tomcat) {text((\"jar\")).addServlet();ng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:48:26.742544", "n_pass": [312, 57, 29], "score": "0.4368", "loss": "2.8186", "code": "d addServlets(cat tomcat) {text((\"jar\")).addServlet();ng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:48:33.863386", "n_pass": [325, 58, 30], "score": "0.4901", "loss": "2.541", "code": "d addServlets(t tomcat) {text((\"jar\")).addServlet();ng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:48:44.365234", "n_pass": [332, 62, 31], "score": "0.5415", "loss": "2.2009", "code": "d addServlets(t tomcat) {tt((\"jar\")).addServlet();ng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:48:46.982321", "n_pass": [335, 63, 32], "score": "0.5458", "loss": "2.1651", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();ng(\"/\" + ath); }"}
+{"time": "2021-01-23 13:49:49.052162", "n_pass": [441, 84, 33], "score": "0.5115", "loss": "2.1463", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();g(\"/\" + ath); }"}
+{"time": "2021-01-23 13:49:51.684198", "n_pass": [444, 85, 34], "score": "0.6302", "loss": "1.6399", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();g(\"\" + ath); }"}
+{"time": "2021-01-23 13:49:54.321429", "n_pass": [446, 86, 35], "score": "0.6302", "loss": "1.6399", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();g(\"\"+ ath); }"}
+{"time": "2021-01-23 13:49:56.956289", "n_pass": [448, 87, 36], "score": "0.6302", "loss": "1.6399", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();g(\"\"+ath); }"}
+{"time": "2021-01-23 13:50:07.373400", "n_pass": [454, 91, 37], "score": "0.6302", "loss": "1.6399", "code": "d addServlets(t tomcat) {tt((\"r\")).addServlet();g(\"\"+ath);}"}
+{"time": "2021-01-23 13:50:30.981689", "n_pass": [479, 98, 38], "score": "0.6302", "loss": "1.6399", "code": "d addServlets(t tomcat){tt((\"r\")).addServlet();g(\"\"+ath);}"}
+{"time": "2021-01-23 13:50:33.604984", "n_pass": [481, 99, 39], "score": "0.5914", "loss": "1.8249", "code": "d addServlets(t tomcat){t((\"r\")).addServlet();g(\"\"+ath);}"}
+{"time": "2021-01-23 13:50:36.214340", "n_pass": [482, 100, 40], "score": "0.6442", "loss": "1.5996", "code": "d addServlets(t tomcat){((\"r\")).addServlet();g(\"\"+ath);}"}
+{"time": "2021-01-23 13:50:38.818848", "n_pass": [486, 101, 41], "score": "0.6453", "loss": "1.607", "code": "d addServlets(t tomcat){((\"\")).addServlet();g(\"\"+ath);}"}
+
+Minimal simplified code:
+d addServlets(t tomcat){(("")).addServlet();g(""+ath);}
+

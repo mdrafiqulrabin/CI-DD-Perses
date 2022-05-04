@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreKey.java
+method_name = setIgnoreKey
+method_body = public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }
+predict, score, loss = setIgnoreKey, 0.44740182, 1.9016299
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:26:04.224112", "n_pass": [1, 1, 1], "score": "0.4474", "loss": "1.9016", "code": "public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }"}
+{"time": "2021-01-23 07:26:09.935262", "n_pass": [25, 5, 2], "score": "0.4634", "loss": "1.117", "code": "public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignorTopics = ignoreKeyTopics; return this; }"}
+{"time": "2021-01-23 07:26:11.249526", "n_pass": [26, 6, 3], "score": "0.448", "loss": "1.0255", "code": "public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignorpics; return this; }"}
+{"time": "2021-01-23 07:26:14.242074", "n_pass": [32, 8, 4], "score": "0.277", "loss": "2.8748", "code": "public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:26:17.190065", "n_pass": [49, 10, 5], "score": "0.2803", "loss": "3.0085", "code": "lder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:26:32.113173", "n_pass": [139, 19, 6], "score": "0.268", "loss": "3.4604", "code": "lder setIgnoreKey(olean ignoreKey, Set<String> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:26:41.165369", "n_pass": [148, 26, 7], "score": "0.268", "loss": "3.4604", "code": "lder setIgnoreKey(olean ignoreKey,t<String> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:26:42.470253", "n_pass": [150, 27, 8], "score": "0.345", "loss": "3.16", "code": "lder setIgnoreKey(olean ignoreKey,t<Sng> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:27:08.004642", "n_pass": [250, 44, 9], "score": "0.2451", "loss": "3.7577", "code": "lder setIgnoreKey(olean ignoreKey,t<ng> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:27:09.301628", "n_pass": [251, 45, 10], "score": "0.3161", "loss": "3.3762", "code": "lder setIgnoreKey(olean ignoreKey,t<g> ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:27:10.598862", "n_pass": [254, 46, 11], "score": "0.3161", "loss": "3.3762", "code": "lder setIgnoreKey(olean ignoreKey,t<g>ignoreKeyTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:27:22.355527", "n_pass": [263, 55, 12], "score": "0.3389", "loss": "4.0273", "code": "lder setIgnoreKey(olean ignoreKey,t<g>ignoreKeTopics) { thpics; return this; }"}
+{"time": "2021-01-23 07:27:27.570911", "n_pass": [269, 59, 13], "score": "0.5525", "loss": "2.5198", "code": "lder setIgnoreKey(olean ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:27:35.370464", "n_pass": [281, 65, 14], "score": "0.4939", "loss": "2.6433", "code": "ler setIgnoreKey(olean ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:27:36.688511", "n_pass": [282, 66, 15], "score": "0.6595", "loss": "2.2695", "code": "lr setIgnoreKey(olean ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:27:37.983916", "n_pass": [283, 67, 16], "score": "0.5706", "loss": "2.5907", "code": "l setIgnoreKey(olean ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:27:45.293277", "n_pass": [299, 69, 17], "score": "0.5706", "loss": "2.5907", "code": "l setIgnoreKey(oean ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:27:46.586663", "n_pass": [300, 70, 18], "score": "0.7032", "loss": "2.2157", "code": "l setIgnoreKey(oan ignoreKey,t<g>ignoreKeTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:28:11.365093", "n_pass": [325, 89, 19], "score": "0.7031", "loss": "2.4385", "code": "l setIgnoreKey(oan ignoreKey,t<g>ignoreKTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:28:26.951575", "n_pass": [356, 97, 20], "score": "0.7357", "loss": "3.1115", "code": "l setIgnoreKey(an ignoreKey,t<g>ignoreKTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:28:29.574499", "n_pass": [358, 99, 21], "score": "0.5311", "loss": "3.3127", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTopics) { pics; return this; }"}
+{"time": "2021-01-23 07:29:09.546787", "n_pass": [443, 124, 22], "score": "0.4914", "loss": "3.5568", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpics) { pics; return this; }"}
+{"time": "2021-01-23 07:29:12.131791", "n_pass": [445, 126, 23], "score": "0.4914", "loss": "3.5568", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpcs) { pics; return this; }"}
+{"time": "2021-01-23 07:29:14.751368", "n_pass": [447, 128, 24], "score": "0.4668", "loss": "3.3686", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpc) { pics; return this; }"}
+{"time": "2021-01-23 07:29:16.037359", "n_pass": [449, 129, 25], "score": "0.4668", "loss": "3.3686", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpc){ pics; return this; }"}
+{"time": "2021-01-23 07:29:17.332997", "n_pass": [451, 130, 26], "score": "0.4668", "loss": "3.3686", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpc){pics; return this; }"}
+{"time": "2021-01-23 07:29:23.851392", "n_pass": [457, 135, 27], "score": "0.4668", "loss": "3.3686", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpc){pics;return this; }"}
+{"time": "2021-01-23 07:29:31.661829", "n_pass": [470, 141, 28], "score": "0.4668", "loss": "3.3686", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTpc){pics;return this;}"}
+{"time": "2021-01-23 07:30:00.321449", "n_pass": [511, 159, 29], "score": "0.504", "loss": "2.9098", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKTc){pics;return this;}"}
+{"time": "2021-01-23 07:30:01.647459", "n_pass": [512, 160, 30], "score": "0.639", "loss": "2.8084", "code": "l setIgnoreKey(a ignoreKey,t<g>ignoreKT){pics;return this;}"}
+
+Minimal simplified code:
+l setIgnoreKey(a ignoreKey,t<g>ignoreKT){pics;return this;}
+

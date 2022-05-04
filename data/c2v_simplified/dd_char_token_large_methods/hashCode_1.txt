@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/hashCode_1.txt
+method_name = hashCode
+method_body = int hashCode(){result=null?hashCode():0;result=1*(password?hashCode():0)+(trustServerCertificate?1:0);(keyPassword?enabledSslProtocolSuites:0);(useFractionalSeconds?1:0);result=1*(socketFactory?socketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemory)(useCompression?1:0);result=(interactiveClient?1:0)+(useSsl?1:0)*(sessionVariables?sessionVariables:0)*(1);result=1*(createDatabaseIfNotExist);result=(continueBatchOnError?1:0)+(jdbcCompliantTruncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 19:24:07.364135", "n_pass": [1, 1, 1], "score": "0.9975", "loss": "0.0032", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCode():0)+(trustServerCertificate?1:0);(keyPassword?enabledSslProtocolSuites:0);(useFractionalSeconds?1:0);result=1*(socketFactory?socketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemory)(useCompression?1:0);result=(interactiveClient?1:0)+(useSsl?1:0)*(sessionVariables?sessionVariables:0)*(1);result=1*(createDatabaseIfNotExist);result=(continueBatchOnError?1:0)+(jdbcCompliantTruncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:10.020109", "n_pass": [10, 2, 2], "score": "0.9908", "loss": "0.0179", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCode():0)+(trustServerCertificate?1:0);(keyPassword?enabledSslProtocolSuites:0);(useFractionalSeconds?1:0);result=1*(socketFactory?socketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemoaseIfNotExist);result=(continueBatchOnError?1:0)+(jdbcCompliantTruncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:12.680282", "n_pass": [19, 3, 3], "score": "0.9908", "loss": "0.0417", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCode():0)+(trustServerCertificate?1:0);(keyPassword?enabledSslProtocolSuites:0);(useFractionalSeconds?1:0);result=1*(socketFactory?socketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemuncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:15.318944", "n_pass": [22, 4, 4], "score": "0.933", "loss": "0.7442", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCocolSuites:0);(useFractionalSeconds?1:0);result=1*(socketFactory?socketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemuncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:17.943234", "n_pass": [23, 5, 5], "score": "0.9568", "loss": "0.2164", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCoocketFactory:0);result=1*(pipe?localSocket:0);result=1*(sharedMemuncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:20.572142", "n_pass": [33, 6, 6], "score": "0.9156", "loss": "0.2549", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCocalSocket:0);result=1*(sharedMemuncation?1:0);result=1*(minPoolSize?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:23.188421", "n_pass": [35, 7, 7], "score": "0.6956", "loss": "0.5157", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCocalSocket:0);result=1*(sharedMemze?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:29.230237", "n_pass": [84, 9, 8], "score": "0.6956", "loss": "0.5157", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCet:0);result=1*(sharedMemze?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:31.865142", "n_pass": [86, 10, 9], "score": "0.9828", "loss": "0.0366", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCet:0);result=1*(mze?hashCode:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:35.285694", "n_pass": [130, 11, 10], "score": "0.9363", "loss": "0.2516", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCet:0);result=1*(mze?Code:0);(autocommit?1:0);}"}
+{"time": "2021-01-22 19:24:37.908598", "n_pass": [134, 12, 11], "score": "0.8953", "loss": "0.3234", "code": "int hashCode(){result=null?hashCode():0;result=1*(password?hashCet:0);result=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:41.732534", "n_pass": [141, 13, 12], "score": "0.8734", "loss": "0.4723", "code": "int hashCode(){rt=null?hashCode():0;result=1*(password?hashCet:0);result=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:44.735349", "n_pass": [144, 14, 13], "score": "0.3375", "loss": "3.7547", "code": "int hashCode(){rt=null?hode():0;result=1*(password?hashCet:0);result=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:47.362887", "n_pass": [147, 15, 14], "score": "0.2021", "loss": "3.2077", "code": "int hashCode(){rt=null?hode():0;lt=1*(password?hashCet:0);result=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:52.631169", "n_pass": [152, 17, 15], "score": "0.2708", "loss": "3.654", "code": "int hashCode(){rt=null?hode():0;lt=1*(password?het:0);result=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:55.254647", "n_pass": [155, 18, 16], "score": "0.248", "loss": "3.7753", "code": "int hashCode(){rt=null?hode():0;lt=1*(password?het:0);re=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:24:59.500095", "n_pass": [173, 19, 17], "score": "0.1679", "loss": "3.4157", "code": "int hashCode(){rt=null?hode():0;lt=1*(pard?het:0);re=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:25:03.771435", "n_pass": [234, 20, 18], "score": "0.2023", "loss": "3.241", "code": "int hashCode(){rt=null?hode():0;lt=1*(pa?het:0);re=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:25:06.422079", "n_pass": [235, 21, 19], "score": "0.1597", "loss": "3.2172", "code": "int hashCode(){rt=null?hode():0;lt=1*(pa?h:0);re=1*(mze?Code:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:25:14.706332", "n_pass": [244, 24, 20], "score": "0.1775", "loss": "3.3183", "code": "int hashCode(){rt=null?hode():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(autmit?1:0);}"}
+{"time": "2021-01-22 19:25:17.315129", "n_pass": [248, 25, 21], "score": "0.4171", "loss": "2.7429", "code": "int hashCode(){rt=null?hode():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(amit?1:0);}"}
+{"time": "2021-01-22 19:25:19.935406", "n_pass": [249, 26, 22], "score": "0.1981", "loss": "2.9712", "code": "int hashCode(){rt=null?hode():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:27.693681", "n_pass": [262, 28, 23], "score": "0.1837", "loss": "3.0987", "code": "int hashCode(){rt=ll?hode():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:30.318167", "n_pass": [265, 29, 24], "score": "0.3641", "loss": "1.8581", "code": "int hashCode(){rt=ll?he():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:43.326209", "n_pass": [365, 32, 25], "score": "0.54", "loss": "1.3985", "code": "int hashCode(){rt=ll?h():0;lt=1*(pa?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:45.971394", "n_pass": [370, 33, 26], "score": "0.8497", "loss": "0.7822", "code": "int hashCode(){rt=ll?h():0;t=1*(pa?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:49.011298", "n_pass": [376, 34, 27], "score": "0.8535", "loss": "0.7392", "code": "int hashCode(){rt=ll?h():0;t=1*(a?h:0);re=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:51.641013", "n_pass": [384, 35, 28], "score": "0.7318", "loss": "1.033", "code": "int hashCode(){rt=ll?h():0;t=1*(a?h:0);e=1*(mze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:25:54.673203", "n_pass": [390, 36, 29], "score": "0.3286", "loss": "1.9015", "code": "int hashCode(){rt=ll?h():0;t=1*(a?h:0);e=1*(ze?Co:0);(at?1:0);}"}
+{"time": "2021-01-22 19:26:02.545273", "n_pass": [394, 39, 30], "score": "0.3278", "loss": "1.9489", "code": "int hashCode(){rt=ll?h():0;t=1*(a?h:0);e=1*(ze?o:0);(at?1:0);}"}
+{"time": "2021-01-22 19:26:05.193795", "n_pass": [401, 40, 31], "score": "0.2237", "loss": "2.406", "code": "int hashCode(){rt=ll?h():0;t=1*(a?h:0);e=1*(ze?o:0);(t?1:0);}"}
+{"time": "2021-01-22 19:26:19.376568", "n_pass": [423, 44, 32], "score": "0.2643", "loss": "2.1858", "code": "int hashCode(){t=ll?h():0;t=1*(a?h:0);e=1*(ze?o:0);(t?1:0);}"}
+{"time": "2021-01-22 19:26:22.380572", "n_pass": [426, 45, 33], "score": "0.2258", "loss": "2.2201", "code": "int hashCode(){t=l?h():0;t=1*(a?h:0);e=1*(ze?o:0);(t?1:0);}"}
+
+Minimal simplified code:
+int hashCode(){t=l?h():0;t=1*(a?h:0);e=1*(ze?o:0);(t?1:0);}
+

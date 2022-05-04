@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/service/http.directory/src/main/java/org/kaazing/gateway/service/http/directory/cachecontrol/PatternCacheControl_setDirective.java
+method_name = setDirective
+method_body = public void setDirective(Directive directive, String value) { directives.put(directive, value); }
+predict, score, loss = setDirective, 0.40320441126823425, 0.9317130446434021
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:05:55.792179", "n_pass": [1, 1, 1], "score": "0.4032", "loss": "0.9317", "code": "public void setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:05:58.822356", "n_pass": [44, 2, 2], "score": "0.4032", "loss": "0.9317", "code": " void setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:06:12.729799", "n_pass": [89, 7, 3], "score": "0.5844", "loss": "0.5595", "code": "id setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:06:27.338424", "n_pass": [101, 12, 4], "score": "0.3697", "loss": "1.0324", "code": "id setDirective(Directive directive,ring value) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:06:29.937630", "n_pass": [102, 13, 5], "score": "0.3954", "loss": "0.97", "code": "id setDirective(Directive directive,g value) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:06:32.540873", "n_pass": [104, 14, 6], "score": "0.3976", "loss": "0.9694", "code": "id setDirective(Directive directive,g ve) { directives.put(directive, value); }"}
+{"time": "2021-01-23 16:06:43.007032", "n_pass": [110, 18, 7], "score": "0.6799", "loss": "0.4123", "code": "id setDirective(Directive directive,g ve) { directivest(directive, value); }"}
+{"time": "2021-01-23 16:07:03.234245", "n_pass": [127, 25, 8], "score": "0.4849", "loss": "0.8836", "code": "id setDirective(Directive dctive,g ve) { directivest(directive, value); }"}
+{"time": "2021-01-23 16:07:05.833260", "n_pass": [128, 26, 9], "score": "0.2442", "loss": "2.8935", "code": "id setDirective(Directive dve,g ve) { directivest(directive, value); }"}
+{"time": "2021-01-23 16:07:08.437583", "n_pass": [133, 27, 10], "score": "0.2442", "loss": "2.8935", "code": "id setDirective(Directive dve,g ve) { dctivest(directive, value); }"}
+{"time": "2021-01-23 16:07:11.041668", "n_pass": [134, 28, 11], "score": "0.2442", "loss": "2.8935", "code": "id setDirective(Directive dve,g ve) { dvest(directive, value); }"}
+{"time": "2021-01-23 16:07:49.979636", "n_pass": [209, 42, 12], "score": "0.3224", "loss": "2.7312", "code": "id setDirective(Directive dve,g ve) { dvest(directive,alue); }"}
+{"time": "2021-01-23 16:07:52.621229", "n_pass": [210, 43, 13], "score": "0.2642", "loss": "2.8479", "code": "id setDirective(Directive dve,g ve) { dvest(directive,ue); }"}
+{"time": "2021-01-23 16:07:57.834047", "n_pass": [215, 45, 14], "score": "0.4561", "loss": "1.4713", "code": "i setDirective(Directive dve,g ve) { dvest(directive,ue); }"}
+{"time": "2021-01-23 16:08:21.348477", "n_pass": [237, 52, 15], "score": "0.3537", "loss": "1.2444", "code": "i setDirective(Directive e,g ve) { dvest(directive,ue); }"}
+{"time": "2021-01-23 16:09:05.799751", "n_pass": [315, 66, 16], "score": "0.3537", "loss": "1.2444", "code": "i setDirective(Directive e,g ve) {dvest(directive,ue); }"}
+{"time": "2021-01-23 16:09:13.589886", "n_pass": [318, 69, 17], "score": "0.3537", "loss": "1.2444", "code": "i setDirective(Directive e,g ve) {dvst(directive,ue); }"}
+{"time": "2021-01-23 16:09:52.824041", "n_pass": [336, 84, 18], "score": "0.3537", "loss": "1.2444", "code": "i setDirective(Directive e,g ve) {dvst(directive,ue);}"}
+{"time": "2021-01-23 16:10:29.953614", "n_pass": [370, 96, 19], "score": "0.3537", "loss": "1.2444", "code": "i setDirective(Directive e,g ve){dvst(directive,ue);}"}
+
+Minimal simplified code:
+i setDirective(Directive e,g ve){dvst(directive,ue);}
+

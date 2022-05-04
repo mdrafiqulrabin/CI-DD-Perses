@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/protyposis__MediaPlayer-Extended/MediaPlayer/src/main/java/net/protyposis/android/mediaplayer/MediaCodecAudioDecoder_onOutputFormatChanged.java
+method_name = onOutputFormatChanged
+method_body = @Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }
+predict, score, loss = onOutputFormatChanged, 0.43241316080093384, 0.9770386815071106
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:21:28.061287", "n_pass": [1, 1, 1], "score": "0.4324", "loss": "0.977", "code": "@Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }"}
+{"time": "2021-01-20 07:21:36.766300", "n_pass": [25, 4, 2], "score": "0.4784", "loss": "0.8344", "code": "@Override protected void onOutputFormatChanged(MediaFormat format) {init(format); }"}
+{"time": "2021-01-20 07:21:45.786616", "n_pass": [52, 7, 3], "score": "0.5024", "loss": "0.7864", "code": "@Overrideprotected void onOutputFormatChanged(MediaFormat format) {init(format); }"}
+{"time": "2021-01-20 07:21:48.392639", "n_pass": [53, 8, 4], "score": "0.4784", "loss": "0.8344", "code": "@Override void onOutputFormatChanged(MediaFormat format) {init(format); }"}
+{"time": "2021-01-20 07:21:54.144959", "n_pass": [89, 9, 5], "score": "0.4784", "loss": "0.8344", "code": "@Override void onOutputFormatChanged(MediaFormat format){init(format); }"}
+{"time": "2021-01-20 07:22:01.978428", "n_pass": [96, 12, 6], "score": "0.4784", "loss": "0.8344", "code": "@Override void onOutputFormatChanged(MediaFormat format){init(format);}"}
+
+Minimal simplified code:
+@Override void onOutputFormatChanged(MediaFormat format){init(format);}
+

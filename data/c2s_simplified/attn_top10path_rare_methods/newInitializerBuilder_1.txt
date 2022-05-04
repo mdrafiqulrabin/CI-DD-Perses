@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/Stetho_newInitializerBuilder.java
+method_name = newInitializerBuilder
+method_body = public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }
+
+topk path-contexts for sub-token: new
+[0.1530] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1359] context,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.1314] context,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.1224] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.0622] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0397] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,context
+[0.0325] initializer|builder,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,context
+[0.0206] context,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,context
+[0.0156] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0138] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,context
+
+topk terminals for sub-token: new
+['initializer|builder', 'METHOD_NAME', 'context', 'initializer|builder', 'context', 'initializer|builder', 'METHOD_NAME', 'initializer|builder', 'initializer|builder', 'context', 'initializer|builder', 'context', 'initializer|builder', 'context', 'context', 'context', 'METHOD_NAME', 'context', 'METHOD_NAME', 'context']
+
+topk path-contexts for sub-token: initializer
+[0.2273] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.2203] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.1977] context,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.1873] context,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.0368] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0274] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,context
+[0.0205] initializer|builder,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,context
+[0.0037] context,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,context
+[0.0032] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0028] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,context
+
+topk terminals for sub-token: initializer
+['initializer|builder', 'METHOD_NAME', 'METHOD_NAME', 'initializer|builder', 'context', 'initializer|builder', 'context', 'initializer|builder', 'initializer|builder', 'context', 'initializer|builder', 'context', 'initializer|builder', 'context', 'context', 'context', 'METHOD_NAME', 'context', 'METHOD_NAME', 'context']
+
+topk path-contexts for sub-token: builder
+[0.4835] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1302] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.0595] context,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.0562] context,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,initializer|builder
+[0.0272] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0267] initializer|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,context
+[0.0127] initializer|builder,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,context
+[0.0045] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context
+[0.0036] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,context
+[0.0033] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,context
+
+topk terminals for sub-token: builder
+['initializer|builder', 'METHOD_NAME', 'METHOD_NAME', 'initializer|builder', 'context', 'initializer|builder', 'context', 'initializer|builder', 'initializer|builder', 'context', 'initializer|builder', 'context', 'initializer|builder', 'context', 'METHOD_NAME', 'context', 'METHOD_NAME', 'context', 'METHOD_NAME', 'context']
+

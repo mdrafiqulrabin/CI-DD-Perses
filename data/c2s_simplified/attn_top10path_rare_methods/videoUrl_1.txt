@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/model/Video_videoUrl.java
+method_name = videoUrl
+method_body = public VideoBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; }
+
+topk path-contexts for sub-token: video
+[0.1298] this,ThisExpr0|FieldAccessExpr0|NameExpr2,video|url
+[0.1230] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.1131] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.0644] video|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.0516] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,video|url
+[0.0443] video|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0423] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,video|url
+[0.0402] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,video|url
+[0.0344] video|url,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,video|url
+[0.0338] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,video|url
+
+topk terminals for sub-token: video
+['this', 'video|url', 'string', 'video|url', 'METHOD_NAME', 'video|url', 'video|url', 'video|url', 'this', 'video|url', 'video|builder', 'METHOD_NAME', 'string', 'video|url', 'METHOD_NAME', 'video|url', 'video|url', 'video|url', 'METHOD_NAME', 'video|url']
+
+topk path-contexts for sub-token: url
+[0.1503] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,video|url
+[0.1209] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.1045] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.0874] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,video|url
+[0.0795] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,video|url
+[0.0689] this,ThisExpr0|FieldAccessExpr0|NameExpr2,video|url
+[0.0673] video|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,video|url
+[0.0664] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,video|url
+[0.0622] video|url,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,video|url
+[0.0621] video|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,video|url
+
+topk terminals for sub-token: url
+['METHOD_NAME', 'video|url', 'METHOD_NAME', 'video|url', 'string', 'video|url', 'this', 'video|url', 'METHOD_NAME', 'video|url', 'this', 'video|url', 'video|url', 'video|url', 'string', 'video|url', 'video|url', 'video|url', 'video|url', 'video|url']
+

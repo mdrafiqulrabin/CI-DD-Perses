@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/TestLocalResolver_init.java
+method_name = init
+method_body = @Before public void init() { WEB_22_LOCAL = urlFor("resources/web-app_2_2.dtd"); WEB_31_LOCAL = urlFor("resources/web-app_3_1.xsd"); WEBCOMMON_31_LOCAL = urlFor("resources/web-common_3_1.xsd"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }
+predict, score, loss = setup, 0.48356265, 2.8376384
+
+Ignoring as original_method_name != predicted_method_name.
+

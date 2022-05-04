@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslUtils_get.java
+method_name = get
+method_body = @SuppressWarnings("unchecked") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); Field field = clazz.getField(name); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { throw new IllegalStateException("failed get field " + path + "." + name, e); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 22:52:27.920699", "score": "0.4351", "loss": "1.0165", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); Field field = clazz.getField(name); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { throw new IllegalStateException(\"failed get field \" + path + \".\" + name, e); } } }"}
+{"time": "2020-12-28 22:58:55.252961", "score": "0.5345", "loss": "0.8035", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { throw new IllegalStateException(\"failed get field \" + path + \".\" + name, e); } } }"}
+{"time": "2020-12-28 23:00:14.476305", "score": "0.5655", "loss": "0.7065", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { } } }"}
+{"time": "2020-12-28 23:03:31.001952", "score": "0.8633", "loss": "0.2208", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get( ) { try { Class<?> clazz = path.getClass(); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { } } }"}
+{"time": "2020-12-28 23:04:22.058777", "score": "0.8831", "loss": "0.1955", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get( ) { try { Class<?> getClass ; return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { } } }"}
+{"time": "2020-12-28 23:05:13.332373", "score": "0.7552", "loss": "0.4248", "code": "class T { @SuppressWarnings(\"unchecked\") public static <T> Expression<T> get( ) { try { Class<?> getClass ; return (Expression<T>) field.get(path); } catch ( SecurityException e) { } } }"}
+{"time": "2020-12-28 23:05:53.179900", "score": "0.4734", "loss": "0.994", "code": "class T { <T> Expression<T> get( ) { try { Class<?> getClass ; return (Expression<T>) field.get(path); } catch ( SecurityException e) { } } }"}
+{"time": "2020-12-28 23:10:33.504267", "score": "0.2594", "loss": "1.9249", "code": "class T { <T> Expression<T> get( ) { try { Class<?> getClass ; return (Expression ) field.get(path); } catch ( SecurityException e) { } } }"}
+{"time": "2020-12-28 23:16:52.549094", "score": "0.3208", "loss": "1.8917", "code": "class T { <T> Expression<T> get( ) { try { return (Expression ) field.get(path); } catch ( SecurityException e) { } } }"}
+
+Minimal simplified code:
+class T {
+                                             <T> Expression<T> get(                               ) { try {                                                                       return (Expression   ) field.get(path); } catch (                       SecurityException                                                     e) {                                                                              } }
+}
+
+

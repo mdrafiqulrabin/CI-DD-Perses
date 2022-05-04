@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/http/TestBug49158_addServlets.java
+method_name = addServlets
+method_body = public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext("", System.getProperty("java.io.tmpdir")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping("/" + path, path); }
+predict, score, loss = addServlets, 0.33402684330940247, 1.6350589990615845
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:27:42.097321", "n_pass": [1, 1, 1], "score": "0.334", "loss": "1.6351", "code": "public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:27:50.465631", "n_pass": [55, 4, 2], "score": "0.435", "loss": "1.2863", "code": "public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:27:53.588811", "n_pass": [63, 5, 3], "score": "0.3513", "loss": "1.6207", "code": "public static void addServlets(Tomcat tomcat) {  tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:27:56.237956", "n_pass": [70, 6, 4], "score": "0.2187", "loss": "2.3217", "code": "public static void addServlets(Tomcat tomcat) {  tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:02.339170", "n_pass": [118, 8, 5], "score": "0.2187", "loss": "2.3217", "code": "static void addServlets(Tomcat tomcat) {  tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:04.975919", "n_pass": [119, 9, 6], "score": "0.2187", "loss": "2.3217", "code": "void addServlets(Tomcat tomcat) {  tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:08.125502", "n_pass": [125, 10, 7], "score": "0.2187", "loss": "2.3217", "code": "void addServlets(Tomcat tomcat) {tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:10.764259", "n_pass": [126, 11, 8], "score": "0.2989", "loss": "1.9131", "code": "void addServlets(Tomcat tomcat) {addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:13.412426", "n_pass": [129, 12, 9], "score": "0.3982", "loss": "1.4482", "code": "void addServlets(Tomcat tomcat) {addContext(\"\", (\"java.io.tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:16.042372", "n_pass": [131, 13, 10], "score": "0.4055", "loss": "1.4033", "code": "void addServlets(Tomcat tomcat) {addContext(\"\", (\"javatmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path, path); }"}
+{"time": "2021-01-20 06:28:18.682245", "n_pass": [141, 14, 11], "score": "0.4065", "loss": "1.4046", "code": "void addServlets(Tomcat tomcat) {addContext(\"\", (\"javatmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:27.121917", "n_pass": [211, 16, 12], "score": "0.4065", "loss": "1.4046", "code": "void addServlets(Tomcat tomcat){addContext(\"\", (\"javatmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:29.761766", "n_pass": [217, 17, 13], "score": "0.4065", "loss": "1.4046", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"javatmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:32.405910", "n_pass": [220, 18, 14], "score": "0.3881", "loss": "1.4679", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"tmpdir\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:35.051495", "n_pass": [221, 19, 15], "score": "0.4112", "loss": "1.389", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx,Servlet()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:40.321951", "n_pass": [229, 21, 16], "score": "0.2856", "loss": "1.8584", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx()); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:42.959916", "n_pass": [230, 22, 17], "score": "0.2819", "loss": "1.8731", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx); ctx.addServletMapping(\"/\" + path); }"}
+{"time": "2021-01-20 06:28:54.360967", "n_pass": [290, 25, 18], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx); ctx.addServletMapping(\"\" + path); }"}
+{"time": "2021-01-20 06:28:56.993169", "n_pass": [291, 26, 19], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx); ctx.addServletMapping(\"\"+ path); }"}
+{"time": "2021-01-20 06:28:59.615454", "n_pass": [293, 27, 20], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx); ctx.addServletMapping(\"\"+path); }"}
+{"time": "2021-01-20 06:29:02.232025", "n_pass": [297, 28, 21], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\")); Tomcat.addServlet(ctx); ctx.addServletMapping(\"\"+path);}"}
+{"time": "2021-01-20 06:29:05.713428", "n_pass": [319, 29, 22], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\"));Tomcat.addServlet(ctx); ctx.addServletMapping(\"\"+path);}"}
+{"time": "2021-01-20 06:29:13.598323", "n_pass": [327, 32, 23], "score": "0.3143", "loss": "1.7561", "code": "void addServlets(Tomcat tomcat){addContext(\"\",(\"\"));Tomcat.addServlet(ctx);ctx.addServletMapping(\"\"+path);}"}
+
+Minimal simplified code:
+void addServlets(Tomcat tomcat){addContext("",(""));Tomcat.addServlet(ctx);ctx.addServletMapping(""+path);}
+

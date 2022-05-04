@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/jsse/JSSESocketFactory_acceptSocket.java
+method_name = acceptSocket
+method_body = @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock = null; try { asock = (SSLSocket) socket.accept(); } catch (SSLException e) { throw new SocketException("SSL handshake error" + e.toString()); } return asock; }
+
+topk path-contexts:
+[0.2011] sslsocket,(ClassOrInterfaceType0)^(CastExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)^(TryStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),asock
+[0.1279] socket,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),socket
+[0.0969] socket,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),serversocket
+[0.0516] socket,(ClassOrInterfaceType1)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0469] sslsocket,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),asock
+[0.0349] ioexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(CastExpr)_(ClassOrInterfaceType0),sslsocket
+[0.0322] socket,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType4),ioexception
+[0.0318] serversocket,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),sslsocket
+[0.0316] socketexception,(ClassOrInterfaceType0)^(ObjectCreationExpr)^(ThrowStmt)^(BlockStmt)^(CatchClause)^(TryStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),asock
+[0.0227] serversocket,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType4),ioexception
+
+topk terminals:
+['sslsocket', 'asock', 'socket', 'socket', 'socket', 'serversocket', 'socket', 'METHOD_NAME', 'sslsocket', 'asock', 'ioexception', 'sslsocket', 'socket', 'ioexception', 'serversocket', 'sslsocket', 'socketexception', 'asock', 'serversocket', 'ioexception']
+

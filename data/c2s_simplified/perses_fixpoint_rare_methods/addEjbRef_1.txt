@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addEjbRef.java
+method_name = addEjbRef
+method_body = public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:12:15.568155", "score": "0.4161", "loss": "1.3334", "code": "class T { public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); } }"}
+{"time": "2021-01-24 04:13:33.956551", "score": "0.2879", "loss": "2.0162", "code": "class T { public void addEjbRef( ) { ejbRefs.put(ejbRef.getName(), ejbRef); } }"}
+{"time": "2021-01-24 04:13:44.719353", "score": "0.2681", "loss": "2.4622", "code": "class T { public void addEjbRef( ) { ejbRefs.put(ejbRef.getName() ); } }"}
+{"time": "2021-01-24 04:13:55.515761", "score": "0.2681", "loss": "2.4622", "code": "class T { void addEjbRef( ) { ejbRefs.put(ejbRef.getName() ); } }"}
+
+Minimal simplified code:
+class T {
+       void addEjbRef(                 ) { ejbRefs.put(ejbRef.getName()        ); }
+}
+
+

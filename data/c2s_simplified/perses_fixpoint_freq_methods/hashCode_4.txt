@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/websocket/snake/Location_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = x; result = 31 * result + y; return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:10:55.822809", "score": "0.9967", "loss": "0.0042", "code": "class T { @Override public int hashCode() { int result = x; result = 31 * result + y; return result; } }"}
+{"time": "2020-12-21 09:11:43.678650", "score": "0.9981", "loss": "0.0023", "code": "class T { @Override public int hashCode() { int result = x; result = 31 * result + y; } }"}
+{"time": "2020-12-21 09:12:04.778918", "score": "0.9286", "loss": "0.159", "code": "class T { @Override public int hashCode() { int result = x; } }"}
+{"time": "2020-12-21 09:12:49.128029", "score": "0.9286", "loss": "0.159", "code": "class T { @Override int hashCode() { int result = x; } }"}
+{"time": "2020-12-21 09:13:10.155867", "score": "0.6437", "loss": "1.0115", "code": "class T { @Override int hashCode() { int result ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        int hashCode() { int result    ;                                          }
+}
+
+

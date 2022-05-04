@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/SurfaceViewRenderer_setScalingType.java
+method_name = setScalingType
+method_body = public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 03:10:53.901268", "score": "0.3675", "loss": "3.4159", "code": "class T { public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); } }"}
+{"time": "2021-01-25 03:13:59.866145", "score": "0.5869", "loss": "2.509", "code": "class T { public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); } }"}
+{"time": "2021-01-25 03:15:58.701193", "score": "0.7035", "loss": "1.7247", "code": "class T { public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); } }"}
+{"time": "2021-01-25 03:24:36.658412", "score": "0.6244", "loss": "1.6767", "code": "class T { public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation ); } }"}
+{"time": "2021-01-25 03:25:20.470195", "score": "0.6244", "loss": "1.6767", "code": "class T { void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation ); } }"}
+{"time": "2021-01-25 03:28:05.308581", "score": "0.238", "loss": "2.825", "code": "class T { void setScalingType( ) { videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation ); } }"}
+
+Minimal simplified code:
+class T {
+       void setScalingType(                                                                                                                 ) {                                    videoLayoutMeasure.setScalingType(                                                           );                  }
+}
+
+

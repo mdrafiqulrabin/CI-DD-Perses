@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/MonitorStarter_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, "conf/dubbo.properties"); Main.main(args); }
+predict, score, loss = main, 0.9948009, 0.008960725
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:32:01.191759", "n_pass": [1, 1, 1], "score": "0.9948", "loss": "0.009", "code": "public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:02.910726", "n_pass": [44, 2, 2], "score": "0.9948", "loss": "0.009", "code": " void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:04.248946", "n_pass": [50, 3, 3], "score": "0.9863", "loss": "0.0246", "code": " void main(String[] args) { System.setProperty(_PROPERTIES_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:05.568016", "n_pass": [51, 4, 4], "score": "0.9897", "loss": "0.0197", "code": " void main(String[] args) { System.setProperty(KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:06.886869", "n_pass": [52, 5, 5], "score": "0.9983", "loss": "0.0038", "code": " void main(String[] args) { System.setProperty(\"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:08.219454", "n_pass": [54, 6, 6], "score": "0.9978", "loss": "0.0041", "code": " void main(String[] args) { System.setProperty(\"conf/\"); Main.main(args); }"}
+{"time": "2020-12-27 04:32:09.534785", "n_pass": [56, 7, 7], "score": "0.9964", "loss": "0.0058", "code": " void main(String[] args) { System.setProperty(\"conf/\");main(args); }"}
+{"time": "2020-12-27 04:32:12.213629", "n_pass": [91, 8, 8], "score": "0.9964", "loss": "0.0058", "code": "void main(String[] args) { System.setProperty(\"conf/\");main(args); }"}
+{"time": "2020-12-27 04:32:14.240921", "n_pass": [99, 9, 9], "score": "0.9964", "loss": "0.0058", "code": "void main(String[]args) { System.setProperty(\"conf/\");main(args); }"}
+{"time": "2020-12-27 04:32:15.573446", "n_pass": [103, 10, 10], "score": "0.99", "loss": "0.0239", "code": "void main(String[]args) { System(\"conf/\");main(args); }"}
+{"time": "2020-12-27 04:32:16.917262", "n_pass": [105, 11, 11], "score": "0.9986", "loss": "0.0035", "code": "void main(String[]args) { System(\"\");main(args); }"}
+{"time": "2020-12-27 04:32:18.983057", "n_pass": [120, 12, 12], "score": "0.999", "loss": "0.0029", "code": "void main(String[]args) {(\"\");main(args); }"}
+{"time": "2020-12-27 04:32:22.394907", "n_pass": [155, 13, 13], "score": "0.9824", "loss": "0.0318", "code": "void main(String[]args) {(\"\");(args); }"}
+{"time": "2020-12-27 04:32:23.707184", "n_pass": [160, 14, 14], "score": "0.9824", "loss": "0.0318", "code": "void main(String[]args) {(\"\");(args);}"}
+{"time": "2020-12-27 04:32:25.766666", "n_pass": [171, 15, 15], "score": "0.9824", "loss": "0.0318", "code": "void main(String[]args){(\"\");(args);}"}
+
+Minimal simplified code:
+void main(String[]args){("");(args);}
+

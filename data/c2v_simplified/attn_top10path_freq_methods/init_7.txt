@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+
+topk path-contexts:
+[0.0857] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),init
+[0.0857] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),init
+[0.0697] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),filer
+[0.0634] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getfiler
+[0.0574] init,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getfiler
+[0.0545] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getfiler
+[0.0527] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),elementutils
+[0.0353] helper,(ClassOrInterfaceType0)^(ObjectCreationExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getfiler
+[0.0329] env,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),filer
+[0.0278] processingenvironment,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),messenger
+
+topk terminals:
+['processingenvironment', 'init', 'processingenvironment', 'init', 'processingenvironment', 'filer', 'METHOD_NAME', 'getfiler', 'init', 'getfiler', 'processingenvironment', 'getfiler', 'processingenvironment', 'elementutils', 'helper', 'getfiler', 'env', 'filer', 'processingenvironment', 'messenger']
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-core/src/main/java/com/timeyang/jkes/core/metadata/FieldMetadata_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:45:58.852784", "score": "0.9988", "loss": "0.0015", "code": "class T { @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; } }"}
+{"time": "2020-12-21 08:46:46.823184", "score": "0.9993", "loss": "0.0011", "code": "class T { @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); } }"}
+{"time": "2020-12-21 08:47:07.938634", "score": "0.9983", "loss": "0.0039", "code": "class T { @Override public int hashCode() { int result = method.hashCode(); } }"}
+{"time": "2020-12-21 08:47:43.384116", "score": "0.6437", "loss": "1.0115", "code": "class T { @Override public int hashCode() { int result ; } }"}
+{"time": "2020-12-21 08:48:04.456098", "score": "0.6437", "loss": "1.0115", "code": "class T { @Override int hashCode() { int result ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        int hashCode() { int result                    ;                                                                                                      }
+}
+
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/ContextTransaction_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("Transaction["); sb.append("]"); return (sb.toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 22:09:14.296821", "score": "0.9997", "loss": "0.0003", "code": "class T { @Override public String toString() { StringBuilder sb = new StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); } }"}
+{"time": "2020-12-28 22:12:29.934618", "score": "0.9983", "loss": "0.0021", "code": "class T { @Override public String toString() { StringBuilder sb = new StringBuilder(\"Transaction[\"); sb.append(\"]\"); } }"}
+{"time": "2020-12-28 22:13:49.214742", "score": "0.8815", "loss": "0.2151", "code": "class T { @Override public String toString() { StringBuilder sb = new StringBuilder(\"Transaction[\"); } }"}
+{"time": "2020-12-28 22:15:50.512400", "score": "0.4503", "loss": "1.1001", "code": "class T { @Override public String toString() { StringBuilder sb ; } }"}
+{"time": "2020-12-28 22:17:14.964213", "score": "0.4503", "loss": "1.1001", "code": "class T { @Override String toString() { StringBuilder sb ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString() { StringBuilder sb                                    ;                                         }
+}
+
+

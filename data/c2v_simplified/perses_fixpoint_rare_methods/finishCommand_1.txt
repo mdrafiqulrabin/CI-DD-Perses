@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/execution/Command_finishCommand.java
+method_name = finishCommand
+method_body = protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:54:26.939971", "score": "0.3903", "loss": "1.1902", "code": "class T { protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); } }"}
+{"time": "2021-01-25 04:58:50.240454", "score": "0.4648", "loss": "0.9491", "code": "class T { protected final void finishCommand() { this.executing = false; this.notifyAll(); } }"}
+{"time": "2021-01-25 05:00:49.667443", "score": "0.3518", "loss": "1.4551", "code": "class T { protected final void finishCommand() { executing = false; this.notifyAll(); } }"}
+{"time": "2021-01-25 05:01:29.474164", "score": "0.3518", "loss": "1.4551", "code": "class T { void finishCommand() { executing = false; this.notifyAll(); } }"}
+
+Minimal simplified code:
+class T {
+                void finishCommand() {      executing = false;                       this.notifyAll(); }
+}
+
+

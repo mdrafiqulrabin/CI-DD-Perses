@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/spring-ws-core/src/main/java/org/springframework/ws/client/core/support/WebServiceGatewaySupport_setDefaultUri.java
+method_name = setDefaultUri
+method_body = public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 01:30:34.004094", "score": "0.4727", "loss": "1.2875", "code": "class T { public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); } }"}
+{"time": "2021-01-25 01:34:21.412660", "score": "0.4727", "loss": "1.2875", "code": "class T { void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); } }"}
+
+Minimal simplified code:
+class T {
+             void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }
+}
+
+

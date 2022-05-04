@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/windy1__google-places-api-java/src/main/java/se/walkercrou/places/Hours_setClosingTime.java
+method_name = setClosingTime
+method_body = protected Period setClosingTime(String closingTime) { this.closingTime = closingTime; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:11:52.408886", "score": "0.4556", "loss": "0.8631", "code": "class T { protected Period setClosingTime(String closingTime) { this.closingTime = closingTime; return this; } }"}
+{"time": "2021-01-24 03:12:42.998383", "score": "0.9785", "loss": "0.0557", "code": "class T { protected Period setClosingTime(String closingTime) { this.closingTime = closingTime; } }"}
+{"time": "2021-01-24 03:13:04.766960", "score": "0.9443", "loss": "0.1314", "code": "class T { protected Period setClosingTime(String closingTime) { closingTime = closingTime; } }"}
+{"time": "2021-01-24 03:13:26.724058", "score": "0.9443", "loss": "0.1314", "code": "class T { Period setClosingTime(String closingTime) { closingTime = closingTime; } }"}
+
+Minimal simplified code:
+class T {
+          Period setClosingTime(String closingTime) {      closingTime = closingTime;              }
+}
+
+

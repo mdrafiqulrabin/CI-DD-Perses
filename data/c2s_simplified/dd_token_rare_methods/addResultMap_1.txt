@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_addResultMap.java
+method_name = addResultMap
+method_body = public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }
+predict, score, loss = addResultMap, 0.27101168, 2.9740303
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:19:39.188784", "n_pass": [1, 1, 1], "score": "0.271", "loss": "2.974", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }"}
+{"time": "2021-01-20 06:19:40.888608", "n_pass": [10, 2, 2], "score": "0.2772", "loss": "3.9229", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getIdrm); checkGloballyForDiscriminatedNestedResultMaps(rm); }"}
+{"time": "2021-01-20 06:19:42.582954", "n_pass": [39, 3, 3], "score": "0.4465", "loss": "4.2593", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getIdrm); checkGloballyForDiscriminatedNestedResultMaps; }"}
+{"time": "2021-01-20 06:19:43.904176", "n_pass": [40, 4, 4], "score": "0.4465", "loss": "4.2593", "code": "void addResultMap(ResultMap rm) { resultMaps.put(rm.getIdrm); checkGloballyForDiscriminatedNestedResultMaps; }"}
+{"time": "2021-01-20 06:19:46.902803", "n_pass": [49, 6, 5], "score": "0.4", "loss": "3.1528", "code": "void addResultMap(ResultMap rm) { resultMaps.put(rm.getIdrm); }"}
+{"time": "2021-01-20 06:19:52.053944", "n_pass": [87, 8, 6], "score": "0.4", "loss": "3.1528", "code": "void addResultMap(ResultMap rm){ resultMaps.put(rm.getIdrm); }"}
+{"time": "2021-01-20 06:19:53.382126", "n_pass": [89, 9, 7], "score": "0.4", "loss": "3.1528", "code": "void addResultMap(ResultMap rm){resultMaps.put(rm.getIdrm); }"}
+{"time": "2021-01-20 06:19:56.022023", "n_pass": [93, 11, 8], "score": "0.6388", "loss": "0.9373", "code": "void addResultMap(ResultMap rm){resultMaps.put(getIdrm); }"}
+{"time": "2021-01-20 06:19:57.330052", "n_pass": [94, 12, 9], "score": "0.5397", "loss": "1.4914", "code": "void addResultMap(ResultMap rm){resultMaps.put(); }"}
+{"time": "2021-01-20 06:20:01.382000", "n_pass": [116, 14, 10], "score": "0.5397", "loss": "1.4914", "code": "void addResultMap(ResultMap rm){resultMaps.put();}"}
+
+Minimal simplified code:
+void addResultMap(ResultMap rm){resultMaps.put();}
+

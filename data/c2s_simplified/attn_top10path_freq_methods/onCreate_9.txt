@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+
+topk path-contexts for sub-token: on
+[0.6368] super,SuperExpr0|MethodCallExpr|NameExpr2,on|create
+[0.2002] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.1527] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.0043] on|create,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0006] on|create,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|notif|manager
+[0.0006] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0002] void,VoidType1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0002] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0001] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: on
+['super', 'on|create', 'void', 'on|create', 'METHOD_NAME', 'on|create', 'on|create', 'null', 'on|create', 'm|notif|manager', 'void', 'METHOD_NAME', 'void', 'null', 'METHOD_NAME', 'null', 'override', 'void', 'override', 'METHOD_NAME']
+
+topk path-contexts for sub-token: create
+[0.4558] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.3854] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,on|create
+[0.1342] super,SuperExpr0|MethodCallExpr|NameExpr2,on|create
+[0.0238] on|create,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0003] on|create,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NameExpr0,m|notif|manager
+[0.0002] on|create,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|notif|manager
+[0.0000] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0000] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0000] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0000] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: create
+['METHOD_NAME', 'on|create', 'void', 'on|create', 'super', 'on|create', 'on|create', 'null', 'on|create', 'm|notif|manager', 'on|create', 'm|notif|manager', 'override', 'void', 'override', 'METHOD_NAME', 'void', 'METHOD_NAME', 'METHOD_NAME', 'null']
+

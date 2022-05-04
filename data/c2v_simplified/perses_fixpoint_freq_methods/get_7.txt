@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 08:30:14.245052", "score": "0.8366", "loss": "0.1807", "code": "class T { public T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; } }"}
+{"time": "2020-12-29 08:32:41.582388", "score": "0.8171", "loss": "0.2097", "code": "class T { public T get() { throw new NoSuchElementException(\"No value present\"); } }"}
+{"time": "2020-12-29 08:35:34.512107", "score": "0.8171", "loss": "0.2097", "code": "class T { T get() { throw new NoSuchElementException(\"No value present\"); } }"}
+
+Minimal simplified code:
+class T {
+       T get()                      { throw new NoSuchElementException("No value present"); }
+}
+
+

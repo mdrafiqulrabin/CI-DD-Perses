@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withLogPath.java
+method_name = withLogPath
+method_body = public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:28:07.340842", "score": "0.4118", "loss": "0.9614", "code": "class T { public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; } }"}
+{"time": "2021-01-24 02:29:08.928864", "score": "0.4603", "loss": "1.6671", "code": "class T { public ContainerBuilder withLogPath(String logPath) { return this; } }"}
+{"time": "2021-01-24 02:29:53.379863", "score": "0.4603", "loss": "1.6671", "code": "class T { ContainerBuilder withLogPath(String logPath) { return this; } }"}
+
+Minimal simplified code:
+class T {
+       ContainerBuilder withLogPath(String logPath) {                         return this; }
+}
+
+

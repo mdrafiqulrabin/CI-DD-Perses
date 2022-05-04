@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/ContextData_getServerSessionContext.java
+method_name = getServerSessionContext
+method_body = ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }
+predict, score, loss = getServerSessionContext, 0.1494530737400055, 3.43217396736145
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:41:07.392721", "n_pass": [1, 1, 1], "score": "0.1495", "loss": "3.4322", "code": "ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-20 07:41:16.090479", "n_pass": [43, 3, 2], "score": "0.1495", "loss": "3.4322", "code": "ProvSSLSessionContext getServerSessionContext(){ return serverSessionContext; }"}
+{"time": "2021-01-20 07:41:18.679917", "n_pass": [45, 4, 3], "score": "0.1495", "loss": "3.4322", "code": "ProvSSLSessionContext getServerSessionContext(){return serverSessionContext; }"}
+{"time": "2021-01-20 07:41:29.082844", "n_pass": [50, 8, 4], "score": "0.1495", "loss": "3.4322", "code": "ProvSSLSessionContext getServerSessionContext(){return serverSessionContext;}"}
+
+Minimal simplified code:
+ProvSSLSessionContext getServerSessionContext(){return serverSessionContext;}
+

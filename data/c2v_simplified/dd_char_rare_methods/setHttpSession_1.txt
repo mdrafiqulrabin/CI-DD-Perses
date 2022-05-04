@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/iplanet/dpro/session/service/InternalSession_setHttpSession.java
+method_name = setHttpSession
+method_body = void setHttpSession(HttpSession hSession) { httpSession = hSession; }
+predict, score, loss = setHttpSession, 0.3167814016342163, 1.624656081199646
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:18:14.379450", "n_pass": [1, 1, 1], "score": "0.3168", "loss": "1.6247", "code": "void setHttpSession(HttpSession hSession) { httpSession = hSession; }"}
+{"time": "2021-01-23 18:18:27.569100", "n_pass": [52, 5, 2], "score": "0.48", "loss": "0.9424", "code": "void setHttpSession(HttpSession sion) { httpSession = hSession; }"}
+{"time": "2021-01-23 18:18:35.373759", "n_pass": [57, 8, 3], "score": "0.1872", "loss": "2.6481", "code": "void setHttpSession(HttpSession sion) { httpSessioSession; }"}
+{"time": "2021-01-23 18:18:37.991077", "n_pass": [58, 9, 4], "score": "0.1872", "loss": "2.6481", "code": "void setHttpSession(HttpSession sion) { httpSessioon; }"}
+{"time": "2021-01-23 18:18:47.431081", "n_pass": [70, 12, 5], "score": "0.1872", "loss": "2.6481", "code": "void setHttpSession(HttpSession sion) { essioon; }"}
+{"time": "2021-01-23 18:18:59.465145", "n_pass": [107, 16, 6], "score": "0.1872", "loss": "2.6481", "code": "void setHttpSession(HttpSession sion) { sioon; }"}
+{"time": "2021-01-23 18:19:04.645802", "n_pass": [109, 18, 7], "score": "0.1827", "loss": "2.7964", "code": "void setHttpSession(HttpSession sion) { si; }"}
+{"time": "2021-01-23 18:19:28.244292", "n_pass": [127, 26, 8], "score": "0.3749", "loss": "1.6777", "code": "void setHttpSession(HttpSession on) { si; }"}
+{"time": "2021-01-23 18:19:30.868602", "n_pass": [131, 27, 9], "score": "0.4126", "loss": "1.442", "code": "void setHttpSession(HttpSession on) { ; }"}
+{"time": "2021-01-23 18:20:48.919996", "n_pass": [229, 53, 10], "score": "0.4126", "loss": "1.442", "code": "void setHttpSession(HttpSession on){ ; }"}
+{"time": "2021-01-23 18:20:51.503696", "n_pass": [231, 54, 11], "score": "0.4126", "loss": "1.442", "code": "void setHttpSession(HttpSession on){; }"}
+{"time": "2021-01-23 18:21:47.162035", "n_pass": [272, 73, 12], "score": "0.4126", "loss": "1.442", "code": "void setHttpSession(HttpSession on){;}"}
+
+Minimal simplified code:
+void setHttpSession(HttpSession on){;}
+

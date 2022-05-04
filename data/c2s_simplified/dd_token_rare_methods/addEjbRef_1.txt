@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addEjbRef.java
+method_name = addEjbRef
+method_body = public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }
+predict, score, loss = addEjbRef, 0.4160997, 1.3334386
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:30:18.285947", "n_pass": [1, 1, 1], "score": "0.4161", "loss": "1.3334", "code": "public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:19.960659", "n_pass": [22, 2, 2], "score": "0.2879", "loss": "2.0162", "code": "public void addEjbRef() { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:21.971265", "n_pass": [46, 3, 3], "score": "0.2955", "loss": "2.0535", "code": "public void addEjbRef() { put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:23.305221", "n_pass": [47, 4, 4], "score": "0.2302", "loss": "3.3144", "code": "public void addEjbRef() { put(getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:24.602591", "n_pass": [53, 5, 5], "score": "0.2302", "loss": "3.3144", "code": " void addEjbRef() { put(getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:25.905063", "n_pass": [54, 6, 6], "score": "0.2302", "loss": "3.3144", "code": "void addEjbRef() { put(getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:30.302686", "n_pass": [90, 7, 7], "score": "0.2302", "loss": "3.3144", "code": "void addEjbRef(){ put(getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:31.609751", "n_pass": [92, 8, 8], "score": "0.2302", "loss": "3.3144", "code": "void addEjbRef(){put(getName(), ejbRef); }"}
+{"time": "2021-01-20 05:30:32.931820", "n_pass": [99, 9, 9], "score": "0.2302", "loss": "3.3144", "code": "void addEjbRef(){put(getName(),ejbRef); }"}
+{"time": "2021-01-20 05:30:34.246080", "n_pass": [103, 10, 10], "score": "0.2302", "loss": "3.3144", "code": "void addEjbRef(){put(getName(),ejbRef);}"}
+
+Minimal simplified code:
+void addEjbRef(){put(getName(),ejbRef);}
+

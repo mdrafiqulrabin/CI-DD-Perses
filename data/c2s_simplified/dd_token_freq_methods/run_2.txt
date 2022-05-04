@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/connector/TestMaxConnections_run.java
+method_name = run
+method_body = @Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }
+predict, score, loss = run, 0.7925088, 0.3627941
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:36:07.291487", "n_pass": [1, 1, 1], "score": "0.7925", "loss": "0.3628", "code": "@Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:10.681218", "n_pass": [50, 3, 2], "score": "0.5198", "loss": "0.9622", "code": "@Override public void run() { try { TestClient= new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:15.956762", "n_pass": [98, 6, 3], "score": "0.7762", "loss": "0.3829", "code": "@Override public void run() { try { TestClient= TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:18.554729", "n_pass": [103, 8, 4], "score": "0.7762", "loss": "0.3829", "code": "@Override public void run() { try { TestClient= TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:21.157932", "n_pass": [117, 10, 5], "score": "0.7762", "loss": "0.3829", "code": "@Override  void run() { try { TestClient= TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:22.479317", "n_pass": [118, 11, 6], "score": "0.7762", "loss": "0.3829", "code": "@Override void run() { try { TestClient= TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:24.482477", "n_pass": [127, 12, 7], "score": "0.8006", "loss": "0.3188", "code": "@Override void run() { try { TestClientTestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:28.137629", "n_pass": [152, 14, 8], "score": "0.8599", "loss": "0.2152", "code": "@Override void run() { try {TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:29.437184", "n_pass": [156, 15, 9], "score": "0.9104", "loss": "0.1582", "code": "@Override void run() { try {TestClient(); clientRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:31.818945", "n_pass": [179, 16, 10], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:38.089110", "n_pass": [236, 17, 11], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();} catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:39.387162", "n_pass": [237, 18, 12], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();}catch (Exception x) { } }"}
+{"time": "2020-12-27 03:36:40.679438", "n_pass": [239, 19, 13], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();}catch(Exception x) { } }"}
+{"time": "2020-12-27 03:36:42.027399", "n_pass": [245, 20, 14], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();}catch(Exception x){ } }"}
+{"time": "2020-12-27 03:36:43.345049", "n_pass": [247, 21, 15], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();}catch(Exception x){} }"}
+{"time": "2020-12-27 03:36:44.639464", "n_pass": [249, 22, 16], "score": "0.9146", "loss": "0.1494", "code": "@Override void run() { try {TestClient();Request();}catch(Exception x){}}"}
+{"time": "2020-12-27 03:36:47.024875", "n_pass": [259, 23, 17], "score": "0.9146", "loss": "0.1494", "code": "@Override void run(){ try {TestClient();Request();}catch(Exception x){}}"}
+{"time": "2020-12-27 03:36:48.328378", "n_pass": [261, 24, 18], "score": "0.9146", "loss": "0.1494", "code": "@Override void run(){try {TestClient();Request();}catch(Exception x){}}"}
+{"time": "2020-12-27 03:36:49.625796", "n_pass": [263, 25, 19], "score": "0.9146", "loss": "0.1494", "code": "@Override void run(){try{TestClient();Request();}catch(Exception x){}}"}
+
+Minimal simplified code:
+@Override void run(){try{TestClient();Request();}catch(Exception x){}}
+

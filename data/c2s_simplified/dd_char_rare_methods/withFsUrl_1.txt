@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/external/warc/src/main/java/com/digitalpebble/stormcrawler/warc/GzipHdfsBolt_withFsUrl.java
+method_name = withFsUrl
+method_body = public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }
+predict, score, loss = withFsUrl, 0.4768044, 0.94822615
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:20:09.921380", "n_pass": [1, 1, 1], "score": "0.4768", "loss": "0.9482", "code": "public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:11.578799", "n_pass": [20, 2, 2], "score": "0.4028", "loss": "1.1376", "code": "pHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:14.184954", "n_pass": [41, 4, 3], "score": "0.8054", "loss": "0.4038", "code": "Bolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:15.843913", "n_pass": [44, 5, 4], "score": "0.5554", "loss": "1.0354", "code": "Bolt withFsUrl(g fsUrl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:22.096145", "n_pass": [84, 9, 5], "score": "0.6995", "loss": "1.9754", "code": "Bolt withFsUrl(g frl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:23.392310", "n_pass": [85, 10, 6], "score": "0.4859", "loss": "1.5623", "code": "Bolt withFsUrl(g f) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:24.676379", "n_pass": [88, 11, 7], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f) { t.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-23 08:20:47.982924", "n_pass": [159, 26, 8], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f) { t.fsUrl= fsUrl; return this; }"}
+{"time": "2021-01-23 08:21:05.975536", "n_pass": [191, 37, 9], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f){ t.fsUrl= fsUrl; return this; }"}
+{"time": "2021-01-23 08:21:07.288156", "n_pass": [193, 38, 10], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f){t.fsUrl= fsUrl; return this; }"}
+{"time": "2021-01-23 08:21:34.950805", "n_pass": [255, 55, 11], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f){t.fsUrl=fsUrl; return this; }"}
+{"time": "2021-01-23 08:21:41.431420", "n_pass": [261, 60, 12], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f){t.fsUrl=fsUrl;return this; }"}
+{"time": "2021-01-23 08:21:49.259562", "n_pass": [274, 66, 13], "score": "0.4274", "loss": "1.5611", "code": "Bolt withFsUrl(g f){t.fsUrl=fsUrl;return this;}"}
+
+Minimal simplified code:
+Bolt withFsUrl(g f){t.fsUrl=fsUrl;return this;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/execution/Command_finishCommand.java
+method_name = finishCommand
+method_body = protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }
+
+topk path-contexts:
+[0.1164] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),finished
+[0.1029] false,(BooleanLiteralExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),finished
+[0.1013] executing,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)_(BooleanLiteralExpr1),false
+[0.0962] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),executing
+[0.0931] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),executing
+[0.0535] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),finished
+[0.0369] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BooleanLiteralExpr1),false
+[0.0356] executing,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ThisExpr0),this
+[0.0354] executing,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),notifyall
+[0.0326] this,(ThisExpr0)^(FieldAccessExpr0)_(NameExpr2),executing
+
+topk terminals:
+['void', 'finished', 'false', 'finished', 'executing', 'false', 'METHOD_NAME', 'executing', 'void', 'executing', 'METHOD_NAME', 'finished', 'METHOD_NAME', 'false', 'executing', 'this', 'executing', 'notifyall', 'this', 'executing']
+

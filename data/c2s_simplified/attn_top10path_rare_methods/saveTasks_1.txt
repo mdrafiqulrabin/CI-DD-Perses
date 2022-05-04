@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/storage/durability/WriteRecorder_saveTasks.java
+method_name = saveTasks
+method_body = @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }
+
+topk path-contexts for sub-token: save
+[0.0653] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0618] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0586] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0533] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,i|scheduled|task
+[0.0341] op,NameExpr0|MethodCallExpr1|ObjectCreationExpr|ClassOrInterfaceType0,save|tasks
+[0.0322] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|ObjectCreationExpr|ClassOrInterfaceType0,save|tasks
+[0.0315] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,save|tasks
+[0.0298] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,i|scheduled|task
+[0.0260] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,save|tasks
+[0.0242] op,NameExpr0|MethodCallExpr1|MethodCallExpr|NameExpr2,write
+
+topk terminals for sub-token: save
+['override', 'void', 'void', 'METHOD_NAME', 'override', 'METHOD_NAME', 'void', 'i|scheduled|task', 'op', 'save|tasks', 'METHOD_NAME', 'save|tasks', 'METHOD_NAME', 'save|tasks', 'METHOD_NAME', 'i|scheduled|task', 'METHOD_NAME', 'save|tasks', 'op', 'write']
+
+topk path-contexts for sub-token: tasks
+[0.0647] op,NameExpr0|MethodCallExpr1|ObjectCreationExpr|ClassOrInterfaceType0,save|tasks
+[0.0568] new|tasks,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|ObjectCreationExpr|ClassOrInterfaceType0,save|tasks
+[0.0542] new|tasks,NameExpr2|MethodCallExpr|NameExpr3,save|tasks
+[0.0534] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,save|tasks
+[0.0520] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|ObjectCreationExpr|ClassOrInterfaceType0,save|tasks
+[0.0393] new|tasks,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,save|tasks
+[0.0385] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,save|tasks
+[0.0311] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,new|tasks
+[0.0295] new|tasks,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,save|tasks
+[0.0285] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,new|tasks
+
+topk terminals for sub-token: tasks
+['op', 'save|tasks', 'new|tasks', 'save|tasks', 'new|tasks', 'save|tasks', 'METHOD_NAME', 'save|tasks', 'METHOD_NAME', 'save|tasks', 'new|tasks', 'save|tasks', 'METHOD_NAME', 'save|tasks', 'void', 'new|tasks', 'new|tasks', 'save|tasks', 'METHOD_NAME', 'new|tasks']
+

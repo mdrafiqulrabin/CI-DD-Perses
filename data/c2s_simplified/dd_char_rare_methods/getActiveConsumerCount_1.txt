@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_getActiveConsumerCount.java
+method_name = getActiveConsumerCount
+method_body = protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field("activeConsumerCount").ofType(AtomicInteger.class).in(jobConsumerExecutor); }
+predict, score, loss = getActiveConsumerCount, 0.33674896, 2.3034596
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:29:17.014857", "n_pass": [1, 1, 1], "score": "0.3367", "loss": "2.3035", "code": "protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.class).in(jobConsumerExecutor); }"}
+{"time": "2021-01-23 13:29:27.143533", "n_pass": [58, 8, 2], "score": "0.5019", "loss": "1.8009", "code": "protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.classerExecutor); }"}
+{"time": "2021-01-23 13:29:30.181910", "n_pass": [65, 10, 3], "score": "0.4372", "loss": "1.5617", "code": "protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobCr jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.classerExecutor); }"}
+{"time": "2021-01-23 13:29:32.840593", "n_pass": [72, 12, 4], "score": "0.3263", "loss": "1.8438", "code": "protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobCr jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:38.536560", "n_pass": [115, 16, 5], "score": "0.3621", "loss": "1.9838", "code": "protec.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobCr jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:43.801598", "n_pass": [120, 20, 6], "score": "0.3459", "loss": "2.1088", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:46.228350", "n_pass": [127, 21, 7], "score": "0.4884", "loss": "1.4022", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCoxecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:47.539114", "n_pass": [128, 22, 8], "score": "0.5642", "loss": "1.5771", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { return Reflection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:48.846698", "n_pass": [130, 23, 9], "score": "0.3138", "loss": "2.8449", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { retlection.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:50.181623", "n_pass": [131, 24, 10], "score": "0.2746", "loss": "2.8321", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(AtomierExecutor); }"}
+{"time": "2021-01-23 13:29:52.793215", "n_pass": [138, 26, 11], "score": "0.4091", "loss": "2.466", "code": "protec.fest.reflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:29:54.100376", "n_pass": [141, 27, 12], "score": "0.4693", "loss": "2.533", "code": "proteceflect.field.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:29:55.405496", "n_pass": [142, 28, 13], "score": "0.409", "loss": "2.7478", "code": "protecfield.Invoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:29:56.717331", "n_pass": [143, 29, 14], "score": "0.2918", "loss": "3.2852", "code": "protecnvoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:00.439290", "n_pass": [159, 31, 15], "score": "0.2918", "loss": "3.2852", "code": "nvoker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:04.183504", "n_pass": [205, 33, 16], "score": "0.2918", "loss": "3.2852", "code": "ker<nteger> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:05.881466", "n_pass": [208, 34, 17], "score": "0.2635", "loss": "3.1477", "code": "ker<ntr> getActiveConsumerCount(JobCr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:09.751150", "n_pass": [218, 35, 18], "score": "0.2754", "loss": "2.647", "code": "ker<ntr> getActiveConsumerCount(Jr jobCo) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:11.089553", "n_pass": [220, 36, 19], "score": "0.3883", "loss": "2.1588", "code": "ker<ntr> getActiveConsumerCount(Jr j) { ret.field(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:13.729338", "n_pass": [223, 38, 20], "score": "0.463", "loss": "1.9366", "code": "ker<ntr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(Atomitor); }"}
+{"time": "2021-01-23 13:30:20.306063", "n_pass": [232, 43, 21], "score": "0.4884", "loss": "1.9724", "code": "ker<ntr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(itor); }"}
+{"time": "2021-01-23 13:30:21.629712", "n_pass": [233, 44, 22], "score": "0.4648", "loss": "2.0877", "code": "ker<ntr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:32.713301", "n_pass": [305, 50, 23], "score": "0.4648", "loss": "2.0877", "code": "er<ntr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:34.031909", "n_pass": [306, 51, 24], "score": "0.4648", "loss": "2.0877", "code": "r<ntr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:35.335533", "n_pass": [308, 52, 25], "score": "0.6186", "loss": "1.7849", "code": "r<tr> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:36.656883", "n_pass": [309, 53, 26], "score": "0.4586", "loss": "2.5839", "code": "r<r> getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:37.982364", "n_pass": [312, 54, 27], "score": "0.4586", "loss": "2.5839", "code": "r<r>getActiveConsumerCount(Jr j) { ret.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:43.752130", "n_pass": [330, 55, 28], "score": "0.335", "loss": "3.0074", "code": "r<r>getActiveConsumerCount(Jr j) { t.d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:45.078418", "n_pass": [331, 56, 29], "score": "0.2588", "loss": "2.8048", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCount\").ofType(); }"}
+{"time": "2021-01-23 13:30:55.608956", "n_pass": [341, 64, 30], "score": "0.2529", "loss": "4.1684", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCnt\").ofType(); }"}
+{"time": "2021-01-23 13:31:19.089642", "n_pass": [447, 77, 31], "score": "0.1386", "loss": "5.2492", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCnt\").oType(); }"}
+{"time": "2021-01-23 13:31:21.682395", "n_pass": [449, 79, 32], "score": "0.1388", "loss": "5.0665", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCnt\").oTye(); }"}
+{"time": "2021-01-23 13:31:23.013082", "n_pass": [450, 80, 33], "score": "0.204", "loss": "6.2063", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCnt\").oTy(); }"}
+{"time": "2021-01-23 13:31:24.302897", "n_pass": [454, 81, 34], "score": "0.204", "loss": "6.2063", "code": "r<r>getActiveConsumerCount(Jr j) { d(\"activeConsumerCnt\").oTy();}"}
+{"time": "2021-01-23 13:31:35.236769", "n_pass": [484, 83, 35], "score": "0.1883", "loss": "6.0758", "code": "r<r>getActiveConsumerCount(J j) { d(\"activeConsumerCnt\").oTy();}"}
+{"time": "2021-01-23 13:31:36.539793", "n_pass": [488, 84, 36], "score": "0.1883", "loss": "6.0758", "code": "r<r>getActiveConsumerCount(J j){ d(\"activeConsumerCnt\").oTy();}"}
+{"time": "2021-01-23 13:31:37.870020", "n_pass": [490, 85, 37], "score": "0.1883", "loss": "6.0758", "code": "r<r>getActiveConsumerCount(J j){d(\"activeConsumerCnt\").oTy();}"}
+{"time": "2021-01-23 13:32:02.779557", "n_pass": [514, 104, 38], "score": "0.2227", "loss": "5.1125", "code": "r<r>getActiveConsumerCount(J j){d(\"activeConsumerCnt\").Ty();}"}
+{"time": "2021-01-23 13:32:04.081600", "n_pass": [515, 105, 39], "score": "0.2322", "loss": "4.0926", "code": "r<r>getActiveConsumerCount(J j){d(\"activeConsumerCnt\").y();}"}
+
+Minimal simplified code:
+r<r>getActiveConsumerCount(J j){d("activeConsumerCnt").y();}
+

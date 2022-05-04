@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_isAutoShrink.java
+method_name = isAutoShrink
+method_body = @Override public final boolean isAutoShrink() { return autoShrink && recapacityAllowed; }
+
+topk path-contexts for sub-token: is
+[0.1428] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0925] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0900] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.0783] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0726] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.0671] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0423] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+[0.0244] auto|shrink,NameExpr0|BinaryExpr:and|NameExpr1,recapacity|allowed
+
+topk terminals for sub-token: is
+['boolean', 'METHOD_NAME', 'METHOD_NAME', 'recapacity|allowed', 'boolean', 'auto|shrink', 'boolean', 'recapacity|allowed', 'METHOD_NAME', 'auto|shrink', 'override', 'METHOD_NAME', 'override', 'boolean', 'auto|shrink', 'recapacity|allowed']
+
+topk path-contexts for sub-token: auto
+[0.1801] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.1766] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.1305] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0867] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0597] auto|shrink,NameExpr0|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0344] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0195] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0181] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+
+topk terminals for sub-token: auto
+['boolean', 'auto|shrink', 'METHOD_NAME', 'auto|shrink', 'METHOD_NAME', 'recapacity|allowed', 'boolean', 'recapacity|allowed', 'auto|shrink', 'recapacity|allowed', 'boolean', 'METHOD_NAME', 'override', 'METHOD_NAME', 'override', 'boolean']
+
+topk path-contexts for sub-token: shrink
+[0.4012] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.3187] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr0,auto|shrink
+[0.0447] auto|shrink,NameExpr0|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0182] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0165] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0158] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|NameExpr1,recapacity|allowed
+[0.0106] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+[0.0096] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: shrink
+['boolean', 'auto|shrink', 'METHOD_NAME', 'auto|shrink', 'auto|shrink', 'recapacity|allowed', 'METHOD_NAME', 'recapacity|allowed', 'boolean', 'METHOD_NAME', 'boolean', 'recapacity|allowed', 'override', 'boolean', 'override', 'METHOD_NAME']
+

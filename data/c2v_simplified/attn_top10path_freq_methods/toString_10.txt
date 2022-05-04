@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (filterConfig == null) return ("TimingFilter()"); StringBuilder sb = new StringBuilder("TimingFilter("); sb.append(filterConfig); sb.append(")"); return (sb.toString()); }
+
+topk path-contexts:
+[0.1559] ),(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.1517] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),filterconfig
+[0.1018] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NameExpr0),filterconfig
+[0.0569] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),)
+[0.0432] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(StringLiteralExpr1),timingfilter
+[0.0430] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),stringbuilder
+[0.0425] filterconfig,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0425] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),append
+[0.0425] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),append
+[0.0381] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),filterconfig
+
+topk terminals:
+[')', 'tostring', 'string', 'filterconfig', 'string', 'filterconfig', 'string', ')', 'string', 'timingfilter', 'string', 'stringbuilder', 'filterconfig', 'tostring', 'string', 'append', 'string', 'append', 'METHOD_NAME', 'filterconfig']
+

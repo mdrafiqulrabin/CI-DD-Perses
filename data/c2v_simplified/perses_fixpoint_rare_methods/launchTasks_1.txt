@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/jmh/java/org/apache/aurora/benchmark/fakes/FakeSchedulerDriver_launchTasks.java
+method_name = launchTasks
+method_body = @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 17:25:56.853600", "score": "0.4094", "loss": "1.3146", "code": "class T { @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; } }"}
+{"time": "2021-01-24 17:30:22.529240", "score": "0.3046", "loss": "1.6922", "code": "class T { @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection tasks) { return null; } }"}
+{"time": "2021-01-24 17:33:06.451087", "score": "0.2794", "loss": "1.6935", "code": "class T { Protos.Status launchTasks(Protos.OfferID offerId, Collection tasks) { return null; } }"}
+{"time": "2021-01-24 17:33:45.834611", "score": "0.6267", "loss": "1.036", "code": "class T { Protos launchTasks(Protos.OfferID offerId, Collection tasks) { return null; } }"}
+{"time": "2021-01-24 17:34:25.542146", "score": "0.6468", "loss": "1.0467", "code": "class T { Protos launchTasks(Protos offerId, Collection tasks) { return null; } }"}
+{"time": "2021-01-24 17:35:05.231072", "score": "0.5781", "loss": "1.0746", "code": "class T { Protos launchTasks(Protos offerId, Collection tasks) { return ; } }"}
+
+Minimal simplified code:
+class T {
+                 Protos        launchTasks(Protos         offerId, Collection                  tasks) { return     ; }
+}
+
+

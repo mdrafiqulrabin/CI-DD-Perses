@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/mesos/SchedulerDriverServiceTest_createTaskId.java
+method_name = createTaskId
+method_body = private static TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }
+
+topk path-contexts for sub-token: create
+[0.2609] task|id,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0645] task|id,NameExpr2|MethodCallExpr0|NameExpr3,set|value
+[0.0463] set|value,NameExpr3|MethodCallExpr0|MethodCallExpr|NameExpr2,build
+[0.0444] task|id,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0325] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr3,set|value
+[0.0308] task|id,NameExpr0|MethodCallExpr0|NameExpr2,new|builder
+[0.0296] task|id,NameExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,build
+[0.0293] task|id,NameExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0287] new|builder,NameExpr2|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0243] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr0,task|id
+
+topk terminals for sub-token: create
+['task|id', 'METHOD_NAME', 'task|id', 'set|value', 'set|value', 'build', 'task|id', 'string', 'METHOD_NAME', 'set|value', 'task|id', 'new|builder', 'task|id', 'build', 'task|id', 'task|id', 'new|builder', 'task|id', 'METHOD_NAME', 'task|id']
+
+topk path-contexts for sub-token: task
+[0.4174] task|id,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0672] task|id,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0404] task|id,NameExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0359] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr0,task|id
+[0.0336] task|id,NameExpr0|MethodCallExpr0|NameExpr2,new|builder
+[0.0290] new|builder,NameExpr2|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0243] task|id,NameExpr2|MethodCallExpr0|NameExpr3,set|value
+[0.0230] task|id,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,task|id
+[0.0219] task|id,NameExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,build
+[0.0217] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+
+topk terminals for sub-token: task
+['task|id', 'METHOD_NAME', 'task|id', 'string', 'task|id', 'task|id', 'METHOD_NAME', 'task|id', 'task|id', 'new|builder', 'new|builder', 'task|id', 'task|id', 'set|value', 'task|id', 'task|id', 'task|id', 'build', 'METHOD_NAME', 'task|id']
+
+topk path-contexts for sub-token: id
+[0.6656] task|id,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1007] task|id,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0214] task|id,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,task|id
+[0.0155] task|id,NameExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0134] task|id,NameExpr2|MethodCallExpr0|NameExpr3,set|value
+[0.0133] task|id,NameExpr0|MethodCallExpr0|NameExpr2,new|builder
+[0.0126] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr0,task|id
+[0.0125] new|builder,NameExpr2|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0100] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,task|id
+[0.0084] task|id,NameExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,build
+
+topk terminals for sub-token: id
+['task|id', 'METHOD_NAME', 'task|id', 'string', 'task|id', 'task|id', 'task|id', 'task|id', 'task|id', 'set|value', 'task|id', 'new|builder', 'METHOD_NAME', 'task|id', 'new|builder', 'task|id', 'METHOD_NAME', 'task|id', 'task|id', 'build']
+

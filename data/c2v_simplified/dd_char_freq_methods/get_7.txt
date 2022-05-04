@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+predict, score, loss = get, 0.8365731835365295, 0.1807318776845932
+
+Trace of simplified code(s):
+{"time": "2020-12-28 09:48:06.078223", "n_pass": [1, 1, 1], "score": "0.8366", "loss": "0.1807", "code": "public T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 09:48:08.713271", "n_pass": [23, 2, 2], "score": "0.9676", "loss": "0.034", "code": "public T get() { if (value == null) { thElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 09:48:13.932653", "n_pass": [45, 4, 3], "score": "0.9676", "loss": "0.034", "code": "public T get() { if (value == null) { ttException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 09:48:16.549423", "n_pass": [47, 5, 4], "score": "0.5101", "loss": "0.6802", "code": "public T get() { if (value == null) { ttException(\"Nopresent\"); } return value; }"}
+{"time": "2020-12-28 09:48:19.182359", "n_pass": [48, 6, 5], "score": "0.6946", "loss": "0.3739", "code": "public T get() { if (value == null) { ttException(\"No\"); } return value; }"}
+{"time": "2020-12-28 09:48:21.790828", "n_pass": [50, 7, 6], "score": "0.6889", "loss": "0.502", "code": "public T get() { if (value == null) { ttException(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:24.383138", "n_pass": [52, 8, 7], "score": "0.6889", "loss": "0.502", "code": " T get() { if (value == null) { ttException(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:32.977060", "n_pass": [85, 11, 8], "score": "0.7689", "loss": "0.2982", "code": " T get() { if (ue == null) { ttException(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:35.582829", "n_pass": [88, 12, 9], "score": "0.7854", "loss": "0.2954", "code": " T get() { if (ue == l) { ttException(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:38.185864", "n_pass": [91, 13, 10], "score": "0.7854", "loss": "0.2954", "code": " T get() { if (ue == l) { teption(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:40.791651", "n_pass": [92, 14, 11], "score": "0.955", "loss": "0.1111", "code": " T get() { if (ue == l) { ton(\"No\"); } ralue; }"}
+{"time": "2020-12-28 09:48:43.392324", "n_pass": [96, 15, 12], "score": "0.9557", "loss": "0.1096", "code": " T get() { if (ue == l) { ton(\"No\"); } e; }"}
+{"time": "2020-12-28 09:48:48.287790", "n_pass": [136, 16, 13], "score": "0.9545", "loss": "0.1103", "code": " T get() { if (ue == l) { ton(\"No\"); }  }"}
+{"time": "2020-12-28 09:48:50.879968", "n_pass": [137, 17, 14], "score": "0.9545", "loss": "0.1103", "code": "T get() { if (ue == l) { ton(\"No\"); }  }"}
+{"time": "2020-12-28 09:48:55.474414", "n_pass": [145, 18, 15], "score": "0.9545", "loss": "0.1103", "code": "T get(){ if (ue == l) { ton(\"No\"); }  }"}
+{"time": "2020-12-28 09:48:58.088042", "n_pass": [150, 19, 16], "score": "0.3958", "loss": "1.1086", "code": "T get(){ if (ue= l) { ton(\"No\"); }  }"}
+{"time": "2020-12-28 09:49:00.677804", "n_pass": [151, 20, 17], "score": "0.2048", "loss": "2.5003", "code": "T get(){ if (uel) { ton(\"No\"); }  }"}
+{"time": "2020-12-28 09:49:08.505160", "n_pass": [157, 23, 18], "score": "0.4496", "loss": "1.3993", "code": "T get(){ if (uel) { ton(\"\"); }  }"}
+{"time": "2020-12-28 09:49:13.114571", "n_pass": [172, 24, 19], "score": "0.3369", "loss": "1.2934", "code": "T get(){ if (l) { ton(\"\"); }  }"}
+{"time": "2020-12-28 09:49:15.715052", "n_pass": [175, 25, 20], "score": "0.3997", "loss": "1.1368", "code": "T get(){ if (l) {on(\"\"); }  }"}
+{"time": "2020-12-28 09:49:25.539110", "n_pass": [221, 27, 21], "score": "0.3997", "loss": "1.1368", "code": "T get(){ if (l) {on(\"\");}  }"}
+{"time": "2020-12-28 09:49:28.143146", "n_pass": [223, 28, 22], "score": "0.3997", "loss": "1.1368", "code": "T get(){ if (l) {on(\"\");} }"}
+{"time": "2020-12-28 09:49:30.740096", "n_pass": [224, 29, 23], "score": "0.3997", "loss": "1.1368", "code": "T get(){ if (l) {on(\"\");}}"}
+{"time": "2020-12-28 09:49:35.329047", "n_pass": [234, 30, 24], "score": "0.3997", "loss": "1.1368", "code": "T get(){if (l) {on(\"\");}}"}
+{"time": "2020-12-28 09:49:37.923682", "n_pass": [237, 31, 25], "score": "0.3997", "loss": "1.1368", "code": "T get(){if(l) {on(\"\");}}"}
+{"time": "2020-12-28 09:49:40.527095", "n_pass": [241, 32, 26], "score": "0.3997", "loss": "1.1368", "code": "T get(){if(l){on(\"\");}}"}
+
+Minimal simplified code:
+T get(){if(l){on("");}}
+

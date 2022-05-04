@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/AbstractHttp11JsseProtocol_getSessionCacheSize.java
+method_name = getSessionCacheSize
+method_body = public String getSessionCacheSize() { return endpoint.getSessionCacheSize(); }
+predict, score, loss = getSessionCacheSize, 0.4216932952404022, 2.4937853813171387
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:31:02.179337", "n_pass": [1, 1, 1], "score": "0.4217", "loss": "2.4938", "code": "public String getSessionCacheSize() { return endpoint.getSessionCacheSize(); }"}
+{"time": "2021-01-20 06:31:04.784704", "n_pass": [20, 2, 2], "score": "0.4217", "loss": "2.4938", "code": "String getSessionCacheSize() { return endpoint.getSessionCacheSize(); }"}
+{"time": "2021-01-20 06:31:13.120265", "n_pass": [47, 4, 3], "score": "0.4217", "loss": "2.4938", "code": "String getSessionCacheSize(){ return endpoint.getSessionCacheSize(); }"}
+{"time": "2021-01-20 06:31:15.725707", "n_pass": [49, 5, 4], "score": "0.4217", "loss": "2.4938", "code": "String getSessionCacheSize(){return endpoint.getSessionCacheSize(); }"}
+{"time": "2021-01-20 06:31:30.732337", "n_pass": [76, 10, 5], "score": "0.4217", "loss": "2.4938", "code": "String getSessionCacheSize(){return endpoint.getSessionCacheSize();}"}
+
+Minimal simplified code:
+String getSessionCacheSize(){return endpoint.getSessionCacheSize();}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/AstLambdaExpression_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); }
+
+topk path-contexts:
+[0.4254] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),tostring
+[0.1181] children,(NameExpr1)^(ForeachStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0750] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),stringbuilder
+[0.0561] children,(NameExpr1)^(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),tostring
+[0.0521] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(NameExpr1),children
+[0.0255] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),node
+[0.0228] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),stringbuilder
+[0.0207] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForeachStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),n
+[0.0182] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0157] children,(NameExpr1)^(ForeachStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),append
+
+topk terminals:
+['string', 'tostring', 'children', 'tostring', 'string', 'stringbuilder', 'children', 'tostring', 'string', 'children', 'string', 'node', 'string', 'stringbuilder', 'string', 'n', 'METHOD_NAME', 'tostring', 'children', 'append']
+

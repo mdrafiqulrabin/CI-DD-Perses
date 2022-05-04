@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sandrios__sandriosCamera/sandriosCamera/src/main/java/com/sandrios/sandriosCamera/internal/ui/BaseSandriosActivity_startPreviewActivity.java
+method_name = startPreviewActivity
+method_body = private void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString(), cameraControlPanel.showCrop()); startActivityForResult(intent, REQUEST_PREVIEW_CODE); }
+
+topk path-contexts:
+[0.1060] getcameracontroller,(NameExpr1)^(MethodCallExpr0)^(MethodCallExpr0)_(NameExpr2),getoutputfile
+[0.0900] newintent,(NameExpr6)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),requestpreviewcode
+[0.0693] getmediaaction,(NameExpr1)^(MethodCallExpr3)^(MethodCallExpr)_(MethodCallExpr4)_(MethodCallExpr0)_(NameExpr2),getoutputfile
+[0.0641] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr6),newintent
+[0.0425] getmediaaction,(NameExpr1)^(MethodCallExpr3)^(MethodCallExpr)_(MethodCallExpr4)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr1),getcameracontroller
+[0.0420] intent,(ClassOrInterfaceType0)^(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(MethodCallExpr4)_(MethodCallExpr0)_(NameExpr2),getoutputfile
+[0.0420] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(MethodCallExpr3)_(NameExpr1),getmediaaction
+[0.0366] getoutputfile,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr4)^(MethodCallExpr)_(NameExpr6),newintent
+[0.0333] previewactivity,(NameExpr0)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),requestpreviewcode
+[0.0315] requestpreviewcode,(NameExpr2)^(MethodCallExpr)_(NameExpr3),startactivityforresult
+
+topk terminals:
+['getcameracontroller', 'getoutputfile', 'newintent', 'requestpreviewcode', 'getmediaaction', 'getoutputfile', 'void', 'newintent', 'getmediaaction', 'getcameracontroller', 'intent', 'getoutputfile', 'void', 'getmediaaction', 'getoutputfile', 'newintent', 'previewactivity', 'requestpreviewcode', 'requestpreviewcode', 'startactivityforresult']
+

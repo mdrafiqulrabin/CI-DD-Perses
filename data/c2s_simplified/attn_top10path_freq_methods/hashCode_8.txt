@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-core/src/main/java/com/timeyang/jkes/core/metadata/MultiFieldsMetadata_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + multiFields.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }
+
+topk path-contexts for sub-token: hash
+[0.0957] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0847] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,hash|code
+[0.0729] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0636] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0636] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0406] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,hash|code
+[0.0399] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr0,field|name
+[0.0396] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,method
+[0.0289] result,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr2,hash|code
+[0.0281] int,PrimitiveType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,hash|code
+
+topk terminals for sub-token: hash
+['int', 'int', 'int', 'hash|code', 'int', 'METHOD_NAME', 'int', '<NUM>', 'int', '<NUM>', 'METHOD_NAME', 'hash|code', 'int', 'field|name', 'int', 'method', 'result', 'hash|code', 'int', 'hash|code']
+
+topk path-contexts for sub-token: code
+[0.2927] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1433] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0496] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr2,hash|code
+[0.0496] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr2,hash|code
+[0.0486] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,result
+[0.0346] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0346] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0276] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,int
+[0.0248] result,NameExpr0|AssignExpr:assign|BinaryExpr:plus|MethodCallExpr1|NameExpr2,hash|code
+[0.0248] result,NameExpr0|AssignExpr:assign|BinaryExpr:plus|MethodCallExpr1|NameExpr2,hash|code
+
+topk terminals for sub-token: code
+['int', 'METHOD_NAME', 'int', 'int', 'int', 'hash|code', 'int', 'hash|code', 'int', 'result', 'int', '<NUM>', 'int', '<NUM>', 'override', 'int', 'result', 'hash|code', 'result', 'hash|code']
+

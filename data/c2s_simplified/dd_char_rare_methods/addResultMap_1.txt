@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_addResultMap.java
+method_name = addResultMap
+method_body = public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }
+predict, score, loss = addResultMap, 0.27101168, 2.9740303
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:39:03.515376", "n_pass": [1, 1, 1], "score": "0.271", "loss": "2.974", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }"}
+{"time": "2021-01-23 13:39:06.147996", "n_pass": [10, 3, 2], "score": "0.2566", "loss": "2.661", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyFoballyForDiscriminatedNestedResultMaps(rm); }"}
+{"time": "2021-01-23 13:39:13.107130", "n_pass": [39, 8, 3], "score": "0.2566", "loss": "2.661", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyFoballyForDiscriminatedNMaps(rm); }"}
+{"time": "2021-01-23 13:39:17.451713", "n_pass": [47, 11, 4], "score": "0.3014", "loss": "2.8659", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); cheballyForDiscriminatedNMaps(rm); }"}
+{"time": "2021-01-23 13:39:18.794581", "n_pass": [48, 12, 5], "score": "0.222", "loss": "3.6755", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checriminatedNMaps(rm); }"}
+{"time": "2021-01-23 13:39:20.141527", "n_pass": [49, 13, 6], "score": "0.3094", "loss": "3.1099", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:39:31.820773", "n_pass": [88, 21, 7], "score": "0.3243", "loss": "4.3792", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm.getIm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:39:39.170082", "n_pass": [103, 26, 8], "score": "0.3926", "loss": "2.4247", "code": "public void addResultMap(ResultMap rm) { resultMaps.put(rm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:39:40.478250", "n_pass": [108, 27, 9], "score": "0.28", "loss": "2.8144", "code": "publid addResultMap(ResultMap rm) { resultMaps.put(rm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:40:01.710456", "n_pass": [172, 41, 10], "score": "0.28", "loss": "2.8144", "code": "blid addResultMap(ResultMap rm) { resultMaps.put(rm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:40:04.313178", "n_pass": [174, 43, 11], "score": "0.2957", "loss": "2.8439", "code": "bl addResultMap(ResultMap rm) { resultMaps.put(rm); cheMaps(rm); }"}
+{"time": "2021-01-23 13:40:15.704308", "n_pass": [193, 50, 12], "score": "0.2588", "loss": "3.2111", "code": "bl addResultMap(ResultMap rm) { resultMaps.put(rm);eMaps(rm); }"}
+{"time": "2021-01-23 13:40:29.411507", "n_pass": [263, 58, 13], "score": "0.2346", "loss": "3.6926", "code": "bl addResultMap(ResultMap rm) { resultMaps.put();eMaps(rm); }"}
+{"time": "2021-01-23 13:40:33.335613", "n_pass": [268, 61, 14], "score": "0.4031", "loss": "1.9092", "code": "bl addResultMap(ResultMap rm) { resultMaps.put();eMaps(); }"}
+{"time": "2021-01-23 13:40:34.651801", "n_pass": [271, 62, 15], "score": "0.3952", "loss": "1.8805", "code": "l addResultMap(ResultMap rm) { resultMaps.put();eMaps(); }"}
+{"time": "2021-01-23 13:40:52.821188", "n_pass": [297, 72, 16], "score": "0.5585", "loss": "1.3087", "code": "l addResultMap(ResultMap m) { resultMaps.put();eMaps(); }"}
+{"time": "2021-01-23 13:40:58.037951", "n_pass": [304, 76, 17], "score": "0.4848", "loss": "5.474", "code": "l addResultMap(ResultMap m) { resulaps.put();eMaps(); }"}
+{"time": "2021-01-23 13:40:59.350434", "n_pass": [305, 77, 18], "score": "0.4848", "loss": "5.474", "code": "l addResultMap(ResultMap m) { resuls.put();eMaps(); }"}
+{"time": "2021-01-23 13:41:22.721822", "n_pass": [343, 91, 19], "score": "0.4848", "loss": "5.474", "code": "l addResultMap(ResultMap m) {esuls.put();eMaps(); }"}
+{"time": "2021-01-23 13:41:52.613841", "n_pass": [412, 109, 20], "score": "0.4725", "loss": "5.8933", "code": "l addResultMap(ResultMap m) {esuls.put();Maps(); }"}
+{"time": "2021-01-23 13:41:57.820209", "n_pass": [419, 113, 21], "score": "0.4725", "loss": "5.8933", "code": "l addResultMap(ResultMap m) {esuls.put();Maps();}"}
+{"time": "2021-01-23 13:42:15.930450", "n_pass": [448, 123, 22], "score": "0.4725", "loss": "5.8933", "code": "l addResultMap(ResultMap m){esuls.put();Maps();}"}
+{"time": "2021-01-23 13:42:17.241227", "n_pass": [450, 124, 23], "score": "0.4725", "loss": "5.8933", "code": "l addResultMap(ResultMap m){suls.put();Maps();}"}
+{"time": "2021-01-23 13:42:22.438790", "n_pass": [454, 128, 24], "score": "0.5034", "loss": "6.2789", "code": "l addResultMap(ResultMap m){sul.put();Maps();}"}
+{"time": "2021-01-23 13:42:32.899794", "n_pass": [465, 136, 25], "score": "0.4231", "loss": "6.5883", "code": "l addResultMap(ResultMap m){sul.put();Map();}"}
+
+Minimal simplified code:
+l addResultMap(ResultMap m){sul.put();Map();}
+

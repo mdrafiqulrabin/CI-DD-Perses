@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+
+topk path-contexts:
+[0.1327] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr0),grizzlyhttpserverfactory
+[0.1283] ioexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr0),grizzlyhttpserverfactory
+[0.1225] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),createhttpserver
+[0.0824] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr0),grizzlyhttpserverfactory
+[0.0595] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr0),grizzlyhttpserverfactory
+[0.0554] baseuri,(NameExpr2)^(MethodCallExpr)_(NameExpr4),createhttpserver
+[0.0513] ioexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),createhttpserver
+[0.0433] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),createhttpserver
+[0.0302] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),createhttpserver
+[0.0243] server,(VariableDeclaratorId0)^(VariableDeclarator)_(MethodCallExpr1)_(NameExpr4),createhttpserver
+
+topk terminals:
+['args', 'grizzlyhttpserverfactory', 'ioexception', 'grizzlyhttpserverfactory', 'args', 'createhttpserver', '[]', 'grizzlyhttpserverfactory', 'string', 'grizzlyhttpserverfactory', 'baseuri', 'createhttpserver', 'ioexception', 'createhttpserver', 'string', 'createhttpserver', '[]', 'createhttpserver', 'server', 'createhttpserver']
+

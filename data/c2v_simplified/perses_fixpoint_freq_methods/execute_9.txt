@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/SessionsTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/sessions").toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 08:47:26.051483", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/sessions\").toString()); } }"}
+{"time": "2020-12-29 08:50:28.668675", "score": "0.9992", "loss": "0.0009", "code": "class T { @Override public void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-29 08:51:43.892747", "score": "0.9994", "loss": "0.0007", "code": "class T { void execute() throws BuildException { super.execute(); } }"}
+
+Minimal simplified code:
+class T {
+                 void execute()                       { super.execute();                                                     }
+}
+
+

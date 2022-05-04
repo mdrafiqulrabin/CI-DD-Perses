@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-core/src/main/java/com/bj58/oceanus/core/shard/TableColumn_getOrderByType.java
+method_name = getOrderByType
+method_body = public OrderByType getOrderByType() { return orderByType; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 01:53:42.205105", "score": "0.4153", "loss": "1.2209", "code": "class T { public OrderByType getOrderByType() { return orderByType; } }"}
+{"time": "2021-01-25 01:57:29.303419", "score": "0.4153", "loss": "1.2209", "code": "class T { OrderByType getOrderByType() { return orderByType; } }"}
+
+Minimal simplified code:
+class T {
+       OrderByType getOrderByType() { return orderByType; }
+}
+
+

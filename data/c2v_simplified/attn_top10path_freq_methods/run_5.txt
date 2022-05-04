@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/SimpleMonitorService_run.java
+method_name = run
+method_body = public void run() { try { draw(); } catch (Throwable t) { logger.error("Unexpected error occur at draw stat chart, cause: " + t.getMessage(), t); } }
+
+topk path-contexts:
+[0.3457] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),draw
+[0.1426] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),draw
+[0.0928] t,(NameExpr3)^(MethodCallExpr)_(NameExpr4),error
+[0.0790] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),throwable
+[0.0734] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0508] throwable,(ClassOrInterfaceType1)^(Parameter)^(CatchClause)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(StringLiteralExpr0),unexpectederroroccuratdrawstatchartcause
+[0.0490] t,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),throwable
+[0.0375] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),error
+[0.0264] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),logger
+[0.0238] draw,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),throwable
+
+topk terminals:
+['void', 'draw', 'METHOD_NAME', 'draw', 't', 'error', 'void', 'throwable', 'void', 'METHOD_NAME', 'throwable', 'unexpectederroroccuratdrawstatchartcause', 't', 'throwable', 'void', 'error', 'void', 'logger', 'draw', 'throwable']
+

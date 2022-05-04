@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/signup/tool/src/java/org/sakaiproject/signup/tool/jsf/NewSignupMeetingBean_getSendEmail.java
+method_name = getSendEmail
+method_body = public boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; }
+
+topk path-contexts for sub-token: get
+[0.1177] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1034] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0687] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0655] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0567] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0481] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr1,get|published|site
+[0.0468] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0446] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0430] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0400] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+
+topk terminals for sub-token: get
+['boolean', 'METHOD_NAME', 'boolean', 'send|email', 'METHOD_NAME', 'send|email', 'send|email', 'false', 'get|published|site', 'false', 'boolean', 'get|published|site', 'boolean', 'false', 'boolean', 'send|email', 'METHOD_NAME', 'false', 'get|published|site', 'send|email']
+
+topk path-contexts for sub-token: send
+[0.1284] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.1283] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.1253] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0816] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0648] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0609] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0545] send|email,NameExpr0|AssignExpr:assign|ExpressionStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0516] false,BooleanLiteralExpr1|AssignExpr:assign|ExpressionStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0505] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0500] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr1,get|published|site
+
+topk terminals for sub-token: send
+['get|published|site', 'send|email', 'METHOD_NAME', 'send|email', 'boolean', 'send|email', 'get|published|site', 'send|email', 'get|published|site', 'false', 'METHOD_NAME', 'send|email', 'send|email', 'send|email', 'false', 'send|email', 'send|email', 'false', 'METHOD_NAME', 'get|published|site']
+
+topk path-contexts for sub-token: email
+[0.1681] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.1434] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.1069] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0981] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0724] send|email,NameExpr0|AssignExpr:assign|ExpressionStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0701] get|published|site,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0538] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr1,get|published|site
+[0.0530] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0492] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0467] false,BooleanLiteralExpr1|AssignExpr:assign|ExpressionStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+
+topk terminals for sub-token: email
+['boolean', 'send|email', 'METHOD_NAME', 'send|email', 'get|published|site', 'send|email', 'get|published|site', 'send|email', 'send|email', 'send|email', 'get|published|site', 'false', 'METHOD_NAME', 'get|published|site', 'METHOD_NAME', 'send|email', 'send|email', 'false', 'false', 'send|email']
+

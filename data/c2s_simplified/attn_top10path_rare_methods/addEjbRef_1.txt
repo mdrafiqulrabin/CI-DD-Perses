@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addEjbRef.java
+method_name = addEjbRef
+method_body = public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }
+
+topk path-contexts for sub-token: add
+[0.1334] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.1046] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0671] get|name,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0393] ejb|ref,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0272] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0220] ejb|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0178] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|name
+[0.0175] ejb|ref,NameExpr0|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0136] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,ejb|ref
+[0.0097] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+
+topk terminals for sub-token: add
+['METHOD_NAME', 'put', 'void', 'METHOD_NAME', 'get|name', 'put', 'ejb|ref', 'put', 'context|ejb', 'put', 'ejb|ref', 'put', 'METHOD_NAME', 'get|name', 'ejb|ref', 'put', 'METHOD_NAME', 'ejb|ref', 'METHOD_NAME', 'ejb|refs']
+
+topk path-contexts for sub-token: ejb
+[0.2688] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.1389] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.0712] ejb|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.0656] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,ejb|ref
+[0.0403] get|name,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,ejb|ref
+[0.0395] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,ejb|ref
+[0.0330] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0224] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|ejb
+[0.0203] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|ejb
+[0.0190] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,ejb|ref
+
+topk terminals for sub-token: ejb
+['METHOD_NAME', 'ejb|refs', 'context|ejb', 'ejb|refs', 'ejb|ref', 'ejb|refs', 'METHOD_NAME', 'ejb|ref', 'get|name', 'ejb|ref', 'context|ejb', 'ejb|ref', 'context|ejb', 'put', 'METHOD_NAME', 'context|ejb', 'void', 'context|ejb', 'METHOD_NAME', 'ejb|ref']
+
+topk path-contexts for sub-token: ref
+[0.1348] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.1236] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|ejb
+[0.1206] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|ejb
+[0.1154] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.0632] ejb|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ejb|refs
+[0.0416] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0344] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,ejb|ref
+[0.0314] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,ejb|ref
+[0.0303] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ejb|ref
+[0.0290] context|ejb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,ejb|ref
+
+topk terminals for sub-token: ref
+['METHOD_NAME', 'ejb|refs', 'METHOD_NAME', 'context|ejb', 'void', 'context|ejb', 'context|ejb', 'ejb|refs', 'ejb|ref', 'ejb|refs', 'context|ejb', 'put', 'METHOD_NAME', 'ejb|ref', 'void', 'ejb|ref', 'METHOD_NAME', 'ejb|ref', 'context|ejb', 'ejb|ref']
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_getActiveConsumerCount.java
+method_name = getActiveConsumerCount
+method_body = protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field("activeConsumerCount").ofType(AtomicInteger.class).in(jobConsumerExecutor); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:25:31.058692", "score": "0.3367", "loss": "2.3035", "code": "class T { protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.class).in(jobConsumerExecutor); } }"}
+{"time": "2021-01-24 08:27:03.021808", "score": "0.3802", "loss": "2.1511", "code": "class T { protected AtomicInteger getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.class).in(jobConsumerExecutor); } }"}
+{"time": "2021-01-24 08:27:24.387741", "score": "0.3712", "loss": "1.6775", "code": "class T { protected AtomicInteger getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field(\"activeConsumerCount\").ofType(AtomicInteger.class) ; } }"}
+{"time": "2021-01-24 08:27:45.697424", "score": "0.5163", "loss": "2.4994", "code": "class T { protected AtomicInteger getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return \"activeConsumerCount\" .ofType(AtomicInteger.class) ; } }"}
+{"time": "2021-01-24 08:28:07.023818", "score": "0.3782", "loss": "2.9381", "code": "class T { protected AtomicInteger getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return \"activeConsumerCount\" .ofType(AtomicInteger ) ; } }"}
+{"time": "2021-01-24 08:28:17.670418", "score": "0.5756", "loss": "1.7478", "code": "class T { protected AtomicInteger getActiveConsumerCount( ) { return \"activeConsumerCount\" .ofType(AtomicInteger ) ; } }"}
+{"time": "2021-01-24 08:28:28.315337", "score": "0.5756", "loss": "1.7478", "code": "class T { AtomicInteger getActiveConsumerCount( ) { return \"activeConsumerCount\" .ofType(AtomicInteger ) ; } }"}
+{"time": "2021-01-24 08:29:37.904419", "score": "0.9003", "loss": "2.8372", "code": "class T { AtomicInteger getActiveConsumerCount( ) { return \"activeConsumerCount\" ; } }"}
+
+Minimal simplified code:
+class T {
+                                         AtomicInteger  getActiveConsumerCount(                                       ) { return                  "activeConsumerCount"                                                     ; }
+}
+
+

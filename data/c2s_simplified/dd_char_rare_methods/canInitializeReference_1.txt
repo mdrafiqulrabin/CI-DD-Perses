@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_canInitializeReference.java
+method_name = canInitializeReference
+method_body = public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }
+predict, score, loss = canInitializeReference, 0.41068852, 1.1456876
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:15:27.522130", "n_pass": [1, 1, 1], "score": "0.4107", "loss": "1.1457", "code": "public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:15:29.144308", "n_pass": [20, 2, 2], "score": "0.4107", "loss": "1.1457", "code": " boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:00.021073", "n_pass": [167, 21, 3], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:05.207920", "n_pass": [171, 25, 4], "score": "0.4571", "loss": "1.096", "code": "booean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:46.310748", "n_pass": [290, 46, 5], "score": "0.4571", "loss": "1.096", "code": "booean canInitializeReference(){ return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:47.599556", "n_pass": [291, 47, 6], "score": "0.4571", "loss": "1.096", "code": "booean canInitializeReference(){return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:51.033161", "n_pass": [298, 48, 7], "score": "0.4571", "loss": "1.096", "code": "booean canInitializeReference(){return(flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:53.627841", "n_pass": [301, 50, 8], "score": "0.5381", "loss": "1.1435", "code": "booean canInitializeReference(){return(fags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:57.511879", "n_pass": [304, 53, 9], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:16:58.792379", "n_pass": [305, 54, 10], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag& CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:17:00.107540", "n_pass": [307, 55, 11], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag&CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-23 12:17:32.454640", "n_pass": [333, 80, 12], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag&CAN_INITIALIZE_REFERENCE)!= 0; }"}
+{"time": "2021-01-23 12:17:34.102373", "n_pass": [336, 81, 13], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag&CAN_INITIALIZE_REFERENCE)!=0; }"}
+{"time": "2021-01-23 12:17:35.391793", "n_pass": [339, 82, 14], "score": "0.5713", "loss": "1.0506", "code": "booean canInitializeReference(){return(fag&CAN_INITIALIZE_REFERENCE)!=0;}"}
+{"time": "2021-01-23 12:17:54.831265", "n_pass": [380, 89, 15], "score": "0.69", "loss": "0.7458", "code": "booean canInitializeReference(){return(ag&CAN_INITIALIZE_REFERENCE)!=0;}"}
+{"time": "2021-01-23 12:17:56.124069", "n_pass": [381, 90, 16], "score": "0.5541", "loss": "1.3696", "code": "booean canInitializeReference(){return(g&CAN_INITIALIZE_REFERENCE)!=0;}"}
+
+Minimal simplified code:
+booean canInitializeReference(){return(g&CAN_INITIALIZE_REFERENCE)!=0;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/MonitorStarter_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, "conf/dubbo.properties"); Main.main(args); }
+
+topk path-contexts:
+[0.1314] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setproperty
+[0.1052] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),dubbopropertieskey
+[0.0870] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),main
+[0.0756] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),main
+[0.0655] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),system
+[0.0451] args,(VariableDeclaratorId0)^(Parameter)_(ArrayBracketPair2),[]
+[0.0408] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setproperty
+[0.0379] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr3),confdubboproperties
+[0.0312] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),main
+[0.0309] args,(NameExpr2)^(MethodCallExpr)_(NameExpr3),main
+
+topk terminals:
+['args', 'setproperty', 'args', 'dubbopropertieskey', 'args', 'main', 'args', 'main', 'args', 'system', 'args', '[]', '[]', 'setproperty', 'args', 'confdubboproperties', 'METHOD_NAME', 'main', 'args', 'main']
+

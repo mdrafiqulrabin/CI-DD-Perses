@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/naming/NamingEntry_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:07:31.323691", "score": "0.9939", "loss": "0.008", "code": "class T { @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } } }"}
+{"time": "2020-12-21 11:08:19.078246", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override public boolean equals(Object obj) { } }"}
+{"time": "2020-12-21 11:08:40.121793", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override boolean equals(Object obj) { } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object obj) {                                                                                                          }
+}
+
+

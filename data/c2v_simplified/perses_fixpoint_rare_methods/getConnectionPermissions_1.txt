@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/apache/guacamole/auth/jdbc/sharing/user/SharedUser_getConnectionPermissions.java
+method_name = getConnectionPermissions
+method_body = @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 21:40:30.870010", "score": "0.3991", "loss": "1.5334", "code": "class T { @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); } }"}
+{"time": "2021-01-24 21:44:12.045417", "score": "0.4494", "loss": "1.0854", "code": "class T { @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); } }"}
+{"time": "2021-01-24 21:48:03.176114", "score": "0.3264", "loss": "1.8717", "code": "class T { ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); } }"}
+
+Minimal simplified code:
+class T {
+                 ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {                                                                                   return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }
+}
+
+

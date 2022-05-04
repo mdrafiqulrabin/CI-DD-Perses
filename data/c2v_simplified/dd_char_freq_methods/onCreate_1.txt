@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+predict, score, loss = onCreate, 1.0, 0.0
+
+Trace of simplified code(s):
+{"time": "2020-12-28 05:55:56.002424", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-28 05:55:58.616265", "n_pass": [10, 2, 2], "score": "0.479", "loss": "0.7495", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCtView(R.layout.settings_fragment); }"}
+{"time": "2020-12-28 05:56:03.843489", "n_pass": [39, 4, 3], "score": "0.4563", "loss": "0.8281", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCtView(R.layout.setgment); }"}
+{"time": "2020-12-28 05:56:06.484741", "n_pass": [40, 5, 4], "score": "0.5565", "loss": "0.6098", "code": " protected void onCreate(Bundle savedInstanceState) { super.onCtView(R.layout.setgment); }"}
+{"time": "2020-12-28 05:56:29.064891", "n_pass": [82, 13, 5], "score": "0.9874", "loss": "0.013", "code": " protected void onCreate(Bundle savedInstance) { super.onCtView(R.layout.setgment); }"}
+{"time": "2020-12-28 05:56:31.678720", "n_pass": [84, 14, 6], "score": "0.9964", "loss": "0.0042", "code": " protected void onCreate(Bundle savedInstance) { sonCtView(R.layout.setgment); }"}
+{"time": "2020-12-28 05:56:34.289788", "n_pass": [85, 15, 7], "score": "0.9964", "loss": "0.0042", "code": " protected void onCreate(Bundle savedInstance) { siew(R.layout.setgment); }"}
+{"time": "2020-12-28 05:56:36.900519", "n_pass": [87, 16, 8], "score": "0.9565", "loss": "0.0529", "code": " protected void onCreate(Bundle savedInstance) { siew(Rut.setgment); }"}
+{"time": "2020-12-28 05:56:39.519421", "n_pass": [88, 17, 9], "score": "0.9179", "loss": "0.1012", "code": " protected void onCreate(Bundle savedInstance) { siew(Rtgment); }"}
+{"time": "2020-12-28 05:56:42.132655", "n_pass": [89, 18, 10], "score": "0.8423", "loss": "0.2048", "code": " protected void onCreate(Bundle savedInstance) { siew(Rt); }"}
+{"time": "2020-12-28 05:57:03.679662", "n_pass": [147, 25, 11], "score": "0.9564", "loss": "0.0593", "code": " protected void onCreate(Bdle savedInstance) { siew(Rt); }"}
+{"time": "2020-12-28 05:57:06.300642", "n_pass": [148, 26, 12], "score": "0.9813", "loss": "0.0291", "code": " protected void onCreate(Be savedInstance) { siew(Rt); }"}
+{"time": "2020-12-28 05:57:24.542928", "n_pass": [158, 33, 13], "score": "0.9713", "loss": "0.0966", "code": " protected void onCreate(Be savedInstance) {ew(Rt); }"}
+{"time": "2020-12-28 05:57:51.932393", "n_pass": [234, 42, 14], "score": "0.583", "loss": "0.6521", "code": " protected void onCreate(Be savedInstance) {w(Rt); }"}
+{"time": "2020-12-28 05:57:54.531659", "n_pass": [235, 43, 15], "score": "0.4655", "loss": "1.9166", "code": " protected void onCreate(Be savedInstance) {(Rt); }"}
+{"time": "2020-12-28 05:57:57.147737", "n_pass": [239, 44, 16], "score": "0.4655", "loss": "1.9166", "code": "protected void onCreate(Be savedInstance) {(Rt); }"}
+{"time": "2020-12-28 05:58:19.094304", "n_pass": [265, 51, 17], "score": "0.6066", "loss": "0.9862", "code": "protected void onCreate(B savedInstance) {(Rt); }"}
+{"time": "2020-12-28 05:58:55.605139", "n_pass": [281, 65, 18], "score": "0.6066", "loss": "0.9862", "code": "protected void onCreate(B savedInstance){(Rt); }"}
+{"time": "2020-12-28 05:59:49.527082", "n_pass": [333, 84, 19], "score": "0.5318", "loss": "1.0798", "code": "protected void onCreate(B savedInstance){(t); }"}
+{"time": "2020-12-28 05:59:52.124494", "n_pass": [336, 85, 20], "score": "0.5318", "loss": "1.0798", "code": "protected void onCreate(B savedInstance){(t);}"}
+
+Minimal simplified code:
+protected void onCreate(B savedInstance){(t);}
+

@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/run_4.txt
+method_name = run
+method_body = void run(){getHeight();switch(mMode){case _:{if(0){}if(mLastSeenPos){(this);}extraScroll=lastPos?mExtraScroll:mExtraScroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lastViewBottom));}}}}}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 18:28:56.670652", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "void run(){getHeight();switch(mMode){case _:{if(0){}if(mLastSeenPos){(this);}extraScroll=lastPos?mExtraScroll:mExtraScroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lastViewBottom));}}}}}"}
+{"time": "2021-01-22 18:28:59.338322", "n_pass": [23, 2, 2], "score": "0.7378", "loss": "0.3051", "code": "void run(){getHeight();switch(mMode){case _:{if(0){}if(mLastSeenPos){(this);}extraSExtraScroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lastViewBottom));}}}}}"}
+{"time": "2021-01-22 18:29:02.000768", "n_pass": [86, 3, 3], "score": "0.7378", "loss": "0.3051", "code": "void run(){getHeight();switch(mMode){case _:{if(0){}if(mLastSeenPos){(this);}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lastViewBottom));}}}}}"}
+{"time": "2021-01-22 18:29:09.904464", "n_pass": [98, 6, 4], "score": "0.7131", "loss": "0.3395", "code": "void run(){getHeight();switch(mMode){case _:{if(0){}if(mLastSeenPos){(this);}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:15.552842", "n_pass": [108, 8, 5], "score": "0.7162", "loss": "0.3352", "code": "void run(){getHeight();switch(mMode){case _:{if(mLastSeenPos){(this);}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:18.190296", "n_pass": [109, 9, 6], "score": "0.564", "loss": "0.5767", "code": "void run(){getHeight();switch(mMode){case _:{if(enPos){(this);}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:20.811374", "n_pass": [111, 10, 7], "score": "0.5709", "loss": "0.5646", "code": "void run(){getHeight();switch(mMode){case _:{if(enPos){}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:31.729682", "n_pass": [181, 14, 8], "score": "0.5087", "loss": "0.678", "code": "void run(){getHeight();switch(mMode){case _:{if(os){}extraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:34.369745", "n_pass": [183, 15, 9], "score": "0.5113", "loss": "0.6729", "code": "void run(){getHeight();switch(mMode){case _:{if(os)xtraSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:37.018183", "n_pass": [184, 16, 10], "score": "0.5113", "loss": "0.6729", "code": "void run(){getHeight();switch(mMode){case _:{if(os)aSroll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:39.627628", "n_pass": [185, 17, 11], "score": "0.5113", "loss": "0.6729", "code": "void run(){getHeight();switch(mMode){case _:{if(os)oll;if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:42.238229", "n_pass": [186, 18, 12], "score": "0.5109", "loss": "0.6737", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBoundPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:44.853392", "n_pass": [189, 19, 13], "score": "0.9061", "loss": "0.1165", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy((0),mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:52.759339", "n_pass": [195, 22, 14], "score": "0.522", "loss": "0.678", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(mScrollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:55.371194", "n_pass": [196, 23, 15], "score": "0.4761", "loss": "0.7877", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ollDuration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:29:57.978134", "n_pass": [197, 24, 16], "score": "0.4761", "loss": "0.7877", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(uration);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:30:00.591182", "n_pass": [198, 25, 17], "score": "0.4867", "loss": "0.7731", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bottom){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:30:05.810901", "n_pass": [205, 27, 18], "score": "0.6058", "loss": "0.538", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBottom));}}}}}"}
+{"time": "2021-01-22 18:30:08.647739", "n_pass": [208, 28, 19], "score": "0.5932", "loss": "0.5508", "code": "void run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:11.288945", "n_pass": [211, 29, 20], "score": "0.7724", "loss": "0.2964", "code": "d run(){getHeight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:14.324455", "n_pass": [215, 30, 21], "score": "0.568", "loss": "0.6675", "code": "d run(){geight();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:16.944076", "n_pass": [216, 31, 22], "score": "0.568", "loss": "0.6675", "code": "d run(){ght();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:31.265053", "n_pass": [312, 36, 23], "score": "0.8266", "loss": "0.2183", "code": "d run(){ht();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:33.918556", "n_pass": [313, 37, 24], "score": "0.9638", "loss": "0.0667", "code": "d run(){t();switch(mMode){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:36.547742", "n_pass": [323, 38, 25], "score": "0.9741", "loss": "0.0529", "code": "d run(){t();switch(mde){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:39.183839", "n_pass": [324, 39, 26], "score": "0.9767", "loss": "0.0331", "code": "d run(){t();switch(m){case _:{if(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:41.812069", "n_pass": [330, 40, 27], "score": "0.9546", "loss": "0.0531", "code": "d run(){t();switch(m){case _:{(os);if(mBPos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:44.437742", "n_pass": [335, 41, 28], "score": "0.9813", "loss": "0.0236", "code": "d run(){t();switch(m){case _:{(os);if(Pos){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:30:47.081833", "n_pass": [336, 42, 29], "score": "0.9513", "loss": "0.0545", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(ion);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:05.436004", "n_pass": [346, 49, 30], "score": "0.9914", "loss": "0.0112", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(mBoundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:08.069415", "n_pass": [351, 50, 31], "score": "0.5731", "loss": "1.3782", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(mundPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:10.700648", "n_pass": [352, 51, 32], "score": "0.5731", "loss": "1.3782", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(mdPos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:13.320314", "n_pass": [353, 52, 33], "score": "0.7346", "loss": "0.4891", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(mos){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:15.958419", "n_pass": [354, 53, 34], "score": "0.6602", "loss": "0.8919", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(m){if(bm){((lBo));}}}}}"}
+{"time": "2021-01-22 18:31:18.595293", "n_pass": [361, 54, 35], "score": "0.6614", "loss": "0.8904", "code": "d run(){t();switch(m){case _:{(os);if(s){smoothScrollBy(n);}if(m){if(bm){((l));}}}}}"}
+{"time": "2021-01-22 18:31:40.646640", "n_pass": [505, 61, 36], "score": "0.6246", "loss": "0.9587", "code": "d run(){t();switch(m){case _:{(s);if(s){smoothScrollBy(n);}if(m){if(bm){((l));}}}}}"}
+{"time": "2021-01-22 18:32:22.632679", "n_pass": [543, 77, 37], "score": "0.6571", "loss": "0.8212", "code": "d run(){t();switch(m){case _:{(s);if(s){smoothScrollBy(n);}if(m){if(m){((l));}}}}}"}
+
+Minimal simplified code:
+d run(){t();switch(m){case _:{(s);if(s){smoothScrollBy(n);}if(m){if(m){((l));}}}}}
+

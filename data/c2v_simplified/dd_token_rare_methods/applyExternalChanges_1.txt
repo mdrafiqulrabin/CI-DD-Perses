@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole/src/main/java/org/apache/guacamole/rest/user/UserObjectTranslator_applyExternalChanges.java
+method_name = applyExternalChanges
+method_body = @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }
+predict, score, loss = applyExternalChanges, 0.40695708990097046, 2.5797247886657715
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:34:32.405367", "n_pass": [1, 1, 1], "score": "0.407", "loss": "2.5797", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-20 07:34:35.159216", "n_pass": [10, 2, 2], "score": "0.4235", "loss": "2.5877", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword()); existingObject.setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-20 07:34:43.477869", "n_pass": [74, 5, 3], "score": "0.3519", "loss": "3.0779", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword())existingObject.setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-20 07:34:46.114742", "n_pass": [75, 6, 4], "score": "0.168", "loss": "4.1979", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword())setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-20 07:34:48.767432", "n_pass": [77, 7, 5], "score": "0.2024", "loss": "3.9041", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword())setAttributes(getAttributes()); }"}
+{"time": "2021-01-20 07:34:54.035967", "n_pass": [82, 9, 6], "score": "0.2024", "loss": "3.9041", "code": "@Override void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword())setAttributes(getAttributes()); }"}
+{"time": "2021-01-20 07:34:57.093599", "n_pass": [95, 10, 7], "score": "0.1986", "loss": "3.9426", "code": "@Override void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (getPassword())setAttributes(getAttributes()); }"}
+{"time": "2021-01-20 07:35:06.953329", "n_pass": [157, 12, 8], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:10.796032", "n_pass": [175, 13, 9], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object) throws GuacamoleException { if (getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:13.433258", "n_pass": [180, 14, 10], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException { if (getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:16.054896", "n_pass": [184, 15, 11], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException{ if (getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:18.683367", "n_pass": [186, 16, 12], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException{if (getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:21.328788", "n_pass": [188, 17, 13], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException{if(getPassword())(getAttributes()); }"}
+{"time": "2021-01-20 07:35:25.566995", "n_pass": [223, 18, 14], "score": "0.2647", "loss": "3.1563", "code": "@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException{if(getPassword())(getAttributes());}"}
+
+Minimal simplified code:
+@Override void applyExternalChanges(User existingObject,APIUser object)throws GuacamoleException{if(getPassword())(getAttributes());}
+

@@ -1,0 +1,55 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedStack_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+predict, score, loss = run, 0.9991298317909241, 0.0010785006452351809
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:15:53.836992", "n_pass": [1, 1, 1], "score": "0.9991", "loss": "0.0011", "code": "@Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-26 23:15:56.998393", "n_pass": [48, 2, 2], "score": "0.999", "loss": "0.0012", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-26 23:15:59.682770", "n_pass": [54, 3, 3], "score": "0.999", "loss": "0.0012", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-26 23:16:02.373213", "n_pass": [56, 4, 4], "score": "0.999", "loss": "0.0012", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; } super.run(); }"}
+{"time": "2020-12-26 23:16:05.509919", "n_pass": [97, 5, 5], "score": "0.9989", "loss": "0.0014", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }run(); }"}
+{"time": "2020-12-26 23:16:08.212914", "n_pass": [98, 6, 6], "score": "0.9945", "loss": "0.0063", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:22.314841", "n_pass": [176, 9, 7], "score": "0.9945", "loss": "0.0063", "code": "@Override  void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:25.093466", "n_pass": [177, 10, 8], "score": "0.9945", "loss": "0.0063", "code": "@Override void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:28.217179", "n_pass": [182, 11, 9], "score": "0.9945", "loss": "0.0063", "code": "@Override void run(){ for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:30.919873", "n_pass": [184, 12, 10], "score": "0.9945", "loss": "0.0063", "code": "@Override void run(){for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:33.629418", "n_pass": [186, 13, 11], "score": "0.9945", "loss": "0.0063", "code": "@Override void run(){for(int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:36.316850", "n_pass": [188, 14, 12], "score": "0.9787", "loss": "0.0242", "code": "@Override void run(){for( i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:39.003152", "n_pass": [189, 15, 13], "score": "0.9787", "loss": "0.0242", "code": "@Override void run(){for(i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:41.686376", "n_pass": [191, 16, 14], "score": "0.9787", "loss": "0.0242", "code": "@Override void run(){for(i= 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:44.389652", "n_pass": [193, 17, 15], "score": "0.9787", "loss": "0.0242", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:52.462103", "n_pass": [204, 20, 16], "score": "0.8885", "loss": "0.1529", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:55.146970", "n_pass": [205, 21, 17], "score": "0.9964", "loss": "0.004", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE; if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:16:57.821829", "n_pass": [209, 22, 18], "score": "0.9709", "loss": "0.0364", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE; if (obj= null) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:17:00.506205", "n_pass": [210, 23, 19], "score": "0.6007", "loss": "0.615", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE; if (objnull) { obj(); } ; }; }"}
+{"time": "2020-12-26 23:17:03.188868", "n_pass": [214, 24, 20], "score": "0.609", "loss": "0.602", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE; if (objnull) { obj; } ; }; }"}
+{"time": "2020-12-26 23:17:05.876960", "n_pass": [217, 25, 21], "score": "0.609", "loss": "0.602", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE; if (objnull) { obj; } }; }"}
+{"time": "2020-12-26 23:17:09.866539", "n_pass": [232, 26, 22], "score": "0.6276", "loss": "0.5891", "code": "@Override void run(){for(i0;; i++) { Object obj = QUEUE; if (objnull) { obj; } }; }"}
+{"time": "2020-12-26 23:17:12.557240", "n_pass": [233, 27, 23], "score": "0.6276", "loss": "0.5891", "code": "@Override void run(){for(i;; i++) { Object obj = QUEUE; if (objnull) { obj; } }; }"}
+{"time": "2020-12-26 23:17:20.609309", "n_pass": [248, 30, 24], "score": "0.6401", "loss": "0.5577", "code": "@Override void run(){for(i;; i++) { Object obj = QUEUE; if (objnull) {; } }; }"}
+{"time": "2020-12-26 23:17:23.304716", "n_pass": [249, 31, 25], "score": "0.6401", "loss": "0.5577", "code": "@Override void run(){for(i;; i++) { Object obj = QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:17:27.267154", "n_pass": [264, 32, 26], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++) { Object obj = QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:17:42.128957", "n_pass": [326, 35, 27], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){ Object obj = QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:17:44.790669", "n_pass": [327, 36, 28], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){Object obj = QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:17:55.465381", "n_pass": [331, 40, 29], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){Object obj= QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:17:58.153357", "n_pass": [333, 41, 30], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){Object obj=QUEUE; if (objnull) {} }; }"}
+{"time": "2020-12-26 23:18:00.838809", "n_pass": [336, 42, 31], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if (objnull) {} }; }"}
+{"time": "2020-12-26 23:18:03.512679", "n_pass": [338, 43, 32], "score": "0.6492", "loss": "0.5399", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(objnull) {} }; }"}
+{"time": "2020-12-26 23:18:06.290112", "n_pass": [340, 44, 33], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(null) {} }; }"}
+{"time": "2020-12-26 23:18:09.004611", "n_pass": [343, 45, 34], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(null){} }; }"}
+{"time": "2020-12-26 23:18:11.701988", "n_pass": [346, 46, 35], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(null){}}; }"}
+{"time": "2020-12-26 23:18:14.397916", "n_pass": [348, 47, 36], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(null){}} }"}
+{"time": "2020-12-26 23:18:17.488906", "n_pass": [349, 48, 37], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;; i++){Object obj=QUEUE;if(null){}}}"}
+{"time": "2020-12-26 23:18:21.531507", "n_pass": [364, 49, 38], "score": "0.9984", "loss": "0.0018", "code": "@Override void run(){for(;;i++){Object obj=QUEUE;if(null){}}}"}
+{"time": "2020-12-26 23:18:29.540291", "n_pass": [372, 52, 39], "score": "0.3622", "loss": "1.7252", "code": "@Override void run(){for(;;i++){Object =QUEUE;if(null){}}}"}
+{"time": "2020-12-26 23:18:32.224652", "n_pass": [373, 53, 40], "score": "0.9744", "loss": "0.0413", "code": "@Override void run(){for(;;i++){Object QUEUE;if(null){}}}"}
+{"time": "2020-12-26 23:18:34.897170", "n_pass": [374, 54, 41], "score": "0.3409", "loss": "1.4588", "code": "@Override void run(){for(;;i++){Object ;if(null){}}}"}
+{"time": "2020-12-26 23:18:38.820336", "n_pass": [402, 55, 42], "score": "0.3241", "loss": "1.5621", "code": "@Override void run(){for(;;i++){ ;if(null){}}}"}
+{"time": "2020-12-26 23:18:41.485793", "n_pass": [403, 56, 43], "score": "0.3241", "loss": "1.5621", "code": "@Override void run(){for(;;i++){;if(null){}}}"}
+{"time": "2020-12-26 23:18:44.147899", "n_pass": [404, 57, 44], "score": "0.3241", "loss": "1.5621", "code": "@Override void run(){for(;;i++){if(null){}}}"}
+
+Minimal simplified code:
+@Override void run(){for(;;i++){if(null){}}}
+

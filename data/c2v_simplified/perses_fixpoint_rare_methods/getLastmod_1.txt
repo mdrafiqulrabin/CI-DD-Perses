@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/assignment/impl/src/java/org/sakaiproject/assignment/impl/conversion/AssignmentSubmissionAccess_getLastmod.java
+method_name = getLastmod
+method_body = public String getLastmod() { return lastmod; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:04:41.951893", "score": "0.4513", "loss": "1.2012", "code": "class T { public String getLastmod() { return lastmod; } }"}
+{"time": "2021-01-24 15:08:24.087465", "score": "0.4513", "loss": "1.2012", "code": "class T { String getLastmod() { return lastmod; } }"}
+
+Minimal simplified code:
+class T {
+       String getLastmod() { return lastmod; }
+}
+
+

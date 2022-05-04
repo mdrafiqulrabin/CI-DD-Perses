@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server.spi/src/main/java/org/kaazing/gateway/server/spi/security/LoginResultCallback_setLoginResult.java
+method_name = setLoginResult
+method_body = public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException("A Login Result already exists in this callback and cannot be set again."); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:04:29.156432", "score": "0.471", "loss": "1.0801", "code": "class T { public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } } }"}
+{"time": "2021-01-24 08:06:21.188794", "score": "0.5848", "loss": "1.2237", "code": "class T { public final void setLoginResult(LoginResult loginResult) { if (!this .compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } } }"}
+{"time": "2021-01-24 08:06:32.008240", "score": "0.6665", "loss": "1.1964", "code": "class T { public final void setLoginResult(LoginResult loginResult) { if (!this .compareAndSet(null, loginResult)) throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-24 08:07:36.203207", "score": "0.4602", "loss": "2.493", "code": "class T { public final void setLoginResult(LoginResult loginResult) { if (!this .compareAndSet(null )) throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-24 08:07:46.949434", "score": "0.4602", "loss": "2.493", "code": "class T { void setLoginResult(LoginResult loginResult) { if (!this .compareAndSet(null )) throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-24 08:07:57.679694", "score": "0.5755", "loss": "1.5899", "code": "class T { void setLoginResult(LoginResult loginResult) { if (!this .compareAndSet(null )) throw new UnsupportedOperationException( ); } }"}
+{"time": "2021-01-24 08:08:46.043784", "score": "0.4927", "loss": "1.5449", "code": "class T { void setLoginResult(LoginResult loginResult) { throw new UnsupportedOperationException( ); } }"}
+
+Minimal simplified code:
+class T {
+             void setLoginResult(LoginResult loginResult) {                                                           throw new UnsupportedOperationException(                                                                         );   }
+}
+
+

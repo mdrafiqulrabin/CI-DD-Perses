@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/QueryTreeNode_setDebugOutput.java
+method_name = setDebugOutput
+method_body = public static void setDebugOutput(Writer writer) { debugOutput = writer; }
+predict, score, loss = setDebugOutput, 0.40521952509880066, 1.032421350479126
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:37:25.014814", "n_pass": [1, 1, 1], "score": "0.4052", "loss": "1.0324", "code": "public static void setDebugOutput(Writer writer) { debugOutput = writer; }"}
+{"time": "2021-01-23 21:37:37.634109", "n_pass": [52, 5, 2], "score": "0.4472", "loss": "0.924", "code": "public static void setDebugOutput(r writer) { debugOutput = writer; }"}
+{"time": "2021-01-23 21:37:45.578636", "n_pass": [58, 8, 3], "score": "0.5037", "loss": "0.7794", "code": "public static void setDebugOutput(r writer) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:10.975063", "n_pass": [121, 16, 4], "score": "0.3326", "loss": "1.3698", "code": "public static void setDebugOutput(r iter) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:13.617299", "n_pass": [122, 17, 5], "score": "0.6629", "loss": "0.6034", "code": "public static void setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:29.482919", "n_pass": [137, 23, 6], "score": "0.5109", "loss": "1.076", "code": "public stativoid setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:32.130851", "n_pass": [138, 24, 7], "score": "0.5109", "loss": "1.076", "code": "public statiid setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:34.797781", "n_pass": [139, 25, 8], "score": "0.2358", "loss": "3.7807", "code": "public stati setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:53.583897", "n_pass": [160, 31, 9], "score": "0.5109", "loss": "1.076", "code": "publictati setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:38:56.230364", "n_pass": [161, 32, 10], "score": "0.5109", "loss": "1.076", "code": "publicti setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:39:15.381908", "n_pass": [180, 38, 11], "score": "0.5109", "loss": "1.076", "code": "blicti setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:39:18.023694", "n_pass": [181, 39, 12], "score": "0.5109", "loss": "1.076", "code": "icti setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:39:20.663384", "n_pass": [182, 40, 13], "score": "0.4514", "loss": "1.3878", "code": "ti setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:39:41.299846", "n_pass": [237, 46, 14], "score": "0.4805", "loss": "1.0863", "code": "i setDebugOutput(r er) { debugOutput =er; }"}
+{"time": "2021-01-23 21:39:55.374964", "n_pass": [259, 49, 15], "score": "0.4805", "loss": "1.0863", "code": "i setDebugOutput(r er){ debugOutput =er; }"}
+{"time": "2021-01-23 21:39:57.990439", "n_pass": [261, 50, 16], "score": "0.4805", "loss": "1.0863", "code": "i setDebugOutput(r er){debugOutput =er; }"}
+{"time": "2021-01-23 21:40:50.637960", "n_pass": [317, 67, 17], "score": "0.4805", "loss": "1.0863", "code": "i setDebugOutput(r er){debugOutput=er; }"}
+{"time": "2021-01-23 21:41:01.257167", "n_pass": [322, 71, 18], "score": "0.4805", "loss": "1.0863", "code": "i setDebugOutput(r er){debugOutput=er;}"}
+
+Minimal simplified code:
+i setDebugOutput(r er){debugOutput=er;}
+

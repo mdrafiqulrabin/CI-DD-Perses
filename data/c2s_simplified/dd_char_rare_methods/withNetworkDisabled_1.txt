@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ConfigBuilder_withNetworkDisabled.java
+method_name = withNetworkDisabled
+method_body = public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; }
+predict, score, loss = withNetworkDisabled, 0.33587524, 1.3369936
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:51:50.009282", "n_pass": [1, 1, 1], "score": "0.3359", "loss": "1.337", "code": "public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; }"}
+{"time": "2021-01-23 07:51:51.672345", "n_pass": [20, 2, 2], "score": "0.3993", "loss": "1.1801", "code": "ilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; }"}
+{"time": "2021-01-23 07:51:57.954534", "n_pass": [52, 6, 3], "score": "0.4281", "loss": "0.97", "code": "ilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = network; return this; }"}
+{"time": "2021-01-23 07:52:07.719820", "n_pass": [103, 11, 4], "score": "0.6367", "loss": "0.7053", "code": "ilder withNetworkDisabled(Ban networkDisabled) { this.networkDisabled = network; return this; }"}
+{"time": "2021-01-23 07:52:11.600295", "n_pass": [107, 14, 5], "score": "0.4493", "loss": "1.2414", "code": "ilder withNetworkDisabled(Ban networkDied) { this.networkDisabled = network; return this; }"}
+{"time": "2021-01-23 07:52:18.052995", "n_pass": [115, 19, 6], "score": "0.4351", "loss": "1.1737", "code": "ilder withNetworkDisabled(Ban networkDied) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:52:38.745404", "n_pass": [195, 33, 7], "score": "0.4351", "loss": "1.1737", "code": "lder withNetworkDisabled(Ban networkDied) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:52:40.036464", "n_pass": [196, 34, 8], "score": "0.751", "loss": "0.5922", "code": "der withNetworkDisabled(Ban networkDied) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:52:41.329205", "n_pass": [197, 35, 9], "score": "0.5026", "loss": "1.0506", "code": "dr withNetworkDisabled(Ban networkDied) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:52:42.623191", "n_pass": [198, 36, 10], "score": "0.3669", "loss": "1.3788", "code": "d withNetworkDisabled(Ban networkDied) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:52:54.009254", "n_pass": [216, 42, 11], "score": "0.4686", "loss": "0.974", "code": "d withNetworkDisabled(Ban networkDi) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:53:23.952580", "n_pass": [257, 62, 12], "score": "0.4504", "loss": "1.1161", "code": "d withNetworkDisabled(Ban network) { this.networkDisabled =work; return this; }"}
+{"time": "2021-01-23 07:53:39.467181", "n_pass": [271, 74, 13], "score": "0.4235", "loss": "1.1775", "code": "d withNetworkDisabled(Ban network) { this.networkDisabled =rk; return this; }"}
+{"time": "2021-01-23 07:54:10.140568", "n_pass": [387, 92, 14], "score": "0.4372", "loss": "1.0957", "code": "d withNetworkDisabled(Ban network) { this.networkDisabled =k; return this; }"}
+{"time": "2021-01-23 07:54:11.429290", "n_pass": [389, 93, 15], "score": "0.4372", "loss": "1.0957", "code": "d withNetworkDisabled(Ban network) { this.networkDisabled =k;return this; }"}
+{"time": "2021-01-23 07:54:19.224681", "n_pass": [402, 99, 16], "score": "0.4372", "loss": "1.0957", "code": "d withNetworkDisabled(Ban network) { this.networkDisabled =k;return this;}"}
+{"time": "2021-01-23 07:54:29.445794", "n_pass": [427, 101, 17], "score": "0.6001", "loss": "0.6631", "code": "d withNetworkDisabled(Bn network) { this.networkDisabled =k;return this;}"}
+{"time": "2021-01-23 07:54:41.115112", "n_pass": [438, 110, 18], "score": "0.6001", "loss": "0.6631", "code": "d withNetworkDisabled(Bn network){ this.networkDisabled =k;return this;}"}
+{"time": "2021-01-23 07:54:42.408824", "n_pass": [440, 111, 19], "score": "0.6001", "loss": "0.6631", "code": "d withNetworkDisabled(Bn network){this.networkDisabled =k;return this;}"}
+{"time": "2021-01-23 07:54:45.025395", "n_pass": [442, 113, 20], "score": "0.5314", "loss": "0.7622", "code": "d withNetworkDisabled(Bn network){tis.networkDisabled =k;return this;}"}
+{"time": "2021-01-23 07:55:09.682369", "n_pass": [461, 132, 21], "score": "0.5314", "loss": "0.7622", "code": "d withNetworkDisabled(Bn network){tis.networkDisabled=k;return this;}"}
+
+Minimal simplified code:
+d withNetworkDisabled(Bn network){tis.networkDisabled=k;return this;}
+

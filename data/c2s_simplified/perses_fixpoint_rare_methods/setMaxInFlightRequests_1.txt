@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxInFlightRequests.java
+method_name = setMaxInFlightRequests
+method_body = public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:22:39.118550", "score": "0.4991", "loss": "13.3322", "code": "class T { public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; } }"}
+{"time": "2021-01-24 02:23:27.750016", "score": "0.8256", "loss": "12.9222", "code": "class T { public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; } }"}
+{"time": "2021-01-24 02:23:49.193416", "score": "0.8254", "loss": "12.4822", "code": "class T { public Builder setMaxInFlightRequests(int maxInFlightRequests) { maxInFlightRequests = maxInFlightRequests; } }"}
+{"time": "2021-01-24 02:24:10.937647", "score": "0.8254", "loss": "12.4822", "code": "class T { Builder setMaxInFlightRequests(int maxInFlightRequests) { maxInFlightRequests = maxInFlightRequests; } }"}
+
+Minimal simplified code:
+class T {
+       Builder setMaxInFlightRequests(int maxInFlightRequests) {      maxInFlightRequests = maxInFlightRequests;              }
+}
+
+

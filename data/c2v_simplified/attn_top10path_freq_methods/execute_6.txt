@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/common/module/screen/Error_404_execute.java
+method_name = execute
+method_body = public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get("request.contextPath"); context.put("rootContextPath", new RootContextPath(contextPath)); }
+
+topk path-contexts:
+[0.1878] context,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),rootcontextpath
+[0.1616] throwable,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),rootcontextpath
+[0.1227] context,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),rootcontextpath
+[0.1096] throwable,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),rootcontextpath
+[0.0651] object,(ClassOrInterfaceType1)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),rootcontextpath
+[0.0602] context,(NameExpr0)^(MethodCallExpr)_(StringLiteralExpr2),rootcontextpath
+[0.0527] string,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),rootcontextpath
+[0.0437] string,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),rootcontextpath
+[0.0408] rootcontextpath,(StringLiteralExpr2)^(MethodCallExpr)_(ObjectCreationExpr)_(ClassOrInterfaceType0),rootcontextpath
+[0.0278] string,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),rootcontextpath
+
+topk terminals:
+['context', 'rootcontextpath', 'throwable', 'rootcontextpath', 'context', 'rootcontextpath', 'throwable', 'rootcontextpath', 'object', 'rootcontextpath', 'context', 'rootcontextpath', 'string', 'rootcontextpath', 'string', 'rootcontextpath', 'rootcontextpath', 'rootcontextpath', 'string', 'rootcontextpath']
+

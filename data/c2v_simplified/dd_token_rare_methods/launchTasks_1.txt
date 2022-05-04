@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/jmh/java/org/apache/aurora/benchmark/fakes/FakeSchedulerDriver_launchTasks.java
+method_name = launchTasks
+method_body = @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }
+predict, score, loss = launchTasks, 0.4093838632106781, 1.3146178722381592
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:12:44.541125", "n_pass": [1, 1, 1], "score": "0.4094", "loss": "1.3146", "code": "@Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-20 07:12:47.962991", "n_pass": [20, 2, 2], "score": "0.3713", "loss": "1.3382", "code": " Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-20 07:12:51.013469", "n_pass": [43, 3, 3], "score": "0.7001", "loss": "0.7658", "code": " Protos launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-20 07:12:54.042117", "n_pass": [46, 4, 4], "score": "0.7059", "loss": "0.7656", "code": " Protos launchTasks(Protos offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-20 07:12:56.650449", "n_pass": [50, 5, 5], "score": "0.7771", "loss": "0.682", "code": " Protos launchTasks(Protos offerId, Collection<TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-20 07:12:59.260078", "n_pass": [54, 6, 6], "score": "0.7697", "loss": "0.6402", "code": " Protos launchTasks(Protos offerId, Collection<TaskInfo> tasks) { ; }"}
+{"time": "2021-01-20 07:13:07.430889", "n_pass": [87, 8, 7], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId, Collection<TaskInfo> tasks) { ; }"}
+{"time": "2021-01-20 07:13:10.840237", "n_pass": [95, 9, 8], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId,Collection<TaskInfo> tasks) { ; }"}
+{"time": "2021-01-20 07:13:13.464791", "n_pass": [100, 10, 9], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId,Collection<TaskInfo>tasks) { ; }"}
+{"time": "2021-01-20 07:13:21.282102", "n_pass": [124, 12, 10], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId,Collection<TaskInfo>tasks){ ; }"}
+{"time": "2021-01-20 07:13:23.914877", "n_pass": [125, 13, 11], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId,Collection<TaskInfo>tasks){; }"}
+{"time": "2021-01-20 07:13:29.027865", "n_pass": [127, 15, 12], "score": "0.7697", "loss": "0.6402", "code": "Protos launchTasks(Protos offerId,Collection<TaskInfo>tasks){;}"}
+
+Minimal simplified code:
+Protos launchTasks(Protos offerId,Collection<TaskInfo>tasks){;}
+

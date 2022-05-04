@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 05:37:30.062318", "score": "0.9988", "loss": "0.0031", "code": "class T { @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; } }"}
+{"time": "2020-12-29 05:40:33.053218", "score": "0.9974", "loss": "0.0043", "code": "class T { @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); } }"}
+{"time": "2020-12-29 05:41:48.356150", "score": "0.9241", "loss": "0.1805", "code": "class T { @Override public boolean onCreate() { Context context = getContext(); } }"}
+{"time": "2020-12-29 05:43:44.621509", "score": "0.7857", "loss": "0.5056", "code": "class T { @Override public boolean onCreate() { Context context ; } }"}
+{"time": "2020-12-29 05:45:03.842212", "score": "0.7857", "loss": "0.5056", "code": "class T { @Override boolean onCreate() { Context context ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean onCreate() { Context context               ;                                                                                                         }
+}
+
+

@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+predict, score, loss = onCreate, 0.9987882971763611, 0.003087636549025774
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:00:44.760563", "n_pass": [1, 1, 1], "score": "0.9988", "loss": "0.0031", "code": "@Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:00:47.859664", "n_pass": [22, 2, 2], "score": "0.9989", "loss": "0.0027", "code": "@Override public boolean onCreate() { getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:00:50.952034", "n_pass": [46, 3, 3], "score": "0.999", "loss": "0.0029", "code": "@Override public boolean onCreate() { getContext();  context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:00:53.641164", "n_pass": [47, 4, 4], "score": "0.9993", "loss": "0.0021", "code": "@Override public boolean onCreate() { getContext(); getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:00:56.317436", "n_pass": [48, 5, 5], "score": "0.9973", "loss": "0.005", "code": "@Override public boolean onCreate() { getContext(); ; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:00:59.009941", "n_pass": [54, 6, 6], "score": "0.9497", "loss": "0.0967", "code": "public boolean onCreate() { getContext(); ; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:01:04.103868", "n_pass": [85, 7, 7], "score": "0.9497", "loss": "0.0967", "code": " boolean onCreate() { getContext(); ; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:01:06.864205", "n_pass": [86, 8, 8], "score": "0.9497", "loss": "0.0967", "code": "boolean onCreate() { getContext(); ; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:01:09.931158", "n_pass": [92, 9, 9], "score": "0.9074", "loss": "0.1702", "code": "boolean onCreate() { getContext; ; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:01:12.602340", "n_pass": [93, 10, 10], "score": "0.9087", "loss": "0.1682", "code": "boolean onCreate() { getContext; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-26 23:01:20.571487", "n_pass": [101, 13, 11], "score": "0.8345", "loss": "0.2543", "code": "boolean onCreate() { getContext; mOpenHelper = new VideoDbHelper(context); true; }"}
+{"time": "2020-12-26 23:01:23.228128", "n_pass": [102, 14, 12], "score": "0.8252", "loss": "0.2641", "code": "boolean onCreate() { getContext; mOpenHelper = new VideoDbHelper(context);  }"}
+{"time": "2020-12-26 23:01:26.731310", "n_pass": [109, 15, 13], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {; mOpenHelper = new VideoDbHelper(context);  }"}
+{"time": "2020-12-26 23:01:29.379686", "n_pass": [110, 16, 14], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {mOpenHelper = new VideoDbHelper(context);  }"}
+{"time": "2020-12-26 23:01:38.315821", "n_pass": [141, 18, 15], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {mOpenHelper= new VideoDbHelper(context);  }"}
+{"time": "2020-12-26 23:01:40.984197", "n_pass": [143, 19, 16], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {mOpenHelper=new VideoDbHelper(context);  }"}
+{"time": "2020-12-26 23:01:51.565042", "n_pass": [151, 23, 17], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {mOpenHelper=new VideoDbHelper(context); }"}
+{"time": "2020-12-26 23:01:54.224673", "n_pass": [152, 24, 18], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate() {mOpenHelper=new VideoDbHelper(context);}"}
+{"time": "2020-12-26 23:01:57.716988", "n_pass": [159, 25, 19], "score": "0.7981", "loss": "0.3044", "code": "boolean onCreate(){mOpenHelper=new VideoDbHelper(context);}"}
+
+Minimal simplified code:
+boolean onCreate(){mOpenHelper=new VideoDbHelper(context);}
+

@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+predict, score, loss = init, 0.9998133778572083, 0.00024041623692028224
+
+Trace of simplified code(s):
+{"time": "2020-12-28 07:46:40.151906", "n_pass": [1, 1, 1], "score": "0.9998", "loss": "0.0002", "code": "@Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-28 07:46:42.790606", "n_pass": [10, 2, 2], "score": "0.9996", "loss": "0.0005", "code": "@Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.tFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-28 07:46:45.454974", "n_pass": [19, 3, 3], "score": "0.9995", "loss": "0.0008", "code": "@Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger. env.getElementUtils(); }"}
+{"time": "2020-12-28 07:46:48.113561", "n_pass": [34, 4, 4], "score": "0.9997", "loss": "0.0004", "code": "@Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.entUtils(); }"}
+{"time": "2020-12-28 07:46:53.775777", "n_pass": [41, 6, 5], "score": "0.9575", "loss": "0.0674", "code": "@Override public synchronized void init(ProcessingEnvironment env) { sup; messenger.entUtils(); }"}
+{"time": "2020-12-28 07:46:56.376695", "n_pass": [42, 7, 6], "score": "0.9443", "loss": "0.092", "code": "@Override public synchronized void init(ProcessingEnvironment env) { supentUtils(); }"}
+{"time": "2020-12-28 07:47:02.016242", "n_pass": [64, 9, 7], "score": "0.9443", "loss": "0.092", "code": "@Override public synchronized void init(ProcessingEnvironment env) { supls(); }"}
+{"time": "2020-12-28 07:47:04.636358", "n_pass": [66, 10, 8], "score": "0.9533", "loss": "0.0826", "code": "@Overrblic synchronized void init(ProcessingEnvironment env) { supls(); }"}
+{"time": "2020-12-28 07:47:07.227594", "n_pass": [67, 11, 9], "score": "0.9533", "loss": "0.0826", "code": "@Overrynchronized void init(ProcessingEnvironment env) { supls(); }"}
+{"time": "2020-12-28 07:47:09.840975", "n_pass": [68, 12, 10], "score": "0.9533", "loss": "0.0826", "code": "@Overrnized void init(ProcessingEnvironment env) { supls(); }"}
+{"time": "2020-12-28 07:47:21.026427", "n_pass": [99, 16, 11], "score": "0.9533", "loss": "0.0826", "code": "@Overred void init(ProcessingEnvironment env) { supls(); }"}
+{"time": "2020-12-28 07:47:42.641962", "n_pass": [113, 24, 12], "score": "0.8175", "loss": "0.2871", "code": "@Overred void init(ProcessingEnvironment env) { ls(); }"}
+{"time": "2020-12-28 07:47:45.244947", "n_pass": [117, 25, 13], "score": "0.8175", "loss": "0.2871", "code": "@Oved void init(ProcessingEnvironment env) { ls(); }"}
+{"time": "2020-12-28 07:48:08.029738", "n_pass": [169, 33, 14], "score": "0.8175", "loss": "0.2871", "code": "@Oed void init(ProcessingEnvironment env) { ls(); }"}
+{"time": "2020-12-28 07:48:10.620305", "n_pass": [170, 34, 15], "score": "0.4964", "loss": "1.2287", "code": "@Od void init(ProcessingEnvironment env) { ls(); }"}
+{"time": "2020-12-28 07:48:13.213542", "n_pass": [171, 35, 16], "score": "0.7244", "loss": "0.4463", "code": "@O void init(ProcessingEnvironment env) { ls(); }"}
+{"time": "2020-12-28 07:48:57.050064", "n_pass": [197, 51, 17], "score": "0.8053", "loss": "0.3457", "code": "@O void init(ProcessingEnvironment env) {s(); }"}
+{"time": "2020-12-28 07:49:42.332548", "n_pass": [265, 67, 18], "score": "0.8053", "loss": "0.3457", "code": "@O void init(ProcessingEnvironment env) {s();}"}
+{"time": "2020-12-28 07:50:52.015873", "n_pass": [301, 93, 19], "score": "0.6718", "loss": "0.59", "code": "@O void init(ProcessingEnvironment nv) {s();}"}
+{"time": "2020-12-28 07:50:57.230545", "n_pass": [303, 95, 20], "score": "0.5669", "loss": "0.7546", "code": "@O void init(ProcessingEnvironment n) {s();}"}
+{"time": "2020-12-28 07:50:59.829033", "n_pass": [305, 96, 21], "score": "0.5669", "loss": "0.7546", "code": "@O void init(ProcessingEnvironment n){s();}"}
+
+Minimal simplified code:
+@O void init(ProcessingEnvironment n){s();}
+

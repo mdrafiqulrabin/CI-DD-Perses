@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/GuidedStepActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }
+
+topk path-contexts:
+[0.1907] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),guidedstepfragment
+[0.1648] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),addasroot
+[0.1159] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0880] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0752] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),guidedstepfragment
+[0.0693] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr0),null
+[0.0608] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NameExpr1),savedinstancestate
+[0.0547] savedinstancestate,(NameExpr2)^(MethodCallExpr)_(NameExpr3),oncreate
+[0.0289] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ThisExpr2),this
+[0.0248] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),addasroot
+
+topk terminals:
+['oncreate', 'guidedstepfragment', 'oncreate', 'addasroot', 'savedinstancestate', 'oncreate', 'bundle', 'oncreate', 'savedinstancestate', 'guidedstepfragment', 'oncreate', 'null', 'oncreate', 'savedinstancestate', 'savedinstancestate', 'oncreate', 'oncreate', 'this', 'savedinstancestate', 'addasroot']
+

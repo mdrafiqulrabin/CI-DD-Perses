@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoActivityTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }
+predict, score, loss = setUp, 0.99996114, 5.197441e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-27 22:56:54.282968", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0001", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }"}
+{"time": "2020-12-27 22:56:56.011563", "n_pass": [26, 2, 2], "score": "1.0", "loss": "0.0001", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstetActivity()); }"}
+{"time": "2020-12-27 22:56:57.739549", "n_pass": [48, 3, 3], "score": "0.9999", "loss": "0.0001", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-27 22:56:59.082451", "n_pass": [50, 4, 4], "score": "1.0", "loss": "0.0001", "code": "@Overriected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-27 22:57:01.162718", "n_pass": [55, 5, 5], "score": "0.9999", "loss": "0.0001", "code": "@Overriected void setUp() throws Ex{ super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-27 22:57:03.845867", "n_pass": [58, 7, 6], "score": "0.9997", "loss": "0.0004", "code": "@Overriected void setUp() throws Ex{ super.setUp();new Solo(getInstty()); }"}
+{"time": "2020-12-27 22:57:05.185190", "n_pass": [59, 8, 7], "score": "0.9987", "loss": "0.0017", "code": "@Overriected void setUp() throws Ex{ super.setUp();(getInstty()); }"}
+{"time": "2020-12-27 22:57:07.250283", "n_pass": [88, 9, 8], "score": "0.999", "loss": "0.0012", "code": "@Overriected void setUp() throws Ex{ super.setUp();(getty()); }"}
+{"time": "2020-12-27 22:57:08.574930", "n_pass": [89, 10, 9], "score": "0.9992", "loss": "0.001", "code": "@Overriected void setUp() throws Ex{ super.setUp();(get); }"}
+{"time": "2020-12-27 22:57:09.895489", "n_pass": [92, 11, 10], "score": "0.9992", "loss": "0.001", "code": "@Oviected void setUp() throws Ex{ super.setUp();(get); }"}
+{"time": "2020-12-27 22:57:11.240818", "n_pass": [93, 12, 11], "score": "0.9992", "loss": "0.001", "code": "@Ovted void setUp() throws Ex{ super.setUp();(get); }"}
+{"time": "2020-12-27 22:57:12.577799", "n_pass": [94, 13, 12], "score": "0.9979", "loss": "0.0028", "code": "@Ov void setUp() throws Ex{ super.setUp();(get); }"}
+{"time": "2020-12-27 22:57:15.020581", "n_pass": [102, 14, 13], "score": "0.2011", "loss": "2.964", "code": "@Ov void setUp() throws Ex{ susetUp();(get); }"}
+{"time": "2020-12-27 22:57:23.945935", "n_pass": [144, 20, 14], "score": "0.2863", "loss": "2.2957", "code": "@Ov void setUp() throws Ex{ susetUp();(g); }"}
+{"time": "2020-12-27 22:57:30.680089", "n_pass": [162, 24, 15], "score": "0.5396", "loss": "1.3891", "code": "@Ov void setUp() throws Ex{ setUp();(g); }"}
+{"time": "2020-12-27 22:57:31.995181", "n_pass": [163, 25, 16], "score": "0.2859", "loss": "2.3004", "code": "@Ov void setUp() throws Ex{ tUp();(g); }"}
+{"time": "2020-12-27 22:57:42.752960", "n_pass": [223, 30, 17], "score": "0.3125", "loss": "2.1521", "code": "@Ov void setUp() throws Ex{ Up();(g); }"}
+{"time": "2020-12-27 22:57:45.352664", "n_pass": [232, 32, 18], "score": "0.3125", "loss": "2.1521", "code": "@Ov void setUp() throws Ex{ Up();(g);}"}
+{"time": "2020-12-27 22:57:57.179953", "n_pass": [250, 39, 19], "score": "0.3125", "loss": "2.1521", "code": "@Ov void setUp()throws Ex{ Up();(g);}"}
+{"time": "2020-12-27 22:57:59.973579", "n_pass": [259, 41, 20], "score": "0.3932", "loss": "1.8157", "code": "@Ov void setUp()throws E{ Up();(g);}"}
+{"time": "2020-12-27 22:58:01.291530", "n_pass": [261, 42, 21], "score": "0.3932", "loss": "1.8157", "code": "@Ov void setUp()throws E{Up();(g);}"}
+
+Minimal simplified code:
+@Ov void setUp()throws E{Up();(g);}
+

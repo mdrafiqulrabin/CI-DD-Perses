@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/Http11Processor_setSocketBuffer.java
+method_name = setSocketBuffer
+method_body = @Override public void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); outputBuffer.setSocketBuffer(socketBuffer); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 09:11:44.678028", "score": "0.3012", "loss": "2.0785", "code": "class T { @Override public void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); outputBuffer.setSocketBuffer(socketBuffer); } }"}
+{"time": "2021-01-24 09:14:47.568788", "score": "0.4768", "loss": "1.4707", "code": "class T { @Override public void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); } }"}
+{"time": "2021-01-24 09:16:02.772177", "score": "0.552", "loss": "1.2406", "code": "class T { void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); } }"}
+{"time": "2021-01-24 09:16:42.248473", "score": "0.3481", "loss": "1.7533", "code": "class T { void setSocketBuffer( ) { super.setSocketBuffer(socketBuffer); } }"}
+
+Minimal simplified code:
+class T {
+                 void setSocketBuffer(                ) { super.setSocketBuffer(socketBuffer);                                             }
+}
+
+

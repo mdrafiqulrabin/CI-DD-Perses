@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/HttpConnector_getInUse.java
+method_name = getInUse
+method_body = public int getInUse() { return inUse.get(); }
+predict, score, loss = getInUse, 0.43580153584480286, 1.4175090789794922
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:45:11.978803", "n_pass": [1, 1, 1], "score": "0.4358", "loss": "1.4175", "code": "public int getInUse() { return inUse.get(); }"}
+{"time": "2021-01-20 06:45:14.588307", "n_pass": [20, 2, 2], "score": "0.4358", "loss": "1.4175", "code": "int getInUse() { return inUse.get(); }"}
+{"time": "2021-01-20 06:45:22.480256", "n_pass": [47, 4, 3], "score": "0.4358", "loss": "1.4175", "code": "int getInUse(){ return inUse.get(); }"}
+{"time": "2021-01-20 06:45:25.080689", "n_pass": [49, 5, 4], "score": "0.4358", "loss": "1.4175", "code": "int getInUse(){return inUse.get(); }"}
+{"time": "2021-01-20 06:45:39.656655", "n_pass": [76, 10, 5], "score": "0.4358", "loss": "1.4175", "code": "int getInUse(){return inUse.get();}"}
+
+Minimal simplified code:
+int getInUse(){return inUse.get();}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/StringUtils_upperFirstLetter.java
+method_name = upperFirstLetter
+method_body = public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return ""; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }
+
+topk path-contexts:
+[0.1122] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr3),islowercase
+[0.0661] 0,(IntegerLiteralExpr1)^(BinaryExpr:equals)^(BinaryExpr:or)^(IfStmt)^(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr3),islowercase
+[0.0654] s,(NameExpr0)^(BinaryExpr:equals)^(BinaryExpr:or)^(IfStmt)^(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr3),islowercase
+[0.0608] charat,(NameExpr3)^(MethodCallExpr2)^(MethodCallExpr)_(NameExpr3),islowercase
+[0.0590] s,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr3),islowercase
+[0.0315] char,(PrimitiveType0)^(CastExpr2)_(EnclosedExpr)_(BinaryExpr:minus)_(IntegerLiteralExpr1),32
+[0.0282] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(BinaryExpr:or)^(IfStmt)^(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr3),islowercase
+[0.0277] s,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr3),substring
+[0.0277] s,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(MethodCallExpr0)_(NameExpr3),valueof
+[0.0238] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr3),charat
+
+topk terminals:
+['string', 'islowercase', '0', 'islowercase', 's', 'islowercase', 'charat', 'islowercase', 's', 'islowercase', 'char', '32', 'null', 'islowercase', 's', 'substring', 's', 'valueof', 'METHOD_NAME', 'charat']
+

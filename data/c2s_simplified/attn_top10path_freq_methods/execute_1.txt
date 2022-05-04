@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StartTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/start").toString()); }
+
+topk path-contexts for sub-token: execute
+[0.4969] super,SuperExpr0|MethodCallExpr|NameExpr2,execute
+[0.1052] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.1052] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0880] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0880] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0121] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr0|StringLiteralExpr1,start
+[0.0111] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr0|StringLiteralExpr1,start
+[0.0076] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,build|exception
+[0.0073] to|string,NameExpr2|MethodCallExpr1|MethodCallExpr|NameExpr2,execute
+[0.0073] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|NameExpr2,to|string
+
+topk terminals for sub-token: execute
+['super', 'execute', 'build|exception', 'execute', 'build|exception', 'execute', 'METHOD_NAME', 'execute', 'METHOD_NAME', 'execute', 'build|exception', 'start', 'METHOD_NAME', 'start', 'void', 'build|exception', 'to|string', 'execute', 'build|exception', 'to|string']
+

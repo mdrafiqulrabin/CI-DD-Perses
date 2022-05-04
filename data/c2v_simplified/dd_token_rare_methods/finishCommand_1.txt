@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/execution/Command_finishCommand.java
+method_name = finishCommand
+method_body = protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }
+predict, score, loss = finishCommand, 0.3902847468852997, 1.190187692642212
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:11:00.450214", "n_pass": [1, 1, 1], "score": "0.3903", "loss": "1.1902", "code": "protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }"}
+{"time": "2021-01-20 08:11:03.472784", "n_pass": [20, 2, 2], "score": "0.3903", "loss": "1.1902", "code": "void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }"}
+{"time": "2021-01-20 08:11:08.734459", "n_pass": [24, 4, 3], "score": "0.4434", "loss": "1.1715", "code": "void finishCommand() { this.executing = finished = true; this.notifyAll(); }"}
+{"time": "2021-01-20 08:11:16.573265", "n_pass": [45, 7, 4], "score": "0.3592", "loss": "1.2064", "code": "void finishCommand() { this.executing = finished = this.notifyAll(); }"}
+{"time": "2021-01-20 08:11:19.190211", "n_pass": [46, 8, 5], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand() { this.executing = finished =notifyAll(); }"}
+{"time": "2021-01-20 08:11:30.560243", "n_pass": [86, 11, 6], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){ this.executing = finished =notifyAll(); }"}
+{"time": "2021-01-20 08:11:33.191986", "n_pass": [88, 12, 7], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){this.executing = finished =notifyAll(); }"}
+{"time": "2021-01-20 08:11:38.448816", "n_pass": [92, 14, 8], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){this.executing= finished =notifyAll(); }"}
+{"time": "2021-01-20 08:11:41.061618", "n_pass": [94, 15, 9], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){this.executing=finished =notifyAll(); }"}
+{"time": "2021-01-20 08:11:43.675962", "n_pass": [96, 16, 10], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){this.executing=finished=notifyAll(); }"}
+{"time": "2021-01-20 08:11:56.119013", "n_pass": [121, 20, 11], "score": "0.3309", "loss": "1.2559", "code": "void finishCommand(){this.executing=finished=notifyAll();}"}
+
+Minimal simplified code:
+void finishCommand(){this.executing=finished=notifyAll();}
+

@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/authz/impl/FunctionManagerComponent_getRegisteredFunctions.java
+method_name = getRegisteredFunctions
+method_body = public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function.startsWith(prefix)) { rv.add(function); } } return rv; }
+predict, score, loss = getRegisteredFunctions, 0.48723665, 1.822607
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:59:01.913556", "n_pass": [1, 1, 1], "score": "0.4872", "loss": "1.8226", "code": "public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function.startsWith(prefix)) { rv.add(function); } } return rv; }"}
+{"time": "2021-01-20 05:59:05.002483", "n_pass": [55, 3, 2], "score": "0.553", "loss": "1.5325", "code": "public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv.add(function); } } return rv; }"}
+{"time": "2021-01-20 05:59:06.333195", "n_pass": [57, 4, 3], "score": "0.7966", "loss": "1.9858", "code": "public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } return rv; }"}
+{"time": "2021-01-20 05:59:07.687762", "n_pass": [63, 5, 4], "score": "0.6899", "loss": "2.467", "code": "public List<String> getRegisteredFunctions(String prefix) { rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } return rv; }"}
+{"time": "2021-01-20 05:59:09.017987", "n_pass": [64, 6, 5], "score": "0.6277", "loss": "2.1475", "code": "public List<String> getRegisteredFunctions(String prefix) {new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } return rv; }"}
+{"time": "2021-01-20 05:59:10.389649", "n_pass": [117, 7, 6], "score": "0.6816", "loss": "3.2603", "code": "public List<String> getRegisteredFunctions(String prefix) {new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:11.735971", "n_pass": [118, 8, 7], "score": "0.6816", "loss": "3.2603", "code": "List<String> getRegisteredFunctions(String prefix) {new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:16.854203", "n_pass": [189, 9, 8], "score": "0.6816", "loss": "3.2603", "code": "List<String>getRegisteredFunctions(String prefix) {new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:18.197420", "n_pass": [195, 10, 9], "score": "0.6816", "loss": "3.2603", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<String>(); for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:19.533129", "n_pass": [201, 11, 10], "score": "0.7755", "loss": "1.7298", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>(); for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:20.884990", "n_pass": [206, 12, 11], "score": "0.7755", "loss": "1.7298", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for (String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:22.241251", "n_pass": [208, 13, 12], "score": "0.7755", "loss": "1.7298", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function : m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:23.575849", "n_pass": [213, 14, 13], "score": "0.7755", "loss": "1.7298", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function: m_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:24.924721", "n_pass": [215, 15, 14], "score": "0.7048", "loss": "2.1906", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:_registeredFunctions) { if (function) { rv; } } ; }"}
+{"time": "2021-01-20 05:59:26.270521", "n_pass": [223, 16, 15], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:_registeredFunctions) { if (function) {  } } ; }"}
+{"time": "2021-01-20 05:59:27.607145", "n_pass": [226, 17, 16], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:_registeredFunctions) { if (function) {  } } }"}
+{"time": "2021-01-20 05:59:32.049629", "n_pass": [282, 18, 17], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:_registeredFunctions) { if (function) {  } }}"}
+{"time": "2021-01-20 05:59:33.793062", "n_pass": [308, 19, 18], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions) { if (function) {  } }}"}
+{"time": "2021-01-20 05:59:35.143615", "n_pass": [311, 20, 19], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){ if (function) {  } }}"}
+{"time": "2021-01-20 05:59:36.473826", "n_pass": [313, 21, 20], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if (function) {  } }}"}
+{"time": "2021-01-20 05:59:37.829226", "n_pass": [315, 22, 21], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function) {  } }}"}
+{"time": "2021-01-20 05:59:39.153049", "n_pass": [319, 23, 22], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function){  } }}"}
+{"time": "2021-01-20 05:59:40.487230", "n_pass": [321, 24, 23], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function){ } }}"}
+{"time": "2021-01-20 05:59:41.821339", "n_pass": [322, 25, 24], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function){} }}"}
+{"time": "2021-01-20 05:59:43.153499", "n_pass": [324, 26, 25], "score": "0.3922", "loss": "3.3883", "code": "List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function){}}}"}
+
+Minimal simplified code:
+List<String>getRegisteredFunctions(String prefix){new Vector<>();for(String function:registeredFunctions){if(function){}}}
+

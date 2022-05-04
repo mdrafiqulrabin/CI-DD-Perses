@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/core/internal/resource/DocumentMapperUtil_getResourceInformation.java
+method_name = getResourceInformation
+method_body = public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 11:48:52.410547", "score": "0.4608", "loss": "1.9781", "code": "class T { public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); } }"}
+{"time": "2021-01-24 11:54:31.049383", "score": "0.6094", "loss": "1.6338", "code": "class T { public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry( ).getResourceInformation(); } }"}
+{"time": "2021-01-24 11:55:10.703270", "score": "0.6094", "loss": "1.6338", "code": "class T { ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry( ).getResourceInformation(); } }"}
+
+Minimal simplified code:
+class T {
+       ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(            ).getResourceInformation(); }
+}
+
+

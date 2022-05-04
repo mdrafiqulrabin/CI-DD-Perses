@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/biz/common/i18n/impl/MessageResourceServiceImpl_get.java
+method_name = get
+method_body = public String get(String key, Object... args) { try { if (messageSource != null) { return messageSource.getMessage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 18:46:50.895812", "score": "0.5293", "loss": "0.6468", "code": "class T { public String get(String key, Object... args) { try { if (messageSource != null) { return messageSource.getMessage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } } }"}
+{"time": "2020-12-28 18:53:07.623841", "score": "0.7704", "loss": "0.2676", "code": "class T { public String get(String key, Object... args) { try { return key; } catch (NoSuchMessageException e) { return key; } } }"}
+{"time": "2020-12-28 18:53:46.917586", "score": "0.5376", "loss": "0.6375", "code": "class T { public String get( ) { try { return key; } catch (NoSuchMessageException e) { return key; } } }"}
+{"time": "2020-12-28 18:57:03.675430", "score": "0.5376", "loss": "0.6375", "code": "class T { String get( ) { try { return key; } catch (NoSuchMessageException e) { return key; } } }"}
+
+Minimal simplified code:
+class T {
+       String get(                          ) { try {                                                                                                         return key; } catch (NoSuchMessageException e) { return key; } }
+}
+
+

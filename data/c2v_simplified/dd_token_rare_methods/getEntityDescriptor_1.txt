@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-schema/openam-liberty-schema/src/main/java/com/sun/identity/liberty/ws/meta/jaxb/impl/EntitiesDescriptorTypeImpl_getEntityDescriptor.java
+method_name = getEntityDescriptor
+method_body = public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }
+predict, score, loss = getEntityDescriptor, 0.31994643807411194, 1.3807977437973022
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:30:00.422843", "n_pass": [1, 1, 1], "score": "0.3199", "loss": "1.3808", "code": "public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-20 07:30:03.410697", "n_pass": [20, 2, 2], "score": "0.3199", "loss": "1.3808", "code": "java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-20 07:30:23.937671", "n_pass": [71, 9, 3], "score": "0.3199", "loss": "1.3808", "code": "java.util.List getEntityDescriptor(){ return _getEntityDescriptor(); }"}
+{"time": "2021-01-20 07:30:26.573791", "n_pass": [72, 10, 4], "score": "0.3199", "loss": "1.3808", "code": "java.util.List getEntityDescriptor(){return _getEntityDescriptor(); }"}
+{"time": "2021-01-20 07:30:34.392499", "n_pass": [75, 13, 5], "score": "0.3199", "loss": "1.3808", "code": "java.util.List getEntityDescriptor(){return getEntityDescriptor(); }"}
+{"time": "2021-01-20 07:30:36.991453", "n_pass": [80, 14, 6], "score": "0.3199", "loss": "1.3808", "code": "java.util.List getEntityDescriptor(){return getEntityDescriptor();}"}
+
+Minimal simplified code:
+java.util.List getEntityDescriptor(){return getEntityDescriptor();}
+

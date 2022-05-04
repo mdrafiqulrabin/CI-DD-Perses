@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/BBuffer_get.java
+method_name = get
+method_body = public int get(int off) { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 09:45:23.699270", "score": "0.6972", "loss": "0.6652", "code": "class T { public int get(int off) { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; } }"}
+{"time": "2020-12-29 09:54:59.875794", "score": "0.6265", "loss": "0.7744", "code": "class T { public int get(int off) { if (start + off >= end) { throw ArrayIndexOutOfBoundsException ; } return buff[start + off] & 0xFF; } }"}
+{"time": "2020-12-29 09:56:59.504895", "score": "0.7672", "loss": "0.5636", "code": "class T { public int get( ) { if (start + off >= end) { throw ArrayIndexOutOfBoundsException ; } return buff[start + off] & 0xFF; } }"}
+{"time": "2020-12-29 09:57:39.403042", "score": "0.7672", "loss": "0.5636", "code": "class T { int get( ) { if (start + off >= end) { throw ArrayIndexOutOfBoundsException ; } return buff[start + off] & 0xFF; } }"}
+{"time": "2020-12-29 10:06:21.323038", "score": "0.8106", "loss": "0.3313", "code": "class T { int get( ) { if (start + off >= end) throw ArrayIndexOutOfBoundsException ; return buff[start + off] & 0xFF; } }"}
+{"time": "2020-12-29 10:10:46.399718", "score": "0.5754", "loss": "0.7266", "code": "class T { int get( ) { if (start + off >= end) throw ArrayIndexOutOfBoundsException ; } }"}
+
+Minimal simplified code:
+class T {
+       int get(       ) { if (start + off >= end)   throw     ArrayIndexOutOfBoundsException  ;                                    }
+}
+
+

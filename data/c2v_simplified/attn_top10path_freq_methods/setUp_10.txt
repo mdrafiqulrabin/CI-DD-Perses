@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestSsl_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); }
+
+topk path-contexts:
+[0.7644] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),setup
+[0.0303] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(FieldAccessExpr0)_(NameExpr0),testersupport
+[0.0303] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0226] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr3),true
+[0.0196] true,(StringLiteralExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0144] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0141] rfcsupported,(NameExpr2)^(FieldAccessExpr)^(UnaryExpr:not)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0133] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0094] system,(NameExpr0)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0089] testersupport,(NameExpr0)^(FieldAccessExpr)^(UnaryExpr:not)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+
+topk terminals:
+['super', 'setup', 'exception', 'testersupport', 'exception', 'setup', 'exception', 'true', 'true', 'setup', 'METHOD_NAME', 'setup', 'rfcsupported', 'setup', 'exception', 'super', 'system', 'setup', 'testersupport', 'setup']
+

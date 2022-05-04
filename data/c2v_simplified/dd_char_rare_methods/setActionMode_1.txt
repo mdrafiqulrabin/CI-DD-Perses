@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/DeliveryBean_setActionMode.java
+method_name = setActionMode
+method_body = private void setActionMode(int actionMode) { this.actionMode = actionMode; }
+predict, score, loss = setActionMode, 0.3427821099758148, 1.1626205444335938
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:19:41.135314", "n_pass": [1, 1, 1], "score": "0.3428", "loss": "1.1626", "code": "private void setActionMode(int actionMode) { this.actionMode = actionMode; }"}
+{"time": "2021-01-23 16:19:49.726688", "n_pass": [26, 4, 2], "score": "0.3312", "loss": "1.8303", "code": "private void setActionMode(int actionMode) { this.actionionMode; }"}
+{"time": "2021-01-23 16:19:55.304979", "n_pass": [33, 6, 3], "score": "0.2531", "loss": "2.1653", "code": "private void setActionMode(int actionMode) { tionMode; }"}
+{"time": "2021-01-23 16:20:00.888285", "n_pass": [52, 8, 4], "score": "0.4752", "loss": "1.7621", "code": "private void setActionMode(int actionMode) { tde; }"}
+{"time": "2021-01-23 16:20:35.034338", "n_pass": [152, 19, 5], "score": "0.2147", "loss": "2.4058", "code": "private void setActionMode(int actionMode) { e; }"}
+{"time": "2021-01-23 16:21:28.903742", "n_pass": [209, 37, 6], "score": "0.2147", "loss": "2.4058", "code": "private void setActionMode(int actionMode) { e;}"}
+{"time": "2021-01-23 16:22:23.986717", "n_pass": [252, 56, 7], "score": "0.2147", "loss": "2.4058", "code": "private void setActionMode(int actionMode){ e;}"}
+{"time": "2021-01-23 16:22:26.587195", "n_pass": [254, 57, 8], "score": "0.2147", "loss": "2.4058", "code": "private void setActionMode(int actionMode){e;}"}
+
+Minimal simplified code:
+private void setActionMode(int actionMode){e;}
+

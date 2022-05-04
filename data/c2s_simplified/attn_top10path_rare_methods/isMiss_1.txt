@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/domain/Entity_isMiss.java
+method_name = isMiss
+method_body = public boolean isMiss() { return miss; }
+
+topk path-contexts for sub-token: is
+[0.3432] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,miss
+[0.3365] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,miss
+[0.0887] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: is
+['boolean', 'miss', 'METHOD_NAME', 'miss', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: miss
+[0.4737] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,miss
+[0.4505] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,miss
+[0.0242] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: miss
+['boolean', 'miss', 'METHOD_NAME', 'miss', 'boolean', 'METHOD_NAME']
+

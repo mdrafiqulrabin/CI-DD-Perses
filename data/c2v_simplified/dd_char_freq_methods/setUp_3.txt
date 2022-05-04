@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoHelperTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }
+predict, score, loss = setUp, 0.9992044568061829, 0.0007961202645674348
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:56:40.105496", "n_pass": [1, 1, 1], "score": "0.9992", "loss": "0.0008", "code": "@Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }"}
+{"time": "2020-12-28 06:56:46.120802", "n_pass": [24, 3, 2], "score": "0.8743", "loss": "0.1392", "code": "@Override protected void setUp() throws Exception { supeolver = getContext().getContentResolver(); }"}
+{"time": "2020-12-28 06:56:59.618735", "n_pass": [49, 8, 3], "score": "0.961", "loss": "0.0405", "code": "@Override protected void setUp() throws Exception { supeolver = getContext().entResolver(); }"}
+{"time": "2020-12-28 06:57:02.215251", "n_pass": [50, 9, 4], "score": "0.6384", "loss": "0.4659", "code": "@Override protected void setUp() throws Exception { supeolver = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:04.852407", "n_pass": [53, 10, 5], "score": "0.6598", "loss": "0.4328", "code": "@Overriected void setUp() throws Exception { supeolver = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:16.094363", "n_pass": [87, 14, 6], "score": "0.6598", "loss": "0.4328", "code": "@Overrted void setUp() throws Exception { supeolver = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:18.718015", "n_pass": [88, 15, 7], "score": "0.6598", "loss": "0.4328", "code": "@Overr void setUp() throws Exception { supeolver = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:27.730101", "n_pass": [99, 18, 8], "score": "0.6598", "loss": "0.4328", "code": "@Overr void setUp() throws Exception { slver = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:30.410981", "n_pass": [100, 19, 9], "score": "0.6581", "loss": "0.4489", "code": "@Overr void setUp() throws Exception { s = getContext().ver(); }"}
+{"time": "2020-12-28 06:57:32.992112", "n_pass": [101, 20, 10], "score": "0.746", "loss": "0.4195", "code": "@Overr void setUp() throws Exception { setContext().ver(); }"}
+{"time": "2020-12-28 06:58:03.075840", "n_pass": [159, 31, 11], "score": "0.9561", "loss": "0.0737", "code": "@Overr void setUp() throws Exception { setContext().r(); }"}
+{"time": "2020-12-28 06:58:05.669837", "n_pass": [163, 32, 12], "score": "0.9561", "loss": "0.0737", "code": "@verr void setUp() throws Exception { setContext().r(); }"}
+{"time": "2020-12-28 06:58:08.261917", "n_pass": [164, 33, 13], "score": "0.9738", "loss": "0.0482", "code": "@err void setUp() throws Exception { setContext().r(); }"}
+{"time": "2020-12-28 06:58:10.864640", "n_pass": [165, 34, 14], "score": "0.884", "loss": "0.2091", "code": "@rr void setUp() throws Exception { setContext().r(); }"}
+{"time": "2020-12-28 06:58:13.446940", "n_pass": [166, 35, 15], "score": "0.9249", "loss": "0.1153", "code": "@r void setUp() throws Exception { setContext().r(); }"}
+{"time": "2020-12-28 06:58:22.817245", "n_pass": [180, 38, 16], "score": "0.4008", "loss": "1.2308", "code": "@r void setUp() throws Eeption { setContext().r(); }"}
+{"time": "2020-12-28 06:58:25.402276", "n_pass": [181, 39, 17], "score": "0.4008", "loss": "1.2308", "code": "@r void setUp() throws Etion { setContext().r(); }"}
+{"time": "2020-12-28 06:58:30.608999", "n_pass": [183, 41, 18], "score": "0.3879", "loss": "1.6871", "code": "@r void setUp() throws Eti { setContext().r(); }"}
+{"time": "2020-12-28 06:58:52.950544", "n_pass": [209, 49, 19], "score": "0.5114", "loss": "0.8811", "code": "@r void setUp() throws E { setContext().r(); }"}
+{"time": "2020-12-28 06:59:17.992054", "n_pass": [278, 57, 20], "score": "0.5114", "loss": "0.8811", "code": "@r void setUp() throws E {setContext().r(); }"}
+{"time": "2020-12-28 06:59:43.870513", "n_pass": [295, 67, 21], "score": "0.5114", "loss": "0.8811", "code": "@r void setUp() throws E {setContext().r();}"}
+{"time": "2020-12-28 06:59:59.682985", "n_pass": [312, 72, 22], "score": "0.5114", "loss": "0.8811", "code": "@r void setUp()throws E {setContext().r();}"}
+{"time": "2020-12-28 07:00:02.296217", "n_pass": [321, 73, 23], "score": "0.5114", "loss": "0.8811", "code": "@r void setUp()throws E{setContext().r();}"}
+
+Minimal simplified code:
+@r void setUp()throws E{setContext().r();}
+

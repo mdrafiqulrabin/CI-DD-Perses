@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/north2016__PianoView/Vpager/src/com/test/vp/MainActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }
+predict, score, loss = onCreate, 1.0, 0.0
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:16:46.619251", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }"}
+{"time": "2020-12-28 08:16:49.239346", "n_pass": [20, 2, 2], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }"}
+{"time": "2020-12-28 08:16:51.880069", "n_pass": [25, 3, 3], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setCont; init(); InitTabViews(); InitViewPager(); }"}
+{"time": "2020-12-28 08:16:54.508989", "n_pass": [26, 4, 4], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setCont(); InitViewPager(); }"}
+{"time": "2020-12-28 08:16:57.141132", "n_pass": [42, 5, 5], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContwPager(); }"}
+{"time": "2020-12-28 08:17:00.147925", "n_pass": [45, 6, 6], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle nceState) { super.onCreate(savedInstanceState); setContwPager(); }"}
+{"time": "2020-12-28 08:17:05.397555", "n_pass": [49, 8, 7], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle nceState) { super.onCreate(savedIe); setContwPager(); }"}
+{"time": "2020-12-28 08:17:11.046605", "n_pass": [72, 10, 8], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle nceState) { super.onCreate(savedIe); twPager(); }"}
+{"time": "2020-12-28 08:17:13.656995", "n_pass": [73, 11, 9], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle nceState) { super.onCreate(savedIe); r(); }"}
+{"time": "2020-12-28 08:17:17.078133", "n_pass": [79, 12, 10], "score": "1.0", "loss": "0.0", "code": "oid onCreate(Bundle ate) { super.onCreate(savedIe); r(); }"}
+{"time": "2020-12-28 08:17:25.708643", "n_pass": [113, 15, 11], "score": "0.9902", "loss": "0.0132", "code": "oid onCreate(Bun ate) { super.onCreate(savedIe); r(); }"}
+{"time": "2020-12-28 08:17:28.309150", "n_pass": [117, 16, 12], "score": "0.9898", "loss": "0.0139", "code": "oid onCreate(Bun ate) { sr.onCreate(savedIe); r(); }"}
+{"time": "2020-12-28 08:17:38.726484", "n_pass": [122, 20, 13], "score": "0.9898", "loss": "0.0139", "code": "oid onCreate(Bun ate) { sr.onCreate(sdIe); r(); }"}
+{"time": "2020-12-28 08:17:41.341264", "n_pass": [123, 21, 14], "score": "0.9885", "loss": "0.0159", "code": "oid onCreate(Bun ate) { sr.onCreate(s); r(); }"}
+{"time": "2020-12-28 08:17:43.946206", "n_pass": [125, 22, 15], "score": "0.9788", "loss": "0.0282", "code": "oid onCreate(Bun ate) { sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:17:46.541563", "n_pass": [127, 23, 16], "score": "0.9793", "loss": "0.0272", "code": "d onCreate(Bun ate) { sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:17:51.154751", "n_pass": [134, 24, 17], "score": "0.7715", "loss": "0.2675", "code": "d onCreate(B ate) { sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:05.464554", "n_pass": [181, 28, 18], "score": "0.6613", "loss": "0.4496", "code": "d onCreate(B te) { sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:08.074173", "n_pass": [182, 29, 19], "score": "0.6104", "loss": "0.5354", "code": "d onCreate(B e) { sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:10.678206", "n_pass": [185, 30, 20], "score": "0.6104", "loss": "0.5354", "code": "d onCreate(B e){ sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:13.282110", "n_pass": [187, 31, 21], "score": "0.6104", "loss": "0.5354", "code": "d onCreate(B e){sr.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:15.886349", "n_pass": [188, 32, 22], "score": "0.6098", "loss": "0.5367", "code": "d onCreate(B e){r.onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:18.499994", "n_pass": [189, 33, 23], "score": "0.4266", "loss": "0.9439", "code": "d onCreate(B e){onCreate(s); ; }"}
+{"time": "2020-12-28 08:18:31.563424", "n_pass": [196, 38, 24], "score": "0.4266", "loss": "0.9439", "code": "d onCreate(B e){onCreate(s); }"}
+{"time": "2020-12-28 08:18:49.402336", "n_pass": [234, 43, 25], "score": "0.4266", "loss": "0.9439", "code": "d onCreate(B e){onCreate(s);}"}
+{"time": "2020-12-28 08:19:16.962275", "n_pass": [260, 52, 26], "score": "0.7232", "loss": "0.4272", "code": "d onCreate(B e){onCreate();}"}
+
+Minimal simplified code:
+d onCreate(B e){onCreate();}
+

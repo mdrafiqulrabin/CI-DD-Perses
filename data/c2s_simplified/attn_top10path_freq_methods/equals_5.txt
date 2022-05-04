@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/internal/Column_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; Column column = (Column) o; return name.equalsIgnoreCase(column.name); }
+
+topk path-contexts for sub-token: equals
+[0.3208] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.2293] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0666] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|ThisExpr0,this
+[0.0648] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0498] o,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0498] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0399] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0381] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0182] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|ThisExpr0,this
+[0.0122] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,o
+
+topk terminals for sub-token: equals
+['object', 'false', 'object', 'true', 'object', 'this', 'boolean', 'object', 'o', 'object', 'o', 'false', 'METHOD_NAME', 'object', 'o', 'true', 'o', 'this', 'boolean', 'o']
+

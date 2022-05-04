@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/drakeet__MultiType/sample/src/androidTest/java/me/drakeet/multitype/sample/RecyclerViewMatcher_withRecyclerView.java
+method_name = withRecyclerView
+method_body = public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }
+predict, score, loss = withRecyclerView, 0.27436227, 2.4623818
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:16:35.496226", "n_pass": [1, 1, 1], "score": "0.2744", "loss": "2.4624", "code": "public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }"}
+{"time": "2021-01-20 05:16:37.156101", "n_pass": [20, 2, 2], "score": "0.2744", "loss": "2.4624", "code": " RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }"}
+{"time": "2021-01-20 05:16:40.819118", "n_pass": [42, 4, 3], "score": "0.2744", "loss": "2.4624", "code": "RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }"}
+{"time": "2021-01-20 05:16:42.847501", "n_pass": [46, 5, 4], "score": "0.2744", "loss": "2.4624", "code": "RecyclerViewMatcher withRecyclerView(int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }"}
+{"time": "2021-01-20 05:16:45.478829", "n_pass": [51, 7, 5], "score": "0.2894", "loss": "1.9968", "code": "RecyclerViewMatcher withRecyclerView(int recyclerViewId) { return RecyclerViewMatcher(recyclerViewId); }"}
+{"time": "2021-01-20 05:16:56.063626", "n_pass": [87, 13, 6], "score": "0.2894", "loss": "1.9968", "code": "RecyclerViewMatcher withRecyclerView(int recyclerViewId) { return RecyclerViewMatcher(recyclerViewId);}"}
+{"time": "2021-01-20 05:16:58.483989", "n_pass": [96, 14, 7], "score": "0.2894", "loss": "1.9968", "code": "RecyclerViewMatcher withRecyclerView(int recyclerViewId){ return RecyclerViewMatcher(recyclerViewId);}"}
+{"time": "2021-01-20 05:16:59.788071", "n_pass": [98, 15, 8], "score": "0.2894", "loss": "1.9968", "code": "RecyclerViewMatcher withRecyclerView(int recyclerViewId){return RecyclerViewMatcher(recyclerViewId);}"}
+
+Minimal simplified code:
+RecyclerViewMatcher withRecyclerView(int recyclerViewId){return RecyclerViewMatcher(recyclerViewId);}
+

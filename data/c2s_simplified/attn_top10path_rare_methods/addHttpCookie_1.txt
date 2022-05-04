@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server/src/main/java/org/kaazing/gateway/server/test/config/RealmConfiguration_addHttpCookie.java
+method_name = addHttpCookie
+method_body = @Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }
+
+topk path-contexts for sub-token: add
+[0.0573] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,string
+[0.0504] http|cookie,NameExpr2|MethodCallExpr|NameExpr3,add
+[0.0495] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+[0.0461] http|cookie,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,string
+[0.0453] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0445] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0429] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+[0.0402] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0381] http|cookie,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+[0.0379] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,string
+
+topk terminals for sub-token: add
+['void', 'string', 'http|cookie', 'add', 'METHOD_NAME', 'add', 'http|cookie', 'string', 'string', 'http|cookies', 'METHOD_NAME', 'http|cookies', 'string', 'add', 'override', 'void', 'http|cookie', 'add', 'METHOD_NAME', 'string']
+
+topk path-contexts for sub-token: http
+[0.1071] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0924] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0825] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,http|cookie
+[0.0567] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,http|cookie
+[0.0561] http|cookie,NameExpr2|MethodCallExpr|NameExpr3,add
+[0.0516] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,http|cookie
+[0.0470] http|cookie,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0469] http|cookies,NameExpr0|MethodCallExpr|NameExpr2,http|cookie
+[0.0449] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,http|cookie
+[0.0351] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+
+topk terminals for sub-token: http
+['METHOD_NAME', 'http|cookies', 'string', 'http|cookies', 'METHOD_NAME', 'http|cookie', 'void', 'http|cookie', 'http|cookie', 'add', 'METHOD_NAME', 'http|cookie', 'http|cookie', 'http|cookies', 'http|cookies', 'http|cookie', 'string', 'http|cookie', 'METHOD_NAME', 'add']
+
+topk path-contexts for sub-token: cookie
+[0.1260] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.1177] http|cookie,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.1156] http|cookies,NameExpr0|MethodCallExpr|NameExpr2,http|cookie
+[0.1041] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,http|cookies
+[0.0952] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,http|cookie
+[0.0836] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,http|cookie
+[0.0836] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,http|cookie
+[0.0704] http|cookie,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,http|cookie
+[0.0470] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,http|cookie
+[0.0292] http|cookie,NameExpr2|MethodCallExpr|NameExpr3,add
+
+topk terminals for sub-token: cookie
+['METHOD_NAME', 'http|cookies', 'http|cookie', 'http|cookies', 'http|cookies', 'http|cookie', 'string', 'http|cookies', 'void', 'http|cookie', 'METHOD_NAME', 'http|cookie', 'METHOD_NAME', 'http|cookie', 'http|cookie', 'http|cookie', 'string', 'http|cookie', 'http|cookie', 'add']
+

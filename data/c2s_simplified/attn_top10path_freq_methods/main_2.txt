@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+
+topk path-contexts for sub-token: main
+[0.3544] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1181] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0879] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0784] args,VariableDeclaratorId0|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0226] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,stopping|postgres
+[0.0193] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,starting|postgres
+[0.0182] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,log
+[0.0182] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,log
+[0.0151] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0132] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,stop
+
+topk terminals for sub-token: main
+['args', '[]', 'string', '[]', 'args', 'string', 'args', 'exception', 'args', 'stopping|postgres', 'args', 'starting|postgres', 'args', 'log', 'args', 'log', 'METHOD_NAME', '[]', 'args', 'stop']
+

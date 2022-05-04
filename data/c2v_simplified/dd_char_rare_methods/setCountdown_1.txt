@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/CCIP-App__CCIP-Android/app/src/main/java/org/pycontw/ccip/model/Scenario_setCountdown.java
+method_name = setCountdown
+method_body = public void setCountdown(Integer countdown) { this.countdown = countdown; }
+predict, score, loss = setCountdown, 0.4973355829715729, 0.7209147214889526
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:50:12.817949", "n_pass": [1, 1, 1], "score": "0.4973", "loss": "0.7209", "code": "public void setCountdown(Integer countdown) { this.countdown = countdown; }"}
+{"time": "2021-01-23 18:50:15.830194", "n_pass": [20, 2, 2], "score": "0.6995", "loss": "0.6456", "code": "id setCountdown(Integer countdown) { this.countdown = countdown; }"}
+{"time": "2021-01-23 18:50:24.837185", "n_pass": [45, 5, 3], "score": "0.5228", "loss": "1.0216", "code": "id setCountdown(er countdown) { this.countdown = countdown; }"}
+{"time": "2021-01-23 18:51:02.450660", "n_pass": [97, 19, 4], "score": "0.2598", "loss": "3.4171", "code": "id setCountdown(er countdown) { this.countd = countdown; }"}
+{"time": "2021-01-23 18:51:28.723191", "n_pass": [119, 28, 5], "score": "0.2275", "loss": "3.735", "code": "id setCountdown(er countdown) { is.countd = countdown; }"}
+{"time": "2021-01-23 18:51:36.509715", "n_pass": [122, 31, 6], "score": "0.3571", "loss": "3.654", "code": "id setCountdown(er countdown) { is.cou = countdown; }"}
+{"time": "2021-01-23 18:52:12.362891", "n_pass": [194, 43, 7], "score": "0.3571", "loss": "3.654", "code": "id setCountdown(er countdown) { is.cou= countdown; }"}
+{"time": "2021-01-23 18:52:25.366449", "n_pass": [201, 48, 8], "score": "0.279", "loss": "3.4777", "code": "d setCountdown(er countdown) { is.cou= countdown; }"}
+{"time": "2021-01-23 18:52:33.655019", "n_pass": [217, 49, 9], "score": "0.2041", "loss": "3.1097", "code": "d setCountdown(r countdown) { is.cou= countdown; }"}
+{"time": "2021-01-23 18:52:59.721697", "n_pass": [230, 59, 10], "score": "0.2041", "loss": "3.1097", "code": "d setCountdown(r countdown){ is.cou= countdown; }"}
+{"time": "2021-01-23 18:53:02.323201", "n_pass": [232, 60, 11], "score": "0.2041", "loss": "3.1097", "code": "d setCountdown(r countdown){is.cou= countdown; }"}
+{"time": "2021-01-23 18:53:04.921814", "n_pass": [233, 61, 12], "score": "0.3641", "loss": "2.2473", "code": "d setCountdown(r countdown){s.cou= countdown; }"}
+{"time": "2021-01-23 18:54:03.734664", "n_pass": [289, 81, 13], "score": "0.3641", "loss": "2.2473", "code": "d setCountdown(r countdown){s.cou=countdown; }"}
+{"time": "2021-01-23 18:54:29.745949", "n_pass": [300, 91, 14], "score": "0.3641", "loss": "2.2473", "code": "d setCountdown(r countdown){s.cou=countdown;}"}
+
+Minimal simplified code:
+d setCountdown(r countdown){s.cou=countdown;}
+

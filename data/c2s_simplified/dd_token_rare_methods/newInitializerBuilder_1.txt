@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/Stetho_newInitializerBuilder.java
+method_name = newInitializerBuilder
+method_body = public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }
+predict, score, loss = newInitializerBuilder, 0.3480399, 4.8936768
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:43:21.305247", "n_pass": [1, 1, 1], "score": "0.348", "loss": "4.8937", "code": "public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }"}
+{"time": "2021-01-20 05:43:23.333865", "n_pass": [20, 2, 2], "score": "0.348", "loss": "4.8937", "code": " InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }"}
+{"time": "2021-01-20 05:43:26.643210", "n_pass": [41, 4, 3], "score": "0.348", "loss": "4.8937", "code": "InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }"}
+{"time": "2021-01-20 05:43:29.073188", "n_pass": [49, 5, 4], "score": "0.3755", "loss": "5.2405", "code": "InitializerBuilder newInitializerBuilder(Context context) { new InitializerBuilder(context); }"}
+{"time": "2021-01-20 05:43:38.772809", "n_pass": [85, 10, 5], "score": "0.3755", "loss": "5.2405", "code": "InitializerBuilder newInitializerBuilder(Context context) { new InitializerBuilder(context);}"}
+{"time": "2021-01-20 05:43:41.175806", "n_pass": [94, 11, 6], "score": "0.3755", "loss": "5.2405", "code": "InitializerBuilder newInitializerBuilder(Context context){ new InitializerBuilder(context);}"}
+{"time": "2021-01-20 05:43:42.493572", "n_pass": [96, 12, 7], "score": "0.3755", "loss": "5.2405", "code": "InitializerBuilder newInitializerBuilder(Context context){new InitializerBuilder(context);}"}
+
+Minimal simplified code:
+InitializerBuilder newInitializerBuilder(Context context){new InitializerBuilder(context);}
+

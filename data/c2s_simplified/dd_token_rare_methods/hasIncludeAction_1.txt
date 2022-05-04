@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Node_hasIncludeAction.java
+method_name = hasIncludeAction
+method_body = public boolean hasIncludeAction() { return hasIncludeAction; }
+predict, score, loss = hasIncludeAction, 0.48152325, 0.7950254
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:30:01.226602", "n_pass": [1, 1, 1], "score": "0.4815", "loss": "0.795", "code": "public boolean hasIncludeAction() { return hasIncludeAction; }"}
+{"time": "2021-01-20 05:30:03.209061", "n_pass": [20, 2, 2], "score": "0.4815", "loss": "0.795", "code": "boolean hasIncludeAction() { return hasIncludeAction; }"}
+{"time": "2021-01-20 05:30:04.498800", "n_pass": [24, 3, 3], "score": "0.5413", "loss": "0.7215", "code": "boolean hasIncludeAction() { hasIncludeAction; }"}
+{"time": "2021-01-20 05:30:10.390146", "n_pass": [45, 6, 4], "score": "0.5413", "loss": "0.7215", "code": "boolean hasIncludeAction() { hasIncludeAction;}"}
+{"time": "2021-01-20 05:30:12.370407", "n_pass": [51, 7, 5], "score": "0.5413", "loss": "0.7215", "code": "boolean hasIncludeAction(){ hasIncludeAction;}"}
+{"time": "2021-01-20 05:30:13.675210", "n_pass": [53, 8, 6], "score": "0.5413", "loss": "0.7215", "code": "boolean hasIncludeAction(){hasIncludeAction;}"}
+
+Minimal simplified code:
+boolean hasIncludeAction(){hasIncludeAction;}
+

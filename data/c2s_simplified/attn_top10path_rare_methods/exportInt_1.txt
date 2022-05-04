@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/commons/src/main/java/org/apache/aurora/common/stats/Stats_exportInt.java
+method_name = exportInt
+method_body = public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); return intVar; }
+
+topk path-contexts for sub-token: export
+[0.0797] name,NameExpr1|ObjectCreationExpr1|MethodCallExpr|NameExpr2,export
+[0.0485] integer,PrimitiveType0|ClassOrInterfaceType|ObjectCreationExpr1|NameExpr1,name
+[0.0418] 0,IntegerLiteralExpr1|ObjectCreationExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,export
+[0.0375] 0,IntegerLiteralExpr2|ObjectCreationExpr1|MethodCallExpr|NameExpr2,export
+[0.0374] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,export
+[0.0298] integer,PrimitiveType0|ClassOrInterfaceType|ObjectCreationExpr1|MethodCallExpr|NameExpr2,export
+[0.0287] get,NameExpr2|MethodCallExpr|ReturnStmt|BlockStmt|MethodDeclaration|ObjectCreationExpr1|MethodCallExpr|NameExpr2,export
+[0.0283] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,export
+[0.0268] atomic|integer,ClassOrInterfaceType0|ObjectCreationExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,export
+[0.0262] name,NameExpr1|ObjectCreationExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get
+
+topk terminals for sub-token: export
+['name', 'export', 'integer', 'name', '0', 'export', '0', 'export', 'METHOD_NAME', 'export', 'integer', 'export', 'get', 'export', 'name', 'export', 'atomic|integer', 'export', 'name', 'get']
+
+topk path-contexts for sub-token: int
+[0.0592] integer,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,int|var
+[0.0586] atomic|integer,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0456] atomic|integer,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0421] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,int|var
+[0.0380] atomic|integer,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,atomic|integer
+[0.0368] integer,PrimitiveType1|MethodDeclaration|ObjectCreationExpr1|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,int|var
+[0.0336] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,atomic|integer
+[0.0324] int|var,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,atomic|integer
+[0.0306] integer,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0302] atomic|integer,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,name
+
+topk terminals for sub-token: int
+['integer', 'int|var', 'atomic|integer', 'METHOD_NAME', 'atomic|integer', 'string', 'METHOD_NAME', 'int|var', 'atomic|integer', 'atomic|integer', 'integer', 'int|var', 'METHOD_NAME', 'atomic|integer', 'int|var', 'atomic|integer', 'integer', 'METHOD_NAME', 'atomic|integer', 'name']
+

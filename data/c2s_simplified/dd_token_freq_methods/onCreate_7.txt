@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/GuidedStepActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }
+predict, score, loss = onCreateState, 0.9999889, 8.3324965e-05
+
+Ignoring as original_method_name != predicted_method_name.
+

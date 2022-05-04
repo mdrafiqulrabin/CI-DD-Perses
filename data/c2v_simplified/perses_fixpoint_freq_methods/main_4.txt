@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/NioSenderTest_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 02:02:43.517206", "score": "0.9993", "loss": "0.0007", "code": "class T { public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); } }"}
+{"time": "2020-12-29 02:05:52.831710", "score": "0.9999", "loss": "0.0001", "code": "class T { public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); } }"}
+{"time": "2020-12-29 02:07:10.516808", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); } }"}
+{"time": "2020-12-29 02:09:08.361915", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws Exception { NioSenderTest sender ; } }"}
+{"time": "2020-12-29 02:10:32.850329", "score": "0.9998", "loss": "0.0002", "code": "class T { public static void main(String args) throws Exception { NioSenderTest sender ; } }"}
+{"time": "2020-12-29 02:11:14.194452", "score": "0.5933", "loss": "0.5509", "code": "class T { public static void main(String args) { NioSenderTest sender ; } }"}
+{"time": "2020-12-29 02:11:54.372340", "score": "0.5933", "loss": "0.5509", "code": "class T { void main(String args) { NioSenderTest sender ; } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                  { NioSenderTest sender                      ;                              }
+}
+
+

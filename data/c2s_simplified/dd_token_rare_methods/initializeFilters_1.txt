@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/choosers/AbstractExtensionFileFilterFileChooser_initializeFilters.java
+method_name = initializeFilters
+method_body = protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }
+predict, score, loss = initializeFilters, 0.3515565, 1.9741879
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:47:37.805581", "n_pass": [1, 1, 1], "score": "0.3516", "loss": "1.9742", "code": "protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:39.133243", "n_pass": [20, 2, 2], "score": "0.3516", "loss": "1.9742", "code": "synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:40.829549", "n_pass": [42, 3, 3], "score": "0.3516", "loss": "1.9742", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:43.466478", "n_pass": [52, 5, 4], "score": "0.3633", "loss": "5.4057", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:50.197364", "n_pass": [101, 8, 5], "score": "0.3633", "loss": "5.4057", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){ if (!chooser.getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:51.529320", "n_pass": [102, 9, 6], "score": "0.3633", "loss": "5.4057", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if (!chooser.getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:52.837749", "n_pass": [104, 10, 7], "score": "0.3633", "loss": "5.4057", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(!chooser.getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:54.184663", "n_pass": [106, 11, 8], "score": "0.3049", "loss": "5.4526", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(chooser.getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:55.499263", "n_pass": [108, 12, 9], "score": "0.3014", "loss": "6.7717", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(choosergetFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:47:58.848158", "n_pass": [127, 14, 10], "score": "0.3751", "loss": "5.6911", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(getFiltersInitialized())doInitializeFilters(); }"}
+{"time": "2021-01-20 05:48:01.603457", "n_pass": [156, 15, 11], "score": "0.3751", "loss": "5.6911", "code": "void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(getFiltersInitialized())doInitializeFilters();}"}
+
+Minimal simplified code:
+void initializeFilters(AbstractExtensionFileFilterFileChooser chooser){if(getFiltersInitialized())doInitializeFilters();}
+

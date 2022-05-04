@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-manager/src/main/java/fr/treeptik/cloudunit/utils/FilesUtils_createUploadDir.java
+method_name = createUploadDir
+method_body = public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + "/uploadDir_" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }
+
+topk path-contexts for sub-token: create
+[0.1015] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0561] file,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0438] exists,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0416] upload|dir,NameExpr0|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0404] upload|folder,NameExpr0|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0347] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0299] docker|json|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0284] file,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0231] upload|folder,NameExpr0|MethodCallExpr|NameExpr2,mkdir
+[0.0210] file,ClassOrInterfaceType0|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+
+topk terminals for sub-token: create
+['void', 'METHOD_NAME', 'file', 'mkdir', 'exists', 'mkdir', 'upload|dir', 'upload|dir', 'upload|folder', 'mkdir', 'string', 'mkdir', 'docker|json|exception', 'mkdir', 'file', 'upload|dir', 'upload|folder', 'mkdir', 'file', 'upload|dir']
+
+topk path-contexts for sub-token: upload
+[0.0487] upload|dir,NameExpr0|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0440] upload|folder,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0417] file,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0410] upload|folder,NameExpr0|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,upload|folder
+[0.0372] exists,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,upload|folder
+[0.0345] upload|dir,StringLiteralExpr1|BinaryExpr:plus|BinaryExpr:plus|MethodCallExpr1|NameExpr0,server
+[0.0324] upload|dir,StringLiteralExpr1|BinaryExpr:plus|BinaryExpr:plus|MethodCallExpr1|NameExpr2,get|container|id
+[0.0301] upload|folder,NameExpr0|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,mkdir
+[0.0294] file,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,upload|folder
+[0.0277] upload|folder,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|NameExpr0,upload|dir
+
+topk terminals for sub-token: upload
+['upload|dir', 'upload|dir', 'upload|folder', 'upload|dir', 'file', 'upload|dir', 'upload|folder', 'upload|folder', 'exists', 'upload|folder', 'upload|dir', 'server', 'upload|dir', 'get|container|id', 'upload|folder', 'mkdir', 'file', 'upload|folder', 'upload|folder', 'upload|dir']
+
+topk path-contexts for sub-token: dir
+[0.0564] file,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0493] upload|dir,NameExpr0|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0418] upload|folder,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0415] file,ClassOrInterfaceType0|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,upload|dir
+[0.0398] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0366] file,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|NameExpr0,upload|dir
+[0.0338] file,ClassOrInterfaceType0|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|NameExpr0,upload|dir
+[0.0335] exists,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,upload|folder
+[0.0266] file,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,upload|folder
+[0.0264] upload|folder,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|BinaryExpr:plus|BinaryExpr:plus|NameExpr0,upload|dir
+
+topk terminals for sub-token: dir
+['file', 'upload|dir', 'upload|dir', 'upload|dir', 'upload|folder', 'upload|dir', 'file', 'upload|dir', 'void', 'METHOD_NAME', 'file', 'upload|dir', 'file', 'upload|dir', 'exists', 'upload|folder', 'file', 'upload|folder', 'upload|folder', 'upload|dir']
+

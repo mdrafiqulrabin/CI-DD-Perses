@@ -1,0 +1,62 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/signup/api/src/java/org/sakaiproject/signup/model/SignupTimeslot_getWaiter.java
+method_name = getWaiter
+method_body = public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) return null; for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; }
+predict, score, loss = getWaiter, 0.16529938578605652, 4.808386325836182
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:11:51.298514", "n_pass": [1, 1, 1], "score": "0.1653", "loss": "4.8084", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) return null; for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:11:57.416977", "n_pass": [50, 3, 2], "score": "0.3229", "loss": "3.2874", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:12:05.751292", "n_pass": [97, 6, 3], "score": "0.3229", "loss": "3.2874", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:12:13.617414", "n_pass": [104, 9, 4], "score": "0.3229", "loss": "3.2874", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUserId().equals(attendeeId)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:12:18.871481", "n_pass": [106, 11, 5], "score": "0.2854", "loss": "3.9345", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(attendeeId)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:12:21.504224", "n_pass": [108, 12, 6], "score": "0.3919", "loss": "3.464", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } return null; }"}
+{"time": "2021-01-23 16:12:26.797365", "n_pass": [112, 14, 7], "score": "0.5224", "loss": "2.7483", "code": "public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:29.432400", "n_pass": [114, 15, 8], "score": "0.5224", "loss": "2.7483", "code": " SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:32.065398", "n_pass": [115, 16, 9], "score": "0.5224", "loss": "2.7483", "code": "pAttendee getWaiter(String attendeeId) { if (waitingList == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:38.211301", "n_pass": [123, 18, 10], "score": "0.5726", "loss": "2.4069", "code": "pAttendee getWaiter(String attendeeId) { if (List == null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:40.833022", "n_pass": [124, 19, 11], "score": "0.5719", "loss": "2.3742", "code": "pAttendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter : waitingList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:43.467655", "n_pass": [129, 20, 12], "score": "0.352", "loss": "2.1208", "code": "pAttendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.gdeeUseruals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:12:48.766899", "n_pass": [133, 22, 13], "score": "0.352", "loss": "2.1208", "code": "pAttendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.guals(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:13:02.771224", "n_pass": [192, 27, 14], "score": "0.3411", "loss": "2.1958", "code": "pAttendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; } null; }"}
+{"time": "2021-01-23 16:13:10.690088", "n_pass": [199, 30, 15], "score": "0.3502", "loss": "2.1451", "code": "pAttendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:13.327607", "n_pass": [201, 31, 16], "score": "0.3502", "loss": "2.1451", "code": "tendee getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:18.589073", "n_pass": [203, 33, 17], "score": "0.4268", "loss": "1.9457", "code": "ten getWaiter(String attendeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:25.129171", "n_pass": [210, 35, 18], "score": "0.3601", "loss": "1.64", "code": "ten getWaiter(String endeeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:27.769006", "n_pass": [211, 36, 19], "score": "0.3601", "loss": "1.64", "code": "ten getWaiter(String eeId) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:30.393353", "n_pass": [212, 37, 20], "score": "0.33", "loss": "1.6942", "code": "ten getWaiter(String d) { if ( null) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:33.024845", "n_pass": [216, 38, 21], "score": "0.3459", "loss": "1.6492", "code": "ten getWaiter(String d) { if (ll) for (Siendee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:35.673016", "n_pass": [220, 39, 22], "score": "0.3459", "loss": "1.6492", "code": "ten getWaiter(String d) { if (ll) for (ndee waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:38.304019", "n_pass": [221, 40, 23], "score": "0.3296", "loss": "1.6836", "code": "ten getWaiter(String d) { if (ll) for (e waiter :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:40.947214", "n_pass": [223, 41, 24], "score": "0.3382", "loss": "1.7443", "code": "ten getWaiter(String d) { if (ll) for (e wer :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:13:58.819721", "n_pass": [305, 47, 25], "score": "0.3314", "loss": "1.7037", "code": "ten getWaiter(String d) { if (ll) for (e w :gList) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:01.442747", "n_pass": [306, 48, 26], "score": "0.6419", "loss": "1.5295", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (waiter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:06.693348", "n_pass": [313, 50, 27], "score": "0.6393", "loss": "1.7247", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (wter.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:09.340090", "n_pass": [314, 51, 28], "score": "0.6383", "loss": "1.7433", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (wr.s(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:11.969998", "n_pass": [315, 52, 29], "score": "0.778", "loss": "0.6641", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (ws(atd)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:14.590146", "n_pass": [317, 53, 30], "score": "0.7998", "loss": "0.5602", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; }l; }"}
+{"time": "2021-01-23 16:14:25.080639", "n_pass": [328, 57, 31], "score": "0.8021", "loss": "0.5386", "code": "ten getWaiter(String d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:14:27.737520", "n_pass": [330, 58, 32], "score": "0.7364", "loss": "1.1312", "code": "en getWaiter(String d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:14:30.397019", "n_pass": [331, 59, 33], "score": "0.8097", "loss": "0.9483", "code": "n getWaiter(String d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:14:37.550674", "n_pass": [344, 60, 34], "score": "0.7507", "loss": "1.0002", "code": "n getWaiter(ring d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:14:40.185813", "n_pass": [345, 61, 35], "score": "0.6654", "loss": "1.7578", "code": "n getWaiter(ng d) { if (ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:03.916708", "n_pass": [453, 66, 36], "score": "0.6654", "loss": "1.7578", "code": "n getWaiter(ng d) { if(ll) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:06.552908", "n_pass": [454, 67, 37], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l) for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:09.202681", "n_pass": [457, 68, 38], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for (e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:11.826614", "n_pass": [461, 69, 39], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for(e w :ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:14.457172", "n_pass": [466, 70, 40], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for(e w:ist) { if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:24.980658", "n_pass": [472, 74, 41], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for(e w:ist){ if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:27.600976", "n_pass": [474, 75, 42], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if (ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:30.237980", "n_pass": [477, 76, 43], "score": "0.6263", "loss": "1.9264", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if(ws(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:32.857452", "n_pass": [479, 77, 44], "score": "0.6202", "loss": "1.6399", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if(s(d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:35.478205", "n_pass": [480, 78, 45], "score": "0.6083", "loss": "1.7125", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if((d)) return waiter; } }"}
+{"time": "2021-01-23 16:15:38.094570", "n_pass": [485, 79, 46], "score": "0.6083", "loss": "1.7125", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if((d))return waiter; } }"}
+{"time": "2021-01-23 16:15:59.040966", "n_pass": [500, 87, 47], "score": "0.6083", "loss": "1.7125", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if((d))return waiter;} }"}
+{"time": "2021-01-23 16:16:01.651473", "n_pass": [502, 88, 48], "score": "0.6083", "loss": "1.7125", "code": "n getWaiter(ng d) { if(l)for(e w:ist){if((d))return waiter;}}"}
+{"time": "2021-01-23 16:16:08.858461", "n_pass": [516, 89, 49], "score": "0.7797", "loss": "0.7145", "code": "n getWaiter(g d) { if(l)for(e w:ist){if((d))return waiter;}}"}
+{"time": "2021-01-23 16:16:11.472145", "n_pass": [521, 90, 50], "score": "0.7797", "loss": "0.7145", "code": "n getWaiter(g d){ if(l)for(e w:ist){if((d))return waiter;}}"}
+{"time": "2021-01-23 16:16:14.087663", "n_pass": [523, 91, 51], "score": "0.7797", "loss": "0.7145", "code": "n getWaiter(g d){if(l)for(e w:ist){if((d))return waiter;}}"}
+
+Minimal simplified code:
+n getWaiter(g d){if(l)for(e w:ist){if((d))return waiter;}}
+

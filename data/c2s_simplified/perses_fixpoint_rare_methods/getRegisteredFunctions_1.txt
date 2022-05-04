@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/authz/impl/FunctionManagerComponent_getRegisteredFunctions.java
+method_name = getRegisteredFunctions
+method_body = public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function.startsWith(prefix)) { rv.add(function); } } return rv; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:58:24.164887", "score": "0.4872", "loss": "1.8226", "code": "class T { public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function.startsWith(prefix)) { rv.add(function); } } return rv; } }"}
+{"time": "2021-01-24 07:00:16.136556", "score": "0.4819", "loss": "1.9149", "code": "class T { public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) { rv.add(function); } return rv; } }"}
+{"time": "2021-01-24 07:01:01.858828", "score": "0.4197", "loss": "2.2481", "code": "class T { public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:02:05.208838", "score": "0.5547", "loss": "1.2821", "code": "class T { public List getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:02:15.948016", "score": "0.6398", "loss": "1.072", "code": "class T { public List getRegisteredFunctions(String prefix) { List rv = new Vector<String>(); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:02:26.671659", "score": "0.6863", "loss": "0.9832", "code": "class T { public List getRegisteredFunctions(String prefix) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:02:48.035281", "score": "0.9712", "loss": "0.323", "code": "class T { public List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith(prefix)) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:02:58.813733", "score": "0.9742", "loss": "0.4524", "code": "class T { public List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add(function); return rv; } }"}
+{"time": "2021-01-24 07:03:09.526576", "score": "0.9798", "loss": "0.5574", "code": "class T { public List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add( ); return rv; } }"}
+{"time": "2021-01-24 07:03:20.207607", "score": "0.9504", "loss": "0.441", "code": "class T { public List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add( ); return ; } }"}
+{"time": "2021-01-24 07:03:30.861531", "score": "0.9504", "loss": "0.441", "code": "class T { List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add( ); return ; } }"}
+{"time": "2021-01-24 07:04:19.375199", "score": "0.9504", "loss": "0.441", "code": "class T { List getRegisteredFunctions( ) { List rv = new Vector (); for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add( ); } }"}
+{"time": "2021-01-24 07:04:51.364476", "score": "0.9273", "loss": "0.4026", "code": "class T { List getRegisteredFunctions( ) { for (String function : m_registeredFunctions) if (function.startsWith( )) rv.add( ); } }"}
+{"time": "2021-01-24 07:05:12.266434", "score": "0.8722", "loss": "0.5185", "code": "class T { List getRegisteredFunctions( ) { for (String function : m_registeredFunctions) rv.add( ); } }"}
+
+Minimal simplified code:
+class T {
+       List         getRegisteredFunctions(             ) {                                         for (String function : m_registeredFunctions)                                      rv.add(        );                }
+}
+
+

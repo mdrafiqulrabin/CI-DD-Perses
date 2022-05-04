@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/assignment/impl/src/java/org/sakaiproject/assignment/impl/conversion/AssignmentSubmissionAccess_getLastmod.java
+method_name = getLastmod
+method_body = public String getLastmod() { return lastmod; }
+predict, score, loss = getLastmod, 0.4512885808944702, 1.2011858224868774
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:16:49.955869", "n_pass": [1, 1, 1], "score": "0.4513", "loss": "1.2012", "code": "public String getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:16:55.910669", "n_pass": [21, 3, 2], "score": "0.5298", "loss": "1.4", "code": "publiing getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:17:07.028285", "n_pass": [43, 7, 3], "score": "0.8891", "loss": "0.7347", "code": "publi getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:17:23.450756", "n_pass": [54, 13, 4], "score": "0.312", "loss": "2.2093", "code": "bli getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:17:43.520929", "n_pass": [92, 20, 5], "score": "0.6034", "loss": "1.2408", "code": "bi getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:17:46.091131", "n_pass": [93, 21, 6], "score": "0.5142", "loss": "1.505", "code": "b getLastmod() { return lastmod; }"}
+{"time": "2021-01-23 16:18:13.403366", "n_pass": [143, 29, 7], "score": "0.5142", "loss": "1.505", "code": "b getLastmod(){ return lastmod; }"}
+{"time": "2021-01-23 16:18:15.975174", "n_pass": [144, 30, 8], "score": "0.5142", "loss": "1.505", "code": "b getLastmod(){return lastmod; }"}
+{"time": "2021-01-23 16:18:54.846829", "n_pass": [160, 45, 9], "score": "0.5142", "loss": "1.505", "code": "b getLastmod(){return lastmod;}"}
+
+Minimal simplified code:
+b getLastmod(){return lastmod;}
+

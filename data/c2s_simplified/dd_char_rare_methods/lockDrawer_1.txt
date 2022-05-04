@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_lockDrawer.java
+method_name = lockDrawer
+method_body = private void lockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }
+predict, score, loss = lockDrawer, 0.33327487, 2.4947839
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:29:33.816230", "n_pass": [1, 1, 1], "score": "0.3333", "loss": "2.4948", "code": "private void lockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }"}
+{"time": "2021-01-23 10:29:35.520967", "n_pass": [24, 2, 2], "score": "0.7798", "loss": "1.9722", "code": "private void lockDrawer() { if (mDrawer != null) { mDrawer.de(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }"}
+{"time": "2021-01-23 10:29:43.844122", "n_pass": [51, 8, 3], "score": "0.7798", "loss": "1.9722", "code": " void lockDrawer() { if (mDrawer != null) { mDrawer.de(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }"}
+{"time": "2021-01-23 10:30:04.239508", "n_pass": [110, 22, 4], "score": "0.7538", "loss": "1.547", "code": " void lockDrawer() { if (mDrawer != null) { mDrawer.de(DrawerLayout.LOCK__LOCKED_CLOSED); } }"}
+{"time": "2021-01-23 10:30:05.566839", "n_pass": [111, 23, 5], "score": "0.5405", "loss": "2.045", "code": " void lockDrawer() { if (mDrawer != null) { mDrawer.de(DrawerLayout.LOCK__LOCCLOSED); } }"}
+{"time": "2021-01-23 10:30:06.869325", "n_pass": [112, 24, 6], "score": "0.5405", "loss": "2.045", "code": " void lockDrawer() { if (mDrawer != null) { mDrawer.de(DrawerLayout.LOCK__LOCED); } }"}
+{"time": "2021-01-23 10:30:13.554216", "n_pass": [128, 28, 7], "score": "0.4074", "loss": "3.305", "code": " void lockDrawer() { if (mDrawer != null) { mer.de(DrawerLayout.LOCK__LOCED); } }"}
+{"time": "2021-01-23 10:30:14.856808", "n_pass": [129, 29, 8], "score": "0.2833", "loss": "3.3784", "code": " void lockDrawer() { if (mDrawer != null) { me(DrawerLayout.LOCK__LOCED); } }"}
+{"time": "2021-01-23 10:30:16.182261", "n_pass": [131, 30, 9], "score": "0.2797", "loss": "4.0449", "code": " void lockDrawer() { if (mDrawer != null) { me(DrLayout.LOCK__LOCED); } }"}
+{"time": "2021-01-23 10:30:36.629448", "n_pass": [198, 44, 10], "score": "0.2797", "loss": "4.0449", "code": " void lockDrawer() { if (mDrawer != null) { me(DrLayout.LOCK_OCED); } }"}
+{"time": "2021-01-23 10:30:39.275156", "n_pass": [203, 46, 11], "score": "0.2797", "loss": "4.0449", "code": "void lockDrawer() { if (mDrawer != null) { me(DrLayout.LOCK_OCED); } }"}
+{"time": "2021-01-23 10:30:55.846420", "n_pass": [228, 57, 12], "score": "0.2048", "loss": "3.6281", "code": "void lockDrawer() { if (mDrawer != null) {e(DrLayout.LOCK_OCED); } }"}
+{"time": "2021-01-23 10:31:27.257146", "n_pass": [328, 77, 13], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer() { if (mDrawer != null) {e(rLayout.LOCK_OCED); } }"}
+{"time": "2021-01-23 10:31:45.709010", "n_pass": [342, 91, 14], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer() { if (mDrawer != null) {e(rLayout.LOCK_OED); } }"}
+{"time": "2021-01-23 10:31:49.633190", "n_pass": [347, 94, 15], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer() { if (mDrawer != null) {e(rLayout.LOCK_OED);} }"}
+{"time": "2021-01-23 10:31:50.956473", "n_pass": [349, 95, 16], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer() { if (mDrawer != null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:01.499335", "n_pass": [368, 100, 17], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer(){ if (mDrawer != null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:02.804180", "n_pass": [370, 101, 18], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer(){if (mDrawer != null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:04.109137", "n_pass": [373, 102, 19], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer(){if(mDrawer != null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:14.579718", "n_pass": [382, 110, 20], "score": "0.1896", "loss": "3.8749", "code": "void lockDrawer(){if(mDrawer!= null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:15.903978", "n_pass": [383, 111, 21], "score": "0.1472", "loss": "4.1431", "code": "void lockDrawer(){if(mDrawer= null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:17.238725", "n_pass": [385, 112, 22], "score": "0.1472", "loss": "4.1431", "code": "void lockDrawer(){if(mDrawer=null) {e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:23.806428", "n_pass": [391, 117, 23], "score": "0.1472", "loss": "4.1431", "code": "void lockDrawer(){if(mDrawer=null){e(rLayout.LOCK_OED);}}"}
+{"time": "2021-01-23 10:32:26.422761", "n_pass": [395, 119, 24], "score": "0.1232", "loss": "4.1915", "code": "void lockDrawer(){if(mDrawer=null){e(Layout.LOCK_OED);}}"}
+
+Minimal simplified code:
+void lockDrawer(){if(mDrawer=null){e(Layout.LOCK_OED);}}
+

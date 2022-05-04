@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.netty/src/main/java/org/kaazing/mina/core/service/AbstractIoService_getFilterChainBuilder.java
+method_name = getFilterChainBuilder
+method_body = @Override public final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:57:26.330120", "score": "0.4668", "loss": "1.4382", "code": "class T { @Override public final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; } }"}
+{"time": "2021-01-24 07:58:04.029177", "score": "0.5319", "loss": "1.2844", "code": "class T { IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; } }"}
+
+Minimal simplified code:
+class T {
+                       IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }
+}
+
+

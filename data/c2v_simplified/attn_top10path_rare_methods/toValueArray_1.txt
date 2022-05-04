@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/core/src/main/java/org/bouncycastle/asn1/x500/style/IETFUtils_toValueArray.java
+method_name = toValueArray
+method_body = private static String[] toValueArray(Vector values) { String[] tmp = new String[values.size()]; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) values.elementAt(i); } return tmp; }
+
+topk path-contexts:
+[0.0920] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ArrayCreationExpr)_(ClassOrInterfaceType1),string
+[0.0864] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(CastExpr)_(ClassOrInterfaceType0),string
+[0.0815] vector,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(ArrayBracketPair3),[]
+[0.0666] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),tmp
+[0.0536] values,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ArrayBracketPair3),[]
+[0.0499] string,(ClassOrInterfaceType0)^(CastExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)^(ForStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),tmp
+[0.0475] values,(NameExpr0)^(MethodCallExpr)^(ArrayCreationLevel)^(ArrayCreationExpr)_(ClassOrInterfaceType1),string
+[0.0435] values,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ArrayCreationExpr)_(ClassOrInterfaceType1),string
+[0.0424] [],(ArrayBracketPair2)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ForStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),tmp
+[0.0258] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),vector
+
+topk terminals:
+['[]', 'string', '[]', 'string', 'vector', '[]', '[]', 'tmp', 'values', '[]', 'string', 'tmp', 'values', 'string', 'values', 'string', '[]', 'tmp', 'string', 'vector']
+

@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/SessionBindingListenerAdapter_valueBound.java
+method_name = valueBound
+method_body = public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }
+predict, score, loss = valueBound, 0.4852057695388794, 1.7213464975357056
+
+Trace of simplified code(s):
+{"time": "2021-01-23 20:03:34.513649", "n_pass": [1, 1, 1], "score": "0.4852", "loss": "1.7213", "code": "public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-23 20:03:37.582949", "n_pass": [44, 2, 2], "score": "0.5699", "loss": "1.6825", "code": "id valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-23 20:03:45.467922", "n_pass": [50, 5, 3], "score": "0.5957", "loss": "1.7603", "code": "id valueBound(final SSLSessionBindingEvent event) { Callbackallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-23 20:03:48.086993", "n_pass": [54, 6, 4], "score": "0.3871", "loss": "1.8042", "code": "id valueBound(final SSLSessionBindingEvent event) { Callbackallback(new Runnable() { publi() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-23 20:03:58.993685", "n_pass": [95, 10, 5], "score": "0.4192", "loss": "1.8018", "code": "id valueBound(final SSLSessionBindingEvent event) { Callbackallback(new Runnable() { publi() { ner.valueBound(event); } }); }"}
+{"time": "2021-01-23 20:04:06.849506", "n_pass": [99, 13, 6], "score": "0.3092", "loss": "3.1564", "code": "id valueBound(final SSLSessionBindingEvent event) { Callbackallback(new Runnable() { publi() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:04:23.432069", "n_pass": [113, 19, 7], "score": "0.3092", "loss": "3.1564", "code": "id valueBound(final SSLSessionBindingEvent event) { Calallback(new Runnable() { publi() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:04:26.076915", "n_pass": [114, 20, 8], "score": "0.3092", "loss": "3.1564", "code": "id valueBound(final SSLSessionBindingEvent event) { Calck(new Runnable() { publi() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:04:28.714504", "n_pass": [117, 21, 9], "score": "0.3037", "loss": "3.2974", "code": "id valueBound(final SSLSessionBindingEvent event) { Calck(new Run() { publi() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:04:50.543914", "n_pass": [185, 29, 10], "score": "0.3345", "loss": "3.3671", "code": "id valueBound(final SSLSessionBindingEvent event) { Calck(new Run() {bli() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:05:42.936357", "n_pass": [221, 48, 11], "score": "0.3833", "loss": "3.299", "code": "id valueBound(final SSLSessionBindingEvent event) {lck(new Run() {bli() { ner.valueBound(); } }); }"}
+{"time": "2021-01-23 20:05:48.172518", "n_pass": [230, 50, 12], "score": "0.2064", "loss": "3.4672", "code": "id valueBound(final SSLSessionBindingEvent event) {lck(new Run() {bli() { nvalueBound(); } }); }"}
+{"time": "2021-01-23 20:05:50.804137", "n_pass": [231, 51, 13], "score": "0.2064", "loss": "3.4672", "code": "id valueBound(final SSLSessionBindingEvent event) {lck(new Run() {bli() { nueBound(); } }); }"}
+{"time": "2021-01-23 20:05:53.425596", "n_pass": [232, 52, 14], "score": "0.2064", "loss": "3.4672", "code": "id valueBound(final SSLSessionBindingEvent event) {lck(new Run() {bli() { nound(); } }); }"}
+{"time": "2021-01-23 20:08:10.700436", "n_pass": [403, 101, 15], "score": "0.2064", "loss": "3.4672", "code": "id valueBound(final SSLSessionBindingEvent event){lck(new Run() {bli() { nound(); } }); }"}
+{"time": "2021-01-23 20:08:15.945448", "n_pass": [406, 103, 16], "score": "0.2855", "loss": "3.598", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new Run() {bli() { nound(); } }); }"}
+{"time": "2021-01-23 20:08:21.176026", "n_pass": [413, 105, 17], "score": "0.2272", "loss": "3.1574", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {bli() { nound(); } }); }"}
+{"time": "2021-01-23 20:08:23.791481", "n_pass": [416, 106, 18], "score": "0.2332", "loss": "2.9904", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { nound(); } }); }"}
+{"time": "2021-01-23 20:08:26.400427", "n_pass": [420, 107, 19], "score": "0.1892", "loss": "3.2802", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { und(); } }); }"}
+{"time": "2021-01-23 20:08:29.030804", "n_pass": [421, 108, 20], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { d(); } }); }"}
+{"time": "2021-01-23 20:10:03.553382", "n_pass": [514, 141, 21], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { d();} }); }"}
+{"time": "2021-01-23 20:10:06.169409", "n_pass": [515, 142, 22], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { d();}}); }"}
+{"time": "2021-01-23 20:10:08.794131", "n_pass": [519, 143, 23], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R() {i() { d();}});}"}
+{"time": "2021-01-23 20:11:40.058253", "n_pass": [581, 176, 24], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R(){i() { d();}});}"}
+{"time": "2021-01-23 20:11:42.680026", "n_pass": [586, 177, 25], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R(){i(){ d();}});}"}
+{"time": "2021-01-23 20:11:45.336799", "n_pass": [588, 178, 26], "score": "0.2328", "loss": "2.992", "code": "id valueBound(final SSLSessionBindingEvent event){lk(new R(){i(){d();}});}"}
+
+Minimal simplified code:
+id valueBound(final SSLSessionBindingEvent event){lk(new R(){i(){d();}});}
+

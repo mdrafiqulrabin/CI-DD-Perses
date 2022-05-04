@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/GuidedStepActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 11:49:36.053065", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } } }"}
+{"time": "2020-12-29 11:52:03.119764", "score": "0.9171", "loss": "0.0867", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }"}
+{"time": "2020-12-29 11:54:39.652850", "score": "0.515", "loss": "0.6651", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { GuidedStepFragment.addAsRoot(this ); } }"}
+{"time": "2020-12-29 11:55:58.968268", "score": "0.515", "loss": "0.6651", "code": "class T { @Override void onCreate(Bundle savedInstanceState) { GuidedStepFragment.addAsRoot(this ); } }"}
+
+Minimal simplified code:
+class T {
+@Override           void onCreate(Bundle savedInstanceState)                                                                       { GuidedStepFragment.addAsRoot(this                                               ); }
+}
+
+

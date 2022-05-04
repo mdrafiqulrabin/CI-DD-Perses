@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/core/StandardWrapper_findMappings.java
+method_name = findMappings
+method_body = @Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 11:15:53.137371", "score": "0.178", "loss": "2.4832", "code": "class T { @Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } } }"}
+{"time": "2021-01-24 11:27:44.472479", "score": "0.178", "loss": "2.4832", "code": "class T { @Override String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } } }"}
+
+Minimal simplified code:
+class T {
+@Override        String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }
+}
+
+

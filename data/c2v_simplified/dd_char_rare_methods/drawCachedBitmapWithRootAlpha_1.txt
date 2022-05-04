@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/a-student__BetterVectorDrawable/lib/src/main/java/com/bettervectordrawable/lib/graphics/drawable/VectorDrawable_drawCachedBitmapWithRootAlpha.java
+method_name = drawCachedBitmapWithRootAlpha
+method_body = public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); }
+predict, score, loss = drawCachedBitmapWithRootAlpha, 0.42037686705589294, 1.5179072618484497
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:03:14.456486", "n_pass": [1, 1, 1], "score": "0.4204", "loss": "1.5179", "code": "public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); }"}
+{"time": "2021-01-23 21:03:17.901002", "n_pass": [23, 2, 2], "score": "0.6526", "loss": "0.5669", "code": "public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); }"}
+{"time": "2021-01-23 21:03:20.542145", "n_pass": [25, 3, 3], "score": "0.524", "loss": "1.0886", "code": "public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { final Paint p = getPwBitmap(mCachedBitmap, null, originalBounds, p); }"}
+{"time": "2021-01-23 21:03:26.200610", "n_pass": [46, 5, 4], "score": "0.5116", "loss": "0.6994", "code": "public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { final Paint p = getPwBitmap(mCachedBitmap, nBounds, p); }"}
+{"time": "2021-01-23 21:03:35.316662", "n_pass": [80, 8, 5], "score": "0.5129", "loss": "0.6967", "code": "public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { final Paint p = getPwBitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:03:37.965063", "n_pass": [81, 9, 6], "score": "0.5129", "loss": "0.6967", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { final Paint p = getPwBitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:03:45.242541", "n_pass": [94, 11, 7], "score": "0.4968", "loss": "0.7241", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fiint p = getPwBitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:03:47.842425", "n_pass": [95, 12, 8], "score": "0.7425", "loss": "0.4182", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fi= getPwBitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:03:50.481567", "n_pass": [96, 13, 9], "score": "0.8697", "loss": "0.1586", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fiwBitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:04:05.564306", "n_pass": [148, 18, 10], "score": "0.6421", "loss": "0.4938", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fitmap(mCachedBitmap, n, p); }"}
+{"time": "2021-01-23 21:04:18.610011", "n_pass": [154, 23, 11], "score": "0.6787", "loss": "0.4512", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fitmap(mCachedBitmap, p); }"}
+{"time": "2021-01-23 21:04:21.215366", "n_pass": [155, 24, 12], "score": "0.8706", "loss": "0.1648", "code": " void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fitmap(mCachedBitmap); }"}
+{"time": "2021-01-23 21:04:23.811943", "n_pass": [157, 25, 13], "score": "0.8648", "loss": "0.1752", "code": "id drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter fil) { fitmap(mCachedBitmap); }"}
+{"time": "2021-01-23 21:04:30.482660", "n_pass": [169, 26, 14], "score": "0.8034", "loss": "0.298", "code": "id drawCachedBitmapWithRootAlpha(vas canvas, ColorFilter fil) { fitmap(mCachedBitmap); }"}
+{"time": "2021-01-23 21:04:33.079306", "n_pass": [172, 27, 15], "score": "0.6275", "loss": "0.5766", "code": "id drawCachedBitmapWithRootAlpha(vas cas, ColorFilter fil) { fitmap(mCachedBitmap); }"}
+{"time": "2021-01-23 21:04:43.539167", "n_pass": [180, 31, 16], "score": "0.6981", "loss": "0.435", "code": "id drawCachedBitmapWithRootAlpha(vas cas, ColorFilter fil) {tmap(mCachedBitmap); }"}
+{"time": "2021-01-23 21:04:46.145334", "n_pass": [181, 32, 17], "score": "0.7091", "loss": "0.4102", "code": "id drawCachedBitmapWithRootAlpha(vas cas, ColorFilter fil) {p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:05:11.524360", "n_pass": [260, 40, 18], "score": "0.7503", "loss": "0.3405", "code": "id drawCachedBitmapWithRootAlpha(vas cas, ColorFilter f) {p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:05:29.786808", "n_pass": [272, 47, 19], "score": "0.7443", "loss": "0.3407", "code": "d drawCachedBitmapWithRootAlpha(vas cas, ColorFilter f) {p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:05:43.417787", "n_pass": [301, 48, 20], "score": "0.6931", "loss": "0.3836", "code": "d drawCachedBitmapWithRootAlpha(s cas, ColorFilter f) {p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:05:46.037347", "n_pass": [303, 49, 21], "score": "0.7357", "loss": "0.3216", "code": "d drawCachedBitmapWithRootAlpha(s s, ColorFilter f) {p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:06:46.145826", "n_pass": [408, 67, 22], "score": "0.7357", "loss": "0.3216", "code": "d drawCachedBitmapWithRootAlpha(s s, ColorFilter f){p(mCachedBitmap); }"}
+{"time": "2021-01-23 21:07:25.232289", "n_pass": [427, 82, 23], "score": "0.7357", "loss": "0.3216", "code": "d drawCachedBitmapWithRootAlpha(s s, ColorFilter f){p(mCachedBitmap);}"}
+{"time": "2021-01-23 21:07:40.495319", "n_pass": [465, 83, 24], "score": "0.7357", "loss": "0.3216", "code": "d drawCachedBitmapWithRootAlpha(s s,ColorFilter f){p(mCachedBitmap);}"}
+
+Minimal simplified code:
+d drawCachedBitmapWithRootAlpha(s s,ColorFilter f){p(mCachedBitmap);}
+

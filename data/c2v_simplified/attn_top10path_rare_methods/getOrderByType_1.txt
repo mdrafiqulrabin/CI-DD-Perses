@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-core/src/main/java/com/bj58/oceanus/core/shard/TableColumn_getOrderByType.java
+method_name = getOrderByType
+method_body = public OrderByType getOrderByType() { return orderByType; }
+
+topk path-contexts:
+[0.4591] orderbytype,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),orderbytype
+[0.3095] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),orderbytype
+[0.2314] orderbytype,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['orderbytype', 'orderbytype', 'METHOD_NAME', 'orderbytype', 'orderbytype', 'METHOD_NAME']
+

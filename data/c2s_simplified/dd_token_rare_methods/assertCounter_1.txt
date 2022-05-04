@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javamelody__javamelody/javamelody-core/src/test/java/net/bull/javamelody/TestJpa_assertCounter.java
+method_name = assertCounter
+method_body = private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals("getRequestsCount", 1, counter.getRequestsCount()); assertEquals("requestName", method, counter.getRequests().get(0).getName()); counter.clear(); }
+predict, score, loss = assertCounter, 0.25701198, 3.9570103
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:15:20.447397", "n_pass": [1, 1, 1], "score": "0.257", "loss": "3.957", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequestsCount()); assertEquals(\"requestName\", method, counter.getRequests().get(0).getName()); counter.clear(); }"}
+{"time": "2021-01-20 06:15:23.142332", "n_pass": [26, 3, 2], "score": "0.2934", "loss": "4.249", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequestsCount()); assertEquals(\"requestName\", method, counter.getRequests); counter.clear(); }"}
+{"time": "2021-01-20 06:15:24.489593", "n_pass": [32, 4, 3], "score": "0.2681", "loss": "4.4177", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, \"requestName\", method, counter.getRequests); counter.clear(); }"}
+{"time": "2021-01-20 06:15:25.831038", "n_pass": [51, 5, 4], "score": "0.3115", "loss": "3.9451", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, method, counter.getRequests); counter.clear(); }"}
+{"time": "2021-01-20 06:15:30.254857", "n_pass": [85, 8, 5], "score": "0.245", "loss": "3.8611", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests); counter.clear(); }"}
+{"time": "2021-01-20 06:15:32.983463", "n_pass": [88, 10, 6], "score": "0.3103", "loss": "3.5375", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);clear(); }"}
+{"time": "2021-01-20 06:15:34.340033", "n_pass": [89, 11, 7], "score": "0.4302", "loss": "3.3279", "code": "private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:35.673071", "n_pass": [91, 12, 8], "score": "0.4302", "loss": "3.3279", "code": "static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:37.006131", "n_pass": [92, 13, 9], "score": "0.4302", "loss": "3.3279", "code": "void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:38.719975", "n_pass": [98, 14, 10], "score": "0.4302", "loss": "3.3279", "code": "void assertCounter(String method) { Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:40.037280", "n_pass": [99, 15, 11], "score": "0.3945", "loss": "3.3089", "code": "void assertCounter(String method) { counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:42.696812", "n_pass": [106, 17, 12], "score": "0.3748", "loss": "3.7822", "code": "void assertCounter(String method) { counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:51.521184", "n_pass": [163, 21, 13], "score": "0.3748", "loss": "3.7822", "code": "void assertCounter(String method){ counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:52.857069", "n_pass": [164, 22, 14], "score": "0.3748", "loss": "3.7822", "code": "void assertCounter(String method){counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:54.213862", "n_pass": [166, 23, 15], "score": "0.3748", "loss": "3.7822", "code": "void assertCounter(String method){counter= JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:15:55.540544", "n_pass": [168, 24, 16], "score": "0.3748", "loss": "3.7822", "code": "void assertCounter(String method){counter=JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:00.258921", "n_pass": [192, 27, 17], "score": "0.3971", "loss": "2.6635", "code": "void assertCounter(String method){counterJpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:02.897139", "n_pass": [194, 29, 18], "score": "0.4683", "loss": "2.3977", "code": "void assertCounter(String method){counterJpaWrappergetJpaCounter(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:04.215640", "n_pass": [195, 30, 19], "score": "0.4462", "loss": "3.0192", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"getRequestsCount\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:12.211787", "n_pass": [238, 34, 20], "score": "0.4782", "loss": "2.6799", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\", counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:13.536560", "n_pass": [240, 35, 21], "score": "0.4782", "loss": "2.6799", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\",counter.getRequests);; }"}
+{"time": "2021-01-20 06:16:14.854509", "n_pass": [242, 36, 22], "score": "0.4589", "loss": "4.1531", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\",countergetRequests);; }"}
+{"time": "2021-01-20 06:16:16.168671", "n_pass": [243, 37, 23], "score": "0.652", "loss": "1.7794", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\",counter);; }"}
+{"time": "2021-01-20 06:16:17.490829", "n_pass": [245, 38, 24], "score": "0.652", "loss": "1.7794", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\",counter); }"}
+{"time": "2021-01-20 06:16:18.821707", "n_pass": [247, 39, 25], "score": "0.652", "loss": "1.7794", "code": "void assertCounter(String method){counterJpaWrapper(); assertEquals(\"\",counter);}"}
+{"time": "2021-01-20 06:16:22.212192", "n_pass": [259, 41, 26], "score": "0.6738", "loss": "2.2687", "code": "void assertCounter(String method){counter(); assertEquals(\"\",counter);}"}
+{"time": "2021-01-20 06:16:23.530002", "n_pass": [263, 42, 27], "score": "0.6738", "loss": "2.2687", "code": "void assertCounter(String method){counter();assertEquals(\"\",counter);}"}
+
+Minimal simplified code:
+void assertCounter(String method){counter();assertEquals("",counter);}
+

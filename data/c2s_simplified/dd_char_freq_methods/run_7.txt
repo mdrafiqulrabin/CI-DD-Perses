@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/threads/TestLimitLatch_run.java
+method_name = run
+method_body = @Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }
+predict, score, loss = run, 0.9780397, 0.037412502
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:35:46.820078", "n_pass": [1, 1, 1], "score": "0.978", "loss": "0.0374", "code": "@Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-28 00:35:48.215861", "n_pass": [20, 2, 2], "score": "0.27", "loss": "2.1451", "code": "d run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-28 00:35:49.555943", "n_pass": [21, 3, 3], "score": "0.2823", "loss": "2.0404", "code": "d run() { try { latcThread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-28 00:35:54.914068", "n_pass": [48, 7, 4], "score": "0.3671", "loss": "1.7382", "code": "d run() { try { latcThread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:35:59.051366", "n_pass": [87, 10, 5], "score": "0.3999", "loss": "1.66", "code": "d run() { try {Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:00.404997", "n_pass": [88, 11, 6], "score": "0.3452", "loss": "1.8408", "code": "d run() { try {d.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:03.127305", "n_pass": [91, 13, 7], "score": "0.483", "loss": "1.3984", "code": "d run() { try {d.sleep(hoe); latch.countDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:04.471434", "n_pass": [93, 14, 8], "score": "0.3662", "loss": "1.9575", "code": "d run() { try {d.sleep(hoe); lcountDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:05.855415", "n_pass": [94, 15, 9], "score": "0.3626", "loss": "1.9671", "code": "d run() { try {d.sleep(hoe); lDown(); } catch (InterruptedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:07.207060", "n_pass": [99, 16, 10], "score": "0.2141", "loss": "2.6622", "code": "d run() { try {d.sleep(hoe); lDown(); } catch (InttedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:12.539208", "n_pass": [149, 20, 11], "score": "0.2602", "loss": "2.5283", "code": "d run() { try {d.sleep(hoe); lDown(); } catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:25.372919", "n_pass": [174, 29, 12], "score": "0.3053", "loss": "2.3065", "code": "d run() { try {d.sleep(hoe);Down(); } catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:26.728420", "n_pass": [175, 30, 13], "score": "0.3153", "loss": "2.204", "code": "d run() { try {d.sleep(hoe);n(); } catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:28.069630", "n_pass": [176, 31, 14], "score": "0.3363", "loss": "1.969", "code": "d run() { try {d.sleep(hoe);; } catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:43.833342", "n_pass": [261, 40, 15], "score": "0.3363", "loss": "1.969", "code": "d run() { try {d.sleep(hoe); } catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:45.182307", "n_pass": [262, 41, 16], "score": "0.3363", "loss": "1.969", "code": "d run() { try {d.sleep(hoe);} catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:46.507690", "n_pass": [263, 42, 17], "score": "0.3363", "loss": "1.969", "code": "d run() { try {d.sleep(hoe);}catch (IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:47.854664", "n_pass": [269, 43, 18], "score": "0.3363", "loss": "1.969", "code": "d run() { try {d.sleep(hoe);}catch(IedException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:49.189436", "n_pass": [271, 44, 19], "score": "0.2422", "loss": "2.3528", "code": "d run() { try {d.sleep(hoe);}catch(edException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:50.527551", "n_pass": [272, 45, 20], "score": "0.2887", "loss": "2.1102", "code": "d run() { try {d.sleep(hoe);}catch(dException x) { x.race(); } }"}
+{"time": "2020-12-28 00:36:51.859012", "n_pass": [273, 46, 21], "score": "0.3378", "loss": "1.872", "code": "d run() { try {d.sleep(hoe);}catch(Exception x) { x.race(); } }"}
+{"time": "2020-12-28 00:37:03.042327", "n_pass": [295, 53, 22], "score": "0.3378", "loss": "1.872", "code": "d run(){ try {d.sleep(hoe);}catch(Exception x) { x.race(); } }"}
+{"time": "2020-12-28 00:37:04.362618", "n_pass": [297, 54, 23], "score": "0.3378", "loss": "1.872", "code": "d run(){try {d.sleep(hoe);}catch(Exception x) { x.race(); } }"}
+{"time": "2020-12-28 00:37:05.921176", "n_pass": [301, 55, 24], "score": "0.3378", "loss": "1.872", "code": "d run(){try{d.sleep(hoe);}catch(Exception x) { x.race(); } }"}
+{"time": "2020-12-28 00:37:14.059736", "n_pass": [309, 61, 25], "score": "0.2562", "loss": "2.5749", "code": "d run(){try{d.slee(hoe);}catch(Exception x) { x.race(); } }"}
+{"time": "2020-12-28 00:37:50.540728", "n_pass": [395, 85, 26], "score": "0.2562", "loss": "2.5749", "code": "d run(){try{d.slee(hoe);}catch(Exception x){ x.race(); } }"}
+{"time": "2020-12-28 00:37:51.886459", "n_pass": [396, 86, 27], "score": "0.2562", "loss": "2.5749", "code": "d run(){try{d.slee(hoe);}catch(Exception x){x.race(); } }"}
+{"time": "2020-12-28 00:37:59.826697", "n_pass": [406, 92, 28], "score": "0.2562", "loss": "2.5749", "code": "d run(){try{d.slee(hoe);}catch(Exception x){x.race();} }"}
+{"time": "2020-12-28 00:38:01.145709", "n_pass": [408, 93, 29], "score": "0.2562", "loss": "2.5749", "code": "d run(){try{d.slee(hoe);}catch(Exception x){x.race();}}"}
+
+Minimal simplified code:
+d run(){try{d.slee(hoe);}catch(Exception x){x.race();}}
+

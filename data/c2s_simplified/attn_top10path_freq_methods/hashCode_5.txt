@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/websocket/snake/Location_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = x; result = 31 * result + y; return result; }
+
+topk path-contexts for sub-token: hash
+[0.4061] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.1817] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0977] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0521] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,result
+[0.0422] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|NameExpr1,x
+[0.0313] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|NameExpr1,result
+[0.0297] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|NameExpr1,y
+[0.0125] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0118] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,int
+[0.0092] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+
+topk terminals for sub-token: hash
+['int', 'int', 'int', '<NUM>', 'int', 'METHOD_NAME', 'int', 'result', 'int', 'x', 'int', 'result', 'int', 'y', 'METHOD_NAME', '<NUM>', 'override', 'int', 'METHOD_NAME', 'int']
+
+topk path-contexts for sub-token: code
+[0.4636] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.2347] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0619] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,int
+[0.0475] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0293] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,result
+[0.0292] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|BinaryExpr:times|IntegerLiteralExpr0,<NUM>
+[0.0216] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|NameExpr1,x
+[0.0188] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0148] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|NameExpr1,y
+[0.0089] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+
+topk terminals for sub-token: code
+['int', 'METHOD_NAME', 'int', 'int', 'override', 'int', 'int', '<NUM>', 'int', 'result', 'METHOD_NAME', '<NUM>', 'int', 'x', 'override', 'METHOD_NAME', 'int', 'y', 'METHOD_NAME', 'int']
+

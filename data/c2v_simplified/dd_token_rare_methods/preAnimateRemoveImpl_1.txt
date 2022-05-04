@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wasabeef__recyclerview-animators/animators/src/main/java/jp/wasabeef/recyclerview/animators/ScaleInRightAnimator_preAnimateRemoveImpl.java
+method_name = preAnimateRemoveImpl
+method_body = @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }
+predict, score, loss = preAnimateRemoveImpl, 0.44276681542396545, 0.9425491094589233
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:33:39.952164", "n_pass": [1, 1, 1], "score": "0.4428", "loss": "0.9425", "code": "@Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:33:42.583154", "n_pass": [20, 2, 2], "score": "0.6179", "loss": "0.582", "code": " void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:33:45.214247", "n_pass": [25, 3, 3], "score": "0.5818", "loss": "0.6442", "code": " void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:33:48.277486", "n_pass": [51, 4, 4], "score": "0.6908", "loss": "0.4754", "code": " void preAnimateRemoveImpl(RecyclerView holder) { ViewCompat.setPivotX(holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:33:55.869041", "n_pass": [88, 6, 5], "score": "0.6908", "loss": "0.4754", "code": " void preAnimateRemoveImpl(RecyclerView holder){ ViewCompat.setPivotX(holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:33:58.504112", "n_pass": [90, 7, 6], "score": "0.6908", "loss": "0.4754", "code": " void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder.itemView.getWidth()); }"}
+{"time": "2021-01-20 07:34:03.769983", "n_pass": [96, 9, 7], "score": "0.6623", "loss": "0.5441", "code": " void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder.getWidth()); }"}
+{"time": "2021-01-20 07:34:06.384349", "n_pass": [97, 10, 8], "score": "0.7164", "loss": "0.4106", "code": " void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder()); }"}
+{"time": "2021-01-20 07:34:08.996347", "n_pass": [98, 11, 9], "score": "0.7175", "loss": "0.4137", "code": " void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder); }"}
+{"time": "2021-01-20 07:34:11.614556", "n_pass": [101, 12, 10], "score": "0.7175", "loss": "0.4137", "code": "void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder); }"}
+{"time": "2021-01-20 07:34:21.041281", "n_pass": [124, 15, 11], "score": "0.7175", "loss": "0.4137", "code": "void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder);}"}
+
+Minimal simplified code:
+void preAnimateRemoveImpl(RecyclerView holder){ViewCompat.setPivotX(holder);}
+

@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/ItemAuthorBean_getInsertPosition.java
+method_name = getInsertPosition
+method_body = public String getInsertPosition() { return insertPosition; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:45:57.327927", "score": "0.3956", "loss": "1.9575", "code": "class T { public String getInsertPosition() { return insertPosition; } }"}
+{"time": "2021-01-24 15:49:38.653572", "score": "0.3956", "loss": "1.9575", "code": "class T { String getInsertPosition() { return insertPosition; } }"}
+
+Minimal simplified code:
+class T {
+       String getInsertPosition() { return insertPosition; }
+}
+
+

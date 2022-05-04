@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+
+topk path-contexts:
+[0.2589] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr4),tryacquiresharednanos
+[0.0555] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(BinaryExpr:plus)_(NameExpr1),timeout
+[0.0483] v,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),timeout
+[0.0477] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(BinaryExpr:plus)_(StringLiteralExpr0),waiting
+[0.0397] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(ClassOrInterfaceType7),timeoutexception
+[0.0365] timeoutexception,(ClassOrInterfaceType7)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr4),tryacquiresharednanos
+[0.0359] tryacquiresharednanos,(NameExpr4)^(MethodCallExpr)^(UnaryExpr:not)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),value
+[0.0310] unit,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType6),executionexception
+[0.0301] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr0),sync
+[0.0293] executionexception,(ClassOrInterfaceType6)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),value
+
+topk terminals:
+['executionexception', 'tryacquiresharednanos', 'executionexception', 'timeout', 'v', 'timeout', 'executionexception', 'waiting', 'executionexception', 'timeoutexception', 'timeoutexception', 'tryacquiresharednanos', 'tryacquiresharednanos', 'value', 'unit', 'executionexception', 'executionexception', 'sync', 'executionexception', 'value']
+

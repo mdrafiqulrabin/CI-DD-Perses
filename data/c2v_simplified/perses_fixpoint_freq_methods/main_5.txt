@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 02:42:30.050398", "score": "0.8552", "loss": "0.1568", "code": "class T { public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); } }"}
+{"time": "2020-12-29 02:45:38.064132", "score": "0.6516", "loss": "0.4288", "code": "class T { public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); } }"}
+{"time": "2020-12-29 02:47:36.597017", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws IOException { System.out.println(\"Press any key to close\"); } }"}
+{"time": "2020-12-29 02:49:34.362634", "score": "0.9999", "loss": "0.0001", "code": "class T { public static void main(String args) throws IOException { System.out.println(\"Press any key to close\"); } }"}
+{"time": "2020-12-29 02:51:25.374609", "score": "0.997", "loss": "0.0046", "code": "class T { public static void main(String args) { System.out.println(\"Press any key to close\"); } }"}
+{"time": "2020-12-29 02:52:05.125789", "score": "0.997", "loss": "0.0046", "code": "class T { void main(String args) { System.out.println(\"Press any key to close\"); } }"}
+{"time": "2020-12-29 02:52:45.456902", "score": "0.9623", "loss": "0.0525", "code": "class T { void main(String args) { System.out.println( ); } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                    {                                                                                                         System.out.println(                        );                                         }
+}
+
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_init.java
+method_name = init
+method_body = @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter("attribute"); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 00:35:35.664425", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter(\"attribute\"); } }"}
+{"time": "2020-12-29 00:38:45.144522", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; } }"}
+{"time": "2020-12-29 00:40:01.543390", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void init(FilterConfig fConfig) throws ServletException { filterConfig = fConfig; } }"}
+{"time": "2020-12-29 00:40:42.455892", "score": "0.997", "loss": "0.003", "code": "class T { void init(FilterConfig fConfig) throws ServletException { filterConfig = fConfig; } }"}
+{"time": "2020-12-29 00:41:22.547120", "score": "0.9993", "loss": "0.0009", "code": "class T { void init( ) throws ServletException { filterConfig = fConfig; } }"}
+
+Minimal simplified code:
+class T {
+                 void init(                    )                         {      filterConfig = fConfig;                                                         }
+}
+
+

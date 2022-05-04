@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/cflint__CFLint/src/main/java/com/cflint/CFLint_setLogError.java
+method_name = setLogError
+method_body = public void setLogError(final boolean logError) { this.logError = logError; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 17:17:12.164844", "score": "0.3029", "loss": "1.4257", "code": "class T { public void setLogError(final boolean logError) { this.logError = logError; } }"}
+{"time": "2021-01-24 17:20:53.797730", "score": "0.3285", "loss": "1.1735", "code": "class T { public void setLogError(final boolean logError) { logError = logError; } }"}
+{"time": "2021-01-24 17:21:33.496189", "score": "0.3285", "loss": "1.1735", "code": "class T { public void setLogError( boolean logError) { logError = logError; } }"}
+{"time": "2021-01-24 17:22:13.005127", "score": "0.3285", "loss": "1.1735", "code": "class T { void setLogError( boolean logError) { logError = logError; } }"}
+
+Minimal simplified code:
+class T {
+       void setLogError(      boolean logError) {      logError = logError; }
+}
+
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/vmware__burp-rest-api/src/main/java/com/vmware/burp/extension/web/BurpController_handleIllegalArgumentException.java
+method_name = handleIllegalArgumentException
+method_body = @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus.BAD_REQUEST.value(), e.getMessage()); }
+predict, score, loss = handleIllegalArgumentException, 0.4779041, 1.3571446
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:49:45.192290", "n_pass": [1, 1, 1], "score": "0.4779", "loss": "1.3571", "code": "@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus.BAD_REQUEST.value(), e.getMessage()); }"}
+{"time": "2021-01-20 05:49:46.884996", "n_pass": [25, 2, 2], "score": "0.3697", "loss": "2.0263", "code": "@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus(), e.getMessage()); }"}
+{"time": "2021-01-20 05:49:48.238534", "n_pass": [26, 3, 3], "score": "0.3568", "loss": "2.7019", "code": "@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatusgetMessage()); }"}
+{"time": "2021-01-20 05:49:51.254399", "n_pass": [55, 5, 4], "score": "0.3266", "loss": "2.3342", "code": "@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException {sendError(HttpStatusgetMessage()); }"}
+{"time": "2021-01-20 05:49:52.570792", "n_pass": [56, 6, 5], "score": "0.3551", "loss": "2.3108", "code": "@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException {sendError(HttpStatus); }"}
+{"time": "2021-01-20 05:49:54.664944", "n_pass": [93, 7, 6], "score": "0.3551", "loss": "2.3108", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException {sendError(HttpStatus); }"}
+{"time": "2021-01-20 05:49:59.453009", "n_pass": [139, 8, 7], "score": "0.3551", "loss": "2.3108", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response) throws IOException {sendError(HttpStatus); }"}
+{"time": "2021-01-20 05:50:00.778306", "n_pass": [143, 9, 8], "score": "0.3551", "loss": "2.3108", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response)throws IOException {sendError(HttpStatus); }"}
+{"time": "2021-01-20 05:50:02.102577", "n_pass": [147, 10, 9], "score": "0.3551", "loss": "2.3108", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response)throws IOException{sendError(HttpStatus); }"}
+{"time": "2021-01-20 05:50:04.745648", "n_pass": [151, 12, 10], "score": "0.3083", "loss": "2.679", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response)throws IOException{sendError(); }"}
+{"time": "2021-01-20 05:50:06.074671", "n_pass": [154, 13, 11], "score": "0.3083", "loss": "2.679", "code": "@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response)throws IOException{sendError();}"}
+
+Minimal simplified code:
+@ExceptionHandler()void handleIllegalArgumentException(IllegalArgumentException e,HttpServletResponse response)throws IOException{sendError();}
+

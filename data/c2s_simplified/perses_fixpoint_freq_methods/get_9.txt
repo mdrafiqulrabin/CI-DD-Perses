@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/MultiMap_get.java
+method_name = get
+method_body = public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:15:25.727141", "score": "0.9517", "loss": "0.1997", "code": "class T { public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; } }"}
+{"time": "2020-12-21 12:16:03.091230", "score": "0.4086", "loss": "2.365", "code": "class T { public CBuffer get(CharSequence key) { } }"}
+{"time": "2020-12-21 12:16:24.230686", "score": "0.4086", "loss": "2.365", "code": "class T { CBuffer get(CharSequence key) { } }"}
+
+Minimal simplified code:
+class T {
+       CBuffer get(CharSequence key) {                                                                           }
+}
+
+

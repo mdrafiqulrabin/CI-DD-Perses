@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/JspUtil_checkScope.java
+method_name = checkScope
+method_body = public static void checkScope(String scope, Node n, ErrorDispatcher err) throws JasperException { if (scope != null && !scope.equals("page") && !scope.equals("request") && !scope.equals("session") && !scope.equals("application")) { err.jspError(n, "jsp.error.invalid.scope", scope); } }
+
+topk path-contexts for sub-token: check
+[0.1037] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0542] scope,NameExpr3|MethodCallExpr|NameExpr3,jsp|error
+[0.0368] error|dispatcher,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,jsp|error
+[0.0265] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,error|dispatcher
+[0.0259] jasper|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,jsp|error
+[0.0211] jsperrorinvalidscope,StringLiteralExpr3|MethodCallExpr|NameExpr3,jsp|error
+[0.0194] n,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,error|dispatcher
+[0.0181] equals,NameExpr3|MethodCallExpr|UnaryExpr:not|BinaryExpr:and|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,jsp|error
+[0.0178] node,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,error|dispatcher
+[0.0174] err,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,error|dispatcher
+
+topk terminals for sub-token: check
+['void', 'METHOD_NAME', 'scope', 'jsp|error', 'error|dispatcher', 'jsp|error', 'string', 'error|dispatcher', 'jasper|exception', 'jsp|error', 'jsperrorinvalidscope', 'jsp|error', 'n', 'error|dispatcher', 'equals', 'jsp|error', 'node', 'error|dispatcher', 'err', 'error|dispatcher']
+
+topk path-contexts for sub-token: scope
+[0.0411] error|dispatcher,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,application
+[0.0371] null,NullLiteralExpr1|BinaryExpr:notEquals|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,page
+[0.0341] scope,NameExpr0|BinaryExpr:notEquals|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,page
+[0.0300] scope,NameExpr0|MethodCallExpr|StringLiteralExpr2,page
+[0.0261] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,scope
+[0.0229] scope,NameExpr0|MethodCallExpr|StringLiteralExpr2,session
+[0.0226] scope,NameExpr0|MethodCallExpr|StringLiteralExpr2,request
+[0.0225] page,StringLiteralExpr2|MethodCallExpr|UnaryExpr:not|BinaryExpr:and|BinaryExpr:and|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,session
+[0.0199] session,StringLiteralExpr2|MethodCallExpr|UnaryExpr:not|BinaryExpr:and|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,application
+[0.0195] err,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:and|UnaryExpr:not|MethodCallExpr0|StringLiteralExpr2,application
+
+topk terminals for sub-token: scope
+['error|dispatcher', 'application', 'null', 'page', 'scope', 'page', 'scope', 'page', 'void', 'scope', 'scope', 'session', 'scope', 'request', 'page', 'session', 'session', 'application', 'err', 'application']
+

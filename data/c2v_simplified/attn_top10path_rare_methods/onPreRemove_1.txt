@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/ws/src/main/java/org/kaazing/gateway/transport/ws/bridge/filter/WsCheckAliveFilter_onPreRemove.java
+method_name = onPreRemove
+method_body = @Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); }
+
+topk path-contexts:
+[0.1132] iofilterchain,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),nextfilter
+[0.1104] iofilterchain,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),nextfilter
+[0.1089] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),iofilterchain
+[0.1029] nextfilter,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),filterchain
+[0.1023] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),iofilterchain
+[0.0689] filterchain,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),nextfilter
+[0.0647] filterchain,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),iofilterchain
+[0.0525] filterchain,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),nextfilter
+[0.0517] nextfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),filterchain
+[0.0423] name,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),filterchain
+
+topk terminals:
+['iofilterchain', 'nextfilter', 'iofilterchain', 'nextfilter', 'void', 'iofilterchain', 'nextfilter', 'filterchain', 'METHOD_NAME', 'iofilterchain', 'filterchain', 'nextfilter', 'filterchain', 'iofilterchain', 'filterchain', 'nextfilter', 'nextfilter', 'filterchain', 'name', 'filterchain']
+

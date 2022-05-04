@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/georgewfraser__vscode-javac/src/main/java/org/javacs/Main_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName("org.javacs.Main", true, langTools); Method run = main.getMethod("run"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, "Failed", e); } }
+
+topk path-contexts for sub-token: main
+[0.2547] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1434] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0754] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0460] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,exception
+[0.0391] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,method
+[0.0317] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NullLiteralExpr2,null
+[0.0275] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,class|loader
+[0.0215] exception,ClassOrInterfaceType1|Parameter|CatchClause|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,failed
+[0.0188] void,VoidType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0188] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,run
+
+topk terminals for sub-token: main
+['args', '[]', 'args', 'string', 'string', '[]', 'args', 'exception', 'args', 'method', 'args', 'null', 'args', 'class|loader', 'exception', 'failed', 'void', '[]', 'args', 'run']
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 20:21:44.141064", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); } }"}
+{"time": "2020-12-28 20:24:45.601492", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-28 20:26:00.714618", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-28 20:26:40.160262", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate( ) { super.onCreate(savedInstanceState); } }"}
+
+Minimal simplified code:
+class T {
+                    void onCreate(                         ) { super.onCreate(                  );                                             }
+}
+
+

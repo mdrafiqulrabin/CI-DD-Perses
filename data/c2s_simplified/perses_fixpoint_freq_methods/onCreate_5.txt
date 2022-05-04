@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { Log.i(LOG_TAG, "onCreate"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:18:41.009061", "score": "0.9976", "loss": "0.0025", "code": "class T { @Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); } }"}
+{"time": "2020-12-21 10:19:28.942952", "score": "0.999", "loss": "0.0011", "code": "class T { @Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); memoryInfo = new MemoryInfo(); } }"}
+{"time": "2020-12-21 10:19:50.169097", "score": "0.9991", "loss": "0.001", "code": "class T { @Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); } }"}
+{"time": "2020-12-21 10:20:11.288296", "score": "0.988", "loss": "0.0155", "code": "class T { @Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); } }"}
+{"time": "2020-12-21 10:20:54.953253", "score": "0.985", "loss": "0.0183", "code": "class T { void onCreate() { Log.i(LOG_TAG, \"onCreate\"); } }"}
+
+Minimal simplified code:
+class T {
+                 void onCreate() { Log.i(LOG_TAG, "onCreate");                                                                                                                                                        }
+}
+
+

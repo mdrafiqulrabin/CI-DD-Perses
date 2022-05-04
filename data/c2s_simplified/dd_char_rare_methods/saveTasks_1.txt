@@ -1,0 +1,61 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/storage/durability/WriteRecorder_saveTasks.java
+method_name = saveTasks
+method_body = @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }
+predict, score, loss = saveTasks, 0.34137204, 1.5960115
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:31:25.732430", "n_pass": [1, 1, 1], "score": "0.3414", "loss": "1.596", "code": "@Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:29.154272", "n_pass": [55, 3, 2], "score": "0.2795", "loss": "1.8002", "code": "@Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledrsSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:32.198225", "n_pass": [100, 5, 3], "score": "0.2981", "loss": "1.7615", "code": "@Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:36.213317", "n_pass": [109, 8, 4], "score": "0.3441", "loss": "1.7217", "code": "@Overrblic void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:38.639702", "n_pass": [115, 9, 5], "score": "0.3509", "loss": "1.7436", "code": "@Overrblic void saveTasks(final Set<uledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:41.294719", "n_pass": [118, 11, 6], "score": "0.4383", "loss": "1.5892", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:42.618641", "n_pass": [120, 12, 7], "score": "0.2761", "loss": "2.2279", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { reonNull(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:43.956618", "n_pass": [121, 13, 8], "score": "0.221", "loss": "2.5624", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(newTasks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:54.391978", "n_pass": [195, 20, 9], "score": "0.3407", "loss": "2.1641", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(nesks); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:55.715921", "n_pass": [196, 21, 10], "score": "0.3333", "loss": "2.1703", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); write(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:57.040613", "n_pass": [198, 22, 11], "score": "0.2637", "loss": "2.3566", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te(Op.saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:58.366265", "n_pass": [200, 23, 12], "score": "0.3584", "loss": "1.94", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te(saveTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:31:59.711656", "n_pass": [201, 24, 13], "score": "0.2108", "loss": "2.5755", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te(eTasks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:01.048016", "n_pass": [202, 25, 14], "score": "0.1858", "loss": "2.8731", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te(sks(new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:02.369240", "n_pass": [203, 26, 15], "score": "0.4652", "loss": "1.48", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((new SaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:03.688249", "n_pass": [205, 27, 16], "score": "0.2652", "loss": "2.1523", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neaveTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:05.019840", "n_pass": [206, 28, 17], "score": "0.3394", "loss": "1.8256", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neTasks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:06.338682", "n_pass": [207, 29, 18], "score": "0.271", "loss": "2.1374", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(ISchedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:07.660264", "n_pass": [209, 30, 19], "score": "0.2621", "loss": "2.1805", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(hedet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:08.994052", "n_pass": [210, 31, 20], "score": "0.2785", "loss": "2.1239", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:10.313853", "n_pass": [212, 32, 21], "score": "0.3072", "loss": "1.9792", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(Tasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:11.630141", "n_pass": [213, 33, 22], "score": "0.3353", "loss": "1.9347", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:12.950432", "n_pass": [216, 34, 23], "score": "0.3365", "loss": "1.8832", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); Store.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:14.273707", "n_pass": [217, 35, 24], "score": "0.2889", "loss": "2.0261", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(newTasks); }"}
+{"time": "2021-01-23 08:32:18.218907", "n_pass": [221, 38, 25], "score": "0.3094", "loss": "2.311", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(asks); }"}
+{"time": "2021-01-23 08:32:19.554820", "n_pass": [222, 39, 26], "score": "0.1678", "loss": "3.6218", "code": "@Overrblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:32:20.929463", "n_pass": [225, 40, 27], "score": "0.1678", "loss": "3.6218", "code": "@Ovblic void saveTasks(final Set<uledTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:32:26.331478", "n_pass": [234, 43, 28], "score": "0.1678", "loss": "3.6218", "code": "@Ovblic void saveTasks(finaet<uledTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:32:27.643564", "n_pass": [236, 44, 29], "score": "0.1982", "loss": "3.6655", "code": "@Ovblic void saveTasks(finaet<dTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:32:38.329946", "n_pass": [262, 51, 30], "score": "0.1982", "loss": "3.6655", "code": "@Ovblic void saveTasks(fet<dTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:32:52.159250", "n_pass": [347, 58, 31], "score": "0.1982", "loss": "3.6655", "code": "@Ovblic void saveTasks(f<dTask> ne) { re(ne); te((neks(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:00.112925", "n_pass": [362, 64, 32], "score": "0.2302", "loss": "3.3264", "code": "@Ovblic void saveTasks(f<dTask> ne) { re(ne); te((ne(et(ks)))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:01.424841", "n_pass": [365, 65, 33], "score": "0.2132", "loss": "3.0593", "code": "@Ovblic void saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:09.318829", "n_pass": [378, 71, 34], "score": "0.2132", "loss": "3.0593", "code": "@vblic void saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:10.626364", "n_pass": [379, 72, 35], "score": "0.2132", "loss": "3.0593", "code": "@blic void saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:14.581190", "n_pass": [382, 75, 36], "score": "0.1827", "loss": "3.2659", "code": "@blc void saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:15.913894", "n_pass": [383, 76, 37], "score": "0.3209", "loss": "2.3761", "code": "@bl void saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:20.222982", "n_pass": [387, 79, 38], "score": "0.1726", "loss": "3.833", "code": "@bl vod saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:21.532336", "n_pass": [388, 80, 39], "score": "0.2156", "loss": "3.3948", "code": "@bl vo saveTasks(f<dTask> ne) { re(ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:28.792244", "n_pass": [406, 83, 40], "score": "0.2283", "loss": "3.1644", "code": "@bl vo saveTasks(f<dTask> ne) { (ne); te((ne(et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:31.758458", "n_pass": [412, 85, 41], "score": "0.2727", "loss": "3.1237", "code": "@bl vo saveTasks(f<dTask> ne) { (ne); te(((et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:40.976582", "n_pass": [428, 92, 42], "score": "0.2046", "loss": "3.5586", "code": "@b vo saveTasks(f<dTask> ne) { (ne); te(((et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:33:51.559970", "n_pass": [452, 97, 43], "score": "0.21", "loss": "3.2147", "code": "@b vo saveTasks(f<dTask> ne) { (ne); (((et()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:34:12.080909", "n_pass": [544, 107, 44], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask> ne) { (ne); (((e()))); e.saveTasks(); }"}
+{"time": "2021-01-23 08:34:13.399209", "n_pass": [550, 108, 45], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask> ne) { (ne); (((e())));e.saveTasks(); }"}
+{"time": "2021-01-23 08:34:27.974923", "n_pass": [565, 119, 46], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask> ne) { (ne); (((e())));e.saveTasks();}"}
+{"time": "2021-01-23 08:34:42.836860", "n_pass": [591, 127, 47], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask>ne) { (ne); (((e())));e.saveTasks();}"}
+{"time": "2021-01-23 08:34:46.790223", "n_pass": [595, 130, 48], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask>ne){ (ne); (((e())));e.saveTasks();}"}
+{"time": "2021-01-23 08:34:48.096217", "n_pass": [597, 131, 49], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask>ne){(ne); (((e())));e.saveTasks();}"}
+{"time": "2021-01-23 08:34:52.525642", "n_pass": [603, 134, 50], "score": "0.208", "loss": "3.2382", "code": "@b vo saveTasks(f<dTask>ne){(ne);(((e())));e.saveTasks();}"}
+
+Minimal simplified code:
+@b vo saveTasks(f<dTask>ne){(ne);(((e())));e.saveTasks();}
+

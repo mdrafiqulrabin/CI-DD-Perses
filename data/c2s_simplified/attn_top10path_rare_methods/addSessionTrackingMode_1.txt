@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/SessionConfig_addSessionTrackingMode.java
+method_name = addSessionTrackingMode
+method_body = public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }
+
+topk path-contexts for sub-token: add
+[0.1309] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0666] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+[0.0613] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add
+[0.0429] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr3,value|of
+[0.0382] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0358] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0355] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr3,value|of
+[0.0312] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0311] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0226] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,session|tracking|mode
+
+topk terminals for sub-token: add
+['void', 'METHOD_NAME', 'METHOD_NAME', 'add', 'string', 'add', 'METHOD_NAME', 'value|of', 'void', 'string', 'METHOD_NAME', 'session|tracking|modes', 'string', 'value|of', 'METHOD_NAME', 'string', 'string', 'session|tracking|modes', 'METHOD_NAME', 'session|tracking|mode']
+
+topk path-contexts for sub-token: session
+[0.1572] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.1243] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0758] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0628] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,session|tracking|mode
+[0.0611] session|tracking|modes,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0556] session|tracking|modes,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr0,session|tracking|mode
+[0.0539] session|tracking|mode,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0444] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0402] session|tracking|mode,NameExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0330] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,session|tracking|mode
+
+topk terminals for sub-token: session
+['METHOD_NAME', 'session|tracking|modes', 'string', 'session|tracking|modes', 'METHOD_NAME', 'session|tracking|mode', 'METHOD_NAME', 'session|tracking|mode', 'session|tracking|modes', 'session|tracking|mode', 'session|tracking|modes', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|modes', 'string', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|mode', 'string', 'session|tracking|mode']
+
+topk path-contexts for sub-token: tracking
+[0.1293] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.1148] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0931] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0818] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,session|tracking|mode
+[0.0716] session|tracking|modes,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0614] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,session|tracking|mode
+[0.0561] session|tracking|mode,NameExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0559] session|tracking|mode,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0557] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0498] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,session|tracking|mode
+
+topk terminals for sub-token: tracking
+['METHOD_NAME', 'session|tracking|mode', 'METHOD_NAME', 'session|tracking|modes', 'string', 'session|tracking|modes', 'METHOD_NAME', 'session|tracking|mode', 'session|tracking|modes', 'session|tracking|mode', 'METHOD_NAME', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|modes', 'string', 'session|tracking|mode', 'void', 'session|tracking|mode']
+
+topk path-contexts for sub-token: mode
+[0.1638] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,session|tracking|mode
+[0.1310] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,session|tracking|mode
+[0.1092] session|tracking|mode,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0707] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0644] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0595] session|tracking|mode,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0550] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,session|tracking|mode
+[0.0485] session|tracking|mode,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0476] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,session|tracking|modes
+[0.0363] session|tracking|mode,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,session|tracking|mode
+
+topk terminals for sub-token: mode
+['METHOD_NAME', 'session|tracking|mode', 'void', 'session|tracking|mode', 'session|tracking|mode', 'string', 'METHOD_NAME', 'session|tracking|mode', 'string', 'session|tracking|modes', 'session|tracking|mode', 'session|tracking|mode', 'string', 'session|tracking|mode', 'session|tracking|mode', 'session|tracking|modes', 'METHOD_NAME', 'session|tracking|modes', 'session|tracking|mode', 'session|tracking|mode']
+

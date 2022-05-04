@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javaee__javamail/demo/src/main/java/populate_main.java
+method_name = main
+method_body = public static void main(String[] argv) { String srcURL = null; String dstURL = null; boolean debug = false; int optind; for (optind = 0; optind < argv.length; optind++) { if (argv[optind].equals("-s")) { srcURL = argv[++optind]; } else if (argv[optind].equals("-d")) { dstURL = argv[++optind]; } else if (argv[optind].equals("-D")) { debug = true; } else if (argv[optind].equals("-f")) { force = true; } else if (argv[optind].equals("-S")) { skipSpecial = true; } else if (argv[optind].equals("-c")) { clear = true; } else if (argv[optind].equals("-P")) { dontPreserveFlags = true; } else if (argv[optind].equals("-W")) { warn = true; } else if (argv[optind].equals("--")) { optind++; break; } else if (argv[optind].startsWith("-")) { printUsage(); System.exit(1); } else { break; } } try { if (srcURL == null || dstURL == null) { printUsage(); System.exit(1); } Session session = Session.getInstance(System.getProperties(), null); session.setDebug(debug); URLName srcURLName = new URLName(srcURL); Folder srcFolder; if (srcURLName.getFile() == null) { Store s = session.getStore(srcURLName); s.connect(); srcFolder = s.getDefaultFolder(); } else { srcFolder = session.getFolder(new URLName(srcURL)); if (!srcFolder.exists()) { System.out.println("source folder does not exist"); srcFolder.getStore().close(); System.exit(1); } } URLName dstURLName = new URLName(dstURL); Folder dstFolder; if (dstURLName.getFile() == null) { Store s = session.getStore(dstURLName); s.connect(); dstFolder = s.getFolder(srcFolder.getName()); } else dstFolder = session.getFolder(dstURLName); if (clear && dstFolder.exists()) { if (!dstFolder.delete(true)) { System.out.println("couldn't delete " + dstFolder.getFullName()); return; } } copy(srcFolder, dstFolder); srcFolder.getStore().close(); dstFolder.getStore().close(); } catch (MessagingException mex) { System.out.println(mex.getMessage()); mex.printStackTrace(); } }
+
+topk path-contexts:
+[0.1091] argv,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),folder
+[0.1070] string,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),string
+[0.0998] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(Parameter)_(ArrayBracketPair2),[]
+[0.0802] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(IfStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),dstfolder
+[0.0802] argv,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),string
+[0.0261] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(NullLiteralExpr1),null
+[0.0248] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),optind
+[0.0248] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),folder
+[0.0248] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),session
+[0.0248] argv,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),string
+[0.0248] argv,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setdebug
+
+topk terminals:
+['argv', 'folder', 'string', 'string', 'METHOD_NAME', '[]', 'METHOD_NAME', 'dstfolder', 'argv', 'string', '[]', 'null', '[]', 'optind', 'METHOD_NAME', 'folder', 'METHOD_NAME', 'session', 'argv', 'string', 'argv', 'setdebug']
+

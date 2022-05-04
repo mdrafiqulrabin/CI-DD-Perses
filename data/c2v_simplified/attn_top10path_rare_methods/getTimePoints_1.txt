@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/alphatica__genotick/src/main/java/com/alphatica/genotick/data/DataSet_getTimePoints.java
+method_name = getTimePoints
+method_body = List<TimePoint> getTimePoints() { return Arrays.asList(timePoints); }
+
+topk path-contexts:
+[0.7585] timepoint,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),timepoints
+[0.0810] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),timepoints
+[0.0472] timepoint,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),aslist
+[0.0383] timepoint,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),arrays
+[0.0330] timepoint,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0187] timepoints,(NameExpr2)^(MethodCallExpr)_(NameExpr3),aslist
+[0.0095] arrays,(NameExpr0)^(MethodCallExpr)_(NameExpr2),timepoints
+[0.0073] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),arrays
+[0.0066] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),aslist
+
+topk terminals:
+['timepoint', 'timepoints', 'METHOD_NAME', 'timepoints', 'timepoint', 'aslist', 'timepoint', 'arrays', 'timepoint', 'METHOD_NAME', 'timepoints', 'aslist', 'arrays', 'timepoints', 'METHOD_NAME', 'arrays', 'METHOD_NAME', 'aslist']
+

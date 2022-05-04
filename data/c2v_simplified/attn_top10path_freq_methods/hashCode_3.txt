@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/main/java/example/kurt/todo/Todo_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = super.hashCode(); result = 31 * result + label.hashCode(); result = 31 * result + description.hashCode(); result = 31 * result + (completed ? 1 : 0); return result; }
+
+topk path-contexts:
+[0.0859] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),hashcode
+[0.0726] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr0),description
+[0.0611] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(EnclosedExpr)_(ConditionalExpr)_(IntegerLiteralExpr1),1
+[0.0571] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0556] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0556] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0556] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0378] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr0),label
+[0.0354] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0354] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr2),hashcode
+
+topk terminals:
+['super', 'hashcode', '31', 'description', 'int', '1', 'int', 'hashcode', 'int', '31', 'int', '31', 'int', '31', '31', 'label', '31', 'hashcode', '31', 'hashcode']
+

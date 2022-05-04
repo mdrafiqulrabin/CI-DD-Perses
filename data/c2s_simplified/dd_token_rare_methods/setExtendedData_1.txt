@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MKergall__osmbonuspack/OSMBonusPack/src/main/java/org/osmdroid/bonuspack/kml/KmlFeature_setExtendedData.java
+method_name = setExtendedData
+method_body = public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); }
+predict, score, loss = setExtendedData, 0.49398392, 0.8436926
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:34:17.940158", "n_pass": [1, 1, 1], "score": "0.494", "loss": "0.8437", "code": "public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); }"}
+{"time": "2021-01-20 05:34:19.687263", "n_pass": [51, 2, 2], "score": "0.5089", "loss": "0.8293", "code": "public void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); }"}
+{"time": "2021-01-20 05:34:21.032462", "n_pass": [58, 3, 3], "score": "0.6504", "loss": "1.0194", "code": "public void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<String, String>(); mExtendedData.put(); }"}
+{"time": "2021-01-20 05:34:23.756236", "n_pass": [103, 4, 4], "score": "0.6504", "loss": "1.0194", "code": " void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<String, String>(); mExtendedData.put(); }"}
+{"time": "2021-01-20 05:34:25.072720", "n_pass": [104, 5, 5], "score": "0.6504", "loss": "1.0194", "code": "void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<String, String>(); mExtendedData.put(); }"}
+{"time": "2021-01-20 05:34:27.138432", "n_pass": [122, 6, 6], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<StringString>(); mExtendedData.put(); }"}
+{"time": "2021-01-20 05:34:35.660610", "n_pass": [194, 8, 7], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put(); }"}
+{"time": "2021-01-20 05:34:38.316878", "n_pass": [201, 10, 8], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name, String value) { if (mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:40.378228", "n_pass": [211, 11, 9], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name,String value) { if (mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:41.726986", "n_pass": [216, 12, 10], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name,String value){ if (mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:43.041811", "n_pass": [218, 13, 11], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name,String value){if (mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:44.722670", "n_pass": [220, 14, 12], "score": "0.6349", "loss": "1.2055", "code": "void setExtendedData(String name,String value){if(mExtendedDatanull) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:46.036850", "n_pass": [222, 15, 13], "score": "0.647", "loss": "2.3061", "code": "void setExtendedData(String name,String value){if(null) mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:47.352132", "n_pass": [225, 16, 14], "score": "0.647", "loss": "2.3061", "code": "void setExtendedData(String name,String value){if(null)mExtendedData = new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:48.695702", "n_pass": [227, 17, 15], "score": "0.647", "loss": "2.3061", "code": "void setExtendedData(String name,String value){if(null)mExtendedData= new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:50.019587", "n_pass": [229, 18, 16], "score": "0.647", "loss": "2.3061", "code": "void setExtendedData(String name,String value){if(null)mExtendedData=new HashMap<StringString>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:51.337483", "n_pass": [234, 19, 17], "score": "0.6512", "loss": "2.3208", "code": "void setExtendedData(String name,String value){if(null)mExtendedData=new HashMap<String>();mExtendedData.put();}"}
+{"time": "2021-01-20 05:34:52.651358", "n_pass": [235, 20, 18], "score": "0.5853", "loss": "1.8703", "code": "void setExtendedData(String name,String value){if(null)mExtendedData=new HashMap<>();mExtendedData.put();}"}
+
+Minimal simplified code:
+void setExtendedData(String name,String value){if(null)mExtendedData=new HashMap<>();mExtendedData.put();}
+

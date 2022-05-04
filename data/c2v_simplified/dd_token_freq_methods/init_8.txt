@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TestStandardWrapper_init.java
+method_name = init
+method_body = @Override public void init(ServletConfig config) throws ServletException { super.init(config); data = 10; }
+predict, score, loss = init, 0.9999412298202515, 8.320462075062096e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:07:10.807462", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public void init(ServletConfig config) throws ServletException { super.init(config); data = 10; }"}
+{"time": "2020-12-26 23:07:13.862330", "n_pass": [20, 2, 2], "score": "0.9999", "loss": "0.0002", "code": " void init(ServletConfig config) throws ServletException { super.init(config); data = 10; }"}
+{"time": "2020-12-26 23:07:16.530382", "n_pass": [25, 3, 3], "score": "0.9995", "loss": "0.0006", "code": " void init(ServletConfig config) throws ServletException { super. data = 10; }"}
+{"time": "2020-12-26 23:07:19.166709", "n_pass": [44, 4, 4], "score": "0.9997", "loss": "0.0004", "code": " void init(ServletConfig config) throws ServletException { data = 10; }"}
+{"time": "2020-12-26 23:07:21.829489", "n_pass": [45, 5, 5], "score": "0.9964", "loss": "0.007", "code": " void init(ServletConfig config) throws ServletException {  10; }"}
+{"time": "2020-12-26 23:07:24.496317", "n_pass": [46, 6, 6], "score": "0.9963", "loss": "0.0071", "code": " void init(ServletConfig config) throws ServletException { ; }"}
+{"time": "2020-12-26 23:07:33.205058", "n_pass": [76, 8, 7], "score": "0.9963", "loss": "0.0071", "code": "void init(ServletConfig config) throws ServletException { ; }"}
+{"time": "2020-12-26 23:07:36.288174", "n_pass": [84, 9, 8], "score": "0.9963", "loss": "0.0071", "code": "void init(ServletConfig config)throws ServletException { ; }"}
+{"time": "2020-12-26 23:07:38.946236", "n_pass": [88, 10, 9], "score": "0.9963", "loss": "0.0071", "code": "void init(ServletConfig config)throws ServletException{ ; }"}
+{"time": "2020-12-26 23:07:41.586401", "n_pass": [90, 11, 10], "score": "0.9963", "loss": "0.0071", "code": "void init(ServletConfig config)throws ServletException{; }"}
+{"time": "2020-12-26 23:07:48.013702", "n_pass": [107, 13, 11], "score": "0.9963", "loss": "0.0071", "code": "void init(ServletConfig config)throws ServletException{;}"}
+
+Minimal simplified code:
+void init(ServletConfig config)throws ServletException{;}
+

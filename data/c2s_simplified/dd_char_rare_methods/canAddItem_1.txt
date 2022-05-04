@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/content/content-tool/tool/src/java/org/sakaiproject/content/tool/ResourcesBrowseItem_canAddItem.java
+method_name = canAddItem
+method_body = public boolean canAddItem() { return m_canAddItem; }
+predict, score, loss = canAddItem, 0.36245266, 1.0517837
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:32:08.540129", "n_pass": [1, 1, 1], "score": "0.3625", "loss": "1.0518", "code": "public boolean canAddItem() { return m_canAddItem; }"}
+{"time": "2021-01-23 11:32:11.129519", "n_pass": [20, 3, 2], "score": "0.3625", "loss": "1.0518", "code": " boolean canAddItem() { return m_canAddItem; }"}
+{"time": "2021-01-23 11:32:28.101326", "n_pass": [84, 14, 3], "score": "0.3625", "loss": "1.0518", "code": "boolean canAddItem() { return m_canAddItem; }"}
+{"time": "2021-01-23 11:32:56.961773", "n_pass": [159, 31, 4], "score": "0.3625", "loss": "1.0518", "code": "boolean canAddItem(){ return m_canAddItem; }"}
+{"time": "2021-01-23 11:32:58.255107", "n_pass": [161, 32, 5], "score": "0.3625", "loss": "1.0518", "code": "boolean canAddItem(){return m_canAddItem; }"}
+{"time": "2021-01-23 11:33:07.392085", "n_pass": [168, 39, 6], "score": "0.4058", "loss": "2.3834", "code": "boolean canAddItem(){returnm_canAddItem; }"}
+{"time": "2021-01-23 11:33:24.165410", "n_pass": [182, 52, 7], "score": "0.4058", "loss": "2.3834", "code": "boolean canAddItem(){returnm_canAddItem;}"}
+{"time": "2021-01-23 11:33:38.281439", "n_pass": [205, 60, 8], "score": "0.4058", "loss": "2.3834", "code": "boolean canAddItem(){eturnm_canAddItem;}"}
+{"time": "2021-01-23 11:33:39.572457", "n_pass": [206, 61, 9], "score": "0.4058", "loss": "2.3834", "code": "boolean canAddItem(){turnm_canAddItem;}"}
+{"time": "2021-01-23 11:33:40.848594", "n_pass": [207, 62, 10], "score": "0.4058", "loss": "2.3834", "code": "boolean canAddItem(){urnm_canAddItem;}"}
+{"time": "2021-01-23 11:33:43.433815", "n_pass": [209, 64, 11], "score": "0.4785", "loss": "1.037", "code": "boolean canAddItem(){unm_canAddItem;}"}
+{"time": "2021-01-23 11:33:44.741087", "n_pass": [210, 65, 12], "score": "0.4633", "loss": "0.9245", "code": "boolean canAddItem(){um_canAddItem;}"}
+{"time": "2021-01-23 11:34:14.269899", "n_pass": [246, 85, 13], "score": "0.3626", "loss": "1.1287", "code": "boolean canAddItem(){m_canAddItem;}"}
+
+Minimal simplified code:
+boolean canAddItem(){m_canAddItem;}
+

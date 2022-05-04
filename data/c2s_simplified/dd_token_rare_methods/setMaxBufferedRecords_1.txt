@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxBufferedRecords.java
+method_name = setMaxBufferedRecords
+method_body = public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }
+predict, score, loss = setMaxBufferedRecords, 0.47694722, 0.8253592
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:11:43.316083", "n_pass": [1, 1, 1], "score": "0.4769", "loss": "0.8254", "code": "public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }"}
+{"time": "2021-01-20 05:11:47.667071", "n_pass": [26, 4, 2], "score": "0.8229", "loss": "0.2901", "code": "public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:11:52.704335", "n_pass": [50, 7, 3], "score": "0.8229", "loss": "0.2901", "code": " Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:11:54.011092", "n_pass": [51, 8, 4], "score": "0.8229", "loss": "0.2901", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:12:00.083826", "n_pass": [89, 10, 5], "score": "0.8229", "loss": "0.2901", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){ this.maxBufferedRecords = maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:12:01.390505", "n_pass": [90, 11, 6], "score": "0.8229", "loss": "0.2901", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords = maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:12:04.036485", "n_pass": [94, 13, 7], "score": "0.8229", "loss": "0.2901", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords= maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:12:05.331865", "n_pass": [96, 14, 8], "score": "0.8229", "loss": "0.2901", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords=maxBufferedRecordsthis; }"}
+{"time": "2021-01-20 05:12:07.928263", "n_pass": [98, 16, 9], "score": "0.8531", "loss": "0.2327", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords=maxBufferedRecords; }"}
+{"time": "2021-01-20 05:12:09.238377", "n_pass": [100, 17, 10], "score": "0.8531", "loss": "0.2327", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords=maxBufferedRecords;}"}
+
+Minimal simplified code:
+Builder setMaxBufferedRecords(int maxBufferedRecords){this.maxBufferedRecords=maxBufferedRecords;}
+

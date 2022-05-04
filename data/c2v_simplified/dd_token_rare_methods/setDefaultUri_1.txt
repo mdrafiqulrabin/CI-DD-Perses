@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/spring-ws-core/src/main/java/org/springframework/ws/client/core/support/WebServiceGatewaySupport_setDefaultUri.java
+method_name = setDefaultUri
+method_body = public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }
+predict, score, loss = setDefaultUri, 0.47273868322372437, 1.2874540090560913
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:54:13.419797", "n_pass": [1, 1, 1], "score": "0.4727", "loss": "1.2875", "code": "public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }"}
+{"time": "2021-01-20 07:54:16.832150", "n_pass": [20, 2, 2], "score": "0.4727", "loss": "1.2875", "code": " void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }"}
+{"time": "2021-01-20 07:54:22.062189", "n_pass": [25, 4, 3], "score": "0.8335", "loss": "1.2069", "code": " void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri; }"}
+{"time": "2021-01-20 07:54:28.461209", "n_pass": [46, 6, 4], "score": "0.8335", "loss": "1.2069", "code": "void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri; }"}
+{"time": "2021-01-20 07:54:31.889423", "n_pass": [55, 7, 5], "score": "0.462", "loss": "1.5918", "code": "void setDefaultUri(String uri) { setDefaultUri; }"}
+{"time": "2021-01-20 07:54:39.674235", "n_pass": [77, 9, 6], "score": "0.462", "loss": "1.5918", "code": "void setDefaultUri(String uri) { setDefaultUri;}"}
+{"time": "2021-01-20 07:54:43.093069", "n_pass": [86, 10, 7], "score": "0.462", "loss": "1.5918", "code": "void setDefaultUri(String uri){ setDefaultUri;}"}
+{"time": "2021-01-20 07:54:45.713362", "n_pass": [88, 11, 8], "score": "0.462", "loss": "1.5918", "code": "void setDefaultUri(String uri){setDefaultUri;}"}
+
+Minimal simplified code:
+void setDefaultUri(String uri){setDefaultUri;}
+

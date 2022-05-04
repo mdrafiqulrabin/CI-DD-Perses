@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestSsl_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); }
+predict, score, loss = setUp, 0.99900705, 0.001150213
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:21:39.770567", "n_pass": [1, 1, 1], "score": "0.999", "loss": "0.0011", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:41.108144", "n_pass": [9, 2, 2], "score": "0.9987", "loss": "0.0014", "code": "@Override public void setUp() throws Exception { { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:42.440441", "n_pass": [39, 3, 3], "score": "0.9987", "loss": "0.0014", "code": "@Override public void setUp() throws Exception { { System.setProperty(\"ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:43.751217", "n_pass": [44, 4, 4], "score": "0.9976", "loss": "0.0029", "code": " void setUp() throws Exception { { System.setProperty(\"ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:45.750040", "n_pass": [83, 5, 5], "score": "0.9975", "loss": "0.003", "code": " void setUp() throws Exception { { System(\"ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:47.050443", "n_pass": [84, 6, 6], "score": "0.9981", "loss": "0.0023", "code": " void setUp() throws Exception { { System(\"allowUnsafeRenegotiation\", \"true\"); } super.setUp(); }"}
+{"time": "2020-12-27 04:21:48.368901", "n_pass": [91, 7, 7], "score": "0.7886", "loss": "0.4127", "code": " void setUp() throws Exception { { System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:21:55.005200", "n_pass": [147, 9, 8], "score": "0.7886", "loss": "0.4127", "code": "void setUp() throws Exception { { System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:21:56.658177", "n_pass": [152, 10, 9], "score": "0.7886", "loss": "0.4127", "code": "void setUp()throws Exception { { System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:21:57.958763", "n_pass": [156, 11, 10], "score": "0.7886", "loss": "0.4127", "code": "void setUp()throws Exception{ { System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:21:59.255750", "n_pass": [158, 12, 11], "score": "0.7886", "loss": "0.4127", "code": "void setUp()throws Exception{{ System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:22:00.576112", "n_pass": [160, 13, 12], "score": "0.7886", "loss": "0.4127", "code": "void setUp()throws Exception{{System(\"allowUnsafeRenegotiation\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:22:01.865980", "n_pass": [164, 14, 13], "score": "0.4604", "loss": "1.0486", "code": "void setUp()throws Exception{{System(\"\", \"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:22:03.185101", "n_pass": [167, 15, 14], "score": "0.4604", "loss": "1.0486", "code": "void setUp()throws Exception{{System(\"\",\"true\"); } setUp(); }"}
+{"time": "2020-12-27 04:22:04.484728", "n_pass": [169, 16, 15], "score": "0.3305", "loss": "1.6511", "code": "void setUp()throws Exception{{System(\"\",\"\"); } setUp(); }"}
+{"time": "2020-12-27 04:22:05.782337", "n_pass": [173, 17, 16], "score": "0.3305", "loss": "1.6511", "code": "void setUp()throws Exception{{System(\"\",\"\");} setUp(); }"}
+{"time": "2020-12-27 04:22:07.104080", "n_pass": [175, 18, 17], "score": "0.3305", "loss": "1.6511", "code": "void setUp()throws Exception{{System(\"\",\"\");}setUp(); }"}
+{"time": "2020-12-27 04:22:09.787656", "n_pass": [206, 19, 18], "score": "0.3305", "loss": "1.6511", "code": "void setUp()throws Exception{{System(\"\",\"\");}setUp();}"}
+
+Minimal simplified code:
+void setUp()throws Exception{{System("","");}setUp();}
+

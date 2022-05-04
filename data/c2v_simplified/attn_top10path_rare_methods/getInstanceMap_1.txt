@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__commons-codec/src/main/java/org/apache/commons/codec/language/bm/Rule_getInstanceMap.java
+method_name = getInstanceMap
+method_body = public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules = RULES.get(nameType).get(rt).get(lang); if (rules == null) { throw new IllegalArgumentException(String.format("No rules found for %s, %s, %s.", nameType.getName(), rt.getName(), lang)); } return rules; }
+
+topk path-contexts:
+[0.0884] nametype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),ruletype
+[0.0694] nametype,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),ruletype
+[0.0602] string,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),nametype
+[0.0592] ruletype,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),rule
+[0.0560] rule,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(ClassOrInterfaceType)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),nametype
+[0.0518] ruletype,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),rules
+[0.0407] string,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),nametype
+[0.0396] get,(NameExpr3)^(MethodCallExpr0)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),rules
+[0.0310] ruletype,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),rules
+[0.0253] rule,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(ClassOrInterfaceType)^(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr2),nametype
+
+topk terminals:
+['nametype', 'ruletype', 'nametype', 'ruletype', 'string', 'nametype', 'ruletype', 'rule', 'rule', 'nametype', 'ruletype', 'rules', 'string', 'nametype', 'get', 'rules', 'ruletype', 'rules', 'rule', 'nametype']
+

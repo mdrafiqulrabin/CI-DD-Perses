@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wso2-attic__product-emm/modules/mobile-agents/android/client/client/src/main/java/org/wso2/emm/agent/beans/Application_setPss.java
+method_name = setPss
+method_body = public void setPss(int pss) { this.pss = pss; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 22:11:04.834249", "score": "0.3612", "loss": "2.8434", "code": "class T { public void setPss(int pss) { this.pss = pss; } }"}
+{"time": "2021-01-24 22:14:10.466385", "score": "0.7405", "loss": "1.1107", "code": "class T { public void setPss(int pss) { pss = pss; } }"}
+{"time": "2021-01-24 22:15:31.510709", "score": "0.7405", "loss": "1.1107", "code": "class T { void setPss(int pss) { pss = pss; } }"}
+
+Minimal simplified code:
+class T {
+       void setPss(int pss) {      pss = pss; }
+}
+
+

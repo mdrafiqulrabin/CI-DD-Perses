@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/StringUtils_upperFirstLetter.java
+method_name = upperFirstLetter
+method_body = public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return ""; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }
+predict, score, loss = upperFirstLetter, 0.29445433616638184, 1.7626136541366577
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:17:13.228780", "n_pass": [1, 1, 1], "score": "0.2945", "loss": "1.7626", "code": "public static String upperFirstLetter(final String s) { if (s == null || s.length() == 0) return \"\"; if (!Character.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:15.882575", "n_pass": [9, 2, 2], "score": "0.3803", "loss": "1.5673", "code": "public static String upperFirstLetter(final String s) { if (s == nullCharacter.isLowerCase(s.charAt(0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:19.382078", "n_pass": [75, 3, 3], "score": "0.3733", "loss": "1.7552", "code": "public static String upperFirstLetter(final String s) { if (s == nullCharacter.isLowerCase((0))) return s; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:24.667479", "n_pass": [78, 5, 4], "score": "0.3989", "loss": "1.7649", "code": "public static String upperFirstLetter(final String s) { if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:30.815073", "n_pass": [89, 7, 5], "score": "0.3989", "loss": "1.7649", "code": " String upperFirstLetter(final String s) { if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:42.313047", "n_pass": [153, 10, 6], "score": "0.3989", "loss": "1.7649", "code": "String upperFirstLetter(final String s) { if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:46.183893", "n_pass": [158, 11, 7], "score": "0.3989", "loss": "1.7649", "code": "String upperFirstLetter( String s) { if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:48.820754", "n_pass": [159, 12, 8], "score": "0.3989", "loss": "1.7649", "code": "String upperFirstLetter(String s) { if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:51.467563", "n_pass": [164, 13, 9], "score": "0.3989", "loss": "1.7649", "code": "String upperFirstLetter(String s){ if (s == nullCharacter.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:17:56.749537", "n_pass": [170, 15, 10], "score": "0.385", "loss": "1.5861", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) ; return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:18:02.156913", "n_pass": [176, 17, 11], "score": "0.256", "loss": "2.441", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s.charAt(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:18:07.870547", "n_pass": [183, 19, 12], "score": "0.2708", "loss": "2.4064", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) + s.substring(1); }"}
+{"time": "2021-01-20 07:18:10.520549", "n_pass": [191, 20, 13], "score": "0.2881", "loss": "2.2546", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) + s(1); }"}
+{"time": "2021-01-20 07:18:20.150691", "n_pass": [225, 23, 14], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) +(1); }"}
+{"time": "2021-01-20 07:18:33.974010", "n_pass": [311, 26, 15], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){ if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:18:37.861906", "n_pass": [321, 27, 16], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){if (s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:18:40.510549", "n_pass": [323, 28, 17], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){if(s ==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:18:43.140963", "n_pass": [326, 29, 18], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0))) return String.valueOf((char) (s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:18:53.692490", "n_pass": [338, 33, 19], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char) (s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:18:59.781679", "n_pass": [348, 35, 20], "score": "0.2814", "loss": "2.3254", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)(s(0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:19:02.434292", "n_pass": [350, 36, 21], "score": "0.2855", "loss": "2.3069", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0) - 32)) +(1);}"}
+{"time": "2021-01-20 07:19:05.079996", "n_pass": [354, 37, 22], "score": "0.2855", "loss": "2.3069", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0)- 32)) +(1);}"}
+{"time": "2021-01-20 07:19:07.719374", "n_pass": [356, 38, 23], "score": "0.2855", "loss": "2.3069", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0)-32)) +(1);}"}
+{"time": "2021-01-20 07:19:10.390312", "n_pass": [357, 39, 24], "score": "0.2992", "loss": "2.2554", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0)-2)) +(1);}"}
+{"time": "2021-01-20 07:19:13.041214", "n_pass": [361, 40, 25], "score": "0.2992", "loss": "2.2554", "code": "String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0)-2))+(1);}"}
+
+Minimal simplified code:
+String upperFirstLetter(String s){if(s==Character.isLowerCase((0)))return String.valueOf((char)((0)-2))+(1);}
+

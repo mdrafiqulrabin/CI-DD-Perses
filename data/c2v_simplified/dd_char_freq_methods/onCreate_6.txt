@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+predict, score, loss = onCreate, 0.9987882971763611, 0.0030873988289386034
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:53:04.696342", "n_pass": [1, 1, 1], "score": "0.9988", "loss": "0.0031", "code": "@Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 08:53:07.320824", "n_pass": [9, 2, 2], "score": "0.999", "loss": "0.0024", "code": "@Override public boolean onCreate() { Conte= context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 08:53:09.947529", "n_pass": [10, 3, 3], "score": "0.8532", "loss": "0.2045", "code": "@Override public boolean onCreate() { Conte= new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 08:53:23.398713", "n_pass": [52, 8, 4], "score": "0.9434", "loss": "0.1085", "code": "@Override public boolean onCreate() { Conte= deoDbHelper(context); return true; }"}
+{"time": "2020-12-28 08:53:26.022539", "n_pass": [53, 9, 5], "score": "0.9434", "loss": "0.1085", "code": "@Override public boolean onCreate() { Conte= elper(context); return true; }"}
+{"time": "2020-12-28 08:53:28.624735", "n_pass": [55, 10, 6], "score": "0.835", "loss": "0.4675", "code": "@Override public boolean onCreate() { Conte= elper(t); return true; }"}
+{"time": "2020-12-28 08:53:31.248554", "n_pass": [57, 11, 7], "score": "0.7856", "loss": "0.5062", "code": "@Override public boolean onCreate() { Conte= elper(t); rerue; }"}
+{"time": "2020-12-28 08:53:33.857333", "n_pass": [60, 12, 8], "score": "0.7202", "loss": "0.6877", "code": "@Overpublic boolean onCreate() { Conte= elper(t); rerue; }"}
+{"time": "2020-12-28 08:53:36.469329", "n_pass": [61, 13, 9], "score": "0.7202", "loss": "0.6877", "code": "@Overc boolean onCreate() { Conte= elper(t); rerue; }"}
+{"time": "2020-12-28 08:53:42.898618", "n_pass": [92, 15, 10], "score": "0.4429", "loss": "1.571", "code": "@Ove boolean onCreate() { Conte= elper(t); rerue; }"}
+{"time": "2020-12-28 08:54:00.103919", "n_pass": [104, 21, 11], "score": "0.8247", "loss": "0.3445", "code": "@Ove boolean onCreate() { Conte= er(t); rerue; }"}
+{"time": "2020-12-28 08:54:02.688728", "n_pass": [107, 22, 12], "score": "0.4717", "loss": "1.0673", "code": "@Ove boolean onCreate() { Conte= er(t);rue; }"}
+{"time": "2020-12-28 08:54:05.279217", "n_pass": [108, 23, 13], "score": "0.8363", "loss": "0.3223", "code": "@Ove boolean onCreate() { Conte= er(t);; }"}
+{"time": "2020-12-28 08:54:07.900511", "n_pass": [111, 24, 14], "score": "0.973", "loss": "0.0508", "code": "@O boolean onCreate() { Conte= er(t);; }"}
+{"time": "2020-12-28 08:54:19.952457", "n_pass": [121, 28, 15], "score": "0.9735", "loss": "0.053", "code": "@O boolean onCreate() { Ce= er(t);; }"}
+{"time": "2020-12-28 08:54:38.329486", "n_pass": [165, 34, 16], "score": "0.8453", "loss": "0.2228", "code": "@O boolean onCreate() {e= er(t);; }"}
+{"time": "2020-12-28 08:54:40.923434", "n_pass": [166, 35, 17], "score": "0.5192", "loss": "1.2688", "code": "@O boolean onCreate() { er(t);; }"}
+{"time": "2020-12-28 08:55:10.222530", "n_pass": [208, 44, 18], "score": "0.524", "loss": "1.1571", "code": "@O boolean onCreate() { er();; }"}
+{"time": "2020-12-28 08:55:12.812569", "n_pass": [209, 45, 19], "score": "0.524", "loss": "1.1571", "code": "@O boolean onCreate() { er(); }"}
+{"time": "2020-12-28 08:55:15.396292", "n_pass": [211, 46, 20], "score": "0.524", "loss": "1.1571", "code": "@O boolean onCreate() { er();}"}
+{"time": "2020-12-28 08:55:40.200834", "n_pass": [234, 54, 21], "score": "0.524", "loss": "1.1571", "code": "@O boolean onCreate(){ er();}"}
+{"time": "2020-12-28 08:55:42.785129", "n_pass": [236, 55, 22], "score": "0.524", "loss": "1.1571", "code": "@O boolean onCreate(){er();}"}
+
+Minimal simplified code:
+@O boolean onCreate(){er();}
+

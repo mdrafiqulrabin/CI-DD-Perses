@@ -1,0 +1,51 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreSchema.java
+method_name = setIgnoreSchema
+method_body = public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }
+
+topk path-contexts for sub-token: set
+[0.0902] ignore|schema,NameExpr2|FieldAccessExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0475] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0466] builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0410] ignore|schema,NameExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0385] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0336] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0284] builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0281] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0277] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0256] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+
+topk terminals for sub-token: set
+['ignore|schema', 'this', 'this', 'ignore|schema|topics', 'builder', 'METHOD_NAME', 'ignore|schema', 'this', 'boolean', 'ignore|schema|topics', 'this', 'ignore|schema', 'builder', 'boolean', 'this', 'this', 'boolean', 'ignore|schema', 'string', 'ignore|schema|topics']
+
+topk path-contexts for sub-token: ignore
+[0.0484] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0425] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0415] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0388] builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0293] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0242] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0240] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0213] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,ignore|schema|topics
+[0.0184] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|schema|topics
+[0.0160] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0160] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: ignore
+['boolean', 'ignore|schema|topics', 'string', 'ignore|schema|topics', 'this', 'ignore|schema|topics', 'builder', 'METHOD_NAME', 'boolean', 'ignore|schema', 'string', 'ignore|schema', 'this', 'ignore|schema', 'this', 'ignore|schema|topics', 'METHOD_NAME', 'ignore|schema|topics', 'boolean', 'this', 'boolean', 'this']
+
+topk path-contexts for sub-token: schema
+[0.0774] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|schema|topics
+[0.0624] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|schema
+[0.0615] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0581] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0577] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0527] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0412] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0396] ignore|schema,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema|topics
+[0.0375] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|schema
+[0.0340] ignore|schema,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|schema
+
+topk terminals for sub-token: schema
+['METHOD_NAME', 'ignore|schema|topics', 'METHOD_NAME', 'ignore|schema', 'boolean', 'ignore|schema|topics', 'string', 'ignore|schema|topics', 'boolean', 'ignore|schema', 'string', 'ignore|schema', 'this', 'ignore|schema|topics', 'ignore|schema', 'ignore|schema|topics', 'this', 'ignore|schema', 'ignore|schema', 'ignore|schema']
+

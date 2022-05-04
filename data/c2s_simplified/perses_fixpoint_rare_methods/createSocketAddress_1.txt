@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/test/java/org/apache/mina/transport/vmpipe/VmPipeBindTest_createSocketAddress.java
+method_name = createSocketAddress
+method_body = @Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:52:46.997140", "score": "0.4708", "loss": "2.5216", "code": "class T { @Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); } }"}
+{"time": "2021-01-24 07:54:12.249861", "score": "0.4708", "loss": "2.5216", "code": "class T { @Override SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); } }"}
+{"time": "2021-01-24 07:54:44.187014", "score": "0.5499", "loss": "1.4959", "code": "class T { @Override SocketAddress createSocketAddress(int port) { return new VmPipeAddress( ); } }"}
+{"time": "2021-01-24 07:55:53.759613", "score": "0.5936", "loss": "1.7579", "code": "class T { @Override SocketAddress createSocketAddress( ) { return new VmPipeAddress( ); } }"}
+
+Minimal simplified code:
+class T {
+@Override           SocketAddress createSocketAddress(        ) { return new VmPipeAddress(    ); }
+}
+
+

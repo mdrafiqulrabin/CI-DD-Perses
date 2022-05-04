@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/pdf/itext/HTMLWorker_setMarginMirroring.java
+method_name = setMarginMirroring
+method_body = public boolean setMarginMirroring(boolean marginMirroring) { return true; }
+
+topk path-contexts for sub-token: set
+[0.0770] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.0651] margin|mirroring,VariableDeclaratorId0|Parameter|PrimitiveType1,boolean
+[0.0621] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0582] margin|mirroring,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0397] boolean,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.0188] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0143] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0122] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0116] boolean,PrimitiveType0|MethodDeclaration|Parameter|PrimitiveType1,boolean
+
+topk terminals for sub-token: set
+['METHOD_NAME', 'margin|mirroring', 'margin|mirroring', 'boolean', 'boolean', 'METHOD_NAME', 'margin|mirroring', 'true', 'boolean', 'margin|mirroring', 'METHOD_NAME', 'boolean', 'METHOD_NAME', 'true', 'boolean', 'true', 'boolean', 'boolean']
+
+topk path-contexts for sub-token: margin
+[0.4963] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.1718] margin|mirroring,VariableDeclaratorId0|Parameter|PrimitiveType1,boolean
+[0.1237] boolean,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.0816] margin|mirroring,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0049] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0031] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0024] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0018] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0017] boolean,PrimitiveType0|MethodDeclaration|Parameter|PrimitiveType1,boolean
+
+topk terminals for sub-token: margin
+['METHOD_NAME', 'margin|mirroring', 'margin|mirroring', 'boolean', 'boolean', 'margin|mirroring', 'margin|mirroring', 'true', 'METHOD_NAME', 'boolean', 'boolean', 'METHOD_NAME', 'boolean', 'true', 'METHOD_NAME', 'true', 'boolean', 'boolean']
+
+topk path-contexts for sub-token: mirroring
+[0.3425] margin|mirroring,VariableDeclaratorId0|Parameter|PrimitiveType1,boolean
+[0.3399] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.0803] boolean,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,margin|mirroring
+[0.0615] margin|mirroring,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0323] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0059] boolean,PrimitiveType0|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0045] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0037] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0031] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+
+topk terminals for sub-token: mirroring
+['margin|mirroring', 'boolean', 'METHOD_NAME', 'margin|mirroring', 'boolean', 'margin|mirroring', 'margin|mirroring', 'true', 'METHOD_NAME', 'boolean', 'boolean', 'boolean', 'boolean', 'true', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'true']
+

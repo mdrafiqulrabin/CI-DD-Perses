@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/common/module/screen/Error_404_execute.java
+method_name = execute
+method_body = public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get("request.contextPath"); context.put("rootContextPath", new RootContextPath(contextPath)); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 04:32:51.909626", "score": "1.0", "loss": "0.0", "code": "class T { public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); } }"}
+{"time": "2020-12-29 04:36:35.280097", "score": "1.0", "loss": "0.0", "code": "class T { public void execute(Map<String, Object> context) throws Throwable { context.put(\"rootContextPath\", new RootContextPath(contextPath)); } }"}
+{"time": "2020-12-29 04:37:50.794161", "score": "1.0", "loss": "0.0", "code": "class T { public void execute( ) throws Throwable { context.put(\"rootContextPath\", new RootContextPath(contextPath)); } }"}
+{"time": "2020-12-29 04:39:57.753723", "score": "1.0", "loss": "0.0", "code": "class T { public void execute( ) throws Throwable { context.put(\"rootContextPath\" ); } }"}
+{"time": "2020-12-29 04:40:37.469108", "score": "1.0", "loss": "0.0", "code": "class T { public void execute( ) { context.put(\"rootContextPath\" ); } }"}
+{"time": "2020-12-29 04:41:17.048471", "score": "1.0", "loss": "0.0", "code": "class T { void execute( ) { context.put(\"rootContextPath\" ); } }"}
+
+Minimal simplified code:
+class T {
+       void execute(                           )                  {                                                                   context.put("rootContextPath"                                  ); }
+}
+
+

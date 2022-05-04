@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+predict, score, loss = main, 0.999035, 0.0013350394
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:42:03.328530", "n_pass": [1, 1, 1], "score": "0.999", "loss": "0.0013", "code": "public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-27 03:42:04.671658", "n_pass": [9, 2, 2], "score": "0.9982", "loss": "0.0025", "code": "public static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-27 03:42:05.999021", "n_pass": [40, 3, 3], "score": "0.9986", "loss": "0.0021", "code": "public static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-27 03:42:07.694100", "n_pass": [74, 4, 4], "score": "0.999", "loss": "0.0015", "code": "public static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\"); process.stop(); }"}
+{"time": "2020-12-27 03:42:09.045536", "n_pass": [76, 5, 5], "score": "0.9993", "loss": "0.0014", "code": "public static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\");stop(); }"}
+{"time": "2020-12-27 03:42:10.358774", "n_pass": [77, 6, 6], "score": "0.9996", "loss": "0.0008", "code": "public static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:11.687536", "n_pass": [79, 7, 7], "score": "0.9996", "loss": "0.0008", "code": "static void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:13.020090", "n_pass": [80, 8, 8], "score": "0.9996", "loss": "0.0008", "code": "void main(String[] args) throws Exception { LOGprepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:14.702403", "n_pass": [87, 9, 9], "score": "0.9997", "loss": "0.0005", "code": "void main(String[] args) throws Exception {(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:16.009954", "n_pass": [90, 10, 10], "score": "0.9997", "loss": "0.0004", "code": "void main(String[] args) throws Exception {(new PostgresConfig(VersionPRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:19.673645", "n_pass": [137, 11, 11], "score": "0.9971", "loss": "0.0047", "code": "void main(String[] args) throws Exception {(PostgresConfig(VersionPRODUCTION, \"test-db\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:20.980310", "n_pass": [142, 12, 12], "score": "0.9988", "loss": "0.0018", "code": "void main(String[] args) throws Exception {(PostgresConfig(VersionPRODUCTION, \"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:23.013502", "n_pass": [157, 13, 13], "score": "0.9988", "loss": "0.0018", "code": "void main(String[]args) throws Exception {(PostgresConfig(VersionPRODUCTION, \"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:24.334170", "n_pass": [160, 14, 14], "score": "0.9988", "loss": "0.0018", "code": "void main(String[]args)throws Exception {(PostgresConfig(VersionPRODUCTION, \"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:25.658022", "n_pass": [164, 15, 15], "score": "0.9988", "loss": "0.0018", "code": "void main(String[]args)throws Exception{(PostgresConfig(VersionPRODUCTION, \"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:28.986591", "n_pass": [212, 16, 16], "score": "0.9982", "loss": "0.0025", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version, \"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:30.329330", "n_pass": [214, 17, 17], "score": "0.9982", "loss": "0.0025", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version,\"test\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:31.627370", "n_pass": [216, 18, 18], "score": "0.9891", "loss": "0.0233", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version,\"\")).startinfo(\"\");; }"}
+{"time": "2020-12-27 03:42:32.948453", "n_pass": [221, 19, 19], "score": "0.9779", "loss": "0.0536", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version,\"\")).info(\"\");; }"}
+{"time": "2020-12-27 03:42:34.293406", "n_pass": [227, 20, 20], "score": "0.9779", "loss": "0.0536", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version,\"\")).info(\"\"); }"}
+{"time": "2020-12-27 03:42:35.627454", "n_pass": [229, 21, 21], "score": "0.9779", "loss": "0.0536", "code": "void main(String[]args)throws Exception{(PostgresConfig(Version,\"\")).info(\"\");}"}
+
+Minimal simplified code:
+void main(String[]args)throws Exception{(PostgresConfig(Version,"")).info("");}
+

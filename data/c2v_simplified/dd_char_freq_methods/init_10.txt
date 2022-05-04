@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/startup/TestTomcat_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { super.init(); callCount.incrementAndGet(); }
+predict, score, loss = init, 0.9938607215881348, 0.0063198949210345745
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:30:50.696344", "n_pass": [1, 1, 1], "score": "0.9939", "loss": "0.0063", "code": "@Override public void init() throws ServletException { super.init(); callCount.incrementAndGet(); }"}
+{"time": "2020-12-28 11:30:59.293366", "n_pass": [26, 4, 2], "score": "0.9985", "loss": "0.0015", "code": "@Override public void init() throws ServletException { super.init(); callntAndGet(); }"}
+{"time": "2020-12-28 11:31:04.905927", "n_pass": [33, 6, 3], "score": "0.6465", "loss": "0.5213", "code": "@Override public void init() throws ServletException { superntAndGet(); }"}
+{"time": "2020-12-28 11:31:10.494074", "n_pass": [52, 8, 4], "score": "0.6465", "loss": "0.5213", "code": "@Override public void init() throws ServletException { superet(); }"}
+{"time": "2020-12-28 11:31:13.085061", "n_pass": [54, 9, 5], "score": "0.7449", "loss": "0.3914", "code": "@Overrblic void init() throws ServletException { superet(); }"}
+{"time": "2020-12-28 11:31:21.646782", "n_pass": [62, 12, 6], "score": "0.8715", "loss": "0.1936", "code": "@Overrblic void init() throws ServletException {et(); }"}
+{"time": "2020-12-28 11:31:30.230514", "n_pass": [93, 15, 7], "score": "0.8715", "loss": "0.1936", "code": "@Ovblic void init() throws ServletException {et(); }"}
+{"time": "2020-12-28 11:31:32.813050", "n_pass": [94, 16, 8], "score": "0.7136", "loss": "0.9274", "code": "@Ovc void init() throws ServletException {et(); }"}
+{"time": "2020-12-28 11:31:52.478366", "n_pass": [143, 23, 9], "score": "0.8331", "loss": "0.3547", "code": "@Oc void init() throws ServletException {et(); }"}
+{"time": "2020-12-28 11:31:55.070785", "n_pass": [144, 24, 10], "score": "0.7341", "loss": "0.4643", "code": "@O void init() throws ServletException {et(); }"}
+{"time": "2020-12-28 11:32:32.678487", "n_pass": [210, 37, 11], "score": "0.7341", "loss": "0.4643", "code": "@O void init()throws ServletException {et(); }"}
+{"time": "2020-12-28 11:33:16.751650", "n_pass": [234, 54, 12], "score": "0.7341", "loss": "0.4643", "code": "@O void init()throws ServletException{et(); }"}
+{"time": "2020-12-28 11:33:19.360233", "n_pass": [236, 55, 13], "score": "0.6051", "loss": "0.7264", "code": "@O void init()throws ServletException{t(); }"}
+{"time": "2020-12-28 11:33:21.938241", "n_pass": [241, 56, 14], "score": "0.6051", "loss": "0.7264", "code": "@O void init()throws ServletException{t();}"}
+
+Minimal simplified code:
+@O void init()throws ServletException{t();}
+

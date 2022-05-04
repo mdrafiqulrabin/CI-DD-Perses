@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-util/src/main/java/org/sakaiproject/util/EmailNotification_htmlContent.java
+method_name = htmlContent
+method_body = protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }
+predict, score, loss = htmlContent, 0.48359835, 3.8923104
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:58:19.890595", "n_pass": [1, 1, 1], "score": "0.4836", "loss": "3.8923", "code": "protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:21.579802", "n_pass": [44, 2, 2], "score": "0.4836", "loss": "3.8923", "code": "String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:29.989763", "n_pass": [97, 6, 3], "score": "0.4836", "loss": "3.8923", "code": "String htmlContent(Event event){ return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:31.308676", "n_pass": [98, 7, 4], "score": "0.4836", "loss": "3.8923", "code": "String htmlContent(Event event){return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:34.010451", "n_pass": [100, 9, 5], "score": "0.2866", "loss": "4.4618", "code": "String htmlContent(Event event){returnWeb.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:35.350725", "n_pass": [102, 10, 6], "score": "0.4976", "loss": "3.9253", "code": "String htmlContent(Event event){returnWebencodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:38.007522", "n_pass": [106, 12, 7], "score": "0.3765", "loss": "3.7665", "code": "String htmlContent(Event event){returnWebencodeUrlsAsHtml(WebescapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-20 05:58:41.982895", "n_pass": [111, 15, 8], "score": "0.4718", "loss": "3.5441", "code": "String htmlContent(Event event){returnWebencodeUrlsAsHtml(WebescapeHtml(plainTextContent(), true)); }"}
+{"time": "2021-01-20 05:58:43.319196", "n_pass": [114, 16, 9], "score": "0.4718", "loss": "3.5441", "code": "String htmlContent(Event event){returnWebencodeUrlsAsHtml(WebescapeHtml(plainTextContent(),true)); }"}
+{"time": "2021-01-20 05:58:45.726713", "n_pass": [127, 17, 10], "score": "0.5294", "loss": "3.5383", "code": "String htmlContent(Event event){WebencodeUrlsAsHtml(WebescapeHtml(plainTextContent(),true)); }"}
+{"time": "2021-01-20 05:58:47.041890", "n_pass": [128, 18, 11], "score": "0.2994", "loss": "4.0567", "code": "String htmlContent(Event event){encodeUrlsAsHtml(WebescapeHtml(plainTextContent(),true)); }"}
+{"time": "2021-01-20 05:58:54.113436", "n_pass": [160, 22, 12], "score": "0.2994", "loss": "4.0567", "code": "String htmlContent(Event event){encodeUrlsAsHtml(WebescapeHtml(plainTextContent(),true));}"}
+
+Minimal simplified code:
+String htmlContent(Event event){encodeUrlsAsHtml(WebescapeHtml(plainTextContent(),true));}
+

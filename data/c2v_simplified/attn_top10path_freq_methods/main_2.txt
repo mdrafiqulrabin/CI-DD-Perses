@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+
+topk path-contexts:
+[0.1086] main,(NameExpr2)^(FieldAccessExpr0)^(FieldAccessExpr)^(ObjectCreationExpr2)^(MethodCallExpr0)_(NameExpr3),prepare
+[0.0771] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType3),exception
+[0.0639] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),stop
+[0.0475] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),process
+[0.0398] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),process
+[0.0369] getdefaultinstance,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr0)_(ObjectCreationExpr)_(StringLiteralExpr2),testdb
+[0.0353] getdefaultinstance,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),postgresconfig
+[0.0298] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr3),prepare
+[0.0266] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),info
+[0.0266] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),info
+
+topk terminals:
+['main', 'prepare', 'args', 'exception', 'args', 'stop', 'args', 'process', 'args', 'process', 'getdefaultinstance', 'testdb', 'getdefaultinstance', 'postgresconfig', 'exception', 'prepare', 'args', 'info', 'args', 'info']
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/dexbacked/raw/SectionAnnotator_setItemIdentity.java
+method_name = setItemIdentity
+method_body = public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }
+
+topk path-contexts for sub-token: set
+[0.0932] identity,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0552] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0521] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0501] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0383] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0371] item|offset,NameExpr2|MethodCallExpr|NameExpr3,put
+[0.0367] identity,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0363] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0343] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0342] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+
+topk terminals for sub-token: set
+['identity', 'put', 'void', 'METHOD_NAME', 'string', 'item|identities', 'string', 'put', 'int', 'put', 'item|offset', 'put', 'identity', 'item|identities', 'item|offset', 'put', 'int', 'item|identities', 'item|offset', 'item|identities']
+
+topk path-contexts for sub-token: item
+[0.1426] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.1285] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0960] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0902] identity,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0346] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,identity
+[0.0334] item|identities,NameExpr0|MethodCallExpr|NameExpr2,item|offset
+[0.0327] item|offset,NameExpr2|MethodCallExpr|NameExpr3,identity
+[0.0242] item|offset,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+[0.0239] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,item|offset
+[0.0233] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,identity
+
+topk terminals for sub-token: item
+['int', 'item|identities', 'string', 'item|identities', 'item|offset', 'item|identities', 'identity', 'item|identities', 'item|offset', 'identity', 'item|identities', 'item|offset', 'item|offset', 'identity', 'item|offset', 'int', 'string', 'item|offset', 'item|offset', 'identity']
+
+topk path-contexts for sub-token: identity
+[0.1491] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.1115] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0978] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0885] identity,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,item|identities
+[0.0529] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,identity
+[0.0511] item|identities,NameExpr0|MethodCallExpr|NameExpr2,item|offset
+[0.0469] identity,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,item|offset
+[0.0467] item|offset,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,item|offset
+[0.0358] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,item|offset
+[0.0356] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,item|offset
+
+topk terminals for sub-token: identity
+['item|offset', 'item|identities', 'int', 'item|identities', 'string', 'item|identities', 'identity', 'item|identities', 'item|offset', 'identity', 'item|identities', 'item|offset', 'identity', 'item|offset', 'item|offset', 'item|offset', 'int', 'item|offset', 'string', 'item|offset']
+

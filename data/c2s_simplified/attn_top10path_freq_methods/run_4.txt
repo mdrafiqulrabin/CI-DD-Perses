@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedQueue_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+
+topk path-contexts for sub-token: run
+[0.7078] super,SuperExpr0|MethodCallExpr|NameExpr2,run
+[0.0660] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,run
+[0.0550] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,run
+[0.0083] queue,NameExpr0|MethodCallExpr|NameExpr2,poll
+[0.0081] obj,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr2,poll
+[0.0078] object,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,poll
+[0.0073] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,run
+[0.0067] iterations,NameExpr1|BinaryExpr:less|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,run
+[0.0058] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,poll
+[0.0056] i,NameExpr0|UnaryExpr:posIncrement|ForStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,poll
+
+topk terminals for sub-token: run
+['super', 'run', 'void', 'run', 'METHOD_NAME', 'run', 'queue', 'poll', 'obj', 'poll', 'object', 'poll', '0', 'run', 'iterations', 'run', 'int', 'poll', 'i', 'poll']
+

@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/naming/resources/TestWarDirContext_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance(); tomcat.getServer().addLifecycleListener(new JreMemoryLeakPreventionListener()); }
+predict, score, loss = setUp, 0.9825678467750549, 0.01773218624293804
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:54:42.586570", "n_pass": [1, 1, 1], "score": "0.9826", "loss": "0.0177", "code": "@Override public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance(); tomcat.getServer().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:54:48.381796", "n_pass": [25, 3, 2], "score": "0.994", "loss": "0.0061", "code": "@Override public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:54:54.147681", "n_pass": [51, 5, 3], "score": "0.9939", "loss": "0.0062", "code": "public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:54:58.407483", "n_pass": [90, 6, 4], "score": "0.9939", "loss": "0.0062", "code": " void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:01.098073", "n_pass": [91, 7, 5], "score": "0.9939", "loss": "0.0062", "code": "void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:04.215996", "n_pass": [96, 8, 6], "score": "0.9939", "loss": "0.0062", "code": "void setUp()throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:06.866611", "n_pass": [101, 9, 7], "score": "0.3569", "loss": "1.2061", "code": "void setUp()throws Exception { setUp(); Tomcat tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:09.546211", "n_pass": [104, 10, 8], "score": "0.5579", "loss": "0.6016", "code": "void setUp()throws Exception { setUp(); tomcat = getTomcatInstance().addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:12.199798", "n_pass": [108, 11, 9], "score": "0.8481", "loss": "0.1658", "code": "void setUp()throws Exception { setUp(); tomcat = getTomcatInstance.addLifecycleListener(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:14.860305", "n_pass": [109, 12, 10], "score": "0.8517", "loss": "0.1703", "code": "void setUp()throws Exception { setUp(); tomcat = getTomcatInstance(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:18.341991", "n_pass": [128, 13, 11], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception { setUp(); tomcat =(new JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:27.669594", "n_pass": [169, 15, 12], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception { setUp(); tomcat =( JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:30.319504", "n_pass": [170, 16, 13], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception { setUp(); tomcat =(JreMemoryLeakPreventionListener()); }"}
+{"time": "2020-12-26 22:55:32.987770", "n_pass": [176, 17, 14], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception { setUp(); tomcat =(JreMemoryLeakPreventionListener());}"}
+{"time": "2020-12-26 22:55:36.482062", "n_pass": [186, 18, 15], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception{ setUp(); tomcat =(JreMemoryLeakPreventionListener());}"}
+{"time": "2020-12-26 22:55:39.123701", "n_pass": [188, 19, 16], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception{setUp(); tomcat =(JreMemoryLeakPreventionListener());}"}
+{"time": "2020-12-26 22:55:41.804388", "n_pass": [193, 20, 17], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception{setUp();tomcat =(JreMemoryLeakPreventionListener());}"}
+{"time": "2020-12-26 22:55:44.473814", "n_pass": [195, 21, 18], "score": "0.5374", "loss": "0.6292", "code": "void setUp()throws Exception{setUp();tomcat=(JreMemoryLeakPreventionListener());}"}
+
+Minimal simplified code:
+void setUp()throws Exception{setUp();tomcat=(JreMemoryLeakPreventionListener());}
+

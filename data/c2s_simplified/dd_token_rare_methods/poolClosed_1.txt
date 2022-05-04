@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/main/java/org/apache/tomcat/jdbc/pool/interceptor/StatementCache_poolClosed.java
+method_name = poolClosed
+method_body = @Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }
+predict, score, loss = poolClosed, 0.4595199, 0.8021535
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:33:56.154387", "n_pass": [1, 1, 1], "score": "0.4595", "loss": "0.8022", "code": "@Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:33:57.483966", "n_pass": [10, 2, 2], "score": "0.6001", "loss": "0.5287", "code": "@Override public void poolClosed(ConnectionPool pool) { super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:33:58.796738", "n_pass": [21, 3, 3], "score": "0.5079", "loss": "0.8257", "code": " void poolClosed(ConnectionPool pool) { super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:34:03.829871", "n_pass": [66, 5, 4], "score": "0.5079", "loss": "0.8257", "code": "void poolClosed(ConnectionPool pool) { super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:34:05.508724", "n_pass": [74, 6, 5], "score": "0.5079", "loss": "0.8257", "code": "void poolClosed(ConnectionPool pool){ super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:34:06.819391", "n_pass": [76, 7, 6], "score": "0.5079", "loss": "0.8257", "code": "void poolClosed(ConnectionPool pool){super.poolClosed(pool); }"}
+{"time": "2021-01-20 05:34:11.869289", "n_pass": [96, 10, 7], "score": "0.5079", "loss": "0.8257", "code": "void poolClosed(ConnectionPool pool){super.poolClosed(pool);}"}
+
+Minimal simplified code:
+void poolClosed(ConnectionPool pool){super.poolClosed(pool);}
+

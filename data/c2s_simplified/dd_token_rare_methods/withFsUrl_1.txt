@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/external/warc/src/main/java/com/digitalpebble/stormcrawler/warc/GzipHdfsBolt_withFsUrl.java
+method_name = withFsUrl
+method_body = public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }
+predict, score, loss = withFsUrl, 0.4768044, 0.94822615
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:20:06.402649", "n_pass": [1, 1, 1], "score": "0.4768", "loss": "0.9482", "code": "public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-20 05:20:08.081951", "n_pass": [22, 2, 2], "score": "0.5558", "loss": "2.5065", "code": "public GzipHdfsBolt withFsUrl() { this.fsUrl = fsUrl; return this; }"}
+{"time": "2021-01-20 05:20:13.426647", "n_pass": [51, 5, 3], "score": "0.3167", "loss": "4.0743", "code": "public GzipHdfsBolt withFsUrl() { this.fsUrl = fsUrl; this; }"}
+{"time": "2021-01-20 05:20:16.025530", "n_pass": [54, 7, 4], "score": "0.3167", "loss": "4.0743", "code": " GzipHdfsBolt withFsUrl() { this.fsUrl = fsUrl; this; }"}
+{"time": "2021-01-20 05:20:17.331412", "n_pass": [55, 8, 5], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl() { this.fsUrl = fsUrl; this; }"}
+{"time": "2021-01-20 05:20:26.054129", "n_pass": [91, 11, 6], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){ this.fsUrl = fsUrl; this; }"}
+{"time": "2021-01-20 05:20:27.352152", "n_pass": [92, 12, 7], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){this.fsUrl = fsUrl; this; }"}
+{"time": "2021-01-20 05:20:29.936574", "n_pass": [96, 14, 8], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){this.fsUrl= fsUrl; this; }"}
+{"time": "2021-01-20 05:20:31.242752", "n_pass": [98, 15, 9], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){this.fsUrl=fsUrl; this; }"}
+{"time": "2021-01-20 05:20:32.548316", "n_pass": [101, 16, 10], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){this.fsUrl=fsUrl;this; }"}
+{"time": "2021-01-20 05:20:35.207285", "n_pass": [104, 18, 11], "score": "0.3167", "loss": "4.0743", "code": "GzipHdfsBolt withFsUrl(){this.fsUrl=fsUrl;this;}"}
+
+Minimal simplified code:
+GzipHdfsBolt withFsUrl(){this.fsUrl=fsUrl;this;}
+

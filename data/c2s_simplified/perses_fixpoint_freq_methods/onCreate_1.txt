@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:57:14.128169", "score": "1.0", "loss": "0.0001", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); } }"}
+{"time": "2020-12-21 08:58:23.026477", "score": "1.0", "loss": "0.0003", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView( ); } }"}
+{"time": "2020-12-21 08:58:33.612914", "score": "0.9987", "loss": "0.0029", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView( ); } }"}
+{"time": "2020-12-21 08:58:54.722218", "score": "0.9725", "loss": "0.1809", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate( ); setContentView( ); } }"}
+{"time": "2020-12-21 08:59:42.709601", "score": "0.8387", "loss": "0.9448", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate( ); } }"}
+{"time": "2020-12-21 09:00:03.763091", "score": "0.9312", "loss": "0.0818", "code": "class T { void onCreate( ) { super.onCreate( ); } }"}
+
+Minimal simplified code:
+class T {
+                    void onCreate(                         ) { super.onCreate(                  );                                             }
+}
+
+

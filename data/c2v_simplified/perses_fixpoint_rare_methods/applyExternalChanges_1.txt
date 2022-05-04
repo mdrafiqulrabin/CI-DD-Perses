@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole/src/main/java/org/apache/guacamole/rest/user/UserObjectTranslator_applyExternalChanges.java
+method_name = applyExternalChanges
+method_body = @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 21:24:12.525099", "score": "0.407", "loss": "2.5797", "code": "class T { @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); } }"}
+{"time": "2021-01-24 21:27:15.072896", "score": "0.3068", "loss": "3.0432", "code": "class T { @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); } }"}
+{"time": "2021-01-24 21:28:30.483073", "score": "0.4966", "loss": "2.2925", "code": "class T { @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { existingObject.setPassword(object.getPassword()); } }"}
+{"time": "2021-01-24 21:31:05.350876", "score": "0.5797", "loss": "1.9782", "code": "class T { @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { existingObject.setPassword( ); } }"}
+{"time": "2021-01-24 21:32:24.022484", "score": "0.5797", "loss": "1.9782", "code": "class T { @Override void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { existingObject.setPassword( ); } }"}
+{"time": "2021-01-24 21:33:43.809686", "score": "0.9697", "loss": "0.1314", "code": "class T { @Override void applyExternalChanges(User existingObject, APIUser object) { existingObject.setPassword( ); } }"}
+{"time": "2021-01-24 21:36:46.794956", "score": "0.5244", "loss": "1.7014", "code": "class T { @Override void applyExternalChanges( ) { existingObject.setPassword( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void applyExternalChanges(                                   )                           {                                   existingObject.setPassword(                    );                                                       }
+}
+
+

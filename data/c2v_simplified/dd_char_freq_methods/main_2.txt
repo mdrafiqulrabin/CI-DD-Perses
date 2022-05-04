@@ -1,0 +1,54 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+predict, score, loss = main, 0.9838665723800659, 0.0180161464959383
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:00:48.108257", "n_pass": [1, 1, 1], "score": "0.9839", "loss": "0.018", "code": "public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:00:50.752254", "n_pass": [23, 2, 2], "score": "0.9981", "loss": "0.0021", "code": "public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:00:53.408921", "n_pass": [44, 3, 3], "score": "0.9997", "loss": "0.0005", "code": "public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcerepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:00:56.049146", "n_pass": [51, 4, 4], "score": "0.9995", "loss": "0.0008", "code": "d main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcerepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:00:58.678120", "n_pass": [55, 5, 5], "score": "0.9995", "loss": "0.0009", "code": "d main(String[] args) throws Exception { LOG.info(\"\"); PostgresProcerepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:01.330958", "n_pass": [89, 6, 6], "score": "0.9994", "loss": "0.0007", "code": "d main(String[] args) throws Exception { LOG.infostgresProcerepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:03.966867", "n_pass": [90, 7, 7], "score": "0.9994", "loss": "0.0007", "code": "d main(String[] args) throws Exception { LOG.infrocerepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:06.596873", "n_pass": [91, 8, 8], "score": "0.9994", "loss": "0.0007", "code": "d main(String[] args) throws Exception { LOG.infre(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:09.219827", "n_pass": [93, 9, 9], "score": "0.9994", "loss": "0.0007", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:11.845743", "n_pass": [95, 10, 10], "score": "0.9989", "loss": "0.0013", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(VersPRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:14.494442", "n_pass": [96, 11, 11], "score": "0.9989", "loss": "0.0013", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(VersN, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:17.117853", "n_pass": [99, 12, 12], "score": "0.9924", "loss": "0.0079", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(VersN, \"test-db\")).sta.info(\"Stopping postgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:19.731310", "n_pass": [101, 13, 13], "score": "0.9924", "loss": "0.0079", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(VersN, \"test-db\")).sta.info(\"Ststgres\"); process.stop(); }"}
+{"time": "2020-12-28 06:01:22.357637", "n_pass": [103, 14, 14], "score": "0.9873", "loss": "0.0138", "code": "d main(String[] args) throws Exception { LOG.infre(new Pnfig(VersN, \"test-db\")).sta.info(\"Ststgres\");stop(); }"}
+{"time": "2020-12-28 06:01:24.976250", "n_pass": [110, 15, 15], "score": "0.9943", "loss": "0.0062", "code": "d main(String[] args) throws Exception {re(new Pnfig(VersN, \"test-db\")).sta.info(\"Ststgres\");stop(); }"}
+{"time": "2020-12-28 06:01:27.613958", "n_pass": [148, 16, 16], "score": "0.9925", "loss": "0.0088", "code": "d main(String[] args) throws Exception {re(nnfig(VersN, \"test-db\")).sta.info(\"Ststgres\");stop(); }"}
+{"time": "2020-12-28 06:01:30.260743", "n_pass": [149, 17, 17], "score": "0.9923", "loss": "0.009", "code": "d main(String[] args) throws Exception {re(n(VersN, \"test-db\")).sta.info(\"Ststgres\");stop(); }"}
+{"time": "2020-12-28 06:01:32.888030", "n_pass": [153, 18, 18], "score": "0.7505", "loss": "0.3117", "code": "d main(String[] args) throws Exception {re(n(VersN, \"tes\")).sta.info(\"Ststgres\");stop(); }"}
+{"time": "2020-12-28 06:01:38.152603", "n_pass": [157, 20, 19], "score": "0.6726", "loss": "0.4283", "code": "d main(String[] args) throws Exception {re(n(VersN, \"tes\")).sta.info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:01:41.190812", "n_pass": [163, 21, 20], "score": "0.5049", "loss": "0.7219", "code": "d main(Sg[] args) throws Exception {re(n(VersN, \"tes\")).sta.info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:05.205452", "n_pass": [235, 30, 21], "score": "0.8383", "loss": "0.198", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"tes\")).sta.info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:13.001693", "n_pass": [241, 33, 22], "score": "0.9761", "loss": "0.025", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).sta.info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:15.602338", "n_pass": [244, 34, 23], "score": "0.9837", "loss": "0.0169", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).a.info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:18.221363", "n_pass": [245, 35, 24], "score": "0.9873", "loss": "0.013", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).info(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:20.815365", "n_pass": [246, 36, 25], "score": "0.9925", "loss": "0.0076", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).fo(\"res\");stop(); }"}
+{"time": "2020-12-28 06:02:23.419188", "n_pass": [249, 37, 26], "score": "0.9909", "loss": "0.0093", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).fo(\"\");stop(); }"}
+{"time": "2020-12-28 06:02:26.046978", "n_pass": [251, 38, 27], "score": "0.9987", "loss": "0.0013", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).fo(\"\");p(); }"}
+{"time": "2020-12-28 06:02:28.653624", "n_pass": [252, 39, 28], "score": "0.9988", "loss": "0.0012", "code": "d main(Sg[] args) throws Exception {(n(VersN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:37.688784", "n_pass": [267, 42, 29], "score": "0.9757", "loss": "0.0265", "code": "d main(Sg[] args) throws Eeption {(n(VersN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:40.293088", "n_pass": [268, 43, 30], "score": "0.9757", "loss": "0.0265", "code": "d main(Sg[] args) throws Etion {(n(VersN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:42.915088", "n_pass": [269, 44, 31], "score": "0.9999", "loss": "0.0001", "code": "d main(Sg[] args) throws Eon {(n(VersN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:45.508267", "n_pass": [270, 45, 32], "score": "0.9918", "loss": "0.0091", "code": "d main(Sg[] args) throws E {(n(VersN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:48.215282", "n_pass": [274, 46, 33], "score": "0.9694", "loss": "0.0343", "code": "d main(Sg[] args) throws E {(n(VsN, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:02:50.815091", "n_pass": [275, 47, 34], "score": "0.9896", "loss": "0.0116", "code": "d main(Sg[] args) throws E {(n(V, \"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:03:02.457298", "n_pass": [349, 50, 35], "score": "0.9896", "loss": "0.0116", "code": "d main(Sg[] args) throws E {(n(V,\"t\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:03:05.061041", "n_pass": [351, 51, 36], "score": "0.9899", "loss": "0.0112", "code": "d main(Sg[] args) throws E {(n(V,\"\")).fo(\"\");; }"}
+{"time": "2020-12-28 06:03:07.664074", "n_pass": [356, 52, 37], "score": "0.8834", "loss": "0.1375", "code": "d main(Sg[] args) throws E {(n(V,\"\")).o(\"\");; }"}
+{"time": "2020-12-28 06:03:12.693731", "n_pass": [371, 53, 38], "score": "0.848", "loss": "0.1843", "code": "d main(g[] args) throws E {(n(V,\"\")).o(\"\");; }"}
+{"time": "2020-12-28 06:03:15.293129", "n_pass": [375, 54, 39], "score": "0.848", "loss": "0.1843", "code": "d main(g[]args) throws E {(n(V,\"\")).o(\"\");; }"}
+{"time": "2020-12-28 06:03:28.306612", "n_pass": [381, 59, 40], "score": "0.848", "loss": "0.1843", "code": "d main(g[]args)throws E {(n(V,\"\")).o(\"\");; }"}
+{"time": "2020-12-28 06:03:30.905858", "n_pass": [390, 60, 41], "score": "0.848", "loss": "0.1843", "code": "d main(g[]args)throws E{(n(V,\"\")).o(\"\");; }"}
+{"time": "2020-12-28 06:03:47.438141", "n_pass": [436, 65, 42], "score": "0.848", "loss": "0.1843", "code": "d main(g[]args)throws E{(n(V,\"\")).o(\"\"); }"}
+{"time": "2020-12-28 06:03:50.031387", "n_pass": [437, 66, 43], "score": "0.848", "loss": "0.1843", "code": "d main(g[]args)throws E{(n(V,\"\")).o(\"\");}"}
+
+Minimal simplified code:
+d main(g[]args)throws E{(n(V,"")).o("");}
+

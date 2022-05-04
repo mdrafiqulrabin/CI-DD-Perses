@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/test/java/io/katharsis/module/SimpleModuleTest_addSecurityProvider.java
+method_name = addSecurityProvider
+method_body = @Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }
+predict, score, loss = addSecurityProvider, 0.28158444, 1.800938
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:06:04.307830", "n_pass": [1, 1, 1], "score": "0.2816", "loss": "1.8009", "code": "@Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-20 06:06:05.602013", "n_pass": [8, 2, 2], "score": "0.4181", "loss": "1.3811", "code": "void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-20 06:06:11.331991", "n_pass": [59, 4, 3], "score": "0.4181", "loss": "1.3811", "code": "void addSecurityProvider(SecurityProvider securityProvider){ numSecurityProviders++; }"}
+{"time": "2021-01-20 06:06:12.645824", "n_pass": [61, 5, 4], "score": "0.4181", "loss": "1.3811", "code": "void addSecurityProvider(SecurityProvider securityProvider){numSecurityProviders++; }"}
+{"time": "2021-01-20 06:06:13.943981", "n_pass": [66, 6, 5], "score": "0.4181", "loss": "1.3811", "code": "void addSecurityProvider(SecurityProvider securityProvider){numSecurityProviders++;}"}
+
+Minimal simplified code:
+void addSecurityProvider(SecurityProvider securityProvider){numSecurityProviders++;}
+

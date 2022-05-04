@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/basiclti/tsugi-util/src/java/org/tsugi/casa/objects/Original_getPropagate.java
+method_name = getPropagate
+method_body = @JsonProperty("propagate") public Boolean getPropagate() { return propagate; }
+
+topk path-contexts for sub-token: get
+[0.2691] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,propagate
+[0.2540] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,propagate
+[0.1342] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0945] json|property,NameExpr0|SingleMemberAnnotationExpr|StringLiteralExpr1,propagate
+[0.0296] propagate,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0269] json|property,NameExpr0|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0167] propagate,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+[0.0127] json|property,NameExpr0|SingleMemberAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+
+topk terminals for sub-token: get
+['boolean', 'propagate', 'METHOD_NAME', 'propagate', 'boolean', 'METHOD_NAME', 'json|property', 'propagate', 'propagate', 'METHOD_NAME', 'json|property', 'METHOD_NAME', 'propagate', 'boolean', 'json|property', 'boolean']
+
+topk path-contexts for sub-token: propagate
+[0.4904] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,propagate
+[0.3160] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,propagate
+[0.1417] json|property,NameExpr0|SingleMemberAnnotationExpr|StringLiteralExpr1,propagate
+[0.0080] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0053] propagate,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0043] json|property,NameExpr0|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0029] propagate,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+[0.0019] json|property,NameExpr0|SingleMemberAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+
+topk terminals for sub-token: propagate
+['METHOD_NAME', 'propagate', 'boolean', 'propagate', 'json|property', 'propagate', 'boolean', 'METHOD_NAME', 'propagate', 'METHOD_NAME', 'json|property', 'METHOD_NAME', 'propagate', 'boolean', 'json|property', 'boolean']
+

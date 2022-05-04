@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_getRepl.java
+method_name = getRepl
+method_body = @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:21:20.283809", "score": "0.4767", "loss": "1.8164", "code": "class T { @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; } }"}
+{"time": "2021-01-24 05:22:08.610460", "score": "0.3851", "loss": "3.5522", "code": "class T { @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { } }"}
+{"time": "2021-01-24 05:22:29.890449", "score": "0.3851", "loss": "3.5522", "code": "class T { @Nonnull private RuntimeRepl getRepl(RuntimeReplFactory replFactory) { } }"}
+{"time": "2021-01-24 05:22:51.127532", "score": "0.3851", "loss": "3.5522", "code": "class T { @Nonnull RuntimeRepl getRepl(RuntimeReplFactory replFactory) { } }"}
+{"time": "2021-01-24 05:23:12.263658", "score": "0.992", "loss": "2.3304", "code": "class T { @Nonnull RuntimeRepl getRepl( ) { } }"}
+
+Minimal simplified code:
+class T {
+                              RuntimeRepl getRepl(                              ) {                                                                         }
+}
+
+

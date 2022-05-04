@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/AgentResults_getFinalScore.java
+method_name = getFinalScore
+method_body = public String getFinalScore() { return Validator.check(finalScore, "0").replace(',', '.'); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:49:54.577405", "score": "0.4739", "loss": "1.601", "code": "class T { public String getFinalScore() { return Validator.check(finalScore, \"0\").replace(',', '.'); } }"}
+{"time": "2021-01-24 06:51:15.217696", "score": "0.8494", "loss": "0.437", "code": "class T { public String getFinalScore() { return Validator.check(finalScore, \"0\") ; } }"}
+{"time": "2021-01-24 06:51:48.044507", "score": "0.8341", "loss": "0.4677", "code": "class T { public String getFinalScore() { return Validator.check(finalScore ) ; } }"}
+{"time": "2021-01-24 06:51:58.702394", "score": "0.8341", "loss": "0.4677", "code": "class T { String getFinalScore() { return Validator.check(finalScore ) ; } }"}
+
+Minimal simplified code:
+class T {
+       String getFinalScore() { return Validator.check(finalScore     )                  ; }
+}
+
+

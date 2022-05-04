@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-federation/openam-federation-library/src/main/java/com/sun/identity/saml/protocol/Status_getStatusDetail.java
+method_name = getStatusDetail
+method_body = public Element getStatusDetail() { return statusDetail; }
+predict, score, loss = getStatusDetail, 0.47839802503585815, 1.1595674753189087
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:24:22.048901", "n_pass": [1, 1, 1], "score": "0.4784", "loss": "1.1596", "code": "public Element getStatusDetail() { return statusDetail; }"}
+{"time": "2021-01-20 07:24:25.437159", "n_pass": [20, 2, 2], "score": "0.4784", "loss": "1.1596", "code": "Element getStatusDetail() { return statusDetail; }"}
+{"time": "2021-01-20 07:24:34.064569", "n_pass": [46, 4, 3], "score": "0.4784", "loss": "1.1596", "code": "Element getStatusDetail(){ return statusDetail; }"}
+{"time": "2021-01-20 07:24:36.652585", "n_pass": [48, 5, 4], "score": "0.4784", "loss": "1.1596", "code": "Element getStatusDetail(){return statusDetail; }"}
+{"time": "2021-01-20 07:24:46.995634", "n_pass": [53, 9, 5], "score": "0.4784", "loss": "1.1596", "code": "Element getStatusDetail(){return statusDetail;}"}
+
+Minimal simplified code:
+Element getStatusDetail(){return statusDetail;}
+

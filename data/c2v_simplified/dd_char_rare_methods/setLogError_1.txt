@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/cflint__CFLint/src/main/java/com/cflint/CFLint_setLogError.java
+method_name = setLogError
+method_body = public void setLogError(final boolean logError) { this.logError = logError; }
+predict, score, loss = setLogError, 0.30292433500289917, 1.4257302284240723
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:15:54.047189", "n_pass": [1, 1, 1], "score": "0.3029", "loss": "1.4257", "code": "public void setLogError(final boolean logError) { this.logError = logError; }"}
+{"time": "2021-01-23 17:16:14.303743", "n_pass": [55, 8, 2], "score": "0.3253", "loss": "2.2664", "code": "public void setLogError(final boolean logError) { thgError = logError; }"}
+{"time": "2021-01-23 17:16:24.683373", "n_pass": [61, 12, 3], "score": "0.2602", "loss": "2.7386", "code": "publoid setLogError(final boolean logError) { thgError = logError; }"}
+{"time": "2021-01-23 17:16:41.458242", "n_pass": [75, 18, 4], "score": "0.3464", "loss": "2.6139", "code": "oid setLogError(final boolean logError) { thgError = logError; }"}
+{"time": "2021-01-23 17:16:58.282719", "n_pass": [115, 24, 5], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { thgError = logError; }"}
+{"time": "2021-01-23 17:17:18.481256", "n_pass": [133, 31, 6], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { trror = logError; }"}
+{"time": "2021-01-23 17:19:03.317007", "n_pass": [276, 67, 7], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { trro = logError; }"}
+{"time": "2021-01-23 17:19:05.931330", "n_pass": [277, 68, 8], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { trro= logError; }"}
+{"time": "2021-01-23 17:19:08.529849", "n_pass": [278, 69, 9], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { trro=logError; }"}
+{"time": "2021-01-23 17:19:31.981395", "n_pass": [288, 78, 10], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError) { trro=logError;}"}
+{"time": "2021-01-23 17:20:21.587618", "n_pass": [327, 95, 11], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError){ trro=logError;}"}
+{"time": "2021-01-23 17:20:24.176767", "n_pass": [329, 96, 12], "score": "0.2823", "loss": "2.538", "code": "d setLogError(final boolean logError){trro=logError;}"}
+
+Minimal simplified code:
+d setLogError(final boolean logError){trro=logError;}
+

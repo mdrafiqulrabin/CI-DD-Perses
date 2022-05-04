@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/filters/ExampleFilter_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (filterConfig == null) return ("TimingFilter()"); StringBuilder sb = new StringBuilder("TimingFilter("); sb.append(filterConfig); sb.append(")"); return (sb.toString()); }
+predict, score, loss = toString, 0.9816743, 0.021953784
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:08:46.108632", "n_pass": [1, 1, 1], "score": "0.9817", "loss": "0.022", "code": "@Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\"); StringBuilder sb = new StringBuilder(\"TimingFilter(\"); sb.append(filterConfig); sb.append(\")\"); return (sb.toString()); }"}
+{"time": "2020-12-27 04:08:47.815873", "n_pass": [26, 2, 2], "score": "0.8818", "loss": "0.1378", "code": "@Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\"); StringBuilder sb = new StringBuilder(\"TimingFilter(\"); sb.append(filterConfig);  (sb.toString()); }"}
+{"time": "2020-12-27 04:08:50.837109", "n_pass": [57, 4, 3], "score": "0.8045", "loss": "0.2386", "code": "@Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append(filterConfig);  (sb.toString()); }"}
+{"time": "2020-12-27 04:08:52.157676", "n_pass": [61, 5, 4], "score": "0.9688", "loss": "0.037", "code": "@Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:08:53.483252", "n_pass": [64, 6, 5], "score": "0.7834", "loss": "0.29", "code": "String toString() { if (filterConfig == null) return (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:08:55.513091", "n_pass": [104, 7, 6], "score": "0.72", "loss": "0.3959", "code": "String toString() { if (filterConfig= null) return (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:08:56.920336", "n_pass": [105, 8, 7], "score": "0.8497", "loss": "0.2125", "code": "String toString() { if (filterConfignull) return (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:08:58.261442", "n_pass": [107, 9, 8], "score": "0.8309", "loss": "0.2433", "code": "String toString() { if (filterConfignull) (\"TimingFilter()\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:08:59.578155", "n_pass": [109, 10, 9], "score": "0.6854", "loss": "0.5088", "code": "String toString() { if (filterConfignull) (\"\");  new StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:09:00.901652", "n_pass": [111, 11, 10], "score": "0.8248", "loss": "0.3376", "code": "String toString() { if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\"); sb.append (sb.toString()); }"}
+{"time": "2020-12-27 04:09:02.215262", "n_pass": [115, 12, 11], "score": "0.704", "loss": "0.8894", "code": "String toString() { if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");append (sb.toString()); }"}
+{"time": "2020-12-27 04:09:06.726302", "n_pass": [166, 13, 12], "score": "0.7109", "loss": "0.6543", "code": "String toString() { if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString()); }"}
+{"time": "2020-12-27 04:09:09.369673", "n_pass": [169, 15, 13], "score": "0.4539", "loss": "1.3413", "code": "String toString() { if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:11.764693", "n_pass": [177, 16, 14], "score": "0.4539", "loss": "1.3413", "code": "String toString(){ if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:13.081921", "n_pass": [179, 17, 15], "score": "0.4539", "loss": "1.3413", "code": "String toString(){if (filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:14.802968", "n_pass": [181, 18, 16], "score": "0.4539", "loss": "1.3413", "code": "String toString(){if(filterConfignull) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:16.160589", "n_pass": [183, 19, 17], "score": "0.4261", "loss": "1.8837", "code": "String toString(){if(null) (\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:17.481064", "n_pass": [186, 20, 18], "score": "0.4261", "loss": "1.8837", "code": "String toString(){if(null)(\"\"); StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:18.828743", "n_pass": [192, 21, 19], "score": "0.4261", "loss": "1.8837", "code": "String toString(){if(null)(\"\");StringBuilder(\"TimingFilter(\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:24.892227", "n_pass": [231, 24, 20], "score": "0.4261", "loss": "1.8837", "code": "String toString(){if(null)(\"\");StringBuilder(\"TimingFilter\");(sb.toString); }"}
+{"time": "2020-12-27 04:09:27.555439", "n_pass": [240, 26, 21], "score": "0.4261", "loss": "1.8837", "code": "String toString(){if(null)(\"\");StringBuilder(\"TimingFilter\");(sb.toString);}"}
+
+Minimal simplified code:
+String toString(){if(null)("");StringBuilder("TimingFilter");(sb.toString);}
+

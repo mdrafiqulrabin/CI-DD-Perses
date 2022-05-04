@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/HistogramQuestionScoresBean_getQuestionNumber.java
+method_name = getQuestionNumber
+method_body = public String getQuestionNumber() { return Validator.check(questionNumber, "N/A"); }
+
+topk path-contexts:
+[0.1595] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),questionnumber
+[0.1522] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),questionnumber
+[0.1406] questionnumber,(NameExpr2)^(MethodCallExpr)_(NameExpr4),check
+[0.1135] validator,(NameExpr0)^(MethodCallExpr)_(NameExpr2),questionnumber
+[0.0931] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr3),na
+[0.0723] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),validator
+[0.0662] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),check
+[0.0528] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),validator
+[0.0503] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),check
+[0.0426] questionnumber,(NameExpr2)^(MethodCallExpr)_(StringLiteralExpr3),na
+
+topk terminals:
+['METHOD_NAME', 'questionnumber', 'string', 'questionnumber', 'questionnumber', 'check', 'validator', 'questionnumber', 'METHOD_NAME', 'na', 'string', 'validator', 'string', 'check', 'METHOD_NAME', 'validator', 'METHOD_NAME', 'check', 'questionnumber', 'na']
+

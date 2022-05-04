@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/web/TestWebXmlOrdering_init.java
+method_name = init
+method_body = @Override public void init() { a.addAfterOrdering("b"); b.addAfterOrdering("z"); b.addBeforeOrdering("y"); }
+predict, score, loss = init, 0.9999779462814331, 2.3007127310847864e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 05:17:28.335992", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterOrdering(\"z\"); b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-28 05:17:31.341598", "n_pass": [26, 2, 2], "score": "0.9995", "loss": "0.0006", "code": "@Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterOrdering(\"z\");dering(\"y\"); }"}
+{"time": "2020-12-28 05:17:34.441543", "n_pass": [33, 3, 3], "score": "0.9993", "loss": "0.0007", "code": "@Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterdering(\"y\"); }"}
+{"time": "2020-12-28 05:17:37.462141", "n_pass": [55, 4, 4], "score": "0.9994", "loss": "0.0006", "code": "@Overrblic void init() { a.addAfterOrdering(\"b\"); b.addAfterdering(\"y\"); }"}
+{"time": "2020-12-28 05:17:46.054175", "n_pass": [63, 7, 5], "score": "0.9994", "loss": "0.0006", "code": "@Overrblic void init() { a.addAfterOrdering(\"b\"); b.adering(\"y\"); }"}
+{"time": "2020-12-28 05:17:54.674625", "n_pass": [94, 10, 6], "score": "0.8217", "loss": "0.3315", "code": "@Overrblic void init() { a.addAfterOrdering(\"b\"); bring(\"y\"); }"}
+{"time": "2020-12-28 05:17:57.270197", "n_pass": [95, 11, 7], "score": "0.9992", "loss": "0.0009", "code": "@Overrblic void init() { a.addAfterOrdering(\"b\"); b(\"y\"); }"}
+{"time": "2020-12-28 05:17:59.860856", "n_pass": [99, 12, 8], "score": "0.9992", "loss": "0.0009", "code": "@Ovblic void init() { a.addAfterOrdering(\"b\"); b(\"y\"); }"}
+{"time": "2020-12-28 05:18:02.484600", "n_pass": [100, 13, 9], "score": "0.9985", "loss": "0.0018", "code": "@Ovc void init() { a.addAfterOrdering(\"b\"); b(\"y\"); }"}
+{"time": "2020-12-28 05:18:05.487664", "n_pass": [102, 14, 10], "score": "0.6546", "loss": "0.5772", "code": "@Ovc v init() { a.addAfterOrdering(\"b\"); b(\"y\"); }"}
+{"time": "2020-12-28 05:18:08.492947", "n_pass": [106, 15, 11], "score": "0.6923", "loss": "0.7287", "code": "@Ovc v init() {addAfterOrdering(\"b\"); b(\"y\"); }"}
+{"time": "2020-12-28 05:18:46.641050", "n_pass": [162, 29, 12], "score": "0.9744", "loss": "0.0466", "code": "@Ovc v init() {addAfterOrdering(\"b\");(\"y\"); }"}
+{"time": "2020-12-28 05:18:49.244086", "n_pass": [168, 30, 13], "score": "0.9813", "loss": "0.029", "code": "@vc v init() {addAfterOrdering(\"b\");(\"y\"); }"}
+{"time": "2020-12-28 05:18:51.842126", "n_pass": [169, 31, 14], "score": "0.9868", "loss": "0.0224", "code": "@c v init() {addAfterOrdering(\"b\");(\"y\"); }"}
+{"time": "2020-12-28 05:19:20.045111", "n_pass": [235, 40, 15], "score": "0.9868", "loss": "0.0224", "code": "@c v init(){addAfterOrdering(\"b\");(\"y\"); }"}
+{"time": "2020-12-28 05:20:04.341656", "n_pass": [254, 57, 16], "score": "0.9954", "loss": "0.0071", "code": "@c v init(){addAfterOrdering(\"\");(\"y\"); }"}
+{"time": "2020-12-28 05:20:06.961219", "n_pass": [260, 58, 17], "score": "0.9956", "loss": "0.007", "code": "@c v init(){addAfterOrdering(\"\");(\"\"); }"}
+{"time": "2020-12-28 05:20:09.585419", "n_pass": [264, 59, 18], "score": "0.9956", "loss": "0.007", "code": "@c v init(){addAfterOrdering(\"\");(\"\");}"}
+
+Minimal simplified code:
+@c v init(){addAfterOrdering("");("");}
+

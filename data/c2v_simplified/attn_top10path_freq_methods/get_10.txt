@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap_get.java
+method_name = get
+method_body = @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }
+
+topk path-contexts:
+[0.1081] v,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.1065] key,(NameExpr1)^(MethodCallExpr2)_(NameExpr2),createlookupkey
+[0.0753] v,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),key
+[0.0642] v,(ClassOrInterfaceType1)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0599] null,(NullLiteralExpr0)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),map
+[0.0552] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),createlookupkey
+[0.0455] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),createlookupkey
+[0.0434] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0427] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),map
+[0.0358] null,(NullLiteralExpr0)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),createlookupkey
+
+topk terminals:
+['v', 'object', 'key', 'createlookupkey', 'v', 'key', 'v', 'METHOD_NAME', 'null', 'map', 'METHOD_NAME', 'createlookupkey', 'key', 'createlookupkey', 'key', 'get', 'key', 'map', 'null', 'createlookupkey']
+

@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/WsSession_getOpenSessions.java
+method_name = getOpenSessions
+method_body = @Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }
+predict, score, loss = getOpenSessions, 0.22663463652133942, 3.0289065837860107
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:40:21.693521", "n_pass": [1, 1, 1], "score": "0.2266", "loss": "3.0289", "code": "@Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-20 06:40:27.326221", "n_pass": [20, 3, 2], "score": "0.3909", "loss": "2.3633", "code": " Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-20 06:40:29.937395", "n_pass": [24, 4, 3], "score": "0.4442", "loss": "1.9445", "code": " Set<Session> getOpenSessions() { return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-20 06:40:37.796977", "n_pass": [44, 7, 4], "score": "0.5485", "loss": "1.087", "code": " Set<Session> getOpenSessions() { return getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-20 06:40:40.845833", "n_pass": [55, 8, 5], "score": "0.8125", "loss": "0.4044", "code": " Set<Session> getOpenSessions() { getOpenSessions(localEndpoint.getClass()); }"}
+{"time": "2021-01-20 06:40:45.384175", "n_pass": [88, 9, 6], "score": "0.9", "loss": "0.1674", "code": " Set<Session> getOpenSessions() { getOpenSessions(localEndpointgetClass()); }"}
+{"time": "2021-01-20 06:40:47.996180", "n_pass": [89, 10, 7], "score": "0.8962", "loss": "0.262", "code": " Set<Session> getOpenSessions() { getOpenSessions(localEndpoint()); }"}
+{"time": "2021-01-20 06:40:50.605534", "n_pass": [90, 11, 8], "score": "0.8673", "loss": "0.2157", "code": " Set<Session> getOpenSessions() { getOpenSessions(localEndpoint); }"}
+{"time": "2021-01-20 06:40:53.221584", "n_pass": [93, 12, 9], "score": "0.8673", "loss": "0.2157", "code": "Set<Session> getOpenSessions() { getOpenSessions(localEndpoint); }"}
+{"time": "2021-01-20 06:40:56.249398", "n_pass": [98, 13, 10], "score": "0.8673", "loss": "0.2157", "code": "Set<Session>getOpenSessions() { getOpenSessions(localEndpoint); }"}
+{"time": "2021-01-20 06:40:58.849137", "n_pass": [102, 14, 11], "score": "0.8673", "loss": "0.2157", "code": "Set<Session>getOpenSessions(){ getOpenSessions(localEndpoint); }"}
+{"time": "2021-01-20 06:41:01.451182", "n_pass": [104, 15, 12], "score": "0.8673", "loss": "0.2157", "code": "Set<Session>getOpenSessions(){getOpenSessions(localEndpoint); }"}
+{"time": "2021-01-20 06:41:10.396965", "n_pass": [124, 18, 13], "score": "0.8673", "loss": "0.2157", "code": "Set<Session>getOpenSessions(){getOpenSessions(localEndpoint);}"}
+
+Minimal simplified code:
+Set<Session>getOpenSessions(){getOpenSessions(localEndpoint);}
+

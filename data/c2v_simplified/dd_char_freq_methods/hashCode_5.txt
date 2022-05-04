@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/websocket/snake/Location_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = x; result = 31 * result + y; return result; }
+predict, score, loss = hashCode, 0.9998905658721924, 0.00012587709352374077
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:16:42.685066", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public int hashCode() { int result = x; result = 31 * result + y; return result; }"}
+{"time": "2020-12-28 06:16:45.680380", "n_pass": [10, 2, 2], "score": "0.9619", "loss": "0.0551", "code": "@Override public int hashCode() { int result =t + y; return result; }"}
+{"time": "2020-12-28 06:16:51.680089", "n_pass": [39, 4, 3], "score": "0.9837", "loss": "0.0249", "code": "@Override public int hashCode() { int result =t + y; retuult; }"}
+{"time": "2020-12-28 06:16:54.278439", "n_pass": [41, 5, 4], "score": "0.9627", "loss": "0.0584", "code": "@Overpublic int hashCode() { int result =t + y; retuult; }"}
+{"time": "2020-12-28 06:16:56.876535", "n_pass": [42, 6, 5], "score": "0.9627", "loss": "0.0584", "code": "@Overc int hashCode() { int result =t + y; retuult; }"}
+{"time": "2020-12-28 06:17:02.487440", "n_pass": [47, 8, 6], "score": "0.9627", "loss": "0.0582", "code": "@Overc int hashCode() { int r=t + y; retuult; }"}
+{"time": "2020-12-28 06:17:07.679439", "n_pass": [49, 10, 7], "score": "0.9378", "loss": "0.0886", "code": "@Overc int hashCode() { int r=t + yult; }"}
+{"time": "2020-12-28 06:17:13.283905", "n_pass": [71, 12, 8], "score": "0.9663", "loss": "0.052", "code": "@Overc int hashCode() { int r=t + y; }"}
+{"time": "2020-12-28 06:17:15.910575", "n_pass": [73, 13, 9], "score": "0.986", "loss": "0.0227", "code": "@Oc int hashCode() { int r=t + y; }"}
+{"time": "2020-12-28 06:17:20.135155", "n_pass": [80, 14, 10], "score": "0.9807", "loss": "0.0325", "code": "@Oc int hashCode() {t r=t + y; }"}
+{"time": "2020-12-28 06:17:22.703624", "n_pass": [83, 15, 11], "score": "0.9881", "loss": "0.0158", "code": "@Oc int hashCode() {t r=t ; }"}
+{"time": "2020-12-28 06:17:26.938461", "n_pass": [93, 16, 12], "score": "0.3145", "loss": "1.604", "code": "@Oc int hashCode() {t r; }"}
+{"time": "2020-12-28 06:17:37.071623", "n_pass": [125, 19, 13], "score": "0.2874", "loss": "1.687", "code": "@O int hashCode() {t r; }"}
+{"time": "2020-12-28 06:17:56.951463", "n_pass": [167, 24, 14], "score": "0.2874", "loss": "1.687", "code": "@O int hashCode(){t r; }"}
+{"time": "2020-12-28 06:18:07.280511", "n_pass": [172, 28, 15], "score": "0.2874", "loss": "1.687", "code": "@O int hashCode(){t r;}"}
+
+Minimal simplified code:
+@O int hashCode(){t r;}
+

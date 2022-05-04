@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withLogPath.java
+method_name = withLogPath
+method_body = public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }
+predict, score, loss = withLogPath, 0.41181767, 0.9613743
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:14:10.389069", "n_pass": [1, 1, 1], "score": "0.4118", "loss": "0.9614", "code": "public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }"}
+{"time": "2021-01-20 05:14:17.033709", "n_pass": [44, 5, 2], "score": "0.4118", "loss": "0.9614", "code": " ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }"}
+{"time": "2021-01-20 05:14:18.343967", "n_pass": [45, 6, 3], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }"}
+{"time": "2021-01-20 05:14:25.448271", "n_pass": [89, 8, 4], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){ this.logPath = logPath; return this; }"}
+{"time": "2021-01-20 05:14:26.750538", "n_pass": [90, 9, 5], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){this.logPath = logPath; return this; }"}
+{"time": "2021-01-20 05:14:29.352465", "n_pass": [94, 11, 6], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){this.logPath= logPath; return this; }"}
+{"time": "2021-01-20 05:14:30.654554", "n_pass": [96, 12, 7], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){this.logPath=logPath; return this; }"}
+{"time": "2021-01-20 05:14:31.976260", "n_pass": [99, 13, 8], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){this.logPath=logPath;return this; }"}
+{"time": "2021-01-20 05:14:37.227399", "n_pass": [104, 17, 9], "score": "0.4118", "loss": "0.9614", "code": "ContainerBuilder withLogPath(String logPath){this.logPath=logPath;return this;}"}
+{"time": "2021-01-20 05:14:40.961209", "n_pass": [118, 19, 10], "score": "0.3306", "loss": "1.6088", "code": "ContainerBuilder withLogPath(String logPath){this.logPathlogPath;return this;}"}
+
+Minimal simplified code:
+ContainerBuilder withLogPath(String logPath){this.logPathlogPath;return this;}
+

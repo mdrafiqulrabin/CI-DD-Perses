@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataViewerMainPanel_updateFrameTitle.java
+method_name = updateFrameTitle
+method_body = public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:53:38.834729", "score": "0.4817", "loss": "2.6162", "code": "class T { public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } } }"}
+{"time": "2021-01-24 05:54:51.680562", "score": "0.3957", "loss": "2.703", "code": "class T { public void updateFrameTitle() { if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } } }"}
+{"time": "2021-01-24 05:55:14.297181", "score": "0.3211", "loss": "2.9525", "code": "class T { public void updateFrameTitle() { if (getParentInternalFrame() != null) getParentInternalFrame().setTitle(getFrameTitle()); } }"}
+{"time": "2021-01-24 05:55:35.664932", "score": "0.319", "loss": "2.8556", "code": "class T { public void updateFrameTitle() { if (getParentInternalFrame != null) getParentInternalFrame().setTitle(getFrameTitle()); } }"}
+{"time": "2021-01-24 05:55:57.017381", "score": "0.2367", "loss": "2.9084", "code": "class T { public void updateFrameTitle() { if (getParentInternalFrame != null) getParentInternalFrame().setTitle(getFrameTitle ); } }"}
+{"time": "2021-01-24 05:56:07.766673", "score": "0.2367", "loss": "2.9084", "code": "class T { void updateFrameTitle() { if (getParentInternalFrame != null) getParentInternalFrame().setTitle(getFrameTitle ); } }"}
+
+Minimal simplified code:
+class T {
+       void updateFrameTitle() {                                                                               if (getParentInternalFrame   != null)   getParentInternalFrame().setTitle(getFrameTitle  );   }
+}
+
+

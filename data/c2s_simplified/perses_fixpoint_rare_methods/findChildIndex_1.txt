@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/common/android/ViewGroupUtil_findChildIndex.java
+method_name = findChildIndex
+method_body = public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:00:49.632152", "score": "0.4618", "loss": "1.811", "code": "class T { public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; } }"}
+{"time": "2021-01-24 05:02:20.367863", "score": "0.4593", "loss": "1.6312", "code": "class T { public static int findChildIndex(ViewGroup parent, View child) { for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; } }"}
+{"time": "2021-01-24 05:02:52.341581", "score": "0.4841", "loss": "1.5644", "code": "class T { public static int findChildIndex(ViewGroup parent, View child) { for (int i = 0; i < count; ++i) if (parent.getChildAt(i) == child) { return i; } return -1; } }"}
+{"time": "2021-01-24 05:03:03.045798", "score": "0.3823", "loss": "2.5146", "code": "class T { public static int findChildIndex(ViewGroup parent, View child) { for (int i = 0; i < count; ++i) { return i; } return -1; } }"}
+{"time": "2021-01-24 05:04:06.512265", "score": "0.3945", "loss": "2.4817", "code": "class T { public static int findChildIndex(ViewGroup parent, View child) { for (int i ; i < count; ++i) { return i; } return -1; } }"}
+{"time": "2021-01-24 05:05:25.232811", "score": "0.3945", "loss": "2.4817", "code": "class T { int findChildIndex(ViewGroup parent, View child) { for (int i ; i < count; ++i) { return i; } return -1; } }"}
+
+Minimal simplified code:
+class T {
+              int findChildIndex(ViewGroup parent, View child) {                                     for (int i    ; i < count; ++i)                                      { return i; }   return -1; }
+}
+
+

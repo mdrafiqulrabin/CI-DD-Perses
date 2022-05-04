@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/windy1__google-places-api-java/src/main/java/se/walkercrou/places/Hours_setOpeningTime.java
+method_name = setOpeningTime
+method_body = protected Period setOpeningTime(String openingTime) { this.openingTime = openingTime; return this; }
+
+topk path-contexts for sub-token: set
+[0.1700] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.1482] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.1405] this,ThisExpr0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0563] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0554] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0487] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,opening|time
+[0.0340] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0245] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,opening|time
+[0.0233] period,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0224] opening|time,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,opening|time
+
+topk terminals for sub-token: set
+['string', 'opening|time', 'METHOD_NAME', 'opening|time', 'this', 'opening|time', 'opening|time', 'opening|time', 'string', 'opening|time', 'this', 'opening|time', 'METHOD_NAME', 'opening|time', 'METHOD_NAME', 'opening|time', 'period', 'METHOD_NAME', 'opening|time', 'opening|time']
+
+topk path-contexts for sub-token: opening
+[0.2032] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.1865] this,ThisExpr0|FieldAccessExpr0|NameExpr2,opening|time
+[0.1444] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0703] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,opening|time
+[0.0630] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,opening|time
+[0.0556] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0449] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0344] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0298] opening|time,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,opening|time
+[0.0176] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+
+topk terminals for sub-token: opening
+['METHOD_NAME', 'opening|time', 'this', 'opening|time', 'string', 'opening|time', 'METHOD_NAME', 'opening|time', 'this', 'opening|time', 'opening|time', 'opening|time', 'METHOD_NAME', 'opening|time', 'string', 'opening|time', 'opening|time', 'opening|time', 'opening|time', 'opening|time']
+
+topk path-contexts for sub-token: time
+[0.1266] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,opening|time
+[0.1036] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0847] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0656] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0654] this,ThisExpr0|FieldAccessExpr0|NameExpr2,opening|time
+[0.0587] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0553] period,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,opening|time
+[0.0515] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,opening|time
+[0.0495] period,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0429] opening|time,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,opening|time
+
+topk terminals for sub-token: time
+['METHOD_NAME', 'opening|time', 'string', 'opening|time', 'string', 'opening|time', 'METHOD_NAME', 'opening|time', 'this', 'opening|time', 'opening|time', 'this', 'period', 'opening|time', 'opening|time', 'opening|time', 'period', 'METHOD_NAME', 'opening|time', 'opening|time']
+

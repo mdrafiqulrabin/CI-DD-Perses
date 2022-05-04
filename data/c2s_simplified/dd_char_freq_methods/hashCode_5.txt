@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/websocket/snake/Location_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = x; result = 31 * result + y; return result; }
+predict, score, loss = hashCode, 0.99669087, 0.00422694
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:19:07.428355", "n_pass": [1, 1, 1], "score": "0.9967", "loss": "0.0042", "code": "@Override public int hashCode() { int result = x; result = 31 * result + y; return result; }"}
+{"time": "2020-12-27 23:19:09.110034", "n_pass": [10, 2, 2], "score": "0.9571", "loss": "0.0525", "code": "@Override public int hashCode() { int result =t + y; return result; }"}
+{"time": "2020-12-27 23:19:11.168684", "n_pass": [37, 3, 3], "score": "0.8866", "loss": "0.1501", "code": "@Override public int hashCode() { int result ; return result; }"}
+{"time": "2020-12-27 23:19:17.230787", "n_pass": [47, 7, 4], "score": "0.6947", "loss": "0.4856", "code": "@Override public int hashCode() { int r; return result; }"}
+{"time": "2020-12-27 23:19:25.902212", "n_pass": [81, 13, 5], "score": "0.6956", "loss": "0.6456", "code": "@Override public int hashCode() { int r; return ult; }"}
+{"time": "2020-12-27 23:19:42.622940", "n_pass": [139, 24, 6], "score": "0.5852", "loss": "0.768", "code": "@Override public int hashCode() { int r; return t; }"}
+{"time": "2020-12-27 23:20:13.890157", "n_pass": [208, 44, 7], "score": "0.5852", "loss": "0.768", "code": "@Override public int hashCode() { int r; return t;}"}
+{"time": "2020-12-27 23:20:35.921559", "n_pass": [240, 58, 8], "score": "0.5852", "loss": "0.768", "code": "@Override public int hashCode(){ int r; return t;}"}
+{"time": "2020-12-27 23:20:37.237307", "n_pass": [242, 59, 9], "score": "0.5852", "loss": "0.768", "code": "@Override public int hashCode(){int r; return t;}"}
+{"time": "2020-12-27 23:20:43.923857", "n_pass": [249, 64, 10], "score": "0.5852", "loss": "0.768", "code": "@Override public int hashCode(){int r;return t;}"}
+
+Minimal simplified code:
+@Override public int hashCode(){int r;return t;}
+

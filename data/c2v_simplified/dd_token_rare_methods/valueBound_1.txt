@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/SessionBindingListenerAdapter_valueBound.java
+method_name = valueBound
+method_body = public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }
+predict, score, loss = valueBound, 0.4852057695388794, 1.721346378326416
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:41:43.324353", "n_pass": [1, 1, 1], "score": "0.4852", "loss": "1.7213", "code": "public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:41:56.305311", "n_pass": [92, 5, 2], "score": "0.4852", "loss": "1.7213", "code": " void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:41:58.946861", "n_pass": [93, 6, 3], "score": "0.4852", "loss": "1.7213", "code": "void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:02.001306", "n_pass": [97, 7, 4], "score": "0.4852", "loss": "1.7213", "code": "void valueBound( SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:04.632574", "n_pass": [98, 8, 5], "score": "0.4852", "loss": "1.7213", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:07.275460", "n_pass": [105, 9, 6], "score": "0.5008", "loss": "1.7928", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { public void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:09.935612", "n_pass": [110, 10, 7], "score": "0.5008", "loss": "1.7928", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run() { listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:26.229174", "n_pass": [176, 14, 8], "score": "0.5008", "loss": "1.7928", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){ listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:28.854172", "n_pass": [177, 15, 9], "score": "0.5008", "loss": "1.7928", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){listener.valueBound(event); } }); }"}
+{"time": "2021-01-20 07:42:34.143752", "n_pass": [182, 17, 10], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){listener.valueBound(); } }); }"}
+{"time": "2021-01-20 07:42:36.770956", "n_pass": [185, 18, 11], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){listener.valueBound();} }); }"}
+{"time": "2021-01-20 07:42:39.401638", "n_pass": [187, 19, 12], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){listener.valueBound();}}); }"}
+{"time": "2021-01-20 07:42:42.036790", "n_pass": [191, 20, 13], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event) { CallbackUtil(new Runnable() { void run(){listener.valueBound();}});}"}
+{"time": "2021-01-20 07:42:45.526568", "n_pass": [201, 21, 14], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event){ CallbackUtil(new Runnable() { void run(){listener.valueBound();}});}"}
+{"time": "2021-01-20 07:42:48.151803", "n_pass": [203, 22, 15], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event){CallbackUtil(new Runnable() { void run(){listener.valueBound();}});}"}
+{"time": "2021-01-20 07:42:53.445348", "n_pass": [211, 24, 16], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event){CallbackUtil(new Runnable(){ void run(){listener.valueBound();}});}"}
+{"time": "2021-01-20 07:42:56.070065", "n_pass": [213, 25, 17], "score": "0.4536", "loss": "2.1266", "code": "void valueBound(SSLSessionBindingEvent event){CallbackUtil(new Runnable(){void run(){listener.valueBound();}});}"}
+
+Minimal simplified code:
+void valueBound(SSLSessionBindingEvent event){CallbackUtil(new Runnable(){void run(){listener.valueBound();}});}
+

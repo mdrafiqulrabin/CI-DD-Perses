@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/ContextTransaction_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("Transaction["); sb.append("]"); return (sb.toString()); }
+predict, score, loss = toString, 0.99381196, 0.009110101
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:48:08.933684", "n_pass": [1, 1, 1], "score": "0.9938", "loss": "0.0091", "code": "@Override public String toString() { StringBuilder sb = new StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:10.633748", "n_pass": [22, 2, 2], "score": "0.9751", "loss": "0.0316", "code": "@Override public String toString() { new StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:11.977384", "n_pass": [25, 3, 3], "score": "0.6067", "loss": "0.5553", "code": "@Override public String toString() { new StringBuilder(\"Transaction[\"); sb; return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:13.654110", "n_pass": [44, 4, 4], "score": "0.6197", "loss": "0.5291", "code": "@Override public String toString() { new StringBuilder(\"Transaction[\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:17.912104", "n_pass": [52, 7, 5], "score": "0.8382", "loss": "0.1916", "code": "@Override public String toString() {StringBuilder(\"Transaction[\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:20.564492", "n_pass": [59, 9, 6], "score": "0.5229", "loss": "0.6981", "code": "public String toString() {StringBuilder(\"Transaction[\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:24.517303", "n_pass": [87, 11, 7], "score": "0.5229", "loss": "0.6981", "code": " String toString() {StringBuilder(\"Transaction[\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:25.811115", "n_pass": [88, 12, 8], "score": "0.5229", "loss": "0.6981", "code": "String toString() {StringBuilder(\"Transaction[\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:27.837045", "n_pass": [95, 13, 9], "score": "0.8709", "loss": "0.1754", "code": "String toString() {StringBuilder(\"\"); return (sb.toString()); }"}
+{"time": "2020-12-27 03:48:29.130921", "n_pass": [98, 14, 10], "score": "0.8236", "loss": "0.3027", "code": "String toString() {StringBuilder(\"\"); (sb.toString()); }"}
+{"time": "2020-12-27 03:48:30.421845", "n_pass": [100, 15, 11], "score": "0.522", "loss": "1.2199", "code": "String toString() {StringBuilder(\"\"); (sb()); }"}
+{"time": "2020-12-27 03:48:31.723829", "n_pass": [101, 16, 12], "score": "0.445", "loss": "1.0753", "code": "String toString() {StringBuilder(\"\"); (sb); }"}
+{"time": "2020-12-27 03:48:35.708315", "n_pass": [132, 17, 13], "score": "0.445", "loss": "1.0753", "code": "String toString() {StringBuilder(\"\"); (sb);}"}
+{"time": "2020-12-27 03:48:38.040021", "n_pass": [138, 18, 14], "score": "0.445", "loss": "1.0753", "code": "String toString(){StringBuilder(\"\"); (sb);}"}
+{"time": "2020-12-27 03:48:40.651957", "n_pass": [146, 20, 15], "score": "0.445", "loss": "1.0753", "code": "String toString(){StringBuilder(\"\");(sb);}"}
+
+Minimal simplified code:
+String toString(){StringBuilder("");(sb);}
+

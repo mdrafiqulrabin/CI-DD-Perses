@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoHelperTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }
+
+topk path-contexts for sub-token: set
+[0.6071] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.1921] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1898] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0017] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,get|content|resolver
+[0.0015] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0015] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0011] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|MethodCallExpr0|NameExpr1,get|context
+[0.0008] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0007] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,get|content|resolver
+[0.0006] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|MethodCallExpr0|NameExpr1,get|context
+
+topk terminals for sub-token: set
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'get|content|resolver', 'METHOD_NAME', 'exception', 'void', 'exception', 'exception', 'get|context', 'void', 'METHOD_NAME', 'exception', 'get|content|resolver', 'set|up', 'get|context']
+
+topk path-contexts for sub-token: up
+[0.6332] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.2075] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1519] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0016] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,resolver
+[0.0013] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,resolver
+[0.0007] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|MethodCallExpr0|NameExpr1,get|context
+[0.0006] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|MethodCallExpr0|NameExpr1,get|context
+[0.0004] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|MethodCallExpr0|NameExpr1,get|context
+[0.0004] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,get|content|resolver
+[0.0004] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,get|content|resolver
+
+topk terminals for sub-token: up
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'resolver', 'exception', 'resolver', 'set|up', 'get|context', 'exception', 'get|context', 'METHOD_NAME', 'get|context', 'METHOD_NAME', 'get|content|resolver', 'set|up', 'get|content|resolver']
+

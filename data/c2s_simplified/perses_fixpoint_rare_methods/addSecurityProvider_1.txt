@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/test/java/io/katharsis/module/SimpleModuleTest_addSecurityProvider.java
+method_name = addSecurityProvider
+method_body = @Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:33:13.842843", "score": "0.2816", "loss": "1.8009", "code": "class T { @Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; } }"}
+{"time": "2021-01-24 07:34:02.234132", "score": "0.4181", "loss": "1.3811", "code": "class T { void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; } }"}
+{"time": "2021-01-24 07:34:12.987813", "score": "0.3341", "loss": "3.4431", "code": "class T { void addSecurityProvider( ) { numSecurityProviders++; } }"}
+
+Minimal simplified code:
+class T {
+                 void addSecurityProvider(                                 ) { numSecurityProviders++; }
+}
+
+

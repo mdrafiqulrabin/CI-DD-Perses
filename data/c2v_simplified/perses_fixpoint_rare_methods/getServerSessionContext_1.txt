@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/ContextData_getServerSessionContext.java
+method_name = getServerSessionContext
+method_body = ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 22:59:28.320692", "score": "0.1495", "loss": "3.4322", "code": "class T { ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; } }"}
+
+Minimal simplified code:
+class T { 
+ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }
+}
+
+

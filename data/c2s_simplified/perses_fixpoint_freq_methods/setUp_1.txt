@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoActivityTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:43:49.557977", "score": "1.0", "loss": "0.0001", "code": "class T { @Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); } }"}
+{"time": "2020-12-21 08:44:37.534267", "score": "0.999", "loss": "0.0012", "code": "class T { @Override protected void setUp() throws Exception { super.setUp(); } }"}
+{"time": "2020-12-21 08:44:58.570877", "score": "0.9953", "loss": "0.0067", "code": "class T { void setUp() throws Exception { super.setUp(); } }"}
+{"time": "2020-12-21 08:45:09.138611", "score": "0.9678", "loss": "0.0529", "code": "class T { void setUp() { super.setUp(); } }"}
+
+Minimal simplified code:
+class T {
+                    void setUp()                  { super.setUp();                                                       }
+}
+
+

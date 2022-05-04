@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/util/ContextUtil_get.java
+method_name = get
+method_body = public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }
+predict, score, loss = get, 0.9243531, 0.68475354
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:53:47.397487", "n_pass": [1, 1, 1], "score": "0.9244", "loss": "0.6848", "code": "public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:48.742073", "n_pass": [44, 2, 2], "score": "0.9244", "loss": "0.6848", "code": "Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:50.062230", "n_pass": [48, 3, 3], "score": "0.943", "loss": "0.5027", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:51.400998", "n_pass": [52, 4, 4], "score": "0.8455", "loss": "0.722", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object .get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:52.691593", "n_pass": [53, 5, 5], "score": "0.6872", "loss": "2.1197", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object ; if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:54.040693", "n_pass": [55, 6, 6], "score": "0.6145", "loss": "1.9266", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object ; if (null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 03:53:55.409481", "n_pass": [57, 7, 7], "score": "0.4819", "loss": "2.1563", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object ; if (null) { ; } return res; }"}
+{"time": "2020-12-27 03:53:57.061227", "n_pass": [90, 8, 8], "score": "0.5869", "loss": "2.014", "code": "Object get(Map<String, Object>  key, Object defaultv) { Object ; if (null) { ; } ; }"}
+{"time": "2020-12-27 03:53:58.744400", "n_pass": [95, 9, 9], "score": "0.607", "loss": "1.796", "code": "Object get(Map< Object>  key, Object defaultv) { Object ; if (null) { ; } ; }"}
+{"time": "2020-12-27 03:54:00.051595", "n_pass": [103, 10, 10], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) { ; if (null) { ; } ; }"}
+{"time": "2020-12-27 03:54:01.378365", "n_pass": [104, 11, 11], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) { if (null) { ; } ; }"}
+{"time": "2020-12-27 03:54:07.093000", "n_pass": [153, 12, 12], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) {if (null) { ; } ; }"}
+{"time": "2020-12-27 03:54:08.396781", "n_pass": [154, 13, 13], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) {if(null) { ; } ; }"}
+{"time": "2020-12-27 03:54:09.692889", "n_pass": [158, 14, 14], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) {if(null){ ; } ; }"}
+{"time": "2020-12-27 03:54:11.062135", "n_pass": [160, 15, 15], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) {if(null){ } ; }"}
+{"time": "2020-12-27 03:54:12.379294", "n_pass": [162, 16, 16], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map< Object>  key, Object defaultv) {if(null){ } }"}
+{"time": "2020-12-27 03:54:14.734231", "n_pass": [170, 17, 17], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>  key, Object defaultv) {if(null){ } }"}
+{"time": "2020-12-27 03:54:16.070603", "n_pass": [173, 18, 18], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object> key, Object defaultv) {if(null){ } }"}
+{"time": "2020-12-27 03:54:17.378219", "n_pass": [174, 19, 19], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>key, Object defaultv) {if(null){ } }"}
+{"time": "2020-12-27 03:54:18.708392", "n_pass": [177, 20, 20], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>key,Object defaultv) {if(null){ } }"}
+{"time": "2020-12-27 03:54:20.027175", "n_pass": [182, 21, 21], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>key,Object defaultv){if(null){ } }"}
+{"time": "2020-12-27 03:54:23.065396", "n_pass": [209, 22, 22], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>key,Object defaultv){if(null){} }"}
+{"time": "2020-12-27 03:54:24.359264", "n_pass": [210, 23, 23], "score": "0.3501", "loss": "2.4954", "code": "Object get(Map<Object>key,Object defaultv){if(null){}}"}
+
+Minimal simplified code:
+Object get(Map<Object>key,Object defaultv){if(null){}}
+

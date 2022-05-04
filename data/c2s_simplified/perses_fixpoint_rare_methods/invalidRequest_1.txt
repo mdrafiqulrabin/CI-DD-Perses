@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/Responses_invalidRequest.java
+method_name = invalidRequest
+method_body = static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:26:01.777777", "score": "0.3425", "loss": "1.4721", "code": "class T { static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); } }"}
+{"time": "2021-01-24 03:27:45.429422", "score": "0.5335", "loss": "0.9392", "code": "class T { static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST ); } }"}
+{"time": "2021-01-24 03:28:06.930360", "score": "0.3937", "loss": "1.3375", "code": "class T { static Response invalidRequest(String message) { return addMessage(empty , INVALID_REQUEST ); } }"}
+{"time": "2021-01-24 03:28:38.531401", "score": "0.3937", "loss": "1.3375", "code": "class T { Response invalidRequest(String message) { return addMessage(empty , INVALID_REQUEST ); } }"}
+
+Minimal simplified code:
+class T {
+       Response invalidRequest(String message) { return addMessage(empty  , INVALID_REQUEST         ); }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/test/java/org/apache/mina/transport/vmpipe/VmPipeBindTest_createSocketAddress.java
+method_name = createSocketAddress
+method_body = @Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }
+predict, score, loss = createSocketAddress, 0.4708413, 2.5216396
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:08:40.567898", "n_pass": [1, 1, 1], "score": "0.4708", "loss": "2.5216", "code": "@Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }"}
+{"time": "2021-01-20 06:08:48.919810", "n_pass": [47, 6, 2], "score": "0.4708", "loss": "2.5216", "code": "@Override  SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }"}
+{"time": "2021-01-20 06:08:50.256147", "n_pass": [48, 7, 3], "score": "0.4708", "loss": "2.5216", "code": "@Override SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }"}
+{"time": "2021-01-20 06:08:51.952117", "n_pass": [54, 8, 4], "score": "0.4871", "loss": "2.365", "code": "@Override SocketAddress createSocketAddress(int port) { new VmPipeAddress(port); }"}
+{"time": "2021-01-20 06:09:00.669468", "n_pass": [92, 12, 5], "score": "0.5287", "loss": "1.5511", "code": "@Override SocketAddress createSocketAddress(int port) { new VmPipeAddress(); }"}
+{"time": "2021-01-20 06:09:01.991371", "n_pass": [95, 13, 6], "score": "0.5287", "loss": "1.5511", "code": "@Override SocketAddress createSocketAddress(int port) { new VmPipeAddress();}"}
+{"time": "2021-01-20 06:09:05.117659", "n_pass": [108, 14, 7], "score": "0.5287", "loss": "1.5511", "code": "@Override SocketAddress createSocketAddress(int port){ new VmPipeAddress();}"}
+{"time": "2021-01-20 06:09:06.453932", "n_pass": [110, 15, 8], "score": "0.5287", "loss": "1.5511", "code": "@Override SocketAddress createSocketAddress(int port){new VmPipeAddress();}"}
+{"time": "2021-01-20 06:09:09.071318", "n_pass": [112, 17, 9], "score": "0.3831", "loss": "2.3523", "code": "@Override SocketAddress createSocketAddress(int port){newVmPipeAddress();}"}
+
+Minimal simplified code:
+@Override SocketAddress createSocketAddress(int port){newVmPipeAddress();}
+

@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/jsp/plugin/applet/Clock2_run.java
+method_name = run
+method_body = @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }
+predict, score, loss = run, 0.9999914169311523, 1.0013530300057027e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:55:16.910384", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:19.616775", "n_pass": [44, 2, 2], "score": "0.9977", "loss": "0.006", "code": " void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:22.306429", "n_pass": [51, 3, 3], "score": "0.9998", "loss": "0.0004", "code": " void run() { Thread me = Thread.currentThread(); while (timer) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:25.818526", "n_pass": [99, 4, 4], "score": "0.9993", "loss": "0.0023", "code": " void run() { Thread me = Thread.currentThread(); while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:29.024983", "n_pass": [114, 5, 5], "score": "0.9996", "loss": "0.0016", "code": " void run() { me = Thread.currentThread(); while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:31.681147", "n_pass": [118, 6, 6], "score": "0.9994", "loss": "0.0019", "code": " void run() { me = Thread(); while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:34.382144", "n_pass": [119, 7, 7], "score": "0.9988", "loss": "0.0034", "code": " void run() { me = Thread; while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:37.513406", "n_pass": [142, 8, 8], "score": "0.9988", "loss": "0.0037", "code": " void run() { me Thread; while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:40.208261", "n_pass": [143, 9, 9], "score": "0.9987", "loss": "0.0038", "code": " void run() { me; while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:43.304264", "n_pass": [165, 10, 10], "score": "0.9987", "loss": "0.0038", "code": " void run() {; while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:45.959378", "n_pass": [166, 11, 11], "score": "0.9987", "loss": "0.0038", "code": " void run() {while (timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:53.477436", "n_pass": [228, 12, 12], "score": "0.9987", "loss": "0.0038", "code": " void run() {while(timer) { try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:56.158444", "n_pass": [232, 13, 13], "score": "0.9987", "loss": "0.0038", "code": " void run() {while(timer){ try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:55:58.845547", "n_pass": [234, 14, 14], "score": "0.9987", "loss": "0.0038", "code": " void run() {while(timer){try { sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:01.534041", "n_pass": [236, 15, 15], "score": "0.9987", "loss": "0.0038", "code": " void run() {while(timer){try{ sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:04.201305", "n_pass": [238, 16, 16], "score": "0.9987", "loss": "0.0038", "code": " void run() {while(timer){try{sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:06.894929", "n_pass": [239, 17, 17], "score": "0.9972", "loss": "0.0077", "code": " void run() {while(timer){try{(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:09.584256", "n_pass": [241, 18, 18], "score": "0.9973", "loss": "0.0075", "code": " void run() {while(timer){try{(00); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:12.274081", "n_pass": [242, 19, 19], "score": "0.9973", "loss": "0.0075", "code": " void run() {while(timer){try{(0); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:14.949268", "n_pass": [246, 20, 20], "score": "0.9973", "loss": "0.0075", "code": " void run() {while(timer){try{(0);} catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:17.597990", "n_pass": [248, 21, 21], "score": "0.9973", "loss": "0.0075", "code": " void run() {while(timer){try{(0);}catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:20.298472", "n_pass": [259, 22, 22], "score": "0.9973", "loss": "0.0075", "code": "void run() {while(timer){try{(0);}catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:23.846825", "n_pass": [265, 23, 23], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:30.586918", "n_pass": [315, 24, 24], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-26 21:56:33.263553", "n_pass": [321, 25, 25], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e){ } repaint(); } }"}
+{"time": "2020-12-26 21:56:35.945519", "n_pass": [323, 26, 26], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e){} repaint(); } }"}
+{"time": "2020-12-26 21:56:38.614154", "n_pass": [325, 27, 27], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e){}repaint(); } }"}
+{"time": "2020-12-26 21:56:41.310713", "n_pass": [330, 28, 28], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e){}repaint();} }"}
+{"time": "2020-12-26 21:56:43.987647", "n_pass": [332, 29, 29], "score": "0.9973", "loss": "0.0075", "code": "void run(){while(timer){try{(0);}catch(InterruptedException e){}repaint();}}"}
+
+Minimal simplified code:
+void run(){while(timer){try{(0);}catch(InterruptedException e){}repaint();}}
+

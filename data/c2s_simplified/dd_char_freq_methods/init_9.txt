@@ -1,0 +1,59 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/comet/TestCometProcessor_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { failOnBegin = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValue(); failOnRead = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_READ)).booleanValue(); failOnEnd = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_END)).booleanValue(); }
+predict, score, loss = init, 0.737178, 0.41569585
+
+Trace of simplified code(s):
+{"time": "2020-12-28 01:14:11.386890", "n_pass": [1, 1, 1], "score": "0.7372", "loss": "0.4157", "code": "@Override public void init() throws ServletException { failOnBegin = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValue(); failOnRead = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_READ)).booleanValue(); failOnEnd = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:12.757386", "n_pass": [10, 2, 2], "score": "0.6774", "loss": "0.5192", "code": "@Override public void init() throws ServletException { failOnBegin = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValue(); failOnRead = Boolea = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:14.112132", "n_pass": [38, 3, 3], "score": "0.6815", "loss": "0.5317", "code": "@Override public void init() throws ServletException { failOnBegin = Boolean.valueOf(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValue(); failOnRead = Boolea = Boolean.valueOf(gnitParameter(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:15.823294", "n_pass": [44, 4, 4], "score": "0.5481", "loss": "0.9232", "code": "@Override public void init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValue(); failOnRead = Boolea = Boolean.valueOf(gnitParameter(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:17.181098", "n_pass": [48, 5, 5], "score": "0.496", "loss": "1.1634", "code": "@Override public void init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValuea = Boolean.valueOf(gnitParameter(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:20.222701", "n_pass": [78, 7, 6], "score": "0.5263", "loss": "1.155", "code": "@Override public void init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValuea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:21.555587", "n_pass": [81, 8, 7], "score": "0.5614", "loss": "2.3298", "code": "public void init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValuea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:22.907979", "n_pass": [82, 9, 8], "score": "0.449", "loss": "2.6415", "code": "d init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).booleanValuea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:28.380187", "n_pass": [92, 13, 9], "score": "0.5378", "loss": "1.6076", "code": "d init() throws ServletException { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:31.118460", "n_pass": [100, 15, 10], "score": "0.4172", "loss": "2.1929", "code": "d init() throws Servon { failOnBe(getServletConfig().getInitParameter(FAIL_ON_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:32.459557", "n_pass": [103, 16, 11], "score": "0.5504", "loss": "2.6636", "code": "d init() throws Servon { failOnBe(getServlgetInitParameter(FAIL_ON_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:36.414412", "n_pass": [140, 19, 12], "score": "0.2773", "loss": "3.4828", "code": "d init() throws Servon { failOnBe(getSerInitParameter(FAIL_ON_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:39.125852", "n_pass": [142, 21, 13], "score": "0.2466", "loss": "3.8437", "code": "d init() throws Servon { failOnBe(getSerInitPter(FAIL_ON_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:40.455319", "n_pass": [144, 22, 14], "score": "0.239", "loss": "4.5388", "code": "d init() throws Servon { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.valueOf(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:45.898849", "n_pass": [149, 26, 15], "score": "0.2801", "loss": "4.3305", "code": "d init() throws Servon { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(FAIL_ON_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:47.279802", "n_pass": [151, 27, 16], "score": "0.2993", "loss": "4.8105", "code": "d init() throws Servon { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).booleanValue(); }"}
+{"time": "2020-12-28 01:14:48.602477", "n_pass": [154, 28, 17], "score": "0.2641", "loss": "5.0256", "code": "d init() throws Servon { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:00.863209", "n_pass": [219, 36, 18], "score": "0.2641", "loss": "5.0256", "code": "d init() throws rvon { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:02.178342", "n_pass": [220, 37, 19], "score": "0.3484", "loss": "4.7124", "code": "d init() throws on { failOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:03.486277", "n_pass": [223, 38, 20], "score": "0.3833", "loss": "4.9434", "code": "d init() throws on { lOnBe(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:04.794706", "n_pass": [224, 39, 21], "score": "0.3744", "loss": "4.8353", "code": "d init() throws on { Be(getSerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:06.139699", "n_pass": [226, 40, 22], "score": "0.5094", "loss": "3.921", "code": "d init() throws on { Be(SerInitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:07.451367", "n_pass": [227, 41, 23], "score": "0.3959", "loss": "4.3017", "code": "d init() throws on { Be(InitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boolee(); }"}
+{"time": "2020-12-28 01:15:19.502351", "n_pass": [244, 50, 24], "score": "0.5897", "loss": "3.1802", "code": "d init() throws on { Be(InitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).boe(); }"}
+{"time": "2020-12-28 01:15:20.887870", "n_pass": [245, 51, 25], "score": "0.3668", "loss": "4.4312", "code": "d init() throws on { Be(InitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)).bo; }"}
+{"time": "2020-12-28 01:15:34.142976", "n_pass": [273, 60, 26], "score": "0.4824", "loss": "3.55", "code": "d init() throws on { Be(InitPter(FN_BEGIN)).ea = Boolean.f(gr(F_END)); }"}
+{"time": "2020-12-28 01:15:39.190764", "n_pass": [289, 63, 27], "score": "0.3397", "loss": "4.0387", "code": "d init() throws on { Be(InitPter(BEGIN)).ea = Boolean.f(gr(F_END)); }"}
+{"time": "2020-12-28 01:16:06.151787", "n_pass": [383, 81, 28], "score": "0.401", "loss": "4.1124", "code": "d init() throws on { Be(InitPter(BEGIN)).ea = Boole.f(gr(F_END)); }"}
+{"time": "2020-12-28 01:16:10.148446", "n_pass": [388, 84, 29], "score": "0.4289", "loss": "4.3579", "code": "d init() throws on { Be(InitPter(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:13.433204", "n_pass": [400, 85, 30], "score": "0.4289", "loss": "4.3579", "code": "d init()throws on { Be(InitPter(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:14.764350", "n_pass": [408, 86, 31], "score": "0.3104", "loss": "4.3123", "code": "d init()throws n { Be(InitPter(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:16.085795", "n_pass": [410, 87, 32], "score": "0.3104", "loss": "4.3123", "code": "d init()throws n{ Be(InitPter(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:17.441305", "n_pass": [412, 88, 33], "score": "0.3104", "loss": "4.3123", "code": "d init()throws n{Be(InitPter(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:28.052819", "n_pass": [421, 96, 34], "score": "0.2395", "loss": "3.8281", "code": "d init()throws n{Be(InitPer(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:29.400766", "n_pass": [422, 97, 35], "score": "0.4152", "loss": "3.3646", "code": "d init()throws n{Be(InitPr(BEGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:32.176412", "n_pass": [425, 99, 36], "score": "0.3668", "loss": "4.5863", "code": "d init()throws n{Be(InitPr(EGIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:33.495334", "n_pass": [426, 100, 37], "score": "0.4103", "loss": "3.8251", "code": "d init()throws n{Be(InitPr(GIN)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:34.840764", "n_pass": [427, 101, 38], "score": "0.3603", "loss": "3.925", "code": "d init()throws n{Be(InitPr(N)).ea = Boole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:36.173694", "n_pass": [432, 102, 39], "score": "0.2945", "loss": "4.0424", "code": "d init()throws n{Be(InitPr(N)).ea =oole.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:37.516030", "n_pass": [433, 103, 40], "score": "0.4562", "loss": "3.1956", "code": "d init()throws n{Be(InitPr(N)).ea =le.f(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:38.845607", "n_pass": [435, 104, 41], "score": "0.4498", "loss": "4.8273", "code": "d init()throws n{Be(InitPr(N)).ea =le(gr(F_D)); }"}
+{"time": "2020-12-28 01:16:40.160418", "n_pass": [438, 105, 42], "score": "0.3429", "loss": "4.8593", "code": "d init()throws n{Be(InitPr(N)).ea =le(gr(D)); }"}
+{"time": "2020-12-28 01:16:43.490240", "n_pass": [459, 106, 43], "score": "0.2248", "loss": "4.8559", "code": "d init()throws n{e(InitPr(N)).ea =le(gr(D)); }"}
+{"time": "2020-12-28 01:16:59.567526", "n_pass": [516, 116, 44], "score": "0.3255", "loss": "4.7268", "code": "d init()throws n{e(InitPr()).ea =le(gr(D)); }"}
+{"time": "2020-12-28 01:17:03.633669", "n_pass": [521, 119, 45], "score": "0.3255", "loss": "4.7268", "code": "d init()throws n{e(InitPr()).ea=le(gr(D)); }"}
+{"time": "2020-12-28 01:17:08.951700", "n_pass": [526, 123, 46], "score": "0.4231", "loss": "4.0185", "code": "d init()throws n{e(InitPr()).ea=le(r(D)); }"}
+{"time": "2020-12-28 01:17:10.252671", "n_pass": [527, 124, 47], "score": "0.5395", "loss": "2.5225", "code": "d init()throws n{e(InitPr()).ea=le((D)); }"}
+{"time": "2020-12-28 01:17:11.595053", "n_pass": [533, 125, 48], "score": "0.5395", "loss": "2.5225", "code": "d init()throws n{e(InitPr()).ea=le((D));}"}
+
+Minimal simplified code:
+d init()throws n{e(InitPr()).ea=le((D));}
+

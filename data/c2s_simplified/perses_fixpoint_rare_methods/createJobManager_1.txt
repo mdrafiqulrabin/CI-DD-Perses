@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_createJobManager.java
+method_name = createJobManager
+method_body = protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:22:46.939634", "score": "0.4678", "loss": "1.1321", "code": "class T { protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); } }"}
+{"time": "2021-01-24 08:23:58.552211", "score": "0.4626", "loss": "1.0896", "code": "class T { protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager( ); } }"}
+{"time": "2021-01-24 08:24:09.213221", "score": "0.5416", "loss": "0.6991", "code": "class T { protected JobManager createJobManager( ) { return new JobManager( ); } }"}
+{"time": "2021-01-24 08:24:19.824985", "score": "0.5416", "loss": "0.6991", "code": "class T { JobManager createJobManager( ) { return new JobManager( ); } }"}
+
+Minimal simplified code:
+class T {
+          JobManager createJobManager(                                          ) { return new JobManager(                                                                                      ); }
+}
+
+

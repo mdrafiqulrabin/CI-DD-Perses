@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/elements/AbstractChainedDescriptor_getComputedStyles.java
+method_name = getComputedStyles
+method_body = @Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:33:30.233024", "score": "0.4892", "loss": "1.164", "code": "class T { @Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); } }"}
+{"time": "2021-01-24 05:34:18.570725", "score": "0.7051", "loss": "0.4402", "code": "class T { @Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); } }"}
+{"time": "2021-01-24 05:35:22.590311", "score": "0.7537", "loss": "0.4436", "code": "class T { void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); } }"}
+{"time": "2021-01-24 05:35:33.285235", "score": "0.458", "loss": "1.8182", "code": "class T { void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element ); } }"}
+{"time": "2021-01-24 05:36:21.719097", "score": "0.3279", "loss": "1.4849", "code": "class T { void getComputedStyles( ) { mSuper.getComputedStyles(element ); } }"}
+{"time": "2021-01-24 05:36:32.440893", "score": "0.6962", "loss": "0.4813", "code": "class T { void getComputedStyles( ) { mSuper.getComputedStyles( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void getComputedStyles(                                               ) { mSuper.getComputedStyles(                    );                                            }
+}
+
+

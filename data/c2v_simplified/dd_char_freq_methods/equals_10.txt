@@ -1,0 +1,51 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Mark_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; }
+predict, score, loss = equals, 0.9998341798782349, 0.00021944021864328533
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:12:25.956212", "n_pass": [1, 1, 1], "score": "0.9997", "loss": "0.0004", "code": "@Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; }"}
+{"time": "2020-12-28 11:12:28.635518", "n_pass": [10, 2, 2], "score": "0.9999", "loss": "0.0002", "code": "@Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m&& this.line == m.line && this.col == m.col; } return false; }"}
+{"time": "2020-12-28 11:12:31.284742", "n_pass": [19, 3, 3], "score": "0.9959", "loss": "0.0059", "code": "@Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == mcol == m.col; } return false; }"}
+{"time": "2020-12-28 11:12:34.323802", "n_pass": [23, 4, 4], "score": "0.987", "loss": "0.0165", "code": "@Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark)col == m.col; } return false; }"}
+{"time": "2020-12-28 11:12:37.772108", "n_pass": [62, 5, 5], "score": "0.8411", "loss": "0.2262", "code": "@Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark)col == m.col; }false; }"}
+{"time": "2020-12-28 11:12:40.404671", "n_pass": [64, 6, 6], "score": "0.8405", "loss": "0.2322", "code": "@Overriic boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark)col == m.col; }false; }"}
+{"time": "2020-12-28 11:12:43.856401", "n_pass": [107, 7, 7], "score": "0.8405", "loss": "0.2322", "code": "@Overr boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark)col == m.col; }false; }"}
+{"time": "2020-12-28 11:12:50.334298", "n_pass": [114, 9, 8], "score": "0.2344", "loss": "1.6554", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Mark m = (Mark)col == m.col; }false; }"}
+{"time": "2020-12-28 11:12:58.208016", "n_pass": [129, 12, 9], "score": "0.2527", "loss": "1.802", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Mark m = (Mark)col == l; }false; }"}
+{"time": "2020-12-28 11:13:00.813745", "n_pass": [131, 13, 10], "score": "0.2218", "loss": "1.9528", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Mark m = (Mark)col == l; }e; }"}
+{"time": "2020-12-28 11:13:12.508062", "n_pass": [154, 17, 11], "score": "0.2605", "loss": "1.5152", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Mark m = (Mark)coll; }e; }"}
+{"time": "2020-12-28 11:13:21.615423", "n_pass": [174, 20, 12], "score": "0.2483", "loss": "2.634", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Ma = (Mark)coll; }e; }"}
+{"time": "2020-12-28 11:13:30.719773", "n_pass": [243, 23, 13], "score": "0.2992", "loss": "2.3955", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)coll; }e; }"}
+{"time": "2020-12-28 11:13:33.339155", "n_pass": [245, 24, 14], "score": "0.3148", "loss": "2.2097", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)cl; }e; }"}
+{"time": "2020-12-28 11:13:35.970324", "n_pass": [248, 25, 15], "score": "0.3339", "loss": "2.1536", "code": "@Overr boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:13:38.587207", "n_pass": [251, 26, 16], "score": "0.3339", "loss": "2.1536", "code": "@verr boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:13:41.185208", "n_pass": [252, 27, 17], "score": "0.3769", "loss": "1.9288", "code": "@err boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:13:43.804240", "n_pass": [253, 28, 18], "score": "0.3847", "loss": "1.8744", "code": "@r boolean equals(Object r) { if (other instanceof Mark) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:03.700325", "n_pass": [272, 35, 19], "score": "0.9755", "loss": "0.0587", "code": "@r boolean equals(Object r) { if (oth instanceof Mark) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:06.304202", "n_pass": [279, 36, 20], "score": "0.9819", "loss": "0.041", "code": "@r boolean equals(Object r) { if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:08.959985", "n_pass": [293, 37, 21], "score": "0.3563", "loss": "1.6878", "code": "@r olean equals(Object r) { if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:11.566522", "n_pass": [294, 38, 22], "score": "0.4802", "loss": "2.2329", "code": "@r ean equals(Object r) { if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:32.307071", "n_pass": [395, 43, 23], "score": "0.6222", "loss": "0.9092", "code": "@r an equals(Object r) { if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:34.944229", "n_pass": [396, 44, 24], "score": "0.6379", "loss": "0.8214", "code": "@r a equals(Object r) { if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:56.075783", "n_pass": [414, 51, 25], "score": "0.6379", "loss": "0.8214", "code": "@r a equals(Object r){ if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:14:58.681431", "n_pass": [416, 52, 26], "score": "0.6379", "loss": "0.8214", "code": "@r a equals(Object r){if (oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:01.289950", "n_pass": [419, 53, 27], "score": "0.6379", "loss": "0.8214", "code": "@r a equals(Object r){if(oth instanceof rk) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:11.750859", "n_pass": [436, 57, 28], "score": "0.5564", "loss": "1.0342", "code": "@r a equals(Object r){if(oth instanceof k) { Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:14.392393", "n_pass": [439, 58, 29], "score": "0.5564", "loss": "1.0342", "code": "@r a equals(Object r){if(oth instanceof k){ Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:16.995040", "n_pass": [441, 59, 30], "score": "0.5564", "loss": "1.0342", "code": "@r a equals(Object r){if(oth instanceof k){Ma = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:19.598218", "n_pass": [442, 60, 31], "score": "0.5482", "loss": "0.9495", "code": "@r a equals(Object r){if(oth instanceof k){a = (rk)cl; } }"}
+{"time": "2020-12-28 11:15:22.203842", "n_pass": [444, 61, 32], "score": "0.5482", "loss": "0.9495", "code": "@r a equals(Object r){if(oth instanceof k){a= (rk)cl; } }"}
+{"time": "2020-12-28 11:15:24.840767", "n_pass": [446, 62, 33], "score": "0.5482", "loss": "0.9495", "code": "@r a equals(Object r){if(oth instanceof k){a=(rk)cl; } }"}
+{"time": "2020-12-28 11:15:27.460623", "n_pass": [448, 63, 34], "score": "0.4972", "loss": "1.0551", "code": "@r a equals(Object r){if(oth instanceof k){a=(k)cl; } }"}
+{"time": "2020-12-28 11:15:30.066301", "n_pass": [451, 64, 35], "score": "0.4133", "loss": "1.1665", "code": "@r a equals(Object r){if(oth instanceof k){a=(k)l; } }"}
+{"time": "2020-12-28 11:15:32.670169", "n_pass": [452, 65, 36], "score": "0.7309", "loss": "0.4362", "code": "@r a equals(Object r){if(oth instanceof k){a=(k); } }"}
+{"time": "2020-12-28 11:15:35.275118", "n_pass": [454, 66, 37], "score": "0.7309", "loss": "0.4362", "code": "@r a equals(Object r){if(oth instanceof k){a=(k);} }"}
+{"time": "2020-12-28 11:15:37.877739", "n_pass": [456, 67, 38], "score": "0.7309", "loss": "0.4362", "code": "@r a equals(Object r){if(oth instanceof k){a=(k);}}"}
+{"time": "2020-12-28 11:16:08.181900", "n_pass": [502, 77, 39], "score": "0.4906", "loss": "0.9217", "code": "@r a equals(Object r){if(oth instanceof k){a(k);}}"}
+{"time": "2020-12-28 11:16:10.787479", "n_pass": [504, 78, 40], "score": "0.7323", "loss": "0.4412", "code": "@r a equals(Object r){if(oth instanceof k){a();}}"}
+
+Minimal simplified code:
+@r a equals(Object r){if(oth instanceof k){a();}}
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server/src/main/java/org/kaazing/gateway/server/test/config/RealmConfiguration_addHttpCookie.java
+method_name = addHttpCookie
+method_body = @Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:10:42.430881", "score": "0.4748", "loss": "1.6152", "code": "class T { @Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); } }"}
+{"time": "2021-01-24 08:11:51.962088", "score": "0.6218", "loss": "1.4891", "code": "class T { @Override public void addHttpCookie(Suppressible httpCookie) { httpCookies.add(httpCookie); } }"}
+{"time": "2021-01-24 08:12:02.698171", "score": "0.8493", "loss": "0.5382", "code": "class T { void addHttpCookie(Suppressible httpCookie) { httpCookies.add(httpCookie); } }"}
+{"time": "2021-01-24 08:12:13.421352", "score": "0.8", "loss": "1.3908", "code": "class T { void addHttpCookie(Suppressible httpCookie) { httpCookies.add( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void addHttpCookie(Suppressible         httpCookie) { httpCookies.add(          ); }
+}
+
+

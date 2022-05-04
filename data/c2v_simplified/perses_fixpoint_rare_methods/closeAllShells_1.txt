@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/RootShell_closeAllShells.java
+method_name = closeAllShells
+method_body = public static void closeAllShells() throws IOException { Shell.closeAll(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:47:38.729646", "score": "0.4807", "loss": "0.7569", "code": "class T { public static void closeAllShells() throws IOException { Shell.closeAll(); } }"}
+{"time": "2021-01-25 04:50:41.658022", "score": "0.3298", "loss": "1.1868", "code": "class T { public static void closeAllShells() { Shell.closeAll(); } }"}
+
+Minimal simplified code:
+class T {
+              void closeAllShells()                    { Shell.closeAll(); }
+}
+
+

@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_createJobManager.java
+method_name = createJobManager
+method_body = protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }
+predict, score, loss = createJobManager, 0.46783176, 1.1320585
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:24:55.057812", "n_pass": [1, 1, 1], "score": "0.4678", "loss": "1.1321", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }"}
+{"time": "2021-01-23 13:24:56.755214", "n_pass": [25, 2, 2], "score": "0.377", "loss": "1.2511", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.appilder.id(UUID.randomUUID().toString()).build()); }"}
+{"time": "2021-01-23 13:24:59.757319", "n_pass": [49, 4, 3], "score": "0.4039", "loss": "1.2389", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.appilder.id(UUID.randomUUID).build()); }"}
+{"time": "2021-01-23 13:25:03.121676", "n_pass": [56, 6, 4], "score": "0.4346", "loss": "1.1629", "code": "protected JobManager createJobManager(Configuration.Builder nBuilder) { return new JobManager(Robolectric.appilder.id(UUID.randomUUID).build()); }"}
+{"time": "2021-01-23 13:25:05.751193", "n_pass": [60, 8, 5], "score": "0.3836", "loss": "1.3286", "code": "protected JobManager createJobManager(Configuration.Builder nBuilder) { return new JobManager(Ropilder.id(UUID.randomUUID).build()); }"}
+{"time": "2021-01-23 13:25:11.750099", "n_pass": [94, 12, 6], "score": "0.423", "loss": "1.2426", "code": "protected JobManager createJobManager(Configuration.Builder nBuilder) { return new JobManager(Ro.id(UUID.randomUUID).build()); }"}
+{"time": "2021-01-23 13:25:13.094828", "n_pass": [95, 13, 7], "score": "0.2846", "loss": "1.9251", "code": "protected JobManager createJobManager(Configuration.Builder nBuilder) { return new JobManager(Ro.id(UUdomUUID).build()); }"}
+{"time": "2021-01-23 13:25:14.404373", "n_pass": [96, 14, 8], "score": "0.2568", "loss": "2.4918", "code": "protected JobManager createJobManager(Configuration.Builder nBuilder) { return new JobManager(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:19.479272", "n_pass": [106, 17, 9], "score": "0.2813", "loss": "2.5487", "code": "protected JobManager createJobManager(Confion.Builder nBuilder) { return new JobManager(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:20.789969", "n_pass": [107, 18, 10], "score": "0.3175", "loss": "2.2936", "code": "protected JobManager createJobManager(Confilder nBuilder) { return new JobManager(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:22.103494", "n_pass": [109, 19, 11], "score": "0.3601", "loss": "1.8394", "code": "protected JobManager createJobManager(Confilder er) { return new JobManager(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:23.413604", "n_pass": [111, 20, 12], "score": "0.3575", "loss": "1.6359", "code": "protected JobManager createJobManager(Confilder er) {  new JobManager(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:26.082766", "n_pass": [113, 22, 13], "score": "0.2703", "loss": "8.8579", "code": "protected JobManager createJobManager(Confilder er) {  new Jger(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:32.503562", "n_pass": [156, 26, 14], "score": "0.3273", "loss": "2.583", "code": "protected JobManager createJobManager(Confilder er) {  new J(Ro.id(UUD).build()); }"}
+{"time": "2021-01-23 13:25:33.813891", "n_pass": [157, 27, 15], "score": "0.3953", "loss": "8.7954", "code": "protected JobManager createJobManager(Confilder er) {  new J(Ro(UUD).build()); }"}
+{"time": "2021-01-23 13:25:43.934699", "n_pass": [176, 33, 16], "score": "0.3953", "loss": "8.7954", "code": "protected JobManager createJobManager(Cilder er) {  new J(Ro(UUD).build()); }"}
+{"time": "2021-01-23 13:25:58.837163", "n_pass": [257, 41, 17], "score": "0.3953", "loss": "8.7954", "code": "protected JobManager createJobManager(Cder er) {  new J(Ro(UUD).build()); }"}
+{"time": "2021-01-23 13:26:15.935091", "n_pass": [292, 54, 18], "score": "0.5148", "loss": "3.0267", "code": "protected JobManger createJobManager(Cder er) {  new J(Ro(UUD).build()); }"}
+{"time": "2021-01-23 13:26:28.880547", "n_pass": [321, 61, 19], "score": "0.4132", "loss": "3.0843", "code": "protected JobManger createJobManager(Cder er) {  new J(Ro(UUD).bui()); }"}
+{"time": "2021-01-23 13:26:54.595819", "n_pass": [422, 76, 20], "score": "0.4132", "loss": "3.0843", "code": "protected JobManger createJobManager(Cder er) {  new J(Ro(UUD).bui());}"}
+{"time": "2021-01-23 13:27:23.319507", "n_pass": [468, 93, 21], "score": "0.4132", "loss": "3.0843", "code": "protected JobManger createJobManager(Cder er){  new J(Ro(UUD).bui());}"}
+{"time": "2021-01-23 13:27:24.629026", "n_pass": [470, 94, 22], "score": "0.4132", "loss": "3.0843", "code": "protected JobManger createJobManager(Cder er){ new J(Ro(UUD).bui());}"}
+{"time": "2021-01-23 13:27:25.948292", "n_pass": [471, 95, 23], "score": "0.4132", "loss": "3.0843", "code": "protected JobManger createJobManager(Cder er){new J(Ro(UUD).bui());}"}
+{"time": "2021-01-23 13:27:29.924549", "n_pass": [479, 98, 24], "score": "0.4298", "loss": "3.6323", "code": "protected JobManger createJobManager(Cder er){new J(R(UUD).bui());}"}
+{"time": "2021-01-23 13:27:35.162206", "n_pass": [486, 102, 25], "score": "0.3929", "loss": "3.1139", "code": "protected JobManger createJobManager(Cder er){new J(R(UUD).ui());}"}
+{"time": "2021-01-23 13:28:07.902815", "n_pass": [546, 122, 26], "score": "0.4115", "loss": "2.6276", "code": "protected JobManger createJobManager(Cder er){new J((UUD).ui());}"}
+{"time": "2021-01-23 13:28:13.154214", "n_pass": [552, 126, 27], "score": "0.6224", "loss": "1.6871", "code": "protected JobManger createJobManager(Cder er){new J((UUD)ui());}"}
+{"time": "2021-01-23 13:28:14.467890", "n_pass": [553, 127, 28], "score": "0.5287", "loss": "1.9495", "code": "protected JobManger createJobManager(Cder er){new J((UUD)i());}"}
+{"time": "2021-01-23 13:28:40.411697", "n_pass": [602, 142, 29], "score": "0.544", "loss": "2.3202", "code": "protected JobManger createJobManager(Cder r){new J((UUD)i());}"}
+{"time": "2021-01-23 13:28:45.693360", "n_pass": [615, 146, 30], "score": "0.6826", "loss": "2.1929", "code": "protected JobManger createJobManager(Cder r){new J((UU)i());}"}
+
+Minimal simplified code:
+protected JobManger createJobManager(Cder r){new J((UU)i());}
+

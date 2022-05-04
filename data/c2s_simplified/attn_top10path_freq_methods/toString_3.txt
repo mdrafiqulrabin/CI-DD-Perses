@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/CharChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+
+topk path-contexts for sub-token: to
+[0.0817] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0653] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0638] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0469] this,ThisExpr2|MethodCallExpr|NameExpr3,to|string
+[0.0400] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|ThisExpr2,this
+[0.0346] end,NameExpr0|BinaryExpr:minus|BinaryExpr:equals|IfStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0331] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr0,null
+[0.0307] start,NameExpr1|BinaryExpr:minus|BinaryExpr:equals|IfStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0305] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0251] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NullLiteralExpr0,null
+
+topk terminals for sub-token: to
+['string', 'METHOD_NAME', 'string', 'string|cache', 'METHOD_NAME', 'string|cache', 'this', 'to|string', 'string', 'this', 'end', 'string|cache', 'string', 'null', 'start', 'string|cache', 'override', 'METHOD_NAME', 'string', 'null']
+
+topk path-contexts for sub-token: string
+[0.1421] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0997] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+[0.0729] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0604] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0577] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0406] start,NameExpr1|BinaryExpr:minus|BinaryExpr:equals|IfStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0385] end,NameExpr0|BinaryExpr:minus|BinaryExpr:equals|IfStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+[0.0337] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,to|string
+[0.0317] this,ThisExpr2|MethodCallExpr|NameExpr3,to|string
+[0.0271] null,NullLiteralExpr0|BinaryExpr:equals|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr0,string|cache
+
+topk terminals for sub-token: string
+['string', 'METHOD_NAME', 'override', 'string', 'string', 'string|cache', 'override', 'METHOD_NAME', 'METHOD_NAME', 'string|cache', 'start', 'string|cache', 'end', 'string|cache', 'string', 'to|string', 'this', 'to|string', 'null', 'string|cache']
+

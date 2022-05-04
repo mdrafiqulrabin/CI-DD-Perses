@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/util/ServerInfo_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.out.println("Server version: " + getServerInfo()); System.out.println("Server built: " + getServerBuilt()); System.out.println("Server number: " + getServerNumber()); System.out.println("OS Name: " + System.getProperty("os.name")); System.out.println("OS Version: " + System.getProperty("os.version")); System.out.println("Architecture: " + System.getProperty("os.arch")); System.out.println("JVM Version: " + System.getProperty("java.runtime.version")); System.out.println("JVM Vendor: " + System.getProperty("java.vm.vendor")); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 19:55:30.608207", "score": "0.9999", "loss": "0.0001", "code": "class T { public static void main(String[] args) { System.out.println(\"Server version: \" + getServerInfo()); System.out.println(\"Server built: \" + getServerBuilt()); System.out.println(\"Server number: \" + getServerNumber()); System.out.println(\"OS Name: \" + System.getProperty(\"os.name\")); System.out.println(\"OS Version: \" + System.getProperty(\"os.version\")); System.out.println(\"Architecture: \" + System.getProperty(\"os.arch\")); System.out.println(\"JVM Version: \" + System.getProperty(\"java.runtime.version\")); System.out.println(\"JVM Vendor: \" + System.getProperty(\"java.vm.vendor\")); } }"}
+{"time": "2020-12-28 19:58:31.829714", "score": "0.9999", "loss": "0.0002", "code": "class T { public static void main(String[] args) { System.out.println(\"Server version: \" + getServerInfo()); System.out.println(\"Server built: \" + getServerBuilt()); System.out.println(\"Server number: \" + getServerNumber()); System.out.println(\"OS Name: \" + System.getProperty(\"os.name\")); } }"}
+{"time": "2020-12-28 19:59:46.659463", "score": "0.9996", "loss": "0.0006", "code": "class T { public static void main(String[] args) { System.out.println(\"Server version: \" + getServerInfo()); System.out.println(\"Server built: \" + getServerBuilt()); } }"}
+{"time": "2020-12-28 20:01:01.434228", "score": "0.8173", "loss": "0.247", "code": "class T { public static void main(String[] args) { System.out.println(\"Server version: \" + getServerInfo()); } }"}
+{"time": "2020-12-28 20:02:16.321518", "score": "1.0", "loss": "0.0001", "code": "class T { public static void main(String[] args) { System.out.println( ); } }"}
+{"time": "2020-12-28 20:03:35.105986", "score": "0.9623", "loss": "0.0525", "code": "class T { public static void main(String args) { System.out.println( ); } }"}
+{"time": "2020-12-28 20:04:50.934905", "score": "0.9623", "loss": "0.0525", "code": "class T { void main(String args) { System.out.println( ); } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args) { System.out.println(                                    );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+}
+
+

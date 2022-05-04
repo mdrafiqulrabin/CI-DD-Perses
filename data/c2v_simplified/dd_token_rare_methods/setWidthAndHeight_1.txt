@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/com/iwc/shop/modules/act/service/ActTaskService_setWidthAndHeight.java
+method_name = setWidthAndHeight
+method_body = private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put("width", activity.getWidth()); activityInfo.put("height", activity.getHeight()); }
+predict, score, loss = setWidthAndHeight, 0.37662798166275024, 1.6652288436889648
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:32:24.211661", "n_pass": [1, 1, 1], "score": "0.3766", "loss": "1.6652", "code": "private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:33.685252", "n_pass": [92, 4, 2], "score": "0.3766", "loss": "1.6652", "code": " void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:36.320189", "n_pass": [93, 5, 3], "score": "0.3766", "loss": "1.6652", "code": "void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:39.368051", "n_pass": [100, 6, 4], "score": "0.3754", "loss": "1.6102", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:44.657103", "n_pass": [110, 8, 5], "score": "0.5215", "loss": "1.356", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo.put(\"width\", getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:47.311505", "n_pass": [114, 9, 6], "score": "0.6137", "loss": "1.6171", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo.put(\"width\", getWidth()); put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-20 07:32:49.943722", "n_pass": [119, 10, 7], "score": "0.5176", "loss": "1.7793", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo.put(\"width\", getWidth()); put(\"height\", activity()); }"}
+{"time": "2021-01-20 07:32:52.565692", "n_pass": [120, 11, 8], "score": "0.5323", "loss": "1.7698", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo.put(\"width\", getWidth()); put(\"height\", activity); }"}
+{"time": "2021-01-20 07:32:56.009175", "n_pass": [135, 12, 9], "score": "0.3586", "loss": "2.4896", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\", getWidth()); put(\"height\", activity); }"}
+{"time": "2021-01-20 07:33:06.693239", "n_pass": [206, 14, 10], "score": "0.3586", "loss": "2.4896", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\",getWidth()); put(\"height\", activity); }"}
+{"time": "2021-01-20 07:33:09.354248", "n_pass": [212, 15, 11], "score": "0.3586", "loss": "2.4896", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"height\", activity); }"}
+{"time": "2021-01-20 07:33:11.982696", "n_pass": [216, 16, 12], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"\", activity); }"}
+{"time": "2021-01-20 07:33:14.607549", "n_pass": [219, 17, 13], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"\",activity); }"}
+{"time": "2021-01-20 07:33:17.235546", "n_pass": [223, 18, 14], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity, Map< Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+{"time": "2021-01-20 07:33:20.700809", "n_pass": [233, 19, 15], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity,Map< Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+{"time": "2021-01-20 07:33:23.325930", "n_pass": [236, 20, 16], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity,Map<Object> activityInfo) { activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+{"time": "2021-01-20 07:33:25.950965", "n_pass": [239, 21, 17], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity,Map<Object>activityInfo) { activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+{"time": "2021-01-20 07:33:28.585173", "n_pass": [242, 22, 18], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity,Map<Object>activityInfo){ activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+{"time": "2021-01-20 07:33:31.210516", "n_pass": [244, 23, 19], "score": "0.2897", "loss": "2.7618", "code": "void setWidthAndHeight(ActivityImpl activity,Map<Object>activityInfo){activityInfo(\"width\",getWidth());put(\"\",activity);}"}
+
+Minimal simplified code:
+void setWidthAndHeight(ActivityImpl activity,Map<Object>activityInfo){activityInfo("width",getWidth());put("",activity);}
+

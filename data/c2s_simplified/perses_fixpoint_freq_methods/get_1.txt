@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:27:52.614731", "score": "0.8329", "loss": "0.3532", "code": "class T { @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; } }"}
+{"time": "2020-12-21 08:28:30.019917", "score": "0.7906", "loss": "0.405", "code": "class T { @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { throw new TimeoutException(\"Waiting \" + timeout); } }"}
+{"time": "2020-12-21 08:28:40.631346", "score": "0.9097", "loss": "0.2099", "code": "class T { @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { } }"}
+{"time": "2020-12-21 08:28:51.184120", "score": "0.7868", "loss": "0.8338", "code": "class T { @Override public V get(long timeout, TimeUnit unit) { } }"}
+{"time": "2020-12-21 08:29:23.378223", "score": "0.6378", "loss": "0.9289", "code": "class T { V get(long timeout, TimeUnit unit) { } }"}
+
+Minimal simplified code:
+class T {
+                 V get(long timeout, TimeUnit unit)                                                                                                                                {                                                   }
+}
+
+

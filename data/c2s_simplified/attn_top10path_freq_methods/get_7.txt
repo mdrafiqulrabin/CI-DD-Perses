@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+
+topk path-contexts for sub-token: get
+[0.1425] t,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1197] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0816] t,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0417] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|StringLiteralExpr1,no|value|present
+[0.0405] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0405] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|StringLiteralExpr1,no|value|present
+[0.0367] t,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|StringLiteralExpr1,no|value|present
+[0.0352] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|ClassOrInterfaceType0,no|such|element|exception
+[0.0313] no|value|present,StringLiteralExpr1|ObjectCreationExpr|ThrowStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0260] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|ClassOrInterfaceType0,no|such|element|exception
+
+topk terminals for sub-token: get
+['t', 'METHOD_NAME', 'METHOD_NAME', 'value', 't', 'value', 'null', 'no|value|present', 'null', 'value', 'METHOD_NAME', 'no|value|present', 't', 'no|value|present', 'null', 'no|such|element|exception', 'no|value|present', 'value', 'METHOD_NAME', 'no|such|element|exception']
+

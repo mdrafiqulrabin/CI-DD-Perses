@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataTableModel_clearUndo.java
+method_name = clearUndo
+method_body = @Override public void clearUndo() { m_UndoList = new Vector<File>(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:57:44.699576", "score": "0.491", "loss": "0.7137", "code": "class T { @Override public void clearUndo() { m_UndoList = new Vector<File>(); } }"}
+{"time": "2021-01-24 17:02:44.691510", "score": "0.491", "loss": "0.7137", "code": "class T { @Override void clearUndo() { m_UndoList = new Vector<File>(); } }"}
+
+Minimal simplified code:
+class T {
+@Override        void clearUndo() { m_UndoList = new Vector<File>(); }
+}
+
+

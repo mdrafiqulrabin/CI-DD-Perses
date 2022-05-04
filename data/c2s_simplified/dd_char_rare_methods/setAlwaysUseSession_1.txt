@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/authenticator/TestNonLoginAndBasicAuthenticator_setAlwaysUseSession.java
+method_name = setAlwaysUseSession
+method_body = private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }
+predict, score, loss = setAlwaysUseSession, 0.43820143, 3.031328
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:57:26.665497", "n_pass": [1, 1, 1], "score": "0.4382", "loss": "3.0313", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:29.075742", "n_pass": [49, 2, 2], "score": "0.3579", "loss": "3.3999", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) batAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:30.391385", "n_pass": [50, 3, 3], "score": "0.3323", "loss": "3.7063", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) bar()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:31.703482", "n_pass": [55, 4, 4], "score": "0.3577", "loss": "3.5259", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) bar()).setAlwaysUseSession(true); ((AuthenticatorBase)ext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:33.016853", "n_pass": [56, 5, 5], "score": "0.2167", "loss": "4.0639", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) bar()).setAlwaysUseSession(true); ((AuthenticatorBase)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:41.430751", "n_pass": [106, 10, 6], "score": "0.1986", "loss": "4.3026", "code": "private void setAlwaysUseSession() { ((AutatorBase) bar()).setAlwaysUseSession(true); ((AuthenticatorBase)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:42.744342", "n_pass": [107, 11, 7], "score": "0.1868", "loss": "4.1961", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession(true); ((AuthenticatorBase)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:48.025712", "n_pass": [113, 15, 8], "score": "0.3014", "loss": "2.5972", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession; ((AuthenticatorBase)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:49.366212", "n_pass": [115, 16, 9], "score": "0.2779", "loss": "3.0311", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession; ((AucatorBase)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:50.696904", "n_pass": [116, 17, 10], "score": "0.2362", "loss": "2.9555", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession; ((Ause)ticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-23 08:57:53.321794", "n_pass": [120, 19, 11], "score": "0.3917", "loss": "3.3533", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession; ((Ause)ticator()).setAlwassion(true); }"}
+{"time": "2021-01-23 08:58:01.043857", "n_pass": [138, 24, 12], "score": "0.2182", "loss": "3.6596", "code": "private void setAlwaysUseSession() { ((Autse) bar()).setAlwaysUseSession; ((Ause)ticator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:14.935057", "n_pass": [207, 32, 13], "score": "0.2188", "loss": "3.3461", "code": "private void setAlwaysUseSession() { ((se) bar()).setAlwaysUseSession; ((Ause)ticator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:16.266879", "n_pass": [209, 33, 14], "score": "0.2541", "loss": "3.2936", "code": "private void setAlwaysUseSession() { ((se)r()).setAlwaysUseSession; ((Ause)ticator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:17.570272", "n_pass": [210, 34, 15], "score": "0.3411", "loss": "2.467", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSession; ((Ause)ticator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:25.386168", "n_pass": [217, 40, 16], "score": "0.327", "loss": "4.0143", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)ticator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:26.714445", "n_pass": [221, 41, 17], "score": "0.3932", "loss": "3.4251", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)ator()).ssion(true); }"}
+{"time": "2021-01-23 08:58:28.038125", "n_pass": [222, 42, 18], "score": "0.3251", "loss": "3.8728", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)r()).ssion(true); }"}
+{"time": "2021-01-23 08:58:44.318766", "n_pass": [308, 52, 19], "score": "0.3537", "loss": "3.7524", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)r).ssion(true); }"}
+{"time": "2021-01-23 08:58:45.619683", "n_pass": [310, 53, 20], "score": "0.4282", "loss": "3.6049", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)r).ion(true); }"}
+{"time": "2021-01-23 08:58:46.946260", "n_pass": [311, 54, 21], "score": "0.4145", "loss": "3.3095", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)r).n(true); }"}
+{"time": "2021-01-23 08:58:49.571523", "n_pass": [314, 56, 22], "score": "0.4501", "loss": "3.9111", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((Ause)r).n(tr); }"}
+{"time": "2021-01-23 08:59:15.121151", "n_pass": [361, 71, 23], "score": "0.2738", "loss": "4.9097", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((se)r).n(tr); }"}
+{"time": "2021-01-23 08:59:16.421585", "n_pass": [366, 72, 24], "score": "0.4886", "loss": "3.7791", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((se)r).n(); }"}
+{"time": "2021-01-23 08:59:43.932174", "n_pass": [471, 87, 25], "score": "0.4886", "loss": "3.7791", "code": "private void setAlwaysUseSession() { ((se)).setAlwaysUseSess; ((se)r).n();}"}
+{"time": "2021-01-23 08:59:59.264060", "n_pass": [506, 93, 26], "score": "0.4886", "loss": "3.7791", "code": "private void setAlwaysUseSession(){ ((se)).setAlwaysUseSess; ((se)r).n();}"}
+{"time": "2021-01-23 09:00:00.562843", "n_pass": [508, 94, 27], "score": "0.4886", "loss": "3.7791", "code": "private void setAlwaysUseSession(){((se)).setAlwaysUseSess; ((se)r).n();}"}
+{"time": "2021-01-23 09:00:01.862680", "n_pass": [511, 95, 28], "score": "0.4137", "loss": "4.1929", "code": "private void setAlwaysUseSession(){((e)).setAlwaysUseSess; ((se)r).n();}"}
+{"time": "2021-01-23 09:00:21.429275", "n_pass": [530, 110, 29], "score": "0.3906", "loss": "2.6548", "code": "private void setAlwaysUseSession(){((e)).setAlwaysUseSes; ((se)r).n();}"}
+{"time": "2021-01-23 09:00:25.332734", "n_pass": [533, 113, 30], "score": "0.3906", "loss": "2.6548", "code": "private void setAlwaysUseSession(){((e)).setAlwaysUseSes;((se)r).n();}"}
+{"time": "2021-01-23 09:00:26.633006", "n_pass": [536, 114, 31], "score": "0.3662", "loss": "2.7252", "code": "private void setAlwaysUseSession(){((e)).setAlwaysUseSes;((e)r).n();}"}
+{"time": "2021-01-23 09:00:27.950240", "n_pass": [539, 115, 32], "score": "0.2543", "loss": "3.5842", "code": "private void setAlwaysUseSession(){((e)).setAlwaysUseSes;((e)).n();}"}
+
+Minimal simplified code:
+private void setAlwaysUseSession(){((e)).setAlwaysUseSes;((e)).n();}
+

@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/windy1__google-places-api-java/src/main/java/se/walkercrou/places/Hours_setOpeningTime.java
+method_name = setOpeningTime
+method_body = protected Period setOpeningTime(String openingTime) { this.openingTime = openingTime; return this; }
+predict, score, loss = setOpeningTime, 0.4529135, 0.83079326
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:22:22.792431", "n_pass": [1, 1, 1], "score": "0.4529", "loss": "0.8308", "code": "protected Period setOpeningTime(String openingTime) { this.openingTime = openingTime; return this; }"}
+{"time": "2021-01-23 08:22:24.454455", "n_pass": [20, 2, 2], "score": "0.4889", "loss": "0.7729", "code": "riod setOpeningTime(String openingTime) { this.openingTime = openingTime; return this; }"}
+{"time": "2021-01-23 08:22:28.509469", "n_pass": [47, 4, 3], "score": "0.6636", "loss": "0.5089", "code": "riod setOpeningTime(String opeme) { this.openingTime = openingTime; return this; }"}
+{"time": "2021-01-23 08:22:32.413762", "n_pass": [52, 7, 4], "score": "0.6357", "loss": "1.1257", "code": "riod setOpeningTime(String opeme) { this.openingTime =gTime; return this; }"}
+{"time": "2021-01-23 08:22:33.705818", "n_pass": [54, 8, 5], "score": "0.8331", "loss": "0.8553", "code": "riod setOpeningTime(String opeme) { this.openingTime =gTime; this; }"}
+{"time": "2021-01-23 08:22:39.969827", "n_pass": [65, 12, 6], "score": "0.8927", "loss": "0.4224", "code": "riod setOpeningTime(String opeme) { this.openingTime =this; }"}
+{"time": "2021-01-23 08:22:46.217231", "n_pass": [96, 16, 7], "score": "0.8886", "loss": "0.1661", "code": "riod setOpeningTime(String opeme) { this.openingTime =s; }"}
+{"time": "2021-01-23 08:22:47.505714", "n_pass": [97, 17, 8], "score": "0.8079", "loss": "0.25", "code": "d setOpeningTime(String opeme) { this.openingTime =s; }"}
+{"time": "2021-01-23 08:22:50.607463", "n_pass": [104, 18, 9], "score": "0.9256", "loss": "0.1641", "code": "d setOpeningTime(Sng opeme) { this.openingTime =s; }"}
+{"time": "2021-01-23 08:22:51.902886", "n_pass": [106, 19, 10], "score": "0.7963", "loss": "0.2902", "code": "d setOpeningTime(Sng me) { this.openingTime =s; }"}
+{"time": "2021-01-23 08:22:53.220354", "n_pass": [109, 20, 11], "score": "0.6882", "loss": "0.6529", "code": "d setOpeningTime(Sng me) { s.openingTime =s; }"}
+{"time": "2021-01-23 08:23:17.645247", "n_pass": [183, 33, 12], "score": "0.4981", "loss": "1.0699", "code": "d setOpeningTime(S me) { s.openingTime =s; }"}
+{"time": "2021-01-23 08:23:35.391709", "n_pass": [243, 41, 13], "score": "0.4981", "loss": "1.0699", "code": "d setOpeningTime(S me) {s.openingTime =s; }"}
+{"time": "2021-01-23 08:23:52.179069", "n_pass": [256, 54, 14], "score": "0.4981", "loss": "1.0699", "code": "d setOpeningTime(S me) {s.openingTime=s; }"}
+{"time": "2021-01-23 08:23:54.780271", "n_pass": [260, 56, 15], "score": "0.4981", "loss": "1.0699", "code": "d setOpeningTime(S me) {s.openingTime=s;}"}
+{"time": "2021-01-23 08:24:01.829766", "n_pass": [281, 57, 16], "score": "0.777", "loss": "0.6136", "code": "d setOpeningTime(S e) {s.openingTime=s;}"}
+{"time": "2021-01-23 08:24:03.119883", "n_pass": [284, 58, 17], "score": "0.777", "loss": "0.6136", "code": "d setOpeningTime(S e){s.openingTime=s;}"}
+
+Minimal simplified code:
+d setOpeningTime(S e){s.openingTime=s;}
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/content/content-tool/tool/src/java/org/sakaiproject/content/tool/ResourcesBrowseItem_canAddItem.java
+method_name = canAddItem
+method_body = public boolean canAddItem() { return m_canAddItem; }
+predict, score, loss = canAddItem, 0.36245266, 1.0517836
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:56:12.095790", "n_pass": [1, 1, 1], "score": "0.3625", "loss": "1.0518", "code": "public boolean canAddItem() { return m_canAddItem; }"}
+{"time": "2021-01-20 05:56:13.753482", "n_pass": [20, 2, 2], "score": "0.3625", "loss": "1.0518", "code": "boolean canAddItem() { return m_canAddItem; }"}
+{"time": "2021-01-20 05:56:15.040524", "n_pass": [24, 3, 3], "score": "0.3626", "loss": "1.1287", "code": "boolean canAddItem() { m_canAddItem; }"}
+{"time": "2021-01-20 05:56:22.276233", "n_pass": [52, 7, 4], "score": "0.3626", "loss": "1.1287", "code": "boolean canAddItem(){ m_canAddItem; }"}
+{"time": "2021-01-20 05:56:23.595008", "n_pass": [54, 8, 5], "score": "0.3626", "loss": "1.1287", "code": "boolean canAddItem(){m_canAddItem; }"}
+{"time": "2021-01-20 05:56:30.123915", "n_pass": [71, 12, 6], "score": "0.3626", "loss": "1.1287", "code": "boolean canAddItem(){m_canAddItem;}"}
+
+Minimal simplified code:
+boolean canAddItem(){m_canAddItem;}
+

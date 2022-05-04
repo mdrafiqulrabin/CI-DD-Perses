@@ -1,0 +1,61 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/common/android/ViewGroupUtil_findChildIndex.java
+method_name = findChildIndex
+method_body = public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }
+predict, score, loss = findChildIndex, 0.46184656, 1.8109801
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:55:28.382265", "n_pass": [1, 1, 1], "score": "0.4618", "loss": "1.811", "code": "public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:31.809391", "n_pass": [51, 3, 2], "score": "0.4019", "loss": "1.8113", "code": "public static int findChildIndex(ViewGroup parent, View child) { int count = parent.t(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:38.947652", "n_pass": [107, 8, 3], "score": "0.4582", "loss": "1.846", "code": "public static int findChildIndex(ViewGroup parent, View child) { int count = parent.t(); for (int i = 0; i < count; ++i) { if (parent.getChildAtchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:40.285359", "n_pass": [113, 9, 4], "score": "0.4582", "loss": "1.846", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = parent.t(); for (int i = 0; i < count; ++i) { if (parent.getChildAtchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:44.095999", "n_pass": [126, 11, 5], "score": "0.5297", "loss": "1.721", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = pt(); for (int i = 0; i < count; ++i) { if (parent.getChildAtchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:45.426985", "n_pass": [129, 12, 6], "score": "0.491", "loss": "1.8337", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = pt(); for (in0; i < count; ++i) { if (parent.getChildAtchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:46.788800", "n_pass": [135, 13, 7], "score": "0.473", "loss": "2.5567", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = pt(); for (in0; i < count; ++i) { if (parenhildAtchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:48.115229", "n_pass": [136, 14, 8], "score": "0.4405", "loss": "2.5544", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = pt(); for (in0; i < count; ++i) { if (parenchild) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:51.932316", "n_pass": [209, 16, 9], "score": "0.4405", "loss": "2.5544", "code": " static int findChildIndex(ViewGroup parent, View child) { int count = pt(); for (in0; i < count; ++i) { if (parenld) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:55:57.638554", "n_pass": [221, 20, 10], "score": "0.5767", "loss": "2.8767", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = pt(); for (in0; i < count; ++i) { if (parenld) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:56:12.858240", "n_pass": [243, 30, 11], "score": "0.5842", "loss": "2.9538", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = p; for (in0; i < count; ++i) { if (parenld) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:56:14.197840", "n_pass": [248, 31, 12], "score": "0.5147", "loss": "2.7623", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = p; for (in0;  count; ++i) { if (parenld) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:56:15.552019", "n_pass": [249, 32, 13], "score": "0.5023", "loss": "2.658", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = p; for (in0; unt; ++i) { if (parenld) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:56:18.202046", "n_pass": [256, 34, 14], "score": "0.5023", "loss": "2.658", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = p; for (in0; unt; ++i) { if (pald) { return i; } } return -1; }"}
+{"time": "2021-01-23 09:56:19.524372", "n_pass": [259, 35, 15], "score": "0.5122", "loss": "2.8773", "code": " statint findChildIndex(ViewGroup parent, View child) { int count = p; for (in0; unt; ++i) { if (pald) { urn i; } } return -1; }"}
+{"time": "2021-01-23 09:56:25.189369", "n_pass": [267, 39, 16], "score": "0.5122", "loss": "2.8773", "code": " stnt findChildIndex(ViewGroup parent, View child) { int count = p; for (in0; unt; ++i) { if (pald) { urn i; } } return -1; }"}
+{"time": "2021-01-23 09:56:28.404319", "n_pass": [274, 40, 17], "score": "0.539", "loss": "3.3655", "code": " stnt findChildIndex(wGroup parent, View child) { int count = p; for (in0; unt; ++i) { if (pald) { urn i; } } return -1; }"}
+{"time": "2021-01-23 09:56:29.739474", "n_pass": [275, 41, 18], "score": "0.5489", "loss": "3.24", "code": " stnt findChildIndex(oup parent, View child) { int count = p; for (in0; unt; ++i) { if (pald) { urn i; } } return -1; }"}
+{"time": "2021-01-23 09:56:39.019775", "n_pass": [288, 48, 19], "score": "0.6015", "loss": "3.2359", "code": " stnt findChildIndex(oup parent, View child) { int count ; for (in0; unt; ++i) { if (pald) { urn i; } } return -1; }"}
+{"time": "2021-01-23 09:56:41.659609", "n_pass": [301, 50, 20], "score": "0.5504", "loss": "3.2167", "code": " stnt findChildIndex(oup parent, View child) { int count ; for (in0; unt; ++i) { if (pald) {  i; } } return -1; }"}
+{"time": "2021-01-23 09:56:43.003046", "n_pass": [302, 51, 21], "score": "0.605", "loss": "3.0619", "code": " stnt findChildIndex(oup parent, View child) { int count ; for (in0; unt; ++i) { if (pald) { } } return -1; }"}
+{"time": "2021-01-23 09:56:54.506918", "n_pass": [324, 58, 22], "score": "0.5624", "loss": "3.153", "code": " stnt findChildIndex(oup parent, View child) { int nt ; for (in0; unt; ++i) { if (pald) { } } return -1; }"}
+{"time": "2021-01-23 09:57:14.307436", "n_pass": [434, 70, 23], "score": "0.6097", "loss": "3.1921", "code": " stnt findChildIndex(oup parent, View child) { int n; for (in0; unt; ++i) { if (pald) { } } return -1; }"}
+{"time": "2021-01-23 09:57:15.624117", "n_pass": [439, 71, 24], "score": "0.5592", "loss": "2.9251", "code": " stnt findChildIndex(oup parent, View child) { int n; for (i; unt; ++i) { if (pald) { } } return -1; }"}
+{"time": "2021-01-23 09:57:18.258122", "n_pass": [443, 73, 25], "score": "0.5633", "loss": "2.9281", "code": " stnt findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (pald) { } } return -1; }"}
+{"time": "2021-01-23 09:57:20.901411", "n_pass": [449, 75, 26], "score": "0.5723", "loss": "3.0032", "code": " stnt findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:24.629599", "n_pass": [461, 77, 27], "score": "0.5723", "loss": "3.0032", "code": "stnt findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:27.278783", "n_pass": [463, 79, 28], "score": "0.6704", "loss": "2.2923", "code": "snt findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:28.596597", "n_pass": [464, 80, 29], "score": "0.5741", "loss": "2.7921", "code": "st findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:29.915691", "n_pass": [465, 81, 30], "score": "0.6665", "loss": "2.346", "code": "s findChildIndex(oup parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:36.944422", "n_pass": [482, 82, 31], "score": "0.5583", "loss": "2.654", "code": "s findChildIndex(up parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:38.281908", "n_pass": [483, 83, 32], "score": "0.5841", "loss": "2.2504", "code": "s findChildIndex(p parent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:40.935012", "n_pass": [487, 85, 33], "score": "0.5339", "loss": "2.9698", "code": "s findChildIndex(p prent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:42.252584", "n_pass": [488, 86, 34], "score": "0.6812", "loss": "3.2148", "code": "s findChildIndex(p pent, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:43.569242", "n_pass": [489, 87, 35], "score": "0.4983", "loss": "2.7224", "code": "s findChildIndex(p pnt, View child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:46.204653", "n_pass": [492, 89, 36], "score": "0.4494", "loss": "2.8268", "code": "s findChildIndex(p pnt,iew child) { int n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:57:51.490262", "n_pass": [499, 93, 37], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for (i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:19.325069", "n_pass": [617, 104, 38], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i; unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:21.971397", "n_pass": [621, 106, 39], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i) { if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:28.613606", "n_pass": [629, 111, 40], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){ if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:29.923019", "n_pass": [631, 112, 41], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if (ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:31.260294", "n_pass": [634, 113, 42], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld) { } } return -1; }"}
+{"time": "2021-01-23 09:58:35.274286", "n_pass": [639, 116, 43], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){ } } return -1; }"}
+{"time": "2021-01-23 09:58:36.582957", "n_pass": [641, 117, 44], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){} } return -1; }"}
+{"time": "2021-01-23 09:58:37.897663", "n_pass": [643, 118, 45], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){}} return -1; }"}
+{"time": "2021-01-23 09:58:39.211410", "n_pass": [645, 119, 46], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){}}return -1; }"}
+{"time": "2021-01-23 09:58:42.692177", "n_pass": [652, 120, 47], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){}}return-1; }"}
+{"time": "2021-01-23 09:58:45.343946", "n_pass": [656, 122, 48], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child) {nt n; for(i;unt;+i){if(ld){}}return-1;}"}
+{"time": "2021-01-23 09:59:07.193609", "n_pass": [691, 134, 49], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child){nt n; for(i;unt;+i){if(ld){}}return-1;}"}
+{"time": "2021-01-23 09:59:13.815598", "n_pass": [698, 139, 50], "score": "0.4249", "loss": "3.5795", "code": "s findChildIndex(p pnt,iew child){nt n;for(i;unt;+i){if(ld){}}return-1;}"}
+
+Minimal simplified code:
+s findChildIndex(p pnt,iew child){nt n;for(i;unt;+i){if(ld){}}return-1;}
+

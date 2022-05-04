@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/choosers/AbstractExtensionFileFilterFileChooser_initializeFilters.java
+method_name = initializeFilters
+method_body = protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }
+
+topk path-contexts for sub-token: initialize
+[0.1282] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1079] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0515] chooser,NameExpr0|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0427] get|filters|initialized,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0380] chooser,NameExpr0|MethodCallExpr|NameExpr2,do|initialize|filters
+[0.0359] chooser,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0300] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr2,get|filters|initialized
+[0.0281] abstract|extension|file|filter|file|chooser,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0194] chooser,NameExpr0|MethodCallExpr|NameExpr2,get|filters|initialized
+[0.0179] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,chooser
+
+topk terminals for sub-token: initialize
+['void', 'METHOD_NAME', 'METHOD_NAME', 'do|initialize|filters', 'chooser', 'do|initialize|filters', 'get|filters|initialized', 'do|initialize|filters', 'chooser', 'do|initialize|filters', 'chooser', 'do|initialize|filters', 'METHOD_NAME', 'get|filters|initialized', 'abstract|extension|file|filter|file|chooser', 'do|initialize|filters', 'chooser', 'get|filters|initialized', 'METHOD_NAME', 'chooser']
+
+topk path-contexts for sub-token: filters
+[0.1176] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0923] chooser,NameExpr0|MethodCallExpr|NameExpr2,do|initialize|filters
+[0.0723] get|filters|initialized,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0642] abstract|extension|file|filter|file|chooser,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0620] chooser,NameExpr0|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0456] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr2,get|filters|initialized
+[0.0451] chooser,NameExpr0|MethodCallExpr|NameExpr2,get|filters|initialized
+[0.0432] chooser,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,do|initialize|filters
+[0.0408] get|filters|initialized,NameExpr2|MethodCallExpr|UnaryExpr:not|IfStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,chooser
+[0.0381] abstract|extension|file|filter|file|chooser,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr2,get|filters|initialized
+
+topk terminals for sub-token: filters
+['METHOD_NAME', 'do|initialize|filters', 'chooser', 'do|initialize|filters', 'get|filters|initialized', 'do|initialize|filters', 'abstract|extension|file|filter|file|chooser', 'do|initialize|filters', 'chooser', 'do|initialize|filters', 'METHOD_NAME', 'get|filters|initialized', 'chooser', 'get|filters|initialized', 'chooser', 'do|initialize|filters', 'get|filters|initialized', 'chooser', 'abstract|extension|file|filter|file|chooser', 'get|filters|initialized']
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/external/warc/src/main/java/com/digitalpebble/stormcrawler/warc/GzipHdfsBolt_withFsUrl.java
+method_name = withFsUrl
+method_body = public GzipHdfsBolt withFsUrl(String fsUrl) { this.fsUrl = fsUrl; return this; }
+
+topk path-contexts for sub-token: with
+[0.1612] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1099] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0999] this,ThisExpr0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0992] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0983] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0499] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,fs|url
+[0.0465] fs|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0283] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,fs|url
+[0.0239] fs|url,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,fs|url
+[0.0237] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,fs|url
+
+topk terminals for sub-token: with
+['gzip|hdfs|bolt', 'METHOD_NAME', 'METHOD_NAME', 'fs|url', 'this', 'fs|url', 'gzip|hdfs|bolt', 'string', 'string', 'fs|url', 'gzip|hdfs|bolt', 'fs|url', 'fs|url', 'fs|url', 'this', 'fs|url', 'fs|url', 'fs|url', 'string', 'fs|url']
+
+topk path-contexts for sub-token: fs
+[0.1245] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.1225] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.1003] fs|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0934] this,ThisExpr0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0776] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,fs|url
+[0.0566] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0551] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,fs|url
+[0.0433] gzip|hdfs|bolt,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0375] fs|url,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,fs|url
+[0.0287] fs|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,fs|url
+
+topk terminals for sub-token: fs
+['string', 'fs|url', 'METHOD_NAME', 'fs|url', 'fs|url', 'fs|url', 'this', 'fs|url', 'METHOD_NAME', 'fs|url', 'gzip|hdfs|bolt', 'METHOD_NAME', 'gzip|hdfs|bolt', 'fs|url', 'gzip|hdfs|bolt', 'string', 'fs|url', 'fs|url', 'fs|url', 'fs|url']
+
+topk path-contexts for sub-token: url
+[0.1371] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,fs|url
+[0.1097] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,fs|url
+[0.1091] fs|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.1081] fs|url,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,fs|url
+[0.0962] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0730] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0636] fs|url,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,fs|url
+[0.0522] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,fs|url
+[0.0459] this,ThisExpr0|FieldAccessExpr0|NameExpr2,fs|url
+[0.0443] fs|url,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: url
+['METHOD_NAME', 'fs|url', 'string', 'fs|url', 'fs|url', 'fs|url', 'fs|url', 'fs|url', 'string', 'fs|url', 'METHOD_NAME', 'fs|url', 'fs|url', 'fs|url', 'METHOD_NAME', 'fs|url', 'this', 'fs|url', 'fs|url', 'string']
+

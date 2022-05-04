@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/jamesdbloom__mockserver/mockserver-core/src/main/java/org/mockserver/client/serialization/model/HttpClassCallbackDTO_setCallbackClass.java
+method_name = setCallbackClass
+method_body = public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }
+
+topk path-contexts for sub-token: set
+[0.1565] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1412] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1273] this,ThisExpr0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0652] callback|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0444] http|class|callback|dto,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0287] http|class|callback|dto,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0267] callback|class,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0242] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0236] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,callback|class
+[0.0218] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,callback|class
+
+topk terminals for sub-token: set
+['string', 'callback|class', 'METHOD_NAME', 'callback|class', 'this', 'callback|class', 'callback|class', 'callback|class', 'http|class|callback|dto', 'METHOD_NAME', 'http|class|callback|dto', 'string', 'callback|class', 'callback|class', 'this', 'callback|class', 'METHOD_NAME', 'callback|class', 'METHOD_NAME', 'callback|class']
+
+topk path-contexts for sub-token: callback
+[0.1522] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1515] this,ThisExpr0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1402] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0913] callback|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0862] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,callback|class
+[0.0388] http|class|callback|dto,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,callback|class
+[0.0387] callback|class,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0361] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0265] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,callback|class
+[0.0231] callback|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,callback|class
+
+topk terminals for sub-token: callback
+['METHOD_NAME', 'callback|class', 'this', 'callback|class', 'string', 'callback|class', 'callback|class', 'callback|class', 'METHOD_NAME', 'callback|class', 'http|class|callback|dto', 'callback|class', 'callback|class', 'callback|class', 'this', 'callback|class', 'METHOD_NAME', 'callback|class', 'callback|class', 'callback|class']
+
+topk path-contexts for sub-token: class
+[0.1301] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1149] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.1055] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,callback|class
+[0.0908] this,ThisExpr0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0889] callback|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,callback|class
+[0.0533] callback|class,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0432] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,callback|class
+[0.0422] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,callback|class
+[0.0412] callback|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0401] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,callback|class
+
+topk terminals for sub-token: class
+['METHOD_NAME', 'callback|class', 'string', 'callback|class', 'METHOD_NAME', 'callback|class', 'this', 'callback|class', 'callback|class', 'callback|class', 'callback|class', 'callback|class', 'METHOD_NAME', 'callback|class', 'this', 'callback|class', 'callback|class', 'this', 'string', 'callback|class']
+

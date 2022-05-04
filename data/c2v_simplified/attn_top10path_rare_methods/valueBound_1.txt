@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/SessionBindingListenerAdapter_valueBound.java
+method_name = valueBound
+method_body = public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }
+
+topk path-contexts:
+[0.1377] callbackutil,(NameExpr0)^(MethodCallExpr)_(ObjectCreationExpr)_(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),valuebound
+[0.1048] sslsessionbindingevent,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0969] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),valuebound
+[0.0880] event,(NameExpr2)^(MethodCallExpr)_(NameExpr3),valuebound
+[0.0682] sslsessionbindingevent,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(MethodDeclaration)_(VoidType0),void
+[0.0626] event,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0600] runnable,(ClassOrInterfaceType0)^(ObjectCreationExpr2)_(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),valuebound
+[0.0543] sslsessionbindingevent,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),runnable
+[0.0504] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),valuebound
+[0.0473] event,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(MethodDeclaration)_(VoidType0),void
+
+topk terminals:
+['callbackutil', 'valuebound', 'sslsessionbindingevent', 'METHOD_NAME', 'void', 'valuebound', 'event', 'valuebound', 'sslsessionbindingevent', 'void', 'event', 'METHOD_NAME', 'runnable', 'valuebound', 'sslsessionbindingevent', 'runnable', 'METHOD_NAME', 'valuebound', 'event', 'void']
+

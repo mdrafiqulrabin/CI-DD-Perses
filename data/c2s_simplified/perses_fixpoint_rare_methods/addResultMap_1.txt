@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_addResultMap.java
+method_name = addResultMap
+method_body = public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:37:09.636887", "score": "0.271", "loss": "2.974", "code": "class T { public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); } }"}
+{"time": "2021-01-24 08:37:57.921872", "score": "0.3195", "loss": "2.4895", "code": "class T { public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); } }"}
+{"time": "2021-01-24 08:38:19.281697", "score": "0.3862", "loss": "1.9564", "code": "class T { public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); } }"}
+{"time": "2021-01-24 08:38:40.604681", "score": "0.5397", "loss": "1.4914", "code": "class T { public void addResultMap(ResultMap rm) { resultMaps.put( ); } }"}
+{"time": "2021-01-24 08:39:01.817070", "score": "0.5397", "loss": "1.4914", "code": "class T { void addResultMap(ResultMap rm) { resultMaps.put( ); } }"}
+
+Minimal simplified code:
+class T {
+       void addResultMap(ResultMap rm) { resultMaps.put(              );                                                                                                      }
+}
+
+

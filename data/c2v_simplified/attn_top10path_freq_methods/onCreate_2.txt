@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/OnboardingActivity_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.onboarding); }
+
+topk path-contexts:
+[0.2597] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),onboarding
+[0.2003] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr2),layout
+[0.1221] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.1114] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr0),r
+[0.1022] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0776] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0482] savedinstancestate,(NameExpr2)^(MethodCallExpr)_(NameExpr3),oncreate
+[0.0158] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),onboarding
+[0.0102] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.0098] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),onboarding
+
+topk terminals:
+['oncreate', 'onboarding', 'oncreate', 'layout', 'oncreate', 'setcontentview', 'oncreate', 'r', 'savedinstancestate', 'oncreate', 'bundle', 'oncreate', 'savedinstancestate', 'oncreate', 'savedinstancestate', 'onboarding', 'savedinstancestate', 'setcontentview', 'bundle', 'onboarding']
+

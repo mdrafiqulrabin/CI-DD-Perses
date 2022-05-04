@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/g3d/MG3dModelLoader_loadModelData.java
+method_name = loadModelData
+method_body = @Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); }
+predict, score, loss = loadModelData, 0.3584008812904358, 1.9809038639068604
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:46:45.531169", "n_pass": [1, 1, 1], "score": "0.3584", "loss": "1.9809", "code": "@Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); }"}
+{"time": "2021-01-20 06:46:53.434868", "n_pass": [45, 4, 2], "score": "0.3584", "loss": "1.9809", "code": "@Override ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); }"}
+{"time": "2021-01-20 06:46:56.869193", "n_pass": [51, 5, 3], "score": "0.942", "loss": "0.0822", "code": "@Override ModelData loadModelData(FileHandle fileHandle, ModelParameters parameters) { return parseModel(fileHandle); }"}
+{"time": "2021-01-20 06:46:59.501688", "n_pass": [55, 6, 4], "score": "0.9173", "loss": "0.1078", "code": "@Override ModelData loadModelData(FileHandle fileHandle, ModelParameters parameters) { parseModel(fileHandle); }"}
+{"time": "2021-01-20 06:47:02.118568", "n_pass": [56, 7, 5], "score": "0.9977", "loss": "0.0031", "code": "@Override ModelData loadModelData(FileHandle fileHandle, ModelParameters parameters) {(fileHandle); }"}
+{"time": "2021-01-20 06:47:04.737271", "n_pass": [60, 8, 6], "score": "0.9876", "loss": "0.0158", "code": " ModelData loadModelData(FileHandle fileHandle, ModelParameters parameters) {(fileHandle); }"}
+{"time": "2021-01-20 06:47:11.214659", "n_pass": [94, 9, 7], "score": "0.9876", "loss": "0.0158", "code": "ModelData loadModelData(FileHandle fileHandle, ModelParameters parameters) {(fileHandle); }"}
+{"time": "2021-01-20 06:47:14.633539", "n_pass": [102, 10, 8], "score": "0.9876", "loss": "0.0158", "code": "ModelData loadModelData(FileHandle fileHandle,ModelParameters parameters) {(fileHandle); }"}
+{"time": "2021-01-20 06:47:17.248387", "n_pass": [107, 11, 9], "score": "0.9876", "loss": "0.0158", "code": "ModelData loadModelData(FileHandle fileHandle,ModelParameters parameters){(fileHandle); }"}
+{"time": "2021-01-20 06:47:19.859027", "n_pass": [113, 12, 10], "score": "0.9876", "loss": "0.0158", "code": "ModelData loadModelData(FileHandle fileHandle,ModelParameters parameters){(fileHandle);}"}
+
+Minimal simplified code:
+ModelData loadModelData(FileHandle fileHandle,ModelParameters parameters){(fileHandle);}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/main/java/br/com/six2six/fixturefactory/Property_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:07:46.147199", "score": "0.9996", "loss": "0.0006", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; } }"}
+{"time": "2020-12-21 10:08:44.706223", "score": "0.9997", "loss": "0.0005", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); } }"}
+{"time": "2020-12-21 10:09:06.038637", "score": "0.9995", "loss": "0.0007", "code": "class T { @Override public int hashCode() { result = prime * result + ((name == null) ? 0 : name.hashCode()); } }"}
+{"time": "2020-12-21 10:09:45.530257", "score": "0.9864", "loss": "0.0211", "code": "class T { @Override public int hashCode() { result = prime * result + ((name == null) ); } }"}
+{"time": "2020-12-21 10:09:56.131494", "score": "0.9867", "loss": "0.0243", "code": "class T { @Override public int hashCode() { result = prime * result + ( name == null ); } }"}
+{"time": "2020-12-21 10:10:29.222858", "score": "0.905", "loss": "0.1929", "code": "class T { int hashCode() { result = prime * result + ( name == null ); } }"}
+
+Minimal simplified code:
+class T {
+                 int hashCode() {                                       result = prime * result + ( name == null                       );                }
+}
+
+

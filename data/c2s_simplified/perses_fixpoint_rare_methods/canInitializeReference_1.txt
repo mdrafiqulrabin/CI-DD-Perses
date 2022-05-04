@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_canInitializeReference.java
+method_name = canInitializeReference
+method_body = public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:19:35.888915", "score": "0.4107", "loss": "1.1457", "code": "class T { public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; } }"}
+{"time": "2021-01-24 07:21:17.996290", "score": "0.4107", "loss": "1.1457", "code": "class T { boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; } }"}
+
+Minimal simplified code:
+class T {
+             boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }
+}
+
+

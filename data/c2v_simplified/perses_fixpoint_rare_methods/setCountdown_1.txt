@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/CCIP-App__CCIP-Android/app/src/main/java/org/pycontw/ccip/model/Scenario_setCountdown.java
+method_name = setCountdown
+method_body = public void setCountdown(Integer countdown) { this.countdown = countdown; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 20:49:22.180346", "score": "0.4973", "loss": "0.7209", "code": "class T { public void setCountdown(Integer countdown) { this.countdown = countdown; } }"}
+{"time": "2021-01-24 20:52:24.482029", "score": "0.6475", "loss": "0.4784", "code": "class T { public void setCountdown(Integer countdown) { countdown = countdown; } }"}
+{"time": "2021-01-24 20:53:43.565180", "score": "0.6475", "loss": "0.4784", "code": "class T { void setCountdown(Integer countdown) { countdown = countdown; } }"}
+
+Minimal simplified code:
+class T {
+       void setCountdown(Integer countdown) {      countdown = countdown; }
+}
+
+

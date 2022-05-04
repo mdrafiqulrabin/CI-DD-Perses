@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/api/java/powercrystals/minefactoryreloaded/api/rednet/connectivity/RedNetConnectionType_fromFlags.java
+method_name = fromFlags
+method_body = public static final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }
+predict, score, loss = fromFlags, 0.4012148082256317, 1.4481626749038696
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:48:08.739469", "n_pass": [1, 1, 1], "score": "0.4012", "loss": "1.4482", "code": "public static final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }"}
+{"time": "2021-01-20 07:48:12.156967", "n_pass": [20, 2, 2], "score": "0.4012", "loss": "1.4482", "code": " final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }"}
+{"time": "2021-01-20 07:48:14.788533", "n_pass": [21, 3, 3], "score": "0.4012", "loss": "1.4482", "code": "RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }"}
+{"time": "2021-01-20 07:48:18.186129", "n_pass": [45, 4, 4], "score": "0.3453", "loss": "1.4561", "code": "RedNetConnectionType fromFlags(short flags) { connections.get(flags); }"}
+{"time": "2021-01-20 07:48:20.787965", "n_pass": [46, 5, 5], "score": "0.3629", "loss": "1.273", "code": "RedNetConnectionType fromFlags(short flags) { connections(flags); }"}
+{"time": "2021-01-20 07:48:24.200310", "n_pass": [56, 6, 6], "score": "0.3661", "loss": "1.3045", "code": "RedNetConnectionType fromFlags(short flags) {(flags); }"}
+{"time": "2021-01-20 07:48:29.155332", "n_pass": [84, 7, 7], "score": "0.3661", "loss": "1.3045", "code": "RedNetConnectionType fromFlags(short flags) {(flags);}"}
+{"time": "2021-01-20 07:48:32.974578", "n_pass": [93, 8, 8], "score": "0.3661", "loss": "1.3045", "code": "RedNetConnectionType fromFlags(short flags){(flags);}"}
+
+Minimal simplified code:
+RedNetConnectionType fromFlags(short flags){(flags);}
+

@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreSchema.java
+method_name = setIgnoreSchema
+method_body = public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }
+predict, score, loss = setIgnoreSchema, 0.4317021, 1.2876701
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:30:43.323930", "n_pass": [1, 1, 1], "score": "0.4317", "loss": "1.2877", "code": "public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }"}
+{"time": "2021-01-23 07:30:48.975540", "n_pass": [25, 5, 2], "score": "0.5239", "loss": "0.9102", "code": "public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoremaTopics = ignoreSchemaTopics; return this; }"}
+{"time": "2021-01-23 07:30:50.276294", "n_pass": [26, 6, 3], "score": "0.4167", "loss": "1.1098", "code": "public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:30:51.957975", "n_pass": [30, 7, 4], "score": "0.3933", "loss": "1.6421", "code": "public Builder setIgnoreSchema(boolean ignorgnoreSchemaTopics) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:30:54.912992", "n_pass": [46, 9, 5], "score": "0.436", "loss": "1.2191", "code": "public Builder setIgnoreSchema(boolean ignorTopics) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:30:58.803203", "n_pass": [52, 12, 6], "score": "0.4984", "loss": "1.395", "code": "der setIgnoreSchema(boolean ignorTopics) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:31:04.134727", "n_pass": [81, 15, 7], "score": "0.5473", "loss": "1.4088", "code": "der setIgnoreSchema(an ignorTopics) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:31:05.424341", "n_pass": [83, 16, 8], "score": "0.6929", "loss": "0.865", "code": "der setIgnoreSchema(an igncs) { this.ignoreSchema = ignoraTopics; return this; }"}
+{"time": "2021-01-23 07:31:10.647921", "n_pass": [89, 20, 9], "score": "0.5393", "loss": "0.7763", "code": "der setIgnoreSchema(an igncs) { this.ignoreSchema = ignocs; return this; }"}
+{"time": "2021-01-23 07:31:11.937514", "n_pass": [91, 21, 10], "score": "0.4576", "loss": "1.3577", "code": "der setIgnoreSchema(an igncs) { this.ignoreSchema = ignocs; rehis; }"}
+{"time": "2021-01-23 07:31:18.175996", "n_pass": [103, 25, 11], "score": "0.9462", "loss": "0.1961", "code": "der setIgnoreSchema(an igncs) { this.ignoreSchema = ignohis; }"}
+{"time": "2021-01-23 07:31:24.466098", "n_pass": [137, 29, 12], "score": "0.9462", "loss": "0.1961", "code": "der setIgnoreSchema(an igncs) { this.ignoreSchema = igno; }"}
+{"time": "2021-01-23 07:31:25.751667", "n_pass": [138, 30, 13], "score": "0.8432", "loss": "0.2632", "code": "r setIgnoreSchema(an igncs) { this.ignoreSchema = igno; }"}
+{"time": "2021-01-23 07:31:29.205857", "n_pass": [147, 31, 14], "score": "0.5901", "loss": "0.62", "code": "r setIgnoreSchema(an cs) { this.ignoreSchema = igno; }"}
+{"time": "2021-01-23 07:31:30.509331", "n_pass": [150, 32, 15], "score": "0.7104", "loss": "0.7293", "code": "r setIgnoreSchema(an cs) { s.ignoreSchema = igno; }"}
+{"time": "2021-01-23 07:31:39.564965", "n_pass": [157, 39, 16], "score": "0.5704", "loss": "0.9078", "code": "r setIgnoreSchema(an cs) { s.ignoreSchema = i; }"}
+{"time": "2021-01-23 07:32:12.568204", "n_pass": [272, 56, 17], "score": "0.5704", "loss": "0.9078", "code": "r setIgnoreSchema(an cs) { s.ignoreSchema = i;}"}
+{"time": "2021-01-23 07:32:22.629078", "n_pass": [294, 59, 18], "score": "0.7313", "loss": "0.7472", "code": "r setIgnoreSchema(an s) { s.ignoreSchema = i;}"}
+{"time": "2021-01-23 07:32:23.934903", "n_pass": [297, 60, 19], "score": "0.7313", "loss": "0.7472", "code": "r setIgnoreSchema(an s){ s.ignoreSchema = i;}"}
+{"time": "2021-01-23 07:32:25.218185", "n_pass": [299, 61, 20], "score": "0.7313", "loss": "0.7472", "code": "r setIgnoreSchema(an s){s.ignoreSchema = i;}"}
+{"time": "2021-01-23 07:32:43.250705", "n_pass": [314, 75, 21], "score": "0.7313", "loss": "0.7472", "code": "r setIgnoreSchema(an s){s.ignoreSchema= i;}"}
+{"time": "2021-01-23 07:32:45.839580", "n_pass": [316, 77, 22], "score": "0.7313", "loss": "0.7472", "code": "r setIgnoreSchema(an s){s.ignoreSchema=i;}"}
+{"time": "2021-01-23 07:32:54.570802", "n_pass": [339, 79, 23], "score": "0.467", "loss": "1.1226", "code": "r setIgnoreSchema(a s){s.ignoreSchema=i;}"}
+
+Minimal simplified code:
+r setIgnoreSchema(a s){s.ignoreSchema=i;}
+

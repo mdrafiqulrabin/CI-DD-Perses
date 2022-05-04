@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/storeconfig/StoreDescription_isAttributes.java
+method_name = isAttributes
+method_body = public boolean isAttributes() { return attributes; }
+
+topk path-contexts for sub-token: is
+[0.3212] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,attributes
+[0.3098] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,attributes
+[0.0861] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: is
+['METHOD_NAME', 'attributes', 'boolean', 'attributes', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: attributes
+[0.4576] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,attributes
+[0.4144] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,attributes
+[0.0323] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: attributes
+['METHOD_NAME', 'attributes', 'boolean', 'attributes', 'boolean', 'METHOD_NAME']
+

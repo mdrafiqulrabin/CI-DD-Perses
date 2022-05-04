@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/SimpleMonitorService_run.java
+method_name = run
+method_body = public void run() { try { draw(); } catch (Throwable t) { logger.error("Unexpected error occur at draw stat chart, cause: " + t.getMessage(), t); } }
+predict, score, loss = run, 0.9247642755508423, 0.10111032426357269
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:11:31.674723", "n_pass": [1, 1, 1], "score": "0.9248", "loss": "0.1011", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"Unexpected error occur at draw stat chart, cause: \" + t.getMessage(), t); } }"}
+{"time": "2020-12-26 22:11:34.528644", "n_pass": [10, 2, 2], "score": "0.8989", "loss": "0.1276", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"\" + t.getMessage(), t); } }"}
+{"time": "2020-12-26 22:11:37.772698", "n_pass": [73, 3, 3], "score": "0.6681", "loss": "0.4798", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" + t.getMessage(), t); } }"}
+{"time": "2020-12-26 22:11:40.573186", "n_pass": [76, 4, 4], "score": "0.8915", "loss": "0.156", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage(), t); } }"}
+{"time": "2020-12-26 22:11:43.571430", "n_pass": [78, 5, 5], "score": "0.7918", "loss": "0.2714", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:11:46.379728", "n_pass": [81, 6, 6], "score": "0.7918", "loss": "0.2714", "code": "void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:11:58.970741", "n_pass": [147, 8, 7], "score": "0.7918", "loss": "0.2714", "code": "void run(){ try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:01.774694", "n_pass": [149, 9, 8], "score": "0.7918", "loss": "0.2714", "code": "void run(){try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:04.562159", "n_pass": [151, 10, 9], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{ draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:07.415227", "n_pass": [153, 11, 10], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:10.209618", "n_pass": [158, 12, 11], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();} catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:13.085617", "n_pass": [160, 13, 12], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:15.893381", "n_pass": [162, 14, 13], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:18.738373", "n_pass": [168, 15, 14], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t){ logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:21.569855", "n_pass": [170, 16, 15], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t){logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-26 22:12:27.233917", "n_pass": [175, 18, 16], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t){logger(\"\"+getMessage()); } }"}
+{"time": "2020-12-26 22:12:37.768441", "n_pass": [217, 21, 17], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t){logger(\"\"+getMessage());} }"}
+{"time": "2020-12-26 22:12:40.586690", "n_pass": [218, 22, 18], "score": "0.7918", "loss": "0.2714", "code": "void run(){try{draw();}catch(Throwable t){logger(\"\"+getMessage());}}"}
+
+Minimal simplified code:
+void run(){try{draw();}catch(Throwable t){logger(""+getMessage());}}
+

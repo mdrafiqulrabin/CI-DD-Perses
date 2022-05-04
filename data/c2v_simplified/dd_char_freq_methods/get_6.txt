@@ -1,0 +1,57 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslTupleImpl_get.java
+method_name = get
+method_body = @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException("selection " + name + " not found"); } return get(index.intValue(), clazz); }
+predict, score, loss = get, 0.9798508286476135, 0.028014691546559334
+
+Trace of simplified code(s):
+{"time": "2020-12-28 09:32:14.830956", "n_pass": [1, 1, 1], "score": "0.9799", "loss": "0.028", "code": "@Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:17.483474", "n_pass": [22, 2, 2], "score": "0.3161", "loss": "1.5679", "code": "@Override public <T> T get(String name, Class<T> clazz) { ings.get(name); if (index == null) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:20.128689", "n_pass": [44, 3, 3], "score": "0.9738", "loss": "0.0377", "code": "@Override public <T> T get(String name, Class<T> clazz) {; if (index == null) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:22.764507", "n_pass": [47, 4, 4], "score": "0.9867", "loss": "0.0216", "code": "@Override public <T> T get(String name, Class<T> clazz) {; if (index == null) { throw nentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:25.406017", "n_pass": [56, 5, 5], "score": "0.9879", "loss": "0.0214", "code": "@Override public <T> T get(Sass<T> clazz) {; if (index == null) { throw nentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:28.074133", "n_pass": [96, 6, 6], "score": "0.9422", "loss": "0.1136", "code": "@Override public <T> T get(Sass<T> clazz) {; if (index == null) { throxception(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:30.698589", "n_pass": [97, 7, 7], "score": "0.9422", "loss": "0.1136", "code": "@Override public <T> T get(Sass<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-28 09:32:33.331407", "n_pass": [105, 8, 8], "score": "0.8866", "loss": "0.2454", "code": "@Override public <T> T get(Sass<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlue(), clazz); }"}
+{"time": "2020-12-28 09:32:35.949385", "n_pass": [106, 9, 9], "score": "0.7467", "loss": "0.7778", "code": "@Override public <T> T get(Sass<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:38.594645", "n_pass": [109, 10, 10], "score": "0.739", "loss": "0.7671", "code": "@Overriic <T> T get(Sass<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:41.664224", "n_pass": [161, 11, 11], "score": "0.739", "loss": "0.7671", "code": "@Overr <T> T get(Sass<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:44.681741", "n_pass": [166, 12, 12], "score": "0.739", "loss": "0.7671", "code": "@Overr <T> T get(S<T> clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:47.308720", "n_pass": [167, 13, 13], "score": "0.8452", "loss": "0.4271", "code": "@Overr <T> T get(S clazz) {; if (index == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:49.926794", "n_pass": [172, 14, 14], "score": "0.7924", "loss": "0.5512", "code": "@Overr <T> T get(S clazz) {; if (x == null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:52.569320", "n_pass": [173, 15, 15], "score": "0.6882", "loss": "0.8104", "code": "@Overr <T> T get(S clazz) {; if ( null) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:55.186724", "n_pass": [174, 16, 16], "score": "0.8573", "loss": "0.4076", "code": "@Overr <T> T get(S clazz) {; if (l) { thron(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:32:57.803735", "n_pass": [176, 17, 17], "score": "0.8366", "loss": "0.5349", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"selection \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:33:00.423062", "n_pass": [178, 18, 18], "score": "0.7956", "loss": "0.5603", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"ction \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:33:03.037329", "n_pass": [179, 19, 19], "score": "0.823", "loss": "0.5895", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" not found\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:33:05.671533", "n_pass": [184, 20, 20], "score": "0.7232", "loss": "0.7087", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" nound\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:33:08.280855", "n_pass": [185, 21, 21], "score": "0.7521", "loss": "0.6212", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return get(indlazz); }"}
+{"time": "2020-12-28 09:33:13.520767", "n_pass": [191, 23, 22], "score": "0.927", "loss": "0.2221", "code": "@Overr <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return get(ind); }"}
+{"time": "2020-12-28 09:33:16.137569", "n_pass": [194, 24, 23], "score": "0.6966", "loss": "0.9922", "code": "@Ov <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return get(ind); }"}
+{"time": "2020-12-28 09:33:19.168642", "n_pass": [212, 25, 24], "score": "0.3592", "loss": "2.0089", "code": "@Ov <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:31.199405", "n_pass": [278, 29, 25], "score": "0.301", "loss": "1.7639", "code": "@v <T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:33.819349", "n_pass": [280, 30, 26], "score": "0.301", "loss": "1.7639", "code": "@v<T> T get(S clazz) {; if (l) {on(\"n \" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:42.540339", "n_pass": [292, 33, 27], "score": "0.301", "loss": "1.7639", "code": "@v<T> T get(S clazz) {if (l) {on(\"n \" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:45.160876", "n_pass": [297, 34, 28], "score": "0.9216", "loss": "0.1808", "code": "@v<T> T get(S clazz) {if (l) {(\"n \" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:47.762125", "n_pass": [299, 35, 29], "score": "0.9235", "loss": "0.1751", "code": "@v<T> T get(S clazz) {if (l) {(\"\" + name + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:50.368517", "n_pass": [302, 36, 30], "score": "0.9239", "loss": "0.1745", "code": "@v<T> T get(S clazz) {if (l) {(\"\" + me + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:52.984416", "n_pass": [303, 37, 31], "score": "0.9213", "loss": "0.1814", "code": "@v<T> T get(S clazz) {if (l) {(\"\" +  + \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:55.594356", "n_pass": [304, 38, 32], "score": "0.9209", "loss": "0.1832", "code": "@v<T> T get(S clazz) {if (l) {(\"\" +  \" n\"); } return(ind); }"}
+{"time": "2020-12-28 09:33:58.201907", "n_pass": [306, 39, 33], "score": "0.9212", "loss": "0.1845", "code": "@v<T> T get(S clazz) {if (l) {(\"\" +  \"\"); } return(ind); }"}
+{"time": "2020-12-28 09:34:08.662680", "n_pass": [314, 43, 34], "score": "0.8193", "loss": "0.3368", "code": "@v<T> T get(S clazz) {if (l) {(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:14.722433", "n_pass": [327, 45, 35], "score": "0.626", "loss": "0.7455", "code": "@v<T> T get(S clz) {if (l) {(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:25.988597", "n_pass": [356, 49, 36], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z) {if (l) {(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:42.489726", "n_pass": [433, 53, 37], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if (l) {(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:45.092556", "n_pass": [436, 54, 38], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l) {(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:47.715061", "n_pass": [440, 55, 39], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\" +  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:50.317084", "n_pass": [445, 56, 40], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+  \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:52.943858", "n_pass": [447, 57, 41], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+ \"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:55.539721", "n_pass": [448, 58, 42], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+\"\"); } return(i); }"}
+{"time": "2020-12-28 09:34:58.161181", "n_pass": [453, 59, 43], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+\"\");} return(i); }"}
+{"time": "2020-12-28 09:35:00.767600", "n_pass": [455, 60, 44], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+\"\");}return(i); }"}
+{"time": "2020-12-28 09:35:19.085669", "n_pass": [466, 67, 45], "score": "0.7328", "loss": "0.5887", "code": "@v<T> T get(S z){if(l){(\"\"+\"\");}return(i);}"}
+{"time": "2020-12-28 09:35:21.681784", "n_pass": [473, 68, 46], "score": "0.7328", "loss": "0.5887", "code": "@v<T>T get(S z){if(l){(\"\"+\"\");}return(i);}"}
+
+Minimal simplified code:
+@v<T>T get(S z){if(l){(""+"");}return(i);}
+

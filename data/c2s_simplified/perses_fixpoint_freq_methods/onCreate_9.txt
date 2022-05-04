@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:13:16.551675", "score": "0.9996", "loss": "0.0006", "code": "class T { @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } } }"}
+{"time": "2020-12-21 12:14:14.979869", "score": "0.9936", "loss": "0.0068", "code": "class T { @Override public void onCreate() { super.onCreate(); } }"}
+{"time": "2020-12-21 12:14:36.036717", "score": "0.9312", "loss": "0.0818", "code": "class T { void onCreate() { super.onCreate(); } }"}
+
+Minimal simplified code:
+class T {
+                 void onCreate() { super.onCreate();                                                                                                                      }
+}
+
+

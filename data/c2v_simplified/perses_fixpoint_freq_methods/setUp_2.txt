@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/test/java/br/com/six2six/fixturefactory/ObjectFactoryWithProcessorTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 21:44:31.676772", "score": "0.5487", "loss": "0.602", "code": "class T { @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); } }"}
+{"time": "2020-12-28 21:47:33.895694", "score": "0.641", "loss": "0.447", "code": "class T { @Before public void setUp() { session = mock(Session.class); } }"}
+{"time": "2020-12-28 21:49:27.577273", "score": "0.6734", "loss": "0.3984", "code": "class T { @Before public void setUp() { session = mock( ); } }"}
+{"time": "2020-12-28 21:50:46.607764", "score": "0.6734", "loss": "0.3984", "code": "class T { @Before void setUp() { session = mock( ); } }"}
+{"time": "2020-12-28 21:54:29.431131", "score": "0.6143", "loss": "0.4901", "code": "class T { @Before void setUp() { session = mock ; } }"}
+
+Minimal simplified code:
+class T {
+@Before        void setUp() { session = mock               ;                                              }
+}
+
+

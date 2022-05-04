@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/DOM_setInspectModeEnabled.java
+method_name = setInspectModeEnabled
+method_body = @ChromeDevtoolsMethod public void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest.class); mDocument.postAndWait(new Runnable() { @Override public void run() { mDocument.setInspectModeEnabled(request.enabled); } }); }
+
+topk path-contexts for sub-token: set
+[0.1326] chrome|devtools|method,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1246] chrome|devtools|method,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0377] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0346] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0319] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0247] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+[0.0231] params,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0225] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0220] params,NameExpr2|MethodCallExpr|NameExpr3,convert|value
+[0.0190] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: set
+['chrome|devtools|method', 'METHOD_NAME', 'chrome|devtools|method', 'void', 'runnable', 'set|inspect|mode|enabled', 'void', 'set|inspect|mode|enabled', 'm|document', 'set|inspect|mode|enabled', 'peer', 'params', 'params', 'METHOD_NAME', 'METHOD_NAME', 'set|inspect|mode|enabled', 'params', 'convert|value', 'peer', 'METHOD_NAME']
+
+topk path-contexts for sub-token: inspect
+[0.2255] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.1371] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0751] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0745] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0507] enabled,NameExpr2|FieldAccessExpr2|MethodCallExpr|NameExpr3,set|inspect|mode|enabled
+[0.0475] params,NameExpr2|MethodCallExpr|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+[0.0348] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+[0.0336] set|inspect|mode|enabled|request,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+[0.0316] request,NameExpr0|FieldAccessExpr2|MethodCallExpr|NameExpr3,set|inspect|mode|enabled
+[0.0220] request,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+
+topk terminals for sub-token: inspect
+['m|document', 'set|inspect|mode|enabled', 'runnable', 'set|inspect|mode|enabled', 'void', 'set|inspect|mode|enabled', 'METHOD_NAME', 'set|inspect|mode|enabled', 'enabled', 'set|inspect|mode|enabled', 'params', 'set|inspect|mode|enabled|request', 'm|document', 'enabled', 'set|inspect|mode|enabled|request', 'set|inspect|mode|enabled|request', 'request', 'set|inspect|mode|enabled', 'request', 'set|inspect|mode|enabled|request']
+
+topk path-contexts for sub-token: mode
+[0.2959] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.1977] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0949] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0946] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0548] enabled,NameExpr2|FieldAccessExpr2|MethodCallExpr|NameExpr3,set|inspect|mode|enabled
+[0.0466] params,NameExpr2|MethodCallExpr|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+[0.0387] request,NameExpr0|FieldAccessExpr2|MethodCallExpr|NameExpr3,set|inspect|mode|enabled
+[0.0289] request,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+[0.0211] set|inspect|mode|enabled|request,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|inspect|mode|enabled|request
+[0.0130] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+
+topk terminals for sub-token: mode
+['m|document', 'set|inspect|mode|enabled', 'runnable', 'set|inspect|mode|enabled', 'METHOD_NAME', 'set|inspect|mode|enabled', 'void', 'set|inspect|mode|enabled', 'enabled', 'set|inspect|mode|enabled', 'params', 'set|inspect|mode|enabled|request', 'request', 'set|inspect|mode|enabled', 'request', 'set|inspect|mode|enabled|request', 'set|inspect|mode|enabled|request', 'set|inspect|mode|enabled|request', 'm|document', 'enabled']
+
+topk path-contexts for sub-token: enabled
+[0.1595] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.1345] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.1020] m|document,NameExpr0|MethodCallExpr|ObjectCreationExpr|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+[0.0508] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+[0.0508] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0495] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+[0.0445] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|inspect|mode|enabled
+[0.0391] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,enabled
+[0.0378] enabled,NameExpr2|FieldAccessExpr2|MethodCallExpr|NameExpr3,set|inspect|mode|enabled
+[0.0356] request,NameExpr0|FieldAccessExpr2|NameExpr2,enabled
+
+topk terminals for sub-token: enabled
+['runnable', 'set|inspect|mode|enabled', 'm|document', 'set|inspect|mode|enabled', 'm|document', 'enabled', 'runnable', 'enabled', 'METHOD_NAME', 'set|inspect|mode|enabled', 'void', 'enabled', 'void', 'set|inspect|mode|enabled', 'METHOD_NAME', 'enabled', 'enabled', 'set|inspect|mode|enabled', 'request', 'enabled']
+

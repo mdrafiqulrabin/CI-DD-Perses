@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/Key_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 11:20:37.834050", "score": "1.0", "loss": "0.0", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); } }"}
+{"time": "2020-12-29 11:24:20.651459", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } } }"}
+{"time": "2020-12-29 11:25:36.196544", "score": "0.9997", "loss": "0.0004", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } } }"}
+{"time": "2020-12-29 11:27:30.408098", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-29 11:28:49.576347", "score": "0.9946", "loss": "0.0068", "code": "class T { boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-29 11:30:08.956663", "score": "0.8719", "loss": "0.2304", "code": "class T { boolean equals(Object o) { if (this == o) return ; } }"}
+{"time": "2020-12-29 11:33:51.493028", "score": "0.3367", "loss": "1.1769", "code": "class T { boolean equals(Object o) { if ( o) return ; } }"}
+
+Minimal simplified code:
+class T {
+                 boolean equals(Object o) { if (        o)   return     ;                                                                                                                                                                                                  }
+}
+
+

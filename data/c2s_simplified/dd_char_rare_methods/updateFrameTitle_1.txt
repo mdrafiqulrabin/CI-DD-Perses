@@ -1,0 +1,64 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataViewerMainPanel_updateFrameTitle.java
+method_name = updateFrameTitle
+method_body = public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }
+predict, score, loss = updateFrameTitle, 0.48172224, 2.6162286
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:40:27.549626", "n_pass": [1, 1, 1], "score": "0.4817", "loss": "2.6162", "code": "public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:40:29.235207", "n_pass": [26, 2, 2], "score": "0.3439", "loss": "3.3874", "code": "public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:40:34.292353", "n_pass": [58, 5, 3], "score": "0.3427", "loss": "3.28", "code": "public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (rnalFrame() != null) { getitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:40:40.326872", "n_pass": [105, 9, 4], "score": "0.3427", "loss": "3.28", "code": " void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (rnalFrame() != null) { getitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:40:45.009049", "n_pass": [115, 12, 5], "score": "0.3086", "loss": "3.221", "code": " void updateFrameTitle() { if (getParentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFrame() != null) { getitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:41:08.599274", "n_pass": [204, 29, 6], "score": "0.314", "loss": "3.058", "code": " void updateFrameTitle() { if (getParentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { getitle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:41:11.228018", "n_pass": [209, 31, 7], "score": "0.4397", "loss": "2.3421", "code": " void updateFrameTitle() { if (getParentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFrameTitle()); } }"}
+{"time": "2021-01-23 10:41:13.853979", "n_pass": [212, 33, 8], "score": "0.3813", "loss": "2.9891", "code": " void updateFrameTitle() { if (getParentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFritle()); } }"}
+{"time": "2021-01-23 10:41:15.173586", "n_pass": [213, 34, 9], "score": "0.4402", "loss": "2.7168", "code": " void updateFrameTitle() { if (getParentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:41:20.084024", "n_pass": [227, 36, 10], "score": "0.3683", "loss": "3.1987", "code": " void updateFrameTitle() { if (gerentFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:41:21.392738", "n_pass": [228, 37, 11], "score": "0.444", "loss": "2.5241", "code": " void updateFrameTitle() { if (getFrame() != null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:41:25.330399", "n_pass": [231, 40, 12], "score": "0.4645", "loss": "2.6064", "code": " void updateFrameTitle() { if (getFrame!= null) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:41:27.949800", "n_pass": [233, 42, 13], "score": "0.4688", "loss": "3.0791", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnalFe() != null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:41:41.138001", "n_pass": [252, 52, 14], "score": "0.4578", "loss": "2.9735", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnalF!= null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:42:03.109161", "n_pass": [291, 67, 15], "score": "0.5034", "loss": "2.3981", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rn!= null) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:42:04.419816", "n_pass": [292, 68, 16], "score": "0.4629", "loss": "3.2355", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnull) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:42:27.034031", "n_pass": [404, 82, 17], "score": "0.4417", "loss": "3.0088", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) { gle(getFr()); } }"}
+{"time": "2021-01-23 10:42:28.334329", "n_pass": [406, 83, 18], "score": "0.2733", "loss": "3.49", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(getFr()); } }"}
+{"time": "2021-01-23 10:42:30.980072", "n_pass": [409, 85, 19], "score": "0.2647", "loss": "3.7144", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr()); } }"}
+{"time": "2021-01-23 10:42:33.604531", "n_pass": [411, 87, 20], "score": "0.2164", "loss": "3.9809", "code": " void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:42:34.904923", "n_pass": [415, 88, 21], "score": "0.2164", "loss": "3.9809", "code": "void updateFrameTitle() { if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:42:47.675990", "n_pass": [439, 93, 22], "score": "0.2164", "loss": "3.9809", "code": "void updateFrameTitle(){ if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:42:48.997267", "n_pass": [441, 94, 23], "score": "0.2164", "loss": "3.9809", "code": "void updateFrameTitle(){if (getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:42:50.308080", "n_pass": [444, 95, 24], "score": "0.2164", "loss": "3.9809", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame().setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:43:02.144946", "n_pass": [458, 104, 25], "score": "0.2345", "loss": "3.9341", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(getFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:43:47.616969", "n_pass": [601, 131, 26], "score": "0.2257", "loss": "4.1327", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle()); } if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:03.407436", "n_pass": [617, 143, 27], "score": "0.2257", "loss": "4.1327", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());} if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:04.747840", "n_pass": [619, 144, 28], "score": "0.2257", "loss": "4.1327", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if (rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:06.062215", "n_pass": [622, 145, 29], "score": "0.2257", "loss": "4.1327", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(rnl) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:07.373586", "n_pass": [624, 146, 30], "score": "0.2391", "loss": "3.8346", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(nl) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:08.698473", "n_pass": [625, 147, 31], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(l) {le(gFr); } }"}
+{"time": "2021-01-23 10:44:10.012116", "n_pass": [628, 148, 32], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr); } }"}
+{"time": "2021-01-23 10:44:17.934514", "n_pass": [638, 154, 33], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);} }"}
+{"time": "2021-01-23 10:44:19.247275", "n_pass": [640, 155, 34], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!= l) { gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);}}"}
+{"time": "2021-01-23 10:44:43.822865", "n_pass": [679, 169, 35], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!=l) { gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);}}"}
+{"time": "2021-01-23 10:44:45.134342", "n_pass": [682, 170, 36], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!=l){ gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);}}"}
+{"time": "2021-01-23 10:44:46.446044", "n_pass": [684, 171, 37], "score": "0.2442", "loss": "3.7378", "code": "void updateFrameTitle(){if(getFrame!=l){gntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);}}"}
+{"time": "2021-01-23 10:44:47.769755", "n_pass": [685, 172, 38], "score": "0.2489", "loss": "3.2643", "code": "void updateFrameTitle(){if(getFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){le(gFr);}}"}
+{"time": "2021-01-23 10:45:25.895854", "n_pass": [726, 201, 39], "score": "0.2857", "loss": "3.5158", "code": "void updateFrameTitle(){if(getFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){e(gFr);}}"}
+{"time": "2021-01-23 10:45:27.226942", "n_pass": [727, 202, 40], "score": "0.3829", "loss": "2.7533", "code": "void updateFrameTitle(){if(getFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){(gFr);}}"}
+{"time": "2021-01-23 10:45:28.563087", "n_pass": [729, 203, 41], "score": "0.382", "loss": "2.8047", "code": "void updateFrameTitle(){if(getFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){(Fr);}}"}
+{"time": "2021-01-23 10:45:31.220653", "n_pass": [731, 205, 42], "score": "0.378", "loss": "2.8288", "code": "void updateFrameTitle(){if(getFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:46.680265", "n_pass": [765, 212, 43], "score": "0.319", "loss": "2.937", "code": "void updateFrameTitle(){if(geFrame!=l){ntFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:54.559922", "n_pass": [771, 218, 44], "score": "0.2116", "loss": "3.618", "code": "void updateFrameTitle(){if(geFrame=l){ntFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:55.852705", "n_pass": [772, 219, 45], "score": "0.3105", "loss": "3.4595", "code": "void updateFrameTitle(){if(geFramel){ntFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:57.158994", "n_pass": [773, 220, 46], "score": "0.3149", "loss": "2.6436", "code": "void updateFrameTitle(){if(geFrame){ntFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:58.470840", "n_pass": [776, 221, 47], "score": "0.2849", "loss": "3.0825", "code": "void updateFrameTitle(){if(geFrame){tFrame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:45:59.793972", "n_pass": [777, 222, 48], "score": "0.2993", "loss": "3.0275", "code": "void updateFrameTitle(){if(geFrame){Frame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:46:01.116674", "n_pass": [778, 223, 49], "score": "0.3009", "loss": "3.4993", "code": "void updateFrameTitle(){if(geFrame){rame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:46:02.408458", "n_pass": [779, 224, 50], "score": "0.2728", "loss": "3.723", "code": "void updateFrameTitle(){if(geFrame){ame.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:46:03.724967", "n_pass": [780, 225, 51], "score": "0.2969", "loss": "3.4847", "code": "void updateFrameTitle(){if(geFrame){me.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:46:05.049988", "n_pass": [781, 226, 52], "score": "0.2931", "loss": "3.441", "code": "void updateFrameTitle(){if(geFrame){e.setTitle(gtFrameTitle());}if(l){(F);}}"}
+{"time": "2021-01-23 10:46:18.100640", "n_pass": [793, 236, 53], "score": "0.2634", "loss": "3.4942", "code": "void updateFrameTitle(){if(geFrame){e.setTitle(tFrameTitle());}if(l){(F);}}"}
+
+Minimal simplified code:
+void updateFrameTitle(){if(geFrame){e.setTitle(tFrameTitle());}if(l){(F);}}
+

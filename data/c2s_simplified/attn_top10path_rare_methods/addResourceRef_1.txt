@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addResourceRef.java
+method_name = addResourceRef
+method_body = public void addResourceRef(ContextResource resourceRef) { if (resourceRefs.containsKey(resourceRef.getName())) { throw new IllegalArgumentException(sm.getString("webXml.duplicateResourceRef", resourceRef.getName())); } resourceRefs.put(resourceRef.getName(), resourceRef); }
+
+topk path-contexts for sub-token: add
+[0.1742] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1139] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0775] context|resource,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0413] resource|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0358] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0321] resource|ref,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0232] illegal|argument|exception,ClassOrInterfaceType0|ObjectCreationExpr|ThrowStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0203] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,resource|ref
+[0.0203] context|resource,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0198] get|name,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+
+topk terminals for sub-token: add
+['void', 'METHOD_NAME', 'METHOD_NAME', 'put', 'context|resource', 'put', 'resource|ref', 'put', 'METHOD_NAME', 'resource|refs', 'resource|ref', 'put', 'illegal|argument|exception', 'put', 'METHOD_NAME', 'resource|ref', 'context|resource', 'resource|refs', 'get|name', 'put']
+
+topk path-contexts for sub-token: resource
+[0.2097] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0705] context|resource,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0477] resource|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0428] illegal|argument|exception,ClassOrInterfaceType0|ObjectCreationExpr|ThrowStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0373] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0356] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0308] contains|key,NameExpr3|MethodCallExpr|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0258] get|name,NameExpr2|MethodCallExpr2|MethodCallExpr|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0191] resource|refs,NameExpr0|MethodCallExpr|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0184] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,resource|ref
+
+topk terminals for sub-token: resource
+['METHOD_NAME', 'resource|refs', 'context|resource', 'resource|refs', 'resource|ref', 'resource|refs', 'illegal|argument|exception', 'resource|refs', 'METHOD_NAME', 'resource|refs', 'void', 'METHOD_NAME', 'contains|key', 'resource|refs', 'get|name', 'resource|refs', 'resource|refs', 'resource|refs', 'METHOD_NAME', 'resource|ref']
+
+topk path-contexts for sub-token: ref
+[0.1413] context|resource,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.1337] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0724] resource|ref,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0545] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|resource
+[0.0457] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,context|resource
+[0.0377] illegal|argument|exception,ClassOrInterfaceType0|ObjectCreationExpr|ThrowStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,resource|refs
+[0.0300] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,resource|ref
+[0.0259] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0249] context|resource,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,resource|ref
+[0.0228] resource|ref,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,context|resource
+
+topk terminals for sub-token: ref
+['context|resource', 'resource|refs', 'METHOD_NAME', 'resource|refs', 'resource|ref', 'resource|refs', 'METHOD_NAME', 'context|resource', 'void', 'context|resource', 'illegal|argument|exception', 'resource|refs', 'METHOD_NAME', 'resource|ref', 'void', 'METHOD_NAME', 'context|resource', 'resource|ref', 'resource|ref', 'context|resource']
+

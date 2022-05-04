@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_releaseObject.java
+method_name = releaseObject
+method_body = @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString("objectId"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }
+
+topk path-contexts:
+[0.0545] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),jsonrpcpeer
+[0.0543] jsonexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr2),getsession
+[0.0524] params,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr2),getobjects
+[0.0515] jsonrpcpeer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType5),jsonexception
+[0.0474] params,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType5),jsonexception
+[0.0459] params,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(StringLiteralExpr2),objectid
+[0.0447] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),jsonrpcpeer
+[0.0434] jsonrpcpeer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),params
+[0.0418] chromedevtoolsmethod,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0367] jsonexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr2),getobjects
+
+topk terminals:
+['void', 'jsonrpcpeer', 'jsonexception', 'getsession', 'params', 'getobjects', 'jsonrpcpeer', 'jsonexception', 'params', 'jsonexception', 'params', 'objectid', 'METHOD_NAME', 'jsonrpcpeer', 'jsonrpcpeer', 'params', 'chromedevtoolsmethod', 'METHOD_NAME', 'jsonexception', 'getobjects']
+

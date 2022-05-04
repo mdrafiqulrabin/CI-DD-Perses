@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobs/DummyJob_getOnAddedCnt.java
+method_name = getOnAddedCnt
+method_body = public int getOnAddedCnt() { return onAddedCnt; }
+predict, score, loss = getOnAddedCnt, 0.47939456, 1.8053777
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:32:38.557062", "n_pass": [1, 1, 1], "score": "0.4794", "loss": "1.8054", "code": "public int getOnAddedCnt() { return onAddedCnt; }"}
+{"time": "2021-01-23 13:32:40.554948", "n_pass": [20, 2, 2], "score": "0.4794", "loss": "1.8054", "code": " int getOnAddedCnt() { return onAddedCnt; }"}
+{"time": "2021-01-23 13:32:45.170563", "n_pass": [41, 5, 3], "score": "0.7242", "loss": "0.97", "code": "t getOnAddedCnt() { return onAddedCnt; }"}
+{"time": "2021-01-23 13:33:12.219182", "n_pass": [139, 19, 4], "score": "0.7242", "loss": "0.97", "code": "t getOnAddedCnt(){ return onAddedCnt; }"}
+{"time": "2021-01-23 13:33:13.499060", "n_pass": [141, 20, 5], "score": "0.7242", "loss": "0.97", "code": "t getOnAddedCnt(){return onAddedCnt; }"}
+{"time": "2021-01-23 13:33:36.912377", "n_pass": [160, 38, 6], "score": "0.7242", "loss": "0.97", "code": "t getOnAddedCnt(){return onAddedCnt;}"}
+
+Minimal simplified code:
+t getOnAddedCnt(){return onAddedCnt;}
+

@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/elements/android/ViewGroupDescriptor_onGetChildren.java
+method_name = onGetChildren
+method_body = @Override protected void onGetChildren(ViewGroup element, Accumulator<Object> children) { for (int i = 0, N = element.getChildCount(); i < N; ++i) { final View childView = element.getChildAt(i); if (isChildVisible(childView)) { final Object childElement = getElementForView(element, childView); children.store(childElement); } } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 12:48:07.397102", "score": "0.3127", "loss": "2.1598", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator<Object> children) { for (int i = 0, N = element.getChildCount(); i < N; ++i) { final View childView = element.getChildAt(i); if (isChildVisible(childView)) { final Object childElement = getElementForView(element, childView); children.store(childElement); } } } }"}
+{"time": "2021-01-24 12:54:24.855775", "score": "0.3038", "loss": "2.1461", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator<Object> children) { for (int i = 0, N = element.getChildCount(); i < N; ++i) { if (isChildVisible(childView)) { final Object childElement = getElementForView(element, childView); children.store(childElement); } } } }"}
+{"time": "2021-01-24 12:55:43.028759", "score": "0.3083", "loss": "2.1174", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator<Object> children) { for (int i = 0, N = element.getChildCount(); i < N; ++i) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:03:09.694418", "score": "0.3257", "loss": "2.169", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator children) { for (int i = 0, N = element.getChildCount(); i < N; ++i) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:03:49.231929", "score": "0.3297", "loss": "2.1462", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); i < N; ++i) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:04:28.912294", "score": "0.3297", "loss": "2.1242", "code": "class T { @Override protected void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); ; ++i) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:05:08.642657", "score": "0.3123", "loss": "2.082", "code": "class T { void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); ; ++i) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:05:48.277372", "score": "0.3235", "loss": "2.0141", "code": "class T { void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); ; ) { if (isChildVisible(childView)) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:06:27.887238", "score": "0.3225", "loss": "1.8263", "code": "class T { void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); ; ) { if (isChildVisible( )) children.store(childElement); } } }"}
+{"time": "2021-01-24 13:07:07.504621", "score": "0.3134", "loss": "1.7251", "code": "class T { void onGetChildren(ViewGroup element, Accumulator children) { for (int i , N = element.getChildCount(); ; ) { if (isChildVisible( )) children.store( ); } } }"}
+
+Minimal simplified code:
+class T {
+                    void onGetChildren(ViewGroup element, Accumulator         children) { for (int i    , N = element.getChildCount();      ;    ) {                                               if (isChildVisible(         ))                                                                      children.store(            );   } }
+}
+
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StopTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/stop").toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:11:07.285871", "score": "0.9991", "loss": "0.0014", "code": "class T { @Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/stop\").toString()); } }"}
+{"time": "2020-12-21 12:11:55.230858", "score": "0.998", "loss": "0.0024", "code": "class T { @Override public void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 12:12:16.365811", "score": "0.9853", "loss": "0.0197", "code": "class T { void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 12:12:26.863492", "score": "0.7564", "loss": "0.4306", "code": "class T { void execute() { super.execute(); } }"}
+
+Minimal simplified code:
+class T {
+                 void execute()                       { super.execute();                                                 }
+}
+
+

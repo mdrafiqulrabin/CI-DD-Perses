@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_addResultMap.java
+method_name = addResultMap
+method_body = public void addResultMap(ResultMap rm) { resultMaps.put(rm.getId(), rm); checkLocallyForDiscriminatedNestedResultMaps(rm); checkGloballyForDiscriminatedNestedResultMaps(rm); }
+
+topk path-contexts for sub-token: add
+[0.2252] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0816] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0526] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0387] rm,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0276] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,rm
+[0.0214] rm,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0176] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,check|locally|for|discriminated|nested|result|maps
+[0.0169] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,result|map
+[0.0160] get|id,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0157] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,rm
+
+topk terminals for sub-token: add
+['void', 'METHOD_NAME', 'METHOD_NAME', 'put', 'result|map', 'put', 'rm', 'put', 'METHOD_NAME', 'rm', 'rm', 'put', 'METHOD_NAME', 'check|locally|for|discriminated|nested|result|maps', 'void', 'result|map', 'get|id', 'put', 'result|map', 'rm']
+
+topk path-contexts for sub-token: result
+[0.1228] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.1089] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.0991] rm,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.0321] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,result|map
+[0.0297] rm,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,result|map
+[0.0256] rm,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0252] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,result|map
+[0.0230] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0202] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,check|globally|for|discriminated|nested|result|maps
+[0.0168] rm,NameExpr1|MethodCallExpr|NameExpr2,check|locally|for|discriminated|nested|result|maps
+
+topk terminals for sub-token: result
+['METHOD_NAME', 'result|maps', 'result|map', 'result|maps', 'rm', 'result|maps', 'void', 'result|map', 'rm', 'result|map', 'rm', 'put', 'METHOD_NAME', 'result|map', 'void', 'METHOD_NAME', 'result|map', 'check|globally|for|discriminated|nested|result|maps', 'rm', 'check|locally|for|discriminated|nested|result|maps']
+
+topk path-contexts for sub-token: map
+[0.3141] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.2053] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.1079] rm,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,result|maps
+[0.0882] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,result|map
+[0.0879] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,result|map
+[0.0286] rm,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,result|map
+[0.0172] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0123] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|id
+[0.0103] result|maps,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,get|id
+[0.0091] result|map,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+
+topk terminals for sub-token: map
+['result|map', 'result|maps', 'METHOD_NAME', 'result|maps', 'rm', 'result|maps', 'METHOD_NAME', 'result|map', 'void', 'result|map', 'rm', 'result|map', 'void', 'METHOD_NAME', 'result|map', 'get|id', 'result|maps', 'get|id', 'result|map', 'put']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+
+topk path-contexts:
+[0.1287] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),mopenhelper
+[0.1068] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr0),context
+[0.0896] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),mopenhelper
+[0.0762] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getcontentresolver
+[0.0687] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),getcontext
+[0.0567] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),videodbhelper
+[0.0450] boolean,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),mcontentresolver
+[0.0310] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),videodbhelper
+[0.0302] getcontentresolver,(NameExpr2)^(MethodCallExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),true
+[0.0285] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr2),getcontentresolver
+
+topk terminals:
+['boolean', 'mopenhelper', 'boolean', 'context', 'METHOD_NAME', 'mopenhelper', 'boolean', 'getcontentresolver', 'boolean', 'getcontext', 'boolean', 'videodbhelper', 'boolean', 'mcontentresolver', 'METHOD_NAME', 'videodbhelper', 'getcontentresolver', 'true', 'METHOD_NAME', 'getcontentresolver']
+

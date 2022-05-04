@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/coyote/http11/upgrade/TestUpgrade_init.java
+method_name = init
+method_body = @Override public void init(WebConnection connection) { try { sis = connection.getInputStream(); sos = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setReadListener(new EchoReadListener()); sos.setWriteListener(new EchoWriteListener()); }
+predict, score, loss = onConnectionBegin, 0.47952825, 10.416313
+
+Ignoring as original_method_name != predicted_method_name.
+

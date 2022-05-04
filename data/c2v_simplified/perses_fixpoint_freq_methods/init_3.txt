@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/TestLocalResolver_init.java
+method_name = init
+method_body = @Before public void init() { WEB_22_LOCAL = urlFor("resources/web-app_2_2.dtd"); WEB_31_LOCAL = urlFor("resources/web-app_3_1.xsd"); WEBCOMMON_31_LOCAL = urlFor("resources/web-common_3_1.xsd"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 22:39:07.061044", "score": "0.855", "loss": "0.1894", "code": "class T { @Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOCAL = urlFor(\"resources/web-app_3_1.xsd\"); WEBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); } }"}
+{"time": "2020-12-28 22:42:50.817328", "score": "0.7688", "loss": "0.3171", "code": "class T { @Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOCAL = urlFor(\"resources/web-app_3_1.xsd\"); WEBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); } }"}
+{"time": "2020-12-28 22:44:09.943037", "score": "0.5741", "loss": "0.6709", "code": "class T { @Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOCAL = urlFor(\"resources/web-app_3_1.xsd\"); WEBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); } }"}
+{"time": "2020-12-28 22:45:28.801560", "score": "0.9884", "loss": "0.0132", "code": "class T { @Before public void init() { publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); } }"}
+{"time": "2020-12-28 22:46:44.803595", "score": "0.7621", "loss": "0.2836", "code": "class T { @Before public void init() { publicIds.put( ); } }"}
+{"time": "2020-12-28 22:48:04.027713", "score": "0.7621", "loss": "0.2835", "code": "class T { @Before void init() { publicIds.put( ); } }"}
+
+Minimal simplified code:
+class T {
+@Before        void init() {                                                                                                                                                                      publicIds.put(                                          );                                                                                                                }
+}
+
+

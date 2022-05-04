@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-core/src/main/java/com/bj58/oceanus/core/shard/TableColumn_getOrderByType.java
+method_name = getOrderByType
+method_body = public OrderByType getOrderByType() { return orderByType; }
+predict, score, loss = getOrderByType, 0.4153180420398712, 1.2208809852600098
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:27:34.250622", "n_pass": [1, 1, 1], "score": "0.4153", "loss": "1.2209", "code": "public OrderByType getOrderByType() { return orderByType; }"}
+{"time": "2021-01-23 21:27:40.240387", "n_pass": [20, 3, 2], "score": "0.4153", "loss": "1.2209", "code": "OrderByType getOrderByType() { return orderByType; }"}
+{"time": "2021-01-23 21:29:17.405160", "n_pass": [183, 35, 3], "score": "0.4153", "loss": "1.2209", "code": "OrderByType getOrderByType(){ return orderByType; }"}
+{"time": "2021-01-23 21:29:20.009731", "n_pass": [184, 36, 4], "score": "0.4153", "loss": "1.2209", "code": "OrderByType getOrderByType(){return orderByType; }"}
+{"time": "2021-01-23 21:30:09.708096", "n_pass": [204, 55, 5], "score": "0.4153", "loss": "1.2209", "code": "OrderByType getOrderByType(){return orderByType;}"}
+
+Minimal simplified code:
+OrderByType getOrderByType(){return orderByType;}
+

@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/AstLambdaExpression_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); }
+predict, score, loss = toString, 0.99711895, 0.0045272056
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:16:45.474716", "n_pass": [1, 1, 1], "score": "0.9971", "loss": "0.0045", "code": "@Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:46.829749", "n_pass": [22, 2, 2], "score": "0.9971", "loss": "0.0044", "code": "@Override public String toString() { StringBuilder result; for (Node n : children) { result.append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:48.166665", "n_pass": [53, 3, 3], "score": "0.9136", "loss": "0.1157", "code": " String toString() { StringBuilder result; for (Node n : children) { result.append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:49.498361", "n_pass": [55, 4, 4], "score": "0.8013", "loss": "0.2524", "code": " String toString() {; for (Node n : children) { result.append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:51.505847", "n_pass": [92, 5, 5], "score": "0.8013", "loss": "0.2524", "code": " String toString() {for (Node n : children) { result.append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:52.918537", "n_pass": [99, 6, 6], "score": "0.9057", "loss": "0.1273", "code": " String toString() {for (Node n : children) { append(n.toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:54.242856", "n_pass": [101, 7, 7], "score": "0.9156", "loss": "0.1182", "code": " String toString() {for (Node n : children) { append(toString()); } return result.toString(); }"}
+{"time": "2020-12-27 04:16:55.576380", "n_pass": [106, 8, 8], "score": "0.9842", "loss": "0.0387", "code": " String toString() {for (Node n : children) { append(toString()); } result.toString(); }"}
+{"time": "2020-12-27 04:16:56.924391", "n_pass": [107, 9, 9], "score": "0.8979", "loss": "0.2408", "code": " String toString() {for (Node n : children) { append(toString()); } toString(); }"}
+{"time": "2020-12-27 04:17:03.727714", "n_pass": [169, 10, 10], "score": "0.8979", "loss": "0.2408", "code": " String toString() {for (Node n : children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:05.058250", "n_pass": [170, 11, 11], "score": "0.8979", "loss": "0.2408", "code": "String toString() {for (Node n : children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:07.449315", "n_pass": [176, 12, 12], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for (Node n : children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:08.781123", "n_pass": [179, 13, 13], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for(Node n : children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:10.116220", "n_pass": [184, 14, 14], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for(Node n: children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:11.425452", "n_pass": [186, 15, 15], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for(Node n:children) { append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:12.746828", "n_pass": [189, 16, 16], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for(Node n:children){ append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:14.109074", "n_pass": [191, 17, 17], "score": "0.8979", "loss": "0.2408", "code": "String toString(){for(Node n:children){append(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:15.436066", "n_pass": [192, 18, 18], "score": "0.8936", "loss": "0.3333", "code": "String toString(){for(Node n:children){(toString()); } toString();}"}
+{"time": "2020-12-27 04:17:16.759887", "n_pass": [199, 19, 19], "score": "0.8936", "loss": "0.3333", "code": "String toString(){for(Node n:children){(toString());} toString();}"}
+{"time": "2020-12-27 04:17:18.112112", "n_pass": [201, 20, 20], "score": "0.8936", "loss": "0.3333", "code": "String toString(){for(Node n:children){(toString());}toString();}"}
+
+Minimal simplified code:
+String toString(){for(Node n:children){(toString());}toString();}
+

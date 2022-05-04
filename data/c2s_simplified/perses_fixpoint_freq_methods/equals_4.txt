@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/URL_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:11:59.830774", "score": "0.9695", "loss": "0.0356", "code": "class T { @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); } }"}
+{"time": "2020-12-21 10:12:37.196887", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override public boolean equals(Object obj) { } }"}
+{"time": "2020-12-21 10:12:58.303424", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override boolean equals(Object obj) { } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object obj) {                                                                                                                                                }
+}
+
+

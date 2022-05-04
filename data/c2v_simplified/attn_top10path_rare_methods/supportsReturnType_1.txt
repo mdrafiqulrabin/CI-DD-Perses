@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/spring-ws-core/src/main/java/org/springframework/ws/server/endpoint/adapter/method/AbstractPayloadMethodProcessor_supportsReturnType.java
+method_name = supportsReturnType
+method_body = @Override public final boolean supportsReturnType(MethodParameter returnType) { Assert.isTrue(returnType.getParameterIndex() == -1, "Parameter index is not -1"); if (returnType.getMethodAnnotation(ResponsePayload.class) == null) { return false; } else { return supportsResponsePayloadReturnType(returnType); } }
+
+topk path-contexts:
+[0.0876] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),methodparameter
+[0.0830] methodparameter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(ClassExpr)_(ClassOrInterfaceType0),responsepayload
+[0.0703] getparameterindex,(NameExpr2)^(MethodCallExpr)^(BinaryExpr:equals2)_(UnaryExpr:negative)_(IntegerLiteralExpr0),1
+[0.0672] returntype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:equals)_(UnaryExpr:negative)_(IntegerLiteralExpr0),1
+[0.0612] returntype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(ClassExpr)_(ClassOrInterfaceType0),responsepayload
+[0.0445] methodparameter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:equals)_(MethodCallExpr0)_(NameExpr2),getparameterindex
+[0.0437] methodparameter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(NameExpr3),getmethodannotation
+[0.0314] returntype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(NameExpr3),getmethodannotation
+[0.0310] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),returntype
+[0.0278] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr1),returntype
+
+topk terminals:
+['boolean', 'methodparameter', 'methodparameter', 'responsepayload', 'getparameterindex', '1', 'returntype', '1', 'returntype', 'responsepayload', 'methodparameter', 'getparameterindex', 'methodparameter', 'getmethodannotation', 'returntype', 'getmethodannotation', 'boolean', 'returntype', 'null', 'returntype']
+

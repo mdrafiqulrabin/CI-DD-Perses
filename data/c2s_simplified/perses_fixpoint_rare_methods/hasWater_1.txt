@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPFarmland_hasWater.java
+method_name = hasWater
+method_body = private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : BlockPos.getAllInBoxMutable(pos.add(-4, 0, -4), pos.add(4, 1, 4))) { if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } return false; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:53:00.237701", "score": "0.3631", "loss": "1.4937", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : BlockPos.getAllInBoxMutable(pos.add(-4, 0, -4), pos.add(4, 1, 4))) { if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } return false; } }"}
+{"time": "2021-01-24 04:53:59.067595", "score": "0.3274", "loss": "1.6919", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : BlockPos.getAllInBoxMutable(pos.add(-4, 0, -4), pos.add(4, 1, 4))) { if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } } }"}
+{"time": "2021-01-24 04:54:36.041761", "score": "0.4428", "loss": "1.3338", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : pos.add(4, 1, 4) ) { if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } } }"}
+{"time": "2021-01-24 04:54:46.773692", "score": "0.4673", "loss": "1.1852", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : pos.add(4, 1, 4) ) if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } }"}
+{"time": "2021-01-24 04:55:20.274642", "score": "0.4272", "loss": "1.2961", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : add ) if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } }"}
+{"time": "2021-01-24 04:55:42.543870", "score": "0.3753", "loss": "1.552", "code": "class T { private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) { return true; } } }"}
+{"time": "2021-01-24 04:55:53.176206", "score": "0.7349", "loss": "0.5608", "code": "class T { private boolean hasWater( ) { for (BlockPos.MutableBlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) { return true; } } }"}
+{"time": "2021-01-24 04:56:03.841709", "score": "0.7646", "loss": "0.4999", "code": "class T { private boolean hasWater( ) { for (BlockPos.MutableBlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) return true; } }"}
+{"time": "2021-01-24 04:56:36.294095", "score": "0.7519", "loss": "0.5428", "code": "class T { private boolean hasWater( ) { for (BlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) return true; } }"}
+{"time": "2021-01-24 04:56:46.965587", "score": "0.4982", "loss": "1.371", "code": "class T { private boolean hasWater( ) { for (BlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) return ; } }"}
+{"time": "2021-01-24 04:56:57.599062", "score": "0.4982", "loss": "1.371", "code": "class T { boolean hasWater( ) { for (BlockPos mutableblockpos : add ) if ( getMaterial == Material.WATER) return ; } }"}
+
+Minimal simplified code:
+class T {
+        boolean hasWater(                         ) { for (BlockPos                 mutableblockpos :                                                     add          )   if (                                     getMaterial   == Material.WATER)   return     ;                   }
+}
+
+

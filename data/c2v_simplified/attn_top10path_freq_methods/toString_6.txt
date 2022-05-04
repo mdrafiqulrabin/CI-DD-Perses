@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/FilterDef_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("FilterDef["); sb.append("filterName="); sb.append(this.filterName); sb.append(", filterClass="); sb.append(this.filterClass); sb.append("]"); return (sb.toString()); }
+
+topk path-contexts:
+[0.1273] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(ThisExpr0),this
+[0.1273] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(ThisExpr0),this
+[0.0944] ],(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0683] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(StringLiteralExpr1),filterdef
+[0.0565] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),filterclass
+[0.0486] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),filterclass
+[0.0402] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),]
+[0.0348] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),filtername
+[0.0322] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),filtername
+[0.0198] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),stringbuilder
+
+topk terminals:
+['string', 'this', 'string', 'this', ']', 'tostring', 'string', 'filterdef', 'string', 'filterclass', 'string', 'filterclass', 'string', ']', 'string', 'filtername', 'string', 'filtername', 'string', 'stringbuilder']
+

@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/CharChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 01:20:58.982128", "score": "0.9776", "loss": "0.0345", "code": "class T { @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); } }"}
+{"time": "2020-12-29 01:25:21.413831", "score": "0.444", "loss": "1.1392", "code": "class T { @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } } }"}
+{"time": "2020-12-29 01:28:12.280780", "score": "0.6194", "loss": "0.6594", "code": "class T { @Override public String toString() { if (null == buff) return null; else if (end - start == 0) { return \"\"; } } }"}
+{"time": "2020-12-29 01:29:40.501487", "score": "0.5587", "loss": "0.7817", "code": "class T { @Override public String toString() { if (null == buff) return null; else if (end - start == 0) return \"\"; } }"}
+{"time": "2020-12-29 01:32:02.945374", "score": "0.352", "loss": "1.489", "code": "class T { String toString() { if (null == buff) return null; else if (end - start == 0) return \"\"; } }"}
+{"time": "2020-12-29 01:32:42.824226", "score": "0.7214", "loss": "0.4303", "code": "class T { String toString() { if (null == buff) return ; else if (end - start == 0) return \"\"; } }"}
+{"time": "2020-12-29 01:33:22.616252", "score": "0.7414", "loss": "0.3925", "code": "class T { String toString() { if (null == buff) return ; else if (end - start == 0) return ; } }"}
+
+Minimal simplified code:
+class T {
+                 String toString() { if (null == buff)   return     ;   else if (end - start == 0)   return   ;                                      }
+}
+
+

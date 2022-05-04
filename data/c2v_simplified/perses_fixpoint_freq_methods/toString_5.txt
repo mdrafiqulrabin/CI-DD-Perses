@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/modeler/BaseModelMBean_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (resource == null) return "BaseModelMbean[" + resourceType + "]"; return resource.toString(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 06:49:53.263579", "score": "0.9863", "loss": "0.0149", "code": "class T { @Override public String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType + \"]\"; return resource.toString(); } }"}
+{"time": "2020-12-29 06:52:55.922740", "score": "0.9893", "loss": "0.0116", "code": "class T { @Override public String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType + \"]\"; } }"}
+{"time": "2020-12-29 06:54:11.468564", "score": "0.994", "loss": "0.0065", "code": "class T { @Override public String toString() { return \"BaseModelMbean[\" + resourceType + \"]\"; } }"}
+{"time": "2020-12-29 06:55:26.894901", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override public String toString() { return ; } }"}
+{"time": "2020-12-29 06:56:46.201221", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override String toString() { return ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString() {                       return                                       ;                             }
+}
+
+

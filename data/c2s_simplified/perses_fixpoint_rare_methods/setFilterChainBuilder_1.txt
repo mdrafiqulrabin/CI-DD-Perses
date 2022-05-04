@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.netty/src/main/java/org/kaazing/mina/core/service/AbstractIoService_setFilterChainBuilder.java
+method_name = setFilterChainBuilder
+method_body = @Override public final void setFilterChainBuilder(IoFilterChainBuilder builder) { if (builder == null) { builder = new DefaultIoFilterChainBuilder(); } filterChainBuilder = builder; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:59:26.002119", "score": "0.4601", "loss": "1.6634", "code": "class T { @Override public final void setFilterChainBuilder(IoFilterChainBuilder builder) { if (builder == null) { builder = new DefaultIoFilterChainBuilder(); } filterChainBuilder = builder; } }"}
+{"time": "2021-01-24 08:00:35.427169", "score": "0.5295", "loss": "1.2679", "code": "class T { @Override public final void setFilterChainBuilder(IoFilterChainBuilder builder) { filterChainBuilder = builder; } }"}
+{"time": "2021-01-24 08:00:56.667753", "score": "0.8922", "loss": "0.5551", "code": "class T { void setFilterChainBuilder(IoFilterChainBuilder builder) { filterChainBuilder = builder; } }"}
+
+Minimal simplified code:
+class T {
+                       void setFilterChainBuilder(IoFilterChainBuilder builder) {                                                                       filterChainBuilder = builder; }
+}
+
+

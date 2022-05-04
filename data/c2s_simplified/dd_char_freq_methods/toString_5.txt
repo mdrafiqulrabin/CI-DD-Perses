@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/modeler/BaseModelMBean_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (resource == null) return "BaseModelMbean[" + resourceType + "]"; return resource.toString(); }
+predict, score, loss = toString, 0.99861157, 0.0023363822
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:39:54.895388", "n_pass": [1, 1, 1], "score": "0.9986", "loss": "0.0023", "code": "@Override public String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType + \"]\"; return resource.toString(); }"}
+{"time": "2020-12-28 00:39:56.234579", "n_pass": [20, 2, 2], "score": "0.9709", "loss": "0.0362", "code": " String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType + \"]\"; return resource.toString(); }"}
+{"time": "2020-12-28 00:39:57.574157", "n_pass": [25, 3, 3], "score": "0.9582", "loss": "0.0516", "code": " String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType + rce.toString(); }"}
+{"time": "2020-12-28 00:39:58.880416", "n_pass": [44, 4, 4], "score": "0.6668", "loss": "0.5247", "code": " String toString() { if (resource == null) return \"BaseModelMbean[\" + resourceType +ring(); }"}
+{"time": "2020-12-28 00:40:00.930170", "n_pass": [50, 5, 5], "score": "0.6473", "loss": "0.6582", "code": " String toString() { if (resourcl) return \"BaseModelMbean[\" + resourceType +ring(); }"}
+{"time": "2020-12-28 00:40:02.300550", "n_pass": [53, 6, 6], "score": "0.6569", "loss": "0.6369", "code": " String toString() { if (resourcl) return \"BaseMo\" + resourceType +ring(); }"}
+{"time": "2020-12-28 00:40:05.713115", "n_pass": [82, 8, 7], "score": "0.7129", "loss": "0.5857", "code": " String toString() { if (resourcl) return \"BaseMo\" +ourceType +ring(); }"}
+{"time": "2020-12-28 00:40:07.117576", "n_pass": [83, 9, 8], "score": "0.7864", "loss": "0.4509", "code": " String toString() { if (resourcl) return \"BaseMo\" +Type +ring(); }"}
+{"time": "2020-12-28 00:40:12.163549", "n_pass": [94, 12, 9], "score": "0.8884", "loss": "0.2292", "code": " String toString() { if (resl) return \"BaseMo\" +Type +ring(); }"}
+{"time": "2020-12-28 00:40:13.467320", "n_pass": [98, 13, 10], "score": "0.9663", "loss": "0.0718", "code": " String toString() { if (resl) return \"Bo\" +Type +ring(); }"}
+{"time": "2020-12-28 00:40:14.847827", "n_pass": [101, 14, 11], "score": "0.9011", "loss": "0.2034", "code": " String toString() { if (resl) return \"Bo\" +Type (); }"}
+{"time": "2020-12-28 00:40:18.553114", "n_pass": [141, 16, 12], "score": "0.9486", "loss": "0.0952", "code": " String toString() { if (resl) return \"Bo\" +Type; }"}
+{"time": "2020-12-28 00:40:19.864173", "n_pass": [143, 17, 13], "score": "0.6548", "loss": "1.4556", "code": "tring toString() { if (resl) return \"Bo\" +Type; }"}
+{"time": "2020-12-28 00:40:25.606984", "n_pass": [156, 20, 14], "score": "0.5216", "loss": "1.7934", "code": "tring toString() { if (rl) return \"Bo\" +Type; }"}
+{"time": "2020-12-28 00:40:26.953929", "n_pass": [165, 21, 15], "score": "0.5205", "loss": "1.9727", "code": "tring toString() { if (rl) return \"Bo\" +pe; }"}
+{"time": "2020-12-28 00:40:35.383866", "n_pass": [232, 24, 16], "score": "0.5258", "loss": "2.0068", "code": "tring toString() { if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:38.004580", "n_pass": [236, 26, 17], "score": "0.6549", "loss": "1.2717", "code": "ting toString() { if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:39.330270", "n_pass": [237, 27, 18], "score": "0.5895", "loss": "1.8566", "code": "tng toString() { if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:40.670324", "n_pass": [238, 28, 19], "score": "0.4222", "loss": "4.4214", "code": "tg toString() { if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:41.999691", "n_pass": [239, 29, 20], "score": "0.7057", "loss": "2.0888", "code": "t toString() { if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:46.662394", "n_pass": [251, 30, 21], "score": "0.7057", "loss": "2.0888", "code": "t toString(){ if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:47.989495", "n_pass": [253, 31, 22], "score": "0.7057", "loss": "2.0888", "code": "t toString(){if (rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:49.297102", "n_pass": [256, 32, 23], "score": "0.7057", "loss": "2.0888", "code": "t toString(){if(rl) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:50.660617", "n_pass": [258, 33, 24], "score": "0.8789", "loss": "1.3662", "code": "t toString(){if(l) return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:51.970560", "n_pass": [261, 34, 25], "score": "0.8789", "loss": "1.3662", "code": "t toString(){if(l)return \"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:53.296299", "n_pass": [268, 35, 26], "score": "0.8789", "loss": "1.3662", "code": "t toString(){if(l)return\"Bo\" +e; }"}
+{"time": "2020-12-28 00:40:54.832629", "n_pass": [270, 36, 27], "score": "0.8002", "loss": "1.42", "code": "t toString(){if(l)return\"o\" +e; }"}
+{"time": "2020-12-28 00:40:56.155885", "n_pass": [271, 37, 28], "score": "0.6765", "loss": "1.8757", "code": "t toString(){if(l)return\"\" +e; }"}
+{"time": "2020-12-28 00:40:57.467262", "n_pass": [273, 38, 29], "score": "0.6765", "loss": "1.8757", "code": "t toString(){if(l)return\"\"+e; }"}
+{"time": "2020-12-28 00:41:02.991294", "n_pass": [306, 39, 30], "score": "0.6765", "loss": "1.8757", "code": "t toString(){if(l)return\"\"+e;}"}
+
+Minimal simplified code:
+t toString(){if(l)return""+e;}
+

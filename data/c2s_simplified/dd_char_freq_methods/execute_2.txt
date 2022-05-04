@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/FindLeaksTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/findleaks?statusLine=" + Boolean.toString(statusLine)); }
+predict, score, loss = execute, 0.9993247, 0.0011508553
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:10:20.038188", "n_pass": [1, 1, 1], "score": "0.9993", "loss": "0.0012", "code": "@Override public void execute() throws BuildException { super.execute(); execute(\"/findleaks?statusLine=\" + Boolean.toString(statusLine)); }"}
+{"time": "2020-12-27 23:10:21.372161", "n_pass": [10, 2, 2], "score": "0.9002", "loss": "0.135", "code": "@Override public void execute() throws BuildException { super.execute( + Boolean.toString(statusLine)); }"}
+{"time": "2020-12-27 23:10:22.693120", "n_pass": [21, 3, 3], "score": "0.4654", "loss": "1.084", "code": "void execute() throws BuildException { super.execute( + Boolean.toString(statusLine)); }"}
+{"time": "2020-12-27 23:10:27.070966", "n_pass": [44, 6, 4], "score": "0.5154", "loss": "1.1235", "code": "void execute() throws BuildException { super.execute( + Booleng(statusLine)); }"}
+{"time": "2020-12-27 23:10:31.451840", "n_pass": [72, 9, 5], "score": "0.7074", "loss": "0.6094", "code": "void execute() throws BuildException { super.execute( + Booleng(sLine)); }"}
+{"time": "2020-12-27 23:10:32.766674", "n_pass": [73, 10, 6], "score": "0.9115", "loss": "0.1377", "code": "void execute() throws BuildException { super.execute( + Booleng()); }"}
+{"time": "2020-12-27 23:10:35.209394", "n_pass": [81, 11, 7], "score": "0.5066", "loss": "1.0886", "code": "void execute() throws Buxception { super.execute( + Booleng()); }"}
+{"time": "2020-12-27 23:10:36.533856", "n_pass": [82, 12, 8], "score": "0.5066", "loss": "1.0886", "code": "void execute() throws Bution { super.execute( + Booleng()); }"}
+{"time": "2020-12-27 23:10:37.891333", "n_pass": [83, 13, 9], "score": "0.4672", "loss": "1.3082", "code": "void execute() throws Bu { super.execute( + Booleng()); }"}
+{"time": "2020-12-27 23:10:41.867329", "n_pass": [88, 16, 10], "score": "0.7792", "loss": "0.4563", "code": "void execute() throws Bu { super.execute( leng()); }"}
+{"time": "2020-12-27 23:10:46.941983", "n_pass": [126, 19, 11], "score": "0.5441", "loss": "0.87", "code": "void execute() throws Bu { super.execute( l()); }"}
+{"time": "2020-12-27 23:10:48.261738", "n_pass": [129, 20, 12], "score": "0.6496", "loss": "0.6602", "code": "id execute() throws Bu { super.execute( l()); }"}
+{"time": "2020-12-27 23:11:02.801355", "n_pass": [196, 28, 13], "score": "0.6932", "loss": "0.525", "code": "d execute() throws Bu { super.execute( l()); }"}
+{"time": "2020-12-27 23:11:07.084078", "n_pass": [207, 29, 14], "score": "0.6932", "loss": "0.525", "code": "d execute()throws Bu { super.execute( l()); }"}
+{"time": "2020-12-27 23:11:08.433621", "n_pass": [215, 30, 15], "score": "0.7188", "loss": "0.4709", "code": "d execute()throws u { super.execute( l()); }"}
+{"time": "2020-12-27 23:11:09.745482", "n_pass": [217, 31, 16], "score": "0.7188", "loss": "0.4709", "code": "d execute()throws u{ super.execute( l()); }"}
+{"time": "2020-12-27 23:11:11.061648", "n_pass": [219, 32, 17], "score": "0.7188", "loss": "0.4709", "code": "d execute()throws u{super.execute( l()); }"}
+{"time": "2020-12-27 23:11:29.694928", "n_pass": [234, 46, 18], "score": "0.7188", "loss": "0.4709", "code": "d execute()throws u{super.execute(l()); }"}
+{"time": "2020-12-27 23:11:53.664160", "n_pass": [282, 61, 19], "score": "0.7188", "loss": "0.4709", "code": "d execute()throws u{super.execute(l());}"}
+
+Minimal simplified code:
+d execute()throws u{super.execute(l());}
+

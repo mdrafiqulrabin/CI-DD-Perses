@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bladecoder__bladecoder-adventure-engine/blade-engine/src/com/bladecoder/engine/model/VerbManager_addVerb.java
+method_name = addVerb
+method_body = public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:40:02.734716", "score": "0.3558", "loss": "1.4713", "code": "class T { public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); } }"}
+{"time": "2021-01-24 08:41:41.162801", "score": "0.3558", "loss": "1.4713", "code": "class T { void addVerb(Verb v) { verbs.put(v.getHashKey(), v); } }"}
+
+Minimal simplified code:
+class T {
+       void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }
+}
+
+

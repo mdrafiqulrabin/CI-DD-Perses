@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/iplanet/dpro/session/service/InternalSession_setHttpSession.java
+method_name = setHttpSession
+method_body = void setHttpSession(HttpSession hSession) { httpSession = hSession; }
+
+topk path-contexts:
+[0.2136] httpsession,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),hsession
+[0.1852] hsession,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),hsession
+[0.1721] httpsession,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),httpsession
+[0.1502] hsession,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),httpsession
+[0.1317] httpsession,(NameExpr0)^(AssignExpr:assign)_(NameExpr1),hsession
+[0.0455] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),httpsession
+[0.0377] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),hsession
+[0.0243] hsession,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),httpsession
+[0.0157] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),hsession
+[0.0113] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),httpsession
+
+topk terminals:
+['httpsession', 'hsession', 'hsession', 'hsession', 'httpsession', 'httpsession', 'hsession', 'httpsession', 'httpsession', 'hsession', 'METHOD_NAME', 'httpsession', 'METHOD_NAME', 'hsession', 'hsession', 'httpsession', 'void', 'hsession', 'void', 'httpsession']
+

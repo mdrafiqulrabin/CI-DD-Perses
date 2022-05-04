@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/jasper/compiler/TestParserNoStrictWhitespace_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { System.setProperty("org.apache.jasper.compiler.Parser.STRICT_WHITESPACE", "false"); super.setUp(); }
+predict, score, loss = setUp, 0.9988991, 0.0012689326
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:53:20.513295", "n_pass": [1, 1, 1], "score": "0.9989", "loss": "0.0013", "code": "@Override public void setUp() throws Exception { System.setProperty(\"org.apache.jasper.compiler.Parser.STRICT_WHITESPACE\", \"false\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:21.838615", "n_pass": [10, 2, 2], "score": "0.9993", "loss": "0.0008", "code": "@Override public void setUp() throws Exception { System.setProperty(\"org.apache.false\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:23.480390", "n_pass": [37, 3, 3], "score": "0.9993", "loss": "0.0008", "code": "@Override public void setUp() throws Exception { System.setProperty(\"org.\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:24.794257", "n_pass": [41, 4, 4], "score": "0.9982", "loss": "0.0022", "code": "public void setUp() throws Exception { System.setProperty(\"org.\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:27.435473", "n_pass": [72, 5, 5], "score": "0.9982", "loss": "0.0022", "code": " void setUp() throws Exception { System.setProperty(\"org.\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:28.728535", "n_pass": [73, 6, 6], "score": "0.9982", "loss": "0.0022", "code": "void setUp() throws Exception { System.setProperty(\"org.\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:30.407612", "n_pass": [82, 7, 7], "score": "0.9964", "loss": "0.005", "code": "void setUp() throws Exception { System(\"org.\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:31.692228", "n_pass": [84, 8, 8], "score": "0.9945", "loss": "0.0085", "code": "void setUp() throws Exception { System(\"\"); super.setUp(); }"}
+{"time": "2020-12-27 03:53:33.005023", "n_pass": [87, 9, 9], "score": "0.6194", "loss": "0.9033", "code": "void setUp() throws Exception { System(\"\"); setUp(); }"}
+{"time": "2020-12-27 03:53:35.029976", "n_pass": [99, 10, 10], "score": "0.3735", "loss": "1.5021", "code": "void setUp() throws Exception {(\"\"); setUp(); }"}
+{"time": "2020-12-27 03:53:39.368531", "n_pass": [135, 11, 11], "score": "0.3735", "loss": "1.5021", "code": "void setUp() throws Exception {(\"\");setUp(); }"}
+{"time": "2020-12-27 03:53:40.697232", "n_pass": [140, 12, 12], "score": "0.3735", "loss": "1.5021", "code": "void setUp() throws Exception {(\"\");setUp();}"}
+{"time": "2020-12-27 03:53:42.702850", "n_pass": [147, 13, 13], "score": "0.3735", "loss": "1.5021", "code": "void setUp()throws Exception {(\"\");setUp();}"}
+{"time": "2020-12-27 03:53:44.000647", "n_pass": [151, 14, 14], "score": "0.3735", "loss": "1.5021", "code": "void setUp()throws Exception{(\"\");setUp();}"}
+
+Minimal simplified code:
+void setUp()throws Exception{("");setUp();}
+

@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/tool/impl/SessionComponent_getSessionListener.java
+method_name = getSessionListener
+method_body = public SessionAttributeListener getSessionListener() { return sessionListener; }
+predict, score, loss = getSessionListener, 0.2991361618041992, 1.6092191934585571
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:46:36.604292", "n_pass": [1, 1, 1], "score": "0.2991", "loss": "1.6092", "code": "public SessionAttributeListener getSessionListener() { return sessionListener; }"}
+{"time": "2021-01-23 16:46:39.567316", "n_pass": [8, 2, 2], "score": "0.2991", "loss": "1.6092", "code": "uteListener getSessionListener() { return sessionListener; }"}
+{"time": "2021-01-23 16:46:48.122780", "n_pass": [35, 5, 3], "score": "0.2991", "loss": "1.6092", "code": "stener getSessionListener() { return sessionListener; }"}
+{"time": "2021-01-23 16:47:05.197211", "n_pass": [69, 11, 4], "score": "0.5523", "loss": "0.8713", "code": "ster getSessionListener() { return sessionListener; }"}
+{"time": "2021-01-23 16:47:48.337823", "n_pass": [156, 23, 5], "score": "0.5523", "loss": "0.8713", "code": "ster getSessionListener(){ return sessionListener; }"}
+{"time": "2021-01-23 16:47:50.937872", "n_pass": [158, 24, 6], "score": "0.5523", "loss": "0.8713", "code": "ster getSessionListener(){return sessionListener; }"}
+{"time": "2021-01-23 16:48:24.618547", "n_pass": [173, 37, 7], "score": "0.5158", "loss": "1.1427", "code": "ter getSessionListener(){return sessionListener; }"}
+{"time": "2021-01-23 16:48:29.772417", "n_pass": [175, 39, 8], "score": "0.3314", "loss": "1.9036", "code": "tr getSessionListener(){return sessionListener; }"}
+{"time": "2021-01-23 16:48:32.352842", "n_pass": [176, 40, 9], "score": "0.232", "loss": "1.9201", "code": "t getSessionListener(){return sessionListener; }"}
+{"time": "2021-01-23 16:50:04.065189", "n_pass": [256, 72, 10], "score": "0.232", "loss": "1.9201", "code": "t getSessionListener(){return sessionListener;}"}
+
+Minimal simplified code:
+t getSessionListener(){return sessionListener;}
+

@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/GuidedStepActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }
+predict, score, loss = onCreate, 0.9999995231628418, 5.960462772236497e-07
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:43:33.072316", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }"}
+{"time": "2020-12-26 23:43:36.002494", "n_pass": [22, 2, 2], "score": "0.8211", "loss": "0.1974", "code": "@Override protected void onCreate(Bundle savedInstanceState) { if (null == savedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }"}
+{"time": "2020-12-26 23:43:38.740086", "n_pass": [44, 3, 3], "score": "0.692", "loss": "0.3691", "code": "@Override protected void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.R.id.content); } }"}
+{"time": "2020-12-26 23:43:41.543683", "n_pass": [50, 4, 4], "score": "0.6949", "loss": "0.3649", "code": "@Override protected void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.content); } }"}
+{"time": "2020-12-26 23:43:44.349247", "n_pass": [53, 5, 5], "score": "0.6741", "loss": "0.3953", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(this, new FirstStepFragment(), android.content); } }"}
+{"time": "2020-12-26 23:43:50.268010", "n_pass": [101, 7, 6], "score": "0.6737", "loss": "0.3959", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(this, FirstStepFragment(), android.content); } }"}
+{"time": "2020-12-26 23:43:52.976717", "n_pass": [104, 8, 7], "score": "0.5912", "loss": "0.5263", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(this, FirstStepFragment(), android); } }"}
+{"time": "2020-12-26 23:43:58.898261", "n_pass": [121, 10, 8], "score": "0.6543", "loss": "0.425", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(), android); } }"}
+{"time": "2020-12-26 23:44:09.994437", "n_pass": [183, 12, 9], "score": "0.6543", "loss": "0.425", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android); } }"}
+{"time": "2020-12-26 23:44:12.722932", "n_pass": [186, 13, 10], "score": "0.6543", "loss": "0.425", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);} }"}
+{"time": "2020-12-26 23:44:15.465703", "n_pass": [188, 14, 11], "score": "0.6543", "loss": "0.425", "code": " void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:18.216196", "n_pass": [190, 15, 12], "score": "0.6543", "loss": "0.425", "code": "void onCreate(Bundle savedInstanceState) { if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:21.815001", "n_pass": [199, 16, 13], "score": "0.6543", "loss": "0.425", "code": "void onCreate(Bundle savedInstanceState){ if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:24.532034", "n_pass": [201, 17, 14], "score": "0.6543", "loss": "0.425", "code": "void onCreate(Bundle savedInstanceState){if (nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:27.273504", "n_pass": [203, 18, 15], "score": "0.6543", "loss": "0.425", "code": "void onCreate(Bundle savedInstanceState){if(nullsavedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:30.003165", "n_pass": [205, 19, 16], "score": "0.7794", "loss": "0.2498", "code": "void onCreate(Bundle savedInstanceState){if(savedInstanceState) { GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:32.884429", "n_pass": [208, 20, 17], "score": "0.7794", "loss": "0.2498", "code": "void onCreate(Bundle savedInstanceState){if(savedInstanceState){ GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:35.572036", "n_pass": [210, 21, 18], "score": "0.7794", "loss": "0.2498", "code": "void onCreate(Bundle savedInstanceState){if(savedInstanceState){GuidedStepFragment.addAsRoot(thisFirstStepFragment(),android);}}"}
+{"time": "2020-12-26 23:44:41.203487", "n_pass": [215, 23, 19], "score": "0.7794", "loss": "0.2498", "code": "void onCreate(Bundle savedInstanceState){if(savedInstanceState){GuidedStepFragment.addAsRoot(FirstStepFragment(),android);}}"}
+
+Minimal simplified code:
+void onCreate(Bundle savedInstanceState){if(savedInstanceState){GuidedStepFragment.addAsRoot(FirstStepFragment(),android);}}
+

@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/websocket/snake/Location_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = x; result = 31 * result + y; return result; }
+predict, score, loss = hashCode, 0.9998905658721924, 0.00012563870404846966
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:01:40.813405", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public int hashCode() { int result = x; result = 31 * result + y; return result; }"}
+{"time": "2020-12-26 22:01:47.246583", "n_pass": [24, 3, 2], "score": "0.6034", "loss": "0.6433", "code": "@Override public int hashCode() { int result = x31 * result + y; return result; }"}
+{"time": "2020-12-26 22:01:50.023898", "n_pass": [25, 4, 3], "score": "0.9292", "loss": "0.0993", "code": "@Override public int hashCode() { int result = x + y; return result; }"}
+{"time": "2020-12-26 22:01:52.773743", "n_pass": [28, 5, 4], "score": "0.7398", "loss": "0.4555", "code": "int hashCode() { int result = x + y; return result; }"}
+{"time": "2020-12-26 22:01:59.119926", "n_pass": [52, 7, 5], "score": "0.6408", "loss": "0.5379", "code": "int hashCode() { int result = x + y; ; }"}
+{"time": "2020-12-26 22:02:07.537347", "n_pass": [79, 9, 6], "score": "0.6408", "loss": "0.5379", "code": "int hashCode() { int result = x + y; }"}
+{"time": "2020-12-26 22:02:11.143825", "n_pass": [86, 10, 7], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){ int result = x + y; }"}
+{"time": "2020-12-26 22:02:13.910058", "n_pass": [88, 11, 8], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result = x + y; }"}
+{"time": "2020-12-26 22:02:22.120790", "n_pass": [92, 14, 9], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result= x + y; }"}
+{"time": "2020-12-26 22:02:35.987939", "n_pass": [117, 18, 10], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result= x+ y; }"}
+{"time": "2020-12-26 22:02:38.781800", "n_pass": [119, 19, 11], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result= x+y; }"}
+{"time": "2020-12-26 22:02:41.561632", "n_pass": [122, 20, 12], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result= x+y;}"}
+{"time": "2020-12-26 22:02:50.647536", "n_pass": [134, 23, 13], "score": "0.6408", "loss": "0.5379", "code": "int hashCode(){int result=x+y;}"}
+
+Minimal simplified code:
+int hashCode(){int result=x+y;}
+

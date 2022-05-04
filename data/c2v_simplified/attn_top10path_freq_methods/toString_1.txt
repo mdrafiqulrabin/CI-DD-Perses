@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/ContextTransaction_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("Transaction["); sb.append("]"); return (sb.toString()); }
+
+topk path-contexts:
+[0.3509] ],(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.1493] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),]
+[0.0735] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),stringbuilder
+[0.0726] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(StringLiteralExpr1),transaction
+[0.0726] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),append
+[0.0438] ],(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr0),sb
+[0.0301] append,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0224] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),stringbuilder
+[0.0214] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(MethodCallExpr0)_(NameExpr2),tostring
+[0.0203] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),]
+
+topk terminals:
+[']', 'tostring', 'string', ']', 'string', 'stringbuilder', 'string', 'transaction', 'string', 'append', ']', 'sb', 'append', 'tostring', 'string', 'stringbuilder', 'string', 'tostring', 'METHOD_NAME', ']']
+

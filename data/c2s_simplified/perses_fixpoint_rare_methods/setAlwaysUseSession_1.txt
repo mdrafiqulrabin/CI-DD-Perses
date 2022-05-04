@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/authenticator/TestNonLoginAndBasicAuthenticator_setAlwaysUseSession.java
+method_name = setAlwaysUseSession
+method_body = private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:53:35.273881", "score": "0.4382", "loss": "3.0313", "code": "class T { private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); } }"}
+{"time": "2021-01-24 03:54:23.534416", "score": "0.6029", "loss": "1.8193", "code": "class T { private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); } }"}
+{"time": "2021-01-24 03:54:44.932740", "score": "0.5535", "loss": "1.4231", "code": "class T { private void setAlwaysUseSession() { basicContext.getAuthenticator() .setAlwaysUseSession(true); } }"}
+{"time": "2021-01-24 03:54:55.670102", "score": "0.626", "loss": "1.3487", "code": "class T { private void setAlwaysUseSession() { basicContext.getAuthenticator() .setAlwaysUseSession( ); } }"}
+{"time": "2021-01-24 03:55:06.416476", "score": "0.626", "loss": "1.3487", "code": "class T { void setAlwaysUseSession() { basicContext.getAuthenticator() .setAlwaysUseSession( ); } }"}
+
+Minimal simplified code:
+class T {
+        void setAlwaysUseSession() {                      basicContext.getAuthenticator() .setAlwaysUseSession(    );                                                                                     }
+}
+
+

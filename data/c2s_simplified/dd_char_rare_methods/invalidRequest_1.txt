@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/Responses_invalidRequest.java
+method_name = invalidRequest
+method_body = static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }
+predict, score, loss = invalidRequest, 0.3425261, 1.4721154
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:35:27.514206", "n_pass": [1, 1, 1], "score": "0.3425", "loss": "1.4721", "code": "static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:29.196049", "n_pass": [20, 2, 2], "score": "0.5386", "loss": "1.1411", "code": "se invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:30.508511", "n_pass": [23, 3, 3], "score": "0.3671", "loss": "1.5937", "code": "se invalidRequest(String message) { rete(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:39.506766", "n_pass": [78, 9, 4], "score": "0.4467", "loss": "1.2541", "code": "se invalidRequest(String message) { e(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:42.107176", "n_pass": [81, 11, 5], "score": "0.2507", "loss": "1.8988", "code": "se invalidRequest(String message) { e(empt, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:55.638193", "n_pass": [99, 20, 6], "score": "0.3377", "loss": "1.5978", "code": "se invalidRequest(String mege) { e(empt, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:35:56.926694", "n_pass": [103, 21, 7], "score": "0.3146", "loss": "1.6212", "code": "se invalidRequest(String mege) { e(e, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:36:35.167149", "n_pass": [197, 45, 8], "score": "0.2626", "loss": "1.8232", "code": "se invalidRequest(Stng mege) { e(e, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:37:01.994678", "n_pass": [236, 62, 9], "score": "0.2404", "loss": "2.0473", "code": "se invalidRequest(ng mege) { e(e, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:37:29.901322", "n_pass": [323, 78, 10], "score": "0.2404", "loss": "2.0473", "code": "se invalidRequest(ng mege){ e(e, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:37:31.236049", "n_pass": [324, 79, 11], "score": "0.2404", "loss": "2.0473", "code": "se invalidRequest(ng mege){e(e, INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:37:32.562739", "n_pass": [329, 80, 12], "score": "0.2404", "loss": "2.0473", "code": "se invalidRequest(ng mege){e(e,INVALID_REQUEST, message); }"}
+{"time": "2021-01-23 08:37:53.475140", "n_pass": [346, 96, 13], "score": "0.2404", "loss": "2.0473", "code": "se invalidRequest(ng mege){e(e,INVALID_REQUEST,message); }"}
+{"time": "2021-01-23 08:38:02.640182", "n_pass": [353, 103, 14], "score": "0.2315", "loss": "2.2053", "code": "se invalidRequest(ng mege){e(e,INVALID_REQUEST,messag); }"}
+{"time": "2021-01-23 08:38:03.970373", "n_pass": [356, 104, 15], "score": "0.2315", "loss": "2.2053", "code": "se invalidRequest(ng mege){e(e,INVALID_REQUEST,messag);}"}
+{"time": "2021-01-23 08:38:18.538822", "n_pass": [381, 111, 16], "score": "0.2994", "loss": "1.9627", "code": "se invalidRequest(ng mee){e(e,INVALID_REQUEST,messag);}"}
+{"time": "2021-01-23 08:38:51.168265", "n_pass": [414, 136, 17], "score": "0.2491", "loss": "2.1122", "code": "e invalidRequest(ng mee){e(e,INVALID_REQUEST,messag);}"}
+
+Minimal simplified code:
+e invalidRequest(ng mee){e(e,INVALID_REQUEST,messag);}
+

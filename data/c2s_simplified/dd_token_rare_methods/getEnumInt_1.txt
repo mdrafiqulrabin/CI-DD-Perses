@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_getEnumInt.java
+method_name = getEnumInt
+method_body = public <E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }
+predict, score, loss = getEnumInt, 0.4064397, 2.3936443
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:07:36.164381", "n_pass": [1, 1, 1], "score": "0.4064", "loss": "2.3936", "code": "public <E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:38.815152", "n_pass": [44, 3, 2], "score": "0.4064", "loss": "2.3936", "code": "<E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:40.127500", "n_pass": [46, 4, 3], "score": "0.4269", "loss": "1.7251", "code": "<E extends Enum> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:41.439161", "n_pass": [51, 5, 4], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum> E getEnumInt(int index, Class enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:48.050756", "n_pass": [112, 9, 5], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index, Class enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:56.139970", "n_pass": [167, 12, 6], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index,Class enumClass) { return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:57.452915", "n_pass": [172, 13, 7], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index,Class enumClass){ return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:07:58.766849", "n_pass": [174, 14, 8], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index,Class enumClass){return toEnum(enumClass, getInt(index)); }"}
+{"time": "2021-01-20 06:08:02.710328", "n_pass": [181, 17, 9], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index,Class enumClass){return toEnum(enumClass,getInt(index)); }"}
+{"time": "2021-01-20 06:08:06.636176", "n_pass": [188, 20, 10], "score": "0.595", "loss": "1.5217", "code": "<E extends Enum>E getEnumInt(int index,Class enumClass){return toEnum(enumClass,getInt(index));}"}
+
+Minimal simplified code:
+<E extends Enum>E getEnumInt(int index,Class enumClass){return toEnum(enumClass,getInt(index));}
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/sandbox/src/main/java/org/springframework/ws/soap/stroap/StroapMessageFactory_setSoapVersion.java
+method_name = setSoapVersion
+method_body = public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 01:15:38.175608", "score": "0.4847", "loss": "1.1102", "code": "class T { public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } } }"}
+{"time": "2021-01-25 01:20:45.271327", "score": "0.4387", "loss": "0.9702", "code": "class T { public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { } } }"}
+{"time": "2021-01-25 01:23:29.405081", "score": "0.4387", "loss": "0.9702", "code": "class T { void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { } } }"}
+
+Minimal simplified code:
+class T {
+       void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) {                                            } }
+}
+
+

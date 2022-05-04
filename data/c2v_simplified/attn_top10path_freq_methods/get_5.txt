@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/util/ContextUtil_get.java
+method_name = get
+method_body = public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }
+
+topk path-contexts:
+[0.1121] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),defaultv
+[0.0920] defaultv,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),defaultv
+[0.0777] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),defaultv
+[0.0777] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),defaultv
+[0.0772] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),defaultv
+[0.0568] context,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),defaultv
+[0.0383] object,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),context
+[0.0364] string,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),defaultv
+[0.0355] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),defaultv
+[0.0310] object,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType1),object
+
+topk terminals:
+['key', 'defaultv', 'defaultv', 'defaultv', 'object', 'defaultv', 'object', 'defaultv', 'object', 'defaultv', 'context', 'defaultv', 'object', 'context', 'string', 'defaultv', 'key', 'defaultv', 'object', 'object']
+

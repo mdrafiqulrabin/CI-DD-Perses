@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/tool/impl/SessionComponent_getSessionListener.java
+method_name = getSessionListener
+method_body = public SessionAttributeListener getSessionListener() { return sessionListener; }
+
+topk path-contexts:
+[0.5345] sessionattributelistener,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),sessionlistener
+[0.3879] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),sessionlistener
+[0.0775] sessionattributelistener,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['sessionattributelistener', 'sessionlistener', 'METHOD_NAME', 'sessionlistener', 'sessionattributelistener', 'METHOD_NAME']
+

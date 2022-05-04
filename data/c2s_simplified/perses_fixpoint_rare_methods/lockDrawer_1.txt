@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_lockDrawer.java
+method_name = lockDrawer
+method_body = private void lockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:40:28.512273", "score": "0.3333", "loss": "2.4948", "code": "class T { private void lockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } } }"}
+{"time": "2021-01-24 05:41:39.151125", "score": "0.1783", "loss": "2.9953", "code": "class T { private void lockDrawer() { if (mDrawer != null) mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }"}
+{"time": "2021-01-24 05:42:26.322328", "score": "0.1783", "loss": "2.9953", "code": "class T { void lockDrawer() { if (mDrawer != null) mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED); } }"}
+
+Minimal simplified code:
+class T {
+        void lockDrawer() { if (mDrawer != null)   mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);   }
+}
+
+

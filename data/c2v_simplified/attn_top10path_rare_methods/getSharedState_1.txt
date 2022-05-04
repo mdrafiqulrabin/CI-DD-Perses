@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/authentication/service/LoginState_getSharedState.java
+method_name = getSharedState
+method_body = public Map getSharedState() { return sharedState; }
+
+topk path-contexts:
+[0.4334] map,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),sharedstate
+[0.4316] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),sharedstate
+[0.1349] map,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['map', 'sharedstate', 'METHOD_NAME', 'sharedstate', 'map', 'METHOD_NAME']
+

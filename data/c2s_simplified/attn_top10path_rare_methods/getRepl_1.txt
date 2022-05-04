@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_getRepl.java
+method_name = getRepl
+method_body = @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }
+
+topk path-contexts for sub-token: get
+[0.2655] nonnull,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0532] runtime|repl,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0298] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,new|instance
+[0.0273] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0272] nonnull,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,runtime|repl
+[0.0269] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,m|repl
+[0.0223] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,new|instance
+[0.0190] runtime|repl|factory,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0180] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,repl|factory
+[0.0171] repl|factory,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: get
+['nonnull', 'METHOD_NAME', 'runtime|repl', 'METHOD_NAME', 'METHOD_NAME', 'new|instance', 'METHOD_NAME', 'null', 'nonnull', 'runtime|repl', 'METHOD_NAME', 'm|repl', 'null', 'new|instance', 'runtime|repl|factory', 'null', 'METHOD_NAME', 'repl|factory', 'repl|factory', 'null']
+
+topk path-contexts for sub-token: repl
+[0.1415] runtime|repl,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0660] runtime|repl|factory,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0493] nonnull,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0450] nonnull,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,runtime|repl
+[0.0409] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,m|repl
+[0.0280] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr0,repl|factory
+[0.0266] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|repl
+[0.0254] repl|factory,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0241] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,runtime|repl|factory
+[0.0241] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: repl
+['runtime|repl', 'METHOD_NAME', 'runtime|repl|factory', 'null', 'nonnull', 'METHOD_NAME', 'nonnull', 'runtime|repl', 'METHOD_NAME', 'm|repl', 'METHOD_NAME', 'repl|factory', 'METHOD_NAME', 'm|repl', 'repl|factory', 'null', 'METHOD_NAME', 'runtime|repl|factory', 'METHOD_NAME', 'null']
+

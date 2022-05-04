@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/JoinNode_getJoinClause.java
+method_name = getJoinClause
+method_body = public ValueNode getJoinClause() { return joinClause; }
+predict, score, loss = getJoinClause, 0.36722901463508606, 1.7936009168624878
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:58:06.963698", "n_pass": [1, 1, 1], "score": "0.3672", "loss": "1.7936", "code": "public ValueNode getJoinClause() { return joinClause; }"}
+{"time": "2021-01-20 07:58:10.354677", "n_pass": [20, 2, 2], "score": "0.3672", "loss": "1.7936", "code": "ValueNode getJoinClause() { return joinClause; }"}
+{"time": "2021-01-20 07:58:19.022574", "n_pass": [46, 4, 3], "score": "0.3672", "loss": "1.7936", "code": "ValueNode getJoinClause(){ return joinClause; }"}
+{"time": "2021-01-20 07:58:21.613546", "n_pass": [48, 5, 4], "score": "0.3672", "loss": "1.7936", "code": "ValueNode getJoinClause(){return joinClause; }"}
+{"time": "2021-01-20 07:58:32.001308", "n_pass": [53, 9, 5], "score": "0.3672", "loss": "1.7936", "code": "ValueNode getJoinClause(){return joinClause;}"}
+
+Minimal simplified code:
+ValueNode getJoinClause(){return joinClause;}
+

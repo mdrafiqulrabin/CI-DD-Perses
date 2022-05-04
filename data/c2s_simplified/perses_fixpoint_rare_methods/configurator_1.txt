@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/javax/websocket/server/ServerEndpointConfig_configurator.java
+method_name = configurator
+method_body = public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:27:29.505415", "score": "0.4495", "loss": "1.9112", "code": "class T { public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; } }"}
+{"time": "2021-01-24 04:30:05.730620", "score": "0.4038", "loss": "2.0278", "code": "class T { public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; } }"}
+{"time": "2021-01-24 04:30:37.803305", "score": "0.3444", "loss": "2.4191", "code": "class T { public Builder configurator( ) { if (serverEndpointConfigurator == null) { configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; } }"}
+{"time": "2021-01-24 04:30:59.172511", "score": "0.3444", "loss": "2.4191", "code": "class T { Builder configurator( ) { if (serverEndpointConfigurator == null) { configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; } }"}
+{"time": "2021-01-24 04:32:31.183606", "score": "0.4093", "loss": "2.2793", "code": "class T { Builder configurator( ) { if (serverEndpointConfigurator == null) configurator = Configurator.fetchContainerDefaultConfigurator(); else { this.configurator = serverEndpointConfigurator; } return this; } }"}
+
+Minimal simplified code:
+class T {
+       Builder configurator(                                       ) { if (serverEndpointConfigurator == null)        configurator = Configurator.fetchContainerDefaultConfigurator();   else { this.configurator = serverEndpointConfigurator; } return this; }
+}
+
+

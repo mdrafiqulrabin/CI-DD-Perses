@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/MultiMap_get.java
+method_name = get
+method_body = public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }
+predict, score, loss = get, 0.9517127, 0.1996661
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:29:03.422718", "n_pass": [1, 1, 1], "score": "0.9517", "loss": "0.1997", "code": "public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-27 04:29:05.080603", "n_pass": [9, 2, 2], "score": "0.7243", "loss": "1.0506", "code": "public CBuffer get(CharSequence key) { return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-27 04:29:09.800902", "n_pass": [74, 4, 3], "score": "0.7243", "loss": "1.0506", "code": "public CBuffer get(CharSequence key){ return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-27 04:29:11.473655", "n_pass": [85, 5, 4], "score": "0.6114", "loss": "2.0774", "code": "public CBuffer get(CharSequence key){ return (entry == null) ? null : value; }"}
+{"time": "2020-12-27 04:29:12.775155", "n_pass": [88, 6, 5], "score": "0.6114", "loss": "2.0774", "code": " CBuffer get(CharSequence key){ return (entry == null) ? null : value; }"}
+{"time": "2020-12-27 04:29:14.076637", "n_pass": [89, 7, 6], "score": "0.6114", "loss": "2.0774", "code": "CBuffer get(CharSequence key){ return (entry == null) ? null : value; }"}
+{"time": "2020-12-27 04:29:20.153368", "n_pass": [132, 8, 7], "score": "0.6114", "loss": "2.0774", "code": "CBuffer get(CharSequence key){return (entry == null) ? null : value; }"}
+{"time": "2020-12-27 04:29:21.455935", "n_pass": [133, 9, 8], "score": "0.6114", "loss": "2.0774", "code": "CBuffer get(CharSequence key){return(entry == null) ? null : value; }"}
+{"time": "2020-12-27 04:29:22.764676", "n_pass": [136, 10, 9], "score": "0.6114", "loss": "2.0774", "code": "CBuffer get(CharSequence key){return(entry== null) ? null : value; }"}
+{"time": "2020-12-27 04:29:24.063702", "n_pass": [137, 11, 10], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry= null) ? null : value; }"}
+{"time": "2020-12-27 04:29:25.365799", "n_pass": [139, 12, 11], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null) ? null : value; }"}
+{"time": "2020-12-27 04:29:26.690300", "n_pass": [142, 13, 12], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null)? null : value; }"}
+{"time": "2020-12-27 04:29:28.010459", "n_pass": [144, 14, 13], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null)?null : value; }"}
+{"time": "2020-12-27 04:29:29.337906", "n_pass": [146, 15, 14], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null)?null: value; }"}
+{"time": "2020-12-27 04:29:30.657269", "n_pass": [148, 16, 15], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null)?null:value; }"}
+{"time": "2020-12-27 04:29:31.995938", "n_pass": [151, 17, 16], "score": "0.5171", "loss": "2.6017", "code": "CBuffer get(CharSequence key){return(entry=null)?null:value;}"}
+{"time": "2020-12-27 04:29:34.737962", "n_pass": [165, 18, 17], "score": "0.5632", "loss": "2.0957", "code": "CBuffer get(CharSequence key){return(entrynull)?null:value;}"}
+{"time": "2020-12-27 04:29:36.084929", "n_pass": [166, 19, 18], "score": "0.5272", "loss": "2.2411", "code": "CBuffer get(CharSequence key){return(entry)?null:value;}"}
+
+Minimal simplified code:
+CBuffer get(CharSequence key){return(entry)?null:value;}
+

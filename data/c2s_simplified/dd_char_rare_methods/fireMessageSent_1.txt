@@ -1,0 +1,48 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/polling/AbstractPollingIoProcessor_fireMessageSent.java
+method_name = fireMessageSent
+method_body = private void fireMessageSent(T session, WriteRequest req) { session.setCurrentWriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }
+predict, score, loss = fireMessageSent, 0.4561761, 2.322597
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:35:50.043451", "n_pass": [1, 1, 1], "score": "0.4562", "loss": "2.3226", "code": "private void fireMessageSent(T session, WriteRequest req) { session.setCurrentWriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:35:54.763040", "n_pass": [50, 4, 2], "score": "0.5478", "loss": "2.0745", "code": "private void fireMessageSent(T session, WriteRequest req) { sessionriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:35:56.094168", "n_pass": [53, 5, 3], "score": "0.4243", "loss": "2.5843", "code": "private void fireMessageSent(T session, WriteRequest req) { sessionriteRequest(null); IoFilterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:05.703517", "n_pass": [98, 12, 4], "score": "0.4306", "loss": "2.626", "code": "private void fireMessageSent(T session, WriteRequest req) { sessionriteRequest(null); IoFilterChain = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:17.384227", "n_pass": [115, 20, 5], "score": "0.3627", "loss": "2.9121", "code": "private void fireMessageSent(T session, Wriest req) { sessionriteRequest(null); IoFilterChain = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:18.702148", "n_pass": [118, 21, 6], "score": "0.3627", "loss": "2.9121", "code": "private void fireMessageSent(T session, Wriest req) { sriteRequest(null); IoFilterChain = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:20.013633", "n_pass": [119, 22, 7], "score": "0.3782", "loss": "2.9073", "code": "private void fireMessageSent(T session, Wriest req) { squest(null); IoFilterChain = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:21.324775", "n_pass": [122, 23, 8], "score": "0.4328", "loss": "3.2865", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);terChain = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:22.641843", "n_pass": [123, 24, 9], "score": "0.414", "loss": "2.317", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);in = s.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:23.957221", "n_pass": [125, 25, 10], "score": "0.3788", "loss": "2.4617", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);in = slterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:25.266576", "n_pass": [126, 26, 11], "score": "0.3903", "loss": "2.373", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);in = sain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:26.592200", "n_pass": [128, 27, 12], "score": "0.2872", "loss": "2.5988", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);in = sain();rChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:34.295192", "n_pass": [146, 32, 13], "score": "0.4292", "loss": "1.6063", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);ain();rChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:35.653973", "n_pass": [147, 33, 14], "score": "0.4841", "loss": "1.4473", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);rChain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:43.357500", "n_pass": [199, 38, 15], "score": "0.4109", "loss": "1.4782", "code": "private void fireMessageSent(T session, Wriest req) { squest(null);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:57.441044", "n_pass": [221, 47, 16], "score": "0.4813", "loss": "1.2081", "code": "private void fireMessageSent(T sesn, Wriest req) { squest(null);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:36:58.805592", "n_pass": [223, 48, 17], "score": "0.5305", "loss": "1.1026", "code": "private void fireMessageSent(T sesn, est req) { squest(null);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:00.117544", "n_pass": [228, 49, 18], "score": "0.5915", "loss": "0.9056", "code": "private void fireMessageSent(T sesn, est req) { sst(null);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:01.453372", "n_pass": [230, 50, 19], "score": "0.6747", "loss": "0.7098", "code": "private void fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:09.359969", "n_pass": [244, 56, 20], "score": "0.4776", "loss": "1.3426", "code": "privatvoid fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:10.665688", "n_pass": [245, 57, 21], "score": "0.4776", "loss": "1.3426", "code": "privatid fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:22.026977", "n_pass": [270, 64, 22], "score": "0.4776", "loss": "1.3426", "code": "ivatid fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:23.330952", "n_pass": [271, 65, 23], "score": "0.4776", "loss": "1.3426", "code": "atid fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:24.656687", "n_pass": [272, 66, 24], "score": "0.4016", "loss": "1.5369", "code": "id fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:36.722028", "n_pass": [345, 73, 25], "score": "0.4765", "loss": "1.3851", "code": "d fireMessageSent(T sesn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:45.522204", "n_pass": [367, 75, 26], "score": "0.4281", "loss": "1.5203", "code": "d fireMessageSent(T ssn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:46.846103", "n_pass": [368, 76, 27], "score": "0.3685", "loss": "1.8584", "code": "d fireMessageSent(T sn, est req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:48.183058", "n_pass": [370, 77, 28], "score": "0.3955", "loss": "1.9089", "code": "d fireMessageSent(T sn,st req) { sst(l);ain.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:37:52.102142", "n_pass": [380, 80, 29], "score": "0.5006", "loss": "1.6616", "code": "d fireMessageSent(T sn,st req) { sst(l);a.fireMessageSent(req); }"}
+{"time": "2021-01-23 12:38:03.876247", "n_pass": [390, 89, 30], "score": "0.5933", "loss": "1.4269", "code": "d fireMessageSent(T sn,st req) { sst(l);a.fireMessageSent(r); }"}
+{"time": "2021-01-23 12:38:12.690523", "n_pass": [417, 91, 31], "score": "0.5146", "loss": "1.9725", "code": "d fireMessageSent(T sn,st r) { sst(l);a.fireMessageSent(r); }"}
+{"time": "2021-01-23 12:38:13.996684", "n_pass": [420, 92, 32], "score": "0.4566", "loss": "1.836", "code": "d fireMessageSent(T sn,st r) { t(l);a.fireMessageSent(r); }"}
+{"time": "2021-01-23 12:38:15.318417", "n_pass": [423, 93, 33], "score": "0.5121", "loss": "1.7819", "code": "d fireMessageSent(T sn,st r) { t(l).fireMessageSent(r); }"}
+{"time": "2021-01-23 12:38:49.393112", "n_pass": [511, 113, 34], "score": "0.182", "loss": "3.1588", "code": "d fireMessageSent(T sn,st r) { t(l).fireMessageSent(); }"}
+{"time": "2021-01-23 12:38:50.711451", "n_pass": [514, 114, 35], "score": "0.182", "loss": "3.1588", "code": "d fireMessageSent(T sn,st r) { t(l).fireMessageSent();}"}
+{"time": "2021-01-23 12:39:03.408109", "n_pass": [544, 119, 36], "score": "0.182", "loss": "3.1588", "code": "d fireMessageSent(T sn,st r){ t(l).fireMessageSent();}"}
+{"time": "2021-01-23 12:39:04.707780", "n_pass": [546, 120, 37], "score": "0.182", "loss": "3.1588", "code": "d fireMessageSent(T sn,st r){t(l).fireMessageSent();}"}
+
+Minimal simplified code:
+d fireMessageSent(T sn,st r){t(l).fireMessageSent();}
+

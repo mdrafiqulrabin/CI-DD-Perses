@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPPlant_isShearable.java
+method_name = isShearable
+method_body = @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }
+predict, score, loss = isShearable, 0.4018533229827881, 1.01241934299469
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:08:55.390503", "n_pass": [1, 1, 1], "score": "0.4019", "loss": "1.0124", "code": "@Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-20 07:09:00.705767", "n_pass": [26, 3, 2], "score": "0.85", "loss": "0.1929", "code": "@Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:06.036955", "n_pass": [50, 5, 3], "score": "0.7552", "loss": "0.3133", "code": "boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:11.346485", "n_pass": [52, 7, 4], "score": "0.8539", "loss": "0.1821", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:16.631349", "n_pass": [93, 9, 5], "score": "0.8348", "loss": "0.2615", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:19.291649", "n_pass": [94, 10, 6], "score": "0.9363", "loss": "0.0841", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) {  world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:21.921336", "n_pass": [95, 11, 7], "score": "0.9892", "loss": "0.0139", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:24.574492", "n_pass": [100, 12, 8], "score": "0.9909", "loss": "0.0114", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default: return true; } }"}
+{"time": "2021-01-20 07:09:27.235805", "n_pass": [106, 13, 9], "score": "0.995", "loss": "0.0053", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:true; } }"}
+{"time": "2021-01-20 07:09:29.890593", "n_pass": [107, 14, 10], "score": "0.9951", "loss": "0.0052", "code": "boolean isShearable(ItemStack item, IBlockAccess pos) { getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:36.848006", "n_pass": [172, 15, 11], "score": "0.9951", "loss": "0.0052", "code": "boolean isShearable(ItemStack item,IBlockAccess pos) { getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:39.485879", "n_pass": [176, 16, 12], "score": "0.9951", "loss": "0.0052", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){ getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:42.119513", "n_pass": [178, 17, 13], "score": "0.9951", "loss": "0.0052", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){getBlockState(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:44.748484", "n_pass": [179, 18, 14], "score": "0.9975", "loss": "0.0026", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos); switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:47.392487", "n_pass": [184, 19, 15], "score": "0.9975", "loss": "0.0026", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants) (this.variantProperty)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:50.055831", "n_pass": [191, 20, 16], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants) (this)) { case CATTAIL:default:} }"}
+{"time": "2021-01-20 07:09:52.698168", "n_pass": [196, 21, 17], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants) (this)) { case CATTAIL:} }"}
+{"time": "2021-01-20 07:09:58.059949", "n_pass": [243, 22, 18], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants) (this)) { case CATTAIL:}}"}
+{"time": "2021-01-20 07:10:01.514441", "n_pass": [266, 23, 19], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants)(this)) { case CATTAIL:}}"}
+{"time": "2021-01-20 07:10:04.141880", "n_pass": [271, 24, 20], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants)(this)){ case CATTAIL:}}"}
+{"time": "2021-01-20 07:10:06.792465", "n_pass": [273, 25, 21], "score": "0.9978", "loss": "0.0023", "code": "boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants)(this)){case CATTAIL:}}"}
+
+Minimal simplified code:
+boolean isShearable(ItemStack item,IBlockAccess pos){(pos);switch((BOPPlants)(this)){case CATTAIL:}}
+

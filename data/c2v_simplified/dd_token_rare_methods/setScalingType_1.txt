@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/SurfaceViewRenderer_setScalingType.java
+method_name = setScalingType
+method_body = public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }
+predict, score, loss = setScalingType, 0.36752527952194214, 3.415889024734497
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:03:56.934301", "n_pass": [1, 1, 1], "score": "0.3675", "loss": "3.4159", "code": "public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }"}
+{"time": "2021-01-20 08:03:59.595959", "n_pass": [22, 2, 2], "score": "0.4771", "loss": "3.3803", "code": "public void setScalingType(RendererCommon.ScalingType  scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }"}
+{"time": "2021-01-20 08:04:02.225656", "n_pass": [24, 3, 3], "score": "0.6621", "loss": "2.4808", "code": "public void setScalingType(RendererCommon.ScalingType  scalingTypeMismatchOrientation) {  videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }"}
+{"time": "2021-01-20 08:04:04.861946", "n_pass": [43, 4, 4], "score": "0.6662", "loss": "2.3815", "code": "public void setScalingType(RendererCommon.ScalingType  scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }"}
+{"time": "2021-01-20 08:04:10.108882", "n_pass": [46, 6, 5], "score": "0.8482", "loss": "1.2072", "code": "public void setScalingType(RendererCommon.ScalingType  scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); ; }"}
+{"time": "2021-01-20 08:04:12.726554", "n_pass": [48, 7, 6], "score": "0.8482", "loss": "1.2072", "code": "void setScalingType(RendererCommon.ScalingType  scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); ; }"}
+{"time": "2021-01-20 08:04:15.770565", "n_pass": [51, 8, 7], "score": "0.8887", "loss": "0.788", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); ; }"}
+{"time": "2021-01-20 08:04:18.388873", "n_pass": [55, 9, 8], "score": "0.5565", "loss": "1.9722", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation); ; }"}
+{"time": "2021-01-20 08:04:22.564488", "n_pass": [79, 10, 9], "score": "0.5565", "loss": "1.9722", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation); }"}
+{"time": "2021-01-20 08:04:30.162684", "n_pass": [103, 12, 10], "score": "0.5565", "loss": "1.9722", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation) { setScalingType(scalingTypeMatchOrientation);}"}
+{"time": "2021-01-20 08:04:33.616284", "n_pass": [112, 13, 11], "score": "0.5565", "loss": "1.9722", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation){ setScalingType(scalingTypeMatchOrientation);}"}
+{"time": "2021-01-20 08:04:36.236014", "n_pass": [114, 14, 12], "score": "0.5565", "loss": "1.9722", "code": "void setScalingType(RendererCommon scalingTypeMismatchOrientation){setScalingType(scalingTypeMatchOrientation);}"}
+
+Minimal simplified code:
+void setScalingType(RendererCommon scalingTypeMismatchOrientation){setScalingType(scalingTypeMatchOrientation);}
+

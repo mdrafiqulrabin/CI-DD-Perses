@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/tribes/membership/Constants_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { System.out.println(Arrays.toString("TRIBES-B".getBytes())); System.out.println(Arrays.toString("TRIBES-E".getBytes())); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 03:19:24.444900", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws Exception { System.out.println(Arrays.toString(\"TRIBES-B\".getBytes())); System.out.println(Arrays.toString(\"TRIBES-E\".getBytes())); } }"}
+{"time": "2020-12-29 03:22:28.417820", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws Exception { System.out.println(Arrays.toString(\"TRIBES-B\".getBytes())); } }"}
+{"time": "2020-12-29 03:23:44.752431", "score": "1.0", "loss": "0.0", "code": "class T { public static void main(String[] args) throws Exception { System.out.println( ); } }"}
+{"time": "2020-12-29 03:25:03.538996", "score": "0.9999", "loss": "0.0002", "code": "class T { public static void main(String args) throws Exception { System.out.println( ); } }"}
+{"time": "2020-12-29 03:26:39.734389", "score": "0.9623", "loss": "0.0525", "code": "class T { public static void main(String args) { System.out.println( ); } }"}
+{"time": "2020-12-29 03:27:20.522282", "score": "0.9623", "loss": "0.0525", "code": "class T { void main(String args) { System.out.println( ); } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                  { System.out.println(                                      );                                                             }
+}
+
+

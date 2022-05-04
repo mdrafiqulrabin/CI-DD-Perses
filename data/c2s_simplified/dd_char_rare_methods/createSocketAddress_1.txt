@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/test/java/org/apache/mina/transport/vmpipe/VmPipeBindTest_createSocketAddress.java
+method_name = createSocketAddress
+method_body = @Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }
+predict, score, loss = createSocketAddress, 0.4708413, 2.5216398
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:45:13.993627", "n_pass": [1, 1, 1], "score": "0.4708", "loss": "2.5216", "code": "@Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:25.743354", "n_pass": [55, 8, 2], "score": "0.4871", "loss": "2.365", "code": "@Override protected SocketAddress createSocketAddress(int port) {  new VmPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:34.744549", "n_pass": [102, 14, 3], "score": "0.3937", "loss": "2.4921", "code": "@Override protected SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:41.355217", "n_pass": [110, 19, 4], "score": "0.3485", "loss": "3.0681", "code": "@Ovide protected SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:42.664750", "n_pass": [111, 20, 5], "score": "0.4076", "loss": "2.9817", "code": "@Ov protected SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:43.967840", "n_pass": [112, 21, 6], "score": "0.3485", "loss": "3.0681", "code": "@Ovotected SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:45.269172", "n_pass": [113, 22, 7], "score": "0.3485", "loss": "3.0681", "code": "@Ovcted SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:46.570707", "n_pass": [114, 23, 8], "score": "0.4695", "loss": "2.7667", "code": "@Ovd SocketAddress createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:45:52.178990", "n_pass": [119, 27, 9], "score": "0.463", "loss": "3.4565", "code": "@Ovd SocketAddr createSocketAddress(int port) {  nemPipeAddress(port); }"}
+{"time": "2021-01-23 12:46:00.854347", "n_pass": [136, 32, 10], "score": "0.521", "loss": "3.2917", "code": "@Ovd SocketAddr createSocketAddress(int port) {  nemPipeAddress(); }"}
+{"time": "2021-01-23 12:46:14.509026", "n_pass": [206, 40, 11], "score": "0.4336", "loss": "3.7486", "code": "@vd SocketAddr createSocketAddress(int port) {  nemPipeAddress(); }"}
+{"time": "2021-01-23 12:46:15.803879", "n_pass": [207, 41, 12], "score": "0.4299", "loss": "3.6768", "code": "@d SocketAddr createSocketAddress(int port) {  nemPipeAddress(); }"}
+{"time": "2021-01-23 12:46:35.254460", "n_pass": [233, 52, 13], "score": "0.365", "loss": "4.1255", "code": "@d SocketAddr createSocketAddress(t port) {  nemPipeAddress(); }"}
+{"time": "2021-01-23 12:46:37.895261", "n_pass": [236, 54, 14], "score": "0.2415", "loss": "5.3494", "code": "@d SocketAddr createSocketAddress(t po) {  nemPipeAddress(); }"}
+{"time": "2021-01-23 12:47:26.699908", "n_pass": [338, 86, 15], "score": "0.2415", "loss": "5.3494", "code": "@d SocketAddr createSocketAddress(t po) {  nemPipeAddress();}"}
+{"time": "2021-01-23 12:47:49.033412", "n_pass": [375, 97, 16], "score": "0.2664", "loss": "7.8112", "code": "@d SocketAddr createSocketAddress(t o) {  nemPipeAddress();}"}
+{"time": "2021-01-23 12:47:50.331312", "n_pass": [378, 98, 17], "score": "0.2664", "loss": "7.8112", "code": "@d SocketAddr createSocketAddress(t o){  nemPipeAddress();}"}
+{"time": "2021-01-23 12:47:51.632081", "n_pass": [380, 99, 18], "score": "0.2664", "loss": "7.8112", "code": "@d SocketAddr createSocketAddress(t o){ nemPipeAddress();}"}
+{"time": "2021-01-23 12:47:52.928312", "n_pass": [381, 100, 19], "score": "0.2664", "loss": "7.8112", "code": "@d SocketAddr createSocketAddress(t o){nemPipeAddress();}"}
+
+Minimal simplified code:
+@d SocketAddr createSocketAddress(t o){nemPipeAddress();}
+

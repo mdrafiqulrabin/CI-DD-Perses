@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_run.java
+method_name = run
+method_body = public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }
+predict, score, loss = run, 0.6191791, 0.82444113
+
+Trace of simplified code(s):
+{"time": "2020-12-28 01:23:18.317738", "n_pass": [1, 1, 1], "score": "0.6192", "loss": "0.8244", "code": "public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }"}
+{"time": "2020-12-28 01:23:19.655414", "n_pass": [10, 2, 2], "score": "0.5709", "loss": "1.017", "code": "public void run() { dataRefresh(); handler.postDelayed(this, delaytime); iwLayout(viFloatingWindow, wmParams); }"}
+{"time": "2020-12-28 01:23:20.995664", "n_pass": [13, 3, 3], "score": "0.5448", "loss": "0.9638", "code": "public void run() { dataRefresh(); hawLayout(viFloatingWindow, wmParams); }"}
+{"time": "2020-12-28 01:23:22.688312", "n_pass": [31, 4, 4], "score": "0.7073", "loss": "0.5735", "code": "public void run() { dataRefresh(); hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:25.337591", "n_pass": [34, 6, 5], "score": "0.369", "loss": "1.8549", "code": "id run() { dataRefresh(); hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:29.959083", "n_pass": [56, 9, 6], "score": "0.2246", "loss": "2.7254", "code": "id run() { defresh(); hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:31.280949", "n_pass": [57, 10, 7], "score": "0.302", "loss": "2.4378", "code": "id run() { dh(); hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:55.529630", "n_pass": [148, 26, 8], "score": "0.2909", "loss": "2.3812", "code": "id run() { d(); hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:56.850230", "n_pass": [151, 27, 9], "score": "0.2909", "loss": "2.3812", "code": "id run() { d();hawLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:23:58.212722", "n_pass": [152, 28, 10], "score": "0.2304", "loss": "2.3511", "code": "id run() { d();awLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:24:24.791495", "n_pass": [175, 48, 11], "score": "0.3962", "loss": "1.6868", "code": "d run() { d();awLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:24:27.923776", "n_pass": [183, 49, 12], "score": "0.3962", "loss": "1.6868", "code": "d run(){ d();awLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:24:29.234621", "n_pass": [185, 50, 13], "score": "0.3962", "loss": "1.6868", "code": "d run(){d();awLayout(Window, wmParams); }"}
+{"time": "2020-12-28 01:24:43.899933", "n_pass": [201, 61, 14], "score": "0.3261", "loss": "1.89", "code": "d run(){d();awLayout(Widow, wmParams); }"}
+{"time": "2020-12-28 01:24:50.695098", "n_pass": [206, 66, 15], "score": "0.3601", "loss": "1.7841", "code": "d run(){d();awLayout(Widow, Params); }"}
+{"time": "2020-12-28 01:24:52.012147", "n_pass": [207, 67, 16], "score": "0.3555", "loss": "1.6704", "code": "d run(){d();awLayout(Widow, rams); }"}
+{"time": "2020-12-28 01:24:53.353796", "n_pass": [208, 68, 17], "score": "0.42", "loss": "1.7295", "code": "d run(){d();awLayout(Widow, ms); }"}
+{"time": "2020-12-28 01:25:16.227294", "n_pass": [249, 83, 18], "score": "0.42", "loss": "1.7295", "code": "d run(){d();awLayout(Widow, ms);}"}
+{"time": "2020-12-28 01:25:36.642494", "n_pass": [277, 97, 19], "score": "0.42", "loss": "1.7295", "code": "d run(){d();awLayout(Widow,ms);}"}
+{"time": "2020-12-28 01:25:37.941882", "n_pass": [278, 98, 20], "score": "0.3504", "loss": "1.9153", "code": "d run(){d();awLayout(Widow,s);}"}
+
+Minimal simplified code:
+d run(){d();awLayout(Widow,s);}
+

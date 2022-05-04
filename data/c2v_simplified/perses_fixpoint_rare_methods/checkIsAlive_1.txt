@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ouya__ouya-sdk-examples/Twine/ControllerExample/src/content/public/android/java/src/org/chromium/content/browser/ContentView_checkIsAlive.java
+method_name = checkIsAlive
+method_body = void checkIsAlive() throws IllegalStateException { mContentViewCore.checkIsAlive(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:43:52.709857", "score": "0.3296", "loss": "1.7891", "code": "class T { void checkIsAlive() throws IllegalStateException { mContentViewCore.checkIsAlive(); } }"}
+
+Minimal simplified code:
+class T { 
+void checkIsAlive() throws IllegalStateException { mContentViewCore.checkIsAlive(); }
+}
+
+

@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/ServerinfoTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/serverinfo"); }
+predict, score, loss = execute, 0.99842227, 0.0017999051
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:43:09.345658", "n_pass": [1, 1, 1], "score": "0.9984", "loss": "0.0018", "code": "@Override public void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 03:43:11.963384", "n_pass": [20, 3, 2], "score": "0.9849", "loss": "0.0181", "code": " void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 03:43:15.566323", "n_pass": [49, 5, 3], "score": "0.9165", "loss": "0.1336", "code": " void execute() throws BuildException { super.execute; execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 03:43:19.812129", "n_pass": [89, 6, 4], "score": "0.9165", "loss": "0.1336", "code": " void execute() throws BuildException { super.execute;execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 03:43:21.108608", "n_pass": [90, 7, 5], "score": "0.7653", "loss": "0.8818", "code": " void execute() throws BuildException { super.execute;(\"/serverinfo\"); }"}
+{"time": "2020-12-27 03:43:22.418389", "n_pass": [93, 8, 6], "score": "0.7653", "loss": "0.8818", "code": " void execute() throws BuildException { super.execute;(\"serverinfo\"); }"}
+{"time": "2020-12-27 03:43:23.698554", "n_pass": [94, 9, 7], "score": "0.8785", "loss": "0.7596", "code": " void execute() throws BuildException { super.execute;(\"\"); }"}
+{"time": "2020-12-27 03:43:24.991190", "n_pass": [98, 10, 8], "score": "0.8785", "loss": "0.7596", "code": "void execute() throws BuildException { super.execute;(\"\"); }"}
+{"time": "2020-12-27 03:43:27.008649", "n_pass": [104, 11, 9], "score": "0.8785", "loss": "0.7596", "code": "void execute()throws BuildException { super.execute;(\"\"); }"}
+{"time": "2020-12-27 03:43:28.315805", "n_pass": [108, 12, 10], "score": "0.8785", "loss": "0.7596", "code": "void execute()throws BuildException{ super.execute;(\"\"); }"}
+{"time": "2020-12-27 03:43:29.602045", "n_pass": [110, 13, 11], "score": "0.8785", "loss": "0.7596", "code": "void execute()throws BuildException{super.execute;(\"\"); }"}
+{"time": "2020-12-27 03:43:32.176026", "n_pass": [114, 15, 12], "score": "0.7492", "loss": "0.4801", "code": "void execute()throws BuildException{super.execute(\"\"); }"}
+{"time": "2020-12-27 03:43:36.110643", "n_pass": [138, 17, 13], "score": "0.7492", "loss": "0.4801", "code": "void execute()throws BuildException{super.execute(\"\");}"}
+
+Minimal simplified code:
+void execute()throws BuildException{super.execute("");}
+

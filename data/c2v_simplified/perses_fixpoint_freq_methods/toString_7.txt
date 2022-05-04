@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/SimpleNode_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (this.image != null) { return ELParserTreeConstants.jjtNodeName[id] + "[" + this.image + "]"; } return ELParserTreeConstants.jjtNodeName[id]; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 08:09:26.383928", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public String toString() { if (this.image != null) { return ELParserTreeConstants.jjtNodeName[id] + \"[\" + this.image + \"]\"; } return ELParserTreeConstants.jjtNodeName[id]; } }"}
+{"time": "2020-12-29 08:11:53.028390", "score": "0.9998", "loss": "0.0002", "code": "class T { @Override public String toString() { return ELParserTreeConstants.jjtNodeName[id] + \"[\" + this.image + \"]\"; } }"}
+{"time": "2020-12-29 08:13:08.700027", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override public String toString() { return ; } }"}
+{"time": "2020-12-29 08:14:28.052036", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override String toString() { return ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString()                           { return                                                               ; }
+}
+
+

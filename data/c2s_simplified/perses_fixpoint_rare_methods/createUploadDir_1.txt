@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-manager/src/main/java/fr/treeptik/cloudunit/utils/FilesUtils_createUploadDir.java
+method_name = createUploadDir
+method_body = public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + "/uploadDir_" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:34:01.102772", "score": "0.4403", "loss": "2.1904", "code": "class T { public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } } }"}
+{"time": "2021-01-24 02:36:47.413318", "score": "0.4269", "loss": "2.3027", "code": "class T { public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) uploadFolder.mkdir(); } }"}
+{"time": "2021-01-24 02:36:58.300326", "score": "0.4842", "loss": "2.0966", "code": "class T { public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if ( uploadFolder.exists()) uploadFolder.mkdir(); } }"}
+{"time": "2021-01-24 02:37:09.209566", "score": "0.3902", "loss": "2.5136", "code": "class T { public static void createUploadDir( ) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if ( uploadFolder.exists()) uploadFolder.mkdir(); } }"}
+{"time": "2021-01-24 02:37:56.827177", "score": "0.3943", "loss": "2.6715", "code": "class T { public static void createUploadDir( ) { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if ( uploadFolder.exists()) uploadFolder.mkdir(); } }"}
+{"time": "2021-01-24 02:38:07.661014", "score": "0.3943", "loss": "2.6715", "code": "class T { void createUploadDir( ) { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if ( uploadFolder.exists()) uploadFolder.mkdir(); } }"}
+{"time": "2021-01-24 02:39:40.463445", "score": "0.3965", "loss": "2.5271", "code": "class T { void createUploadDir( ) { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); uploadFolder.mkdir(); } }"}
+
+Minimal simplified code:
+class T {
+              void createUploadDir(                               )                            { File uploadFolder = new File(uploadDir + "/uploadDir_" + server.getContainerID());                               uploadFolder.mkdir();   }
+}
+
+

@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/jamesdbloom__mockserver/mockserver-core/src/main/java/org/mockserver/client/serialization/model/HttpClassCallbackDTO_setCallbackClass.java
+method_name = setCallbackClass
+method_body = public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }
+predict, score, loss = setCallbackClass, 0.4290981, 0.906908
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:34:06.853815", "n_pass": [1, 1, 1], "score": "0.4291", "loss": "0.9069", "code": "public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }"}
+{"time": "2021-01-23 13:34:11.843887", "n_pass": [44, 4, 2], "score": "0.4291", "loss": "0.9069", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }"}
+{"time": "2021-01-23 13:34:13.136992", "n_pass": [45, 5, 3], "score": "0.4701", "loss": "0.8198", "code": "HttpClaackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }"}
+{"time": "2021-01-23 13:34:15.540188", "n_pass": [51, 6, 4], "score": "0.4857", "loss": "0.8157", "code": "HttpClaackDTO setCallbackClass(String callss) { this.callbackClass = callbackClass; return this; }"}
+{"time": "2021-01-23 13:34:20.728456", "n_pass": [56, 10, 5], "score": "0.6365", "loss": "0.5853", "code": "HttpClaackDTO setCallbackClass(String callss) { this.callbackClass = callb; return this; }"}
+{"time": "2021-01-23 13:34:22.026114", "n_pass": [59, 11, 6], "score": "0.5349", "loss": "0.7273", "code": "ackDTO setCallbackClass(String callss) { this.callbackClass = callb; return this; }"}
+{"time": "2021-01-23 13:34:28.326191", "n_pass": [93, 15, 7], "score": "0.605", "loss": "0.6257", "code": "DTO setCallbackClass(String callss) { this.callbackClass = callb; return this; }"}
+{"time": "2021-01-23 13:34:31.837079", "n_pass": [102, 16, 8], "score": "0.5486", "loss": "0.7064", "code": "DTO setCallbackClass(String ss) { this.callbackClass = callb; return this; }"}
+{"time": "2021-01-23 13:34:40.937164", "n_pass": [113, 23, 9], "score": "0.5532", "loss": "1.4283", "code": "DTO setCallbackClass(String ss) { this.callbackClass = callb; returns; }"}
+{"time": "2021-01-23 13:34:52.235553", "n_pass": [131, 30, 10], "score": "0.8376", "loss": "0.2361", "code": "DTO setCallbackClass(String ss) { this.callbackClass = callbturns; }"}
+{"time": "2021-01-23 13:34:53.539741", "n_pass": [132, 31, 11], "score": "0.8376", "loss": "0.2361", "code": "DTO setCallbackClass(String ss) { this.callbackClass = callbs; }"}
+{"time": "2021-01-23 13:35:03.487531", "n_pass": [149, 37, 12], "score": "0.6469", "loss": "0.4855", "code": "DTO setCallbackClass(String ss) { this.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:13.776984", "n_pass": [200, 43, 13], "score": "0.5083", "loss": "0.735", "code": "TO setCallbackClass(String ss) { this.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:15.089395", "n_pass": [201, 44, 14], "score": "0.5784", "loss": "0.5913", "code": "O setCallbackClass(String ss) { this.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:19.638494", "n_pass": [212, 45, 15], "score": "0.6313", "loss": "0.9889", "code": "O setCallbackClass(Sing ss) { this.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:20.936995", "n_pass": [213, 46, 16], "score": "0.841", "loss": "0.4354", "code": "O setCallbackClass(Sg ss) { this.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:22.244534", "n_pass": [218, 47, 17], "score": "0.8701", "loss": "0.4587", "code": "O setCallbackClass(Sg ss) { is.callbackClass = cs; }"}
+{"time": "2021-01-23 13:35:33.922951", "n_pass": [228, 56, 18], "score": "0.8309", "loss": "0.6095", "code": "O setCallbackClass(Sg ss) { is.callbackClass =s; }"}
+{"time": "2021-01-23 13:35:51.228617", "n_pass": [305, 65, 19], "score": "0.8309", "loss": "0.6095", "code": "O setCallbackClass(Sg ss) { is.callbackClass =s;}"}
+{"time": "2021-01-23 13:35:59.056093", "n_pass": [325, 66, 20], "score": "0.7458", "loss": "0.7642", "code": "O setCallbackClass(g ss) { is.callbackClass =s;}"}
+{"time": "2021-01-23 13:36:00.347184", "n_pass": [328, 67, 21], "score": "0.7908", "loss": "0.6389", "code": "O setCallbackClass(g s) { is.callbackClass =s;}"}
+{"time": "2021-01-23 13:36:01.637263", "n_pass": [331, 68, 22], "score": "0.7908", "loss": "0.6389", "code": "O setCallbackClass(g s){ is.callbackClass =s;}"}
+{"time": "2021-01-23 13:36:02.928642", "n_pass": [333, 69, 23], "score": "0.7908", "loss": "0.6389", "code": "O setCallbackClass(g s){is.callbackClass =s;}"}
+{"time": "2021-01-23 13:36:04.224282", "n_pass": [334, 70, 24], "score": "0.7771", "loss": "0.6248", "code": "O setCallbackClass(g s){s.callbackClass =s;}"}
+{"time": "2021-01-23 13:36:23.645639", "n_pass": [350, 85, 25], "score": "0.7771", "loss": "0.6248", "code": "O setCallbackClass(g s){s.callbackClass=s;}"}
+
+Minimal simplified code:
+O setCallbackClass(g s){s.callbackClass=s;}
+

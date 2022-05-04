@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_isAutoShrink.java
+method_name = isAutoShrink
+method_body = @Override public final boolean isAutoShrink() { return autoShrink && recapacityAllowed; }
+predict, score, loss = isAutoShrink, 0.49824923, 1.030469
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:42:26.710668", "n_pass": [1, 1, 1], "score": "0.4982", "loss": "1.0305", "code": "@Override public final boolean isAutoShrink() { return autoShrink && recapacityAllowed; }"}
+{"time": "2021-01-23 12:42:27.982756", "n_pass": [8, 2, 2], "score": "0.5346", "loss": "0.811", "code": " boolean isAutoShrink() { return autoShrink && recapacityAllowed; }"}
+{"time": "2021-01-23 12:42:34.888294", "n_pass": [44, 6, 3], "score": "0.5256", "loss": "0.8001", "code": " boolean isAutoShrink() { return autoShrink && retyAllowed; }"}
+{"time": "2021-01-23 12:42:45.248965", "n_pass": [80, 13, 4], "score": "0.599", "loss": "1.0532", "code": " boolean isAutoShrink() { return autoShrink && retyAllo; }"}
+{"time": "2021-01-23 12:42:57.230179", "n_pass": [98, 21, 5], "score": "0.5449", "loss": "2.8706", "code": " boolean isAutoShrink() { return autoShrink &&tyAllo; }"}
+{"time": "2021-01-23 12:42:58.500969", "n_pass": [99, 22, 6], "score": "0.5055", "loss": "0.9518", "code": " boolean isAutoShrink() { return autoShrink &&llo; }"}
+{"time": "2021-01-23 12:43:14.003109", "n_pass": [161, 32, 7], "score": "0.5055", "loss": "0.9518", "code": "boolean isAutoShrink() { return autoShrink &&llo; }"}
+{"time": "2021-01-23 12:43:27.479390", "n_pass": [183, 39, 8], "score": "0.5055", "loss": "0.9518", "code": "boolean isAutoShrink(){ return autoShrink &&llo; }"}
+{"time": "2021-01-23 12:44:05.165114", "n_pass": [259, 63, 9], "score": "0.5055", "loss": "0.9518", "code": "boolean isAutoShrink(){ return autoShrink&&llo; }"}
+{"time": "2021-01-23 12:44:06.457960", "n_pass": [260, 64, 10], "score": "0.6884", "loss": "0.5738", "code": "boolean isAutoShrink(){ return autoShrink&llo; }"}
+{"time": "2021-01-23 12:44:11.573136", "n_pass": [264, 68, 11], "score": "0.677", "loss": "1.1067", "code": "boolean isAutoShrink(){ return autoShrink&ll; }"}
+{"time": "2021-01-23 12:44:12.870949", "n_pass": [266, 69, 12], "score": "0.677", "loss": "1.1067", "code": "boolean isAutoShrink(){ return autoShrink&ll;}"}
+{"time": "2021-01-23 12:44:27.742035", "n_pass": [291, 77, 13], "score": "0.677", "loss": "1.1067", "code": "boolean isAutoShrink(){return autoShrink&ll;}"}
+{"time": "2021-01-23 12:44:43.403421", "n_pass": [310, 89, 14], "score": "0.7246", "loss": "0.8047", "code": "boolean isAutoShrink(){return autoShrink&l;}"}
+
+Minimal simplified code:
+boolean isAutoShrink(){return autoShrink&l;}
+

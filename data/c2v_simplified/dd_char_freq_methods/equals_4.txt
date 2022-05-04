@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/URL_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }
+predict, score, loss = equals, 0.9950814247131348, 0.005584235303103924
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:08:43.668200", "n_pass": [1, 1, 1], "score": "0.9951", "loss": "0.0056", "code": "@Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:08:46.302830", "n_pass": [9, 2, 2], "score": "0.999", "loss": "0.0015", "code": "@Override public boolean equals(Object obj) { ither = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:08:48.941670", "n_pass": [20, 3, 3], "score": "0.6349", "loss": "0.6115", "code": "@Override public boolean equals(Object obj) { ither = (URL) obj; if (!sfalse); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:08:51.578803", "n_pass": [23, 4, 4], "score": "0.2666", "loss": "2.7643", "code": "n equals(Object obj) { ither = (URL) obj; if (!sfalse); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:08:59.858707", "n_pass": [65, 7, 5], "score": "0.2411", "loss": "2.5433", "code": "n equals(Object obj) { ither = obj; if (!sfalse); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:09:16.029593", "n_pass": [112, 13, 6], "score": "0.2462", "loss": "2.3451", "code": "n equals(Object obj) { ither = obj; (!sfalse); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:09:18.637240", "n_pass": [113, 14, 7], "score": "0.2728", "loss": "2.2018", "code": "n equals(Object obj) { ither = obj; (!sse); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-28 08:09:31.731786", "n_pass": [123, 19, 8], "score": "0.1609", "loss": "3.6285", "code": "n equals(Object obj) { ither = obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:10:47.985261", "n_pass": [235, 46, 9], "score": "0.1609", "loss": "3.6285", "code": "n equals(Object obj){ ither = obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:10:50.602671", "n_pass": [237, 47, 10], "score": "0.1609", "loss": "3.6285", "code": "n equals(Object obj){ither = obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:10:55.826277", "n_pass": [239, 49, 11], "score": "0.1609", "loss": "3.6285", "code": "n equals(Object obj){iher = obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:11:01.069423", "n_pass": [241, 51, 12], "score": "0.1609", "loss": "3.6285", "code": "n equals(Object obj){ihr = obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:11:03.667227", "n_pass": [242, 52, 13], "score": "0.1888", "loss": "3.3787", "code": "n equals(Object obj){ih= obj; (!sse); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:11:14.135695", "n_pass": [247, 56, 14], "score": "0.1792", "loss": "3.3974", "code": "n equals(Object obj){ih= obj; (se); return (compare(ref, or.getRef())); }"}
+{"time": "2020-12-28 08:11:35.115129", "n_pass": [259, 64, 15], "score": "0.1595", "loss": "3.5263", "code": "n equals(Object obj){ih= obj; (se); return (compare(r, or.getRef())); }"}
+{"time": "2020-12-28 08:12:25.513702", "n_pass": [294, 82, 16], "score": "0.1463", "loss": "3.5973", "code": "n equals(Object obj){ih= ob (se); return (compare(r, or.getRef())); }"}
+{"time": "2020-12-28 08:12:28.120249", "n_pass": [296, 83, 17], "score": "0.1386", "loss": "3.6654", "code": "n equals(Object obj){ih= ob (); return (compare(r, or.getRef())); }"}
+{"time": "2020-12-28 08:13:37.162488", "n_pass": [386, 107, 18], "score": "0.1386", "loss": "3.6654", "code": "n equals(Object obj){ih= ob (); return(compare(r, or.getRef())); }"}
+{"time": "2020-12-28 08:13:58.049466", "n_pass": [398, 115, 19], "score": "0.1386", "loss": "3.6654", "code": "n equals(Object obj){ih= ob (); return(compare(r,or.getRef())); }"}
+{"time": "2020-12-28 08:14:00.656351", "n_pass": [399, 116, 20], "score": "0.1487", "loss": "3.0873", "code": "n equals(Object obj){ih= ob (); return(compare(r,r.getRef())); }"}
+{"time": "2020-12-28 08:14:21.575270", "n_pass": [413, 124, 21], "score": "0.1487", "loss": "3.0873", "code": "n equals(Object obj){ih= ob (); return(compare(r,r.getRef()));}"}
+{"time": "2020-12-28 08:14:56.229531", "n_pass": [439, 136, 22], "score": "0.1487", "loss": "3.0873", "code": "n equals(Object obj){ih=ob (); return(compare(r,r.getRef()));}"}
+{"time": "2020-12-28 08:15:04.081800", "n_pass": [442, 139, 23], "score": "0.1487", "loss": "3.0873", "code": "n equals(Object obj){ih=ob(); return(compare(r,r.getRef()));}"}
+{"time": "2020-12-28 08:15:06.686451", "n_pass": [446, 140, 24], "score": "0.1487", "loss": "3.0873", "code": "n equals(Object obj){ih=ob();return(compare(r,r.getRef()));}"}
+
+Minimal simplified code:
+n equals(Object obj){ih=ob();return(compare(r,r.getRef()));}
+

@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/connector/TestMaxConnections_run.java
+method_name = run
+method_body = @Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }
+predict, score, loss = run, 0.9954968690872192, 0.005462126340717077
+
+Trace of simplified code(s):
+{"time": "2020-12-28 05:15:05.552390", "n_pass": [1, 1, 1], "score": "0.9955", "loss": "0.0055", "code": "@Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-28 05:15:08.167101", "n_pass": [10, 2, 2], "score": "0.9871", "loss": "0.0137", "code": "@Override public void run() { try { TestClient client = new Test(); } catch (Exception x) { } }"}
+{"time": "2020-12-28 05:15:10.820106", "n_pass": [42, 3, 3], "score": "0.9652", "loss": "0.0375", "code": "@Overric void run() { try { TestClient client = new Test(); } catch (Exception x) { } }"}
+{"time": "2020-12-28 05:15:13.444836", "n_pass": [46, 4, 4], "score": "0.2897", "loss": "2.1487", "code": "@Overric void run() { try { Tesclient = new Test(); } catch (Exception x) { } }"}
+{"time": "2020-12-28 05:15:16.071632", "n_pass": [48, 5, 5], "score": "0.8529", "loss": "0.4121", "code": "@Overric void run() { try { Tesclient =t(); } catch (Exception x) { } }"}
+{"time": "2020-12-28 05:15:21.329593", "n_pass": [80, 7, 6], "score": "0.7886", "loss": "0.5549", "code": "@Overric void run() { try { Tesclient =t(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:15:27.367393", "n_pass": [90, 9, 7], "score": "0.8953", "loss": "0.2374", "code": "@Overric void run() { try {client =t(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:15:32.598606", "n_pass": [92, 11, 8], "score": "0.7317", "loss": "1.1991", "code": "@Overric void run() { try {cliet(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:15:46.455511", "n_pass": [153, 16, 9], "score": "0.7317", "loss": "1.1991", "code": "@erric void run() { try {cliet(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:15:49.072549", "n_pass": [154, 17, 10], "score": "0.9094", "loss": "0.3944", "code": "@ric void run() { try {cliet(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:15:51.707890", "n_pass": [155, 18, 11], "score": "0.9529", "loss": "0.1852", "code": "@c void run() { try {cliet(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:16:00.336310", "n_pass": [166, 21, 12], "score": "0.9996", "loss": "0.0007", "code": "@c void run() { try {iet(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:16:02.943686", "n_pass": [167, 22, 13], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t(); } catch (Exion x) { } }"}
+{"time": "2020-12-28 05:16:21.674864", "n_pass": [245, 27, 14], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t();} catch (Exion x) { } }"}
+{"time": "2020-12-28 05:16:24.282363", "n_pass": [246, 28, 15], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t();}catch (Exion x) { } }"}
+{"time": "2020-12-28 05:16:26.890136", "n_pass": [252, 29, 16], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t();}catch(Exion x) { } }"}
+{"time": "2020-12-28 05:16:29.497218", "n_pass": [254, 30, 17], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t();}catch(xion x) { } }"}
+{"time": "2020-12-28 05:16:34.717147", "n_pass": [256, 32, 18], "score": "0.4143", "loss": "1.9766", "code": "@c void run() { try {t();}catch(xon x) { } }"}
+{"time": "2020-12-28 05:16:37.322816", "n_pass": [257, 33, 19], "score": "0.4692", "loss": "1.2848", "code": "@c void run() { try {t();}catch(xn x) { } }"}
+{"time": "2020-12-28 05:16:42.534267", "n_pass": [262, 35, 20], "score": "0.4692", "loss": "1.2848", "code": "@c void run() { try {t();}catch(xn x){ } }"}
+{"time": "2020-12-28 05:16:45.149786", "n_pass": [264, 36, 21], "score": "0.4692", "loss": "1.2848", "code": "@c void run() { try {t();}catch(xn x){} }"}
+{"time": "2020-12-28 05:16:47.750660", "n_pass": [266, 37, 22], "score": "0.4692", "loss": "1.2848", "code": "@c void run() { try {t();}catch(xn x){}}"}
+{"time": "2020-12-28 05:17:02.813020", "n_pass": [281, 42, 23], "score": "0.4692", "loss": "1.2848", "code": "@c void run(){ try {t();}catch(xn x){}}"}
+{"time": "2020-12-28 05:17:05.403878", "n_pass": [283, 43, 24], "score": "0.4692", "loss": "1.2848", "code": "@c void run(){try {t();}catch(xn x){}}"}
+{"time": "2020-12-28 05:17:08.030543", "n_pass": [287, 44, 25], "score": "0.4692", "loss": "1.2848", "code": "@c void run(){try{t();}catch(xn x){}}"}
+{"time": "2020-12-28 05:17:10.641432", "n_pass": [300, 45, 26], "score": "0.6639", "loss": "0.6452", "code": "@c void run(){try{t();}catch(n x){}}"}
+
+Minimal simplified code:
+@c void run(){try{t();}catch(n x){}}
+

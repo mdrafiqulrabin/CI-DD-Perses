@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/main/java/org/apache/tomcat/jdbc/pool/interceptor/StatementCache_poolClosed.java
+method_name = poolClosed
+method_body = @Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }
+
+topk path-contexts for sub-token: pool
+[0.3819] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.1795] pool,NameExpr2|MethodCallExpr|NameExpr3,pool|closed
+[0.0996] connection|pool,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0955] pool,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0442] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,remove
+[0.0391] pool,NameExpr2|MethodCallExpr|NameExpr3,remove
+[0.0286] remove,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0279] pool,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0265] cache|size|map,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0192] connection|pool,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,remove
+
+topk terminals for sub-token: pool
+['METHOD_NAME', 'pool|closed', 'pool', 'pool|closed', 'connection|pool', 'pool|closed', 'pool', 'pool|closed', 'METHOD_NAME', 'remove', 'pool', 'remove', 'remove', 'pool|closed', 'pool', 'pool|closed', 'cache|size|map', 'pool|closed', 'connection|pool', 'remove']
+
+topk path-contexts for sub-token: closed
+[0.4144] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.1739] pool,NameExpr2|MethodCallExpr|NameExpr3,pool|closed
+[0.1676] pool,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0604] connection|pool,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0302] cache|size|map,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0298] pool,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+[0.0285] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,remove
+[0.0202] pool,NameExpr2|MethodCallExpr|NameExpr3,remove
+[0.0185] pool,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,remove
+[0.0123] remove,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,pool|closed
+
+topk terminals for sub-token: closed
+['METHOD_NAME', 'pool|closed', 'pool', 'pool|closed', 'pool', 'pool|closed', 'connection|pool', 'pool|closed', 'cache|size|map', 'pool|closed', 'pool', 'pool|closed', 'METHOD_NAME', 'remove', 'pool', 'remove', 'pool', 'remove', 'remove', 'pool|closed']
+

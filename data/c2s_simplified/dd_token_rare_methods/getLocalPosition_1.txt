@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/scene3d/SimpleNode_getLocalPosition.java
+method_name = getLocalPosition
+method_body = @Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }
+predict, score, loss = getLocalPosition, 0.47198933, 1.5388578
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:45:48.522731", "n_pass": [1, 1, 1], "score": "0.472", "loss": "1.5389", "code": "@Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-20 05:45:50.225407", "n_pass": [20, 2, 2], "score": "0.674", "loss": "1.4392", "code": "public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-20 05:45:52.248977", "n_pass": [42, 3, 3], "score": "0.674", "loss": "1.4392", "code": " Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-20 05:45:53.564412", "n_pass": [43, 4, 4], "score": "0.674", "loss": "1.4392", "code": "Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-20 05:45:55.244004", "n_pass": [49, 5, 5], "score": "0.7241", "loss": "1.5005", "code": "Vector3 getLocalPosition(Vector3 out) { out.set(localPosition); }"}
+{"time": "2021-01-20 05:45:56.559992", "n_pass": [51, 6, 6], "score": "0.6378", "loss": "2.817", "code": "Vector3 getLocalPosition(Vector3 out) { out(localPosition); }"}
+{"time": "2021-01-20 05:45:58.594971", "n_pass": [61, 7, 7], "score": "0.9315", "loss": "1.659", "code": "Vector3 getLocalPosition(Vector3 out) {(localPosition); }"}
+{"time": "2021-01-20 05:46:02.333060", "n_pass": [93, 8, 8], "score": "0.9315", "loss": "1.659", "code": "Vector3 getLocalPosition(Vector3 out) {(localPosition);}"}
+{"time": "2021-01-20 05:46:03.640223", "n_pass": [95, 9, 9], "score": "0.9315", "loss": "1.659", "code": "Vector getLocalPosition(Vector3 out) {(localPosition);}"}
+{"time": "2021-01-20 05:46:05.671321", "n_pass": [100, 10, 10], "score": "0.9315", "loss": "1.659", "code": "Vector getLocalPosition(Vector out) {(localPosition);}"}
+{"time": "2021-01-20 05:46:07.003673", "n_pass": [104, 11, 11], "score": "0.9315", "loss": "1.659", "code": "Vector getLocalPosition(Vector out){(localPosition);}"}
+
+Minimal simplified code:
+Vector getLocalPosition(Vector out){(localPosition);}
+

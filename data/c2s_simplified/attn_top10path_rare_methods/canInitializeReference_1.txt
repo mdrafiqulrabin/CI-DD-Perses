@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_canInitializeReference.java
+method_name = canInitializeReference
+method_body = public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }
+
+topk path-contexts for sub-token: can
+[0.2694] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.2053] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.1378] flags,NameExpr0|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.0405] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0389] can|initialize|reference,NameExpr1|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0254] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0225] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0211] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0207] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0135] flags,NameExpr0|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: can
+['METHOD_NAME', 'can|initialize|reference', 'boolean', 'can|initialize|reference', 'flags', 'can|initialize|reference', 'boolean', 'METHOD_NAME', 'can|initialize|reference', '0', 'METHOD_NAME', 'flags', 'METHOD_NAME', '0', 'boolean', '0', 'boolean', 'flags', 'flags', '0']
+
+topk path-contexts for sub-token: initialize
+[0.4001] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.3190] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.1406] flags,NameExpr0|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.0211] can|initialize|reference,NameExpr1|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0053] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0047] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0046] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0031] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0027] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0015] flags,NameExpr0|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: initialize
+['METHOD_NAME', 'can|initialize|reference', 'boolean', 'can|initialize|reference', 'flags', 'can|initialize|reference', 'can|initialize|reference', '0', 'METHOD_NAME', 'flags', 'METHOD_NAME', '0', 'boolean', 'METHOD_NAME', 'boolean', 'flags', 'boolean', '0', 'flags', '0']
+
+topk path-contexts for sub-token: reference
+[0.3600] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.3177] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.1472] flags,NameExpr0|BinaryExpr:binAnd|NameExpr1,can|initialize|reference
+[0.0199] can|initialize|reference,NameExpr1|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0131] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0059] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0038] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0033] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0020] flags,NameExpr0|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0019] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: reference
+['METHOD_NAME', 'can|initialize|reference', 'boolean', 'can|initialize|reference', 'flags', 'can|initialize|reference', 'can|initialize|reference', '0', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'flags', 'boolean', 'flags', 'METHOD_NAME', '0', 'flags', '0', 'boolean', '0']
+

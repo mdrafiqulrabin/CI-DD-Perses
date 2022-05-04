@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/elements/AbstractChainedDescriptor_getComputedStyles.java
+method_name = getComputedStyles
+method_body = @Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); }
+predict, score, loss = getComputedStyles, 0.48916867, 1.1639831
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:20:34.393421", "n_pass": [1, 1, 1], "score": "0.4892", "loss": "1.164", "code": "@Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); }"}
+{"time": "2021-01-23 10:20:40.780801", "n_pass": [49, 5, 2], "score": "0.6047", "loss": "0.7869", "code": "@Override public void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); }"}
+{"time": "2021-01-23 10:20:43.428081", "n_pass": [55, 7, 3], "score": "0.5653", "loss": "0.9781", "code": "@Override public void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(element, accumulator); }"}
+{"time": "2021-01-23 10:20:44.742664", "n_pass": [58, 8, 4], "score": "0.4208", "loss": "3.7171", "code": "@Override public void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(umulator); }"}
+{"time": "2021-01-23 10:20:48.197262", "n_pass": [98, 10, 5], "score": "0.5001", "loss": "1.5851", "code": "@Override public void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:20:49.530568", "n_pass": [100, 11, 6], "score": "0.6357", "loss": "1.0585", "code": "@Overpublic void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:20:50.853815", "n_pass": [101, 12, 7], "score": "0.6357", "loss": "1.0585", "code": "@Overc void getComputedStyles(E element, Compcumulator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:20:53.611547", "n_pass": [109, 13, 8], "score": "0.6357", "loss": "1.0585", "code": "@Overc void getComputedStyles(E element, Culator accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:20:54.940694", "n_pass": [110, 14, 9], "score": "0.6745", "loss": "0.9699", "code": "@Overc void getComputedStyles(E element, C accumulator) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:20:56.249827", "n_pass": [112, 15, 10], "score": "0.6117", "loss": "1.141", "code": "@Overc void getComputedStyles(E element, C accum) { mSuper.getComputedStyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:00.253850", "n_pass": [116, 18, 11], "score": "0.4445", "loss": "1.8072", "code": "@Overc void getComputedStyles(E element, C accum) { mSuper.getCompyles(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:09.586833", "n_pass": [174, 24, 12], "score": "0.5446", "loss": "1.6031", "code": "@Overc void getComputedStyles(E element, C accum) { mSuper.getComps(elementr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:10.914229", "n_pass": [175, 25, 13], "score": "0.5446", "loss": "1.6031", "code": "@Overc void getComputedStyles(E element, C accum) { mSuper.getComps(eentr); onGetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:13.535762", "n_pass": [178, 27, 14], "score": "0.6385", "loss": "1.5307", "code": "@Overc void getComputedStyles(E element, C accum) { mSuper.getComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:27.916826", "n_pass": [200, 36, 15], "score": "0.6561", "loss": "1.4198", "code": "@Overc void getComputedStyles(E eent, C accum) { mSuper.getComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:30.547026", "n_pass": [204, 38, 16], "score": "0.8284", "loss": "0.981", "code": "@Overc void getComputedStyles(E eent, C ac) { mSuper.getComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:31.860117", "n_pass": [206, 39, 17], "score": "0.8147", "loss": "1.0975", "code": "@Overc void getComputedStyles(E eent, C ac) {uper.getComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:33.167485", "n_pass": [207, 40, 18], "score": "0.7819", "loss": "1.0269", "code": "@Overc void getComputedStyles(E eent, C ac) {r.getComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:34.474253", "n_pass": [208, 41, 19], "score": "0.6316", "loss": "1.2934", "code": "@Overc void getComputedStyles(E eent, C ac) {etComps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:35.780564", "n_pass": [209, 42, 20], "score": "0.5508", "loss": "1.7348", "code": "@Overc void getComputedStyles(E eent, C ac) {omps(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:37.112187", "n_pass": [210, 43, 21], "score": "0.6179", "loss": "1.5158", "code": "@Overc void getComputedStyles(E eent, C ac) {s(eentr);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:38.417951", "n_pass": [212, 44, 22], "score": "0.6232", "loss": "1.4749", "code": "@Overc void getComputedStyles(E eent, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:46.303429", "n_pass": [223, 50, 23], "score": "0.735", "loss": "1.3327", "code": "@Orc void getComputedStyles(E eent, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:47.625034", "n_pass": [224, 51, 24], "score": "0.5332", "loss": "1.6538", "code": "@O void getComputedStyles(E eent, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:21:52.763711", "n_pass": [235, 53, 25], "score": "0.4859", "loss": "1.7837", "code": "@O void getComputedStyles(E e, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:22:00.667664", "n_pass": [249, 59, 26], "score": "0.4648", "loss": "2.0517", "code": " void getComputedStyles(E e, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:22:03.268686", "n_pass": [251, 61, 27], "score": "0.7949", "loss": "1.7692", "code": " vd getComputedStyles(E e, C ac) {s(er);GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:22:23.532732", "n_pass": [346, 69, 28], "score": "0.8643", "loss": "1.4059", "code": " vd getComputedStyles(E e, C ac) {s();GetComputedStyles(or); }"}
+{"time": "2021-01-23 10:22:35.338592", "n_pass": [357, 78, 29], "score": "0.8766", "loss": "1.9218", "code": " vd getComputedStyles(E e, C ac) {s();GetComputedStyles(); }"}
+{"time": "2021-01-23 10:22:36.658856", "n_pass": [360, 79, 30], "score": "0.8766", "loss": "1.9218", "code": "vd getComputedStyles(E e, C ac) {s();GetComputedStyles(); }"}
+{"time": "2021-01-23 10:22:59.455345", "n_pass": [440, 90, 31], "score": "0.8766", "loss": "1.9218", "code": "vd getComputedStyles(E e,C ac) {s();GetComputedStyles(); }"}
+{"time": "2021-01-23 10:23:03.371971", "n_pass": [445, 93, 32], "score": "0.8766", "loss": "1.9218", "code": "vd getComputedStyles(E e,C ac){s();GetComputedStyles(); }"}
+{"time": "2021-01-23 10:23:07.361088", "n_pass": [453, 96, 33], "score": "0.4567", "loss": "2.7917", "code": "vd getComputedStyles(E e,C ac){s();GeComputedStyles(); }"}
+{"time": "2021-01-23 10:23:26.954742", "n_pass": [471, 111, 34], "score": "0.4567", "loss": "2.7917", "code": "vd getComputedStyles(E e,C ac){s();GeComputedStyles();}"}
+{"time": "2021-01-23 10:23:29.563945", "n_pass": [474, 113, 35], "score": "0.2693", "loss": "3.5202", "code": "v getComputedStyles(E e,C ac){s();GeComputedStyles();}"}
+{"time": "2021-01-23 10:23:37.372090", "n_pass": [500, 114, 36], "score": "0.2638", "loss": "4.4438", "code": "v getComputedStyles(E e,C c){s();GeComputedStyles();}"}
+
+Minimal simplified code:
+v getComputedStyles(E e,C c){s();GeComputedStyles();}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/coyote/http11/upgrade/TestUpgrade_init.java
+method_name = init
+method_body = @Override public void init(WebConnection connection) { try { sis = connection.getInputStream(); sos = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setReadListener(new EchoReadListener()); sos.setWriteListener(new EchoWriteListener()); }
+
+topk path-contexts:
+[0.3318] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setreadlistener
+[0.2310] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setwritelistener
+[0.0626] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),sos
+[0.0585] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),sos
+[0.0436] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),webconnection
+[0.0390] connection,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setreadlistener
+[0.0375] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),webconnection
+[0.0183] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),sis
+[0.0183] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),echoreadlistener
+[0.0183] webconnection,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),echowritelistener
+
+topk terminals:
+['webconnection', 'setreadlistener', 'webconnection', 'setwritelistener', 'webconnection', 'sos', 'webconnection', 'sos', 'METHOD_NAME', 'webconnection', 'connection', 'setreadlistener', 'void', 'webconnection', 'webconnection', 'sis', 'webconnection', 'echoreadlistener', 'webconnection', 'echowritelistener']
+

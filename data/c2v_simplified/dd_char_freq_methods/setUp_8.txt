@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestClientCert_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); Tomcat tomcat = getTomcatInstance(); TesterSupport.configureClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }
+predict, score, loss = setUp, 0.9695265293121338, 0.03573553264141083
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:47:15.255812", "n_pass": [1, 1, 1], "score": "0.9695", "loss": "0.0357", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTomcatInstance(); TesterSupport.configureClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:17.910773", "n_pass": [25, 2, 2], "score": "0.9952", "loss": "0.0049", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:20.558875", "n_pass": [47, 3, 3], "score": "0.9978", "loss": "0.0022", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:23.194403", "n_pass": [50, 4, 4], "score": "0.9985", "loss": "0.0016", "code": "d setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:25.816466", "n_pass": [53, 5, 5], "score": "0.9972", "loss": "0.0028", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:28.473356", "n_pass": [56, 6, 6], "score": "0.9972", "loss": "0.0028", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:31.123305", "n_pass": [59, 7, 7], "score": "0.9989", "loss": "0.0011", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); ClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:33.782418", "n_pass": [87, 8, 8], "score": "0.9988", "loss": "0.0013", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); Context(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 08:47:36.424349", "n_pass": [89, 9, 9], "score": "0.999", "loss": "0.001", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); Context(to); TesterSfigureClientSsl(); }"}
+{"time": "2020-12-28 08:47:39.044013", "n_pass": [90, 10, 10], "score": "0.999", "loss": "0.001", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:41.667322", "n_pass": [97, 11, 11], "score": "0.9989", "loss": "0.0011", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"sun.securinegotiation\", \"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:44.285691", "n_pass": [99, 12, 12], "score": "0.9836", "loss": "0.0172", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"negotiation\", \"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:46.888281", "n_pass": [100, 13, 13], "score": "0.9988", "loss": "0.0012", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:52.144234", "n_pass": [137, 15, 14], "score": "0.9991", "loss": "0.0009", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:57.370776", "n_pass": [141, 17, 15], "score": "0.2323", "loss": "3.7382", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"true\"); } super.setUContext(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:47:59.991453", "n_pass": [142, 18, 16], "score": "0.2323", "loss": "3.7382", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"true\"); } super.setUxt(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 08:48:02.623604", "n_pass": [145, 19, 17], "score": "0.2323", "loss": "3.7382", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"true\"); } super.setUxt(to); TentSsl(); }"}
+{"time": "2020-12-28 08:48:10.850433", "n_pass": [155, 22, 18], "score": "0.2323", "loss": "3.7382", "code": "d setUp() throws Exception { if (!TPORTED) { Property(\"true\"); } super.setUxt(to); TentSsl(); }"}
+{"time": "2020-12-28 08:48:13.479104", "n_pass": [156, 23, 19], "score": "0.298", "loss": "3.1382", "code": "d setUp() throws Exception { if (!TD) { Property(\"true\"); } super.setUxt(to); TentSsl(); }"}
+{"time": "2020-12-28 08:48:21.349660", "n_pass": [166, 26, 20], "score": "0.2881", "loss": "2.972", "code": "d setUp() throws Exception { if (!TD) { Property(\"true\"); } super.setUxt(to); Te(); }"}
+{"time": "2020-12-28 08:48:32.261635", "n_pass": [218, 30, 21], "score": "0.3778", "loss": "2.5184", "code": "d setUp() throws Exception { if (!TD) { Property(\"true\"); } super.setUxt(to); T; }"}
+{"time": "2020-12-28 08:48:46.593446", "n_pass": [239, 35, 22], "score": "0.4375", "loss": "2.5012", "code": "d setUp() throws Exception { if (!TD) { perty(\"true\"); } super.setUxt(to); T; }"}
+{"time": "2020-12-28 08:48:49.223828", "n_pass": [240, 36, 23], "score": "0.2586", "loss": "3.2767", "code": "d setUp() throws Exception { if (!TD) { ty(\"true\"); } super.setUxt(to); T; }"}
+{"time": "2020-12-28 08:48:57.067158", "n_pass": [248, 39, 24], "score": "0.2586", "loss": "3.2767", "code": "d setUp() throws Exception { if (!TD) { ty(\"true\"); } super.sxt(to); T; }"}
+{"time": "2020-12-28 08:48:59.692719", "n_pass": [251, 40, 25], "score": "0.2701", "loss": "3.2163", "code": "d setUp() throws Exception { if (!TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:49:25.430513", "n_pass": [350, 47, 26], "score": "0.2701", "loss": "3.2163", "code": "d setUp()throws Exception { if (!TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:49:51.554955", "n_pass": [367, 57, 27], "score": "0.2701", "loss": "3.2163", "code": "d setUp()throws Exception{ if (!TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:49:54.176690", "n_pass": [369, 58, 28], "score": "0.2701", "loss": "3.2163", "code": "d setUp()throws Exception{if (!TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:49:56.792017", "n_pass": [372, 59, 29], "score": "0.2701", "loss": "3.2163", "code": "d setUp()throws Exception{if(!TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:49:59.413959", "n_pass": [374, 60, 30], "score": "0.2184", "loss": "3.2895", "code": "d setUp()throws Exception{if(TD) { ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:07.250890", "n_pass": [378, 63, 31], "score": "0.2184", "loss": "3.2895", "code": "d setUp()throws Exception{if(TD){ ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:09.848918", "n_pass": [380, 64, 32], "score": "0.2184", "loss": "3.2895", "code": "d setUp()throws Exception{if(TD){ty(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:12.479749", "n_pass": [381, 65, 33], "score": "0.317", "loss": "2.5361", "code": "d setUp()throws Exception{if(TD){y(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:15.077715", "n_pass": [382, 66, 34], "score": "0.3966", "loss": "2.0666", "code": "d setUp()throws Exception{if(TD){(\"true\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:17.696883", "n_pass": [385, 67, 35], "score": "0.358", "loss": "2.2034", "code": "d setUp()throws Exception{if(TD){(\"rue\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:20.285067", "n_pass": [386, 68, 36], "score": "0.4029", "loss": "2.0596", "code": "d setUp()throws Exception{if(TD){(\"ue\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:22.880624", "n_pass": [387, 69, 37], "score": "0.4076", "loss": "2.0298", "code": "d setUp()throws Exception{if(TD){(\"\"); } super.sxt(to); }"}
+{"time": "2020-12-28 08:50:33.326446", "n_pass": [394, 73, 38], "score": "0.3185", "loss": "2.1639", "code": "d setUp()throws Exception{if(TD){(\"\"); } super.t(to); }"}
+{"time": "2020-12-28 08:51:04.781279", "n_pass": [428, 84, 39], "score": "0.279", "loss": "2.189", "code": "d setUp()throws Exception{if(D){(\"\"); } super.t(to); }"}
+{"time": "2020-12-28 08:51:46.067027", "n_pass": [495, 98, 40], "score": "0.279", "loss": "2.189", "code": "d setUp()throws Exception{if(D){(\"\");} super.t(to); }"}
+{"time": "2020-12-28 08:51:48.673414", "n_pass": [497, 99, 41], "score": "0.279", "loss": "2.189", "code": "d setUp()throws Exception{if(D){(\"\");}super.t(to); }"}
+{"time": "2020-12-28 08:52:12.209891", "n_pass": [510, 108, 42], "score": "0.279", "loss": "2.189", "code": "d setUp()throws Exception{if(D){(\"\");}super.t(to);}"}
+
+Minimal simplified code:
+d setUp()throws Exception{if(D){("");}super.t(to);}
+

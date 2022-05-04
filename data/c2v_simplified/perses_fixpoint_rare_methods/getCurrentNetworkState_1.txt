@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/NetworkMonitorAutoDetect_getCurrentNetworkState.java
+method_name = getCurrentNetworkState
+method_body = public NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 03:32:31.754330", "score": "0.4761", "loss": "1.2122", "code": "class T { public NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); } }"}
+{"time": "2021-01-25 03:37:03.951373", "score": "0.4761", "loss": "1.2122", "code": "class T { NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); } }"}
+
+Minimal simplified code:
+class T {
+       NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }
+}
+
+

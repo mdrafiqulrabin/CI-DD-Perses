@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__commons-codec/src/main/java/org/apache/commons/codec/language/bm/Rule_getInstanceMap.java
+method_name = getInstanceMap
+method_body = public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules = RULES.get(nameType).get(rt).get(lang); if (rules == null) { throw new IllegalArgumentException(String.format("No rules found for %s, %s, %s.", nameType.getName(), rt.getName(), lang)); } return rules; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 00:36:47.465574", "score": "0.4072", "loss": "1.0946", "code": "class T { public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules = RULES.get(nameType).get(rt).get(lang); if (rules == null) { throw new IllegalArgumentException(String.format(\"No rules found for %s, %s, %s.\", nameType.getName(), rt.getName(), lang)); } return rules; } }"}
+{"time": "2021-01-25 00:40:36.378017", "score": "0.7733", "loss": "0.4469", "code": "class T { public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules = RULES.get(nameType).get(rt).get(lang); if (rules == null) { throw new IllegalArgumentException(String.format(\"No rules found for %s, %s, %s.\", nameType.getName(), rt.getName(), lang)); } } }"}
+{"time": "2021-01-25 00:41:56.151242", "score": "0.8364", "loss": "0.3164", "code": "class T { public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules = RULES.get(nameType).get(rt).get(lang); } }"}
+{"time": "2021-01-25 00:44:08.420560", "score": "0.8861", "loss": "0.212", "code": "class T { public static Map<String, List<Rule>> getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules ; } }"}
+{"time": "2021-01-25 00:47:54.980945", "score": "0.5789", "loss": "0.7758", "code": "class T { public static Map getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map<String, List<Rule>> rules ; } }"}
+{"time": "2021-01-25 00:48:35.655912", "score": "0.5355", "loss": "0.7888", "code": "class T { public static Map getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map rules ; } }"}
+{"time": "2021-01-25 00:50:35.756581", "score": "0.5355", "loss": "0.7888", "code": "class T { Map getInstanceMap(final NameType nameType, final RuleType rt, final String lang) { final Map rules ; } }"}
+{"time": "2021-01-25 00:51:15.666108", "score": "0.5355", "loss": "0.7888", "code": "class T { Map getInstanceMap( NameType nameType, final RuleType rt, final String lang) { final Map rules ; } }"}
+{"time": "2021-01-25 00:51:55.865878", "score": "0.5355", "loss": "0.7888", "code": "class T { Map getInstanceMap( NameType nameType, RuleType rt, final String lang) { final Map rules ; } }"}
+{"time": "2021-01-25 00:52:37.463160", "score": "0.5355", "loss": "0.7888", "code": "class T { Map getInstanceMap( NameType nameType, RuleType rt, String lang) { final Map rules ; } }"}
+{"time": "2021-01-25 00:53:17.832900", "score": "0.5355", "loss": "0.7888", "code": "class T { Map getInstanceMap( NameType nameType, RuleType rt, String lang) { Map rules ; } }"}
+
+Minimal simplified code:
+class T {
+              Map                     getInstanceMap(      NameType nameType,       RuleType rt,       String lang) {       Map                     rules                                        ;                                                                                                                                                                   }
+}
+
+

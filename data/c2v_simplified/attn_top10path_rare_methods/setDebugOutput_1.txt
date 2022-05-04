@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/QueryTreeNode_setDebugOutput.java
+method_name = setDebugOutput
+method_body = public static void setDebugOutput(Writer writer) { debugOutput = writer; }
+
+topk path-contexts:
+[0.3686] writer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),debugoutput
+[0.2663] writer,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),debugoutput
+[0.1593] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),debugoutput
+[0.0575] writer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),writer
+[0.0277] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),writer
+[0.0208] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),writer
+[0.0203] debugoutput,(NameExpr0)^(AssignExpr:assign)_(NameExpr1),writer
+[0.0192] writer,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),writer
+[0.0177] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0168] writer,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),writer
+
+topk terminals:
+['writer', 'debugoutput', 'writer', 'debugoutput', 'METHOD_NAME', 'debugoutput', 'writer', 'writer', 'void', 'writer', 'void', 'writer', 'debugoutput', 'writer', 'writer', 'writer', 'void', 'METHOD_NAME', 'writer', 'writer']
+

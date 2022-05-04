@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/AgentResults_getFinalScore.java
+method_name = getFinalScore
+method_body = public String getFinalScore() { return Validator.check(finalScore, "0").replace(',', '.'); }
+
+topk path-contexts for sub-token: get
+[0.1509] validator,NameExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.0866] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.0860] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+[0.0799] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.0785] string,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0643] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+[0.0549] final|score,NameExpr2|MethodCallExpr0|NameExpr3,check
+[0.0467] final|score,NameExpr2|MethodCallExpr0|StringLiteralExpr3,0
+[0.0445] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr3,0
+[0.0304] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr3,check
+
+topk terminals for sub-token: get
+['validator', 'final|score', 'string', 'final|score', 'string', 'validator', 'METHOD_NAME', 'final|score', 'string', 'METHOD_NAME', 'METHOD_NAME', 'validator', 'final|score', 'check', 'final|score', '0', 'string', '0', 'string', 'check']
+
+topk path-contexts for sub-token: final
+[0.1891] validator,NameExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.1448] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.1264] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.0617] final|score,NameExpr2|MethodCallExpr0|StringLiteralExpr3,0
+[0.0459] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|CharLiteralExpr3,.
+[0.0449] final|score,NameExpr2|MethodCallExpr0|NameExpr3,check
+[0.0403] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+[0.0366] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+[0.0327] string,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0327] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|CharLiteralExpr3,.
+
+topk terminals for sub-token: final
+['validator', 'final|score', 'METHOD_NAME', 'final|score', 'string', 'final|score', 'final|score', '0', 'METHOD_NAME', '.', 'final|score', 'check', 'METHOD_NAME', 'validator', 'string', 'validator', 'string', 'METHOD_NAME', 'string', '.']
+
+topk path-contexts for sub-token: score
+[0.1588] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.1508] validator,NameExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.1427] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,final|score
+[0.0659] string,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0395] final|score,NameExpr2|MethodCallExpr0|StringLiteralExpr3,0
+[0.0359] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+[0.0358] string,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|CharLiteralExpr3,.
+[0.0335] final|score,NameExpr2|MethodCallExpr0|NameExpr3,check
+[0.0284] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|CharLiteralExpr3,.
+[0.0275] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|NameExpr0,validator
+
+topk terminals for sub-token: score
+['string', 'final|score', 'validator', 'final|score', 'METHOD_NAME', 'final|score', 'string', 'METHOD_NAME', 'final|score', '0', 'string', 'validator', 'string', '.', 'final|score', 'check', 'METHOD_NAME', '.', 'METHOD_NAME', 'validator']
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/elements/AbstractChainedDescriptor_getComputedStyles.java
+method_name = getComputedStyles
+method_body = @Override public void getComputedStyles(E element, ComputedStyleAccumulator accumulator) { mSuper.getComputedStyles(element, accumulator); onGetComputedStyles(element, accumulator); }
+
+topk path-contexts for sub-token: get
+[0.0761] accumulator,NameExpr3|MethodCallExpr|NameExpr3,get|computed|styles
+[0.0681] accumulator,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0635] computed|style|accumulator,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0429] element,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0400] accumulator,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0399] accumulator,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0381] accumulator,NameExpr2|MethodCallExpr|NameExpr3,on|get|computed|styles
+[0.0374] computed|style|accumulator,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0352] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0314] element,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+
+topk terminals for sub-token: get
+['accumulator', 'get|computed|styles', 'accumulator', 'on|get|computed|styles', 'computed|style|accumulator', 'on|get|computed|styles', 'element', 'on|get|computed|styles', 'accumulator', 'on|get|computed|styles', 'accumulator', 'get|computed|styles', 'accumulator', 'on|get|computed|styles', 'computed|style|accumulator', 'get|computed|styles', 'void', 'METHOD_NAME', 'element', 'on|get|computed|styles']
+
+topk path-contexts for sub-token: computed
+[0.0711] accumulator,NameExpr3|MethodCallExpr|NameExpr3,get|computed|styles
+[0.0672] e,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0666] element,NameExpr2|MethodCallExpr|NameExpr3,get|computed|styles
+[0.0662] e,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0626] element,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0621] element,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0433] accumulator,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0422] accumulator,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0396] accumulator,NameExpr2|MethodCallExpr|NameExpr3,on|get|computed|styles
+[0.0369] computed|style|accumulator,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+
+topk terminals for sub-token: computed
+['accumulator', 'get|computed|styles', 'e', 'on|get|computed|styles', 'element', 'get|computed|styles', 'e', 'get|computed|styles', 'element', 'on|get|computed|styles', 'element', 'get|computed|styles', 'accumulator', 'on|get|computed|styles', 'accumulator', 'get|computed|styles', 'accumulator', 'on|get|computed|styles', 'computed|style|accumulator', 'on|get|computed|styles']
+
+topk path-contexts for sub-token: styles
+[0.0925] accumulator,NameExpr3|MethodCallExpr|NameExpr3,get|computed|styles
+[0.0872] element,NameExpr2|MethodCallExpr|NameExpr3,get|computed|styles
+[0.0754] e,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0624] element,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0561] accumulator,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,get|computed|styles
+[0.0528] e,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,computed|style|accumulator
+[0.0517] element,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,computed|style|accumulator
+[0.0499] accumulator,NameExpr2|MethodCallExpr|NameExpr3,on|get|computed|styles
+[0.0473] e,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|get|computed|styles
+[0.0445] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,computed|style|accumulator
+
+topk terminals for sub-token: styles
+['accumulator', 'get|computed|styles', 'element', 'get|computed|styles', 'e', 'get|computed|styles', 'element', 'get|computed|styles', 'accumulator', 'get|computed|styles', 'e', 'computed|style|accumulator', 'element', 'computed|style|accumulator', 'accumulator', 'on|get|computed|styles', 'e', 'on|get|computed|styles', 'METHOD_NAME', 'computed|style|accumulator']
+

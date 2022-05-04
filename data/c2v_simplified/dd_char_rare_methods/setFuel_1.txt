@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/main/java/erogenousbeef/bigreactors/common/multiblock/helpers/FuelContainer_setFuel.java
+method_name = setFuel
+method_body = public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }
+predict, score, loss = setFuel, 0.49257543683052063, 1.0749155282974243
+
+Trace of simplified code(s):
+{"time": "2021-01-23 20:47:04.483041", "n_pass": [1, 1, 1], "score": "0.4926", "loss": "1.0749", "code": "public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-23 20:47:16.566484", "n_pass": [49, 5, 2], "score": "0.4926", "loss": "1.0749", "code": "public void setFuel(tantStack newFuel) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-23 20:47:19.195595", "n_pass": [50, 6, 3], "score": "0.7147", "loss": "0.8621", "code": "public void setFuel(tack newFuel) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-23 20:47:21.828546", "n_pass": [52, 7, 4], "score": "0.6596", "loss": "1.0092", "code": "public void setFuel(tack el) { setReactant(FUEL, newFuel); }"}
+{"time": "2021-01-23 20:47:24.449241", "n_pass": [54, 8, 5], "score": "0.6596", "loss": "1.0092", "code": "public void setFuel(tack el) {eactant(FUEL, newFuel); }"}
+{"time": "2021-01-23 20:47:32.273812", "n_pass": [58, 11, 6], "score": "0.7864", "loss": "0.6171", "code": "public void setFuel(tack el) {eactant(FUEL, nl); }"}
+{"time": "2021-01-23 20:47:34.894249", "n_pass": [61, 12, 7], "score": "0.2998", "loss": "3.0309", "code": "publoid setFuel(tack el) {eactant(FUEL, nl); }"}
+{"time": "2021-01-23 20:47:43.513061", "n_pass": [71, 15, 8], "score": "0.4278", "loss": "2.7924", "code": "oid setFuel(tack el) {eactant(FUEL, nl); }"}
+{"time": "2021-01-23 20:47:52.125139", "n_pass": [99, 18, 9], "score": "0.6186", "loss": "1.2751", "code": "d setFuel(tack el) {eactant(FUEL, nl); }"}
+{"time": "2021-01-23 20:47:55.934404", "n_pass": [104, 19, 10], "score": "0.2923", "loss": "2.6587", "code": "d setFuel(ck el) {eactant(FUEL, nl); }"}
+{"time": "2021-01-23 20:47:58.531536", "n_pass": [109, 20, 11], "score": "0.2923", "loss": "2.6587", "code": "d setFuel(ck el) {ctant(FUEL, nl); }"}
+{"time": "2021-01-23 20:48:11.696515", "n_pass": [155, 24, 12], "score": "0.2923", "loss": "2.6587", "code": "d setFuel(ck el) {tant(FUEL, nl); }"}
+{"time": "2021-01-23 20:48:36.201880", "n_pass": [177, 32, 13], "score": "0.3675", "loss": "1.7738", "code": "d setFuel(k el) {tant(FUEL, nl); }"}
+{"time": "2021-01-23 20:48:38.821107", "n_pass": [180, 33, 14], "score": "0.7596", "loss": "0.5257", "code": "d setFuel(k l) {tant(FUEL, nl); }"}
+{"time": "2021-01-23 20:48:41.417636", "n_pass": [183, 34, 15], "score": "0.7596", "loss": "0.5257", "code": "d setFuel(k l){tant(FUEL, nl); }"}
+{"time": "2021-01-23 20:48:44.014133", "n_pass": [185, 35, 16], "score": "0.8182", "loss": "0.3697", "code": "d setFuel(k l){ant(FUEL, nl); }"}
+{"time": "2021-01-23 20:49:17.427833", "n_pass": [228, 46, 17], "score": "0.8182", "loss": "0.3697", "code": "d setFuel(k l){ant(FUEL,nl); }"}
+{"time": "2021-01-23 20:49:20.028154", "n_pass": [229, 47, 18], "score": "0.7853", "loss": "0.3967", "code": "d setFuel(k l){ant(FUEL,l); }"}
+{"time": "2021-01-23 20:49:22.627559", "n_pass": [233, 48, 19], "score": "0.7853", "loss": "0.3967", "code": "d setFuel(k l){ant(FUEL,l);}"}
+
+Minimal simplified code:
+d setFuel(k l){ant(FUEL,l);}
+

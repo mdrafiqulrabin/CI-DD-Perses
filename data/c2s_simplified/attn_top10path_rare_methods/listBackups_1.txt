@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/SchedulerThriftInterface_listBackups.java
+method_name = listBackups
+method_body = @Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }
+
+topk path-contexts for sub-token: list
+[0.0727] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,ok
+[0.0693] response,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0685] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0635] response,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,ok
+[0.0539] set|backups,NameExpr3|MethodCallExpr2|MethodCallExpr1|MethodCallExpr|NameExpr2,ok
+[0.0394] result,NameExpr0|MethodCallExpr1|MethodCallExpr|NameExpr2,ok
+[0.0379] recovery,NameExpr0|MethodCallExpr2|NameExpr2,list|backups
+[0.0356] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr2|NameExpr3,set|backups
+[0.0339] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,list|backups|result
+[0.0318] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr2|MethodCallExpr2|NameExpr2,list|backups
+
+topk terminals for sub-token: list
+['METHOD_NAME', 'ok', 'response', 'METHOD_NAME', 'override', 'METHOD_NAME', 'response', 'ok', 'set|backups', 'ok', 'result', 'ok', 'recovery', 'list|backups', 'METHOD_NAME', 'set|backups', 'METHOD_NAME', 'list|backups|result', 'METHOD_NAME', 'list|backups']
+
+topk path-contexts for sub-token: backups
+[0.0856] recovery,NameExpr0|MethodCallExpr2|NameExpr2,list|backups
+[0.0724] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr2|MethodCallExpr2|NameExpr2,list|backups
+[0.0639] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,list|backups|result
+[0.0587] response,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr2|MethodCallExpr2|NameExpr2,list|backups
+[0.0552] list|backups|result,ClassOrInterfaceType0|ObjectCreationExpr0|MethodCallExpr2|MethodCallExpr2|NameExpr2,list|backups
+[0.0545] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr2|NameExpr3,set|backups
+[0.0409] recovery,NameExpr0|MethodCallExpr2|MethodCallExpr2|NameExpr3,set|backups
+[0.0406] result,NameExpr0|MethodCallExpr1|MethodCallExpr2|NameExpr3,set|backups
+[0.0382] response,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|NameExpr3,list|backups|result
+[0.0379] list|backups,NameExpr2|MethodCallExpr2|MethodCallExpr2|NameExpr3,set|backups
+
+topk terminals for sub-token: backups
+['recovery', 'list|backups', 'METHOD_NAME', 'list|backups', 'METHOD_NAME', 'list|backups|result', 'response', 'list|backups', 'list|backups|result', 'list|backups', 'METHOD_NAME', 'set|backups', 'recovery', 'set|backups', 'result', 'set|backups', 'response', 'list|backups|result', 'list|backups', 'set|backups']
+

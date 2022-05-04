@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/BBuffer_get.java
+method_name = get
+method_body = public int get(int off) { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; }
+predict, score, loss = readUnsignedByte, 0.45060825, 3.3802886
+
+Ignoring as original_method_name != predicted_method_name.
+

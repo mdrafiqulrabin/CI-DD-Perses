@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxInFlightRequests.java
+method_name = setMaxInFlightRequests
+method_body = public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }
+predict, score, loss = setMaxInFlightRequests, 0.49909967, 13.332167
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:41:39.906775", "n_pass": [1, 1, 1], "score": "0.4991", "loss": "13.3322", "code": "public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }"}
+{"time": "2021-01-23 07:41:43.935062", "n_pass": [26, 3, 2], "score": "0.4508", "loss": "13.9663", "code": "public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = max; return this; }"}
+{"time": "2021-01-23 07:41:47.292545", "n_pass": [49, 5, 3], "score": "0.4508", "loss": "13.9663", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = max; return this; }"}
+{"time": "2021-01-23 07:41:51.948594", "n_pass": [58, 8, 4], "score": "0.5728", "loss": "13.1807", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFligts = max; return this; }"}
+{"time": "2021-01-23 07:41:58.214156", "n_pass": [99, 12, 5], "score": "0.7003", "loss": "13.1901", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFligts = max; returns; }"}
+{"time": "2021-01-23 07:42:02.976277", "n_pass": [109, 14, 6], "score": "0.7206", "loss": "13.1016", "code": "Builder setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts = max; returns; }"}
+{"time": "2021-01-23 07:42:12.074317", "n_pass": [120, 21, 7], "score": "0.9506", "loss": "14.8833", "code": "Builder setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts = maxturns; }"}
+{"time": "2021-01-23 07:42:13.395923", "n_pass": [121, 22, 8], "score": "0.8959", "loss": "12.5503", "code": "Builder setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts = maxs; }"}
+{"time": "2021-01-23 07:42:14.686779", "n_pass": [123, 23, 9], "score": "0.846", "loss": "13.7302", "code": "der setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts = maxs; }"}
+{"time": "2021-01-23 07:42:25.903809", "n_pass": [141, 30, 10], "score": "0.9357", "loss": "13.9783", "code": "der setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts =s; }"}
+{"time": "2021-01-23 07:42:38.401180", "n_pass": [198, 38, 11], "score": "0.9664", "loss": "12.7984", "code": "r setMaxInFlightRequests(int mFlightRequests) { this.maxInFligts =s; }"}
+{"time": "2021-01-23 07:42:43.663477", "n_pass": [211, 39, 12], "score": "0.9561", "loss": "13.4823", "code": "r setMaxInFlightRequests(i mFlightRequests) { this.maxInFligts =s; }"}
+{"time": "2021-01-23 07:42:54.003329", "n_pass": [222, 47, 13], "score": "0.9054", "loss": "12.3632", "code": "r setMaxInFlightRequests(i mFlightRequests) { is.maxInFligts =s; }"}
+{"time": "2021-01-23 07:43:01.788375", "n_pass": [229, 53, 14], "score": "0.9054", "loss": "12.3632", "code": "r setMaxInFlightRequests(i mFlightRequests) { is.maxInFlig =s; }"}
+{"time": "2021-01-23 07:43:26.627681", "n_pass": [326, 67, 15], "score": "0.9054", "loss": "12.3632", "code": "r setMaxInFlightRequests(i mFlightRequests) { is.maxInFlig=s; }"}
+{"time": "2021-01-23 07:43:27.915900", "n_pass": [329, 68, 16], "score": "0.9054", "loss": "12.3632", "code": "r setMaxInFlightRequests(i mFlightRequests) { is.maxInFlig=s;}"}
+{"time": "2021-01-23 07:43:37.918037", "n_pass": [358, 69, 17], "score": "0.891", "loss": "12.0775", "code": "r setMaxInFlightRequests(i FlightRequests) { is.maxInFlig=s;}"}
+{"time": "2021-01-23 07:43:57.387697", "n_pass": [374, 84, 18], "score": "0.891", "loss": "12.0775", "code": "r setMaxInFlightRequests(i FlightRequests){ is.maxInFlig=s;}"}
+{"time": "2021-01-23 07:43:58.702489", "n_pass": [376, 85, 19], "score": "0.891", "loss": "12.0775", "code": "r setMaxInFlightRequests(i FlightRequests){is.maxInFlig=s;}"}
+{"time": "2021-01-23 07:43:59.995959", "n_pass": [377, 86, 20], "score": "0.8293", "loss": "12.2253", "code": "r setMaxInFlightRequests(i FlightRequests){s.maxInFlig=s;}"}
+
+Minimal simplified code:
+r setMaxInFlightRequests(i FlightRequests){s.maxInFlig=s;}
+

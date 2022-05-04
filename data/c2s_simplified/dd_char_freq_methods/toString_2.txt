@@ -1,0 +1,48 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/http/Cookies_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println("=== Cookies ==="); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }
+predict, score, loss = toString, 0.9541493, 0.058618534
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:37:05.125683", "n_pass": [1, 1, 1], "score": "0.9479", "loss": "0.0671", "code": "@Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println(\"=== Cookies ===\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:06.541427", "n_pass": [22, 2, 2], "score": "0.8972", "loss": "0.1314", "code": "@Override public String toString() { StringWriter sw = new StringWtWriter(sw); pw.println(\"=== Cookies ===\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:07.971850", "n_pass": [44, 3, 3], "score": "0.5681", "loss": "0.637", "code": "@Override public String toString() { StringWriter sw = new StringWrintln(\"=== Cookies ===\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:13.969123", "n_pass": [83, 7, 4], "score": "0.6253", "loss": "0.5396", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Cookies ===\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:15.352343", "n_pass": [85, 8, 5], "score": "0.896", "loss": "0.1311", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Co=\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:16.757844", "n_pass": [88, 9, 6], "score": "0.9468", "loss": "0.0791", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Co=\"); int count =ieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:18.240925", "n_pass": [92, 10, 7], "score": "0.928", "loss": "0.103", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Co=\"); int count =ieCount(); for (int i = 0;t; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:19.643198", "n_pass": [94, 11, 8], "score": "0.9139", "loss": "0.1293", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Co=\"); int count =ieCount(); for (int i = 0;t; ++i) {ln(getCookie(i).toString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:21.026848", "n_pass": [96, 12, 9], "score": "0.5273", "loss": "0.7179", "code": "@Override public String toString() { StringWriter sw = new Strin(\"=== Co=\"); int count =ieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:27.358866", "n_pass": [108, 16, 10], "score": "0.7203", "loss": "0.4747", "code": "@Override public String toString() { StringWriter sw = n(\"=== Co=\"); int count =ieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:28.758876", "n_pass": [111, 17, 11], "score": "0.8217", "loss": "0.3601", "code": "@Override public String toString() { StringWriter sw = n(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } return sw.toString(); }"}
+{"time": "2020-12-27 23:37:30.189111", "n_pass": [119, 18, 12], "score": "0.6349", "loss": "1.1683", "code": "@Override public String toString() { StringWriter sw = n(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:31.573690", "n_pass": [122, 19, 13], "score": "0.5571", "loss": "1.545", "code": "@Overrid String toString() { StringWriter sw = n(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:33.356433", "n_pass": [126, 20, 14], "score": "0.3972", "loss": "2.0925", "code": "@Overrid String toString() { Strr sw = n(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:34.745547", "n_pass": [127, 21, 15], "score": "0.6861", "loss": "1.1345", "code": "@Overrid String toString() { Str(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:36.128300", "n_pass": [138, 22, 16], "score": "0.3311", "loss": "2.5907", "code": " String toString() { Str(\"=== Co=\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:42.213691", "n_pass": [185, 25, 17], "score": "0.2195", "loss": "2.6752", "code": " String toString() { Str(\"===\"); intieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:43.601628", "n_pass": [187, 26, 18], "score": "0.2327", "loss": "2.3509", "code": " String toString() { Str(\"===\");ieCount(); for (int i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:46.341784", "n_pass": [192, 28, 19], "score": "0.2672", "loss": "2.2931", "code": " String toString() { Str(\"===\");ieCount(); for (i = 0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:47.699173", "n_pass": [193, 29, 20], "score": "0.3119", "loss": "2.0869", "code": " String toString() { Str(\"===\");ieCount(); for (0;t; ++i) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:49.053326", "n_pass": [195, 30, 21], "score": "0.3414", "loss": "1.9773", "code": " String toString() { Str(\"===\");ieCount(); for (0;t;) {ln(getCooString()); } returring(); }"}
+{"time": "2020-12-27 23:37:51.822174", "n_pass": [201, 32, 22], "score": "0.3414", "loss": "1.9773", "code": " String toString() { Str(\"===\");ieCount(); for (0;t;) {ln(getCooString()); }rring(); }"}
+{"time": "2020-12-27 23:37:53.178639", "n_pass": [204, 33, 23], "score": "0.1939", "loss": "3.9176", "code": "ing toString() { Str(\"===\");ieCount(); for (0;t;) {ln(getCooString()); }rring(); }"}
+{"time": "2020-12-27 23:38:09.900645", "n_pass": [278, 43, 24], "score": "0.1955", "loss": "4.0554", "code": "ing toString() { Str(\"===\");ieCot(); for (0;t;) {ln(getCooString()); }rring(); }"}
+{"time": "2020-12-27 23:38:18.093381", "n_pass": [296, 49, 25], "score": "0.3194", "loss": "3.0699", "code": "ing toString() { Str(\"===\");ieCot(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:20.910461", "n_pass": [299, 51, 26], "score": "0.354", "loss": "2.2889", "code": "g toString() { Str(\"===\");ieCot(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:24.162403", "n_pass": [307, 52, 27], "score": "0.2445", "loss": "3.3836", "code": "g toString() {tr(\"===\");ieCot(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:26.879280", "n_pass": [310, 54, 28], "score": "0.2351", "loss": "2.8831", "code": "g toString() {tr(\"=\");ieCot(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:28.253651", "n_pass": [313, 55, 29], "score": "0.2339", "loss": "3.0948", "code": "g toString() {tr(\"=\");Cot(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:29.626251", "n_pass": [314, 56, 30], "score": "0.2195", "loss": "3.0876", "code": "g toString() {tr(\"=\");t(); for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:45.957220", "n_pass": [412, 64, 31], "score": "0.2195", "loss": "3.0876", "code": "g toString() {tr(\"=\");t();for (0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:47.317369", "n_pass": [415, 65, 32], "score": "0.2195", "loss": "3.0876", "code": "g toString() {tr(\"=\");t();for(0;t;) {ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:38:51.399069", "n_pass": [422, 68, 33], "score": "0.2195", "loss": "3.0876", "code": "g toString() {tr(\"=\");t();for(0;t;){ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:39:15.665523", "n_pass": [459, 83, 34], "score": "0.2195", "loss": "3.0876", "code": "g toString(){tr(\"=\");t();for(0;t;){ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:39:17.024749", "n_pass": [461, 84, 35], "score": "0.1846", "loss": "3.1929", "code": "g toString(){r(\"=\");t();for(0;t;){ln(getCooString()); }rg(); }"}
+{"time": "2020-12-27 23:39:48.017363", "n_pass": [530, 103, 36], "score": "0.1846", "loss": "3.1929", "code": "g toString(){r(\"=\");t();for(0;t;){ln(getCooString());}rg(); }"}
+{"time": "2020-12-27 23:39:52.083477", "n_pass": [537, 106, 37], "score": "0.1846", "loss": "3.1929", "code": "g toString(){r(\"=\");t();for(0;t;){ln(getCooString());}rg();}"}
+
+Minimal simplified code:
+g toString(){r("=");t();for(0;t;){ln(getCooString());}rg();}
+

@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+predict, score, loss = get, 0.8328511, 0.35322088
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:33:12.235191", "n_pass": [1, 1, 1], "score": "0.8329", "loss": "0.3532", "code": "@Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-27 03:33:14.870241", "n_pass": [44, 3, 2], "score": "0.7709", "loss": "0.5525", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-27 03:33:16.161439", "n_pass": [53, 4, 3], "score": "0.8295", "loss": "0.4489", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-27 03:33:17.465358", "n_pass": [55, 5, 4], "score": "0.6212", "loss": "0.9009", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-27 03:33:18.795805", "n_pass": [101, 6, 5], "score": "0.4232", "loss": "1.2868", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:20.790969", "n_pass": [112, 7, 6], "score": "0.5878", "loss": "1.0241", "code": " V get(long timeout, TimeUnit unit) throws InterruptedExceptionExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:27.010730", "n_pass": [185, 8, 7], "score": "0.4606", "loss": "1.1336", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:28.298227", "n_pass": [186, 9, 8], "score": "0.4606", "loss": "1.1336", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:29.599697", "n_pass": [188, 10, 9], "score": "0.4606", "loss": "1.1336", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{ if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:30.872298", "n_pass": [190, 11, 10], "score": "0.4606", "loss": "1.1336", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if (!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:32.164201", "n_pass": [192, 12, 11], "score": "0.4606", "loss": "1.1336", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(!sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:33.472144", "n_pass": [194, 13, 12], "score": "0.448", "loss": "1.1615", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(sync.tryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:34.751796", "n_pass": [196, 14, 13], "score": "0.6955", "loss": "0.7394", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(synctryAcquireSharedNanos(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:36.028851", "n_pass": [197, 15, 14], "score": "0.7694", "loss": "0.5938", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(sync(0, unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:37.309711", "n_pass": [201, 16, 15], "score": "0.7694", "loss": "0.5938", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-27 03:33:38.602099", "n_pass": [212, 17, 16], "score": "0.7694", "loss": "0.5938", "code": " V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:39.901333", "n_pass": [214, 18, 17], "score": "0.7694", "loss": "0.5938", "code": "V get(long timeout, TimeUnit unit) throws InterruptedException,TimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:42.243145", "n_pass": [223, 19, 18], "score": "0.7694", "loss": "0.5938", "code": "V get(long timeout,TimeUnit unit) throws InterruptedException,TimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:43.524871", "n_pass": [228, 20, 19], "score": "0.7694", "loss": "0.5938", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException,TimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:44.806469", "n_pass": [232, 21, 20], "score": "0.8362", "loss": "0.521", "code": "V get(long timeout,TimeUnit unit)throws InterruptedExceptionTimeoutException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:46.108975", "n_pass": [233, 22, 21], "score": "0.6834", "loss": "0.7876", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)) { (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:51.053032", "n_pass": [289, 23, 22], "score": "0.6834", "loss": "0.7876", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){ (\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:52.349050", "n_pass": [290, 24, 23], "score": "0.6834", "loss": "0.7876", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"Waiting \" + timeout); } }"}
+{"time": "2020-12-27 03:33:53.628964", "n_pass": [293, 25, 24], "score": "0.7964", "loss": "0.6482", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\" \" + timeout); } }"}
+{"time": "2020-12-27 03:33:54.936708", "n_pass": [294, 26, 25], "score": "0.7827", "loss": "0.6834", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"\" + timeout); } }"}
+{"time": "2020-12-27 03:33:56.230524", "n_pass": [296, 27, 26], "score": "0.7827", "loss": "0.6834", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"\"+ timeout); } }"}
+{"time": "2020-12-27 03:33:57.507823", "n_pass": [298, 28, 27], "score": "0.7827", "loss": "0.6834", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"\"+timeout); } }"}
+{"time": "2020-12-27 03:33:58.787298", "n_pass": [302, 29, 28], "score": "0.7827", "loss": "0.6834", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"\"+timeout);} }"}
+{"time": "2020-12-27 03:34:00.098157", "n_pass": [304, 30, 29], "score": "0.7827", "loss": "0.6834", "code": "V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(\"\"+timeout);}}"}
+
+Minimal simplified code:
+V get(long timeout,TimeUnit unit)throws InterruptedException{if(sync(0,unit)){(""+timeout);}}
+

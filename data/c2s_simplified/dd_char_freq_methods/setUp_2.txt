@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/test/java/br/com/six2six/fixturefactory/ObjectFactoryWithProcessorTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }
+predict, score, loss = setUp, 0.66182125, 0.4189048
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:23:39.251104", "n_pass": [1, 1, 1], "score": "0.6618", "loss": "0.4189", "code": "@Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-27 23:23:41.934511", "n_pass": [26, 3, 2], "score": "0.5443", "loss": "0.6168", "code": "@Before public void setUp() { session = mock(Session.class); processor = new Hior(session); }"}
+{"time": "2020-12-27 23:23:44.643174", "n_pass": [51, 5, 3], "score": "0.4651", "loss": "0.9703", "code": "@Beforic void setUp() { session = mock(Session.class); processor = new Hior(session); }"}
+{"time": "2020-12-27 23:23:48.066382", "n_pass": [58, 7, 4], "score": "0.44", "loss": "1.1658", "code": "@Beforic void setUp() { session = mock(Sessio); processor = new Hior(session); }"}
+{"time": "2020-12-27 23:23:52.768075", "n_pass": [95, 10, 5], "score": "0.4306", "loss": "1.1661", "code": "@Beforic void setUp() { session = mock(Ses); processor = new Hior(session); }"}
+{"time": "2020-12-27 23:23:54.142673", "n_pass": [97, 11, 6], "score": "0.3565", "loss": "1.4313", "code": "@Beforic void setUp() { session = mock(Ses); essor = new Hior(session); }"}
+{"time": "2020-12-27 23:23:55.502444", "n_pass": [98, 12, 7], "score": "0.4512", "loss": "1.1453", "code": "@Beforic void setUp() { session = mock(Ses); r = new Hior(session); }"}
+{"time": "2020-12-27 23:23:59.580262", "n_pass": [103, 15, 8], "score": "0.3807", "loss": "1.3886", "code": "@Beforic void setUp() { session = mock(Ses); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:00.914354", "n_pass": [106, 16, 9], "score": "0.3807", "loss": "1.3886", "code": "@Beic void setUp() { session = mock(Ses); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:04.657837", "n_pass": [113, 18, 10], "score": "0.4917", "loss": "1.1151", "code": "@Beic void setUp() { sion = mock(Ses); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:06.014189", "n_pass": [114, 19, 11], "score": "0.4314", "loss": "1.2665", "code": "@Beic void setUp() { n = mock(Ses); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:07.376662", "n_pass": [115, 20, 12], "score": "0.2668", "loss": "1.9869", "code": "@Beic void setUp() {  mock(Ses); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:10.056900", "n_pass": [118, 22, 13], "score": "0.3355", "loss": "1.7191", "code": "@Beic void setUp() {  mock(); r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:18.809323", "n_pass": [164, 27, 14], "score": "0.3874", "loss": "1.6814", "code": "@Beic void setUp() {  mock; r = new Hior(ses); }"}
+{"time": "2020-12-27 23:24:21.450159", "n_pass": [169, 29, 15], "score": "0.3015", "loss": "2.0327", "code": "@Beic void setUp() {  mock; r = neHior(ses); }"}
+{"time": "2020-12-27 23:24:22.770359", "n_pass": [170, 30, 16], "score": "0.2344", "loss": "2.3732", "code": "@Beic void setUp() {  mock; r = neor(ses); }"}
+{"time": "2020-12-27 23:24:24.099656", "n_pass": [171, 31, 17], "score": "0.2933", "loss": "2.0377", "code": "@Beic void setUp() {  mock; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:26.794588", "n_pass": [177, 33, 18], "score": "0.2747", "loss": "1.8812", "code": "@eic void setUp() {  mock; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:28.132339", "n_pass": [178, 34, 19], "score": "0.3095", "loss": "1.891", "code": "@ic void setUp() {  mock; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:38.894776", "n_pass": [191, 41, 20], "score": "0.3095", "loss": "1.891", "code": "@ic void setUp() {mock; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:40.238845", "n_pass": [192, 42, 21], "score": "0.2022", "loss": "2.7828", "code": "@ic void setUp() {ck; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:41.582603", "n_pass": [193, 43, 22], "score": "0.2776", "loss": "2.1878", "code": "@ic void setUp() {; r = ne(ses); }"}
+{"time": "2020-12-27 23:24:42.928760", "n_pass": [194, 44, 23], "score": "0.2776", "loss": "2.1878", "code": "@ic void setUp() {r = ne(ses); }"}
+{"time": "2020-12-27 23:24:46.946670", "n_pass": [203, 47, 24], "score": "0.2255", "loss": "2.3371", "code": "@c void setUp() {r = ne(ses); }"}
+{"time": "2020-12-27 23:25:02.068279", "n_pass": [255, 54, 25], "score": "0.2255", "loss": "2.3371", "code": "@c void setUp(){r = ne(ses); }"}
+{"time": "2020-12-27 23:25:03.388633", "n_pass": [257, 55, 26], "score": "0.2255", "loss": "2.3371", "code": "@c void setUp(){r= ne(ses); }"}
+{"time": "2020-12-27 23:25:04.710021", "n_pass": [259, 56, 27], "score": "0.2255", "loss": "2.3371", "code": "@c void setUp(){r=ne(ses); }"}
+{"time": "2020-12-27 23:25:08.705453", "n_pass": [263, 59, 28], "score": "0.275", "loss": "3.0987", "code": "@c void setUp(){r=ne(es); }"}
+{"time": "2020-12-27 23:25:12.745653", "n_pass": [268, 62, 29], "score": "0.275", "loss": "3.0987", "code": "@c void setUp(){r=ne(es);}"}
+
+Minimal simplified code:
+@c void setUp(){r=ne(es);}
+

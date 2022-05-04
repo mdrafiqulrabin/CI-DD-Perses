@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/JoinNode_getJoinClause.java
+method_name = getJoinClause
+method_body = public ValueNode getJoinClause() { return joinClause; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 02:09:01.470473", "score": "0.3672", "loss": "1.7936", "code": "class T { public ValueNode getJoinClause() { return joinClause; } }"}
+{"time": "2021-01-25 02:12:51.583105", "score": "0.3672", "loss": "1.7936", "code": "class T { ValueNode getJoinClause() { return joinClause; } }"}
+
+Minimal simplified code:
+class T {
+       ValueNode getJoinClause() { return joinClause; }
+}
+
+

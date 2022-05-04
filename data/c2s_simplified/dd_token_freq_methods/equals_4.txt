@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/URL_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }
+predict, score, loss = equals, 0.9694975, 0.035570662
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:58:28.468786", "n_pass": [1, 1, 1], "score": "0.9695", "loss": "0.0356", "code": "@Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-27 03:58:29.806816", "n_pass": [44, 2, 2], "score": "0.9252", "loss": "0.0856", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }"}
+{"time": "2020-12-27 03:58:31.165773", "n_pass": [55, 3, 3], "score": "0.899", "loss": "0.1734", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) returnreturn (compare(ref, other.getRef())); }"}
+{"time": "2020-12-27 03:58:32.515001", "n_pass": [100, 4, 4], "score": "0.9525", "loss": "0.0759", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) returnreturn (compare(ref.getRef())); }"}
+{"time": "2020-12-27 03:58:34.203803", "n_pass": [119, 5, 5], "score": "0.7882", "loss": "0.4113", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile(other)) returnreturn (compare(ref.getRef())); }"}
+{"time": "2020-12-27 03:58:35.528999", "n_pass": [123, 6, 6], "score": "0.8712", "loss": "0.2327", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile) returnreturn (compare(ref.getRef())); }"}
+{"time": "2020-12-27 03:58:41.915687", "n_pass": [203, 7, 7], "score": "0.9759", "loss": "0.0337", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(ref.getRef())); }"}
+{"time": "2020-12-27 03:58:43.254575", "n_pass": [206, 8, 8], "score": "0.9888", "loss": "0.017", "code": "boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:45.325383", "n_pass": [219, 9, 9], "score": "0.9888", "loss": "0.017", "code": "boolean equals(Object obj){ if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:46.641053", "n_pass": [221, 10, 10], "score": "0.9888", "loss": "0.017", "code": "boolean equals(Object obj){if (!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:47.980547", "n_pass": [223, 11, 11], "score": "0.9888", "loss": "0.017", "code": "boolean equals(Object obj){if(!(obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:49.308140", "n_pass": [225, 12, 12], "score": "0.983", "loss": "0.0256", "code": "boolean equals(Object obj){if((obj instanceof URL)) return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:50.629387", "n_pass": [234, 13, 13], "score": "0.983", "loss": "0.0256", "code": "boolean equals(Object obj){if((obj instanceof URL))return (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:51.950273", "n_pass": [235, 14, 14], "score": "0.9451", "loss": "0.085", "code": "boolean equals(Object obj){if((obj instanceof URL)) (false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:53.303762", "n_pass": [236, 15, 15], "score": "0.9451", "loss": "0.085", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:54.624112", "n_pass": [241, 16, 16], "score": "0.9451", "loss": "0.085", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);URL other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:55.982325", "n_pass": [242, 17, 17], "score": "0.382", "loss": "1.2215", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:57.292663", "n_pass": [243, 18, 18], "score": "0.382", "loss": "1.2215", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);other =  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:58.632321", "n_pass": [245, 19, 19], "score": "0.382", "loss": "1.2215", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);other=  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:58:59.976616", "n_pass": [246, 20, 20], "score": "0.9401", "loss": "0.0991", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);other  obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:59:01.283425", "n_pass": [247, 21, 21], "score": "0.6049", "loss": "0.7637", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);otherobj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:59:03.334155", "n_pass": [282, 22, 22], "score": "0.7471", "loss": "0.4244", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);obj; if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:59:04.667278", "n_pass": [283, 23, 23], "score": "0.8807", "loss": "0.1837", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); if (!sameFile)  (compare(getRef())); }"}
+{"time": "2020-12-27 03:59:08.701985", "n_pass": [338, 24, 24], "score": "0.8807", "loss": "0.1837", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); if (!sameFile) (compare(getRef())); }"}
+{"time": "2020-12-27 03:59:10.056130", "n_pass": [339, 25, 25], "score": "0.8807", "loss": "0.1837", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); if (!sameFile)(compare(getRef())); }"}
+{"time": "2020-12-27 03:59:11.359306", "n_pass": [341, 26, 26], "score": "0.8771", "loss": "0.2402", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); if (!sameFile)((getRef())); }"}
+{"time": "2020-12-27 03:59:12.690594", "n_pass": [349, 27, 27], "score": "0.8771", "loss": "0.2402", "code": "boolean equals(Object obj){if((obj instanceof URL))(false); if (!sameFile)((getRef()));}"}
+{"time": "2020-12-27 03:59:14.716737", "n_pass": [374, 28, 28], "score": "0.8771", "loss": "0.2402", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);if (!sameFile)((getRef()));}"}
+{"time": "2020-12-27 03:59:16.056801", "n_pass": [376, 29, 29], "score": "0.8771", "loss": "0.2402", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);if(!sameFile)((getRef()));}"}
+{"time": "2020-12-27 03:59:17.375239", "n_pass": [378, 30, 30], "score": "0.8025", "loss": "0.4008", "code": "boolean equals(Object obj){if((obj instanceof URL))(false);if(sameFile)((getRef()));}"}
+
+Minimal simplified code:
+boolean equals(Object obj){if((obj instanceof URL))(false);if(sameFile)((getRef()));}
+

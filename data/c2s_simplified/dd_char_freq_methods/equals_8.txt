@@ -1,0 +1,46 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/naming/NamingEntry_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }
+predict, score, loss = equals, 0.9938698, 0.008027968
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:45:13.640926", "n_pass": [1, 1, 1], "score": "0.9939", "loss": "0.008", "code": "@Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-28 00:45:14.989806", "n_pass": [20, 2, 2], "score": "0.8815", "loss": "0.2981", "code": "olean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-28 00:45:18.052010", "n_pass": [50, 4, 3], "score": "0.8915", "loss": "0.2583", "code": "olean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((N) obj).name); } else { return false; } }"}
+{"time": "2020-12-28 00:45:21.203711", "n_pass": [93, 6, 4], "score": "0.7908", "loss": "0.4878", "code": "olean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:25.184430", "n_pass": [98, 9, 5], "score": "0.8347", "loss": "0.3661", "code": "n equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:27.289955", "n_pass": [109, 10, 6], "score": "0.8293", "loss": "0.3822", "code": "n equals(Object obj) { if (obj instanceof Nantry) { return name.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:28.657855", "n_pass": [112, 11, 7], "score": "0.5845", "loss": "0.8471", "code": "n equals(Object obj) { if (obj instanceof Nantry) { rename.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:36.164799", "n_pass": [181, 16, 8], "score": "0.7151", "loss": "0.5554", "code": "n equals(Object obj) { if (obj instanceof Nantry) { name.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:37.517919", "n_pass": [182, 17, 9], "score": "0.8295", "loss": "0.3472", "code": "n equals(Object obj) { if (obj instanceof Nantry) { me.equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:38.953405", "n_pass": [183, 18, 10], "score": "0.9369", "loss": "0.124", "code": "n equals(Object obj) { if (obj instanceof Nantry) { equals(((N) obj).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:42.975855", "n_pass": [188, 21, 11], "score": "0.8795", "loss": "0.2557", "code": "n equals(Object obj) { if (obj instanceof Nantry) { equals(((N) ).name); } { return false; } }"}
+{"time": "2020-12-28 00:45:44.327408", "n_pass": [190, 22, 12], "score": "0.8703", "loss": "0.2666", "code": "n equals(Object obj) { if (obj instanceof Nantry) { equals(((N) ).n); } { return false; } }"}
+{"time": "2020-12-28 00:45:45.645602", "n_pass": [192, 23, 13], "score": "0.9127", "loss": "0.187", "code": "n equals(Object obj) { if (obj instanceof Nantry) { equals(((N) ).n);  return false; } }"}
+{"time": "2020-12-28 00:45:48.302846", "n_pass": [196, 25, 14], "score": "0.7063", "loss": "0.8362", "code": "n equals(Object obj) { if (obj instanceof Nantry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:51.111697", "n_pass": [204, 26, 15], "score": "0.4549", "loss": "1.5281", "code": "n equals(Oect obj) { if (obj instanceof Nantry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:52.470814", "n_pass": [205, 27, 16], "score": "0.5607", "loss": "1.3152", "code": "n equals(Ot obj) { if (obj instanceof Nantry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:53.819048", "n_pass": [207, 28, 17], "score": "0.4255", "loss": "1.735", "code": "n equals(Ot j) { if (obj instanceof Nantry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:55.140313", "n_pass": [213, 29, 18], "score": "0.358", "loss": "1.9146", "code": "n equals(Ot j) { if (o instanceof Nantry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:56.465917", "n_pass": [220, 30, 19], "score": "0.6827", "loss": "0.8637", "code": "n equals(Ot j) { if (o instanceof ntry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:45:57.813082", "n_pass": [221, 31, 20], "score": "0.5348", "loss": "1.3964", "code": "n equals(Ot j) { if (o instanceof ry) { equals(((N) ).n);  return fe; } }"}
+{"time": "2020-12-28 00:46:01.830281", "n_pass": [231, 34, 21], "score": "0.4177", "loss": "1.4625", "code": "n equals(Ot j) { if (o instanceof ry) { equals(((N) ).n); turn fe; } }"}
+{"time": "2020-12-28 00:46:03.373257", "n_pass": [232, 35, 22], "score": "0.6784", "loss": "0.6437", "code": "n equals(Ot j) { if (o instanceof ry) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:19.300476", "n_pass": [335, 41, 23], "score": "0.801", "loss": "0.4256", "code": "n equals(t j) { if (o instanceof ry) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:20.663977", "n_pass": [340, 42, 24], "score": "0.801", "loss": "0.4256", "code": "n equals(t j){ if (o instanceof ry) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:22.063276", "n_pass": [342, 43, 25], "score": "0.801", "loss": "0.4256", "code": "n equals(t j){if (o instanceof ry) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:23.428157", "n_pass": [345, 44, 26], "score": "0.801", "loss": "0.4256", "code": "n equals(t j){if(o instanceof ry) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:24.813115", "n_pass": [360, 45, 27], "score": "0.7344", "loss": "0.5699", "code": "n equals(t j){if(o instanceof y) { equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:26.162993", "n_pass": [363, 46, 28], "score": "0.7344", "loss": "0.5699", "code": "n equals(t j){if(o instanceof y){ equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:27.819398", "n_pass": [365, 47, 29], "score": "0.7344", "loss": "0.5699", "code": "n equals(t j){if(o instanceof y){equals(((N) ).n); n fe; } }"}
+{"time": "2020-12-28 00:46:37.278272", "n_pass": [377, 54, 30], "score": "0.6281", "loss": "0.9395", "code": "n equals(t j){if(o instanceof y){equals(((N) )); n fe; } }"}
+{"time": "2020-12-28 00:46:38.592647", "n_pass": [379, 55, 31], "score": "0.3186", "loss": "2.097", "code": "n equals(t j){if(o instanceof y){equals(((N) )); fe; } }"}
+{"time": "2020-12-28 00:46:54.239124", "n_pass": [444, 63, 32], "score": "0.3186", "loss": "2.097", "code": "n equals(t j){if(o instanceof y){equals(((N) )); fe;} }"}
+{"time": "2020-12-28 00:46:55.566675", "n_pass": [445, 64, 33], "score": "0.3186", "loss": "2.097", "code": "n equals(t j){if(o instanceof y){equals(((N) )); fe;}}"}
+{"time": "2020-12-28 00:47:07.899775", "n_pass": [491, 71, 34], "score": "0.3186", "loss": "2.097", "code": "n equals(t j){if(o instanceof y){equals(((N))); fe;}}"}
+{"time": "2020-12-28 00:47:09.216062", "n_pass": [495, 72, 35], "score": "0.3186", "loss": "2.097", "code": "n equals(t j){if(o instanceof y){equals(((N)));fe;}}"}
+
+Minimal simplified code:
+n equals(t j){if(o instanceof y){equals(((N)));fe;}}
+

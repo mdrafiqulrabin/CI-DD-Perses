@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedQueue_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 21:58:54.264528", "score": "0.9991", "loss": "0.0011", "code": "class T { @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); } }"}
+{"time": "2020-12-28 22:01:23.563559", "score": "0.835", "loss": "0.2455", "code": "class T { @Override public void run() { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } }"}
+{"time": "2020-12-28 22:04:07.430055", "score": "0.9817", "loss": "0.023", "code": "class T { @Override public void run() { QUEUE.offer(obj); } }"}
+{"time": "2020-12-28 22:05:25.010301", "score": "0.6475", "loss": "0.5289", "code": "class T { void run() { QUEUE.offer(obj); } }"}
+
+Minimal simplified code:
+class T {
+                 void run()                                        {                                                                     QUEUE.offer(   ); }
+}
+
+

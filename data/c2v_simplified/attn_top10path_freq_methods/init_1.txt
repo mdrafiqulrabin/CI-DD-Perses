@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/web/TestWebXmlOrdering_init.java
+method_name = init
+method_body = @Override public void init() { a.addAfterOrdering("b"); b.addAfterOrdering("z"); b.addBeforeOrdering("y"); }
+
+topk path-contexts:
+[0.2480] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addbeforeordering
+[0.1736] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addafterordering
+[0.1736] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addafterordering
+[0.0795] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addbeforeordering
+[0.0629] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addafterordering
+[0.0629] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addafterordering
+[0.0378] z,(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addbeforeordering
+[0.0238] b,(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addbeforeordering
+[0.0209] b,(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addafterordering
+[0.0117] addafterordering,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),z
+
+topk terminals:
+['METHOD_NAME', 'addbeforeordering', 'METHOD_NAME', 'addafterordering', 'METHOD_NAME', 'addafterordering', 'void', 'addbeforeordering', 'void', 'addafterordering', 'void', 'addafterordering', 'z', 'addbeforeordering', 'b', 'addbeforeordering', 'b', 'addafterordering', 'addafterordering', 'z']
+

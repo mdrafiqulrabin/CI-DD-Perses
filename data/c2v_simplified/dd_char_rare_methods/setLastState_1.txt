@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ha/deploy/WarWatcher_setLastState.java
+method_name = setLastState
+method_body = protected void setLastState(int lastState) { this.lastState = lastState; }
+predict, score, loss = setLastState, 0.4191862940788269, 1.4963505268096924
+
+Trace of simplified code(s):
+{"time": "2021-01-23 14:39:54.681166", "n_pass": [1, 1, 1], "score": "0.4192", "loss": "1.4964", "code": "protected void setLastState(int lastState) { this.lastState = lastState; }"}
+{"time": "2021-01-23 14:39:57.675531", "n_pass": [20, 2, 2], "score": "0.4192", "loss": "1.4964", "code": " void setLastState(int lastState) { this.lastState = lastState; }"}
+{"time": "2021-01-23 14:40:05.893154", "n_pass": [41, 5, 3], "score": "0.3971", "loss": "1.8709", "code": "d setLastState(int lastState) { this.lastState = lastState; }"}
+{"time": "2021-01-23 14:40:09.702402", "n_pass": [47, 6, 4], "score": "0.4765", "loss": "2.4101", "code": "d setLastState(int late) { this.lastState = lastState; }"}
+{"time": "2021-01-23 14:40:26.479298", "n_pass": [87, 12, 5], "score": "0.4379", "loss": "2.7235", "code": "d setLastState(int late) {his.lastState = lastState; }"}
+{"time": "2021-01-23 14:40:29.071562", "n_pass": [88, 13, 6], "score": "0.505", "loss": "2.4288", "code": "d setLastState(int late) {s.lastState = lastState; }"}
+{"time": "2021-01-23 14:40:44.658321", "n_pass": [94, 19, 7], "score": "0.1779", "loss": "4.4198", "code": "d setLastState(int late) {s.lastState = tState; }"}
+{"time": "2021-01-23 14:41:17.275803", "n_pass": [159, 30, 8], "score": "0.1912", "loss": "3.8285", "code": "d setLastState(int late) {s.lastState =State; }"}
+{"time": "2021-01-23 14:41:48.904417", "n_pass": [188, 40, 9], "score": "0.1912", "loss": "3.8285", "code": "d setLastState(int late){s.lastState =State; }"}
+{"time": "2021-01-23 14:42:52.915237", "n_pass": [243, 62, 10], "score": "0.1912", "loss": "3.8285", "code": "d setLastState(int late){s.lastState=State; }"}
+{"time": "2021-01-23 14:43:00.743259", "n_pass": [246, 65, 11], "score": "0.2002", "loss": "4.1617", "code": "d setLastState(int late){s.lastState=Stte; }"}
+{"time": "2021-01-23 14:43:08.517718", "n_pass": [250, 68, 12], "score": "0.2002", "loss": "4.1617", "code": "d setLastState(int late){s.lastState=Stte;}"}
+
+Minimal simplified code:
+d setLastState(int late){s.lastState=Stte;}
+

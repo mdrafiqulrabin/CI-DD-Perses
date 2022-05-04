@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { Log.i(LOG_TAG, "onCreate"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); }
+
+topk path-contexts:
+[0.2230] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),fomart
+[0.1357] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),oncreate
+[0.1283] oncreate,(StringLiteralExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),oncreate
+[0.1078] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),memoryinfo
+[0.0956] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),memoryinfo
+[0.0935] oncreate,(StringLiteralExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),memoryinfo
+[0.0420] oncreate,(StringLiteralExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),memoryinfo
+[0.0288] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),decimalformat
+[0.0282] oncreate,(StringLiteralExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0213] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr3),oncreate
+
+topk terminals:
+['oncreate', 'fomart', 'super', 'oncreate', 'oncreate', 'oncreate', 'oncreate', 'memoryinfo', 'oncreate', 'memoryinfo', 'oncreate', 'memoryinfo', 'oncreate', 'memoryinfo', 'oncreate', 'decimalformat', 'oncreate', 'super', 'void', 'oncreate']
+

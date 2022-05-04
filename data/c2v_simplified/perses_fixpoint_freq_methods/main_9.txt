@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/georgewfraser__vscode-javac/src/main/java/org/javacs/Main_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName("org.javacs.Main", true, langTools); Method run = main.getMethod("run"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, "Failed", e); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 09:08:50.035586", "score": "0.9597", "loss": "0.0426", "code": "class T { public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Method run = main.getMethod(\"run\"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } } }"}
+{"time": "2020-12-29 09:13:37.719276", "score": "0.6769", "loss": "0.5652", "code": "class T { public static void main(String[] args) { try { } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } } }"}
+{"time": "2020-12-29 09:14:17.431542", "score": "0.9986", "loss": "0.0015", "code": "class T { public static void main(String[] args) { try { } catch (Exception e) { } } }"}
+{"time": "2020-12-29 09:15:36.614985", "score": "0.7437", "loss": "0.3856", "code": "class T { public static void main(String args) { try { } catch (Exception e) { } } }"}
+{"time": "2020-12-29 09:16:16.419144", "score": "0.7437", "loss": "0.3856", "code": "class T { void main(String args) { try { } catch (Exception e) { } } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args) { try {                                                                                                                                                                                          } catch (Exception e) {                                     } }
+}
+
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TesterContext_removeSecurityRole.java
+method_name = removeSecurityRole
+method_body = @Override public void removeSecurityRole(String role) { securityRoles.remove(role); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 09:03:39.140157", "score": "0.4079", "loss": "1.1881", "code": "class T { @Override public void removeSecurityRole(String role) { securityRoles.remove(role); } }"}
+{"time": "2021-01-24 09:06:41.446976", "score": "0.667", "loss": "0.5907", "code": "class T { void removeSecurityRole(String role) { securityRoles.remove(role); } }"}
+{"time": "2021-01-24 09:08:00.894681", "score": "0.7851", "loss": "0.3187", "code": "class T { void removeSecurityRole(String role) { securityRoles.remove( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void removeSecurityRole(String role) { securityRoles.remove(    ); }
+}
+
+

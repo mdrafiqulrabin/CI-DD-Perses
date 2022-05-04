@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/pdf/itext/HTMLWorker_setMarginMirroring.java
+method_name = setMarginMirroring
+method_body = public boolean setMarginMirroring(boolean marginMirroring) { return true; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:45:23.481557", "score": "0.4722", "loss": "1.5002", "code": "class T { public boolean setMarginMirroring(boolean marginMirroring) { return true; } }"}
+{"time": "2021-01-24 06:46:01.191206", "score": "0.5062", "loss": "1.3461", "code": "class T { public boolean setMarginMirroring(boolean marginMirroring) { } }"}
+{"time": "2021-01-24 06:46:22.441286", "score": "0.5062", "loss": "1.3461", "code": "class T { boolean setMarginMirroring(boolean marginMirroring) { } }"}
+
+Minimal simplified code:
+class T {
+       boolean setMarginMirroring(boolean marginMirroring) {              }
+}
+
+

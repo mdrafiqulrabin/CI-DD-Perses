@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-util/src/main/java/org/sakaiproject/util/EmailNotification_htmlContent.java
+method_name = htmlContent
+method_body = protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:53:22.001255", "score": "0.4836", "loss": "3.8923", "code": "class T { protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); } }"}
+{"time": "2021-01-24 06:55:42.387244", "score": "0.5659", "loss": "3.2835", "code": "class T { protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event) )); } }"}
+{"time": "2021-01-24 06:56:03.770126", "score": "0.5659", "loss": "3.2835", "code": "class T { String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event) )); } }"}
+
+Minimal simplified code:
+class T {
+          String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event)      )); }
+}
+
+

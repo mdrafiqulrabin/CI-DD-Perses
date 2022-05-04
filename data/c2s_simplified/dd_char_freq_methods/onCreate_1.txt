@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+predict, score, loss = onCreate, 0.9999974, 9.989289e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:06:30.764862", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0001", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-27 23:06:33.469125", "n_pass": [44, 3, 2], "score": "1.0", "loss": "0.0002", "code": " protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-27 23:06:35.210179", "n_pass": [48, 4, 3], "score": "1.0", "loss": "0.0002", "code": " protected void onCreate(Bundle saveState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-27 23:06:37.926723", "n_pass": [52, 6, 4], "score": "0.9997", "loss": "0.0005", "code": " protected void onCreate(Bundle saveState) { super.onCreate(saveState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-27 23:06:39.293372", "n_pass": [54, 7, 5], "score": "0.9998", "loss": "0.0004", "code": " protected void onCreate(Bundle saveState) { super.onCreate(saveState); tView(R.layout.settings_fragment); }"}
+{"time": "2020-12-27 23:06:40.649572", "n_pass": [56, 8, 6], "score": "0.9992", "loss": "0.0013", "code": " protected void onCreate(Bundle saveState) { super.onCreate(saveState); tView(R.ltings_fragment); }"}
+{"time": "2020-12-27 23:06:42.003687", "n_pass": [57, 9, 7], "score": "0.9983", "loss": "0.0022", "code": " protected void onCreate(Bundle saveState) { super.onCreate(saveState); tView(R.lgment); }"}
+{"time": "2020-12-27 23:06:45.021966", "n_pass": [88, 11, 8], "score": "0.9986", "loss": "0.0018", "code": " protected void onCreate(Bundle saveState) { super.onCreate(saveState); tView(R.t); }"}
+{"time": "2020-12-27 23:06:46.374378", "n_pass": [92, 12, 9], "score": "0.9968", "loss": "0.0035", "code": " protectoid onCreate(Bundle saveState) { super.onCreate(saveState); tView(R.t); }"}
+{"time": "2020-12-27 23:06:48.838142", "n_pass": [98, 13, 10], "score": "0.9974", "loss": "0.0029", "code": " protectoid onCreate(Bundle State) { super.onCreate(saveState); tView(R.t); }"}
+{"time": "2020-12-27 23:06:50.190394", "n_pass": [99, 14, 11], "score": "0.998", "loss": "0.0023", "code": " protectoid onCreate(Bundle e) { super.onCreate(saveState); tView(R.t); }"}
+{"time": "2020-12-27 23:06:52.849538", "n_pass": [104, 16, 12], "score": "0.9921", "loss": "0.0088", "code": " protectoid onCreate(Bundle e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:06:54.164600", "n_pass": [109, 17, 13], "score": "0.9921", "loss": "0.0088", "code": "tectoid onCreate(Bundle e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:06:55.516870", "n_pass": [110, 18, 14], "score": "0.9941", "loss": "0.0067", "code": "oid onCreate(Bundle e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:06:59.375500", "n_pass": [150, 20, 15], "score": "0.9941", "loss": "0.0068", "code": "d onCreate(Bundle e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:02.335536", "n_pass": [156, 21, 16], "score": "0.9767", "loss": "0.025", "code": "d onCreate(Bdle e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:03.691449", "n_pass": [157, 22, 17], "score": "0.9846", "loss": "0.0165", "code": "d onCreate(Be e) { super.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:06.377725", "n_pass": [162, 24, 18], "score": "0.4001", "loss": "1.2769", "code": "d onCreate(Be e) { ser.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:07.829901", "n_pass": [163, 25, 19], "score": "0.4749", "loss": "1.0511", "code": "d onCreate(Be e) { s.onCreate(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:29.738782", "n_pass": [235, 39, 20], "score": "0.9225", "loss": "0.9949", "code": "d onCreate(Be e) { s.onCreat(tate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:31.093770", "n_pass": [237, 40, 21], "score": "0.8703", "loss": "0.8245", "code": "d onCreate(Be e) { s.onCreat(ate); tView(R.t); }"}
+{"time": "2020-12-27 23:07:32.495838", "n_pass": [238, 41, 22], "score": "0.8714", "loss": "0.9858", "code": "d onCreate(Be e) { s.onCreat(te); tView(R.t); }"}
+{"time": "2020-12-27 23:07:33.816328", "n_pass": [239, 42, 23], "score": "0.9505", "loss": "0.7435", "code": "d onCreate(Be e) { s.onCreat(e); tView(R.t); }"}
+{"time": "2020-12-27 23:07:35.165518", "n_pass": [240, 43, 24], "score": "0.3787", "loss": "2.5013", "code": "d onCreate(Be e) { s.onCreat(); tView(R.t); }"}
+{"time": "2020-12-27 23:07:36.509597", "n_pass": [242, 44, 25], "score": "0.7142", "loss": "1.8586", "code": "d onCreate(Be e) { s.onCreat();View(R.t); }"}
+{"time": "2020-12-27 23:07:37.873214", "n_pass": [243, 45, 26], "score": "0.3136", "loss": "2.3592", "code": "d onCreate(Be e) { s.onCreat();ew(R.t); }"}
+{"time": "2020-12-27 23:07:39.193632", "n_pass": [244, 46, 27], "score": "0.2965", "loss": "3.0482", "code": "d onCreate(Be e) { s.onCreat();(R.t); }"}
+{"time": "2020-12-27 23:07:45.549580", "n_pass": [260, 48, 28], "score": "0.3877", "loss": "3.2927", "code": "d onCreate(e e) { s.onCreat();(R.t); }"}
+{"time": "2020-12-27 23:07:46.868455", "n_pass": [265, 49, 29], "score": "0.3877", "loss": "3.2927", "code": "d onCreate(e e){ s.onCreat();(R.t); }"}
+{"time": "2020-12-27 23:07:48.210039", "n_pass": [267, 50, 30], "score": "0.3877", "loss": "3.2927", "code": "d onCreate(e e){s.onCreat();(R.t); }"}
+{"time": "2020-12-27 23:08:06.325764", "n_pass": [313, 60, 31], "score": "0.3075", "loss": "3.556", "code": "d onCreate(e e){s.onCreat();(Rt); }"}
+{"time": "2020-12-27 23:08:07.678546", "n_pass": [316, 61, 32], "score": "0.3075", "loss": "3.556", "code": "d onCreate(e e){s.onCreat();(Rt);}"}
+{"time": "2020-12-27 23:08:23.388916", "n_pass": [347, 70, 33], "score": "0.4205", "loss": "2.5758", "code": "d onCreate(e e){s.onCreat();(t);}"}
+
+Minimal simplified code:
+d onCreate(e e){s.onCreat();(t);}
+

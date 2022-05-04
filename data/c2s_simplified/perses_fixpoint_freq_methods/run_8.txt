@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedStack_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:12:23.582145", "score": "0.9986", "loss": "0.0019", "code": "class T { @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); } }"}
+{"time": "2020-12-21 11:13:00.994673", "score": "0.8689", "loss": "0.3914", "code": "class T { @Override public void run() { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } }"}
+{"time": "2020-12-21 11:13:22.171665", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override public void run() { } }"}
+{"time": "2020-12-21 11:13:43.207022", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override void run() { } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run()                                        {                                                                                       }
+}
+
+

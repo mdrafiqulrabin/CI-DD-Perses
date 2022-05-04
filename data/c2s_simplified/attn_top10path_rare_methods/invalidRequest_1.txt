@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/Responses_invalidRequest.java
+method_name = invalidRequest
+method_body = static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }
+
+topk path-contexts for sub-token: invalid
+[0.1531] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.1102] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.0769] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,add|message
+[0.0731] empty,NameExpr1|MethodCallExpr1|MethodCallExpr|NameExpr2,invalid|request
+[0.0657] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,add|message
+[0.0541] message,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.0532] response,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0460] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|NameExpr1,empty
+[0.0357] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr1|NameExpr1,empty
+[0.0331] message,NameExpr3|MethodCallExpr|NameExpr3,add|message
+
+topk terminals for sub-token: invalid
+['string', 'invalid|request', 'METHOD_NAME', 'invalid|request', 'string', 'add|message', 'empty', 'invalid|request', 'METHOD_NAME', 'add|message', 'message', 'invalid|request', 'response', 'METHOD_NAME', 'string', 'empty', 'METHOD_NAME', 'empty', 'message', 'add|message']
+
+topk path-contexts for sub-token: request
+[0.2449] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.1908] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.1223] message,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,invalid|request
+[0.1113] empty,NameExpr1|MethodCallExpr1|MethodCallExpr|NameExpr2,invalid|request
+[0.0392] invalid|request,NameExpr2|MethodCallExpr|NameExpr3,add|message
+[0.0268] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,add|message
+[0.0247] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,add|message
+[0.0208] invalid|request,NameExpr2|MethodCallExpr|NameExpr3,message
+[0.0203] response,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0201] message,NameExpr3|MethodCallExpr|NameExpr3,add|message
+
+topk terminals for sub-token: request
+['string', 'invalid|request', 'METHOD_NAME', 'invalid|request', 'message', 'invalid|request', 'empty', 'invalid|request', 'invalid|request', 'add|message', 'METHOD_NAME', 'add|message', 'string', 'add|message', 'invalid|request', 'message', 'response', 'METHOD_NAME', 'message', 'add|message']
+

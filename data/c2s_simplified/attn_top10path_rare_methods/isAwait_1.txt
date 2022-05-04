@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/startup/Catalina_isAwait.java
+method_name = isAwait
+method_body = public boolean isAwait() { return await; }
+
+topk path-contexts for sub-token: is
+[0.2492] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,await
+[0.2137] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,await
+[0.1008] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: is
+['METHOD_NAME', 'await', 'boolean', 'await', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: await
+[0.4347] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,await
+[0.4020] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,await
+[0.0374] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: await
+['METHOD_NAME', 'await', 'boolean', 'await', 'boolean', 'METHOD_NAME']
+

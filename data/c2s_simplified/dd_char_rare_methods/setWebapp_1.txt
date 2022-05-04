@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/XiaoMi__linden/linden-core/src/main/java/com/xiaomi/linden/core/LindenConfig_setWebapp.java
+method_name = setWebapp
+method_body = public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }
+predict, score, loss = setWebapp, 0.44376144, 0.9273432
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:39:10.689487", "n_pass": [1, 1, 1], "score": "0.4438", "loss": "0.9273", "code": "public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }"}
+{"time": "2021-01-23 10:39:12.366968", "n_pass": [20, 2, 2], "score": "0.4849", "loss": "0.829", "code": "denConfig setWebapp(String webapp) { this.webapp = webapp; return this; }"}
+{"time": "2021-01-23 10:39:13.666232", "n_pass": [24, 3, 3], "score": "0.3481", "loss": "2.1184", "code": "denConfig setWebapp(String webapp) { thiwebapp; return this; }"}
+{"time": "2021-01-23 10:39:15.329216", "n_pass": [43, 4, 4], "score": "0.3481", "loss": "2.1184", "code": "denConfig setWebapp(String webapp) { thip; return this; }"}
+{"time": "2021-01-23 10:39:17.918614", "n_pass": [47, 6, 5], "score": "0.3173", "loss": "2.5494", "code": "nfig setWebapp(String webapp) { thip; return this; }"}
+{"time": "2021-01-23 10:39:19.955354", "n_pass": [51, 7, 6], "score": "0.3813", "loss": "2.3552", "code": "nfig setWebapp(g webapp) { thip; return this; }"}
+{"time": "2021-01-23 10:39:26.196769", "n_pass": [84, 11, 7], "score": "0.4832", "loss": "2.6725", "code": "nfig setWebapp(g webapp) {ip; return this; }"}
+{"time": "2021-01-23 10:39:27.492244", "n_pass": [85, 12, 8], "score": "0.3412", "loss": "2.0333", "code": "nfig setWebapp(g webapp) { return this; }"}
+{"time": "2021-01-23 10:39:31.373175", "n_pass": [91, 15, 9], "score": "0.4633", "loss": "1.4978", "code": "ig setWebapp(g webapp) { return this; }"}
+{"time": "2021-01-23 10:39:40.677485", "n_pass": [137, 20, 10], "score": "0.5349", "loss": "1.5486", "code": "g setWebapp(g webapp) { return this; }"}
+{"time": "2021-01-23 10:39:57.620687", "n_pass": [185, 29, 11], "score": "0.5349", "loss": "1.5486", "code": "g setWebapp(g webapp){ return this; }"}
+{"time": "2021-01-23 10:39:58.911252", "n_pass": [187, 30, 12], "score": "0.5349", "loss": "1.5486", "code": "g setWebapp(g webapp){return this; }"}
+{"time": "2021-01-23 10:40:06.713595", "n_pass": [200, 36, 13], "score": "0.5349", "loss": "1.5486", "code": "g setWebapp(g webapp){return this;}"}
+
+Minimal simplified code:
+g setWebapp(g webapp){return this;}
+

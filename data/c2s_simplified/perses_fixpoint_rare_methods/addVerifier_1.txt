@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/libgdx__gdx-pay/gdx-pay-server/src/com/badlogic/gdx/pay/server/PurchaseVerifierManager_addVerifier.java
+method_name = addVerifier
+method_body = public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:58:39.334055", "score": "0.4103", "loss": "4.2949", "code": "class T { public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); } }"}
+{"time": "2021-01-24 04:59:27.548949", "score": "0.4865", "loss": "4.0297", "code": "class T { public void addVerifier(PurchaseVerifier verifier) { verifiers.put( ); } }"}
+{"time": "2021-01-24 04:59:48.776224", "score": "0.4865", "loss": "4.0297", "code": "class T { void addVerifier(PurchaseVerifier verifier) { verifiers.put( ); } }"}
+
+Minimal simplified code:
+class T {
+       void addVerifier(PurchaseVerifier verifier) { verifiers.put(                              ); }
+}
+
+

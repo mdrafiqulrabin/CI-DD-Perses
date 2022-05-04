@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/tribes/membership/Constants_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { System.out.println(Arrays.toString("TRIBES-B".getBytes())); System.out.println(Arrays.toString("TRIBES-E".getBytes())); }
+
+topk path-contexts:
+[0.1398] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType3),exception
+[0.0505] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr2),out
+[0.0505] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr2),out
+[0.0464] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0464] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0371] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),println
+[0.0371] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),println
+[0.0327] args,(VariableDeclaratorId0)^(Parameter)_(ArrayBracketPair2),[]
+[0.0288] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0288] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+
+topk terminals:
+['args', 'exception', 'args', 'out', 'args', 'out', '[]', 'system', '[]', 'system', 'args', 'println', 'args', 'println', 'args', '[]', 'args', 'system', 'args', 'system']
+

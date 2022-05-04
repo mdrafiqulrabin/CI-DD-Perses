@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/brut/androlib/res/data/ResValuesFile_isSynthesized.java
+method_name = isSynthesized
+method_body = public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }
+predict, score, loss = isSynthesized, 0.3271291255950928, 3.005289316177368
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:07:34.881597", "n_pass": [1, 1, 1], "score": "0.3271", "loss": "3.0053", "code": "public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }"}
+{"time": "2021-01-20 07:07:37.934643", "n_pass": [25, 2, 2], "score": "0.331", "loss": "2.9841", "code": "public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getId()); }"}
+{"time": "2021-01-20 07:07:40.568157", "n_pass": [26, 3, 3], "score": "0.3375", "loss": "2.9382", "code": "public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res); }"}
+{"time": "2021-01-20 07:07:43.587220", "n_pass": [47, 4, 4], "score": "0.3375", "loss": "2.9382", "code": "boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res); }"}
+{"time": "2021-01-20 07:07:54.904531", "n_pass": [88, 7, 5], "score": "0.3375", "loss": "2.9382", "code": "boolean isSynthesized(ResResource res){ return mPackage.isSynthesized(res); }"}
+{"time": "2021-01-20 07:07:57.541503", "n_pass": [89, 8, 6], "score": "0.3375", "loss": "2.9382", "code": "boolean isSynthesized(ResResource res){return mPackage.isSynthesized(res); }"}
+{"time": "2021-01-20 07:08:10.639362", "n_pass": [99, 13, 7], "score": "0.3375", "loss": "2.9382", "code": "boolean isSynthesized(ResResource res){return mPackage.isSynthesized(res);}"}
+
+Minimal simplified code:
+boolean isSynthesized(ResResource res){return mPackage.isSynthesized(res);}
+

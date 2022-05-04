@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+predict, score, loss = main, 0.99991775, 0.00011145668
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:50:28.854125", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-27 03:50:30.199364", "n_pass": [10, 2, 2], "score": "0.9986", "loss": "0.0016", "code": "public static void main(String[] args) throws Exception { recreate =CreateTestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-27 03:50:31.899406", "n_pass": [38, 3, 3], "score": "0.9955", "loss": "0.0056", "code": "public static void main(String[] args) throws Exception { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:33.240359", "n_pass": [41, 4, 4], "score": "0.9955", "loss": "0.0056", "code": " void main(String[] args) throws Exception { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:34.927340", "n_pass": [46, 5, 5], "score": "0.9939", "loss": "0.0084", "code": " void main(String[] args)  { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:39.964096", "n_pass": [84, 8, 6], "score": "0.9939", "loss": "0.0084", "code": "void main(String[] args)  { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:45.589194", "n_pass": [122, 10, 7], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args)  { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:46.925601", "n_pass": [124, 11, 8], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args) { recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:48.223052", "n_pass": [125, 12, 9], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args){ recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:49.518454", "n_pass": [127, 13, 10], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args){recreate =CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:50.812821", "n_pass": [129, 14, 11], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args){recreate=CreateTestTable().testPopulateData(); }"}
+{"time": "2020-12-27 03:50:53.436740", "n_pass": [139, 16, 12], "score": "0.9939", "loss": "0.0084", "code": "void main(String[]args){recreate=CreateTestTable().testPopulateData();}"}
+
+Minimal simplified code:
+void main(String[]args){recreate=CreateTestTable().testPopulateData();}
+

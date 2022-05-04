@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/test/java/br/com/six2six/fixturefactory/ObjectFactoryWithProcessorTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }
+predict, score, loss = setUp, 0.5487185120582581, 0.6019895076751709
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:05:31.539286", "n_pass": [1, 1, 1], "score": "0.5487", "loss": "0.602", "code": "@Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:05:34.384518", "n_pass": [20, 2, 2], "score": "0.2902", "loss": "1.4096", "code": " void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:05:52.524954", "n_pass": [84, 7, 3], "score": "0.2902", "loss": "1.4096", "code": "void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:05:55.724192", "n_pass": [89, 8, 4], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){ session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:05:58.525225", "n_pass": [91, 9, 5], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:06:01.469507", "n_pass": [93, 10, 6], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session= mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:06:04.252797", "n_pass": [95, 11, 7], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session=mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:06:12.589824", "n_pass": [103, 14, 8], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session=mock(Session.class);processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-26 22:06:37.891000", "n_pass": [145, 22, 9], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session=mock(Session.class);processor = new HibernateProcessor(session);}"}
+{"time": "2020-12-26 22:06:49.969535", "n_pass": [162, 26, 10], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session=mock(Session.class);processor= new HibernateProcessor(session);}"}
+{"time": "2020-12-26 22:06:52.810020", "n_pass": [164, 27, 11], "score": "0.2902", "loss": "1.4096", "code": "void setUp(){session=mock(Session.class);processor=new HibernateProcessor(session);}"}
+
+Minimal simplified code:
+void setUp(){session=mock(Session.class);processor=new HibernateProcessor(session);}
+

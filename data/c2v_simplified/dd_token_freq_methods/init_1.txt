@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/web/TestWebXmlOrdering_init.java
+method_name = init
+method_body = @Override public void init() { a.addAfterOrdering("b"); b.addAfterOrdering("z"); b.addBeforeOrdering("y"); }
+predict, score, loss = init, 0.9999779462814331, 2.288792165927589e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:43:54.017368", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterOrdering(\"z\"); b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:43:57.056065", "n_pass": [10, 2, 2], "score": "1.0", "loss": "0.0", "code": "@Override public void init() { a.addAfterOrdering(\"b\");b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:00.116100", "n_pass": [21, 3, 3], "score": "1.0", "loss": "0.0", "code": "void init() { a.addAfterOrdering(\"b\");b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:03.564502", "n_pass": [40, 4, 4], "score": "1.0", "loss": "0.0", "code": "void init() {addAfterOrdering(\"b\");b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:07.412041", "n_pass": [69, 5, 5], "score": "1.0", "loss": "0.0", "code": "void init() {(\"b\");b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:10.041424", "n_pass": [72, 6, 6], "score": "1.0", "loss": "0.0", "code": "void init() {(\"\");b.addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:12.668155", "n_pass": [74, 7, 7], "score": "1.0", "loss": "0.0", "code": "void init() {(\"\").addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:16.127789", "n_pass": [85, 8, 8], "score": "1.0", "loss": "0.0", "code": "void init(){(\"\").addBeforeOrdering(\"y\"); }"}
+{"time": "2020-12-26 21:44:20.379835", "n_pass": [118, 9, 9], "score": "1.0", "loss": "0.0", "code": "void init(){(\"\").addBeforeOrdering(\"\"); }"}
+{"time": "2020-12-26 21:44:23.006838", "n_pass": [121, 10, 10], "score": "1.0", "loss": "0.0", "code": "void init(){(\"\").addBeforeOrdering(\"\");}"}
+
+Minimal simplified code:
+void init(){("").addBeforeOrdering("");}
+

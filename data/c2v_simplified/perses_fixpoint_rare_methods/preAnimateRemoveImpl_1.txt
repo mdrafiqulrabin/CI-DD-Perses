@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wasabeef__recyclerview-animators/animators/src/main/java/jp/wasabeef/recyclerview/animators/ScaleInRightAnimator_preAnimateRemoveImpl.java
+method_name = preAnimateRemoveImpl
+method_body = @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 21:11:28.475836", "score": "0.4428", "loss": "0.9425", "code": "class T { @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); } }"}
+{"time": "2021-01-24 21:15:50.812828", "score": "0.4891", "loss": "0.7839", "code": "class T { @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView ); } }"}
+{"time": "2021-01-24 21:18:31.393152", "score": "0.654", "loss": "0.4758", "code": "class T { void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView ); } }"}
+{"time": "2021-01-24 21:19:11.093551", "score": "0.7297", "loss": "0.3768", "code": "class T { void preAnimateRemoveImpl(RecyclerView holder) { ViewCompat.setPivotX(holder.itemView ); } }"}
+
+Minimal simplified code:
+class T {
+                    void preAnimateRemoveImpl(RecyclerView            holder) { ViewCompat.setPivotX(holder.itemView                            ); }
+}
+
+

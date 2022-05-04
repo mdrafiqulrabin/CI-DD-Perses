@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/windy1__google-places-api-java/src/main/java/se/walkercrou/places/Hours_setClosingTime.java
+method_name = setClosingTime
+method_body = protected Period setClosingTime(String closingTime) { this.closingTime = closingTime; return this; }
+predict, score, loss = setClosingTime, 0.45558435, 0.86309475
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:21:15.254532", "n_pass": [1, 1, 1], "score": "0.4556", "loss": "0.8631", "code": "protected Period setClosingTime(String closingTime) { this.closingTime = closingTime; return this; }"}
+{"time": "2021-01-20 05:21:19.575795", "n_pass": [26, 4, 2], "score": "0.9746", "loss": "0.0601", "code": "protected Period setClosingTime(String closingTime) { this.closingTime = closingTimethis; }"}
+{"time": "2021-01-20 05:21:24.550292", "n_pass": [50, 7, 3], "score": "0.9746", "loss": "0.0601", "code": " Period setClosingTime(String closingTime) { this.closingTime = closingTimethis; }"}
+{"time": "2021-01-20 05:21:25.849287", "n_pass": [51, 8, 4], "score": "0.9746", "loss": "0.0601", "code": "Period setClosingTime(String closingTime) { this.closingTime = closingTimethis; }"}
+{"time": "2021-01-20 05:21:27.880418", "n_pass": [60, 9, 5], "score": "0.8953", "loss": "0.1909", "code": "Period setClosingTime(String closingTime) { this.closingTime =this; }"}
+{"time": "2021-01-20 05:21:33.612831", "n_pass": [92, 11, 6], "score": "0.8953", "loss": "0.1909", "code": "Period setClosingTime(String closingTime) { this.closingTime =this;}"}
+{"time": "2021-01-20 05:21:36.020913", "n_pass": [101, 12, 7], "score": "0.8953", "loss": "0.1909", "code": "Period setClosingTime(String closingTime){ this.closingTime =this;}"}
+{"time": "2021-01-20 05:21:37.328122", "n_pass": [103, 13, 8], "score": "0.8953", "loss": "0.1909", "code": "Period setClosingTime(String closingTime){this.closingTime =this;}"}
+{"time": "2021-01-20 05:21:39.948777", "n_pass": [107, 15, 9], "score": "0.8953", "loss": "0.1909", "code": "Period setClosingTime(String closingTime){this.closingTime=this;}"}
+
+Minimal simplified code:
+Period setClosingTime(String closingTime){this.closingTime=this;}
+

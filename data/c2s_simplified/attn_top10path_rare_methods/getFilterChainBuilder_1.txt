@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.netty/src/main/java/org/kaazing/mina/core/service/AbstractIoService_getFilterChainBuilder.java
+method_name = getFilterChainBuilder
+method_body = @Override public final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }
+
+topk path-contexts for sub-token: get
+[0.3857] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.1756] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.0859] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0427] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0142] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: get
+['METHOD_NAME', 'filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'io|filter|chain|builder', 'METHOD_NAME', 'override', 'io|filter|chain|builder', 'override', 'METHOD_NAME']
+
+topk path-contexts for sub-token: filter
+[0.3631] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.2177] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.1092] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0639] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0091] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: filter
+['METHOD_NAME', 'filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'io|filter|chain|builder', 'METHOD_NAME', 'override', 'io|filter|chain|builder', 'override', 'METHOD_NAME']
+
+topk path-contexts for sub-token: chain
+[0.4370] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.1970] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.1804] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1560] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0046] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: chain
+['io|filter|chain|builder', 'filter|chain|builder', 'METHOD_NAME', 'filter|chain|builder', 'io|filter|chain|builder', 'METHOD_NAME', 'override', 'io|filter|chain|builder', 'override', 'METHOD_NAME']
+
+topk path-contexts for sub-token: builder
+[0.2902] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.2762] io|filter|chain|builder,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.2129] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,filter|chain|builder
+[0.1139] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0148] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: builder
+['io|filter|chain|builder', 'METHOD_NAME', 'io|filter|chain|builder', 'filter|chain|builder', 'METHOD_NAME', 'filter|chain|builder', 'override', 'io|filter|chain|builder', 'override', 'METHOD_NAME']
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedQueue_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+predict, score, loss = run, 0.9986243, 0.0019340502
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:46:56.926017", "n_pass": [1, 1, 1], "score": "0.9986", "loss": "0.0019", "code": "@Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-27 03:46:58.645180", "n_pass": [48, 2, 2], "score": "0.9987", "loss": "0.0019", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-27 03:46:59.974731", "n_pass": [54, 3, 3], "score": "0.9988", "loss": "0.0015", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } QUEUE.offer(obj); } super.run(); }"}
+{"time": "2020-12-27 03:47:01.297085", "n_pass": [56, 4, 4], "score": "0.9987", "loss": "0.0018", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; } super.run(); }"}
+{"time": "2020-12-27 03:47:03.009345", "n_pass": [97, 5, 5], "score": "0.9078", "loss": "0.1534", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }run(); }"}
+{"time": "2020-12-27 03:47:04.323580", "n_pass": [98, 6, 6], "score": "0.5783", "loss": "0.672", "code": "@Override public void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:13.264433", "n_pass": [176, 9, 7], "score": "0.5783", "loss": "0.672", "code": "@Override  void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:14.610986", "n_pass": [177, 10, 8], "score": "0.5783", "loss": "0.672", "code": "@Override void run() { for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:16.318025", "n_pass": [182, 11, 9], "score": "0.5783", "loss": "0.672", "code": "@Override void run(){ for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:17.641093", "n_pass": [184, 12, 10], "score": "0.5783", "loss": "0.672", "code": "@Override void run(){for (int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:18.955352", "n_pass": [186, 13, 11], "score": "0.5783", "loss": "0.672", "code": "@Override void run(){for(int i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:20.285846", "n_pass": [188, 14, 12], "score": "0.7094", "loss": "0.4789", "code": "@Override void run(){for( i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:21.611011", "n_pass": [189, 15, 13], "score": "0.7094", "loss": "0.4789", "code": "@Override void run(){for(i = 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:22.917413", "n_pass": [191, 16, 14], "score": "0.7094", "loss": "0.4789", "code": "@Override void run(){for(i= 0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:24.230583", "n_pass": [193, 17, 15], "score": "0.7094", "loss": "0.4789", "code": "@Override void run(){for(i=0;; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:25.568933", "n_pass": [200, 18, 16], "score": "0.896", "loss": "0.2284", "code": "@Override void run(){for(i=0;; i++) { obj = QUEUE.poll(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:26.878700", "n_pass": [204, 19, 17], "score": "0.9191", "loss": "0.2008", "code": "@Override void run(){for(i=0;; i++) { obj = QUEUE(); if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:28.229021", "n_pass": [205, 20, 18], "score": "0.8062", "loss": "0.3999", "code": "@Override void run(){for(i=0;; i++) { obj = QUEUE; if (obj == null) { obj(); } ; }; }"}
+{"time": "2020-12-27 03:47:32.178508", "n_pass": [214, 23, 19], "score": "0.8892", "loss": "0.1977", "code": "@Override void run(){for(i=0;; i++) { obj = QUEUE; if (obj == null) { obj; } ; }; }"}
+{"time": "2020-12-27 03:47:33.486287", "n_pass": [217, 24, 20], "score": "0.8892", "loss": "0.1977", "code": "@Override void run(){for(i=0;; i++) { obj = QUEUE; if (obj == null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:35.885577", "n_pass": [232, 25, 21], "score": "0.9528", "loss": "0.1091", "code": "@Override void run(){for(i0;; i++) { obj = QUEUE; if (obj == null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:37.199188", "n_pass": [233, 26, 22], "score": "0.9528", "loss": "0.1091", "code": "@Override void run(){for(i;; i++) { obj = QUEUE; if (obj == null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:38.548988", "n_pass": [240, 27, 23], "score": "0.943", "loss": "0.1317", "code": "@Override void run(){for(i;; i++) { obj QUEUE; if (obj == null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:39.871700", "n_pass": [241, 28, 24], "score": "0.9724", "loss": "0.0611", "code": "@Override void run(){for(i;; i++) { obj; if (obj == null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:41.176094", "n_pass": [245, 29, 25], "score": "0.9369", "loss": "0.1212", "code": "@Override void run(){for(i;; i++) { obj; if (obj= null) { obj; } }; }"}
+{"time": "2020-12-27 03:47:42.476438", "n_pass": [246, 30, 26], "score": "0.974", "loss": "0.0497", "code": "@Override void run(){for(i;; i++) { obj; if (objnull) { obj; } }; }"}
+{"time": "2020-12-27 03:47:43.777723", "n_pass": [249, 31, 27], "score": "0.9787", "loss": "0.0468", "code": "@Override void run(){for(i;; i++) { obj; if (objnull) {; } }; }"}
+{"time": "2020-12-27 03:47:45.072383", "n_pass": [250, 32, 28], "score": "0.9787", "loss": "0.0468", "code": "@Override void run(){for(i;; i++) { obj; if (objnull) {} }; }"}
+{"time": "2020-12-27 03:47:47.425508", "n_pass": [265, 33, 29], "score": "0.9678", "loss": "0.0771", "code": "@Override void run(){for(;; i++) { obj; if (objnull) {} }; }"}
+{"time": "2020-12-27 03:47:48.758015", "n_pass": [271, 34, 30], "score": "0.8945", "loss": "0.2433", "code": "@Override void run(){for(;; i++) {; if (objnull) {} }; }"}
+{"time": "2020-12-27 03:47:50.049477", "n_pass": [272, 35, 31], "score": "0.8945", "loss": "0.2433", "code": "@Override void run(){for(;; i++) {if (objnull) {} }; }"}
+{"time": "2020-12-27 03:47:55.040341", "n_pass": [318, 36, 32], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;; i++) {if (null) {} }; }"}
+{"time": "2020-12-27 03:47:56.340728", "n_pass": [321, 37, 33], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;; i++) {if (null){} }; }"}
+{"time": "2020-12-27 03:47:57.635950", "n_pass": [324, 38, 34], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;; i++) {if (null){}}; }"}
+{"time": "2020-12-27 03:47:58.959028", "n_pass": [326, 39, 35], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;; i++) {if (null){}} }"}
+{"time": "2020-12-27 03:48:00.277978", "n_pass": [327, 40, 36], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;; i++) {if (null){}}}"}
+{"time": "2020-12-27 03:48:02.626725", "n_pass": [342, 41, 37], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;;i++) {if (null){}}}"}
+{"time": "2020-12-27 03:48:03.919259", "n_pass": [347, 42, 38], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;;i++){if (null){}}}"}
+{"time": "2020-12-27 03:48:05.244696", "n_pass": [350, 43, 39], "score": "0.8964", "loss": "0.2238", "code": "@Override void run(){for(;;i++){if(null){}}}"}
+
+Minimal simplified code:
+@Override void run(){for(;;i++){if(null){}}}
+

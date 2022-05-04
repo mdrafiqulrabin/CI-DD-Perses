@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/VerticalGridFragment_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); }
+
+topk path-contexts:
+[0.2731] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.2074] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.1289] savedinstancestate,(NameExpr2)^(MethodCallExpr)_(NameExpr3),oncreate
+[0.0674] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setmapper
+[0.0564] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setadapter
+[0.0335] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),videocursormapper
+[0.0306] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setmapper
+[0.0270] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),setupfragment
+[0.0246] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),mvideocursoradapter
+[0.0234] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),savedinstancestate
+
+topk terminals:
+['savedinstancestate', 'oncreate', 'bundle', 'oncreate', 'savedinstancestate', 'oncreate', 'savedinstancestate', 'setmapper', 'oncreate', 'setadapter', 'oncreate', 'videocursormapper', 'bundle', 'setmapper', 'savedinstancestate', 'setupfragment', 'oncreate', 'mvideocursoradapter', 'super', 'savedinstancestate']
+

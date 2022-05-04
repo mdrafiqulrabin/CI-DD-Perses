@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/ItemAuthorBean_getInsertPosition.java
+method_name = getInsertPosition
+method_body = public String getInsertPosition() { return insertPosition; }
+predict, score, loss = getInsertPosition, 0.39555811882019043, 1.9575097560882568
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:04:25.339874", "n_pass": [1, 1, 1], "score": "0.3956", "loss": "1.9575", "code": "public String getInsertPosition() { return insertPosition; }"}
+{"time": "2021-01-20 07:04:28.708856", "n_pass": [20, 2, 2], "score": "0.3956", "loss": "1.9575", "code": "String getInsertPosition() { return insertPosition; }"}
+{"time": "2021-01-20 07:04:37.366188", "n_pass": [46, 4, 3], "score": "0.3956", "loss": "1.9575", "code": "String getInsertPosition(){ return insertPosition; }"}
+{"time": "2021-01-20 07:04:39.953833", "n_pass": [48, 5, 4], "score": "0.3956", "loss": "1.9575", "code": "String getInsertPosition(){return insertPosition; }"}
+{"time": "2021-01-20 07:04:50.350046", "n_pass": [53, 9, 5], "score": "0.3956", "loss": "1.9575", "code": "String getInsertPosition(){return insertPosition;}"}
+
+Minimal simplified code:
+String getInsertPosition(){return insertPosition;}
+

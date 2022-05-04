@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javaee__javamail/demo/src/main/java/populate_main.java
+method_name = main
+method_body = public static void main(String[] argv) { String srcURL = null; String dstURL = null; boolean debug = false; int optind; for (optind = 0; optind < argv.length; optind++) { if (argv[optind].equals("-s")) { srcURL = argv[++optind]; } else if (argv[optind].equals("-d")) { dstURL = argv[++optind]; } else if (argv[optind].equals("-D")) { debug = true; } else if (argv[optind].equals("-f")) { force = true; } else if (argv[optind].equals("-S")) { skipSpecial = true; } else if (argv[optind].equals("-c")) { clear = true; } else if (argv[optind].equals("-P")) { dontPreserveFlags = true; } else if (argv[optind].equals("-W")) { warn = true; } else if (argv[optind].equals("--")) { optind++; break; } else if (argv[optind].startsWith("-")) { printUsage(); System.exit(1); } else { break; } } try { if (srcURL == null || dstURL == null) { printUsage(); System.exit(1); } Session session = Session.getInstance(System.getProperties(), null); session.setDebug(debug); URLName srcURLName = new URLName(srcURL); Folder srcFolder; if (srcURLName.getFile() == null) { Store s = session.getStore(srcURLName); s.connect(); srcFolder = s.getDefaultFolder(); } else { srcFolder = session.getFolder(new URLName(srcURL)); if (!srcFolder.exists()) { System.out.println("source folder does not exist"); srcFolder.getStore().close(); System.exit(1); } } URLName dstURLName = new URLName(dstURL); Folder dstFolder; if (dstURLName.getFile() == null) { Store s = session.getStore(dstURLName); s.connect(); dstFolder = s.getFolder(srcFolder.getName()); } else dstFolder = session.getFolder(dstURLName); if (clear && dstFolder.exists()) { if (!dstFolder.delete(true)) { System.out.println("couldn't delete " + dstFolder.getFullName()); return; } } copy(srcFolder, dstFolder); srcFolder.getStore().close(); dstFolder.getStore().close(); } catch (MessagingException mex) { System.out.println(mex.getMessage()); mex.printStackTrace(); } }
+
+topk path-contexts for sub-token: main
+[0.2955] argv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,messaging|exception
+[0.1188] argv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|BooleanLiteralExpr1,false
+[0.1093] argv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,copy
+[0.0401] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,url|name
+[0.0342] argv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,close
+[0.0327] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,folder
+[0.0211] system,NameExpr0|FieldAccessExpr0|MethodCallExpr|BinaryExpr:plus|StringLiteralExpr0,couldnt|delete
+[0.0151] argv,NameExpr0|ArrayAccessExpr0|MethodCallExpr|StringLiteralExpr2,d
+[0.0132] dst|url|name,NameExpr2|MethodCallExpr|NameExpr3,get|store
+[0.0120] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,url|name
+
+topk terminals for sub-token: main
+['argv', 'messaging|exception', 'argv', 'false', 'argv', 'copy', '[]', 'url|name', 'argv', 'close', '[]', 'folder', 'system', 'couldnt|delete', 'argv', 'd', 'dst|url|name', 'get|store', 'string', 'url|name']
+

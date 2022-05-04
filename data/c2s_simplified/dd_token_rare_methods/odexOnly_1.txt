@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_odexOnly.java
+method_name = odexOnly
+method_body = public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }
+predict, score, loss = odexOnly, 0.44307154, 0.9001166
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:02:18.102140", "n_pass": [1, 1, 1], "score": "0.4431", "loss": "0.9001", "code": "public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:19.395141", "n_pass": [20, 2, 2], "score": "0.4431", "loss": "0.9001", "code": " boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:28.099332", "n_pass": [83, 5, 3], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:29.767158", "n_pass": [88, 6, 4], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){ return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:31.055440", "n_pass": [90, 7, 5], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:32.706369", "n_pass": [92, 8, 6], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:34.025137", "n_pass": [95, 9, 7], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags& ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:35.322115", "n_pass": [97, 10, 8], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags&ODEX_ONLY) != 0; }"}
+{"time": "2021-01-20 06:02:40.535105", "n_pass": [102, 14, 9], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags&ODEX_ONLY)!= 0; }"}
+{"time": "2021-01-20 06:02:42.188234", "n_pass": [105, 15, 10], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags&ODEX_ONLY)!=0; }"}
+{"time": "2021-01-20 06:02:43.484596", "n_pass": [108, 16, 11], "score": "0.4431", "loss": "0.9001", "code": "boolean odexOnly(){return(flags&ODEX_ONLY)!=0;}"}
+
+Minimal simplified code:
+boolean odexOnly(){return(flags&ODEX_ONLY)!=0;}
+

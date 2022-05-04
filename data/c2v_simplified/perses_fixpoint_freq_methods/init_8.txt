@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TestStandardWrapper_init.java
+method_name = init
+method_body = @Override public void init(ServletConfig config) throws ServletException { super.init(config); data = 10; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 06:37:28.300946", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public void init(ServletConfig config) throws ServletException { super.init(config); data = 10; } }"}
+{"time": "2020-12-29 06:40:31.254572", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public void init(ServletConfig config) throws ServletException { super.init(config); } }"}
+{"time": "2020-12-29 06:41:46.729600", "score": "0.9997", "loss": "0.0004", "code": "class T { void init(ServletConfig config) throws ServletException { super.init(config); } }"}
+{"time": "2020-12-29 06:42:26.497444", "score": "0.9744", "loss": "0.0403", "code": "class T { void init( ) throws ServletException { super.init(config); } }"}
+{"time": "2020-12-29 06:43:45.934493", "score": "0.9994", "loss": "0.0006", "code": "class T { void init( ) throws ServletException { super.init( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void init(                    )                         { super.init(      );            }
+}
+
+

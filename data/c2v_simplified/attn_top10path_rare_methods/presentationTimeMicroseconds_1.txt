@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ouya__ouya-sdk-examples/Twine/ControllerExample/src/media/base/android/java/src/org/chromium/media/MediaCodecBridge_presentationTimeMicroseconds.java
+method_name = presentationTimeMicroseconds
+method_body = @CalledByNative("DequeueOutputResult") private long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; }
+
+topk path-contexts:
+[0.2873] long,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),mpresentationtimemicroseconds
+[0.2601] calledbynative,(NameExpr0)^(SingleMemberAnnotationExpr)_(StringLiteralExpr1),dequeueoutputresult
+[0.1708] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),mpresentationtimemicroseconds
+[0.1256] long,(PrimitiveType1)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0549] dequeueoutputresult,(StringLiteralExpr1)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0381] dequeueoutputresult,(StringLiteralExpr1)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(PrimitiveType1),long
+[0.0333] calledbynative,(NameExpr0)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(PrimitiveType1),long
+[0.0299] calledbynative,(NameExpr0)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+
+topk terminals:
+['long', 'mpresentationtimemicroseconds', 'calledbynative', 'dequeueoutputresult', 'METHOD_NAME', 'mpresentationtimemicroseconds', 'long', 'METHOD_NAME', 'dequeueoutputresult', 'METHOD_NAME', 'dequeueoutputresult', 'long', 'calledbynative', 'long', 'calledbynative', 'METHOD_NAME']
+

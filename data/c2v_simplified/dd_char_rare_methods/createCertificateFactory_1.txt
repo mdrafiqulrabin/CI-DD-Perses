@@ -1,0 +1,39 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/pkix/src/main/java/org/bouncycastle/cert/jcajce/NamedCertHelper_createCertificateFactory.java
+method_name = createCertificateFactory
+method_body = protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }
+predict, score, loss = createCertificateFactory, 0.48339608311653137, 0.8357837200164795
+
+Trace of simplified code(s):
+{"time": "2021-01-23 20:13:19.068857", "n_pass": [1, 1, 1], "score": "0.4834", "loss": "0.8358", "code": "protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:13:22.077174", "n_pass": [20, 2, 2], "score": "0.6447", "loss": "0.571", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:13:36.359447", "n_pass": [49, 7, 3], "score": "0.6448", "loss": "0.6485", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:13:41.556167", "n_pass": [52, 9, 4], "score": "0.2368", "loss": "1.7174", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSException { return Certiy.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:14:21.007117", "n_pass": [109, 23, 5], "score": "0.2368", "loss": "1.7174", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSion { return Certiy.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:14:59.625887", "n_pass": [183, 37, 6], "score": "0.5422", "loss": "1.2231", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.getInstance(type, providerName); }"}
+{"time": "2021-01-23 20:15:04.827617", "n_pass": [185, 39, 7], "score": "0.3307", "loss": "2.002", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.gnstance(type, providerName); }"}
+{"time": "2021-01-23 20:15:07.431427", "n_pass": [186, 40, 8], "score": "0.3307", "loss": "2.002", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.gance(type, providerName); }"}
+{"time": "2021-01-23 20:15:12.633620", "n_pass": [189, 42, 9], "score": "0.3928", "loss": "1.8744", "code": "actory createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:15:28.290180", "n_pass": [197, 48, 10], "score": "0.3928", "loss": "1.8744", "code": "acry createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:15:30.907462", "n_pass": [198, 49, 11], "score": "0.4061", "loss": "1.7057", "code": "ac createCertificateFactory(String type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:15:39.814568", "n_pass": [210, 51, 12], "score": "0.3947", "loss": "1.7805", "code": "ac createCertificateFactory(Str type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:30.663156", "n_pass": [332, 68, 13], "score": "0.4002", "loss": "1.8975", "code": "ac createCertificateFactory(tr type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:33.282816", "n_pass": [333, 69, 14], "score": "0.3846", "loss": "1.8133", "code": "ac createCertificateFactory(r type) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:35.879919", "n_pass": [335, 70, 15], "score": "0.4068", "loss": "1.7228", "code": "ac createCertificateFactory(r ype) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:38.488007", "n_pass": [336, 71, 16], "score": "0.4029", "loss": "1.7277", "code": "ac createCertificateFactory(r pe) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:41.112686", "n_pass": [337, 72, 17], "score": "0.3926", "loss": "1.7826", "code": "ac createCertificateFactory(r e) throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:16:43.685860", "n_pass": [340, 73, 18], "score": "0.3926", "loss": "1.7826", "code": "ac createCertificateFactory(r e)throws CertificateException, NoSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:17:09.770742", "n_pass": [358, 83, 19], "score": "0.3926", "loss": "1.7826", "code": "ac createCertificateFactory(r e)throws CertificateException,oSion { return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:17:17.591430", "n_pass": [361, 86, 20], "score": "0.3926", "loss": "1.7826", "code": "ac createCertificateFactory(r e)throws CertificateException,oSio{ return Cey.gance(t, providerName); }"}
+{"time": "2021-01-23 20:17:28.022151", "n_pass": [369, 90, 21], "score": "0.3862", "loss": "1.9916", "code": "ac createCertificateFactory(r e)throws CertificateException,oSio{ return Cey.gce(t, providerName); }"}
+{"time": "2021-01-23 20:17:30.624816", "n_pass": [370, 91, 22], "score": "0.3461", "loss": "2.0331", "code": "ac createCertificateFactory(r e)throws CertificateException,oSio{ return Cey.g(t, providerName); }"}
+{"time": "2021-01-23 20:17:51.508051", "n_pass": [381, 99, 23], "score": "0.3642", "loss": "2.0292", "code": "c createCertificateFactory(r e)throws CertificateException,oSio{ return Cey.g(t, providerName); }"}
+{"time": "2021-01-23 20:18:33.435285", "n_pass": [431, 111, 24], "score": "0.3071", "loss": "2.0608", "code": "c createCertificateFactory(r e)throws CertificateException,oS{ return Cey.g(t, providerName); }"}
+{"time": "2021-01-23 20:18:38.647073", "n_pass": [437, 113, 25], "score": "0.1839", "loss": "2.6809", "code": "c createCertificateFactory(r e)throws CertificateException,oS{ return C.g(t, providerName); }"}
+{"time": "2021-01-23 20:20:12.490291", "n_pass": [573, 144, 26], "score": "0.1839", "loss": "2.6809", "code": "c createCertificateFactory(r e)throws CertificateException,oS{ return C.g(t, providerName);}"}
+{"time": "2021-01-23 20:21:25.720298", "n_pass": [636, 168, 27], "score": "0.1839", "loss": "2.6809", "code": "c createCertificateFactory(r e)throws CertificateException,oS{return C.g(t, providerName);}"}
+{"time": "2021-01-23 20:21:33.560793", "n_pass": [650, 171, 28], "score": "0.1839", "loss": "2.6809", "code": "c createCertificateFactory(r e)throws CertificateException,oS{return C.g(t,providerName);}"}
+
+Minimal simplified code:
+c createCertificateFactory(r e)throws CertificateException,oS{return C.g(t,providerName);}
+

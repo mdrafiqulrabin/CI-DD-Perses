@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/mesos/SchedulerDriverServiceTest_createTaskId.java
+method_name = createTaskId
+method_body = private static TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }
+predict, score, loss = createTaskId, 0.30341622, 1.8655219
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:44:56.367893", "n_pass": [1, 1, 1], "score": "0.3034", "loss": "1.8655", "code": "private static TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:03.116216", "n_pass": [53, 5, 2], "score": "0.3575", "loss": "2.0394", "code": "private static TaskID createTaskId(String taskId) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:07.048512", "n_pass": [62, 8, 3], "score": "0.3236", "loss": "2.8365", "code": "private statkID createTaskId(String taskId) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:11.754788", "n_pass": [76, 11, 4], "score": "0.3236", "loss": "2.8365", "code": "privatkID createTaskId(String taskId) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:16.381517", "n_pass": [89, 14, 5], "score": "0.2812", "loss": "2.8384", "code": "kID createTaskId(String taskId) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:22.833748", "n_pass": [132, 17, 6], "score": "0.2736", "loss": "2.6849", "code": "kID createTaskId(Sng taskId) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:25.438617", "n_pass": [135, 19, 7], "score": "0.1831", "loss": "3.7303", "code": "kID createTaskId(Sng tas) { returD.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-23 08:45:34.612757", "n_pass": [144, 26, 8], "score": "0.1729", "loss": "3.9897", "code": "kID createTaskId(Sng tas) { returD.newBuilder().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:45:53.789152", "n_pass": [218, 39, 9], "score": "0.2003", "loss": "3.9866", "code": "ID createTaskId(Sng tas) { returD.newBuilder().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:02.973730", "n_pass": [235, 43, 10], "score": "0.2369", "loss": "3.3938", "code": "ID createTaskId(Sng s) { returD.newBuilder().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:04.276426", "n_pass": [238, 44, 11], "score": "0.2369", "loss": "3.3938", "code": "ID createTaskId(Sng s) {eturD.newBuilder().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:09.499132", "n_pass": [242, 48, 12], "score": "0.1839", "loss": "3.4522", "code": "ID createTaskId(Sng s) {eturD.wBuilder().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:14.705199", "n_pass": [246, 52, 13], "score": "0.1958", "loss": "3.2575", "code": "ID createTaskId(Sng s) {eturD.wBuild().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:38.358363", "n_pass": [282, 67, 14], "score": "0.1896", "loss": "3.1959", "code": "ID createTaskId(Sng s) {eturD.wBld().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:56.795055", "n_pass": [311, 78, 15], "score": "0.1609", "loss": "3.8511", "code": "ID createTaskId(g s) {eturD.wBld().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:46:59.426656", "n_pass": [316, 80, 16], "score": "0.1576", "loss": "3.8951", "code": "ID createTaskId(g s) {etD.wBld().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:47:23.127829", "n_pass": [395, 94, 17], "score": "0.2188", "loss": "4.4359", "code": "ID createTaskId(g s) {etD.wBl().sete(taskId).build(); }"}
+{"time": "2021-01-23 08:47:27.063003", "n_pass": [401, 97, 18], "score": "0.237", "loss": "5.6539", "code": "ID createTaskId(g s) {etD.wBl().see(taskId).build(); }"}
+{"time": "2021-01-23 08:47:28.391574", "n_pass": [402, 98, 19], "score": "0.1979", "loss": "4.1891", "code": "ID createTaskId(g s) {etD.wBl().se(taskId).build(); }"}
+{"time": "2021-01-23 08:47:44.120299", "n_pass": [420, 110, 20], "score": "0.1979", "loss": "4.1891", "code": "ID createTaskId(g s) {etD.wBl().se(taskId).build();}"}
+{"time": "2021-01-23 08:47:52.784645", "n_pass": [442, 113, 21], "score": "0.1979", "loss": "4.1891", "code": "ID createTaskId(g s){etD.wBl().se(taskId).build();}"}
+{"time": "2021-01-23 08:47:56.696306", "n_pass": [446, 116, 22], "score": "0.1941", "loss": "4.1053", "code": "ID createTaskId(g s){et.wBl().se(taskId).build();}"}
+{"time": "2021-01-23 08:48:03.267862", "n_pass": [454, 121, 23], "score": "0.2227", "loss": "5.0063", "code": "ID createTaskId(g s){et.wBl().e(taskId).build();}"}
+{"time": "2021-01-23 08:48:13.745318", "n_pass": [466, 129, 24], "score": "0.1557", "loss": "5.5008", "code": "ID createTaskId(g s){et.wBl().e(taskId).bild();}"}
+{"time": "2021-01-23 08:48:30.231509", "n_pass": [498, 138, 25], "score": "0.141", "loss": "5.3492", "code": "ID createTaskId(g s){et.Bl().e(taskId).bild();}"}
+{"time": "2021-01-23 08:48:55.933294", "n_pass": [544, 154, 26], "score": "0.1445", "loss": "5.5408", "code": "ID createTaskId(g s){e.Bl().e(taskId).bild();}"}
+
+Minimal simplified code:
+ID createTaskId(g s){e.Bl().e(taskId).bild();}
+

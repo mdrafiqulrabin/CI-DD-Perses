@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/execution/Command_finishCommand.java
+method_name = finishCommand
+method_body = protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }
+predict, score, loss = finishCommand, 0.3902847468852997, 1.1901878118515015
+
+Trace of simplified code(s):
+{"time": "2021-01-23 23:10:41.078534", "n_pass": [1, 1, 1], "score": "0.3903", "loss": "1.1902", "code": "protected final void finishCommand() { this.executing = false; this.finished = true; this.notifyAll(); }"}
+{"time": "2021-01-23 23:11:01.286376", "n_pass": [54, 8, 2], "score": "0.4507", "loss": "1.108", "code": "protected final void finishCommand() { this.executing = false;inished = true; this.notifyAll(); }"}
+{"time": "2021-01-23 23:11:03.932170", "n_pass": [56, 9, 3], "score": "0.4615", "loss": "0.9625", "code": "protected final void finishCommand() { this.executing = false;inished; this.notifyAll(); }"}
+{"time": "2021-01-23 23:11:20.560280", "n_pass": [70, 15, 4], "score": "0.4648", "loss": "0.9491", "code": "protected final void finishCommand() { this.executing = false;; this.notifyAll(); }"}
+{"time": "2021-01-23 23:11:42.730206", "n_pass": [121, 23, 5], "score": "0.4212", "loss": "2.9808", "code": "protected finalid finishCommand() { this.executing = false;; this.notifyAll(); }"}
+{"time": "2021-01-23 23:11:47.423089", "n_pass": [129, 24, 6], "score": "0.273", "loss": "3.8688", "code": "protected finalid finishCommand() { s.executing = false;; this.notifyAll(); }"}
+{"time": "2021-01-23 23:12:05.969916", "n_pass": [137, 31, 7], "score": "0.3634", "loss": "2.7826", "code": "protected finalid finishCommand() { s.executing = false;;s.notifyAll(); }"}
+{"time": "2021-01-23 23:12:08.572199", "n_pass": [138, 32, 8], "score": "0.3905", "loss": "2.5151", "code": "protected finalid finishCommand() { s.executing = false;;tifyAll(); }"}
+{"time": "2021-01-23 23:12:11.193791", "n_pass": [139, 33, 9], "score": "0.267", "loss": "2.9436", "code": "protected finalid finishCommand() { s.executing = false;;All(); }"}
+{"time": "2021-01-23 23:12:37.112902", "n_pass": [160, 42, 10], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand() { s.executing = falsAll(); }"}
+{"time": "2021-01-23 23:13:00.792603", "n_pass": [221, 50, 11], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand() { s.executing = falsl(); }"}
+{"time": "2021-01-23 23:13:50.549646", "n_pass": [305, 67, 12], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand() { s.executing = falsl();}"}
+{"time": "2021-01-23 23:14:19.899423", "n_pass": [339, 76, 13], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand(){ s.executing = falsl();}"}
+{"time": "2021-01-23 23:14:22.505634", "n_pass": [341, 77, 14], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand(){s.executing = falsl();}"}
+{"time": "2021-01-23 23:14:51.284392", "n_pass": [353, 88, 15], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand(){s.executing= falsl();}"}
+{"time": "2021-01-23 23:14:53.901696", "n_pass": [355, 89, 16], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand(){s.executing=falsl();}"}
+{"time": "2021-01-23 23:14:56.550799", "n_pass": [356, 90, 17], "score": "0.2734", "loss": "2.8292", "code": "protected finalid finishCommand(){s.executing=alsl();}"}
+
+Minimal simplified code:
+protected finalid finishCommand(){s.executing=alsl();}
+

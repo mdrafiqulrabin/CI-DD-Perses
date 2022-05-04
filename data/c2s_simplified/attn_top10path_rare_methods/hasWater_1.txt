@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPFarmland_hasWater.java
+method_name = hasWater
+method_body = private boolean hasWater(World world, BlockPos pos) { for (BlockPos.MutableBlockPos mutableblockpos : BlockPos.getAllInBoxMutable(pos.add(-4, 0, -4), pos.add(4, 1, 4))) { if (world.getBlockState(mutableblockpos).getMaterial() == Material.WATER) { return true; } } return false; }
+
+topk path-contexts for sub-token: has
+[0.0514] boolean,PrimitiveType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,world
+[0.0494] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0297] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,world
+[0.0262] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,world
+[0.0204] mutableblockpos,NameExpr2|MethodCallExpr0|MethodCallExpr|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0174] world,NameExpr0|MethodCallExpr0|MethodCallExpr|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0161] add,NameExpr3|MethodCallExpr2|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0141] get|all|in|box|mutable,NameExpr3|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0135] world,NameExpr0|MethodCallExpr0|NameExpr2,mutableblockpos
+[0.0125] 0,IntegerLiteralExpr3|MethodCallExpr2|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+
+topk terminals for sub-token: has
+['boolean', 'world', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'world', 'METHOD_NAME', 'world', 'mutableblockpos', 'water', 'world', 'water', 'add', 'water', 'get|all|in|box|mutable', 'water', 'world', 'mutableblockpos', '0', 'water']
+
+topk path-contexts for sub-token: water
+[0.0822] add,NameExpr3|MethodCallExpr2|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0742] mutableblockpos,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0719] get|all|in|box|mutable,NameExpr3|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0571] block|pos,ClassOrInterfaceType0|ClassOrInterfaceType|VariableDeclarationExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0535] 0,IntegerLiteralExpr3|MethodCallExpr2|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0506] block|pos,NameExpr0|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0502] add,NameExpr3|MethodCallExpr3|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0500] mutableblockpos,NameExpr2|MethodCallExpr0|MethodCallExpr|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0487] pos,NameExpr0|MethodCallExpr2|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+[0.0473] <NUM>,IntegerLiteralExpr2|MethodCallExpr3|MethodCallExpr|ForeachStmt|BlockStmt|IfStmt|BinaryExpr:equals|FieldAccessExpr1|NameExpr2,water
+
+topk terminals for sub-token: water
+['add', 'water', 'mutableblockpos', 'water', 'get|all|in|box|mutable', 'water', 'block|pos', 'water', '0', 'water', 'block|pos', 'water', 'add', 'water', 'mutableblockpos', 'water', 'pos', 'water', '<NUM>', 'water']
+

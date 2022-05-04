@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/brut/androlib/res/data/ResValuesFile_isSynthesized.java
+method_name = isSynthesized
+method_body = public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }
+predict, score, loss = isSynthesized, 0.3271291255950928, 3.005289077758789
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:51:14.116697", "n_pass": [1, 1, 1], "score": "0.3271", "loss": "3.0053", "code": "public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }"}
+{"time": "2021-01-23 16:51:17.121565", "n_pass": [20, 2, 2], "score": "0.3563", "loss": "3.1901", "code": "n isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }"}
+{"time": "2021-01-23 16:51:33.589567", "n_pass": [51, 8, 3], "score": "0.3584", "loss": "3.1966", "code": "n isSynthesized(ResResource res) { return mPackage.isSynthesized(ResSpec().getId()); }"}
+{"time": "2021-01-23 16:51:36.213003", "n_pass": [52, 9, 4], "score": "0.3831", "loss": "3.1137", "code": "n isSynthesized(ResResource res) { return mPackage.isSynthesized(ResSpecd()); }"}
+{"time": "2021-01-23 16:51:50.053769", "n_pass": [64, 14, 5], "score": "0.373", "loss": "3.0915", "code": "n isSynthesized(ResResource res) { return mPackage.isSynthesized(d()); }"}
+{"time": "2021-01-23 16:52:16.368465", "n_pass": [114, 23, 6], "score": "0.519", "loss": "2.5281", "code": "n isSynthesized(ResResource res) { return ckage.isSynthesized(d()); }"}
+{"time": "2021-01-23 16:52:18.975513", "n_pass": [115, 24, 7], "score": "0.4085", "loss": "2.9786", "code": "n isSynthesized(ResResource res) { return ge.isSynthesized(d()); }"}
+{"time": "2021-01-23 16:53:03.119911", "n_pass": [185, 40, 8], "score": "0.3875", "loss": "3.0469", "code": "n isSynthesized(ResResource res) { return ge.isSynthesized(d); }"}
+{"time": "2021-01-23 16:53:24.434550", "n_pass": [209, 46, 9], "score": "0.3913", "loss": "3.1221", "code": "n isSynthesized(ResResource s) { return ge.isSynthesized(d); }"}
+{"time": "2021-01-23 16:54:11.460462", "n_pass": [302, 61, 10], "score": "0.4723", "loss": "2.7531", "code": "n isSynthesized(ResResource s) { return e.isSynthesized(d); }"}
+{"time": "2021-01-23 16:54:53.223459", "n_pass": [321, 77, 11], "score": "0.4723", "loss": "2.7531", "code": "n isSynthesized(ResResource s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:04.511540", "n_pass": [340, 79, 12], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RsResource s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:07.127565", "n_pass": [341, 80, 13], "score": "0.2639", "loss": "3.7494", "code": "n isSynthesized(RResource s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:12.317153", "n_pass": [343, 82, 14], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRsource s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:14.921148", "n_pass": [344, 83, 15], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRource s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:17.514950", "n_pass": [345, 84, 16], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRurce s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:20.113852", "n_pass": [346, 85, 17], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRrce s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:22.722051", "n_pass": [347, 86, 18], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRce s) { return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:30.532903", "n_pass": [353, 89, 19], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRce s){ return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:55:33.137887", "n_pass": [355, 90, 20], "score": "0.2545", "loss": "3.3171", "code": "n isSynthesized(RRce s){return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:56:23.430217", "n_pass": [399, 107, 21], "score": "0.2333", "loss": "3.7906", "code": "n isSynthesized(Rce s){return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:56:28.640600", "n_pass": [401, 109, 22], "score": "0.3593", "loss": "2.9875", "code": "n isSynthesized(Re s){return e.isSynthesized(d);}"}
+{"time": "2021-01-23 16:56:31.243064", "n_pass": [402, 110, 23], "score": "0.3509", "loss": "2.7445", "code": "n isSynthesized(R s){return e.isSynthesized(d);}"}
+
+Minimal simplified code:
+n isSynthesized(R s){return e.isSynthesized(d);}
+

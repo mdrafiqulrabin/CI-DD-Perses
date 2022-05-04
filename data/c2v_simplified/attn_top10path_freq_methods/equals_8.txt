@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/naming/NamingEntry_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }
+
+topk path-contexts:
+[0.1574] namingentry,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),equals
+[0.1203] namingentry,(ClassOrInterfaceType0)^(CastExpr)^(EnclosedExpr0)^(FieldAccessExpr2)^(MethodCallExpr)_(NameExpr3),equals
+[0.1011] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(InstanceOfExpr)_(ClassOrInterfaceType1),namingentry
+[0.0793] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(InstanceOfExpr)_(ClassOrInterfaceType1),namingentry
+[0.0713] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.0499] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),obj
+[0.0486] namingentry,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0419] obj,(NameExpr0)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),name
+[0.0331] name,(NameExpr0)^(MethodCallExpr)_(FieldAccessExpr2)_(EnclosedExpr)_(CastExpr)_(ClassOrInterfaceType0),namingentry
+[0.0330] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),equals
+
+topk terminals:
+['namingentry', 'equals', 'namingentry', 'equals', 'obj', 'namingentry', 'object', 'namingentry', 'boolean', 'object', 'boolean', 'obj', 'namingentry', 'false', 'obj', 'name', 'name', 'namingentry', 'obj', 'equals']
+

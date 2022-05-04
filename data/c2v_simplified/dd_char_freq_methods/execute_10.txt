@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StopTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/stop").toString()); }
+predict, score, loss = execute, 0.9991756081581116, 0.0014554394874721766
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:00:04.157557", "n_pass": [1, 1, 1], "score": "0.9992", "loss": "0.0015", "code": "@Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:06.760408", "n_pass": [24, 2, 2], "score": "0.995", "loss": "0.0086", "code": "@Override public void execute() throws BuildException { supeecute(createQueryString(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:09.400553", "n_pass": [47, 3, 3], "score": "0.9753", "loss": "0.0277", "code": "@Override public void execute() throws BuildException { supeecute(cryString(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:11.999164", "n_pass": [48, 4, 4], "score": "0.9783", "loss": "0.0244", "code": "@Override public void execute() throws BuildException { supeecute(c(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:14.588842", "n_pass": [53, 5, 5], "score": "0.9777", "loss": "0.0251", "code": "@Overriic void execute() throws BuildException { supeecute(c(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:20.576057", "n_pass": [87, 7, 6], "score": "0.9777", "loss": "0.0251", "code": "@Overr void execute() throws BuildException { supeecute(c(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:32.172349", "n_pass": [98, 11, 7], "score": "0.9777", "loss": "0.0251", "code": "@Overr void execute() throws BuildException {eecute(c(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:34.757024", "n_pass": [99, 12, 8], "score": "0.9802", "loss": "0.0221", "code": "@Overr void execute() throws BuildException {te(c(\"/stop\").toString()); }"}
+{"time": "2020-12-28 11:00:37.342896", "n_pass": [104, 13, 9], "score": "0.9817", "loss": "0.0207", "code": "@Overr void execute() throws BuildException {te(c(\"/stop\").tong()); }"}
+{"time": "2020-12-28 11:00:39.926271", "n_pass": [105, 14, 10], "score": "0.956", "loss": "0.1127", "code": "@Overr void execute() throws BuildException {te(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:00:54.166376", "n_pass": [160, 19, 11], "score": "0.956", "loss": "0.1127", "code": "@verr void execute() throws BuildException {te(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:00:56.766782", "n_pass": [161, 20, 12], "score": "0.9672", "loss": "0.0704", "code": "@err void execute() throws BuildException {te(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:00:59.361057", "n_pass": [162, 21, 13], "score": "0.9721", "loss": "0.0655", "code": "@r void execute() throws BuildException {te(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:01:01.968505", "n_pass": [164, 22, 14], "score": "0.9772", "loss": "0.0942", "code": "@r id execute() throws BuildException {te(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:01:24.864266", "n_pass": [183, 30, 15], "score": "0.7603", "loss": "0.9685", "code": "@r id execute() throws BuildException {(c(\"/stop\").to); }"}
+{"time": "2020-12-28 11:01:27.499509", "n_pass": [186, 31, 16], "score": "0.5689", "loss": "1.2995", "code": "@r id execute() throws BuildException {(c(\"top\").to); }"}
+{"time": "2020-12-28 11:01:30.112391", "n_pass": [187, 32, 17], "score": "0.695", "loss": "0.8732", "code": "@r id execute() throws BuildException {(c(\"p\").to); }"}
+{"time": "2020-12-28 11:01:55.960362", "n_pass": [267, 40, 18], "score": "0.688", "loss": "0.9392", "code": "@r id execute() throws BuildException {(c(\"\").to); }"}
+{"time": "2020-12-28 11:01:58.555892", "n_pass": [270, 41, 19], "score": "0.6134", "loss": "1.155", "code": "@r id execute() throws BuildException {(c(\"\").o); }"}
+{"time": "2020-12-28 11:02:01.154564", "n_pass": [274, 42, 20], "score": "0.6134", "loss": "1.155", "code": "@r id execute() throws BuildException {(c(\"\").o);}"}
+{"time": "2020-12-28 11:02:04.556924", "n_pass": [279, 43, 21], "score": "0.8725", "loss": "0.2184", "code": "@r d execute() throws BuildException {(c(\"\").o);}"}
+{"time": "2020-12-28 11:02:10.777653", "n_pass": [291, 44, 22], "score": "0.8725", "loss": "0.2184", "code": "@r d execute()throws BuildException {(c(\"\").o);}"}
+{"time": "2020-12-28 11:02:49.887769", "n_pass": [313, 59, 23], "score": "0.8725", "loss": "0.2184", "code": "@r d execute()throws BuildException{(c(\"\").o);}"}
+{"time": "2020-12-28 11:02:52.502472", "n_pass": [316, 60, 24], "score": "0.9245", "loss": "0.1222", "code": "@r d execute()throws BuildException{((\"\").o);}"}
+
+Minimal simplified code:
+@r d execute()throws BuildException{(("").o);}
+

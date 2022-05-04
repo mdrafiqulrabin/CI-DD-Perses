@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/TemplateBean_getAutoSave.java
+method_name = getAutoSave
+method_body = public String getAutoSave() { if ("0".equals(autoSave)) return "1"; return checker(autoSave, "1"); }
+predict, score, loss = getAutoSave, 0.21753597259521484, 4.10355281829834
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:38:56.264065", "n_pass": [1, 1, 1], "score": "0.2175", "loss": "4.1036", "code": "public String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:01.914035", "n_pass": [44, 3, 2], "score": "0.2175", "loss": "4.1036", "code": " String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:05.330596", "n_pass": [53, 4, 3], "score": "0.3856", "loss": "3.1631", "code": " String getAutoSave() { if (\"0\".equals(autoSave)) retu; return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:07.938644", "n_pass": [54, 5, 4], "score": "0.5679", "loss": "0.9786", "code": " String getAutoSave() { if (\"0\".equals(autoSave)) return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:10.563909", "n_pass": [55, 6, 5], "score": "0.4729", "loss": "1.1517", "code": " String getAutoSave() { if (\"0\".equals(autoSave)) retuker(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:16.591097", "n_pass": [92, 8, 6], "score": "0.4729", "loss": "1.1517", "code": " String getAutoSave() { if (\"0\".equals(autoSave)) retu(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:24.391449", "n_pass": [99, 11, 7], "score": "0.4998", "loss": "1.4992", "code": " Stg getAutoSave() { if (\"0\".equals(autoSave)) retu(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:28.608460", "n_pass": [109, 12, 8], "score": "0.5164", "loss": "1.6608", "code": " Stg getAutoSave() { if (\"0\".els(autoSave)) retu(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:36.407049", "n_pass": [115, 15, 9], "score": "0.5185", "loss": "1.6418", "code": " Stg getAutoSave() { if (\"0\".els(autoSave)) r(autoSave, \"1\"); }"}
+{"time": "2021-01-23 16:39:39.015679", "n_pass": [117, 16, 10], "score": "0.3077", "loss": "3.2178", "code": " Stg getAutoSave() { if (\"0\".els(autoSave)) r(auave, \"1\"); }"}
+{"time": "2021-01-23 16:39:54.444708", "n_pass": [181, 21, 11], "score": "0.3077", "loss": "3.2178", "code": "Stg getAutoSave() { if (\"0\".els(autoSave)) r(auave, \"1\"); }"}
+{"time": "2021-01-23 16:40:09.843931", "n_pass": [204, 25, 12], "score": "0.3462", "loss": "2.9227", "code": "Stg getAutoSave() { if (\"0\".e(autoSave)) r(auave, \"1\"); }"}
+{"time": "2021-01-23 16:40:51.264079", "n_pass": [289, 38, 13], "score": "0.3462", "loss": "2.9227", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(auave, \"1\"); }"}
+{"time": "2021-01-23 16:40:53.896522", "n_pass": [292, 39, 14], "score": "0.3462", "loss": "2.9227", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(uave, \"1\"); }"}
+{"time": "2021-01-23 16:41:04.327083", "n_pass": [296, 43, 15], "score": "0.3462", "loss": "2.9227", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(uav, \"1\"); }"}
+{"time": "2021-01-23 16:41:06.933210", "n_pass": [298, 44, 16], "score": "0.3462", "loss": "2.9227", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(uav,\"1\"); }"}
+{"time": "2021-01-23 16:41:09.575808", "n_pass": [300, 45, 17], "score": "0.3924", "loss": "2.5815", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(uav,\"\"); }"}
+{"time": "2021-01-23 16:41:12.218700", "n_pass": [304, 46, 18], "score": "0.3924", "loss": "2.5815", "code": "Stg getAutoSave() { if (\"0\".e(autoSave))r(uav,\"\");}"}
+{"time": "2021-01-23 16:41:27.588222", "n_pass": [323, 50, 19], "score": "0.3924", "loss": "2.5815", "code": "Stg getAutoSave(){ if (\"0\".e(autoSave))r(uav,\"\");}"}
+{"time": "2021-01-23 16:41:30.191466", "n_pass": [325, 51, 20], "score": "0.3924", "loss": "2.5815", "code": "Stg getAutoSave(){if (\"0\".e(autoSave))r(uav,\"\");}"}
+{"time": "2021-01-23 16:41:32.794620", "n_pass": [328, 52, 21], "score": "0.3924", "loss": "2.5815", "code": "Stg getAutoSave(){if(\"0\".e(autoSave))r(uav,\"\");}"}
+{"time": "2021-01-23 16:41:35.424800", "n_pass": [331, 53, 22], "score": "0.677", "loss": "0.9063", "code": "Stg getAutoSave(){if(\"\".e(autoSave))r(uav,\"\");}"}
+{"time": "2021-01-23 16:41:58.930443", "n_pass": [348, 62, 23], "score": "0.5158", "loss": "1.5002", "code": "Stg getAutoSave(){if(\"\".e(autoSave))r(av,\"\");}"}
+{"time": "2021-01-23 16:42:01.529157", "n_pass": [349, 63, 24], "score": "0.6937", "loss": "0.8213", "code": "Stg getAutoSave(){if(\"\".e(autoSave))r(v,\"\");}"}
+{"time": "2021-01-23 16:42:04.129181", "n_pass": [357, 64, 25], "score": "0.7126", "loss": "1.0561", "code": "tg getAutoSave(){if(\"\".e(autoSave))r(v,\"\");}"}
+
+Minimal simplified code:
+tg getAutoSave(){if("".e(autoSave))r(v,"");}
+

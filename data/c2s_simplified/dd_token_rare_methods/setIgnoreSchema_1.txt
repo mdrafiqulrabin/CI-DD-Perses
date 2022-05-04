@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreSchema.java
+method_name = setIgnoreSchema
+method_body = public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }
+predict, score, loss = setIgnoreSchema, 0.4317021, 1.2876701
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:10:44.800515", "n_pass": [1, 1, 1], "score": "0.4317", "loss": "1.2877", "code": "public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }"}
+{"time": "2021-01-20 05:10:47.809694", "n_pass": [44, 3, 2], "score": "0.4317", "loss": "1.2877", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }"}
+{"time": "2021-01-20 05:10:54.777668", "n_pass": [58, 8, 3], "score": "0.6865", "loss": "1.5833", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; ; }"}
+{"time": "2021-01-20 05:10:56.456851", "n_pass": [64, 9, 4], "score": "0.7509", "loss": "1.7889", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; ; }"}
+{"time": "2021-01-20 05:10:57.789181", "n_pass": [68, 10, 5], "score": "0.2878", "loss": "2.5342", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { this.ignoreSchemaignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; ; }"}
+{"time": "2021-01-20 05:11:02.082364", "n_pass": [80, 13, 6], "score": "0.519", "loss": "1.6507", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; ; }"}
+{"time": "2021-01-20 05:11:11.057587", "n_pass": [118, 18, 7], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { ignoreSchema; ignoreSchemaTopics = ignoreSchemaTopics; ; }"}
+{"time": "2021-01-20 05:11:13.684537", "n_pass": [122, 20, 8], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { ignoreSchema; ignoreSchemaTopics = ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:16.071556", "n_pass": [132, 21, 9], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics) { ignoreSchema; ignoreSchemaTopics = ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:25.101094", "n_pass": [166, 25, 10], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ ignoreSchema; ignoreSchemaTopics = ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:26.401877", "n_pass": [167, 26, 11], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema; ignoreSchemaTopics = ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:30.370584", "n_pass": [170, 29, 12], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema;ignoreSchemaTopics = ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:31.673931", "n_pass": [172, 30, 13], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema;ignoreSchemaTopics= ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:34.311685", "n_pass": [174, 32, 14], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema;ignoreSchemaTopics=ignoreSchemaTopics; }"}
+{"time": "2021-01-20 05:11:35.615588", "n_pass": [177, 33, 15], "score": "0.4051", "loss": "1.8517", "code": "Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema;ignoreSchemaTopics=ignoreSchemaTopics;}"}
+
+Minimal simplified code:
+Builder setIgnoreSchema(boolean ignoreSchema,Set ignoreSchemaTopics){ignoreSchema;ignoreSchemaTopics=ignoreSchemaTopics;}
+

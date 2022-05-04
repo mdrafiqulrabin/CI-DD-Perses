@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/CoordinationDemo_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }
+predict, score, loss = main, 0.9981059, 0.0021672337
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:15:33.597953", "n_pass": [1, 1, 1], "score": "0.9981", "loss": "0.0022", "code": "public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }"}
+{"time": "2020-12-27 04:15:35.298581", "n_pass": [24, 2, 2], "score": "0.9913", "loss": "0.009", "code": "public static void main(String[] args) throws Exception { new CoordinationDemo(); run(args, demo); }"}
+{"time": "2020-12-27 04:15:36.639906", "n_pass": [25, 3, 3], "score": "0.9828", "loss": "0.0178", "code": "public static void main(String[] args) throws Exception {; run(args, demo); }"}
+{"time": "2020-12-27 04:15:38.331576", "n_pass": [48, 4, 4], "score": "0.9828", "loss": "0.0178", "code": "static void main(String[] args) throws Exception {; run(args, demo); }"}
+{"time": "2020-12-27 04:15:39.667302", "n_pass": [49, 5, 5], "score": "0.9828", "loss": "0.0178", "code": "void main(String[] args) throws Exception {; run(args, demo); }"}
+{"time": "2020-12-27 04:15:43.092208", "n_pass": [86, 6, 6], "score": "0.9828", "loss": "0.0178", "code": "void main(String[]args) throws Exception {; run(args, demo); }"}
+{"time": "2020-12-27 04:15:44.434076", "n_pass": [89, 7, 7], "score": "0.9828", "loss": "0.0178", "code": "void main(String[]args)throws Exception {; run(args, demo); }"}
+{"time": "2020-12-27 04:15:45.778510", "n_pass": [93, 8, 8], "score": "0.9828", "loss": "0.0178", "code": "void main(String[]args)throws Exception {run(args, demo); }"}
+{"time": "2020-12-27 04:15:47.123616", "n_pass": [95, 9, 9], "score": "0.9981", "loss": "0.0021", "code": "void main(String[]args)throws Exception {run( demo); }"}
+{"time": "2020-12-27 04:15:48.434265", "n_pass": [96, 10, 10], "score": "0.9979", "loss": "0.0023", "code": "void main(String[]args)throws Exception {run(); }"}
+{"time": "2020-12-27 04:15:51.814453", "n_pass": [123, 11, 11], "score": "0.9979", "loss": "0.0023", "code": "void main(String[]args)throws Exception {run();}"}
+{"time": "2020-12-27 04:15:53.851666", "n_pass": [136, 12, 12], "score": "0.9979", "loss": "0.0023", "code": "void main(String[]args)throws Exception{run();}"}
+
+Minimal simplified code:
+void main(String[]args)throws Exception{run();}
+

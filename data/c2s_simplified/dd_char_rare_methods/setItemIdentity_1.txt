@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/dexbacked/raw/SectionAnnotator_setItemIdentity.java
+method_name = setItemIdentity
+method_body = public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }
+predict, score, loss = setItemIdentity, 0.3779933, 1.7537855
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:10:41.138826", "n_pass": [1, 1, 1], "score": "0.378", "loss": "1.7538", "code": "public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }"}
+{"time": "2021-01-23 12:10:46.119928", "n_pass": [44, 4, 2], "score": "0.378", "loss": "1.7538", "code": " void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }"}
+{"time": "2021-01-23 12:10:51.139963", "n_pass": [57, 7, 3], "score": "0.5553", "loss": "1.5752", "code": " void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(ite, identity); }"}
+{"time": "2021-01-23 12:10:52.434547", "n_pass": [58, 8, 4], "score": "0.4678", "loss": "1.7837", "code": " void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(iteity); }"}
+{"time": "2021-01-23 12:10:57.453337", "n_pass": [98, 11, 5], "score": "0.4457", "loss": "1.6679", "code": " void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(it); }"}
+{"time": "2021-01-23 12:11:02.240363", "n_pass": [109, 13, 6], "score": "0.5301", "loss": "1.7852", "code": " void setItemIdentity(int iOffset, String identity) { itemIdentities.put(it); }"}
+{"time": "2021-01-23 12:11:04.840322", "n_pass": [111, 15, 7], "score": "0.6009", "loss": "1.8517", "code": " void setItemIdentity(int iOff, String identity) { itemIdentities.put(it); }"}
+{"time": "2021-01-23 12:11:06.151304", "n_pass": [113, 16, 8], "score": "0.7623", "loss": "1.4433", "code": " void setItemIdentity(int iOff, Sng identity) { itemIdentities.put(it); }"}
+{"time": "2021-01-23 12:11:14.035347", "n_pass": [122, 22, 9], "score": "0.611", "loss": "3.2829", "code": " void setItemIdentity(int iOff, Sng identity) { itemIdentitiet(it); }"}
+{"time": "2021-01-23 12:11:24.000495", "n_pass": [142, 28, 10], "score": "0.611", "loss": "3.2829", "code": " void setItemIdentity(int iOff, Sng identity) { itemIitiet(it); }"}
+{"time": "2021-01-23 12:11:35.961699", "n_pass": [203, 35, 11], "score": "0.611", "loss": "3.2829", "code": " void setItemIdentity(int iOff, Sng identity) { itemIiet(it); }"}
+{"time": "2021-01-23 12:11:38.576630", "n_pass": [208, 37, 12], "score": "0.611", "loss": "3.2829", "code": "void setItemIdentity(int iOff, Sng identity) { itemIiet(it); }"}
+{"time": "2021-01-23 12:12:12.612013", "n_pass": [306, 56, 13], "score": "0.6268", "loss": "3.5276", "code": "void setItemIdentity(int Off, Sng identity) { itemIiet(it); }"}
+{"time": "2021-01-23 12:12:17.817923", "n_pass": [311, 60, 14], "score": "0.6268", "loss": "3.5276", "code": "void setItemIdentity(int Off,Sng identity) { itemIiet(it); }"}
+{"time": "2021-01-23 12:12:33.438616", "n_pass": [325, 72, 15], "score": "0.6268", "loss": "3.5276", "code": "void setItemIdentity(int Off,Sng identity){ itemIiet(it); }"}
+{"time": "2021-01-23 12:12:34.741067", "n_pass": [327, 73, 16], "score": "0.6268", "loss": "3.5276", "code": "void setItemIdentity(int Off,Sng identity){itemIiet(it); }"}
+{"time": "2021-01-23 12:12:47.716118", "n_pass": [338, 83, 17], "score": "0.4549", "loss": "3.8175", "code": "void setItemIdentity(int Off,Sng identity){itemIiet(i); }"}
+{"time": "2021-01-23 12:12:49.013720", "n_pass": [341, 84, 18], "score": "0.4549", "loss": "3.8175", "code": "void setItemIdentity(int Off,Sng identity){itemIiet(i);}"}
+{"time": "2021-01-23 12:13:06.490661", "n_pass": [369, 93, 19], "score": "0.3674", "loss": "4.8057", "code": "void setItemIdentity(int Of,Sng identity){itemIiet(i);}"}
+
+Minimal simplified code:
+void setItemIdentity(int Of,Sng identity){itemIiet(i);}
+

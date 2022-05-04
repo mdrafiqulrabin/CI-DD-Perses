@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_onFragmentDetached.java
+method_name = onFragmentDetached
+method_body = public void onFragmentDetached(String tag) { FragmentManager fragmentManager = getSupportFragmentManager(); Fragment fragment = fragmentManager.findFragmentByTag(tag); if (fragment != null) { fragmentManager.beginTransaction().disallowAddToBackStack().setCustomAnimations(R.anim.slide_left, R.anim.slide_right).remove(fragment).commitNow(); unlockDrawer(); } }
+
+topk path-contexts:
+[0.1177] fragment,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr)_(NameExpr2),commitnow
+[0.1046] fragment,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),commitnow
+[0.0983] disallowaddtobackstack,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr)_(NameExpr2),commitnow
+[0.0955] fragmentmanager,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),commitnow
+[0.0818] tag,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),commitnow
+[0.0576] fragmentmanager,(NameExpr0)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr)_(NameExpr2),commitnow
+[0.0558] fragment,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),commitnow
+[0.0507] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),commitnow
+[0.0431] slideright,(NameExpr2)^(FieldAccessExpr3)^(MethodCallExpr0)^(MethodCallExpr0)^(MethodCallExpr)_(NameExpr2),commitnow
+[0.0412] fragment,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr4),setcustomanimations
+
+topk terminals:
+['fragment', 'commitnow', 'fragment', 'commitnow', 'disallowaddtobackstack', 'commitnow', 'fragmentmanager', 'commitnow', 'tag', 'commitnow', 'fragmentmanager', 'commitnow', 'fragment', 'commitnow', 'string', 'commitnow', 'slideright', 'commitnow', 'fragment', 'setcustomanimations']
+

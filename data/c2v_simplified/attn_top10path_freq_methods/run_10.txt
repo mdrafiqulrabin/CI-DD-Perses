@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_run.java
+method_name = run
+method_body = public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }
+
+topk path-contexts:
+[0.1275] wmparams,(NameExpr3)^(MethodCallExpr)_(NameExpr4),updateviewlayout
+[0.1196] datarefresh,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),delaytime
+[0.1114] datarefresh,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),wmparams
+[0.0789] datarefresh,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),updateviewlayout
+[0.0503] datarefresh,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),postdelayed
+[0.0412] datarefresh,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(NameExpr0),isfloating
+[0.0385] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),updateviewlayout
+[0.0371] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),delaytime
+[0.0301] delaytime,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),updateviewlayout
+[0.0252] void,(VoidType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),delaytime
+
+topk terminals:
+['wmparams', 'updateviewlayout', 'datarefresh', 'delaytime', 'datarefresh', 'wmparams', 'datarefresh', 'updateviewlayout', 'datarefresh', 'postdelayed', 'datarefresh', 'isfloating', 'void', 'updateviewlayout', 'METHOD_NAME', 'delaytime', 'delaytime', 'updateviewlayout', 'void', 'delaytime']
+

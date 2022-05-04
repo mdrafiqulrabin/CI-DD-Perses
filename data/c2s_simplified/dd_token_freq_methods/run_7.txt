@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/threads/TestLimitLatch_run.java
+method_name = run
+method_body = @Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }
+predict, score, loss = run, 0.9780397, 0.037412502
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:09:35.259174", "n_pass": [1, 1, 1], "score": "0.978", "loss": "0.0374", "code": "@Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:36.977244", "n_pass": [23, 2, 2], "score": "0.9536", "loss": "0.0789", "code": "@Override public void run() { try { latch.countUpOrAwait(); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:38.678591", "n_pass": [46, 3, 3], "score": "0.8729", "loss": "0.2116", "code": "@Override public void run() { try { latch.countUpOrAwait(); latch; } catch (InterruptedException x) { x.printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:42.385523", "n_pass": [92, 5, 4], "score": "0.7887", "loss": "0.3576", "code": "@Override public void run() { try { latch.countUpOrAwait(); latch; } catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:43.711022", "n_pass": [99, 6, 5], "score": "0.3322", "loss": "1.6742", "code": "@Overridepublic void run() { try { latch.countUpOrAwait(); latch; } catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:45.757703", "n_pass": [107, 7, 6], "score": "0.4442", "loss": "1.5533", "code": "@Overridepublic void run() { try { countUpOrAwait(); latch; } catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:47.079526", "n_pass": [110, 8, 7], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();; } catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:48.415415", "n_pass": [111, 9, 8], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();} catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:55.535763", "n_pass": [172, 10, 9], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch (InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:56.852029", "n_pass": [174, 11, 10], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch(InterruptedException x) { printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:58.194091", "n_pass": [180, 12, 11], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch(InterruptedException x){ printStackTrace(); } }"}
+{"time": "2020-12-27 04:09:59.544698", "n_pass": [182, 13, 12], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch(InterruptedException x){printStackTrace(); } }"}
+{"time": "2020-12-27 04:10:00.902846", "n_pass": [187, 14, 13], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch(InterruptedException x){printStackTrace();} }"}
+{"time": "2020-12-27 04:10:02.247290", "n_pass": [189, 15, 14], "score": "0.3219", "loss": "1.9318", "code": "@Overridepublic void run() { try { countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+{"time": "2020-12-27 04:10:03.566369", "n_pass": [193, 16, 15], "score": "0.8482", "loss": "0.2926", "code": "@Override void run() { try { countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+{"time": "2020-12-27 04:10:05.998158", "n_pass": [200, 17, 16], "score": "0.8482", "loss": "0.2926", "code": "@Override void run(){ try { countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+{"time": "2020-12-27 04:10:07.333072", "n_pass": [202, 18, 17], "score": "0.8482", "loss": "0.2926", "code": "@Override void run(){try { countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+{"time": "2020-12-27 04:10:08.665065", "n_pass": [204, 19, 18], "score": "0.8482", "loss": "0.2926", "code": "@Override void run(){try{ countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+{"time": "2020-12-27 04:10:09.984956", "n_pass": [206, 20, 19], "score": "0.8482", "loss": "0.2926", "code": "@Override void run(){try{countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}"}
+
+Minimal simplified code:
+@Override void run(){try{countUpOrAwait();}catch(InterruptedException x){printStackTrace();}}
+

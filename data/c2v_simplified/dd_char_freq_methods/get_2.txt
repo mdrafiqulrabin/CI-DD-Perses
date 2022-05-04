@@ -1,0 +1,52 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/biz/common/i18n/impl/MessageResourceServiceImpl_get.java
+method_name = get
+method_body = public String get(String key, Object... args) { try { if (messageSource != null) { return messageSource.getMessage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }
+predict, score, loss = get, 0.5293283462524414, 0.6468448042869568
+
+Trace of simplified code(s):
+{"time": "2020-12-28 05:20:59.368170", "n_pass": [1, 1, 1], "score": "0.5293", "loss": "0.6468", "code": "public String get(String key, Object... args) { try { if (messageSource != null) { return messageSource.getMessage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:02.018173", "n_pass": [23, 2, 2], "score": "0.9495", "loss": "0.0585", "code": "public String get(String key, Object... args) { try { if (messageSource != null) {sage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:04.658171", "n_pass": [46, 3, 3], "score": "0.9245", "loss": "0.0887", "code": "public String get(String key, Object... args) { try { if (messageSource != null) {sage(key, argstil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:10.383408", "n_pass": [55, 5, 4], "score": "0.9381", "loss": "0.0819", "code": "public String get(String kargs) { try { if (messageSource != null) {sage(key, argstil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:16.093175", "n_pass": [95, 7, 5], "score": "0.9324", "loss": "0.085", "code": "public String get(String kargs) { try { if (mesrce != null) {sage(key, argstil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:18.713234", "n_pass": [96, 8, 6], "score": "0.9446", "loss": "0.0664", "code": "public String get(String kargs) { try { if (mesnull) {sage(key, argstil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:21.357679", "n_pass": [99, 9, 7], "score": "0.8626", "loss": "0.1703", "code": "public String get(String kargs) { try { if (mesnull) {sage(ketil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:23.982417", "n_pass": [100, 10, 8], "score": "0.7894", "loss": "0.2583", "code": "public String get(String kargs) { try { if (mesnull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }"}
+{"time": "2020-12-28 05:21:37.123450", "n_pass": [110, 15, 9], "score": "0.7857", "loss": "0.2614", "code": "public String get(String kargs) { try { if (mesnull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:21:39.748930", "n_pass": [112, 16, 10], "score": "0.7857", "loss": "0.2614", "code": " String get(String kargs) { try { if (mesnull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:21:42.368647", "n_pass": [113, 17, 11], "score": "0.7995", "loss": "0.2768", "code": "g get(String kargs) { try { if (mesnull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:21:58.521750", "n_pass": [168, 23, 12], "score": "0.8", "loss": "0.2674", "code": "g get(Str kargs) { try { if (mesnull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:03.807774", "n_pass": [176, 25, 13], "score": "0.8", "loss": "0.2674", "code": "g get(Str kargs) { try { if (mull) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:06.447760", "n_pass": [177, 26, 14], "score": "0.8029", "loss": "0.2586", "code": "g get(Str kargs) { try { if (m) {sage(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:09.086976", "n_pass": [179, 27, 15], "score": "0.8928", "loss": "0.1338", "code": "g get(Str kargs) { try { if (m) {e(keLocale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:11.706198", "n_pass": [181, 28, 16], "score": "0.8928", "loss": "0.1338", "code": "g get(Str kargs) { try { if (m) {e(kcale()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:14.318032", "n_pass": [182, 29, 17], "score": "0.8737", "loss": "0.1619", "code": "g get(Str kargs) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) { rey; } }"}
+{"time": "2020-12-28 05:22:35.330934", "n_pass": [197, 37, 18], "score": "0.8443", "loss": "0.2037", "code": "g get(Str kargs) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:02.169556", "n_pass": [287, 46, 19], "score": "0.9762", "loss": "0.036", "code": "g get(tr kargs) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:04.783827", "n_pass": [288, 47, 20], "score": "0.9087", "loss": "0.1239", "code": "g get(r kargs) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:07.399346", "n_pass": [290, 48, 21], "score": "0.8943", "loss": "0.1253", "code": "g get(r args) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:10.017164", "n_pass": [291, 49, 22], "score": "0.6127", "loss": "0.764", "code": "g get(r rgs) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:12.667276", "n_pass": [292, 50, 23], "score": "0.7937", "loss": "0.2603", "code": "g get(r s) { try { if (m) {e(k()); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:15.288488", "n_pass": [304, 51, 24], "score": "0.8342", "loss": "0.2025", "code": "g get(r s) { try { if (m) {e(k); } return key; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:23:28.416238", "n_pass": [311, 56, 25], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; } catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:24:19.570832", "n_pass": [438, 72, 26], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch (NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:24:22.180488", "n_pass": [443, 73, 27], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch(NoSuchMessageException e) {  } }"}
+{"time": "2020-12-28 05:25:22.505446", "n_pass": [470, 96, 28], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){  } }"}
+{"time": "2020-12-28 05:25:25.118218", "n_pass": [472, 97, 29], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){ } }"}
+{"time": "2020-12-28 05:25:27.729309", "n_pass": [473, 98, 30], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){} }"}
+{"time": "2020-12-28 05:25:30.340305", "n_pass": [475, 99, 31], "score": "0.7142", "loss": "0.4057", "code": "g get(r s) { try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:34.990693", "n_pass": [487, 100, 32], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){ try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:37.603130", "n_pass": [489, 101, 33], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){try { if (m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:40.213778", "n_pass": [493, 102, 34], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){try{ if (m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:42.831878", "n_pass": [495, 103, 35], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){try{if (m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:45.440455", "n_pass": [498, 104, 36], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){try{if(m) {e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:48.078423", "n_pass": [502, 105, 37], "score": "0.7142", "loss": "0.4057", "code": "g get(r s){try{if(m){e(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:50.722133", "n_pass": [504, 106, 38], "score": "0.4208", "loss": "0.922", "code": "g get(r s){try{if(m){(k); } return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:53.356716", "n_pass": [509, 107, 39], "score": "0.4208", "loss": "0.922", "code": "g get(r s){try{if(m){(k);} return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:25:55.989045", "n_pass": [511, 108, 40], "score": "0.4208", "loss": "0.922", "code": "g get(r s){try{if(m){(k);}return y; }catch(NoSuchMessageException e){}}"}
+{"time": "2020-12-28 05:26:19.504515", "n_pass": [521, 117, 41], "score": "0.4208", "loss": "0.922", "code": "g get(r s){try{if(m){(k);}return y;}catch(NoSuchMessageException e){}}"}
+
+Minimal simplified code:
+g get(r s){try{if(m){(k);}return y;}catch(NoSuchMessageException e){}}
+

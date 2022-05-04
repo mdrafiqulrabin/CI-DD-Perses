@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_getEnumInt.java
+method_name = getEnumInt
+method_body = public <E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:44:04.922523", "score": "0.4064", "loss": "2.3936", "code": "class T { public <E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); } }"}
+{"time": "2021-01-24 07:46:55.370403", "score": "0.4269", "loss": "1.7251", "code": "class T { public <E extends Enum > E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); } }"}
+{"time": "2021-01-24 07:47:06.143831", "score": "0.595", "loss": "1.5217", "code": "class T { public <E extends Enum > E getEnumInt(int index, Class enumClass) { return toEnum(enumClass, getInt(index)); } }"}
+{"time": "2021-01-24 07:47:27.375406", "score": "0.595", "loss": "1.5217", "code": "class T { <E extends Enum > E getEnumInt(int index, Class enumClass) { return toEnum(enumClass, getInt(index)); } }"}
+
+Minimal simplified code:
+class T {
+       <E extends Enum   > E getEnumInt(int index, Class    enumClass) { return toEnum(enumClass, getInt(index)); }
+}
+
+

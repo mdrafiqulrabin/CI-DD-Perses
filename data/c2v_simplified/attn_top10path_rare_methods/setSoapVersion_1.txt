@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/sandbox/src/main/java/org/springframework/ws/soap/stroap/StroapMessageFactory_setSoapVersion.java
+method_name = setSoapVersion
+method_body = public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }
+
+topk path-contexts:
+[0.1947] soapversion,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),unsupportedoperationexception
+[0.1060] version,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),unsupportedoperationexception
+[0.0836] soapversion,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),soapversion
+[0.0797] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),soapversion
+[0.0769] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),version
+[0.0618] soapversion,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr2),soap
+[0.0549] version,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),soapversion
+[0.0528] version,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(NameExpr0),version
+[0.0475] version,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),unsupportedoperationexception
+[0.0431] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['soapversion', 'unsupportedoperationexception', 'version', 'unsupportedoperationexception', 'soapversion', 'soapversion', 'void', 'soapversion', 'void', 'version', 'soapversion', 'soap', 'version', 'soapversion', 'version', 'version', 'version', 'unsupportedoperationexception', 'void', 'METHOD_NAME']
+

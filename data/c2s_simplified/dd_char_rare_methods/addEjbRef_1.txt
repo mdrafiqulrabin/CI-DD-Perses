@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addEjbRef.java
+method_name = addEjbRef
+method_body = public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }
+predict, score, loss = addEjbRef, 0.4160997, 1.3334385
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:11:31.395967", "n_pass": [1, 1, 1], "score": "0.4161", "loss": "1.3334", "code": "public void addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:33.393392", "n_pass": [20, 2, 2], "score": "0.2956", "loss": "1.7844", "code": "d addEjbRef(ContextEjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:35.438267", "n_pass": [44, 3, 3], "score": "0.3174", "loss": "1.4274", "code": "d addEjbRef(Conjb ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:44.026105", "n_pass": [84, 9, 4], "score": "0.299", "loss": "1.4913", "code": "d addEjbRef(Cob ejbRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:45.349360", "n_pass": [86, 10, 5], "score": "0.3059", "loss": "1.6055", "code": "d addEjbRef(Cob bRef) { ejbRefs.put(ejbRef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:51.882593", "n_pass": [94, 15, 6], "score": "0.3325", "loss": "1.7192", "code": "d addEjbRef(Cob bRef) { ejbRefs.put(eef.getName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:53.183529", "n_pass": [95, 16, 7], "score": "0.3167", "loss": "1.8489", "code": "d addEjbRef(Cob bRef) { ejbRefs.put(egetName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:54.492536", "n_pass": [96, 17, 8], "score": "0.2904", "loss": "1.8019", "code": "d addEjbRef(Cob bRef) { ejbRefs.put(eName(), ejbRef); }"}
+{"time": "2021-01-23 09:11:58.444087", "n_pass": [100, 20, 9], "score": "0.303", "loss": "1.9276", "code": "d addEjbRef(Cob bRef) { ejbRefs.put(eName(), eef); }"}
+{"time": "2021-01-23 09:12:01.594080", "n_pass": [109, 21, 10], "score": "0.367", "loss": "1.5467", "code": "d addEjbRef(b bRef) { ejbRefs.put(eName(), eef); }"}
+{"time": "2021-01-23 09:12:08.153155", "n_pass": [118, 26, 11], "score": "0.3593", "loss": "1.4882", "code": "d addEjbRef(b bRef) { ejbRefs.put(ee(), eef); }"}
+{"time": "2021-01-23 09:12:20.515693", "n_pass": [177, 33, 12], "score": "0.4458", "loss": "1.4264", "code": "d addEjbRef(b bRef) { ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:25.803228", "n_pass": [195, 34, 13], "score": "0.4126", "loss": "1.4702", "code": "d addEjbRef(b Ref) { ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:27.105873", "n_pass": [196, 35, 14], "score": "0.3325", "loss": "1.7458", "code": "d addEjbRef(b ef) { ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:28.404501", "n_pass": [197, 36, 15], "score": "0.4012", "loss": "1.5869", "code": "d addEjbRef(b f) { ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:29.703745", "n_pass": [200, 37, 16], "score": "0.4012", "loss": "1.5869", "code": "d addEjbRef(b f){ ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:31.010098", "n_pass": [202, 38, 17], "score": "0.4012", "loss": "1.5869", "code": "d addEjbRef(b f){ejbRefs.put(ee(),ef); }"}
+{"time": "2021-01-23 09:12:56.531659", "n_pass": [265, 54, 18], "score": "0.3422", "loss": "1.6697", "code": "d addEjbRef(b f){ejbRefs.put(ee(),f); }"}
+{"time": "2021-01-23 09:12:57.829483", "n_pass": [268, 55, 19], "score": "0.3422", "loss": "1.6697", "code": "d addEjbRef(b f){ejbRefs.put(ee(),f);}"}
+
+Minimal simplified code:
+d addEjbRef(b f){ejbRefs.put(ee(),f);}
+

@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/ItemAuthorBean_getInsertPosition.java
+method_name = getInsertPosition
+method_body = public String getInsertPosition() { return insertPosition; }
+
+topk path-contexts:
+[0.4878] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),insertposition
+[0.4318] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),insertposition
+[0.0805] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['METHOD_NAME', 'insertposition', 'string', 'insertposition', 'string', 'METHOD_NAME']
+

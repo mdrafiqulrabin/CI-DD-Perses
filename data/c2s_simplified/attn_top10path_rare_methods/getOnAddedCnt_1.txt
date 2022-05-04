@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobs/DummyJob_getOnAddedCnt.java
+method_name = getOnAddedCnt
+method_body = public int getOnAddedCnt() { return onAddedCnt; }
+
+topk path-contexts for sub-token: get
+[0.3588] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.3428] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.0537] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: get
+['int', 'on|added|cnt', 'METHOD_NAME', 'on|added|cnt', 'int', 'METHOD_NAME']
+
+topk path-contexts for sub-token: on
+[0.3843] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.3478] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.0516] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: on
+['METHOD_NAME', 'on|added|cnt', 'int', 'on|added|cnt', 'int', 'METHOD_NAME']
+
+topk path-contexts for sub-token: added
+[0.5271] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.3907] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.0056] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: added
+['METHOD_NAME', 'on|added|cnt', 'int', 'on|added|cnt', 'int', 'METHOD_NAME']
+
+topk path-contexts for sub-token: cnt
+[0.4570] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.4196] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,on|added|cnt
+[0.0589] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: cnt
+['int', 'on|added|cnt', 'METHOD_NAME', 'on|added|cnt', 'int', 'METHOD_NAME']
+

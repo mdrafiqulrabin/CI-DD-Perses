@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/StatusManager_addStatusHandlers.java
+method_name = addStatusHandlers
+method_body = public void addStatusHandlers(Collection<StatusChecker> statusHandlers) { for (StatusChecker statusChecker : statusHandlers) { String name = statusChecker.getClass().getSimpleName(); if (name.endsWith(StatusChecker.class.getSimpleName())) { name = name.substring(0, name.length() - StatusChecker.class.getSimpleName().length()); } this.statusHandlers.put(name, statusChecker); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:03:11.477328", "score": "0.406", "loss": "1.6007", "code": "class T { public void addStatusHandlers(Collection<StatusChecker> statusHandlers) { for (StatusChecker statusChecker : statusHandlers) { String name = statusChecker.getClass().getSimpleName(); if (name.endsWith(StatusChecker.class.getSimpleName())) { name = name.substring(0, name.length() - StatusChecker.class.getSimpleName().length()); } this.statusHandlers.put(name, statusChecker); } } }"}
+{"time": "2021-01-24 03:04:01.263668", "score": "0.3369", "loss": "2.8415", "code": "class T { public void addStatusHandlers(Collection<StatusChecker> statusHandlers) { } }"}
+{"time": "2021-01-24 03:04:44.448713", "score": "0.3369", "loss": "2.8415", "code": "class T { void addStatusHandlers(Collection<StatusChecker> statusHandlers) { } }"}
+
+Minimal simplified code:
+class T {
+       void addStatusHandlers(Collection<StatusChecker> statusHandlers) {                                                                                                                                                                                                                                                                                                                  }
+}
+
+

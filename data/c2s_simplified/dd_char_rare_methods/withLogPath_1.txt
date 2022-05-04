@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withLogPath.java
+method_name = withLogPath
+method_body = public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }
+predict, score, loss = withLogPath, 0.41181767, 0.96137416
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:48:43.893440", "n_pass": [1, 1, 1], "score": "0.4118", "loss": "0.9614", "code": "public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }"}
+{"time": "2021-01-23 07:48:48.534259", "n_pass": [25, 4, 2], "score": "0.4453", "loss": "1.5794", "code": "public ContainerBuilder withLogPath(String logPath) { th logPath; return this; }"}
+{"time": "2021-01-23 07:48:51.186510", "n_pass": [29, 6, 3], "score": "0.195", "loss": "2.6858", "code": "public Contr withLogPath(String logPath) { th logPath; return this; }"}
+{"time": "2021-01-23 07:49:09.511462", "n_pass": [97, 18, 4], "score": "0.2311", "loss": "3.4456", "code": "public Contr withLogPath(String logPath) { th loth; return this; }"}
+{"time": "2021-01-23 07:49:23.904323", "n_pass": [166, 27, 5], "score": "0.2325", "loss": "3.2237", "code": "public Contr withLogPath(String logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:49:31.783538", "n_pass": [184, 33, 6], "score": "0.4539", "loss": "1.978", "code": "publicContr withLogPath(String logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:49:35.696733", "n_pass": [187, 36, 7], "score": "0.335", "loss": "2.3239", "code": "publicCotr withLogPath(String logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:49:36.997407", "n_pass": [188, 37, 8], "score": "0.5348", "loss": "1.5332", "code": "publicCor withLogPath(String logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:49:38.302455", "n_pass": [189, 38, 9], "score": "0.3957", "loss": "1.7861", "code": "publicCo withLogPath(String logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:49:45.372423", "n_pass": [204, 40, 10], "score": "0.396", "loss": "3.1864", "code": "publicCo withLogPath(Sing logPath) {h loth; return this; }"}
+{"time": "2021-01-23 07:50:19.933272", "n_pass": [284, 61, 11], "score": "0.396", "loss": "3.1864", "code": "publicCo withLogPath(Sing logPath){h loth; return this; }"}
+{"time": "2021-01-23 07:50:26.462708", "n_pass": [289, 66, 12], "score": "0.4173", "loss": "2.7729", "code": "publicCo withLogPath(Sing logPath){h loh; return this; }"}
+{"time": "2021-01-23 07:50:29.120692", "n_pass": [292, 68, 13], "score": "0.4173", "loss": "2.7729", "code": "publicCo withLogPath(Sing logPath){h loh;return this; }"}
+{"time": "2021-01-23 07:50:37.047676", "n_pass": [305, 74, 14], "score": "0.4173", "loss": "2.7729", "code": "publicCo withLogPath(Sing logPath){h loh;return this;}"}
+{"time": "2021-01-23 07:50:42.266089", "n_pass": [310, 78, 15], "score": "0.3323", "loss": "3.2588", "code": "pubicCo withLogPath(Sing logPath){h loh;return this;}"}
+{"time": "2021-01-23 07:50:46.205114", "n_pass": [313, 81, 16], "score": "0.238", "loss": "4.372", "code": "pubico withLogPath(Sing logPath){h loh;return this;}"}
+{"time": "2021-01-23 07:50:47.501843", "n_pass": [314, 82, 17], "score": "0.307", "loss": "3.7588", "code": "pubic withLogPath(Sing logPath){h loh;return this;}"}
+{"time": "2021-01-23 07:51:10.195565", "n_pass": [344, 96, 18], "score": "0.2937", "loss": "4.4644", "code": "pubic withLogPath(Sing logPath){h oh;return this;}"}
+
+Minimal simplified code:
+pubic withLogPath(Sing logPath){h oh;return this;}
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/signup/api/src/java/org/sakaiproject/signup/model/SignupTimeslot_getWaiter.java
+method_name = getWaiter
+method_body = public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) return null; for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 14:44:29.618591", "score": "0.1653", "loss": "4.8084", "code": "class T { public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) return null; for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } return null; } }"}
+{"time": "2021-01-24 14:48:11.315037", "score": "0.3037", "loss": "4.0019", "code": "class T { public SignupAttendee getWaiter(String attendeeId) { if (waitingList == null) return null; for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } } }"}
+{"time": "2021-01-24 14:50:06.308547", "score": "0.3963", "loss": "2.5834", "code": "class T { public SignupAttendee getWaiter(String attendeeId) { for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId().equals(attendeeId)) return waiter; } } }"}
+{"time": "2021-01-24 14:54:03.550139", "score": "0.5191", "loss": "1.4933", "code": "class T { public SignupAttendee getWaiter(String attendeeId) { for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId() ) return waiter; } } }"}
+{"time": "2021-01-24 14:54:43.175064", "score": "0.4586", "loss": "2.5183", "code": "class T { public SignupAttendee getWaiter( ) { for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId() ) return waiter; } } }"}
+{"time": "2021-01-24 14:56:02.363113", "score": "0.4586", "loss": "2.5183", "code": "class T { SignupAttendee getWaiter( ) { for (SignupAttendee waiter : waitingList) { if (waiter.getAttendeeUserId() ) return waiter; } } }"}
+{"time": "2021-01-24 14:58:28.615502", "score": "0.7529", "loss": "0.362", "code": "class T { SignupAttendee getWaiter( ) { if (waiter.getAttendeeUserId() ) return waiter; } }"}
+{"time": "2021-01-24 14:59:43.699818", "score": "0.9669", "loss": "0.0839", "code": "class T { SignupAttendee getWaiter( ) { return waiter; } }"}
+
+Minimal simplified code:
+class T {
+       SignupAttendee getWaiter(                 )                                                                                   {                                                    return waiter; }
+}
+
+

@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/JspUtil_checkScope.java
+method_name = checkScope
+method_body = public static void checkScope(String scope, Node n, ErrorDispatcher err) throws JasperException { if (scope != null && !scope.equals("page") && !scope.equals("request") && !scope.equals("session") && !scope.equals("application")) { err.jspError(n, "jsp.error.invalid.scope", scope); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:58:54.083369", "score": "0.4849", "loss": "2.1041", "code": "class T { public static void checkScope(String scope, Node n, ErrorDispatcher err) throws JasperException { if (scope != null && !scope.equals(\"page\") && !scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) { err.jspError(n, \"jsp.error.invalid.scope\", scope); } } }"}
+{"time": "2021-01-24 04:00:32.410835", "score": "0.447", "loss": "2.3763", "code": "class T { public static void checkScope(String scope, Node n, ErrorDispatcher err) throws JasperException { if (scope != null && !scope.equals(\"page\") && !scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:00:55.042253", "score": "0.4947", "loss": "2.2357", "code": "class T { public static void checkScope( ) throws JasperException { if (scope != null && !scope.equals(\"page\") && !scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:01:05.900320", "score": "0.4951", "loss": "2.5752", "code": "class T { public static void checkScope( ) throws JasperException { if (scope != null && scope.equals(\"page\") && !scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:01:16.713344", "score": "0.4221", "loss": "3.173", "code": "class T { public static void checkScope( ) throws JasperException { if (scope != null && scope.equals(\"page\") && scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:01:49.255328", "score": "0.313", "loss": "3.561", "code": "class T { public static void checkScope( ) throws JasperException { if (scope != null && \"page\" && scope.equals(\"request\") && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:02:00.350980", "score": "0.2917", "loss": "3.7935", "code": "class T { public static void checkScope( ) throws JasperException { if (scope != null && \"page\" && equals && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:03:46.781134", "score": "0.4273", "loss": "3.3367", "code": "class T { public static void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n, \"jsp.error.invalid.scope\", scope); } }"}
+{"time": "2021-01-24 04:04:08.278693", "score": "0.3607", "loss": "3.2913", "code": "class T { public static void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n , scope); } }"}
+{"time": "2021-01-24 04:04:19.011292", "score": "0.3607", "loss": "3.2913", "code": "class T { void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals(\"session\") && !scope.equals(\"application\")) err.jspError(n , scope); } }"}
+{"time": "2021-01-24 04:04:29.788177", "score": "0.3539", "loss": "3.2982", "code": "class T { void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals( ) && !scope.equals(\"application\")) err.jspError(n , scope); } }"}
+{"time": "2021-01-24 04:04:40.491592", "score": "0.3207", "loss": "3.3667", "code": "class T { void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals( ) && !scope.equals( )) err.jspError(n , scope); } }"}
+{"time": "2021-01-24 04:07:32.586530", "score": "0.2764", "loss": "4.2012", "code": "class T { void checkScope( ) { if (scope != null && \"page\" && equals && !scope.equals( ) && !scope.equals( )) err.jspError( ); } }"}
+
+Minimal simplified code:
+class T {
+              void checkScope(                                         )                        { if (scope != null &&               "page"  &&        equals            && !scope.equals(         ) && !scope.equals(             ))   err.jspError(                                   );   }
+}
+
+

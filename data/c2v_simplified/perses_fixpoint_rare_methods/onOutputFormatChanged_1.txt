@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/protyposis__MediaPlayer-Extended/MediaPlayer/src/main/java/net/protyposis/android/mediaplayer/MediaCodecAudioDecoder_onOutputFormatChanged.java
+method_name = onOutputFormatChanged
+method_body = @Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:06:43.226193", "score": "0.4324", "loss": "0.977", "code": "class T { @Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); } }"}
+{"time": "2021-01-24 19:10:24.975445", "score": "0.4324", "loss": "0.977", "code": "class T { @Override void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); } }"}
+{"time": "2021-01-24 19:12:23.853597", "score": "0.6141", "loss": "0.578", "code": "class T { @Override void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init( ); } }"}
+
+Minimal simplified code:
+class T {
+@Override           void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(      ); }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/SessionConfig_addSessionTrackingMode.java
+method_name = addSessionTrackingMode
+method_body = public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }
+predict, score, loss = addSessionTrackingMode, 0.45257187, 1.0878136
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:31:25.581319", "n_pass": [1, 1, 1], "score": "0.4526", "loss": "1.0878", "code": "public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:27.257211", "n_pass": [22, 2, 2], "score": "0.4136", "loss": "1.7156", "code": "public void addSessionTrackingMode() { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:28.560466", "n_pass": [24, 3, 3], "score": "0.625", "loss": "1.4491", "code": "public void addSessionTrackingMode() {add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:30.559534", "n_pass": [44, 4, 4], "score": "0.7054", "loss": "1.2014", "code": "public void addSessionTrackingMode() {add(valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:31.862003", "n_pass": [49, 5, 5], "score": "0.7054", "loss": "1.2014", "code": " void addSessionTrackingMode() {add(valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:33.176371", "n_pass": [50, 6, 6], "score": "0.7054", "loss": "1.2014", "code": "void addSessionTrackingMode() {add(valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:36.561650", "n_pass": [80, 7, 7], "score": "0.7054", "loss": "1.2014", "code": "void addSessionTrackingMode(){add(valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:39.198142", "n_pass": [83, 9, 8], "score": "0.4269", "loss": "2.1003", "code": "void addSessionTrackingMode(){add((sessionTrackingMode)); }"}
+{"time": "2021-01-20 05:31:40.493193", "n_pass": [89, 10, 9], "score": "0.4269", "loss": "2.1003", "code": "void addSessionTrackingMode(){add((sessionTrackingMode));}"}
+
+Minimal simplified code:
+void addSessionTrackingMode(){add((sessionTrackingMode));}
+

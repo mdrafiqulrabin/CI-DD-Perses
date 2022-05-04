@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bladecoder__bladecoder-adventure-engine/blade-engine/src/com/bladecoder/engine/model/VerbManager_addVerb.java
+method_name = addVerb
+method_body = public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }
+
+topk path-contexts for sub-token: add
+[0.0857] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.0778] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0748] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0612] v,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.0544] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.0509] v,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0430] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0391] v,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0344] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,v
+[0.0322] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,v
+
+topk terminals for sub-token: add
+['METHOD_NAME', 'verbs', 'verb', 'put', 'METHOD_NAME', 'put', 'v', 'verbs', 'verb', 'verbs', 'v', 'put', 'void', 'METHOD_NAME', 'v', 'put', 'METHOD_NAME', 'v', 'verb', 'v']
+
+topk path-contexts for sub-token: verb
+[0.4510] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.2083] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.1297] v,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verbs
+[0.0252] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,verb
+[0.0211] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|hash|key
+[0.0193] v,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,verb
+[0.0181] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,verb
+[0.0180] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,v
+[0.0165] verb,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0142] verbs,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,get|hash|key
+
+topk terminals for sub-token: verb
+['verb', 'verbs', 'METHOD_NAME', 'verbs', 'v', 'verbs', 'METHOD_NAME', 'verb', 'verb', 'get|hash|key', 'v', 'verb', 'void', 'verb', 'verb', 'v', 'verb', 'put', 'verbs', 'get|hash|key']
+

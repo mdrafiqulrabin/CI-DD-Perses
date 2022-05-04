@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:22:27.473953", "score": "0.4057", "loss": "1.0315", "code": "class T { @Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); } }"}
+{"time": "2020-12-21 10:23:04.860353", "score": "0.2646", "loss": "2.3655", "code": "class T { @Override public void execute(Tuple tuple) { } }"}
+{"time": "2020-12-21 10:23:25.902924", "score": "0.2646", "loss": "2.3655", "code": "class T { @Override void execute(Tuple tuple) { } }"}
+
+Minimal simplified code:
+class T {
+@Override        void execute(Tuple tuple) {                                                                                                                                                                                                                                                                    }
+}
+
+

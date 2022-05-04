@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_init.java
+method_name = init
+method_body = @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter("attribute"); }
+predict, score, loss = init, 0.999962568283081, 4.136476854910143e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 07:05:04.311834", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-28 07:05:06.924936", "n_pass": [10, 2, 2], "score": "0.9998", "loss": "0.0002", "code": "@Override public void init(FilterConfig fConfig) throws ServletException { this. fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-28 07:05:09.528037", "n_pass": [19, 3, 3], "score": "0.9632", "loss": "0.0528", "code": "@Override public void init(FilterConfig fConfig) throws ServletException { this.meter(\"attribute\"); }"}
+{"time": "2020-12-28 07:05:12.136966", "n_pass": [20, 4, 4], "score": "0.8564", "loss": "0.2401", "code": "d init(FilterConfig fConfig) throws ServletException { this.meter(\"attribute\"); }"}
+{"time": "2020-12-28 07:05:14.745493", "n_pass": [37, 5, 5], "score": "0.4055", "loss": "1.2064", "code": "d init(FilterConfig fConfig) throws Servon { this.meter(\"attribute\"); }"}
+{"time": "2020-12-28 07:05:19.976216", "n_pass": [62, 7, 6], "score": "0.6161", "loss": "0.6167", "code": "d init(FilterConfig fConfig) throws Servon { this.meter(\"atte\"); }"}
+{"time": "2020-12-28 07:05:28.248881", "n_pass": [72, 10, 7], "score": "0.5834", "loss": "0.9533", "code": "d init(FilterConfig fConfig) throws Servon { meter(\"atte\"); }"}
+{"time": "2020-12-28 07:05:41.718763", "n_pass": [112, 15, 8], "score": "0.7348", "loss": "0.6083", "code": "d init(FilterConfig fConfig) throws Servon { meter(\"e\"); }"}
+{"time": "2020-12-28 07:06:03.804093", "n_pass": [131, 23, 9], "score": "0.4482", "loss": "2.3474", "code": "d init(FilterConfig fConfig) throws Son { meter(\"e\"); }"}
+{"time": "2020-12-28 07:06:06.429385", "n_pass": [132, 24, 10], "score": "0.6637", "loss": "0.8146", "code": "d init(FilterConfig fConfig) throws S{ meter(\"e\"); }"}
+{"time": "2020-12-28 07:06:09.068063", "n_pass": [134, 25, 11], "score": "0.3926", "loss": "1.8564", "code": "d init(FilterConfig fConfig) throws S{ mr(\"e\"); }"}
+{"time": "2020-12-28 07:07:26.354168", "n_pass": [229, 53, 12], "score": "0.3926", "loss": "1.8564", "code": "d init(FilterConfig fConfig)throws S{ mr(\"e\"); }"}
+{"time": "2020-12-28 07:08:24.576721", "n_pass": [290, 74, 13], "score": "0.3926", "loss": "1.8564", "code": "d init(FilterConfig fConfig)throws S{mr(\"e\"); }"}
+{"time": "2020-12-28 07:08:27.172924", "n_pass": [291, 75, 14], "score": "0.4878", "loss": "1.3968", "code": "d init(FilterConfig fConfig)throws S{r(\"e\"); }"}
+{"time": "2020-12-28 07:08:32.382154", "n_pass": [295, 77, 15], "score": "0.3279", "loss": "1.6641", "code": "d init(FilterConfig fConfig)throws S{r(\"\"); }"}
+{"time": "2020-12-28 07:08:34.997838", "n_pass": [299, 78, 16], "score": "0.3279", "loss": "1.664", "code": "d init(FilterConfig fConfig)throws S{r(\"\");}"}
+
+Minimal simplified code:
+d init(FilterConfig fConfig)throws S{r("");}
+

@@ -1,0 +1,69 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+predict, score, loss = get, 0.9958781003952026, 0.004398789722472429
+
+Trace of simplified code(s):
+{"time": "2020-12-28 04:59:43.344177", "n_pass": [1, 1, 1], "score": "0.9959", "loss": "0.0044", "code": "@Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 04:59:45.981150", "n_pass": [22, 2, 2], "score": "0.9368", "loss": "0.0668", "code": "@Override public V get(long timeout, TimeUnit unit) throws Inteption, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 04:59:48.624938", "n_pass": [43, 3, 3], "score": "0.8684", "loss": "0.1586", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 04:59:54.021355", "n_pass": [86, 5, 4], "score": "0.5509", "loss": "1.0641", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synuireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 04:59:56.656155", "n_pass": [87, 6, 5], "score": "0.5509", "loss": "1.0641", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 04:59:59.295755", "n_pass": [89, 7, 6], "score": "0.9608", "loss": "0.0915", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 05:00:01.920748", "n_pass": [93, 8, 7], "score": "0.6837", "loss": "0.5898", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { thrimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 05:00:04.545001", "n_pass": [94, 9, 8], "score": "0.6837", "loss": "0.5898", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-28 05:00:07.168091", "n_pass": [99, 10, 9], "score": "0.3913", "loss": "1.3309", "code": "@Override public V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:09.787671", "n_pass": [102, 11, 10], "score": "0.3779", "loss": "1.3643", "code": "@Overriic V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:12.428479", "n_pass": [160, 12, 11], "score": "0.3779", "loss": "1.3643", "code": "@Overr V get(long timeout, TimeUnit unit) throws IutException { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:20.730359", "n_pass": [173, 15, 12], "score": "0.3779", "loss": "1.3643", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutption { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:23.355044", "n_pass": [174, 16, 13], "score": "0.3779", "loss": "1.3643", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (!synedNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:25.998128", "n_pass": [177, 17, 14], "score": "0.3762", "loss": "1.4914", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(toNanos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:31.231312", "n_pass": [180, 19, 15], "score": "0.4922", "loss": "0.9337", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(timeout))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:33.847910", "n_pass": [182, 20, 16], "score": "0.5671", "loss": "0.8533", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) { thrception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:36.470728", "n_pass": [185, 21, 17], "score": "0.5671", "loss": "0.8533", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ception(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:39.084226", "n_pass": [186, 22, 18], "score": "0.5164", "loss": "1.2405", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Waiting \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:41.696936", "n_pass": [189, 23, 19], "score": "0.5662", "loss": "1.1019", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" + timeout); }value; }"}
+{"time": "2020-12-28 05:00:44.300142", "n_pass": [191, 24, 20], "score": "0.3767", "loss": "1.8499", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }value; }"}
+{"time": "2020-12-28 05:00:46.920996", "n_pass": [194, 25, 21], "score": "0.3739", "loss": "1.864", "code": "@Overr V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:00:49.541521", "n_pass": [197, 26, 22], "score": "0.2399", "loss": "2.4082", "code": "@Ov V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:03.097795", "n_pass": [276, 31, 23], "score": "0.3666", "loss": "1.8553", "code": "@O V get(long timeout, TimeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:17.444195", "n_pass": [287, 36, 24], "score": "0.3692", "loss": "1.924", "code": "@O V get(long timeout,imeUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:20.088998", "n_pass": [288, 37, 25], "score": "0.3692", "loss": "1.924", "code": "@O V get(long timeout,eUnit unit) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:27.975143", "n_pass": [292, 40, 26], "score": "0.3315", "loss": "1.9425", "code": "@O V get(long timeout,eUnit it) throws Iutn { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:30.606446", "n_pass": [299, 41, 27], "score": "0.3728", "loss": "1.594", "code": "@O V get(long timeout,eUnit it) throws In { if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:33.240256", "n_pass": [300, 42, 28], "score": "0.3843", "loss": "1.5568", "code": "@O V get(long timeout,eUnit it) throws I{ if (edNanos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:38.467932", "n_pass": [305, 44, 29], "score": "0.3843", "loss": "1.5568", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(nos(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:43.707055", "n_pass": [308, 46, 30], "score": "0.4051", "loss": "1.3501", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(out))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:46.318298", "n_pass": [310, 47, 31], "score": "0.4767", "loss": "1.1696", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(t))) {ion(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:48.965793", "n_pass": [314, 48, 32], "score": "0.6133", "loss": "0.6694", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(t))) {n(\"Wai \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:51.593429", "n_pass": [317, 49, 33], "score": "0.5254", "loss": "0.8536", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(t))) {n(\"W \" +eout); }e; }"}
+{"time": "2020-12-28 05:01:54.210125", "n_pass": [320, 50, 34], "score": "0.8093", "loss": "0.3073", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(t))) {n(\"W \" +ut); }e; }"}
+{"time": "2020-12-28 05:01:56.815773", "n_pass": [324, 51, 35], "score": "0.8098", "loss": "0.3073", "code": "@O V get(long timeout,eUnit it) throws I{ if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:11.502074", "n_pass": [338, 56, 36], "score": "0.2274", "loss": "3.0362", "code": "@O V get(long timeout,nit it) throws I{ if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:14.137442", "n_pass": [339, 57, 37], "score": "0.8171", "loss": "0.2617", "code": "@O V get(long timeout,t it) throws I{ if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:39.365909", "n_pass": [448, 64, 38], "score": "0.8427", "loss": "0.2357", "code": "@O V get(long timeout,t t) throws I{ if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:41.977321", "n_pass": [450, 65, 39], "score": "0.8427", "loss": "0.2357", "code": "@O V get(long timeout,t t)throws I{ if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:44.590003", "n_pass": [460, 66, 40], "score": "0.8427", "loss": "0.2357", "code": "@O V get(long timeout,t t)throws I{if (ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:47.203272", "n_pass": [463, 67, 41], "score": "0.8427", "loss": "0.2357", "code": "@O V get(long timeout,t t)throws I{if(ednos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:49.815805", "n_pass": [465, 68, 42], "score": "0.8427", "loss": "0.2357", "code": "@O V get(long timeout,t t)throws I{if(dnos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:55.022748", "n_pass": [467, 70, 43], "score": "0.6266", "loss": "0.5516", "code": "@O V get(long timeout,t t)throws I{if(dos(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:02:57.662413", "n_pass": [468, 71, 44], "score": "0.8775", "loss": "0.1759", "code": "@O V get(long timeout,t t)throws I{if(ds(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:03:00.286664", "n_pass": [469, 72, 45], "score": "0.7933", "loss": "0.3001", "code": "@O V get(long timeout,t t)throws I{if(d(s(t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:03:02.927496", "n_pass": [471, 73, 46], "score": "0.882", "loss": "0.1717", "code": "@O V get(long timeout,t t)throws I{if(d((t))) {n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:03:05.536142", "n_pass": [477, 74, 47], "score": "0.882", "loss": "0.1717", "code": "@O V get(long timeout,t t)throws I{if(d((t))){n(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:03:08.167927", "n_pass": [479, 75, 48], "score": "0.9338", "loss": "0.0946", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"W \" +ut); } }"}
+{"time": "2020-12-28 05:03:10.785725", "n_pass": [482, 76, 49], "score": "0.9362", "loss": "0.0911", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\" \" +ut); } }"}
+{"time": "2020-12-28 05:03:13.405495", "n_pass": [483, 77, 50], "score": "0.9368", "loss": "0.0901", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"\" +ut); } }"}
+{"time": "2020-12-28 05:03:16.021533", "n_pass": [485, 78, 51], "score": "0.9368", "loss": "0.0901", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"\"+ut); } }"}
+{"time": "2020-12-28 05:03:18.634863", "n_pass": [487, 79, 52], "score": "0.9354", "loss": "0.0921", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"\"+t); } }"}
+{"time": "2020-12-28 05:03:21.269264", "n_pass": [491, 80, 53], "score": "0.9354", "loss": "0.0921", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"\"+t);} }"}
+{"time": "2020-12-28 05:03:23.906594", "n_pass": [493, 81, 54], "score": "0.9354", "loss": "0.0921", "code": "@O V get(long timeout,t t)throws I{if(d((t))){(\"\"+t);}}"}
+{"time": "2020-12-28 05:03:29.396125", "n_pass": [504, 82, 55], "score": "0.8908", "loss": "0.1617", "code": "@O V get(ong timeout,t t)throws I{if(d((t))){(\"\"+t);}}"}
+{"time": "2020-12-28 05:03:32.005012", "n_pass": [505, 83, 56], "score": "0.8994", "loss": "0.152", "code": "@O V get(ng timeout,t t)throws I{if(d((t))){(\"\"+t);}}"}
+{"time": "2020-12-28 05:03:34.612611", "n_pass": [506, 84, 57], "score": "0.8339", "loss": "0.2222", "code": "@O V get(g timeout,t t)throws I{if(d((t))){(\"\"+t);}}"}
+{"time": "2020-12-28 05:03:55.527517", "n_pass": [533, 92, 58], "score": "0.8445", "loss": "0.2073", "code": "@O V get(g timeout,t t)throws I{if(((t))){(\"\"+t);}}"}
+
+Minimal simplified code:
+@O V get(g timeout,t t)throws I{if(((t))){(""+t);}}
+

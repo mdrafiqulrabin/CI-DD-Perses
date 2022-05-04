@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/tld/TldResourcePath_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }
+
+topk path-contexts for sub-token: equals
+[0.1848] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.1793] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0743] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0608] o,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0537] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,o
+[0.0455] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0448] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|ThisExpr0,this
+[0.0236] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|MethodCallExpr1|FieldAccessExpr3|NameExpr0,other
+[0.0180] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|CastExpr|NameExpr1,o
+[0.0170] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|ThisExpr0,this
+
+topk terminals for sub-token: equals
+['object', 'true', 'boolean', 'object', 'o', 'false', 'o', 'object', 'boolean', 'o', 'METHOD_NAME', 'object', 'object', 'this', 'object', 'other', 'object', 'o', 'o', 'this']
+

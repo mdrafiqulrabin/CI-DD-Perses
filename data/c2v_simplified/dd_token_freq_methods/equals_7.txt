@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/lang/FunctionMapperImpl_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }
+predict, score, loss = equals, 0.9999854564666748, 2.288792165927589e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:02:11.919070", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:15.465832", "n_pass": [25, 2, 2], "score": "0.9995", "loss": "0.0007", "code": "@Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:19.003277", "n_pass": [50, 3, 3], "score": "0.9956", "loss": "0.0057", "code": "public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:29.069570", "n_pass": [89, 6, 4], "score": "0.9956", "loss": "0.0057", "code": " boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:31.707846", "n_pass": [90, 7, 5], "score": "0.9956", "loss": "0.0057", "code": "boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:34.816840", "n_pass": [104, 8, 6], "score": "0.9366", "loss": "0.173", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:37.465394", "n_pass": [106, 9, 7], "score": "0.9927", "loss": "0.0149", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this.hashCode(); } return false; }"}
+{"time": "2020-12-26 23:02:40.580765", "n_pass": [108, 10, 8], "score": "0.9991", "loss": "0.0012", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this.hashCode; } return false; }"}
+{"time": "2020-12-26 23:02:43.260105", "n_pass": [111, 11, 9], "score": "0.8547", "loss": "0.2468", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this.hashCode; } false; }"}
+{"time": "2020-12-26 23:02:45.941475", "n_pass": [112, 12, 10], "score": "0.8588", "loss": "0.2409", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this.hashCode; }  }"}
+{"time": "2020-12-26 23:02:49.415573", "n_pass": [129, 13, 11], "score": "0.8677", "loss": "0.1795", "code": "boolean equals(Object obj) { if (obj instanceof Function) { this; }  }"}
+{"time": "2020-12-26 23:02:52.929559", "n_pass": [147, 14, 12], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj) { if (obj instanceof Function) {; }  }"}
+{"time": "2020-12-26 23:02:55.589579", "n_pass": [148, 15, 13], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj) { if (obj instanceof Function) {}  }"}
+{"time": "2020-12-26 23:03:02.257502", "n_pass": [186, 16, 14], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj) { if (obj instanceof Function) {} }"}
+{"time": "2020-12-26 23:03:04.931938", "n_pass": [187, 17, 15], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj) { if (obj instanceof Function) {}}"}
+{"time": "2020-12-26 23:03:08.445647", "n_pass": [197, 18, 16], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj){ if (obj instanceof Function) {}}"}
+{"time": "2020-12-26 23:03:11.081298", "n_pass": [199, 19, 17], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj){if (obj instanceof Function) {}}"}
+{"time": "2020-12-26 23:03:13.744069", "n_pass": [201, 20, 18], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj){if(obj instanceof Function) {}}"}
+{"time": "2020-12-26 23:03:16.400541", "n_pass": [209, 21, 19], "score": "0.8771", "loss": "0.1676", "code": "boolean equals(Object obj){if(obj instanceof Function){}}"}
+
+Minimal simplified code:
+boolean equals(Object obj){if(obj instanceof Function){}}
+

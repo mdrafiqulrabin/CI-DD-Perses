@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/SchedulerThriftInterface_listBackups.java
+method_name = listBackups
+method_body = @Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }
+predict, score, loss = listBackups, 0.35265064, 1.345532
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:39:36.082968", "n_pass": [1, 1, 1], "score": "0.3527", "loss": "1.3455", "code": "@Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-23 08:39:39.450992", "n_pass": [25, 3, 2], "score": "0.5774", "loss": "0.7391", "code": "@Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-23 08:39:40.755081", "n_pass": [28, 4, 3], "score": "0.4452", "loss": "1.0772", "code": "Response listBackups() { return ok(Result.listBackupsResult(new ListBBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-23 08:39:44.427586", "n_pass": [52, 6, 4], "score": "0.633", "loss": "0.705", "code": "Response listBackups() { return ok(Result.psResult(new ListBBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-23 08:39:48.371959", "n_pass": [57, 9, 5], "score": "0.4113", "loss": "1.7522", "code": "Response listBackups() { return ok(Result.psResult(new ListBBackups(recovery.ls()))); }"}
+{"time": "2021-01-23 08:39:53.026129", "n_pass": [67, 12, 6], "score": "0.5232", "loss": "1.0658", "code": "Response listBackups() { return ok(Result.psResult(new ListBBackups(rs()))); }"}
+{"time": "2021-01-23 08:39:57.703108", "n_pass": [97, 15, 7], "score": "0.4784", "loss": "1.4166", "code": "onse listBackups() { return ok(Result.psResult(new ListBBackups(rs()))); }"}
+{"time": "2021-01-23 08:40:01.408307", "n_pass": [105, 17, 8], "score": "0.6023", "loss": "1.5367", "code": "onse listBackups() { return ok(Rt.psResult(new ListBBackups(rs()))); }"}
+{"time": "2021-01-23 08:40:11.985498", "n_pass": [155, 24, 9], "score": "0.4827", "loss": "1.576", "code": "onse listBackups() { return ok(Rt.Result(new ListBBackups(rs()))); }"}
+{"time": "2021-01-23 08:40:23.725735", "n_pass": [167, 33, 10], "score": "0.308", "loss": "2.3297", "code": "onse listBackups() { return ok(Rt.Result(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:40:25.026870", "n_pass": [170, 34, 11], "score": "0.4139", "loss": "1.8979", "code": "se listBackups() { return ok(Rt.Result(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:40:51.927352", "n_pass": [274, 48, 12], "score": "0.4139", "loss": "1.8979", "code": "se listBackups(){ return ok(Rt.Result(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:40:53.226291", "n_pass": [275, 49, 13], "score": "0.4139", "loss": "1.8979", "code": "se listBackups(){return ok(Rt.Result(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:40:58.478995", "n_pass": [286, 53, 14], "score": "0.4806", "loss": "1.4696", "code": "se listBackups(){return ok(t.Result(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:01.074276", "n_pass": [289, 55, 15], "score": "0.3416", "loss": "1.9723", "code": "se listBackups(){return ok(t.esult(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:02.372578", "n_pass": [290, 56, 16], "score": "0.3416", "loss": "1.9723", "code": "se listBackups(){return ok(t.sult(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:03.670454", "n_pass": [291, 57, 17], "score": "0.5774", "loss": "1.6071", "code": "se listBackups(){return ok(t.ult(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:04.969829", "n_pass": [292, 58, 18], "score": "0.6053", "loss": "1.2926", "code": "se listBackups(){return ok(t.lt(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:06.296188", "n_pass": [293, 59, 19], "score": "0.5968", "loss": "1.3319", "code": "se listBackups(){return ok(t.t(new ListBBackups(r))); }"}
+{"time": "2021-01-23 08:41:14.222778", "n_pass": [304, 65, 20], "score": "0.7578", "loss": "0.843", "code": "se listBackups(){return ok(t.t(new ListBackups(r))); }"}
+{"time": "2021-01-23 08:41:23.401333", "n_pass": [315, 72, 21], "score": "0.7294", "loss": "1.1725", "code": "e listBackups(){return ok(t.t(new ListBackups(r))); }"}
+{"time": "2021-01-23 08:41:52.268618", "n_pass": [377, 90, 22], "score": "0.4086", "loss": "1.9284", "code": "e listBackups(){return ok(t.t(new ListBackups())); }"}
+{"time": "2021-01-23 08:41:53.594241", "n_pass": [382, 91, 23], "score": "0.4086", "loss": "1.9284", "code": "e listBackups(){return ok(t.t(new ListBackups()));}"}
+
+Minimal simplified code:
+e listBackups(){return ok(t.t(new ListBackups()));}
+

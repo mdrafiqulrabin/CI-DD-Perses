@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/ContextData_getServerSessionContext.java
+method_name = getServerSessionContext
+method_body = ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }
+
+topk path-contexts:
+[0.4723] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),serversessioncontext
+[0.3847] provsslsessioncontext,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),serversessioncontext
+[0.1430] provsslsessioncontext,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['METHOD_NAME', 'serversessioncontext', 'provsslsessioncontext', 'serversessioncontext', 'provsslsessioncontext', 'METHOD_NAME']
+

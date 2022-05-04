@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/jobscheduler/scheduler-component-shared/src/java/org/sakaiproject/component/app/scheduler/jobs/cm/processor/BaseCsvFileProcessor_trimLine.java
+method_name = trimLine
+method_body = protected String[] trimLine(String[] line) { String trim = ""; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }
+
+topk path-contexts for sub-token: trim
+[0.0407] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0307] string,ClassOrInterfaceType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0300] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0289] [],ArrayBracketPair3|MethodDeclaration|BlockStmt|ForStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,0
+[0.0267] METHOD_NAME,NameExpr1|MethodDeclaration|ArrayBracketPair3,[]
+[0.0253] string,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0234] line,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.0200] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0188] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|StringLiteralExpr1,BLANK
+[0.0165] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,trim
+
+topk terminals for sub-token: trim
+['string', '[]', 'string', '[]', 'METHOD_NAME', '[]', '[]', '0', 'METHOD_NAME', '[]', 'string', 'METHOD_NAME', 'line', '[]', 'METHOD_NAME', 'string', '[]', 'BLANK', 'int', 'trim']
+
+topk path-contexts for sub-token: line
+[0.0513] line,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0405] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0404] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,line
+[0.0342] line,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.0303] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0277] line,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|StringLiteralExpr1,BLANK
+[0.0237] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|ArrayAccessExpr0|NameExpr0,line
+[0.0219] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|StringLiteralExpr1,BLANK
+[0.0188] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0185] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|StringLiteralExpr1,BLANK
+
+topk terminals for sub-token: line
+['line', 'string', 'METHOD_NAME', 'string', 'METHOD_NAME', 'line', 'line', '[]', 'string', '[]', 'line', 'BLANK', 'int', 'line', '[]', 'BLANK', 'METHOD_NAME', '[]', 'string', 'BLANK']
+

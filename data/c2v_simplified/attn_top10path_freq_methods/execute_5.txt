@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+
+topk path-contexts:
+[0.0800] metadata,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),tuple
+[0.0575] url,(VariableDeclaratorId0)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),statusstreamname
+[0.0499] tuple,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(FieldAccessExpr3)_(NameExpr0),status
+[0.0496] digitalpebble,(NameExpr2)^(FieldAccessExpr0)^(FieldAccessExpr0)^(FieldAccessExpr0)^(FieldAccessExpr2)_(NameExpr2),statusstreamname
+[0.0458] metadata,(ClassOrInterfaceType0)^(CastExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),emit
+[0.0447] url,(StringLiteralExpr2)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),collector
+[0.0444] stormcrawler,(NameExpr2)^(FieldAccessExpr0)^(FieldAccessExpr0)^(FieldAccessExpr2)^(MethodCallExpr)_(NameExpr3),tuple
+[0.0343] metadata,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),emit
+[0.0274] string,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),values
+[0.0262] digitalpebble,(NameExpr2)^(FieldAccessExpr0)^(FieldAccessExpr0)_(NameExpr2),stormcrawler
+
+topk terminals:
+['metadata', 'tuple', 'url', 'statusstreamname', 'tuple', 'status', 'digitalpebble', 'statusstreamname', 'metadata', 'emit', 'url', 'collector', 'stormcrawler', 'tuple', 'metadata', 'emit', 'string', 'values', 'digitalpebble', 'stormcrawler']
+

@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/http/src/main/java/org/kaazing/gateway/transport/http/bridge/filter/HttpHeaderDecodingState_initHeaders.java
+method_name = initHeaders
+method_body = private void initHeaders() { headers = new TreeMap<>(HttpHeaderNameComparator.INSTANCE); }
+
+topk path-contexts for sub-token: init
+[0.2043] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0889] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,headers
+[0.0730] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,headers
+[0.0641] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0411] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0379] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,instance
+[0.0283] headers,NameExpr0|AssignExpr:assign|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0277] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,instance
+[0.0123] http|header|name|comparator,NameExpr0|FieldAccessExpr|NameExpr2,instance
+[0.0101] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|FieldAccessExpr1|NameExpr0,http|header|name|comparator
+
+topk terminals for sub-token: init
+['void', 'METHOD_NAME', 'void', 'headers', 'METHOD_NAME', 'headers', 'void', 'tree|map', 'METHOD_NAME', 'tree|map', 'void', 'instance', 'headers', 'tree|map', 'METHOD_NAME', 'instance', 'http|header|name|comparator', 'instance', 'void', 'http|header|name|comparator']
+
+topk path-contexts for sub-token: headers
+[0.2320] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,headers
+[0.2050] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,headers
+[0.0949] headers,NameExpr0|AssignExpr:assign|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0521] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0361] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0338] headers,NameExpr0|AssignExpr:assign|ObjectCreationExpr|FieldAccessExpr1|NameExpr0,http|header|name|comparator
+[0.0271] tree|map,ClassOrInterfaceType0|ObjectCreationExpr1|FieldAccessExpr1|NameExpr0,http|header|name|comparator
+[0.0216] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,tree|map
+[0.0195] headers,NameExpr0|AssignExpr:assign|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,instance
+[0.0193] http|header|name|comparator,NameExpr0|FieldAccessExpr|NameExpr2,instance
+
+topk terminals for sub-token: headers
+['void', 'headers', 'METHOD_NAME', 'headers', 'headers', 'tree|map', 'void', 'METHOD_NAME', 'void', 'tree|map', 'headers', 'http|header|name|comparator', 'tree|map', 'http|header|name|comparator', 'METHOD_NAME', 'tree|map', 'headers', 'instance', 'http|header|name|comparator', 'instance']
+

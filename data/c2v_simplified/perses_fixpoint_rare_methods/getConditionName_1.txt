@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-console/src/main/java/com/sun/identity/console/policy/ConditionOpViewBeanBase_getConditionName.java
+method_name = getConditionName
+method_body = private String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); conditionName = conditionName.trim(); if (conditionName.length() == 0) { setInlineAlertMessage(CCAlert.TYPE_ERROR, "message.error", "policy.missing.conditionName"); conditionName = null; } return conditionName; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:16:46.895312", "score": "0.3356", "loss": "2.9438", "code": "class T { private String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); conditionName = conditionName.trim(); if (conditionName.length() == 0) { setInlineAlertMessage(CCAlert.TYPE_ERROR, \"message.error\", \"policy.missing.conditionName\"); conditionName = null; } return conditionName; } }"}
+{"time": "2021-01-24 19:20:28.116376", "score": "0.4553", "loss": "1.7137", "code": "class T { private String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); conditionName = conditionName.trim(); } }"}
+{"time": "2021-01-24 19:21:43.548699", "score": "0.3013", "loss": "2.3907", "code": "class T { private String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); } }"}
+{"time": "2021-01-24 19:26:17.302243", "score": "0.3013", "loss": "2.3907", "code": "class T { String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); } }"}
+
+Minimal simplified code:
+class T {
+        String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME);                                                                                                                                                                                                                    }
+}
+
+

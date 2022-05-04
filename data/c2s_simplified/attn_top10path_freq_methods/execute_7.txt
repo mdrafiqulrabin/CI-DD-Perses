@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/JKStatusUpdateTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); checkParameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }
+
+topk path-contexts for sub-token: execute
+[0.6862] super,SuperExpr0|MethodCallExpr|NameExpr2,execute
+[0.0455] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0369] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,execute
+[0.0326] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0236] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,execute
+[0.0152] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,create|link
+[0.0128] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,create|link
+[0.0097] string|builder,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,create|link
+[0.0095] sb,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr1,create|link
+[0.0095] sb,NameExpr0|MethodCallExpr1|NameExpr2,to|string
+
+topk terminals for sub-token: execute
+['super', 'execute', 'build|exception', 'execute', 'build|exception', 'execute', 'METHOD_NAME', 'execute', 'METHOD_NAME', 'execute', 'build|exception', 'create|link', 'METHOD_NAME', 'create|link', 'string|builder', 'create|link', 'sb', 'create|link', 'sb', 'to|string']
+

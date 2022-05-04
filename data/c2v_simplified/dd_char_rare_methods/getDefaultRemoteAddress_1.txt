@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/service/AbstractIoConnector_getDefaultRemoteAddress.java
+method_name = getDefaultRemoteAddress
+method_body = public SocketAddress getDefaultRemoteAddress() { return defaultRemoteAddress; }
+predict, score, loss = getDefaultRemoteAddress, 0.4302618205547333, 1.3442668914794922
+
+Trace of simplified code(s):
+{"time": "2021-01-23 15:49:47.470202", "n_pass": [1, 1, 1], "score": "0.4303", "loss": "1.3443", "code": "public SocketAddress getDefaultRemoteAddress() { return defaultRemoteAddress; }"}
+{"time": "2021-01-23 15:52:01.151380", "n_pass": [234, 45, 2], "score": "0.4303", "loss": "1.3443", "code": "public SocketAddress getDefaultRemoteAddress(){ return defaultRemoteAddress; }"}
+{"time": "2021-01-23 15:52:03.779649", "n_pass": [236, 46, 3], "score": "0.4303", "loss": "1.3443", "code": "public SocketAddress getDefaultRemoteAddress(){return defaultRemoteAddress; }"}
+{"time": "2021-01-23 15:54:09.356181", "n_pass": [345, 90, 4], "score": "0.4303", "loss": "1.3443", "code": "public SocketAddress getDefaultRemoteAddress(){return defaultRemoteAddress;}"}
+
+Minimal simplified code:
+public SocketAddress getDefaultRemoteAddress(){return defaultRemoteAddress;}
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-cloud__spring-cloud-function/spring-cloud-function-compiler/src/main/java/org/springframework/cloud/function/compiler/java/MavenSettings_createMirrorSelector.java
+method_name = createMirrorSelector
+method_body = private MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId(), mirror.getUrl(), mirror.getLayout(), false, mirror.getMirrorOf(), mirror.getMirrorOfLayouts()); } return selector; }
+
+topk path-contexts for sub-token: create
+[0.0333] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+[0.0305] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|id
+[0.0275] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr3|NameExpr2,get|layout
+[0.0261] mirror|selector,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0229] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr3|NameExpr2,get|mirror|of|layouts
+[0.0217] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr3|NameExpr2,get|url
+[0.0177] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|BooleanLiteralExpr3,false
+[0.0176] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|MethodCallExpr1|NameExpr2,get|mirrors
+[0.0162] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0154] settings,NameExpr0|MethodCallExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr3|NameExpr2,get|mirror|of|layouts
+
+topk terminals for sub-token: create
+['METHOD_NAME', 'selector', 'METHOD_NAME', 'get|id', 'METHOD_NAME', 'get|layout', 'mirror|selector', 'METHOD_NAME', 'METHOD_NAME', 'get|mirror|of|layouts', 'METHOD_NAME', 'get|url', 'METHOD_NAME', 'false', 'METHOD_NAME', 'get|mirrors', 'METHOD_NAME', 'default|mirror|selector', 'settings', 'get|mirror|of|layouts']
+
+topk path-contexts for sub-token: mirror
+[0.1061] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0745] settings,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0680] settings,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0600] mirror|selector,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0370] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0353] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+[0.0307] selector,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0230] settings,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+[0.0211] settings,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+[0.0204] default|mirror|selector,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+
+topk terminals for sub-token: mirror
+['METHOD_NAME', 'default|mirror|selector', 'settings', 'default|mirror|selector', 'settings', 'default|mirror|selector', 'mirror|selector', 'METHOD_NAME', 'METHOD_NAME', 'default|mirror|selector', 'METHOD_NAME', 'selector', 'selector', 'default|mirror|selector', 'settings', 'selector', 'settings', 'selector', 'default|mirror|selector', 'default|mirror|selector']
+
+topk path-contexts for sub-token: selector
+[0.1606] mirror|selector,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1152] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0536] settings,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0535] settings,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0411] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0340] selector,VariableDeclaratorId0|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0213] default|mirror|selector,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,default|mirror|selector
+[0.0206] mirror|selector,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,settings
+[0.0178] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+[0.0173] settings,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,selector
+
+topk terminals for sub-token: selector
+['mirror|selector', 'METHOD_NAME', 'METHOD_NAME', 'default|mirror|selector', 'settings', 'default|mirror|selector', 'settings', 'default|mirror|selector', 'METHOD_NAME', 'default|mirror|selector', 'selector', 'default|mirror|selector', 'default|mirror|selector', 'default|mirror|selector', 'mirror|selector', 'settings', 'METHOD_NAME', 'selector', 'settings', 'selector']
+

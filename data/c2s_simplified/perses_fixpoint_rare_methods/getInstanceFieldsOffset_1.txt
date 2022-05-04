@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/dexbacked/DexBackedClassDef_getInstanceFieldsOffset.java
+method_name = getInstanceFieldsOffset
+method_body = private int getInstanceFieldsOffset() { if (instanceFieldsOffset > 0) { return instanceFieldsOffset; } DexReader reader = new DexReader(dexFile, staticFieldsOffset); DexBackedField.skipFields(reader, staticFieldCount); instanceFieldsOffset = reader.getOffset(); return instanceFieldsOffset; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:11:47.613741", "score": "0.4904", "loss": "1.6183", "code": "class T { private int getInstanceFieldsOffset() { if (instanceFieldsOffset > 0) { return instanceFieldsOffset; } DexReader reader = new DexReader(dexFile, staticFieldsOffset); DexBackedField.skipFields(reader, staticFieldCount); instanceFieldsOffset = reader.getOffset(); return instanceFieldsOffset; } }"}
+{"time": "2021-01-24 07:12:25.238764", "score": "0.9898", "loss": "0.3175", "code": "class T { private int getInstanceFieldsOffset() { return instanceFieldsOffset; } }"}
+{"time": "2021-01-24 07:12:57.189572", "score": "0.9898", "loss": "0.3175", "code": "class T { int getInstanceFieldsOffset() { return instanceFieldsOffset; } }"}
+
+Minimal simplified code:
+class T {
+        int getInstanceFieldsOffset()                                 { return instanceFieldsOffset; }
+}
+
+

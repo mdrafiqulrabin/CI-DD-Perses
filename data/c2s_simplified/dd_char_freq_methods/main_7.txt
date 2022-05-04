@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/anbud__MarkovComposer/src/rs/zx/ml/MLMain_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }
+predict, score, loss = main, 0.99993336, 0.00020538658
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:32:27.473557", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0002", "code": "public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:29.606861", "n_pass": [24, 2, 2], "score": "1.0", "loss": "0.0001", "code": "public static void main(String[] args) { try { UIManager.setLookAndFeel(UIMaAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:31.377578", "n_pass": [46, 3, 3], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) { try { UIManager.setLookAndFeel(UIMassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:32.758118", "n_pass": [53, 4, 4], "score": "0.9995", "loss": "0.0008", "code": "public st main(String[] args) { try { UIManager.setLookAndFeel(UIMassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:34.119560", "n_pass": [58, 5, 5], "score": "0.9977", "loss": "0.0042", "code": "public st main(String[] args) { try { UIManagendFeel(UIMassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:35.858860", "n_pass": [92, 6, 6], "score": "0.9982", "loss": "0.0041", "code": "public st main(String[] args) { try { UIManagel(UIMassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:37.214037", "n_pass": [93, 7, 7], "score": "0.9982", "loss": "0.0046", "code": "public st main(String[] args) { try { UIManagel(UIMme()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:38.601754", "n_pass": [98, 8, 8], "score": "0.9966", "loss": "0.0078", "code": "public st main(String[] args) { try { UIManagel(UIMme()); } catch (Exce e) { } new GUI(); }"}
+{"time": "2020-12-28 00:32:39.929502", "n_pass": [101, 9, 9], "score": "0.8024", "loss": "0.3445", "code": "public st main(String[] args) { try { UIManagel(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:41.269781", "n_pass": [104, 10, 10], "score": "0.8171", "loss": "0.3093", "code": "publt main(String[] args) { try { UIManagel(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:42.985462", "n_pass": [107, 11, 11], "score": "0.7338", "loss": "0.4718", "code": "publt main(S[] args) { try { UIManagel(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:44.326538", "n_pass": [112, 12, 12], "score": "0.8759", "loss": "0.2653", "code": "publt main(S[] args) { try { UIMl(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:45.664572", "n_pass": [121, 13, 13], "score": "0.8737", "loss": "0.2823", "code": "t main(S[] args) { try { UIMl(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:52.508733", "n_pass": [176, 17, 14], "score": "0.5915", "loss": "1.0179", "code": "t main(S[] args) { try {IMl(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:53.895138", "n_pass": [177, 18, 15], "score": "0.3764", "loss": "1.5068", "code": "t main(S[] args) { try {l(UIMme()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:56.597910", "n_pass": [180, 20, 16], "score": "0.3754", "loss": "1.5466", "code": "t main(S[] args) { try {l(UI()); } catch (Exce e) { } ne(); }"}
+{"time": "2020-12-28 00:32:57.952772", "n_pass": [186, 21, 17], "score": "0.5204", "loss": "1.1296", "code": "t main(S[] args) { try {l(UI()); } catch (E e) { } ne(); }"}
+{"time": "2020-12-28 00:33:08.500776", "n_pass": [265, 26, 18], "score": "0.2727", "loss": "1.8127", "code": "t main(S[] args) { try {l(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:12.116879", "n_pass": [279, 27, 19], "score": "0.2727", "loss": "1.8127", "code": "t main(S[]args) { try {l(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:18.843733", "n_pass": [285, 32, 20], "score": "0.2727", "loss": "1.8127", "code": "t main(S[]args){ try {l(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:20.183066", "n_pass": [287, 33, 21], "score": "0.2727", "loss": "1.8127", "code": "t main(S[]args){try {l(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:21.535136", "n_pass": [291, 34, 22], "score": "0.2727", "loss": "1.8127", "code": "t main(S[]args){try{l(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:22.888973", "n_pass": [293, 35, 23], "score": "0.8573", "loss": "0.3538", "code": "t main(S[]args){try{(UI()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:24.239934", "n_pass": [295, 36, 24], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I()); } catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:25.596864", "n_pass": [301, 37, 25], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());} catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:26.948803", "n_pass": [303, 38, 26], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());}catch (E e) { }e(); }"}
+{"time": "2020-12-28 00:33:38.106680", "n_pass": [366, 43, 27], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());}catch (E e){ }e(); }"}
+{"time": "2020-12-28 00:33:39.428545", "n_pass": [367, 44, 28], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());}catch (E e){}e(); }"}
+{"time": "2020-12-28 00:33:40.779523", "n_pass": [373, 45, 29], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());}catch (E e){}e();}"}
+{"time": "2020-12-28 00:33:49.683597", "n_pass": [407, 50, 30], "score": "0.5883", "loss": "1.0065", "code": "t main(S[]args){try{(I());}catch(E e){}e();}"}
+
+Minimal simplified code:
+t main(S[]args){try{(I());}catch(E e){}e();}
+

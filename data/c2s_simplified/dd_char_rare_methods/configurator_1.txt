@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/javax/websocket/server/ServerEndpointConfig_configurator.java
+method_name = configurator
+method_body = public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; }
+predict, score, loss = configurator, 0.44954807, 1.9112473
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:27:57.083496", "n_pass": [1, 1, 1], "score": "0.4495", "loss": "1.9112", "code": "public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configurator = Configurator.fetchContainerDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; }"}
+{"time": "2021-01-23 09:27:59.736505", "n_pass": [24, 3, 2], "score": "0.6813", "loss": "1.3575", "code": "public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configuratDefaultConfigurator(); } else { this.configurator = serverEndpointConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:01.048657", "n_pass": [25, 4, 3], "score": "0.7775", "loss": "1.5002", "code": "public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configuratDefaultConfigurator(); } else { ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:02.367061", "n_pass": [31, 5, 4], "score": "0.607", "loss": "1.5668", "code": "public Builder configurator(Configurator serverEndpointConfigurator) { if (serverEndpointConfigurator == null) { this.configuratntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:04.053677", "n_pass": [51, 6, 5], "score": "0.3613", "loss": "1.7156", "code": "public Builder configurator(Configurator serverEtor) { if (serverEndpointConfigurator == null) { this.configuratntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:06.675279", "n_pass": [55, 8, 6], "score": "0.2649", "loss": "1.9553", "code": "public Builder configurator(Configurator serverEtor) { if (serverEndpointConfigurator == null) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:15.635641", "n_pass": [92, 14, 7], "score": "0.2453", "loss": "2.0325", "code": "public Builder configurator(Configurator serverEtor) { if (servetConfigurator == null) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:25.548887", "n_pass": [141, 21, 8], "score": "0.2874", "loss": "1.7652", "code": "public Builder configurator(Configurator serverEtor) { if (servetConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:32.070756", "n_pass": [151, 26, 9], "score": "0.27", "loss": "1.9312", "code": "publuilder configurator(Configurator serverEtor) { if (servetConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:33.355663", "n_pass": [152, 27, 10], "score": "0.27", "loss": "1.9312", "code": "publer configurator(Configurator serverEtor) { if (servetConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:40.940092", "n_pass": [165, 32, 11], "score": "0.4891", "loss": "1.2704", "code": "publer configurator(Configurator serverEtor) { if (stConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:52.689193", "n_pass": [179, 41, 12], "score": "0.5671", "loss": "1.1471", "code": "er configurator(Configurator serverEtor) { if (stConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:28:59.023129", "n_pass": [188, 45, 13], "score": "0.4641", "loss": "1.4633", "code": "er configurator(Configurator sertor) { if (stConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:29:16.107158", "n_pass": [261, 57, 14], "score": "0.316", "loss": "1.8964", "code": "er configurator(Configurator serr) { if (stConfigurator ==l) {ntConfigurator; } return this; }"}
+{"time": "2021-01-23 09:29:26.481917", "n_pass": [276, 65, 15], "score": "0.7152", "loss": "0.6176", "code": "er configurator(Configurator serr) { if (stConfigurator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:48.585496", "n_pass": [307, 80, 16], "score": "0.7491", "loss": "0.5084", "code": "er configurator(Configurator sr) { if (stConfigurator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:49.883113", "n_pass": [313, 81, 17], "score": "0.3948", "loss": "1.4874", "code": "er configurator(Configurator sr) { if (sonfigurator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:51.178725", "n_pass": [314, 82, 18], "score": "0.3948", "loss": "1.4874", "code": "er configurator(Configurator sr) { if (sfigurator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:52.478643", "n_pass": [315, 83, 19], "score": "0.3948", "loss": "1.4874", "code": "er configurator(Configurator sr) { if (sgurator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:53.792342", "n_pass": [316, 84, 20], "score": "0.3948", "loss": "1.4874", "code": "er configurator(Configurator sr) { if (srator ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:56.410582", "n_pass": [318, 86, 21], "score": "0.3948", "loss": "1.4874", "code": "er configurator(Configurator sr) { if (srar ==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:57.704032", "n_pass": [319, 87, 22], "score": "0.7272", "loss": "0.6198", "code": "er configurator(Configurator sr) { if (sra==l) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:29:59.003369", "n_pass": [320, 88, 23], "score": "0.5269", "loss": "1.1609", "code": "er configurator(Configurator sr) { if (sral) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:30:21.114274", "n_pass": [358, 103, 24], "score": "0.6927", "loss": "0.6341", "code": "er configurator(Configurator sr) { if (sl) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:30:47.246217", "n_pass": [470, 118, 25], "score": "0.6433", "loss": "0.8354", "code": "er configurator(Configurator sr) { if (s) {Configurator; } return this; }"}
+{"time": "2021-01-23 09:30:48.543905", "n_pass": [471, 119, 26], "score": "0.6433", "loss": "0.8354", "code": "er configurator(Configurator sr) { if (s){Configurator; } return this; }"}
+{"time": "2021-01-23 09:31:05.380661", "n_pass": [486, 132, 27], "score": "0.6433", "loss": "0.8354", "code": "er configurator(Configurator sr) { if (s){Configurator;} return this; }"}
+{"time": "2021-01-23 09:31:06.684567", "n_pass": [488, 133, 28], "score": "0.6433", "loss": "0.8354", "code": "er configurator(Configurator sr) { if (s){Configurator;}return this; }"}
+{"time": "2021-01-23 09:31:14.525002", "n_pass": [501, 139, 29], "score": "0.6433", "loss": "0.8354", "code": "er configurator(Configurator sr) { if (s){Configurator;}return this;}"}
+{"time": "2021-01-23 09:31:15.854733", "n_pass": [503, 140, 30], "score": "0.6143", "loss": "0.8838", "code": "r configurator(Configurator sr) { if (s){Configurator;}return this;}"}
+{"time": "2021-01-23 09:31:37.949589", "n_pass": [532, 153, 31], "score": "0.3318", "loss": "1.631", "code": "r configurator(Configurator r) { if (s){Configurator;}return this;}"}
+{"time": "2021-01-23 09:31:39.251397", "n_pass": [535, 154, 32], "score": "0.3318", "loss": "1.631", "code": "r configurator(Configurator r){ if (s){Configurator;}return this;}"}
+{"time": "2021-01-23 09:31:40.570377", "n_pass": [537, 155, 33], "score": "0.3318", "loss": "1.631", "code": "r configurator(Configurator r){if (s){Configurator;}return this;}"}
+{"time": "2021-01-23 09:31:41.897154", "n_pass": [540, 156, 34], "score": "0.3318", "loss": "1.631", "code": "r configurator(Configurator r){if(s){Configurator;}return this;}"}
+
+Minimal simplified code:
+r configurator(Configurator r){if(s){Configurator;}return this;}
+

@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslUtils_get.java
+method_name = get
+method_body = @SuppressWarnings("unchecked") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); Field field = clazz.getField(name); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { throw new IllegalStateException("failed get field " + path + "." + name, e); } }
+predict, score, loss = getField, 0.95724565, 4.1080236
+
+Ignoring as original_method_name != predicted_method_name.
+

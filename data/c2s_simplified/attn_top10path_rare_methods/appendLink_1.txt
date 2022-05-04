@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/rwiki/rwiki-util/radeox/src/test/java/org/radeox/test/filter/mock/MockOldWikiRenderEngine_appendLink.java
+method_name = appendLink
+method_body = public void appendLink(StringBuffer buffer, String name, String view) { buffer.append("link:" + view); }
+
+topk path-contexts for sub-token: append
+[0.0846] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0846] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0765] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0628] link,StringLiteralExpr0|BinaryExpr:plus2|MethodCallExpr|NameExpr3,append
+[0.0470] view,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0439] link,StringLiteralExpr0|BinaryExpr:plus2|NameExpr1,view
+[0.0375] buffer,NameExpr0|MethodCallExpr|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0347] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,append
+[0.0327] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,append
+[0.0327] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,append
+
+topk terminals for sub-token: append
+['string', 'link', 'string', 'link', 'name', 'link', 'link', 'append', 'view', 'link', 'link', 'view', 'buffer', 'link', 'name', 'append', 'string', 'append', 'string', 'append']
+
+topk path-contexts for sub-token: link
+[0.1748] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.1195] view,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.1194] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.1194] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr0,link
+[0.1078] buffer,NameExpr0|MethodCallExpr|BinaryExpr:plus|StringLiteralExpr0,link
+[0.0638] link,StringLiteralExpr0|BinaryExpr:plus2|NameExpr1,view
+[0.0368] link,StringLiteralExpr0|BinaryExpr:plus2|MethodCallExpr|NameExpr3,append
+[0.0208] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,name
+[0.0107] name,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0105] view,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: link
+['name', 'link', 'view', 'link', 'string', 'link', 'string', 'link', 'buffer', 'link', 'link', 'view', 'link', 'append', 'METHOD_NAME', 'name', 'name', 'string', 'view', 'string']
+

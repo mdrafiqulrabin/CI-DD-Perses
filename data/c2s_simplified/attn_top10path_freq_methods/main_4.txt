@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/NioSenderTest_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }
+
+topk path-contexts for sub-token: main
+[0.3755] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1597] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0885] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0563] args,VariableDeclaratorId0|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0380] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,init
+[0.0327] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,run
+[0.0252] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,sender
+[0.0252] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,sender
+[0.0138] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,sender
+[0.0107] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,init
+
+topk terminals for sub-token: main
+['args', '[]', 'args', 'string', 'string', '[]', 'args', 'exception', 'args', 'init', 'args', 'run', 'args', 'sender', 'args', 'sender', 'args', 'sender', '[]', 'init']
+

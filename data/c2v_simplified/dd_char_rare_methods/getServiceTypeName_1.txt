@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/policy/Rule_getServiceTypeName.java
+method_name = getServiceTypeName
+method_body = public String getServiceTypeName() { return (serviceTypeName); }
+predict, score, loss = getServiceTypeName, 0.4638536274433136, 0.824105978012085
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:14:55.651546", "n_pass": [1, 1, 1], "score": "0.4639", "loss": "0.8241", "code": "public String getServiceTypeName() { return (serviceTypeName); }"}
+{"time": "2021-01-23 18:14:59.045750", "n_pass": [20, 2, 2], "score": "0.4328", "loss": "2.0479", "code": "tring getServiceTypeName() { return (serviceTypeName); }"}
+{"time": "2021-01-23 18:15:05.027135", "n_pass": [41, 4, 3], "score": "0.7384", "loss": "0.4384", "code": "g getServiceTypeName() { return (serviceTypeName); }"}
+{"time": "2021-01-23 18:16:04.738343", "n_pass": [180, 21, 4], "score": "0.7384", "loss": "0.4384", "code": "g getServiceTypeName(){ return (serviceTypeName); }"}
+{"time": "2021-01-23 18:16:07.317436", "n_pass": [181, 22, 5], "score": "0.7384", "loss": "0.4384", "code": "g getServiceTypeName(){return (serviceTypeName); }"}
+{"time": "2021-01-23 18:16:25.584190", "n_pass": [188, 29, 6], "score": "0.7384", "loss": "0.4384", "code": "g getServiceTypeName(){return(serviceTypeName); }"}
+{"time": "2021-01-23 18:17:06.960636", "n_pass": [207, 45, 7], "score": "0.7384", "loss": "0.4384", "code": "g getServiceTypeName(){return(serviceTypeName);}"}
+
+Minimal simplified code:
+g getServiceTypeName(){return(serviceTypeName);}
+

@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/SelectNode_getHavingClause.java
+method_name = getHavingClause
+method_body = public ValueNode getHavingClause() { return havingClause; }
+
+topk path-contexts:
+[0.6006] valuenode,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),havingclause
+[0.2596] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),havingclause
+[0.1397] valuenode,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['valuenode', 'havingclause', 'METHOD_NAME', 'havingclause', 'valuenode', 'METHOD_NAME']
+

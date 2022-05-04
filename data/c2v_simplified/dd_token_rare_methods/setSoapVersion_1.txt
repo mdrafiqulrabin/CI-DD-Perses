@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/sandbox/src/main/java/org/springframework/ws/soap/stroap/StroapMessageFactory_setSoapVersion.java
+method_name = setSoapVersion
+method_body = public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }
+predict, score, loss = setSoapVersion, 0.4846594035625458, 1.1102477312088013
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:53:13.996696", "n_pass": [1, 1, 1], "score": "0.4847", "loss": "1.1102", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:19.655799", "n_pass": [44, 3, 2], "score": "0.4847", "loss": "1.1102", "code": "void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:22.684948", "n_pass": [53, 4, 3], "score": "0.5622", "loss": "0.8134", "code": "void setSoapVersion(SoapVersion version) { if (version != SoapVersion11) { throw new UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:25.318243", "n_pass": [56, 5, 4], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version) { if (version != SoapVersion11) {  UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:31.031808", "n_pass": [97, 6, 5], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version) { if (version != SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:34.479946", "n_pass": [110, 7, 6], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version){ if (version != SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:37.103558", "n_pass": [112, 8, 7], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version){if (version != SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:39.738803", "n_pass": [114, 9, 8], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version){if(version != SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:42.378201", "n_pass": [117, 10, 9], "score": "0.6188", "loss": "0.7233", "code": "void setSoapVersion(SoapVersion version){if(version!= SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:45.018693", "n_pass": [118, 11, 10], "score": "0.6548", "loss": "0.7977", "code": "void setSoapVersion(SoapVersion version){if(version= SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:47.638791", "n_pass": [119, 12, 11], "score": "0.5108", "loss": "2.0343", "code": "void setSoapVersion(SoapVersion version){if(versionSoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:53.693634", "n_pass": [138, 14, 12], "score": "0.6697", "loss": "0.6337", "code": "void setSoapVersion(SoapVersion version){if(SoapVersion11) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:53:56.336183", "n_pass": [139, 15, 13], "score": "0.5824", "loss": "1.4633", "code": "void setSoapVersion(SoapVersion version){if(1) {UnsupportedOperationException(); } }"}
+{"time": "2021-01-20 07:54:01.300881", "n_pass": [174, 16, 14], "score": "0.5824", "loss": "1.4633", "code": "void setSoapVersion(SoapVersion version){if(1) {UnsupportedOperationException();} }"}
+{"time": "2021-01-20 07:54:03.917615", "n_pass": [175, 17, 15], "score": "0.5824", "loss": "1.4633", "code": "void setSoapVersion(SoapVersion version){if(1) {UnsupportedOperationException();}}"}
+{"time": "2021-01-20 07:54:07.354816", "n_pass": [190, 18, 16], "score": "0.5824", "loss": "1.4633", "code": "void setSoapVersion(SoapVersion version){if(1){UnsupportedOperationException();}}"}
+
+Minimal simplified code:
+void setSoapVersion(SoapVersion version){if(1){UnsupportedOperationException();}}
+

@@ -1,0 +1,66 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/authenticator/TestNonLoginAndBasicAuthenticator_setAlwaysUseSession.java
+method_name = setAlwaysUseSession
+method_body = private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }
+
+topk path-contexts for sub-token: set
+[0.0852] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0522] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BooleanLiteralExpr2,true
+[0.0522] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BooleanLiteralExpr2,true
+[0.0449] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BooleanLiteralExpr2,true
+[0.0449] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BooleanLiteralExpr2,true
+[0.0347] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0347] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0345] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0345] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0257] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|EnclosedExpr|CastExpr|MethodCallExpr1|NameExpr0,nonlogin|context
+
+topk terminals for sub-token: set
+['void', 'METHOD_NAME', 'void', 'true', 'void', 'true', 'METHOD_NAME', 'true', 'METHOD_NAME', 'true', 'void', 'set|always|use|session', 'void', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'void', 'nonlogin|context']
+
+topk path-contexts for sub-token: always
+[0.0517] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0517] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0517] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0517] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0460] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0460] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0387] set|always|use|session,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0328] authenticator|base,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0287] true,BooleanLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0282] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: always
+['void', 'set|always|use|session', 'void', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'true', 'set|always|use|session', 'true', 'set|always|use|session', 'set|always|use|session', 'set|always|use|session', 'authenticator|base', 'set|always|use|session', 'true', 'set|always|use|session', 'void', 'METHOD_NAME']
+
+topk path-contexts for sub-token: use
+[0.0967] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0967] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0808] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0808] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0800] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0800] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0547] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0506] true,BooleanLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0358] authenticator|base,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0350] set|always|use|session,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+
+topk terminals for sub-token: use
+['true', 'set|always|use|session', 'true', 'set|always|use|session', 'void', 'set|always|use|session', 'void', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'void', 'METHOD_NAME', 'true', 'set|always|use|session', 'authenticator|base', 'set|always|use|session', 'set|always|use|session', 'set|always|use|session']
+
+topk path-contexts for sub-token: session
+[0.0851] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0851] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0848] authenticator|base,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0829] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0829] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0795] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0795] true,BooleanLiteralExpr2|MethodCallExpr|NameExpr3,set|always|use|session
+[0.0595] set|always|use|session,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0534] true,BooleanLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|always|use|session
+[0.0254] authenticator|base,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|BooleanLiteralExpr2,true
+[0.0254] authenticator|base,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|BooleanLiteralExpr2,true
+
+topk terminals for sub-token: session
+['void', 'set|always|use|session', 'void', 'set|always|use|session', 'authenticator|base', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'METHOD_NAME', 'set|always|use|session', 'true', 'set|always|use|session', 'true', 'set|always|use|session', 'set|always|use|session', 'set|always|use|session', 'true', 'set|always|use|session', 'authenticator|base', 'true', 'authenticator|base', 'true']
+

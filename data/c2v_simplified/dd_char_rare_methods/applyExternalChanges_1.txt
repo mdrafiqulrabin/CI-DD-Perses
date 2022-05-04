@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole/src/main/java/org/apache/guacamole/rest/user/UserObjectTranslator_applyExternalChanges.java
+method_name = applyExternalChanges
+method_body = @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }
+predict, score, loss = applyExternalChanges, 0.40695708990097046, 2.5797247886657715
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:12:52.946118", "n_pass": [1, 1, 1], "score": "0.407", "loss": "2.5797", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-23 19:12:55.591314", "n_pass": [10, 2, 2], "score": "0.4485", "loss": "2.4828", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPrd()); existingObject.setAttributes(object.getAttributes()); }"}
+{"time": "2021-01-23 19:12:58.619644", "n_pass": [38, 3, 3], "score": "0.2311", "loss": "3.5455", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPrd()); existinbutes(object.getAttributes()); }"}
+{"time": "2021-01-23 19:13:06.876418", "n_pass": [73, 6, 4], "score": "0.2552", "loss": "3.341", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPrd()); existinbutes(obAttributes()); }"}
+{"time": "2021-01-23 19:13:09.494989", "n_pass": [74, 7, 5], "score": "0.2552", "loss": "3.341", "code": "@Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPrd()); existinbutes(obes()); }"}
+{"time": "2021-01-23 19:13:12.113430", "n_pass": [77, 8, 6], "score": "0.255", "loss": "3.3446", "code": "@Overriic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPrd()); existinbutes(obes()); }"}
+{"time": "2021-01-23 19:13:24.226380", "n_pass": [91, 12, 7], "score": "0.2638", "loss": "3.3957", "code": "@Overriic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd()); existinbutes(obes()); }"}
+{"time": "2021-01-23 19:13:26.832025", "n_pass": [93, 13, 8], "score": "0.2638", "loss": "3.3957", "code": "@Overriic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd());butes(obes()); }"}
+{"time": "2021-01-23 19:13:38.892947", "n_pass": [145, 17, 9], "score": "0.2774", "loss": "3.2708", "code": "@Overriic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd());s(obes()); }"}
+{"time": "2021-01-23 19:13:41.499575", "n_pass": [146, 18, 10], "score": "0.2678", "loss": "3.1436", "code": "@Overriic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd());s(ob); }"}
+{"time": "2021-01-23 19:13:44.110449", "n_pass": [149, 19, 11], "score": "0.2678", "loss": "3.1436", "code": "@Oviic void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd());s(ob); }"}
+{"time": "2021-01-23 19:13:46.720607", "n_pass": [150, 20, 12], "score": "0.2237", "loss": "3.7234", "code": "@Ov void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (otPrd());s(ob); }"}
+{"time": "2021-01-23 19:14:15.723074", "n_pass": [176, 30, 13], "score": "0.2221", "loss": "3.723", "code": "@Ov void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (o());s(ob); }"}
+{"time": "2021-01-23 19:14:47.679553", "n_pass": [264, 41, 14], "score": "0.2214", "loss": "3.7208", "code": "@Ov void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (o);s(ob); }"}
+{"time": "2021-01-23 19:14:50.291548", "n_pass": [266, 42, 15], "score": "0.2278", "loss": "3.6648", "code": "@Ov void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:14:52.930951", "n_pass": [270, 43, 16], "score": "0.2704", "loss": "3.091", "code": "@v void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:05.250674", "n_pass": [286, 46, 17], "score": "0.3112", "loss": "2.9184", "code": "@v void applyExternalChanges(er existingObject, APIUser object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:23.583089", "n_pass": [296, 53, 18], "score": "0.6141", "loss": "1.0554", "code": "@v void applyExternalChanges(er existingObject,PIUser object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:26.214236", "n_pass": [297, 54, 19], "score": "0.5509", "loss": "1.1318", "code": "@v void applyExternalChanges(er existingObject,User object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:28.819190", "n_pass": [298, 55, 20], "score": "0.6256", "loss": "0.9943", "code": "@v void applyExternalChanges(er existingObject,er object) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:31.456981", "n_pass": [301, 56, 21], "score": "0.6536", "loss": "0.9551", "code": "@v void applyExternalChanges(er existingObject,er oect) throws GuacamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:36.659643", "n_pass": [308, 58, 22], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws acamoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:39.261745", "n_pass": [309, 59, 23], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws amoleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:41.885981", "n_pass": [310, 60, 24], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws oleException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:44.488457", "n_pass": [311, 61, 25], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eException { if (o);s(); }"}
+{"time": "2021-01-23 19:15:49.733578", "n_pass": [313, 63, 26], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eEeption { if (o);s(); }"}
+{"time": "2021-01-23 19:15:52.356480", "n_pass": [314, 64, 27], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eEtion { if (o);s(); }"}
+{"time": "2021-01-23 19:15:54.963165", "n_pass": [315, 65, 28], "score": "0.7593", "loss": "1.2059", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eEon { if (o);s(); }"}
+{"time": "2021-01-23 19:15:57.564042", "n_pass": [316, 66, 29], "score": "0.7301", "loss": "1.2029", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eE { if (o);s(); }"}
+{"time": "2021-01-23 19:16:00.192686", "n_pass": [318, 67, 30], "score": "0.721", "loss": "1.2962", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eE {f (o);s(); }"}
+{"time": "2021-01-23 19:16:02.793677", "n_pass": [319, 68, 31], "score": "0.7349", "loss": "1.1722", "code": "@v void applyExternalChanges(er existingObject,er oect) throws eE {(o);s(); }"}
+{"time": "2021-01-23 19:16:30.829927", "n_pass": [352, 77, 32], "score": "0.3693", "loss": "2.7296", "code": "@v void applyExternalChanges(er existingObject,er ot) throws eE {(o);s(); }"}
+{"time": "2021-01-23 19:17:02.215814", "n_pass": [464, 86, 33], "score": "0.7315", "loss": "1.1829", "code": "@v void applyExternalChanges(er existingObject,er o) throws eE {(o);s(); }"}
+{"time": "2021-01-23 19:17:04.816916", "n_pass": [465, 87, 34], "score": "0.7315", "loss": "1.1829", "code": "@v void applyExternalChanges(er existingObject,er o)throws eE {(o);s(); }"}
+{"time": "2021-01-23 19:17:07.434446", "n_pass": [473, 88, 35], "score": "0.6716", "loss": "1.3983", "code": "@v void applyExternalChanges(er existingObject,er o)throws E {(o);s(); }"}
+{"time": "2021-01-23 19:17:10.063783", "n_pass": [475, 89, 36], "score": "0.6716", "loss": "1.3983", "code": "@v void applyExternalChanges(er existingObject,er o)throws E{(o);s(); }"}
+{"time": "2021-01-23 19:17:13.089016", "n_pass": [485, 90, 37], "score": "0.6716", "loss": "1.3983", "code": "@v void applyExternalChanges(er existingObject,er o)throws E{(o);s();}"}
+{"time": "2021-01-23 19:17:35.146978", "n_pass": [516, 95, 38], "score": "0.6903", "loss": "1.35", "code": "@v void applyExternalChanges(r existingObject,er o)throws E{(o);s();}"}
+{"time": "2021-01-23 19:18:14.336134", "n_pass": [534, 110, 39], "score": "0.679", "loss": "1.437", "code": "@v void applyExternalChanges(r existingObject,r o)throws E{(o);s();}"}
+
+Minimal simplified code:
+@v void applyExternalChanges(r existingObject,r o)throws E{(o);s();}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslTupleImpl_get.java
+method_name = get
+method_body = @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException("selection " + name + " not found"); } return get(index.intValue(), clazz); }
+
+topk path-contexts:
+[0.0615] t,(TypeParameter1)^(MethodDeclaration)_(ClassOrInterfaceType2),t
+[0.0463] name,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0386] t,(ClassOrInterfaceType2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),name
+[0.0367] name,(NameExpr2)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0336] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(BinaryExpr:plus)_(BinaryExpr:plus)_(StringLiteralExpr0),selection
+[0.0318] t,(ClassOrInterfaceType2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),string
+[0.0276] t,(ClassOrInterfaceType2)^(MethodDeclaration)_(NameExpr3),METHOD_NAME
+[0.0274] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(ClassOrInterfaceType2),t
+[0.0264] t,(TypeParameter1)^(MethodDeclaration)_(NameExpr3),METHOD_NAME
+[0.0261] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+
+topk terminals:
+['t', 't', 'name', 'get', 't', 'name', 'name', 'get', 'null', 'selection', 't', 'string', 't', 'METHOD_NAME', 'override', 't', 't', 'METHOD_NAME', 'string', 'get']
+

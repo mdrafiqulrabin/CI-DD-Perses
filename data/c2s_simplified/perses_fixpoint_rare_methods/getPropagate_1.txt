@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/basiclti/tsugi-util/src/java/org/tsugi/casa/objects/Original_getPropagate.java
+method_name = getPropagate
+method_body = @JsonProperty("propagate") public Boolean getPropagate() { return propagate; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:31:59.111611", "score": "0.3744", "loss": "1.0233", "code": "class T { @JsonProperty(\"propagate\") public Boolean getPropagate() { return propagate; } }"}
+{"time": "2021-01-24 06:32:47.511344", "score": "0.3744", "loss": "1.0233", "code": "class T { @JsonProperty(\"propagate\") Boolean getPropagate() { return propagate; } }"}
+
+Minimal simplified code:
+class T {
+@JsonProperty("propagate")        Boolean getPropagate() { return propagate; }
+}
+
+

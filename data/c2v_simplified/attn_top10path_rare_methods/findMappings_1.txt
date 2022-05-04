@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/core/StandardWrapper_findMappings.java
+method_name = findMappings
+method_body = @Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }
+
+topk path-contexts:
+[0.1575] lock,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(ArrayCreationExpr)_(ClassOrInterfaceType1),string
+[0.1275] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),mappings
+[0.0857] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(ArrayCreationExpr)_(ClassOrInterfaceType1),string
+[0.0628] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),mappings
+[0.0593] mappings,(NameExpr0)^(MethodCallExpr)_(ArrayCreationExpr)_(ArrayCreationLevel)_(MethodCallExpr0)_(NameExpr0),mappings
+[0.0402] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),unlock
+[0.0373] [],(ArrayBracketPair3)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),lock
+[0.0349] lock,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),mappings
+[0.0341] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(ArrayBracketPair3),[]
+[0.0331] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),toarray
+
+topk terminals:
+['lock', 'string', '[]', 'mappings', 'METHOD_NAME', 'string', 'METHOD_NAME', 'mappings', 'mappings', 'mappings', '[]', 'unlock', '[]', 'lock', 'lock', 'mappings', 'string', '[]', 'METHOD_NAME', 'toarray']
+

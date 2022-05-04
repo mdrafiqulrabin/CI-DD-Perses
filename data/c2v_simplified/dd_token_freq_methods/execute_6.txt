@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/common/module/screen/Error_404_execute.java
+method_name = execute
+method_body = public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get("request.contextPath"); context.put("rootContextPath", new RootContextPath(contextPath)); }
+predict, score, loss = execute, 0.9999902248382568, 1.0013530300057027e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:53:36.335875", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:39.515189", "n_pass": [48, 2, 2], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String contextPath = (String) context.get(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:42.178346", "n_pass": [50, 3, 3], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String contextPath = context.get(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:44.841660", "n_pass": [51, 4, 4], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String contextPath =(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:48.002737", "n_pass": [64, 5, 5], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:51.092851", "n_pass": [102, 6, 6], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String(\"contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:53.768694", "n_pass": [106, 7, 7], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String(\"contextPath\"); context(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:56.453954", "n_pass": [110, 8, 8], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) { String(\"contextPath\"); context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:53:59.114798", "n_pass": [115, 9, 9], "score": "1.0", "loss": "0.0", "code": "void execute(Map<String, Object> context) { String(\"contextPath\"); context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:02.202871", "n_pass": [119, 10, 10], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) { String(\"contextPath\"); context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:04.879498", "n_pass": [124, 11, 11], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"contextPath\"); context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:11.577147", "n_pass": [181, 12, 12], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\"); context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:14.228389", "n_pass": [184, 13, 13], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\");context(\"rootContextPath\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:16.868398", "n_pass": [188, 14, 14], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\");context(\"\", RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:19.542579", "n_pass": [191, 15, 15], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\");context(\"\",RootContextPath(contextPath)); }"}
+{"time": "2020-12-26 22:54:24.868126", "n_pass": [194, 17, 16], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\");context(\"\",RootContextPath()); }"}
+{"time": "2020-12-26 22:54:27.527909", "n_pass": [198, 18, 17], "score": "1.0", "loss": "0.0", "code": "void execute(Map< Object> context) {(\"\");context(\"\",RootContextPath());}"}
+{"time": "2020-12-26 22:54:31.036693", "n_pass": [206, 19, 18], "score": "1.0", "loss": "0.0", "code": "void execute(Map<Object> context) {(\"\");context(\"\",RootContextPath());}"}
+{"time": "2020-12-26 22:54:33.729241", "n_pass": [209, 20, 19], "score": "1.0", "loss": "0.0", "code": "void execute(Map<Object>context) {(\"\");context(\"\",RootContextPath());}"}
+{"time": "2020-12-26 22:54:36.387684", "n_pass": [212, 21, 20], "score": "1.0", "loss": "0.0", "code": "void execute(Map<Object>context){(\"\");context(\"\",RootContextPath());}"}
+
+Minimal simplified code:
+void execute(Map<Object>context){("");context("",RootContextPath());}
+

@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/AbstractHttp11JsseProtocol_getSessionCacheSize.java
+method_name = getSessionCacheSize
+method_body = public String getSessionCacheSize() { return endpoint.getSessionCacheSize(); }
+
+topk path-contexts:
+[0.3237] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getsessioncachesize
+[0.2987] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getsessioncachesize
+[0.1451] endpoint,(NameExpr0)^(MethodCallExpr)_(NameExpr2),getsessioncachesize
+[0.1316] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),endpoint
+[0.0774] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),endpoint
+[0.0235] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['METHOD_NAME', 'getsessioncachesize', 'string', 'getsessioncachesize', 'endpoint', 'getsessioncachesize', 'string', 'endpoint', 'METHOD_NAME', 'endpoint', 'string', 'METHOD_NAME']
+

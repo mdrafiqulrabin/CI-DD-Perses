@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/dexbacked/DexBackedClassDef_getInstanceFieldsOffset.java
+method_name = getInstanceFieldsOffset
+method_body = private int getInstanceFieldsOffset() { if (instanceFieldsOffset > 0) { return instanceFieldsOffset; } DexReader reader = new DexReader(dexFile, staticFieldsOffset); DexBackedField.skipFields(reader, staticFieldCount); instanceFieldsOffset = reader.getOffset(); return instanceFieldsOffset; }
+
+topk path-contexts for sub-token: get
+[0.1315] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0491] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0437] int,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0433] 0,IntegerLiteralExpr1|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0410] int,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:greater|IntegerLiteralExpr1,0
+[0.0292] reader,NameExpr0|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0247] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0232] get|offset,NameExpr2|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0220] reader,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0219] skip|fields,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+
+topk terminals for sub-token: get
+['int', 'METHOD_NAME', 'METHOD_NAME', 'instance|fields|offset', 'int', 'instance|fields|offset', '0', 'instance|fields|offset', 'int', '0', 'reader', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'get|offset', 'instance|fields|offset', 'reader', 'instance|fields|offset', 'skip|fields', 'instance|fields|offset']
+
+topk path-contexts for sub-token: instance
+[0.0878] 0,IntegerLiteralExpr1|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0794] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0753] int,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0464] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0450] get|offset,NameExpr2|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0443] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0371] reader,NameExpr0|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0338] skip|fields,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0332] instance|fields|offset,NameExpr0|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0329] reader,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+
+topk terminals for sub-token: instance
+['0', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'int', 'instance|fields|offset', 'int', 'instance|fields|offset', 'get|offset', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'reader', 'instance|fields|offset', 'skip|fields', 'instance|fields|offset', 'instance|fields|offset', 'instance|fields|offset', 'reader', 'instance|fields|offset']
+
+topk path-contexts for sub-token: fields
+[0.1874] 0,IntegerLiteralExpr1|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.1031] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0929] int,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0671] get|offset,NameExpr2|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0554] reader,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0526] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0505] instance|fields|offset,NameExpr0|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0498] reader,NameExpr0|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0441] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0424] skip|fields,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+
+topk terminals for sub-token: fields
+['0', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'int', 'instance|fields|offset', 'get|offset', 'instance|fields|offset', 'reader', 'instance|fields|offset', 'int', 'instance|fields|offset', 'instance|fields|offset', 'instance|fields|offset', 'reader', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'skip|fields', 'instance|fields|offset']
+
+topk path-contexts for sub-token: offset
+[0.1299] 0,IntegerLiteralExpr1|BinaryExpr:greater|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0872] get|offset,NameExpr2|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0865] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0734] reader,NameExpr0|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0687] int,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0598] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0461] reader,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0450] int,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0350] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+[0.0341] skip|fields,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,instance|fields|offset
+
+topk terminals for sub-token: offset
+['0', 'instance|fields|offset', 'get|offset', 'instance|fields|offset', 'int', 'METHOD_NAME', 'reader', 'instance|fields|offset', 'int', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'reader', 'instance|fields|offset', 'int', 'instance|fields|offset', 'METHOD_NAME', 'instance|fields|offset', 'skip|fields', 'instance|fields|offset']
+

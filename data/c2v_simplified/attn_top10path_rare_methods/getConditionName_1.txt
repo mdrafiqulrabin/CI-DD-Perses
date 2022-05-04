@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-console/src/main/java/com/sun/identity/console/policy/ConditionOpViewBeanBase_getConditionName.java
+method_name = getConditionName
+method_body = private String getConditionName() { String conditionName = (String) propertySheetModel.getValue(CONDITION_NAME); conditionName = conditionName.trim(); if (conditionName.length() == 0) { setInlineAlertMessage(CCAlert.TYPE_ERROR, "message.error", "policy.missing.conditionName"); conditionName = null; } return conditionName; }
+
+topk path-contexts:
+[0.0700] messageerror,(StringLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),conditionname
+[0.0559] conditionname,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),messageerror
+[0.0549] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr2),messageerror
+[0.0509] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(CastExpr)_(MethodCallExpr1)_(NameExpr2),conditionname
+[0.0493] conditionname,(NameExpr0)^(MethodCallExpr)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),conditionname
+[0.0491] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(NameExpr0),conditionname
+[0.0431] typeerror,(NameExpr2)^(FieldAccessExpr1)^(MethodCallExpr)_(StringLiteralExpr2),messageerror
+[0.0372] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),typeerror
+[0.0371] typeerror,(NameExpr2)^(FieldAccessExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),conditionname
+[0.0306] conditionname,(NameExpr0)^(MethodCallExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),conditionname
+
+topk terminals:
+['messageerror', 'conditionname', 'conditionname', 'messageerror', 'string', 'messageerror', 'string', 'conditionname', 'conditionname', 'conditionname', 'string', 'conditionname', 'typeerror', 'messageerror', 'string', 'typeerror', 'typeerror', 'conditionname', 'conditionname', 'conditionname']
+

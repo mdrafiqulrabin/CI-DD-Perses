@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/jobscheduler/scheduler-component-shared/src/java/org/sakaiproject/component/app/scheduler/jobs/cm/processor/BaseCsvFileProcessor_trimLine.java
+method_name = trimLine
+method_body = protected String[] trimLine(String[] line) { String trim = ""; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }
+predict, score, loss = trimLine, 0.23536146, 3.0522814
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:53:02.784609", "n_pass": [1, 1, 1], "score": "0.2354", "loss": "3.0523", "code": "protected String[] trimLine(String[] line) { String trim = \"\"; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:05.898761", "n_pass": [48, 3, 2], "score": "0.4093", "loss": "2.7654", "code": "protected String[] trimLine(String[] line) { String trim; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:07.270901", "n_pass": [50, 4, 3], "score": "0.5008", "loss": "3.8139", "code": "protected String[] trimLine(String[] line) { String trim; for ( 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:08.614774", "n_pass": [52, 5, 4], "score": "0.2389", "loss": "3.4209", "code": "protected String[] trimLine(String[] line) { String trim; for ( 0; ilength; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:09.961597", "n_pass": [55, 6, 5], "score": "0.5693", "loss": "3.8868", "code": "protected String[] trimLine(String[] line) { String trim; for ( 0; ilength; i++) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:14.368612", "n_pass": [100, 9, 6], "score": "0.5693", "loss": "3.8868", "code": "String[] trimLine(String[] line) { String trim; for ( 0; ilength; i++) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:15.722402", "n_pass": [113, 10, 7], "score": "0.5772", "loss": "3.6907", "code": "String[] trimLine(String[] line) { String trim; for ( 0; ilength; ) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:23.115961", "n_pass": [180, 12, 8], "score": "0.6084", "loss": "3.9097", "code": "String[] trimLine(String[] line) { String trim; for ( ; ilength; ) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:24.458973", "n_pass": [182, 13, 9], "score": "0.6084", "loss": "3.9097", "code": "String[] trimLine(String[] line) { String trim; for ( ;ilength; ) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:25.804169", "n_pass": [183, 14, 10], "score": "0.6497", "loss": "3.5593", "code": "String[] trimLine(String[] line) { String trim; for ( ;; ) { trim .trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:28.486700", "n_pass": [189, 16, 11], "score": "0.5273", "loss": "4.0994", "code": "String[] trimLine(String[] line) { String trim; for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:32.526769", "n_pass": [203, 19, 12], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[] line) { String trim; for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:33.864227", "n_pass": [209, 20, 13], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line) { String trim; for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:35.228763", "n_pass": [212, 21, 14], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line){ String trim; for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:36.562020", "n_pass": [214, 22, 15], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line){String trim; for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:41.851385", "n_pass": [219, 26, 16], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line){String trim;for ( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:43.183355", "n_pass": [221, 27, 17], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line){String trim;for( ;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:44.515478", "n_pass": [223, 28, 18], "score": "0.5273", "loss": "4.0994", "code": "String[]trimLine(String[]line){String trim;for(;; ) { trim .trim; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:45.860896", "n_pass": [229, 29, 19], "score": "0.4277", "loss": "4.3529", "code": "String[]trimLine(String[]line){String trim;for(;; ) { trim ; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:52.564072", "n_pass": [261, 34, 20], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { ; line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:53:53.914019", "n_pass": [262, 35, 21], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { line[i] = trim; } return line; }"}
+{"time": "2021-01-20 05:54:04.700523", "n_pass": [318, 40, 22], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { line[i] =trim; } return line; }"}
+{"time": "2021-01-20 05:54:06.040086", "n_pass": [320, 41, 23], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { line[i] =trim;} return line; }"}
+{"time": "2021-01-20 05:54:07.398064", "n_pass": [322, 42, 24], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { line[i] =trim;}return line; }"}
+{"time": "2021-01-20 05:54:12.764374", "n_pass": [327, 46, 25], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;; ) { line[i] =trim;}return line;}"}
+{"time": "2021-01-20 05:54:18.116738", "n_pass": [348, 50, 26], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;;) { line[i] =trim;}return line;}"}
+{"time": "2021-01-20 05:54:19.457975", "n_pass": [350, 51, 27], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;;){ line[i] =trim;}return line;}"}
+{"time": "2021-01-20 05:54:20.822183", "n_pass": [352, 52, 28], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;;){line[i] =trim;}return line;}"}
+{"time": "2021-01-20 05:54:22.153820", "n_pass": [357, 53, 29], "score": "0.2113", "loss": "5.1248", "code": "String[]trimLine(String[]line){String trim;for(;;){line[i]=trim;}return line;}"}
+
+Minimal simplified code:
+String[]trimLine(String[]line){String trim;for(;;){line[i]=trim;}return line;}
+

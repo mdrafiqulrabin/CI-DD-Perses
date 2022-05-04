@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/connector/Request_addPathParameter.java
+method_name = addPathParameter
+method_body = protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }
+
+topk path-contexts for sub-token: add
+[0.0940] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0776] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0776] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0662] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0531] value,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0458] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0328] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0268] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0268] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0233] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+
+topk terminals for sub-token: add
+['value', 'path|parameters', 'string', 'path|parameters', 'string', 'path|parameters', 'name', 'path|parameters', 'value', 'put', 'void', 'METHOD_NAME', 'value', 'put', 'string', 'put', 'string', 'put', 'name', 'put']
+
+topk path-contexts for sub-token: path
+[0.2298] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.2222] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.2222] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.1528] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0115] path|parameters,NameExpr0|MethodCallExpr|NameExpr2,name
+[0.0090] value,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0080] value,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0076] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0045] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,name
+[0.0040] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+
+topk terminals for sub-token: path
+['value', 'path|parameters', 'string', 'path|parameters', 'string', 'path|parameters', 'name', 'path|parameters', 'path|parameters', 'name', 'value', 'put', 'value', 'string', 'void', 'METHOD_NAME', 'value', 'name', 'value', 'put']
+
+topk path-contexts for sub-token: parameter
+[0.3175] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.1605] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.1589] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.1589] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,path|parameters
+[0.0154] value,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0143] path|parameters,NameExpr0|MethodCallExpr|NameExpr2,name
+[0.0105] value,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0095] name,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,value
+[0.0074] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,value
+[0.0062] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,value
+
+topk terminals for sub-token: parameter
+['value', 'path|parameters', 'name', 'path|parameters', 'string', 'path|parameters', 'string', 'path|parameters', 'value', 'put', 'path|parameters', 'name', 'value', 'string', 'name', 'value', 'value', 'value', 'string', 'value']
+

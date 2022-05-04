@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ha/deploy/WarWatcher_setLastState.java
+method_name = setLastState
+method_body = protected void setLastState(int lastState) { this.lastState = lastState; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 10:59:42.835991", "score": "0.4192", "loss": "1.4964", "code": "class T { protected void setLastState(int lastState) { this.lastState = lastState; } }"}
+{"time": "2021-01-24 11:04:04.798253", "score": "0.4192", "loss": "1.4964", "code": "class T { void setLastState(int lastState) { this.lastState = lastState; } }"}
+
+Minimal simplified code:
+class T {
+          void setLastState(int lastState) { this.lastState = lastState; }
+}
+
+

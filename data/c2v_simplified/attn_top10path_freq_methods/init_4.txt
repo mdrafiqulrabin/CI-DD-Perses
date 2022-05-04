@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/main/java/example/kurt/todo/widget/ProgressView_init.java
+method_name = init
+method_body = public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); }
+
+topk path-contexts:
+[0.1452] barcolor,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),fillandstroke
+[0.0940] barcolor,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),barpaint
+[0.0566] barcolor,(NameExpr2)^(MethodCallExpr)_(NameExpr3),setcolor
+[0.0471] barcolor,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setstyle
+[0.0411] barpaint,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),barpaint
+[0.0411] barpaint,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),barpaint
+[0.0246] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setantialias
+[0.0241] barpaint,(NameExpr0)^(MethodCallExpr)_(FieldAccessExpr2)_(NameExpr2),fillandstroke
+[0.0239] paint,(ClassOrInterfaceType0)^(ObjectCreationExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),barpaint
+[0.0239] paint,(ClassOrInterfaceType0)^(ObjectCreationExpr1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),barpaint
+
+topk terminals:
+['barcolor', 'fillandstroke', 'barcolor', 'barpaint', 'barcolor', 'setcolor', 'barcolor', 'setstyle', 'barpaint', 'barpaint', 'barpaint', 'barpaint', 'METHOD_NAME', 'setantialias', 'barpaint', 'fillandstroke', 'paint', 'barpaint', 'paint', 'barpaint']
+

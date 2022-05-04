@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-services/src/java/org/sakaiproject/tool/assessment/osid/authz/impl/FunctionIteratorImpl_nextFunction.java
+method_name = nextFunction
+method_body = public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }
+
+topk path-contexts for sub-token: next
+[0.1302] function,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0974] function,ClassOrInterfaceType0|CastExpr|MethodCallExpr1|NameExpr2,next
+[0.0913] function|iter,NameExpr0|MethodCallExpr|NameExpr2,next
+[0.0647] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.0539] function,ClassOrInterfaceType0|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.0484] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,next
+[0.0445] authorization|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.0411] next,NameExpr2|MethodCallExpr|CastExpr|ReturnStmt|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,exception
+[0.0329] authorization|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,next
+[0.0272] next,NameExpr2|MethodCallExpr|CastExpr|ReturnStmt|BlockStmt|TryStmt|CatchClause|Parameter|VariableDeclaratorId0,e
+
+topk terminals for sub-token: next
+['function', 'METHOD_NAME', 'function', 'next', 'function|iter', 'next', 'METHOD_NAME', 'function|iter', 'function', 'function|iter', 'METHOD_NAME', 'next', 'authorization|exception', 'function|iter', 'next', 'exception', 'authorization|exception', 'next', 'next', 'e']
+
+topk path-contexts for sub-token: function
+[0.1732] function,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1449] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.1087] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,function
+[0.0983] function|iter,NameExpr0|MethodCallExpr|NameExpr2,next
+[0.0950] function,ClassOrInterfaceType0|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.0782] function,ClassOrInterfaceType0|CastExpr|MethodCallExpr1|NameExpr2,next
+[0.0775] authorization|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,function
+[0.0757] authorization|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,function|iter
+[0.0339] function,ClassOrInterfaceType0|MethodDeclaration|ClassOrInterfaceType2,authorization|exception
+[0.0150] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,next
+
+topk terminals for sub-token: function
+['function', 'METHOD_NAME', 'METHOD_NAME', 'function|iter', 'METHOD_NAME', 'function', 'function|iter', 'next', 'function', 'function|iter', 'function', 'next', 'authorization|exception', 'function', 'authorization|exception', 'function|iter', 'function', 'authorization|exception', 'METHOD_NAME', 'next']
+

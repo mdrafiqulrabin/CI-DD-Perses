@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/ByteChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+
+topk path-contexts:
+[0.1133] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),stringcache
+[0.1083] null,(NullLiteralExpr0)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),stringcache
+[0.0757] buff,(NameExpr1)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),tostring
+[0.0720] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),stringcache
+[0.0660] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(IfStmt)_(BinaryExpr:equals)_(IntegerLiteralExpr1),0
+[0.0629] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(NullLiteralExpr0),null
+[0.0462] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr0),null
+[0.0449] 0,(IntegerLiteralExpr1)^(BinaryExpr:equals)^(IfStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),stringcache
+[0.0407] start,(NameExpr1)^(BinaryExpr:minus)^(BinaryExpr:equals)_(IntegerLiteralExpr1),0
+[0.0368] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),tostring
+
+topk terminals:
+['string', 'stringcache', 'null', 'stringcache', 'buff', 'tostring', 'METHOD_NAME', 'stringcache', 'string', '0', 'string', 'null', 'string', 'null', '0', 'stringcache', 'start', '0', 'METHOD_NAME', 'tostring']
+

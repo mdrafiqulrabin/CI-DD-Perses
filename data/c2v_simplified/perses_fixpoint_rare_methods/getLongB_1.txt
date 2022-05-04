@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/util/src/main/java/org/kaazing/gateway/util/Utils_getLongB.java
+method_name = getLongB
+method_body = private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 13:48:37.158594", "score": "0.7938", "loss": "0.5351", "code": "class T { private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); } }"}
+{"time": "2021-01-24 13:56:24.857297", "score": "0.871", "loss": "0.2762", "code": "class T { private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4) ); } }"}
+{"time": "2021-01-24 13:58:23.614354", "score": "0.6815", "loss": "0.7593", "code": "class T { private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3) ); } }"}
+{"time": "2021-01-24 14:04:26.403247", "score": "0.2782", "loss": "2.2744", "code": "class T { private static long getLongB( ) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3) ); } }"}
+{"time": "2021-01-24 14:05:06.100191", "score": "0.3623", "loss": "1.9211", "code": "class T { private static long getLongB( ) { return makeLong(bb.get(index), bb.get( ), bb.get(index + 2), bb.get(index + 3) ); } }"}
+{"time": "2021-01-24 14:07:07.104010", "score": "0.5325", "loss": "1.138", "code": "class T { private static long getLongB( ) { return makeLong(bb.get(index), bb.get( ), bb.get(index + 2), bb.get( ) ); } }"}
+{"time": "2021-01-24 14:07:46.795312", "score": "0.5325", "loss": "1.138", "code": "class T { long getLongB( ) { return makeLong(bb.get(index), bb.get( ), bb.get(index + 2), bb.get( ) ); } }"}
+{"time": "2021-01-24 14:08:26.553088", "score": "0.543", "loss": "1.0051", "code": "class T { long getLongB( ) { return makeLong(bb.get( ), bb.get( ), bb.get(index + 2), bb.get( ) ); } }"}
+{"time": "2021-01-24 14:12:59.759053", "score": "0.2894", "loss": "1.7445", "code": "class T { long getLongB( ) { return makeLong( ); } }"}
+{"time": "2021-01-24 14:16:41.142773", "score": "0.6146", "loss": "0.662", "code": "class T { long getLongB( ) { return makeLong ; } }"}
+
+Minimal simplified code:
+class T {
+               long getLongB(                        ) { return makeLong                                                                                                                                                    ; }
+}
+
+

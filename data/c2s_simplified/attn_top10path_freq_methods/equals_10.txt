@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Mark_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; }
+
+topk path-contexts for sub-token: equals
+[0.1945] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.1779] other,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.1481] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0800] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0708] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|InstanceOfExpr|NameExpr0,other
+[0.0567] other,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0390] other,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0385] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,other
+[0.0204] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,mark
+[0.0200] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: equals
+['object', 'false', 'other', 'object', 'boolean', 'object', 'METHOD_NAME', 'object', 'object', 'other', 'other', 'false', 'other', 'false', 'boolean', 'other', 'object', 'mark', 'boolean', 'METHOD_NAME']
+

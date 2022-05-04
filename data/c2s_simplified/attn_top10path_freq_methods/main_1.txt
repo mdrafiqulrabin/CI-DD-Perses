@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/util/ServerInfo_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.out.println("Server version: " + getServerInfo()); System.out.println("Server built: " + getServerBuilt()); System.out.println("Server number: " + getServerNumber()); System.out.println("OS Name: " + System.getProperty("os.name")); System.out.println("OS Version: " + System.getProperty("os.version")); System.out.println("Architecture: " + System.getProperty("os.arch")); System.out.println("JVM Version: " + System.getProperty("java.runtime.version")); System.out.println("JVM Vendor: " + System.getProperty("java.vm.vendor")); }
+
+topk path-contexts for sub-token: main
+[0.2310] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.0586] void,VoidType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0577] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|MethodCallExpr1|NameExpr1,get|server|built
+[0.0345] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr0,system
+[0.0345] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr0,system
+[0.0345] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr0,system
+[0.0321] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,out
+[0.0321] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,out
+[0.0321] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,out
+[0.0321] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,out
+[0.0321] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,out
+
+topk terminals for sub-token: main
+['args', '[]', 'void', '[]', '[]', 'get|server|built', 'args', 'system', 'args', 'system', 'args', 'system', 'args', 'out', 'args', 'out', 'args', 'out', 'args', 'out', 'args', 'out']
+

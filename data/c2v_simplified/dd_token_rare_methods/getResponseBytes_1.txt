@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/citations/citations-osid/web2bridge/src/java/edu/indiana/lib/twinpeaks/search/HttpTransactionQueryBase_getResponseBytes.java
+method_name = getResponseBytes
+method_body = public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }
+predict, score, loss = getResponseBytes, 0.38796091079711914, 2.0139095783233643
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:06:00.912847", "n_pass": [1, 1, 1], "score": "0.388", "loss": "2.0139", "code": "public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:06.542754", "n_pass": [20, 3, 2], "score": "0.388", "loss": "2.0139", "code": "byte[] getResponseBytes() { return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:14.726499", "n_pass": [44, 6, 3], "score": "0.388", "loss": "2.0139", "code": "byte[]getResponseBytes() { return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:27.002806", "n_pass": [72, 10, 4], "score": "0.388", "loss": "2.0139", "code": "byte[]getResponseBytes(){ return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:29.610821", "n_pass": [73, 11, 5], "score": "0.388", "loss": "2.0139", "code": "byte[]getResponseBytes(){return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:37.410253", "n_pass": [76, 14, 6], "score": "0.388", "loss": "2.0139", "code": "byte[]getResponseBytes(){return transaction.getResponseBytes(); }"}
+{"time": "2021-01-20 07:06:42.621794", "n_pass": [83, 16, 7], "score": "0.388", "loss": "2.0139", "code": "byte[]getResponseBytes(){return transaction.getResponseBytes();}"}
+
+Minimal simplified code:
+byte[]getResponseBytes(){return transaction.getResponseBytes();}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server/src/main/java/org/kaazing/gateway/server/test/config/RealmConfiguration_addHttpCookie.java
+method_name = addHttpCookie
+method_body = @Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }
+predict, score, loss = addHttpCookie, 0.47482312, 1.6152052
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:13:25.924996", "n_pass": [1, 1, 1], "score": "0.4748", "loss": "1.6152", "code": "@Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:27.625018", "n_pass": [20, 2, 2], "score": "0.745", "loss": "0.7115", "code": "public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:29.645670", "n_pass": [42, 3, 3], "score": "0.745", "loss": "0.7115", "code": " void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:30.961459", "n_pass": [43, 4, 4], "score": "0.745", "loss": "0.7115", "code": "void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:36.021041", "n_pass": [84, 6, 5], "score": "0.745", "loss": "0.7115", "code": "void addHttpCookie(Suppressible<String>httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:37.349378", "n_pass": [87, 7, 6], "score": "0.745", "loss": "0.7115", "code": "void addHttpCookie(Suppressible<String>httpCookie){ httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:38.662567", "n_pass": [89, 8, 7], "score": "0.745", "loss": "0.7115", "code": "void addHttpCookie(Suppressible<String>httpCookie){httpCookies.add(httpCookie); }"}
+{"time": "2021-01-20 06:13:41.313379", "n_pass": [94, 10, 8], "score": "0.7883", "loss": "1.2839", "code": "void addHttpCookie(Suppressible<String>httpCookie){httpCookies.add(); }"}
+{"time": "2021-01-20 06:13:42.622977", "n_pass": [97, 11, 9], "score": "0.7883", "loss": "1.2839", "code": "void addHttpCookie(Suppressible<String>httpCookie){httpCookies.add();}"}
+
+Minimal simplified code:
+void addHttpCookie(Suppressible<String>httpCookie){httpCookies.add();}
+

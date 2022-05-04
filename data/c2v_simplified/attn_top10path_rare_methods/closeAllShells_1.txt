@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/RootShell_closeAllShells.java
+method_name = closeAllShells
+method_body = public static void closeAllShells() throws IOException { Shell.closeAll(); }
+
+topk path-contexts:
+[0.2171] shell,(NameExpr0)^(MethodCallExpr)_(NameExpr2),closeall
+[0.1972] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),shell
+[0.1892] ioexception,(ClassOrInterfaceType2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),closeall
+[0.1405] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),closeall
+[0.1132] ioexception,(ClassOrInterfaceType2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),shell
+[0.0578] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0478] void,(VoidType0)^(MethodDeclaration)_(ClassOrInterfaceType2),ioexception
+[0.0373] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(ClassOrInterfaceType2),ioexception
+
+topk terminals:
+['shell', 'closeall', 'METHOD_NAME', 'shell', 'ioexception', 'closeall', 'METHOD_NAME', 'closeall', 'ioexception', 'shell', 'void', 'METHOD_NAME', 'void', 'ioexception', 'METHOD_NAME', 'ioexception']
+

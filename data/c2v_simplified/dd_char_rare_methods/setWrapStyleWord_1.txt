@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/core/MarkdownTextAreaWithPreview_setWrapStyleWord.java
+method_name = setWrapStyleWord
+method_body = public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }
+predict, score, loss = setWrapStyleWord, 0.39728352427482605, 2.0066945552825928
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:10:50.955626", "n_pass": [1, 1, 1], "score": "0.3973", "loss": "2.0067", "code": "public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-23 17:10:53.957457", "n_pass": [20, 2, 2], "score": "0.3806", "loss": "2.0813", "code": "d setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-23 17:11:05.573348", "n_pass": [48, 6, 3], "score": "0.6175", "loss": "0.6923", "code": "d setWrapStyleWord(boolean value) {xtCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-23 17:11:08.190952", "n_pass": [49, 7, 4], "score": "0.6015", "loss": "0.7651", "code": "d setWrapStyleWord(boolean value) {e.setWrapStyleWord(value); }"}
+{"time": "2021-01-23 17:11:35.399466", "n_pass": [93, 17, 5], "score": "0.4037", "loss": "1.3977", "code": "d setWrapStyleWord(boolean value) {e.setWrapStyleWord(ue); }"}
+{"time": "2021-01-23 17:13:03.668202", "n_pass": [236, 46, 6], "score": "0.6195", "loss": "0.7529", "code": "d setWrapStyleWord(boolean value) {e.setWrapStyleWord(e); }"}
+{"time": "2021-01-23 17:13:06.270538", "n_pass": [239, 47, 7], "score": "0.6195", "loss": "0.7529", "code": "d setWrapStyleWord(boolean value) {e.setWrapStyleWord(e);}"}
+{"time": "2021-01-23 17:13:34.400844", "n_pass": [268, 55, 8], "score": "0.4076", "loss": "1.1232", "code": "d setWrapStyleWord(boolean alue) {e.setWrapStyleWord(e);}"}
+{"time": "2021-01-23 17:13:39.595159", "n_pass": [270, 57, 9], "score": "0.7276", "loss": "0.4243", "code": "d setWrapStyleWord(boolean aue) {e.setWrapStyleWord(e);}"}
+{"time": "2021-01-23 17:13:44.771837", "n_pass": [272, 59, 10], "score": "0.7476", "loss": "0.4723", "code": "d setWrapStyleWord(boolean au) {e.setWrapStyleWord(e);}"}
+{"time": "2021-01-23 17:13:47.396654", "n_pass": [274, 60, 11], "score": "0.7476", "loss": "0.4723", "code": "d setWrapStyleWord(boolean au){e.setWrapStyleWord(e);}"}
+{"time": "2021-01-23 17:14:33.979207", "n_pass": [295, 78, 12], "score": "0.2802", "loss": "1.8841", "code": "d setWrapStyleWord(boolean au){e.setWrapStyleWord();}"}
+
+Minimal simplified code:
+d setWrapStyleWord(boolean au){e.setWrapStyleWord();}
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/SimpleNode_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + Arrays.hashCode(children); result = prime * result + id; result = prime * result + ((image == null) ? 0 : image.hashCode()); return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:27:59.831517", "score": "0.9989", "loss": "0.0013", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + Arrays.hashCode(children); result = prime * result + id; result = prime * result + ((image == null) ? 0 : image.hashCode()); return result; } }"}
+{"time": "2020-12-21 11:28:47.703043", "score": "0.9975", "loss": "0.0035", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + Arrays.hashCode(children); } }"}
+{"time": "2020-12-21 11:29:19.485442", "score": "0.9948", "loss": "0.0071", "code": "class T { @Override public int hashCode() { result = prime * result + Arrays.hashCode(children); } }"}
+{"time": "2020-12-21 11:29:55.601371", "score": "0.9952", "loss": "0.0082", "code": "class T { @Override public int hashCode() { result = prime * result + Arrays ; } }"}
+{"time": "2020-12-21 11:30:17.957206", "score": "0.928", "loss": "0.1232", "code": "class T { int hashCode() { result = prime * result + Arrays ; } }"}
+
+Minimal simplified code:
+class T {
+                 int hashCode() {                                       result = prime * result + Arrays                   ;                                                                                                                  }
+}
+
+

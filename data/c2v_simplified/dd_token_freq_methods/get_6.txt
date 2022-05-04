@@ -1,0 +1,42 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslTupleImpl_get.java
+method_name = get
+method_body = @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException("selection " + name + " not found"); } return get(index.intValue(), clazz); }
+predict, score, loss = get, 0.9798508286476135, 0.028014691546559334
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:13:10.878808", "n_pass": [1, 1, 1], "score": "0.9799", "loss": "0.028", "code": "@Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:13.579908", "n_pass": [53, 2, 2], "score": "0.9764", "loss": "0.032", "code": "@Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) {(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:16.307967", "n_pass": [100, 3, 3], "score": "0.9739", "loss": "0.0367", "code": "@Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:19.020257", "n_pass": [109, 4, 4], "score": "0.9684", "loss": "0.0459", "code": "public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:21.710427", "n_pass": [118, 5, 5], "score": "0.9403", "loss": "0.1042", "code": "public <T> T get(String name, Class<T> clazz) {index = selectionBindings.get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:24.358256", "n_pass": [119, 6, 6], "score": "0.9508", "loss": "0.0706", "code": "public <T> T get(String name, Class<T> clazz) { selectionBindings.get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:27.071076", "n_pass": [120, 7, 7], "score": "0.9849", "loss": "0.0211", "code": "public <T> T get(String name, Class<T> clazz) {get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:32.976256", "n_pass": [199, 8, 8], "score": "0.9849", "loss": "0.0211", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index == null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:35.686130", "n_pass": [208, 9, 9], "score": "0.9646", "loss": "0.0538", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"selection \"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:41.102144", "n_pass": [213, 11, 10], "score": "0.9612", "loss": "0.0557", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \" not found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:43.793905", "n_pass": [217, 12, 11], "score": "0.9573", "loss": "0.0609", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \" found\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:46.492762", "n_pass": [218, 13, 12], "score": "0.958", "loss": "0.0594", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } return get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:49.200673", "n_pass": [222, 14, 13], "score": "0.7208", "loss": "0.6578", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(index.intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:51.907033", "n_pass": [224, 15, 14], "score": "0.6268", "loss": "0.8727", "code": "public <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:54.599282", "n_pass": [230, 16, 15], "score": "0.6268", "loss": "0.8727", "code": " <T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:57.273625", "n_pass": [231, 17, 16], "score": "0.6268", "loss": "0.8727", "code": "<T> T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:13:59.947139", "n_pass": [235, 18, 17], "score": "0.6268", "loss": "0.8727", "code": "<T>T get(String name, Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:03.908936", "n_pass": [244, 19, 18], "score": "0.6268", "loss": "0.8727", "code": "<T>T get(String name,Class<T>clazz) {get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:16.543281", "n_pass": [328, 21, 19], "score": "0.6268", "loss": "0.8727", "code": "<T>T get(String name,Class<T>clazz){get(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:19.238575", "n_pass": [329, 22, 20], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name); if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:21.938019", "n_pass": [334, 23, 21], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if (index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:24.638358", "n_pass": [336, 24, 22], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index= null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:27.353428", "n_pass": [340, 25, 23], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null) {(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:30.042661", "n_pass": [343, 26, 24], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"  + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:32.715326", "n_pass": [348, 27, 25], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\" + \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:35.386671", "n_pass": [349, 28, 26], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+ \"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:38.048701", "n_pass": [351, 29, 27], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+\"\"); } get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:40.717944", "n_pass": [356, 30, 28], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+\"\");} get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:43.416716", "n_pass": [358, 31, 29], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+\"\");}get(intValue(), clazz); }"}
+{"time": "2020-12-26 23:14:46.087204", "n_pass": [365, 32, 30], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+\"\");}get(intValue(),clazz); }"}
+{"time": "2020-12-26 23:14:49.209443", "n_pass": [369, 33, 31], "score": "0.5616", "loss": "1.0895", "code": "<T>T get(String name,Class<T>clazz){(name);if(index=null){(\"\"+\"\");}get(intValue(),clazz);}"}
+
+Minimal simplified code:
+<T>T get(String name,Class<T>clazz){(name);if(index=null){(""+"");}get(intValue(),clazz);}
+

@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/dronekit__dronekit-android/ClientLib/src/main/java/com/o3dr/services/android/lib/drone/mission/item/complex/SurveyDetail_setOverlap.java
+method_name = setOverlap
+method_body = public void setOverlap(double overlap) { this.overlap = overlap; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 03:41:42.557904", "score": "0.4925", "loss": "0.7974", "code": "class T { public void setOverlap(double overlap) { this.overlap = overlap; } }"}
+{"time": "2021-01-25 03:46:06.464119", "score": "0.4925", "loss": "0.7974", "code": "class T { void setOverlap(double overlap) { this.overlap = overlap; } }"}
+
+Minimal simplified code:
+class T {
+       void setOverlap(double overlap) { this.overlap = overlap; }
+}
+
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/mesos/SchedulerDriverServiceTest_createTaskId.java
+method_name = createTaskId
+method_body = private static TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }
+predict, score, loss = createTaskId, 0.30341622, 1.8655214
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:25:21.572841", "n_pass": [1, 1, 1], "score": "0.3034", "loss": "1.8655", "code": "private static TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-20 05:25:22.893436", "n_pass": [20, 2, 2], "score": "0.3034", "loss": "1.8655", "code": "TaskID createTaskId(String taskId) { return TaskID.newBuilder().setValue(taskId).build(); }"}
+{"time": "2021-01-20 05:25:24.204394", "n_pass": [24, 3, 3], "score": "0.3151", "loss": "1.7315", "code": "TaskID createTaskId(String taskId) { return TaskID.newBuilder(taskId).build(); }"}
+{"time": "2021-01-20 05:25:28.508932", "n_pass": [52, 6, 4], "score": "0.409", "loss": "1.6989", "code": "TaskID createTaskId(String taskId) { TaskID.newBuilder(taskId).build(); }"}
+{"time": "2021-01-20 05:25:32.852179", "n_pass": [85, 8, 5], "score": "0.409", "loss": "1.6989", "code": "TaskID createTaskId(String taskId) {TaskID.newBuilder(taskId).build(); }"}
+{"time": "2021-01-20 05:25:35.499876", "n_pass": [89, 10, 6], "score": "0.4276", "loss": "1.6878", "code": "TaskID createTaskId(String taskId) {TaskID.newBuilder().build(); }"}
+{"time": "2021-01-20 05:25:37.897073", "n_pass": [104, 11, 7], "score": "0.4276", "loss": "1.6878", "code": "TaskID createTaskId(String taskId){TaskID.newBuilder().build(); }"}
+{"time": "2021-01-20 05:25:42.304297", "n_pass": [130, 13, 8], "score": "0.4276", "loss": "1.6878", "code": "TaskID createTaskId(String taskId){TaskID.newBuilder().build();}"}
+
+Minimal simplified code:
+TaskID createTaskId(String taskId){TaskID.newBuilder().build();}
+

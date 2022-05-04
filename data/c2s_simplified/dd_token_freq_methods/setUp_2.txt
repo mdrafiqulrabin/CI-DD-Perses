@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/test/java/br/com/six2six/fixturefactory/ObjectFactoryWithProcessorTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }
+predict, score, loss = setUp, 0.66182125, 0.41890493
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:46:22.786567", "n_pass": [1, 1, 1], "score": "0.6618", "loss": "0.4189", "code": "@Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-27 03:46:24.114843", "n_pass": [20, 2, 2], "score": "0.4304", "loss": "1.0021", "code": " void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-27 03:46:25.428447", "n_pass": [23, 3, 3], "score": "0.3762", "loss": "1.4356", "code": " void setUp() { (Session.class); processor = new HibernateProcessor(session); }"}
+{"time": "2020-12-27 03:46:28.394804", "n_pass": [47, 5, 4], "score": "0.4407", "loss": "2.0394", "code": " void setUp() { (Session.class); processor = (session); }"}
+{"time": "2020-12-27 03:46:35.319410", "n_pass": [85, 8, 5], "score": "0.4407", "loss": "2.0394", "code": "void setUp() { (Session.class); processor = (session); }"}
+{"time": "2020-12-27 03:46:36.975835", "n_pass": [90, 9, 6], "score": "0.4407", "loss": "2.0394", "code": "void setUp(){ (Session.class); processor = (session); }"}
+{"time": "2020-12-27 03:46:38.264811", "n_pass": [92, 10, 7], "score": "0.4407", "loss": "2.0394", "code": "void setUp(){(Session.class); processor = (session); }"}
+{"time": "2020-12-27 03:46:39.549352", "n_pass": [95, 11, 8], "score": "0.3251", "loss": "3.0977", "code": "void setUp(){(Sessionclass); processor = (session); }"}
+{"time": "2020-12-27 03:46:40.830070", "n_pass": [96, 12, 9], "score": "0.2288", "loss": "3.2692", "code": "void setUp(){(Session); processor = (session); }"}
+{"time": "2020-12-27 03:46:42.457127", "n_pass": [99, 13, 10], "score": "0.2288", "loss": "3.2692", "code": "void setUp(){(Session);processor = (session); }"}
+{"time": "2020-12-27 03:46:43.734901", "n_pass": [101, 14, 11], "score": "0.2288", "loss": "3.2692", "code": "void setUp(){(Session);processor= (session); }"}
+{"time": "2020-12-27 03:46:48.339078", "n_pass": [129, 16, 12], "score": "0.2288", "loss": "3.2692", "code": "void setUp(){(Session);processor= (session);}"}
+{"time": "2020-12-27 03:46:51.932735", "n_pass": [142, 18, 13], "score": "0.2288", "loss": "3.2692", "code": "void setUp(){(Session);processor=(session);}"}
+
+Minimal simplified code:
+void setUp(){(Session);processor=(session);}
+

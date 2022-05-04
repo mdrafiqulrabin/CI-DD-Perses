@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/Key_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }
+
+topk path-contexts for sub-token: equals
+[0.3085] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.1891] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0577] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|ThisExpr0,this
+[0.0565] o,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0508] o,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,true
+[0.0445] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0276] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|MethodCallExpr1|FieldAccessExpr3|NameExpr0,that
+[0.0189] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:or|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0152] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|CastExpr|NameExpr1,o
+[0.0141] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:and|BinaryExpr:and|MethodCallExpr0|NameExpr0,objects
+
+topk terminals for sub-token: equals
+['object', 'false', 'object', 'true', 'object', 'this', 'o', 'object', 'o', 'true', 'METHOD_NAME', 'object', 'object', 'that', 'object', 'null', 'object', 'o', 'object', 'objects']
+

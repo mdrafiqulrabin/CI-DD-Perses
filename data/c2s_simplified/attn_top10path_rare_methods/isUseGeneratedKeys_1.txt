@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_isUseGeneratedKeys.java
+method_name = isUseGeneratedKeys
+method_body = public boolean isUseGeneratedKeys() { return useGeneratedKeys; }
+
+topk path-contexts for sub-token: is
+[0.2352] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.2154] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.0898] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: is
+['boolean', 'use|generated|keys', 'METHOD_NAME', 'use|generated|keys', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: use
+[0.3719] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.3435] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.0489] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: use
+['METHOD_NAME', 'use|generated|keys', 'boolean', 'use|generated|keys', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: generated
+[0.5070] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.4508] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.0038] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: generated
+['METHOD_NAME', 'use|generated|keys', 'boolean', 'use|generated|keys', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: keys
+[0.4646] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.4382] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,use|generated|keys
+[0.0349] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: keys
+['METHOD_NAME', 'use|generated|keys', 'boolean', 'use|generated|keys', 'boolean', 'METHOD_NAME']
+

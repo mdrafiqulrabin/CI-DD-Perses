@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/Responses_invalidRequest.java
+method_name = invalidRequest
+method_body = static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }
+predict, score, loss = invalidRequest, 0.3425261, 1.4721154
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:23:07.665740", "n_pass": [1, 1, 1], "score": "0.3425", "loss": "1.4721", "code": "static Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-20 05:23:10.706872", "n_pass": [44, 3, 2], "score": "0.3425", "loss": "1.4721", "code": "Response invalidRequest(String message) { return addMessage(empty(), INVALID_REQUEST, message); }"}
+{"time": "2021-01-20 05:23:13.333506", "n_pass": [52, 5, 3], "score": "0.297", "loss": "1.6474", "code": "Response invalidRequest(String message) { return addMessage(empty, INVALID_REQUEST, message); }"}
+{"time": "2021-01-20 05:23:14.644033", "n_pass": [53, 6, 4], "score": "0.5777", "loss": "0.9377", "code": "Response invalidRequest(String message) { return addMessage(emptyINVALID_REQUEST, message); }"}
+{"time": "2021-01-20 05:23:25.683860", "n_pass": [97, 12, 5], "score": "0.5777", "loss": "0.9377", "code": "Response invalidRequest(String message) { return addMessage(emptyINVALID_REQUEST,message); }"}
+{"time": "2021-01-20 05:23:27.041787", "n_pass": [100, 13, 6], "score": "0.5777", "loss": "0.9377", "code": "Response invalidRequest(String message) { return addMessage(emptyINVALID_REQUEST,message);}"}
+{"time": "2021-01-20 05:23:29.449220", "n_pass": [110, 14, 7], "score": "0.5777", "loss": "0.9377", "code": "Response invalidRequest(String message){ return addMessage(emptyINVALID_REQUEST,message);}"}
+{"time": "2021-01-20 05:23:30.759899", "n_pass": [112, 15, 8], "score": "0.5777", "loss": "0.9377", "code": "Response invalidRequest(String message){return addMessage(emptyINVALID_REQUEST,message);}"}
+{"time": "2021-01-20 05:23:33.400209", "n_pass": [114, 17, 9], "score": "0.6851", "loss": "1.2977", "code": "Response invalidRequest(String message){returnaddMessage(emptyINVALID_REQUEST,message);}"}
+{"time": "2021-01-20 05:23:34.701235", "n_pass": [117, 18, 10], "score": "0.741", "loss": "0.7262", "code": "Response invalidRequest(String message){returnaddMessage(INVALID_REQUEST,message);}"}
+{"time": "2021-01-20 05:23:42.387188", "n_pass": [135, 23, 11], "score": "0.5676", "loss": "0.8261", "code": "Response invalidRequest(String message){addMessage(INVALID_REQUEST,message);}"}
+
+Minimal simplified code:
+Response invalidRequest(String message){addMessage(INVALID_REQUEST,message);}
+

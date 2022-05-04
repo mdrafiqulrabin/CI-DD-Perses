@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withHostConfig.java
+method_name = withHostConfig
+method_body = public ContainerBuilder withHostConfig(HostConfig hostConfig) { this.hostConfig = hostConfig; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:25:12.068105", "score": "0.4648", "loss": "1.0495", "code": "class T { public ContainerBuilder withHostConfig(HostConfig hostConfig) { this.hostConfig = hostConfig; return this; } }"}
+{"time": "2021-01-24 02:26:11.547795", "score": "0.5855", "loss": "1.357", "code": "class T { public ContainerBuilder withHostConfig(HostConfig hostConfig) { return this; } }"}
+{"time": "2021-01-24 02:26:54.398568", "score": "0.5855", "loss": "1.357", "code": "class T { ContainerBuilder withHostConfig(HostConfig hostConfig) { return this; } }"}
+
+Minimal simplified code:
+class T {
+       ContainerBuilder withHostConfig(HostConfig hostConfig) {                               return this; }
+}
+
+

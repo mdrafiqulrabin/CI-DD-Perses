@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/connector/Request_addPathParameter.java
+method_name = addPathParameter
+method_body = protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }
+predict, score, loss = addPathParameter, 0.46326566, 1.3055438
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:31:45.184158", "n_pass": [1, 1, 1], "score": "0.4633", "loss": "1.3055", "code": "protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:31:50.183805", "n_pass": [44, 4, 2], "score": "0.4633", "loss": "1.3055", "code": " void addPathParameter(String name, String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:31:51.511142", "n_pass": [45, 5, 3], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name, String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:31:59.228980", "n_pass": [95, 8, 4], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name,String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:32:00.553429", "n_pass": [99, 9, 5], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name,String value){ pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:32:01.867721", "n_pass": [101, 10, 6], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name,String value){pathParameters.put(name, value); }"}
+{"time": "2021-01-20 05:32:04.519782", "n_pass": [108, 12, 7], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name,String value){pathParameters.put(name,value); }"}
+{"time": "2021-01-20 05:32:05.835134", "n_pass": [112, 13, 8], "score": "0.4633", "loss": "1.3055", "code": "void addPathParameter(String name,String value){pathParameters.put(name,value);}"}
+{"time": "2021-01-20 05:32:09.210768", "n_pass": [132, 15, 9], "score": "0.6155", "loss": "1.1566", "code": "void addPathParameter(String name,String value){pathParameters.put(namevalue);}"}
+{"time": "2021-01-20 05:32:10.538079", "n_pass": [133, 16, 10], "score": "0.4627", "loss": "1.4764", "code": "void addPathParameter(String name,String value){pathParameters.put(name);}"}
+
+Minimal simplified code:
+void addPathParameter(String name,String value){pathParameters.put(name);}
+

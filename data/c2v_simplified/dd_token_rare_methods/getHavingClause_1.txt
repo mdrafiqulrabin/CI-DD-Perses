@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/SelectNode_getHavingClause.java
+method_name = getHavingClause
+method_body = public ValueNode getHavingClause() { return havingClause; }
+predict, score, loss = getHavingClause, 0.49545857310295105, 1.137707233428955
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:57:27.818621", "n_pass": [1, 1, 1], "score": "0.4955", "loss": "1.1377", "code": "public ValueNode getHavingClause() { return havingClause; }"}
+{"time": "2021-01-20 07:57:31.187867", "n_pass": [20, 2, 2], "score": "0.4955", "loss": "1.1377", "code": "ValueNode getHavingClause() { return havingClause; }"}
+{"time": "2021-01-20 07:57:39.847504", "n_pass": [46, 4, 3], "score": "0.4955", "loss": "1.1377", "code": "ValueNode getHavingClause(){ return havingClause; }"}
+{"time": "2021-01-20 07:57:42.435326", "n_pass": [48, 5, 4], "score": "0.4955", "loss": "1.1377", "code": "ValueNode getHavingClause(){return havingClause; }"}
+{"time": "2021-01-20 07:57:52.783575", "n_pass": [53, 9, 5], "score": "0.4955", "loss": "1.1377", "code": "ValueNode getHavingClause(){return havingClause;}"}
+
+Minimal simplified code:
+ValueNode getHavingClause(){return havingClause;}
+

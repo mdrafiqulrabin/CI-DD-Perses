@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/jsp/applet/Clock2_run.java
+method_name = run
+method_body = @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }
+
+topk path-contexts:
+[0.2771] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(WhileStmt)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(VariableDeclaratorId0),e
+[0.2645] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(WhileStmt)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),interruptedexception
+[0.0720] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(WhileStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),repaint
+[0.0519] timer,(NameExpr0)^(BinaryExpr:equals)^(WhileStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),repaint
+[0.0374] currentthread,(NameExpr2)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(WhileStmt)_(BinaryExpr:equals)_(NameExpr0),timer
+[0.0371] timer,(NameExpr0)^(BinaryExpr:equals)^(WhileStmt)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),sleep
+[0.0250] timer,(NameExpr0)^(BinaryExpr:equals)^(WhileStmt)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(VariableDeclaratorId0),e
+[0.0218] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),currentthread
+[0.0161] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(WhileStmt)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),interruptedexception
+[0.0155] me,(NameExpr1)^(BinaryExpr:equals)^(WhileStmt)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(VariableDeclaratorId0),e
+
+topk terminals:
+['void', 'e', 'void', 'interruptedexception', 'void', 'repaint', 'timer', 'repaint', 'currentthread', 'timer', 'timer', 'sleep', 'timer', 'e', 'void', 'currentthread', 'METHOD_NAME', 'interruptedexception', 'me', 'e']
+

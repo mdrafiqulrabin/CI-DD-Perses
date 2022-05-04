@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+
+topk path-contexts:
+[0.2682] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr2),layout
+[0.1635] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.1492] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr0),r
+[0.1368] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.1039] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0646] savedinstancestate,(NameExpr2)^(MethodCallExpr)_(NameExpr3),oncreate
+[0.0408] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),settingsfragment
+[0.0136] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.0117] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),savedinstancestate
+[0.0081] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+
+topk terminals:
+['oncreate', 'layout', 'oncreate', 'setcontentview', 'oncreate', 'r', 'savedinstancestate', 'oncreate', 'bundle', 'oncreate', 'savedinstancestate', 'oncreate', 'oncreate', 'settingsfragment', 'savedinstancestate', 'setcontentview', 'super', 'savedinstancestate', 'METHOD_NAME', 'oncreate']
+

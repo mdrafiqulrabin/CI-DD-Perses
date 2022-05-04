@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-core/src/main/java/com/timeyang/jkes/core/metadata/FieldMetadata_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }
+
+topk path-contexts:
+[0.1010] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0984] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0984] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0626] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0626] 31,(IntegerLiteralExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0436] result,(NameExpr0)^(AssignExpr:assign)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0436] result,(NameExpr0)^(AssignExpr:assign)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+[0.0367] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0224] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr0),method
+[0.0218] result,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(IntegerLiteralExpr0),31
+
+topk terminals:
+['int', 'hashcode', 'int', '31', 'int', '31', '31', 'hashcode', '31', 'hashcode', 'result', '31', 'result', '31', 'METHOD_NAME', 'hashcode', 'int', 'method', 'result', '31']
+

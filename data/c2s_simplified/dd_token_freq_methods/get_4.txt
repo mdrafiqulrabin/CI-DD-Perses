@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/AsyncChannelWrapperSecure_get.java
+method_name = get
+method_body = @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { Long result = wrapped.get(timeout, unit); if (result.longValue() > Integer.MAX_VALUE) { throw new ExecutionException(sm.getString("asyncChannelWrapperSecure.tooBig", result), null); } return new Integer(result.intValue()); }
+predict, score, loss = getTime, 0.83078796, 0.42713818
+
+Ignoring as original_method_name != predicted_method_name.
+

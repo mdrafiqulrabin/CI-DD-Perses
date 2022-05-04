@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/base/Conversions_isDedicated.java
+method_name = isDedicated
+method_body = public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }
+predict, score, loss = isDedicated, 0.38595137, 1.5912131
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:21:46.328237", "n_pass": [1, 1, 1], "score": "0.386", "loss": "1.5912", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:48.375575", "n_pass": [24, 2, 2], "score": "0.4691", "loss": "2.0975", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesListATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:49.719219", "n_pass": [25, 3, 3], "score": "0.5298", "loss": "1.5045", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesListPredicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:51.398998", "n_pass": [44, 4, 4], "score": "0.4096", "loss": "1.3925", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:52.731545", "n_pass": [48, 5, 5], "score": "0.4096", "loss": "1.3925", "code": " boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:54.404744", "n_pass": [55, 6, 6], "score": "0.5624", "loss": "0.9964", "code": " boolean isDedicated(Offer offer) { return FluentIterable.from((ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:57.092208", "n_pass": [84, 7, 7], "score": "0.5475", "loss": "1.0603", "code": " boolean isDedicated(Offer offer) { return FluentIterable.from((DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:21:59.723533", "n_pass": [89, 9, 8], "score": "0.5475", "loss": "1.0603", "code": "boolean isDedicated(Offer offer) { return FluentIterable.from((DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:22:07.356052", "n_pass": [128, 13, 9], "score": "0.5475", "loss": "1.0603", "code": "boolean isDedicated(Offer offer){ return FluentIterable.from((DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:22:08.681396", "n_pass": [129, 14, 10], "score": "0.5475", "loss": "1.0603", "code": "boolean isDedicated(Offer offer){return FluentIterable.from((DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-20 05:22:16.541636", "n_pass": [139, 20, 11], "score": "0.4187", "loss": "1.4204", "code": "boolean isDedicated(Offer offer){return FluentIterable.from((DEDICATED_)); }"}
+{"time": "2021-01-20 05:22:17.874494", "n_pass": [143, 21, 12], "score": "0.4187", "loss": "1.4204", "code": "boolean isDedicated(Offer offer){return FluentIterable.from((DEDICATED_));}"}
+{"time": "2021-01-20 05:22:25.198498", "n_pass": [162, 26, 13], "score": "0.4187", "loss": "1.4204", "code": "boolean isDedicated(Offer offer){return FluentIterable.from((DEDICATED));}"}
+
+Minimal simplified code:
+boolean isDedicated(Offer offer){return FluentIterable.from((DEDICATED));}
+

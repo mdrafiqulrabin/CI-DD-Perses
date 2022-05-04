@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/jamesdbloom__mockserver/mockserver-core/src/main/java/org/mockserver/client/serialization/model/HttpClassCallbackDTO_setCallbackClass.java
+method_name = setCallbackClass
+method_body = public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:32:38.190408", "score": "0.4291", "loss": "0.9069", "code": "class T { public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; } }"}
+{"time": "2021-01-24 08:33:26.435096", "score": "0.8928", "loss": "0.1641", "code": "class T { public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; } }"}
+{"time": "2021-01-24 08:33:47.730604", "score": "0.8478", "loss": "0.2903", "code": "class T { public HttpClassCallbackDTO setCallbackClass(String callbackClass) { callbackClass = callbackClass; } }"}
+{"time": "2021-01-24 08:34:09.029463", "score": "0.8478", "loss": "0.2903", "code": "class T { HttpClassCallbackDTO setCallbackClass(String callbackClass) { callbackClass = callbackClass; } }"}
+
+Minimal simplified code:
+class T {
+       HttpClassCallbackDTO setCallbackClass(String callbackClass) {      callbackClass = callbackClass;              }
+}
+
+

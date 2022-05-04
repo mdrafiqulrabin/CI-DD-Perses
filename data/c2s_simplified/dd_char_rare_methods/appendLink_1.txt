@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/rwiki/rwiki-util/radeox/src/test/java/org/radeox/test/filter/mock/MockOldWikiRenderEngine_appendLink.java
+method_name = appendLink
+method_body = public void appendLink(StringBuffer buffer, String name, String view) { buffer.append("link:" + view); }
+predict, score, loss = appendLink, 0.41429582, 1.1742506
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:19:52.464046", "n_pass": [1, 1, 1], "score": "0.4143", "loss": "1.1743", "code": "public void appendLink(StringBuffer buffer, String name, String view) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:19:54.129179", "n_pass": [23, 2, 2], "score": "0.4068", "loss": "1.1936", "code": "public void appendLink(StringBuffer bufame, String view) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:19:55.428281", "n_pass": [24, 3, 3], "score": "0.3623", "loss": "1.4431", "code": "public void appendLink(StringBuffer bufiew) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:19:58.406965", "n_pass": [49, 5, 4], "score": "0.3623", "loss": "1.4431", "code": " void appendLink(StringBuffer bufiew) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:05.831820", "n_pass": [89, 9, 5], "score": "0.2737", "loss": "1.9033", "code": " void appendLink(SngBuffer bufiew) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:08.438269", "n_pass": [92, 11, 6], "score": "0.4387", "loss": "1.6405", "code": " void appendLink(SngBuffer iew) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:23.555731", "n_pass": [154, 21, 7], "score": "0.4226", "loss": "1.3669", "code": " void appendLink(SngBuff iew) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:24.847998", "n_pass": [156, 22, 8], "score": "0.3587", "loss": "1.5466", "code": " void appendLink(SngBuff i) { buffer.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:28.734538", "n_pass": [161, 25, 9], "score": "0.3915", "loss": "1.409", "code": " void appendLink(SngBuff i) { buff.append(\"link:\" + view); }"}
+{"time": "2021-01-23 11:20:36.508327", "n_pass": [171, 31, 10], "score": "0.4638", "loss": "1.1107", "code": " void appendLink(SngBuff i) { buff.append(\"link:\" + ew); }"}
+{"time": "2021-01-23 11:20:37.828060", "n_pass": [175, 32, 11], "score": "0.4638", "loss": "1.1107", "code": "void appendLink(SngBuff i) { buff.append(\"link:\" + ew); }"}
+{"time": "2021-01-23 11:20:48.008061", "n_pass": [191, 37, 12], "score": "0.6039", "loss": "0.9912", "code": "void appendLink(SBuff i) { buff.append(\"link:\" + ew); }"}
+{"time": "2021-01-23 11:20:51.907215", "n_pass": [197, 40, 13], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i) { ff.append(\"link:\" + ew); }"}
+{"time": "2021-01-23 11:21:23.898956", "n_pass": [281, 60, 14], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i) { ff.append(\"link\" + ew); }"}
+{"time": "2021-01-23 11:21:25.212291", "n_pass": [283, 61, 15], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i) { ff.append(\"link\"+ ew); }"}
+{"time": "2021-01-23 11:21:26.508396", "n_pass": [285, 62, 16], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i) { ff.append(\"link\"+ew); }"}
+{"time": "2021-01-23 11:21:30.405179", "n_pass": [290, 65, 17], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i) { ff.append(\"link\"+ew);}"}
+{"time": "2021-01-23 11:21:47.453836", "n_pass": [316, 75, 18], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i){ ff.append(\"link\"+ew);}"}
+{"time": "2021-01-23 11:21:48.768362", "n_pass": [318, 76, 19], "score": "0.2567", "loss": "2.0289", "code": "void appendLink(SBuff i){ff.append(\"link\"+ew);}"}
+{"time": "2021-01-23 11:21:50.062001", "n_pass": [319, 77, 20], "score": "0.4004", "loss": "1.4547", "code": "void appendLink(SBuff i){f.append(\"link\"+ew);}"}
+{"time": "2021-01-23 11:22:05.731956", "n_pass": [336, 89, 21], "score": "0.3208", "loss": "2.398", "code": "void appendLink(SBuff i){f.append(\"link\"+w);}"}
+{"time": "2021-01-23 11:22:20.156984", "n_pass": [360, 97, 22], "score": "0.3209", "loss": "1.9704", "code": "void appendLink(SBuf i){f.append(\"link\"+w);}"}
+
+Minimal simplified code:
+void appendLink(SBuf i){f.append("link"+w);}
+

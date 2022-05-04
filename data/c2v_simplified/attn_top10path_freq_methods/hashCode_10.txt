@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/util/Pair_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((key == null) ? 0 : key.hashCode()); result = prime * result + ((value == null) ? 0 : value.hashCode()); return result; }
+
+topk path-contexts:
+[0.1166] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(EnclosedExpr)_(ConditionalExpr)_(IntegerLiteralExpr1),0
+[0.1166] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(EnclosedExpr)_(ConditionalExpr)_(IntegerLiteralExpr1),0
+[0.0894] result,(NameExpr1)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0894] result,(NameExpr1)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0771] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(NameExpr0),prime
+[0.0771] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(NameExpr0),prime
+[0.0547] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0547] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0314] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),result
+[0.0314] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),result
+
+topk terminals:
+['int', '0', 'int', '0', 'result', 'hashcode', 'result', 'hashcode', 'int', 'prime', 'int', 'prime', 'prime', 'hashcode', 'prime', 'hashcode', 'prime', 'result', 'prime', 'result']
+

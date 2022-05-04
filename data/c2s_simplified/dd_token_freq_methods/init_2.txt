@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/chat/ChatServlet_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { messageSender = new MessageSender(); Thread messageSenderThread = new Thread(messageSender, "MessageSender[" + getServletContext().getContextPath() + "]"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }
+predict, score, loss = doStart, 0.38129956, 9.30924
+
+Ignoring as original_method_name != predicted_method_name.
+

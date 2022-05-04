@@ -1,0 +1,55 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-manager/src/main/java/fr/treeptik/cloudunit/utils/FilesUtils_createUploadDir.java
+method_name = createUploadDir
+method_body = public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + "/uploadDir_" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }
+predict, score, loss = createUploadDir, 0.44031093, 2.1904013
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:56:04.208857", "n_pass": [1, 1, 1], "score": "0.4403", "loss": "2.1904", "code": "public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:05.921055", "n_pass": [44, 2, 2], "score": "0.4403", "loss": "2.1904", "code": "void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:07.602293", "n_pass": [47, 3, 3], "score": "0.4245", "loss": "2.3595", "code": "void createUploadDir(Server  uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:08.938510", "n_pass": [51, 4, 4], "score": "0.375", "loss": "3.4252", "code": "void createUploadDir(Server  uploadDir) throws DockerJSONException { Fil= new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:10.260827", "n_pass": [55, 5, 5], "score": "0.3683", "loss": "3.156", "code": "void createUploadDir(Server  uploadDir) throws DockerJSONException { Fil= new File(uploadDir + \"/uploadDir_\" + server()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:11.947284", "n_pass": [94, 6, 6], "score": "0.3126", "loss": "3.41", "code": "void createUploadDir(Server  uploadDir) throws DockerJSONException { Fil= new File(uploadDir + \"/uploadDir_\" + server()); if (!uper.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:19.290173", "n_pass": [107, 11, 7], "score": "0.2506", "loss": "3.5268", "code": "void createUploadDir(Server  uploadDir) throws DoNException { Fil= new File(uploadDir + \"/uploadDir_\" + server()); if (!uper.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:20.625782", "n_pass": [108, 12, 8], "score": "0.3318", "loss": "3.2844", "code": "void createUploadDir(Server  uploadDir) throws Doion { Fil= new File(uploadDir + \"/uploadDir_\" + server()); if (!uper.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:21.955525", "n_pass": [112, 13, 9], "score": "0.2993", "loss": "3.947", "code": "void createUploadDir(Server  uploadDir) throws Doion { Fil= new File(ur + \"/uploadDir_\" + server()); if (!uper.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:24.588964", "n_pass": [118, 15, 10], "score": "0.2316", "loss": "4.0151", "code": "void createUploadDir(Server  uploadDir) throws Doion { Fil= new File(ur + \"/uploadDir_\" + server()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:45.863003", "n_pass": [199, 29, 11], "score": "0.2308", "loss": "3.8455", "code": "void createUploadDir(Server  uploadDir) throws D { Fil= new File(ur + \"/uploadDir_\" + server()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:56:51.136273", "n_pass": [210, 33, 12], "score": "0.2443", "loss": "3.3877", "code": "void createUploadDir(Server  uploadDir) throws D { Fil= new File(ur + \"/uploadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:57:02.233913", "n_pass": [230, 40, 13], "score": "0.2222", "loss": "3.6217", "code": "void createUploadDir(Ser  uploadDir) throws D { Fil= new File(ur + \"/uploadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:57:29.552881", "n_pass": [350, 59, 14], "score": "0.2278", "loss": "3.1822", "code": "void createUploadDir(Ser  uploadDir) throws D { F= new File(ur + \"/uploadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:57:30.868903", "n_pass": [352, 60, 15], "score": "0.1826", "loss": "3.378", "code": "void createUploadDir(Ser  uploadDir) throws D { F= neFile(ur + \"/uploadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:57:34.837126", "n_pass": [356, 63, 16], "score": "0.2158", "loss": "3.3542", "code": "void createUploadDir(Ser  uploadDir) throws D { F= neFile(u+ \"/uploadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:57:37.507698", "n_pass": [360, 65, 17], "score": "0.2839", "loss": "4.4714", "code": "void createUploadDir(Ser  uploadDir) throws D { F= neFile(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:07.997647", "n_pass": [406, 85, 18], "score": "0.3679", "loss": "3.6463", "code": "void createUploadDir(Se uploadDir) throws D { F= neFile(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:14.592715", "n_pass": [419, 90, 19], "score": "0.3861", "loss": "2.6342", "code": "void createUploadDir(Se uploadDir) throws D { FneFile(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:15.907022", "n_pass": [420, 91, 20], "score": "0.4817", "loss": "2.6667", "code": "void createUploadDir(Se uploadDir) throws D { FFile(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:17.224974", "n_pass": [421, 92, 21], "score": "0.4723", "loss": "2.5356", "code": "void createUploadDir(Se uploadDir) throws D { Fle(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:18.538430", "n_pass": [422, 93, 22], "score": "0.4737", "loss": "2.6029", "code": "void createUploadDir(Se uploadDir) throws D { F(u+ \"/upadDir_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:22.523019", "n_pass": [428, 96, 23], "score": "0.4608", "loss": "3.2236", "code": "void createUploadDir(Se uploadDir) throws D { F(u+ \"/upadr_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:54.208129", "n_pass": [483, 117, 24], "score": "0.4029", "loss": "2.8322", "code": "void createUploadDir(Se uploadDir) throws D {(u+ \"/upadr_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:55.511287", "n_pass": [487, 118, 25], "score": "0.4985", "loss": "2.4038", "code": "void createUploadDir(Se uploadDir) throws D {(u+ \"/adr_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:56.810401", "n_pass": [488, 119, 26], "score": "0.3951", "loss": "2.8448", "code": "void createUploadDir(Se uploadDir) throws D {(u+ \"/r_\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:58.109118", "n_pass": [489, 120, 27], "score": "0.4318", "loss": "2.8724", "code": "void createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se()); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:58:59.413221", "n_pass": [493, 121, 28], "score": "0.4766", "loss": "2.8338", "code": "void createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:59:13.740896", "n_pass": [515, 132, 29], "score": "0.7375", "loss": "2.3321", "code": "oid createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:59:15.053886", "n_pass": [516, 133, 30], "score": "0.7405", "loss": "2.3862", "code": "id createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-23 07:59:38.819538", "n_pass": [564, 148, 31], "score": "0.3742", "loss": "3.9301", "code": "id createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.dir(); } }"}
+{"time": "2021-01-23 08:00:12.681655", "n_pass": [709, 167, 32], "score": "0.3742", "loss": "3.9301", "code": "id createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.dir();} }"}
+{"time": "2021-01-23 08:00:13.992035", "n_pass": [710, 168, 33], "score": "0.3742", "loss": "3.9301", "code": "id createUploadDir(Se uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:25.111177", "n_pass": [732, 172, 34], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir) throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:38.197630", "n_pass": [744, 182, 35], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D {(u+ \"/\" + se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:39.523521", "n_pass": [753, 183, 36], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+ \"/\" + se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:42.161311", "n_pass": [758, 185, 37], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\" + se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:44.797728", "n_pass": [762, 187, 38], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+ se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:46.116924", "n_pass": [764, 188, 39], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se); if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:50.030820", "n_pass": [769, 191, 40], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se);if (!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:51.357995", "n_pass": [772, 192, 41], "score": "0.3777", "loss": "4.5032", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se);if(!ups()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:56.584809", "n_pass": [777, 196, 42], "score": "0.3603", "loss": "5.3566", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se);if(!up()) { uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:57.918337", "n_pass": [781, 197, 43], "score": "0.3603", "loss": "5.3566", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se);if(!up()){ uploadFolder.dir();}}"}
+{"time": "2021-01-23 08:00:59.222562", "n_pass": [783, 198, 44], "score": "0.3603", "loss": "5.3566", "code": "id createUploadDir(S uploadDir)throws D{(u+\"/\"+se);if(!up()){uploadFolder.dir();}}"}
+
+Minimal simplified code:
+id createUploadDir(S uploadDir)throws D{(u+"/"+se);if(!up()){uploadFolder.dir();}}
+

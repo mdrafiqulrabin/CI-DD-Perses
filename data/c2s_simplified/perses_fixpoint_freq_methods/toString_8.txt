@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/AstLambdaExpression_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:18:42.676233", "score": "0.9971", "loss": "0.0045", "code": "class T { @Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); } }"}
+{"time": "2020-12-21 11:19:20.109394", "score": "0.9741", "loss": "0.0338", "code": "class T { @Override public String toString() { result.append(n.toString()); } }"}
+{"time": "2020-12-21 11:19:41.294135", "score": "0.8724", "loss": "0.1938", "code": "class T { @Override public String toString() { result.append( ); } }"}
+{"time": "2020-12-21 11:20:02.380214", "score": "0.8724", "loss": "0.1938", "code": "class T { @Override String toString() { result.append( ); } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString()                                                                       { result.append(            ); }
+}
+
+

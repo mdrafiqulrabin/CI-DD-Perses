@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/ItemContentsBean_getRationale.java
+method_name = getRationale
+method_body = public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, ""); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:20:11.892147", "score": "0.4218", "loss": "2.1693", "code": "class T { public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); } }"}
+{"time": "2021-01-24 15:24:33.022337", "score": "0.6605", "loss": "1.2002", "code": "class T { public String getRationale() { return Validator.check(rationale, \"\"); } }"}
+{"time": "2021-01-24 15:28:41.233018", "score": "0.7299", "loss": "0.7191", "code": "class T { public String getRationale() { return Validator.check(rationale ); } }"}
+{"time": "2021-01-24 15:29:20.940674", "score": "0.7299", "loss": "0.7191", "code": "class T { String getRationale() { return Validator.check(rationale ); } }"}
+
+Minimal simplified code:
+class T {
+       String getRationale() {                                                                                                                                                                                                                   return Validator.check(rationale    ); }
+}
+
+

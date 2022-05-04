@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+
+topk path-contexts:
+[0.2553] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.1145] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),recreate
+[0.0783] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.0650] recreate,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.0633] createtesttable,(ClassOrInterfaceType0)^(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.0573] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.0516] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+[0.0455] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),recreate
+[0.0437] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType3),exception
+[0.0390] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),createtesttable
+
+topk terminals:
+['args', 'createtesttable', 'args', 'recreate', '[]', 'createtesttable', 'recreate', 'createtesttable', 'createtesttable', 'createtesttable', 'args', 'createtesttable', 'string', 'createtesttable', 'exception', 'recreate', 'args', 'exception', 'exception', 'createtesttable']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/URL_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 03:41:57.886034", "score": "0.9951", "loss": "0.0056", "code": "class T { @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); } }"}
+{"time": "2020-12-29 03:45:01.222703", "score": "0.9836", "loss": "0.0168", "code": "class T { @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; } }"}
+{"time": "2020-12-29 03:46:16.916297", "score": "0.9397", "loss": "0.0627", "code": "class T { @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); } }"}
+{"time": "2020-12-29 03:47:32.100482", "score": "0.9498", "loss": "0.07", "code": "class T { @Override public boolean equals(Object obj) { return (false); } }"}
+{"time": "2020-12-29 03:48:47.743929", "score": "0.8441", "loss": "0.1802", "code": "class T { @Override public boolean equals(Object obj) { return ; } }"}
+{"time": "2020-12-29 03:49:27.353222", "score": "0.7378", "loss": "0.3573", "code": "class T { boolean equals(Object obj) { return ; } }"}
+
+Minimal simplified code:
+class T {
+                 boolean equals(Object obj) {                            return        ;                                                                                                     }
+}
+
+

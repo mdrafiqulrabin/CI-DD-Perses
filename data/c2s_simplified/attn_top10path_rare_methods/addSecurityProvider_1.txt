@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/test/java/io/katharsis/module/SimpleModuleTest_addSecurityProvider.java
+method_name = addSecurityProvider
+method_body = @Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }
+
+topk path-contexts for sub-token: add
+[0.0707] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0629] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0591] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.0526] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.0508] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0505] security|provider,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0447] security|provider,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0409] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0400] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+[0.0358] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+
+topk terminals for sub-token: add
+['override', 'void', 'override', 'METHOD_NAME', 'void', 'security|provider', 'METHOD_NAME', 'security|provider', 'void', 'METHOD_NAME', 'security|provider', 'num|security|providers', 'security|provider', 'num|security|providers', 'METHOD_NAME', 'num|security|providers', 'void', 'security|provider', 'METHOD_NAME', 'security|provider']
+
+topk path-contexts for sub-token: security
+[0.1737] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.1274] security|provider,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.1096] security|provider,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0885] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.0840] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.0571] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+[0.0523] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+[0.0427] security|provider,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,security|provider
+[0.0160] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0122] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+
+topk terminals for sub-token: security
+['METHOD_NAME', 'num|security|providers', 'security|provider', 'num|security|providers', 'security|provider', 'num|security|providers', 'METHOD_NAME', 'security|provider', 'void', 'security|provider', 'METHOD_NAME', 'security|provider', 'void', 'security|provider', 'security|provider', 'security|provider', 'void', 'METHOD_NAME', 'override', 'void']
+
+topk path-contexts for sub-token: provider
+[0.1912] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.1641] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,security|provider
+[0.1498] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+[0.1444] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,security|provider
+[0.1186] security|provider,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,security|provider
+[0.0574] security|provider,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0567] security|provider,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0439] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|UnaryExpr:posIncrement|NameExpr0,num|security|providers
+[0.0058] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0019] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+
+topk terminals for sub-token: provider
+['void', 'security|provider', 'METHOD_NAME', 'security|provider', 'void', 'security|provider', 'METHOD_NAME', 'security|provider', 'security|provider', 'security|provider', 'security|provider', 'num|security|providers', 'security|provider', 'num|security|providers', 'METHOD_NAME', 'num|security|providers', 'void', 'METHOD_NAME', 'override', 'void']
+

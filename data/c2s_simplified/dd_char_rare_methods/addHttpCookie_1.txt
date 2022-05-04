@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server/src/main/java/org/kaazing/gateway/server/test/config/RealmConfiguration_addHttpCookie.java
+method_name = addHttpCookie
+method_body = @Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }
+predict, score, loss = addHttpCookie, 0.47482312, 1.6152055
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:08:10.894815", "n_pass": [1, 1, 1], "score": "0.4748", "loss": "1.6152", "code": "@Override public void addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-23 13:08:14.261557", "n_pass": [46, 3, 2], "score": "0.4771", "loss": "2.0319", "code": "@Override puoid addHttpCookie(Suppressible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-23 13:08:15.914705", "n_pass": [49, 4, 3], "score": "0.4771", "loss": "2.0319", "code": "@Override puoid addHttpCookie(ssible<String> httpCookie) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-23 13:08:17.236161", "n_pass": [53, 5, 4], "score": "0.4911", "loss": "1.8659", "code": "@Override puoid addHttpCookie(ssible<String> htte) { httpCookies.add(httpCookie); }"}
+{"time": "2021-01-23 13:08:19.847587", "n_pass": [57, 7, 5], "score": "0.3628", "loss": "2.5145", "code": "@Override puoid addHttpCookie(ssible<String> htte) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:23.557326", "n_pass": [97, 9, 6], "score": "0.3849", "loss": "2.4898", "code": "@Ovide puoid addHttpCookie(ssible<String> htte) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:24.857762", "n_pass": [98, 10, 7], "score": "0.3343", "loss": "2.7526", "code": "@Ov puoid addHttpCookie(ssible<String> htte) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:26.502605", "n_pass": [100, 11, 8], "score": "0.362", "loss": "2.9219", "code": "@Ov pu addHttpCookie(ssible<String> htte) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:29.268242", "n_pass": [106, 12, 9], "score": "0.362", "loss": "2.9219", "code": "@Ov pu addHttpCookie(ble<String> htte) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:31.892836", "n_pass": [111, 14, 10], "score": "0.4806", "loss": "2.87", "code": "@Ov pu addHttpCookie(ble<String> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:38.485908", "n_pass": [120, 19, 11], "score": "0.5836", "loss": "2.078", "code": " pu addHttpCookie(ble<String> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:48.835563", "n_pass": [175, 25, 12], "score": "0.5836", "loss": "2.078", "code": "pu addHttpCookie(ble<String> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:50.140910", "n_pass": [176, 26, 13], "score": "0.6036", "loss": "2.0569", "code": "u addHttpCookie(ble<String> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:55.821681", "n_pass": [190, 27, 14], "score": "0.6036", "loss": "2.0569", "code": "u addHttpCookie(e<String> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:57.142275", "n_pass": [192, 28, 15], "score": "0.7486", "loss": "2.1767", "code": "u addHttpCookie(e<ring> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:08:58.464018", "n_pass": [193, 29, 16], "score": "0.5006", "loss": "3.4437", "code": "u addHttpCookie(e<ng> e) { httpCookies.add(kie); }"}
+{"time": "2021-01-23 13:09:10.215600", "n_pass": [207, 38, 17], "score": "0.7899", "loss": "1.441", "code": "u addHttpCookie(e<ng> e) { httpCookies.add(k); }"}
+{"time": "2021-01-23 13:09:28.284471", "n_pass": [276, 47, 18], "score": "0.7899", "loss": "1.441", "code": "u addHttpCookie(e<ng> e) { httpCookies.add(k);}"}
+{"time": "2021-01-23 13:09:34.998688", "n_pass": [295, 48, 19], "score": "0.7311", "loss": "1.6216", "code": "u addHttpCookie(e<g> e) { httpCookies.add(k);}"}
+{"time": "2021-01-23 13:09:36.302463", "n_pass": [298, 49, 20], "score": "0.7311", "loss": "1.6216", "code": "u addHttpCookie(e<g>e) { httpCookies.add(k);}"}
+{"time": "2021-01-23 13:09:37.609692", "n_pass": [301, 50, 21], "score": "0.7311", "loss": "1.6216", "code": "u addHttpCookie(e<g>e){ httpCookies.add(k);}"}
+{"time": "2021-01-23 13:09:38.962729", "n_pass": [303, 51, 22], "score": "0.7311", "loss": "1.6216", "code": "u addHttpCookie(e<g>e){httpCookies.add(k);}"}
+{"time": "2021-01-23 13:09:59.868715", "n_pass": [320, 67, 23], "score": "0.3597", "loss": "2.8408", "code": "u addHttpCookie(e<g>e){httpCookies.add();}"}
+
+Minimal simplified code:
+u addHttpCookie(e<g>e){httpCookies.add();}
+

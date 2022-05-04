@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:36:04.441915", "score": "0.9999", "loss": "0.0001", "code": "class T { public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); } }"}
+{"time": "2020-12-21 09:36:41.664748", "score": "0.9972", "loss": "0.0044", "code": "class T { public static void main(String[] args) throws Exception { } }"}
+{"time": "2020-12-21 09:37:02.730999", "score": "0.9611", "loss": "0.0677", "code": "class T { public static void main(String args) throws Exception { } }"}
+{"time": "2020-12-21 09:37:13.212901", "score": "0.7634", "loss": "0.5046", "code": "class T { public static void main(String args) { } }"}
+{"time": "2020-12-21 09:37:23.766423", "score": "0.7634", "loss": "0.5046", "code": "class T { void main(String args) { } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                  {                                                                                         }
+}
+
+

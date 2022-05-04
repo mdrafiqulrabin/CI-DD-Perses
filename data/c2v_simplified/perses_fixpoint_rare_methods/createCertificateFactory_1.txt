@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/pkix/src/main/java/org/bouncycastle/cert/jcajce/NamedCertHelper_createCertificateFactory.java
+method_name = createCertificateFactory
+method_body = protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 23:19:57.762642", "score": "0.4834", "loss": "0.8358", "code": "class T { protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); } }"}
+{"time": "2021-01-24 23:30:18.796519", "score": "0.4834", "loss": "0.8358", "code": "class T { CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); } }"}
+
+Minimal simplified code:
+class T {
+          CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }
+}
+
+

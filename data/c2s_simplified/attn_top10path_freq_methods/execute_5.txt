@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+
+topk path-contexts for sub-token: execute
+[0.0870] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,tuple
+[0.0690] tuple,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,tuple
+[0.0476] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,tuple
+[0.0378] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0366] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0351] tuple,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|FieldAccessExpr3|NameExpr2,fetched
+[0.0336] tuple,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,collector
+[0.0336] tuple,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,collector
+[0.0316] tuple,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,emit
+[0.0311] tuple,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,collector
+[0.0311] tuple,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,collector
+
+topk terminals for sub-token: execute
+['void', 'tuple', 'tuple', 'tuple', 'METHOD_NAME', 'tuple', 'override', 'METHOD_NAME', 'override', 'void', 'tuple', 'fetched', 'tuple', 'collector', 'tuple', 'collector', 'tuple', 'emit', 'tuple', 'collector', 'tuple', 'collector']
+

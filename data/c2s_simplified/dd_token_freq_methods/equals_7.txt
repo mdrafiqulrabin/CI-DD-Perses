@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/lang/FunctionMapperImpl_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }
+predict, score, loss = equals, 0.9963225, 0.004956697
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:07:27.411234", "n_pass": [1, 1, 1], "score": "0.9963", "loss": "0.005", "code": "@Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:29.486954", "n_pass": [25, 2, 2], "score": "0.9476", "loss": "0.104", "code": "@Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:31.556269", "n_pass": [50, 3, 3], "score": "0.8793", "loss": "0.2271", "code": "public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:34.233905", "n_pass": [56, 5, 4], "score": "0.8906", "loss": "0.2237", "code": "public boolean equals(Object obj) { if (obj ) { return this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:38.611616", "n_pass": [95, 7, 5], "score": "0.885", "loss": "0.2289", "code": "public boolean equals(Object obj) { if (obj ) { this.hashCode.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:39.949014", "n_pass": [96, 8, 6], "score": "0.9127", "loss": "0.1939", "code": "public boolean equals(Object obj) { if (obj ) { this.hashCode(); } return false; }"}
+{"time": "2020-12-27 04:07:41.642291", "n_pass": [98, 9, 7], "score": "0.8375", "loss": "0.3026", "code": "public boolean equals(Object obj) { if (obj ) { this.hashCode; } return false; }"}
+{"time": "2020-12-27 04:07:42.989895", "n_pass": [101, 10, 8], "score": "0.7047", "loss": "0.5907", "code": "public boolean equals(Object obj) { if (obj ) { this.hashCode; } false; }"}
+{"time": "2020-12-27 04:07:44.327075", "n_pass": [102, 11, 9], "score": "0.6151", "loss": "0.8364", "code": "public boolean equals(Object obj) { if (obj ) { this.hashCode; }  }"}
+{"time": "2020-12-27 04:07:45.641989", "n_pass": [104, 12, 10], "score": "0.6151", "loss": "0.8364", "code": " boolean equals(Object obj) { if (obj ) { this.hashCode; }  }"}
+{"time": "2020-12-27 04:07:46.932700", "n_pass": [105, 13, 11], "score": "0.6151", "loss": "0.8364", "code": "boolean equals(Object obj) { if (obj ) { this.hashCode; }  }"}
+{"time": "2020-12-27 04:07:48.992044", "n_pass": [119, 14, 12], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj) { if (obj ) { this; }  }"}
+{"time": "2020-12-27 04:07:56.035925", "n_pass": [159, 16, 13], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj) { if (obj ) { this;}  }"}
+{"time": "2020-12-27 04:07:57.344769", "n_pass": [161, 17, 14], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj) { if (obj ) { this;} }"}
+{"time": "2020-12-27 04:07:58.669269", "n_pass": [162, 18, 15], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj) { if (obj ) { this;}}"}
+{"time": "2020-12-27 04:08:00.690448", "n_pass": [172, 19, 16], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){ if (obj ) { this;}}"}
+{"time": "2020-12-27 04:08:01.988058", "n_pass": [174, 20, 17], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){if (obj ) { this;}}"}
+{"time": "2020-12-27 04:08:03.297947", "n_pass": [176, 21, 18], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){if(obj ) { this;}}"}
+{"time": "2020-12-27 04:08:04.611016", "n_pass": [179, 22, 19], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){if(obj) { this;}}"}
+{"time": "2020-12-27 04:08:05.942648", "n_pass": [181, 23, 20], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){if(obj){ this;}}"}
+{"time": "2020-12-27 04:08:07.267741", "n_pass": [183, 24, 21], "score": "0.3917", "loss": "1.6901", "code": "boolean equals(Object obj){if(obj){this;}}"}
+
+Minimal simplified code:
+boolean equals(Object obj){if(obj){this;}}
+

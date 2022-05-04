@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/startup/TestTomcat_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { super.init(); callCount.incrementAndGet(); }
+predict, score, loss = init, 0.9936242, 0.0076377685
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:32:54.639129", "n_pass": [1, 1, 1], "score": "0.9936", "loss": "0.0076", "code": "@Override public void init() throws ServletException { super.init(); callCount.incrementAndGet(); }"}
+{"time": "2020-12-27 04:32:57.284777", "n_pass": [20, 3, 2], "score": "0.9942", "loss": "0.0079", "code": " void init() throws ServletException { super.init(); callCount.incrementAndGet(); }"}
+{"time": "2020-12-27 04:33:00.966579", "n_pass": [49, 5, 3], "score": "0.9364", "loss": "0.119", "code": " void init() throws ServletException { super.init; callCount.incrementAndGet(); }"}
+{"time": "2020-12-27 04:33:02.282430", "n_pass": [50, 6, 4], "score": "0.9638", "loss": "0.0736", "code": " void init() throws ServletException { super.init; incrementAndGet(); }"}
+{"time": "2020-12-27 04:33:08.575814", "n_pass": [91, 8, 5], "score": "0.9638", "loss": "0.0736", "code": " void init() throws ServletException { super.init; incrementAndGet();}"}
+{"time": "2020-12-27 04:33:09.880924", "n_pass": [92, 9, 6], "score": "0.9638", "loss": "0.0736", "code": "void init() throws ServletException { super.init; incrementAndGet();}"}
+{"time": "2020-12-27 04:33:11.886864", "n_pass": [98, 10, 7], "score": "0.9638", "loss": "0.0736", "code": "void init()throws ServletException { super.init; incrementAndGet();}"}
+{"time": "2020-12-27 04:33:13.196835", "n_pass": [102, 11, 8], "score": "0.9638", "loss": "0.0736", "code": "void init()throws ServletException{ super.init; incrementAndGet();}"}
+{"time": "2020-12-27 04:33:14.492439", "n_pass": [104, 12, 9], "score": "0.9638", "loss": "0.0736", "code": "void init()throws ServletException{super.init; incrementAndGet();}"}
+{"time": "2020-12-27 04:33:17.142827", "n_pass": [109, 14, 10], "score": "0.9638", "loss": "0.0736", "code": "void init()throws ServletException{super.init;incrementAndGet();}"}
+
+Minimal simplified code:
+void init()throws ServletException{super.init;incrementAndGet();}
+

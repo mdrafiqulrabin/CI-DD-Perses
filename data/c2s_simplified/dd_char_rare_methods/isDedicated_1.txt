@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/base/Conversions_isDedicated.java
+method_name = isDedicated
+method_body = public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }
+predict, score, loss = isDedicated, 0.38595137, 1.5912131
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:26:34.134506", "n_pass": [1, 1, 1], "score": "0.386", "loss": "1.5912", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:37.150696", "n_pass": [25, 3, 2], "score": "0.4231", "loss": "1.8499", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAqualTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:40.197501", "n_pass": [48, 5, 3], "score": "0.5302", "loss": "1.7617", "code": "public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAqualTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:44.504863", "n_pass": [56, 8, 4], "score": "0.5666", "loss": "1.692", "code": "public static boolean isDedicated(Offer offer) { return Flueom(offer.getAttributesList()).transform(ATTRIBUTE_NAqualTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:45.820059", "n_pass": [58, 9, 5], "score": "0.6155", "loss": "1.5959", "code": "public static boolean isDedicated(Offer offer) { return Flueom(offer.getA()).transform(ATTRIBUTE_NAqualTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:51.479795", "n_pass": [95, 13, 6], "score": "0.525", "loss": "1.7463", "code": "public static boolean isDedicated(Offer offer) { return Flueom(offer.getA()).transform(ATT_NAqualTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:52.802782", "n_pass": [96, 14, 7], "score": "0.3677", "loss": "2.012", "code": "public static boolean isDedicated(Offer offer) { return Flueom(offer.getA()).transform(ATTTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:26:58.072254", "n_pass": [102, 18, 8], "score": "0.3677", "loss": "2.012", "code": " static boolean isDedicated(Offer offer) { return Flueom(offer.getA()).transform(ATTTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:27:02.751618", "n_pass": [113, 21, 9], "score": "0.4421", "loss": "1.8463", "code": " static boolean isDedicated(Offer offer) { return Flueom(offA()).transform(ATTTo(Configr.DEDICATED_ATTRIBUTE)); }"}
+{"time": "2021-01-23 08:27:07.992262", "n_pass": [120, 25, 10], "score": "0.3198", "loss": "2.6068", "code": " static boolean isDedicated(Offer offer) { return Flueom(offA()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:22.114927", "n_pass": [184, 34, 11], "score": "0.5803", "loss": "1.8134", "code": " static boolean isDedicated(Of offer) { return Flueom(offA()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:23.513164", "n_pass": [185, 35, 12], "score": "0.6773", "loss": "1.4652", "code": " static boolean isDedicated(Of of) { return Flueom(offA()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:24.845610", "n_pass": [189, 36, 13], "score": "0.3287", "loss": "2.7647", "code": " static boolean isDedicated(Of of) { returlueom(offA()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:26.169007", "n_pass": [190, 37, 14], "score": "0.3287", "loss": "2.7647", "code": " static boolean isDedicated(Of of) { returom(offA()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:27.481307", "n_pass": [192, 38, 15], "score": "0.3709", "loss": "2.7748", "code": " static boolean isDedicated(Of of) { returom(A()).transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:28.787984", "n_pass": [193, 39, 16], "score": "0.2423", "loss": "2.8698", "code": " static boolean isDedicated(Of of) { returom().transform(ATTTo(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:32.690294", "n_pass": [198, 42, 17], "score": "0.3513", "loss": "3.1903", "code": " static boolean isDedicated(Of of) { returom().transform(To(Configr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:33.988095", "n_pass": [200, 43, 18], "score": "0.3513", "loss": "3.1903", "code": " static boolean isDedicated(Of of) { returom().transform(To(figr.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:35.292487", "n_pass": [201, 44, 19], "score": "0.325", "loss": "3.4718", "code": " static boolean isDedicated(Of of) { returom().transform(To(r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:27:45.880106", "n_pass": [219, 51, 20], "score": "0.325", "loss": "3.4718", "code": " static boolean isDedicated(Of of) {turom().transform(To(r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:01.469225", "n_pass": [296, 61, 21], "score": "0.3031", "loss": "2.4897", "code": " static boolean isDedicated(Of of) {rom().transform(To(r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:02.769127", "n_pass": [297, 62, 22], "score": "0.2988", "loss": "4.3437", "code": " static boolean isDedicated(Of of) {m().transform(To(r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:09.339132", "n_pass": [305, 67, 23], "score": "0.3251", "loss": "2.7619", "code": " static boolean isDedicated(Of of) {m().transform((r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:18.492288", "n_pass": [316, 74, 24], "score": "0.3251", "loss": "2.7619", "code": "static boolean isDedicated(Of of) {m().transform((r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:50.248355", "n_pass": [419, 93, 25], "score": "0.3094", "loss": "2.094", "code": "static boolean isDedicated(f of) {m().transform((r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:51.550117", "n_pass": [421, 94, 26], "score": "0.302", "loss": "1.9345", "code": "static boolean isDedicated(f f) {m().transform((r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:28:52.895598", "n_pass": [424, 95, 27], "score": "0.302", "loss": "1.9345", "code": "static boolean isDedicated(f f){m().transform((r.DEDICATED_TE)); }"}
+{"time": "2021-01-23 08:29:05.917061", "n_pass": [442, 105, 28], "score": "0.2319", "loss": "2.5512", "code": "static boolean isDedicated(f f){m().transform((rDEDICATED_TE)); }"}
+{"time": "2021-01-23 08:29:22.833372", "n_pass": [458, 118, 29], "score": "0.2319", "loss": "2.5512", "code": "static boolean isDedicated(f f){m().transform((rDEDICATED_TE));}"}
+{"time": "2021-01-23 08:29:50.764066", "n_pass": [507, 136, 30], "score": "0.2592", "loss": "2.219", "code": "static boolean isDedicated(f f){m().transform((DEDICATED_TE));}"}
+{"time": "2021-01-23 08:30:05.107479", "n_pass": [518, 147, 31], "score": "0.1989", "loss": "2.3777", "code": "static boolean isDedicated(f f){m().transform((DEDICATED_E));}"}
+{"time": "2021-01-23 08:30:06.401986", "n_pass": [519, 148, 32], "score": "0.2675", "loss": "1.9758", "code": "static boolean isDedicated(f f){m().transform((DEDICATED_));}"}
+{"time": "2021-01-23 08:30:27.804055", "n_pass": [564, 161, 33], "score": "0.3528", "loss": "2.0004", "code": "static boolean isDedicated(f f){m().tranform((DEDICATED_));}"}
+{"time": "2021-01-23 08:30:46.011776", "n_pass": [580, 175, 34], "score": "0.3528", "loss": "2.0004", "code": "static boolean isDedicated(f f){m().tranform((DEDICATED));}"}
+
+Minimal simplified code:
+static boolean isDedicated(f f){m().tranform((DEDICATED));}
+

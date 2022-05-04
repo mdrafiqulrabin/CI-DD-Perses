@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ha/deploy/WarWatcher_setLastState.java
+method_name = setLastState
+method_body = protected void setLastState(int lastState) { this.lastState = lastState; }
+predict, score, loss = setLastState, 0.4191862940788269, 1.496350646018982
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:41:21.286414", "n_pass": [1, 1, 1], "score": "0.4192", "loss": "1.4964", "code": "protected void setLastState(int lastState) { this.lastState = lastState; }"}
+{"time": "2021-01-20 06:41:24.281899", "n_pass": [20, 2, 2], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState) { this.lastState = lastState; }"}
+{"time": "2021-01-20 06:41:36.381694", "n_pass": [70, 5, 3], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState){ this.lastState = lastState; }"}
+{"time": "2021-01-20 06:41:38.970665", "n_pass": [72, 6, 4], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState){this.lastState = lastState; }"}
+{"time": "2021-01-20 06:41:44.191656", "n_pass": [76, 8, 5], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState){this.lastState= lastState; }"}
+{"time": "2021-01-20 06:41:46.797147", "n_pass": [78, 9, 6], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState){this.lastState=lastState; }"}
+{"time": "2021-01-20 06:41:49.398442", "n_pass": [81, 10, 7], "score": "0.4192", "loss": "1.4964", "code": "void setLastState(int lastState){this.lastState=lastState;}"}
+
+Minimal simplified code:
+void setLastState(int lastState){this.lastState=lastState;}
+

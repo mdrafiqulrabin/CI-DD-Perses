@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/handler/decoration/DecorateBiomeEventHandler_onBiomeDecorate.java
+method_name = onBiomeDecorate
+method_body = @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (BOPBiomes.excludedDecoratedWorldTypes.contains(event.getWorld().getWorldType())) return; if (event.getType() != Decorate.EventType.CUSTOM) { runGeneratorStage(event.getWorld(), event.getRand(), event.getPos(), GeneratorStage.mapDecorateType(event.getType())); } }
+
+topk path-contexts for sub-token: on
+[0.1241] event,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1079] subscribe|event,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1040] subscribe|event,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0930] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.0928] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.0591] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|NameExpr3,contains
+[0.0586] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr0,bop|biomes
+[0.0585] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|MethodCallExpr0|NameExpr0,event
+[0.0300] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,excluded|decorated|world|types
+[0.0217] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,event
+
+topk terminals for sub-token: on
+['event', 'decorate|biome|event', 'subscribe|event', 'METHOD_NAME', 'subscribe|event', 'void', 'METHOD_NAME', 'decorate|biome|event', 'void', 'decorate|biome|event', 'decorate|biome|event', 'contains', 'decorate|biome|event', 'bop|biomes', 'decorate|biome|event', 'event', 'decorate|biome|event', 'excluded|decorated|world|types', 'void', 'event']
+
+topk path-contexts for sub-token: biome
+[0.1928] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1495] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1112] event,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1103] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|MethodCallExpr0|NameExpr0,event
+[0.0554] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|FieldAccessExpr1|NameExpr2,custom
+[0.0364] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|MethodCallExpr0|NameExpr2,get|type
+[0.0316] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr0,bop|biomes
+[0.0313] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|NameExpr3,contains
+[0.0264] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|world|type
+[0.0212] subscribe|event,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: biome
+['void', 'decorate|biome|event', 'METHOD_NAME', 'decorate|biome|event', 'event', 'decorate|biome|event', 'decorate|biome|event', 'event', 'decorate|biome|event', 'custom', 'decorate|biome|event', 'get|type', 'decorate|biome|event', 'bop|biomes', 'decorate|biome|event', 'contains', 'decorate|biome|event', 'get|world|type', 'subscribe|event', 'METHOD_NAME']
+
+topk path-contexts for sub-token: decorate
+[0.1409] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1254] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.1115] event,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,decorate|biome|event
+[0.0482] subscribe|event,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0452] subscribe|event,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0402] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|MethodCallExpr0|NameExpr3,contains
+[0.0207] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|MethodCallExpr0|NameExpr0,event
+[0.0203] decorate|biome|event,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|MethodCallExpr0|NameExpr2,get|type
+[0.0191] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0168] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,event
+
+topk terminals for sub-token: decorate
+['void', 'decorate|biome|event', 'METHOD_NAME', 'decorate|biome|event', 'event', 'decorate|biome|event', 'subscribe|event', 'void', 'subscribe|event', 'METHOD_NAME', 'decorate|biome|event', 'contains', 'decorate|biome|event', 'event', 'decorate|biome|event', 'get|type', 'void', 'METHOD_NAME', 'METHOD_NAME', 'event']
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server.spi/src/main/java/org/kaazing/gateway/server/spi/security/LoginResultCallback_setLoginResult.java
+method_name = setLoginResult
+method_body = public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException("A Login Result already exists in this callback and cannot be set again."); } }
+
+topk path-contexts for sub-token: set
+[0.2067] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0931] null,NullLiteralExpr2|MethodCallExpr|NameExpr3,compare|and|set
+[0.0731] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,compare|and|set
+[0.0639] login|result,NameExpr3|MethodCallExpr|NameExpr3,compare|and|set
+[0.0634] null,NullLiteralExpr2|MethodCallExpr|NameExpr3,login|result
+[0.0502] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,login|result
+[0.0201] this,ThisExpr0|FieldAccessExpr0|MethodCallExpr|NullLiteralExpr2,null
+[0.0186] login|result,NameExpr2|FieldAccessExpr0|MethodCallExpr|NullLiteralExpr2,null
+[0.0182] this,ThisExpr0|FieldAccessExpr0|NameExpr2,login|result
+[0.0181] compare|and|set,NameExpr3|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ThrowStmt|ObjectCreationExpr|ClassOrInterfaceType0,unsupported|operation|exception
+
+topk terminals for sub-token: set
+['void', 'METHOD_NAME', 'null', 'compare|and|set', 'METHOD_NAME', 'compare|and|set', 'login|result', 'compare|and|set', 'null', 'login|result', 'METHOD_NAME', 'login|result', 'this', 'null', 'login|result', 'null', 'this', 'login|result', 'compare|and|set', 'unsupported|operation|exception']
+
+topk path-contexts for sub-token: login
+[0.2748] this,ThisExpr0|FieldAccessExpr0|NameExpr2,login|result
+[0.0859] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|FieldAccessExpr0|NameExpr2,login|result
+[0.0518] null,NullLiteralExpr2|MethodCallExpr|NameExpr3,compare|and|set
+[0.0395] null,NullLiteralExpr2|MethodCallExpr|NameExpr3,login|result
+[0.0312] login|result,NameExpr3|MethodCallExpr|NameExpr3,compare|and|set
+[0.0276] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,compare|and|set
+[0.0262] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,login|result
+[0.0260] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,login|result
+[0.0251] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,login|result
+[0.0192] login|result,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,compare|and|set
+
+topk terminals for sub-token: login
+['this', 'login|result', 'METHOD_NAME', 'login|result', 'null', 'compare|and|set', 'null', 'login|result', 'login|result', 'compare|and|set', 'METHOD_NAME', 'compare|and|set', 'void', 'login|result', 'METHOD_NAME', 'login|result', 'METHOD_NAME', 'login|result', 'login|result', 'compare|and|set']
+
+topk path-contexts for sub-token: result
+[0.1675] this,ThisExpr0|FieldAccessExpr0|NameExpr2,login|result
+[0.0810] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|FieldAccessExpr0|NameExpr2,login|result
+[0.0793] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,login|result
+[0.0768] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,login|result
+[0.0573] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,login|result
+[0.0431] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,login|result
+[0.0334] null,NullLiteralExpr2|MethodCallExpr|NameExpr3,login|result
+[0.0301] login|result,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NullLiteralExpr2,null
+[0.0269] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,login|result
+[0.0249] login|result,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: result
+['this', 'login|result', 'METHOD_NAME', 'login|result', 'METHOD_NAME', 'login|result', 'void', 'login|result', 'METHOD_NAME', 'login|result', 'void', 'login|result', 'null', 'login|result', 'login|result', 'null', 'METHOD_NAME', 'login|result', 'login|result', 'this']
+

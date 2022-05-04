@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/ParserController_parseTagFileDirectives.java
+method_name = parseTagFileDirectives
+method_body = public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean isTagFileSave = isTagFile; boolean directiveOnlySave = directiveOnly; isTagFile = true; directiveOnly = true; Node.Nodes page = doParse(inFileName, null, jar); directiveOnly = directiveOnlySave; isTagFile = isTagFileSave; return page; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 09:43:11.403893", "score": "0.4959", "loss": "1.8067", "code": "class T { public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean isTagFileSave = isTagFile; boolean directiveOnlySave = directiveOnly; isTagFile = true; directiveOnly = true; Node.Nodes page = doParse(inFileName, null, jar); directiveOnly = directiveOnlySave; isTagFile = isTagFileSave; return page; } }"}
+{"time": "2021-01-24 09:46:13.125502", "score": "0.7131", "loss": "1.4251", "code": "class T { public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean isTagFileSave = isTagFile; boolean directiveOnlySave = directiveOnly; isTagFile = true; directiveOnly = true; } }"}
+{"time": "2021-01-24 09:47:28.442979", "score": "0.5199", "loss": "1.9979", "code": "class T { public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean isTagFileSave = isTagFile; boolean directiveOnlySave = directiveOnly; } }"}
+{"time": "2021-01-24 09:49:23.415210", "score": "0.4128", "loss": "2.1397", "code": "class T { public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException, IOException { boolean directiveOnlySave = directiveOnly; } }"}
+{"time": "2021-01-24 09:53:55.285891", "score": "0.3542", "loss": "2.1034", "code": "class T { public Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException { boolean directiveOnlySave = directiveOnly; } }"}
+{"time": "2021-01-24 09:57:51.873626", "score": "0.3542", "loss": "2.1034", "code": "class T { Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException { boolean directiveOnlySave = directiveOnly; } }"}
+
+Minimal simplified code:
+class T {
+       Node.Nodes parseTagFileDirectives(String inFileName, Jar jar) throws FileNotFoundException, JasperException              {                                    boolean directiveOnlySave = directiveOnly;                                                                                                                                                                      }
+}
+
+

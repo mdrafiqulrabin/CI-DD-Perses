@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/com/iwc/shop/modules/act/service/ActTaskService_setWidthAndHeight.java
+method_name = setWidthAndHeight
+method_body = private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put("width", activity.getWidth()); activityInfo.put("height", activity.getHeight()); }
+predict, score, loss = setWidthAndHeight, 0.37662798166275024, 1.6652288436889648
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:55:40.482678", "n_pass": [1, 1, 1], "score": "0.3766", "loss": "1.6652", "code": "private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-23 18:55:46.190126", "n_pass": [44, 3, 2], "score": "0.3832", "loss": "1.7849", "code": "d setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-23 18:55:49.322025", "n_pass": [52, 4, 3], "score": "0.3902", "loss": "2.4345", "code": "d setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { actt(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-23 18:55:54.559265", "n_pass": [56, 6, 4], "score": "0.2211", "loss": "3.7514", "code": "d setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { actt(\"width\", activity.getWidth()); actt(\"height\", activity.getHeight()); }"}
+{"time": "2021-01-23 18:55:57.177015", "n_pass": [58, 7, 5], "score": "0.212", "loss": "3.6887", "code": "d setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { actt(\"width\", activity.getWidth()); actt(\"height\", Height()); }"}
+{"time": "2021-01-23 18:56:09.279264", "n_pass": [106, 11, 6], "score": "0.217", "loss": "3.6076", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Strinect> activityInfo) { actt(\"width\", activity.getWidth()); actt(\"height\", Height()); }"}
+{"time": "2021-01-23 18:56:39.398031", "n_pass": [182, 22, 7], "score": "0.2148", "loss": "3.5005", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Strinect> activityInfo) { t(\"width\", activity.getWidth()); actt(\"height\", Height()); }"}
+{"time": "2021-01-23 18:56:44.622136", "n_pass": [187, 24, 8], "score": "0.2195", "loss": "3.5526", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Strinect> activityInfo) { t(\"width\", avity.getWidth()); actt(\"height\", Height()); }"}
+{"time": "2021-01-23 18:56:57.718159", "n_pass": [192, 29, 9], "score": "0.1524", "loss": "4.1236", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Strinect> activityInfo) { t(\"width\", avity.getWidt); actt(\"height\", Height()); }"}
+{"time": "2021-01-23 18:57:00.327514", "n_pass": [194, 30, 10], "score": "0.1579", "loss": "3.9987", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Strinect> activityInfo) { t(\"width\", avity.getWidt); t(\"height\", Height()); }"}
+{"time": "2021-01-23 18:57:29.368472", "n_pass": [220, 40, 11], "score": "0.1579", "loss": "3.9987", "code": "d setWidthAndHeight(ActivityImpl activity, Map<Stect> activityInfo) { t(\"width\", avity.getWidt); t(\"height\", Height()); }"}
+{"time": "2021-01-23 18:57:32.012222", "n_pass": [221, 41, 12], "score": "0.1638", "loss": "3.9627", "code": "d setWidthAndHeight(ActivityImpl activity, Map<St> activityInfo) { t(\"width\", avity.getWidt); t(\"height\", Height()); }"}
+{"time": "2021-01-23 18:57:50.338901", "n_pass": [234, 48, 13], "score": "0.1638", "loss": "3.9627", "code": "d setWidthAndHeight(ActivityImpl activity, Map<St> activityInfo) { t(\"width\", avity.gidt); t(\"height\", Height()); }"}
+{"time": "2021-01-23 18:58:38.911144", "n_pass": [353, 65, 14], "score": "0.1638", "loss": "3.9627", "code": "d setWidthAndHeight(ActivityImpl activity, Map<St> activityInfo) { t(\"width\",vity.gidt); t(\"height\", Height()); }"}
+{"time": "2021-01-23 18:59:05.099451", "n_pass": [369, 75, 15], "score": "0.1729", "loss": "3.8898", "code": "d setWidthAndHeight(ActivityImpl activity, Map<St> activityInfo) { t(\"width\",vity.gidt); t(\"height\", Height); }"}
+{"time": "2021-01-23 19:00:07.943519", "n_pass": [414, 96, 16], "score": "0.1729", "loss": "3.8898", "code": "d setWidthAndHeight(ActivityImpl activity, p<St> activityInfo) { t(\"width\",vity.gidt); t(\"height\", Height); }"}
+{"time": "2021-01-23 19:00:34.162010", "n_pass": [432, 106, 17], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity, p<St> activityInfo) { t(\"width\",vi.gidt); t(\"height\", Height); }"}
+{"time": "2021-01-23 19:02:35.356759", "n_pass": [584, 148, 18], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity, p<St> activityInfo) { t(\"width\",vi.gidt); t(\"height\",Height); }"}
+{"time": "2021-01-23 19:02:53.684567", "n_pass": [593, 155, 19], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity, p<St> activityInfo) { t(\"width\",vi.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:03:56.411897", "n_pass": [637, 176, 20], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity,p<St> activityInfo) { t(\"width\",vi.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:04:04.266141", "n_pass": [643, 179, 21], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo) { t(\"width\",vi.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:04:38.367485", "n_pass": [657, 192, 22], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo){ t(\"width\",vi.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:04:40.978439", "n_pass": [659, 193, 23], "score": "0.1777", "loss": "3.8559", "code": "d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo){t(\"width\",vi.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:04:56.665907", "n_pass": [670, 199, 24], "score": "0.1661", "loss": "3.8657", "code": "d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo){t(\"width\",i.gidt); t(\"height\",Height);}"}
+{"time": "2021-01-23 19:05:12.412614", "n_pass": [679, 205, 25], "score": "0.1661", "loss": "3.8657", "code": "d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo){t(\"width\",i.gidt);t(\"height\",Height);}"}
+
+Minimal simplified code:
+d setWidthAndHeight(ActivityImpl activity,p<St>activityInfo){t("width",i.gidt);t("height",Height);}
+

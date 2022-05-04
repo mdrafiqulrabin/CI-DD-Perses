@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/http/src/main/java/org/kaazing/gateway/transport/http/bridge/filter/HttpHeaderDecodingState_initHeaders.java
+method_name = initHeaders
+method_body = private void initHeaders() { headers = new TreeMap<>(HttpHeaderNameComparator.INSTANCE); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:02:07.996416", "score": "0.4717", "loss": "1.7975", "code": "class T { private void initHeaders() { headers = new TreeMap<>(HttpHeaderNameComparator.INSTANCE); } }"}
+{"time": "2021-01-24 08:03:06.916660", "score": "0.3216", "loss": "5.1647", "code": "class T { private void initHeaders() { headers = new TreeMap<>( ); } }"}
+{"time": "2021-01-24 08:03:17.638520", "score": "0.3216", "loss": "5.1647", "code": "class T { private void initHeaders() { headers = new TreeMap ( ); } }"}
+{"time": "2021-01-24 08:03:28.300522", "score": "0.3216", "loss": "5.1647", "code": "class T { void initHeaders() { headers = new TreeMap ( ); } }"}
+
+Minimal simplified code:
+class T {
+        void initHeaders() { headers = new TreeMap  (                                 ); }
+}
+
+

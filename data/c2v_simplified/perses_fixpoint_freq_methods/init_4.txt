@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/main/java/example/kurt/todo/widget/ProgressView_init.java
+method_name = init
+method_body = public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 23:30:46.793896", "score": "0.8418", "loss": "0.2051", "code": "class T { public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); } }"}
+{"time": "2020-12-28 23:33:50.119962", "score": "0.9979", "loss": "0.0023", "code": "class T { public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); } }"}
+{"time": "2020-12-28 23:35:05.956782", "score": "0.9965", "loss": "0.0038", "code": "class T { public void init() { barPaint = new Paint(); } }"}
+{"time": "2020-12-28 23:36:22.102511", "score": "0.9666", "loss": "0.04", "code": "class T { public void init() { barPaint = Paint ; } }"}
+
+Minimal simplified code:
+class T {
+       void init() { barPaint =     Paint  ;                                                                                                           }
+}
+
+

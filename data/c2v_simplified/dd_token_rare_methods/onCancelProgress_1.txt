@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Hemumu__RxSample/app/src/main/java/com/helin/rxsample/http/ProgressSubscriber_onCancelProgress.java
+method_name = onCancelProgress
+method_body = @Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }
+predict, score, loss = onCancelProgress, 0.4462784230709076, 0.9728826880455017
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:20:26.425615", "n_pass": [1, 1, 1], "score": "0.4463", "loss": "0.9729", "code": "@Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:29.051117", "n_pass": [20, 2, 2], "score": "0.4144", "loss": "1.0484", "code": " void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:40.392217", "n_pass": [84, 5, 3], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:43.411497", "n_pass": [89, 6, 4], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){ if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:46.036851", "n_pass": [91, 7, 5], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:48.665872", "n_pass": [93, 8, 6], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if(!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:56.486241", "n_pass": [102, 11, 7], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if(!this.isUnsubscribed()){ this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:20:59.113269", "n_pass": [104, 12, 8], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if(!this.isUnsubscribed()){this.unsubscribe(); } }"}
+{"time": "2021-01-20 07:21:11.508947", "n_pass": [139, 16, 9], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if(!this.isUnsubscribed()){this.unsubscribe();} }"}
+{"time": "2021-01-20 07:21:14.145794", "n_pass": [140, 17, 10], "score": "0.4144", "loss": "1.0484", "code": "void onCancelProgress(){if(!this.isUnsubscribed()){this.unsubscribe();}}"}
+
+Minimal simplified code:
+void onCancelProgress(){if(!this.isUnsubscribed()){this.unsubscribe();}}
+

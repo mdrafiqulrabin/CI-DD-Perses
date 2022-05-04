@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/ByteChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 09:32:44.415632", "score": "0.9776", "loss": "0.0345", "code": "class T { @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); } }"}
+{"time": "2020-12-29 09:36:27.952974", "score": "0.444", "loss": "1.1392", "code": "class T { @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } } }"}
+{"time": "2020-12-29 09:37:45.856867", "score": "0.269", "loss": "1.6779", "code": "class T { @Override public String toString() { { return null; } } }"}
+{"time": "2020-12-29 09:39:04.223163", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override public String toString() { { } } }"}
+{"time": "2020-12-29 09:40:23.647052", "score": "0.2736", "loss": "1.6449", "code": "class T { @Override String toString() { { } } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString() {                   {              }                                                                              }
+}
+
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/StatusManager_addStatusHandlers.java
+method_name = addStatusHandlers
+method_body = public void addStatusHandlers(Collection<StatusChecker> statusHandlers) { for (StatusChecker statusChecker : statusHandlers) { String name = statusChecker.getClass().getSimpleName(); if (name.endsWith(StatusChecker.class.getSimpleName())) { name = name.substring(0, name.length() - StatusChecker.class.getSimpleName().length()); } this.statusHandlers.put(name, statusChecker); } }
+
+topk path-contexts for sub-token: add
+[0.1960] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0398] name,NameExpr2|MethodCallExpr|NameExpr3,put
+[0.0358] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|ThisExpr0,this
+[0.0349] status|checker,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0327] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0313] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.0307] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.0296] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,status|checker
+[0.0222] status|handlers,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0210] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,status|checker
+
+topk terminals for sub-token: add
+['void', 'METHOD_NAME', 'name', 'put', 'METHOD_NAME', 'this', 'status|checker', 'put', 'METHOD_NAME', 'put', 'void', 'status|handlers', 'METHOD_NAME', 'status|handlers', 'void', 'status|checker', 'status|handlers', 'put', 'METHOD_NAME', 'status|checker']
+
+topk path-contexts for sub-token: status
+[0.0688] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0642] status|handlers,NameExpr1|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0610] this,ThisExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0592] status|checker,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0504] status|checker,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0438] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.0411] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.0349] name,NameExpr0|MethodCallExpr|MethodCallExpr2|ClassExpr|ClassOrInterfaceType0,status|checker
+[0.0308] string,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0280] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,status|handlers
+
+topk terminals for sub-token: status
+['METHOD_NAME', 'status|handlers', 'status|handlers', 'status|handlers', 'this', 'status|handlers', 'status|checker', 'status|handlers', 'status|checker', 'status|handlers', 'METHOD_NAME', 'status|handlers', 'void', 'status|handlers', 'name', 'status|checker', 'string', 'status|handlers', 'METHOD_NAME', 'status|handlers']
+
+topk path-contexts for sub-token: handlers
+[0.1476] void,VoidType0|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.1461] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,status|handlers
+[0.0429] status|handlers,NameExpr1|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0354] status|handlers,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,status|checker
+[0.0266] this,ThisExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0247] status|checker,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0245] status|handlers,NameExpr1|ForeachStmt|BlockStmt|IfStmt|MethodCallExpr0|MethodCallExpr2|ClassExpr|ClassOrInterfaceType0,status|checker
+[0.0238] status|handlers,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,status|handlers
+[0.0229] status|checker,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,status|handlers
+[0.0227] name,NameExpr0|MethodCallExpr|MethodCallExpr2|ClassExpr|ClassOrInterfaceType0,status|checker
+
+topk terminals for sub-token: handlers
+['void', 'status|handlers', 'METHOD_NAME', 'status|handlers', 'status|handlers', 'status|handlers', 'status|handlers', 'status|checker', 'this', 'status|handlers', 'status|checker', 'status|handlers', 'status|handlers', 'status|checker', 'status|handlers', 'status|handlers', 'status|checker', 'status|handlers', 'name', 'status|checker']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/EchoRpcTest_run.java
+method_name = run
+method_body = @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }
+
+topk path-contexts for sub-token: run
+[0.1483] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.1374] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0486] x,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,exception
+[0.0485] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,exception
+[0.0396] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,delay
+[0.0368] thread,NameExpr0|MethodCallExpr|NameExpr2,delay
+[0.0302] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0290] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,delay
+[0.0276] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,sleep
+[0.0256] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,thread
+
+topk terminals for sub-token: run
+['override', 'void', 'override', 'METHOD_NAME', 'x', 'exception', 'void', 'exception', 'void', 'delay', 'thread', 'delay', 'void', 'METHOD_NAME', 'METHOD_NAME', 'delay', 'void', 'sleep', 'void', 'thread']
+

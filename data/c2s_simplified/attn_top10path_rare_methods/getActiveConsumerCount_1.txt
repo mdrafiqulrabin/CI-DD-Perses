@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_getActiveConsumerCount.java
+method_name = getActiveConsumerCount
+method_body = protected org.fest.reflect.field.Invoker<AtomicInteger> getActiveConsumerCount(JobConsumerExecutor jobConsumerExecutor) { return Reflection.field("activeConsumerCount").ofType(AtomicInteger.class).in(jobConsumerExecutor); }
+
+topk path-contexts for sub-token: get
+[0.2731] reflection,NameExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.1701] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0466] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,in
+[0.0368] org,ClassOrInterfaceType0|ClassOrInterfaceType|ClassOrInterfaceType|ClassOrInterfaceType|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0315] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr0,reflection
+[0.0286] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0281] job|consumer|executor,NameExpr2|MethodCallExpr|NameExpr3,in
+[0.0247] job|consumer|executor,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0225] job|consumer|executor,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0183] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|NameExpr3,field
+
+topk terminals for sub-token: get
+['reflection', 'active|consumer|count', 'METHOD_NAME', 'active|consumer|count', 'METHOD_NAME', 'in', 'org', 'METHOD_NAME', 'METHOD_NAME', 'reflection', 'METHOD_NAME', 'job|consumer|executor', 'job|consumer|executor', 'in', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'active|consumer|count', 'field']
+
+topk path-contexts for sub-token: active
+[0.2631] reflection,NameExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.2253] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0392] org,ClassOrInterfaceType0|ClassOrInterfaceType|ClassOrInterfaceType|ClassOrInterfaceType|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0387] job|consumer|executor,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0385] job|consumer|executor,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0354] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0338] atomic|integer,ClassOrInterfaceType1|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0170] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|MethodCallExpr0|ClassExpr|ClassOrInterfaceType0,atomic|integer
+[0.0168] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|NameExpr0,reflection
+[0.0162] of|type,NameExpr3|MethodCallExpr0|MethodCallExpr|NameExpr2,job|consumer|executor
+
+topk terminals for sub-token: active
+['reflection', 'active|consumer|count', 'METHOD_NAME', 'active|consumer|count', 'org', 'METHOD_NAME', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'METHOD_NAME', 'job|consumer|executor', 'atomic|integer', 'METHOD_NAME', 'active|consumer|count', 'atomic|integer', 'METHOD_NAME', 'reflection', 'of|type', 'job|consumer|executor']
+
+topk path-contexts for sub-token: consumer
+[0.2472] reflection,NameExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.2099] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.1005] job|consumer|executor,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0922] job|consumer|executor,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0333] atomic|integer,ClassOrInterfaceType1|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0266] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|MethodCallExpr0|ClassExpr|ClassOrInterfaceType0,atomic|integer
+[0.0221] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0215] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|NameExpr2,job|consumer|executor
+[0.0195] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|NameExpr3,field
+[0.0142] atomic|integer,ClassOrInterfaceType0|ClassExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,job|consumer|executor
+
+topk terminals for sub-token: consumer
+['reflection', 'active|consumer|count', 'METHOD_NAME', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'atomic|integer', 'METHOD_NAME', 'active|consumer|count', 'atomic|integer', 'METHOD_NAME', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'field', 'atomic|integer', 'job|consumer|executor']
+
+topk path-contexts for sub-token: count
+[0.2295] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.2022] reflection,NameExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0875] job|consumer|executor,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0777] job|consumer|executor,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|StringLiteralExpr2,active|consumer|count
+[0.0730] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0263] job|consumer|executor,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0255] of|type,NameExpr3|MethodCallExpr0|MethodCallExpr|NameExpr2,job|consumer|executor
+[0.0244] atomic|integer,ClassOrInterfaceType1|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0224] job|consumer|executor,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,job|consumer|executor
+[0.0224] active|consumer|count,StringLiteralExpr2|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|NameExpr2,job|consumer|executor
+
+topk terminals for sub-token: count
+['METHOD_NAME', 'active|consumer|count', 'reflection', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor', 'active|consumer|count', 'METHOD_NAME', 'job|consumer|executor', 'job|consumer|executor', 'job|consumer|executor', 'of|type', 'job|consumer|executor', 'atomic|integer', 'METHOD_NAME', 'job|consumer|executor', 'job|consumer|executor', 'active|consumer|count', 'job|consumer|executor']
+

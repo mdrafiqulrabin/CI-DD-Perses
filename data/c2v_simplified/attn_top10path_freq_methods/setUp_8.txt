@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestClientCert_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); Tomcat tomcat = getTomcatInstance(); TesterSupport.configureClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }
+
+topk path-contexts:
+[0.2490] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),setup
+[0.1135] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),testersupport
+[0.0922] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),gettomcatinstance
+[0.0635] gettomcatinstance,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),testersupport
+[0.0562] gettomcatinstance,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),tomcat
+[0.0466] gettomcatinstance,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),start
+[0.0465] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),gettomcatinstance
+[0.0264] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),tomcat
+[0.0240] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),testersupport
+[0.0240] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),testersupport
+
+topk terminals:
+['super', 'setup', 'setup', 'testersupport', 'setup', 'gettomcatinstance', 'gettomcatinstance', 'testersupport', 'gettomcatinstance', 'tomcat', 'gettomcatinstance', 'start', 'exception', 'gettomcatinstance', 'setup', 'tomcat', 'METHOD_NAME', 'testersupport', 'METHOD_NAME', 'testersupport']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+
+topk path-contexts for sub-token: init
+[0.2039] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.2039] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.1164] processing|environment,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.1164] processing|environment,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.1003] env,NameExpr2|MethodCallExpr|NameExpr3,init
+[0.1003] env,NameExpr2|MethodCallExpr|NameExpr3,init
+[0.0624] env,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.0624] env,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.0106] init,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+[0.0031] env,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,init
+
+topk terminals for sub-token: init
+['METHOD_NAME', 'init', 'METHOD_NAME', 'init', 'processing|environment', 'init', 'processing|environment', 'init', 'env', 'init', 'env', 'init', 'env', 'init', 'env', 'init', 'init', 'init', 'env', 'init']
+

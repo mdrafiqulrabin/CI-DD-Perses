@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/dexbacked/raw/SectionAnnotator_setItemIdentity.java
+method_name = setItemIdentity
+method_body = public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }
+predict, score, loss = setItemIdentity, 0.3779933, 1.7537857
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:01:53.990856", "n_pass": [1, 1, 1], "score": "0.378", "loss": "1.7538", "code": "public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(itemOffset, identity); }"}
+{"time": "2021-01-20 06:01:57.362147", "n_pass": [26, 3, 2], "score": "0.3289", "loss": "2.4172", "code": "public void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:00.695620", "n_pass": [49, 5, 3], "score": "0.3289", "loss": "2.4172", "code": " void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:02.002795", "n_pass": [50, 6, 4], "score": "0.3289", "loss": "2.4172", "code": "void setItemIdentity(int itemOffset, String identity) { itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:08.084279", "n_pass": [94, 8, 5], "score": "0.3289", "loss": "2.4172", "code": "void setItemIdentity(int itemOffset,String identity) { itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:09.420730", "n_pass": [98, 9, 6], "score": "0.3289", "loss": "2.4172", "code": "void setItemIdentity(int itemOffset,String identity){ itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:10.733994", "n_pass": [100, 10, 7], "score": "0.3289", "loss": "2.4172", "code": "void setItemIdentity(int itemOffset,String identity){itemIdentities.put(); }"}
+{"time": "2021-01-20 06:02:13.398897", "n_pass": [107, 12, 8], "score": "0.3289", "loss": "2.4172", "code": "void setItemIdentity(int itemOffset,String identity){itemIdentities.put();}"}
+
+Minimal simplified code:
+void setItemIdentity(int itemOffset,String identity){itemIdentities.put();}
+

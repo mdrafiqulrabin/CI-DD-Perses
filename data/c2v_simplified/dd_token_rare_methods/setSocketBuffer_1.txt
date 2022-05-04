@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/Http11Processor_setSocketBuffer.java
+method_name = setSocketBuffer
+method_body = @Override public void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); outputBuffer.setSocketBuffer(socketBuffer); }
+predict, score, loss = setSocketBuffer, 0.30124250054359436, 2.078486919403076
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:30:08.528816", "n_pass": [1, 1, 1], "score": "0.3012", "loss": "2.0785", "code": "@Override public void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); outputBuffer.setSocketBuffer(socketBuffer); }"}
+{"time": "2021-01-20 06:30:13.772478", "n_pass": [20, 3, 2], "score": "0.342", "loss": "1.9593", "code": " void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); outputBuffer.setSocketBuffer(socketBuffer); }"}
+{"time": "2021-01-20 06:30:19.822446", "n_pass": [51, 5, 3], "score": "0.5023", "loss": "1.375", "code": " void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); setSocketBuffer(socketBuffer); }"}
+{"time": "2021-01-20 06:30:28.546110", "n_pass": [90, 7, 4], "score": "0.5531", "loss": "1.2022", "code": " void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); (socketBuffer); }"}
+{"time": "2021-01-20 06:30:31.182502", "n_pass": [95, 8, 5], "score": "0.5531", "loss": "1.2022", "code": "void setSocketBuffer(int socketBuffer) { super.setSocketBuffer(socketBuffer); (socketBuffer); }"}
+{"time": "2021-01-20 06:30:34.621378", "n_pass": [104, 9, 6], "score": "0.5531", "loss": "1.2022", "code": "void setSocketBuffer(int socketBuffer){ super.setSocketBuffer(socketBuffer); (socketBuffer); }"}
+{"time": "2021-01-20 06:30:37.238452", "n_pass": [106, 10, 7], "score": "0.5531", "loss": "1.2022", "code": "void setSocketBuffer(int socketBuffer){super.setSocketBuffer(socketBuffer); (socketBuffer); }"}
+{"time": "2021-01-20 06:30:39.868661", "n_pass": [108, 11, 8], "score": "0.2113", "loss": "2.4232", "code": "void setSocketBuffer(int socketBuffer){supersetSocketBuffer(socketBuffer); (socketBuffer); }"}
+{"time": "2021-01-20 06:30:45.493427", "n_pass": [114, 13, 9], "score": "0.2113", "loss": "2.4232", "code": "void setSocketBuffer(int socketBuffer){supersetSocketBuffer(socketBuffer);(socketBuffer); }"}
+{"time": "2021-01-20 06:30:48.904785", "n_pass": [129, 14, 10], "score": "0.2113", "loss": "2.4232", "code": "void setSocketBuffer(int socketBuffer){setSocketBuffer(socketBuffer);(socketBuffer); }"}
+{"time": "2021-01-20 06:30:51.507498", "n_pass": [130, 15, 11], "score": "0.4985", "loss": "1.5498", "code": "void setSocketBuffer(int socketBuffer){(socketBuffer);(socketBuffer); }"}
+{"time": "2021-01-20 06:30:55.712637", "n_pass": [151, 16, 12], "score": "0.4985", "loss": "1.5498", "code": "void setSocketBuffer(int socketBuffer){(socketBuffer);(socketBuffer);}"}
+
+Minimal simplified code:
+void setSocketBuffer(int socketBuffer){(socketBuffer);(socketBuffer);}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MariaDB__mariadb-connector-j/src/test/java/org/mariadb/jdbc/failover/TcpProxySocket_run.java
+method_name = run
+method_body = @Override public void run() { logger.trace("host proxy port " + this.localport + " for " + host + " started"); stop = false; try { try { if (ss.isClosed()) { ss = new ServerSocket(localport); } } catch (BindException b) { try { Thread.sleep(100); } catch (InterruptedException i) { } if (ss.isClosed()) { ss = new ServerSocket(localport); } } final byte[] request = new byte[1024]; byte[] reply = new byte[4096]; while (!stop) { try { client = ss.accept(); final InputStream fromClient = client.getInputStream(); final OutputStream toClient = client.getOutputStream(); try { server = new Socket(host, remoteport); } catch (IOException e) { PrintWriter out = new PrintWriter(new OutputStreamWriter(toClient)); out.println("Proxy server cannot connect to " + host + ":" + remoteport + ":\n" + e); out.flush(); client.close(); continue; } final InputStream fromServer = server.getInputStream(); final OutputStream toServer = server.getOutputStream(); new Thread(() -> { int bytesRead; try { while ((bytesRead = fromClient.read(request)) != -1) { if (delay > 0) { try { Thread.sleep(delay); } catch (InterruptedException e) { e.printStackTrace(); } } toServer.write(request, 0, bytesRead); toServer.flush(); } } catch (IOException e) { } try { toServer.close(); } catch (IOException e) { } }).start(); int bytesRead; try { while ((bytesRead = fromServer.read(reply)) != -1) { try { Thread.sleep(1); } catch (InterruptedException e) { e.printStackTrace(); } toClient.write(reply, 0, bytesRead); toClient.flush(); } } catch (IOException e) { } toClient.close(); } catch (IOException e) { } finally { try { if (server != null) { server.close(); } if (client != null) { client.close(); } } catch (IOException e) { } } } } catch (IOException e) { e.printStackTrace(); } }
+
+topk path-contexts:
+[0.1838] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),ioexception
+[0.1302] this,(ThisExpr0)^(FieldAccessExpr)^(BinaryExpr:plus)^(BinaryExpr:plus)^(BinaryExpr:plus)^(BinaryExpr:plus2)^(MethodCallExpr)_(NameExpr3),trace
+[0.1058] ss,(NameExpr0)^(MethodCallExpr)_(NameExpr2),isclosed
+[0.1010] b,(VariableDeclaratorId0)^(Parameter)^(CatchClause)^(TryStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(PrimitiveType0),byte
+[0.0317] interruptedexception,(ClassOrInterfaceType1)^(Parameter)^(CatchClause)^(TryStmt)^(BlockStmt)_(IfStmt)_(MethodCallExpr0)_(NameExpr0),ss
+[0.0240] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),request
+[0.0238] b,(VariableDeclaratorId0)^(Parameter)^(CatchClause)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),interruptedexception
+[0.0234] ss,(NameExpr0)^(MethodCallExpr)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(NameExpr1),localport
+[0.0225] isclosed,(NameExpr2)^(MethodCallExpr)^(IfStmt)^(BlockStmt)^(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),bindexception
+[0.0188] 100,(IntegerLiteralExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),interruptedexception
+
+topk terminals:
+['void', 'ioexception', 'this', 'trace', 'ss', 'isclosed', 'b', 'byte', 'interruptedexception', 'ss', 'void', 'request', 'b', 'interruptedexception', 'ss', 'localport', 'isclosed', 'bindexception', '100', 'interruptedexception']
+

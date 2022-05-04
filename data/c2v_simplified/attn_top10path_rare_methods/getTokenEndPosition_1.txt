@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/http/Cookies_getTokenEndPosition.java
+method_name = getTokenEndPosition
+method_body = private static final int getTokenEndPosition(byte[] bytes, int off, int end, int version, boolean isName) { int pos = off; while (pos < end && (!CookieSupport.isHttpSeparator((char) bytes[pos]) || version == 0 && CookieSupport.ALLOW_HTTP_SEPARATORS_IN_V0 && bytes[pos] != '=' && !CookieSupport.isV0Separator((char) bytes[pos]) || !isName && bytes[pos] == '=' && CookieSupport.ALLOW_EQUALS_IN_VALUE)) { pos++; } if (pos > end) { return end; } return pos; }
+
+topk path-contexts:
+[0.1232] version,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(NameExpr1),off
+[0.0986] bytes,(VariableDeclaratorId0)^(Parameter)_(ArrayBracketPair2),[]
+[0.0986] version,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),boolean
+[0.0986] int,(PrimitiveType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(NameExpr0),end
+[0.0348] pos,(NameExpr0)^(BinaryExpr:less)^(BinaryExpr:and)_(EnclosedExpr)_(BinaryExpr:or)_(BinaryExpr:and)_(BinaryExpr:and)_(UnaryExpr:not)_(NameExpr0),isname
+[0.0295] pos,(NameExpr0)^(BinaryExpr:less)^(BinaryExpr:and)^(WhileStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(NameExpr0),end
+[0.0261] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(Parameter)_(ArrayBracketPair2),[]
+[0.0261] end,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),boolean
+[0.0261] version,(NameExpr0)^(BinaryExpr:equals)^(BinaryExpr:and)_(FieldAccessExpr1)_(NameExpr2),allowhttpseparatorsinv
+[0.0185] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),int
+
+topk terminals:
+['version', 'off', 'bytes', '[]', 'version', 'boolean', 'int', 'end', 'pos', 'isname', 'pos', 'end', 'METHOD_NAME', '[]', 'end', 'boolean', 'version', 'allowhttpseparatorsinv', 'int', 'int']
+

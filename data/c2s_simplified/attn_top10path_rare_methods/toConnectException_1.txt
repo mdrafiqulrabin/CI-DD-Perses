@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/bulk/BulkProcessor_toConnectException.java
+method_name = toConnectException
+method_body = private static ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }
+
+topk path-contexts for sub-token: to
+[0.0764] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,throwable
+[0.0329] t,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,throwable
+[0.0312] connect|exception,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0202] connect|exception,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,throwable
+[0.0194] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0145] connect|exception,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,t
+[0.0122] t,NameExpr1|CastExpr|ReturnStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0107] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,t
+[0.0092] t,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0082] throwable,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+
+topk terminals for sub-token: to
+['METHOD_NAME', 'throwable', 't', 'throwable', 'connect|exception', 'METHOD_NAME', 'connect|exception', 'throwable', 'METHOD_NAME', 'connect|exception', 'connect|exception', 't', 't', 'connect|exception', 'METHOD_NAME', 't', 't', 'connect|exception', 'throwable', 'connect|exception']
+
+topk path-contexts for sub-token: connect
+[0.4005] connect|exception,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0792] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0770] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0497] t,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0451] t,NameExpr1|CastExpr|ReturnStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0440] connect|exception,ClassOrInterfaceType1|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0425] connect|exception,ClassOrInterfaceType0|CastExpr|ReturnStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0334] connect|exception,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,throwable
+[0.0275] throwable,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0248] throwable,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+
+topk terminals for sub-token: connect
+['connect|exception', 'METHOD_NAME', 'METHOD_NAME', 'connect|exception', 'METHOD_NAME', 'connect|exception', 't', 'connect|exception', 't', 'connect|exception', 'connect|exception', 'connect|exception', 'connect|exception', 'connect|exception', 'connect|exception', 'throwable', 'throwable', 'connect|exception', 'throwable', 'connect|exception']
+
+topk path-contexts for sub-token: exception
+[0.2947] connect|exception,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0975] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0658] connect|exception,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,throwable
+[0.0566] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0485] connect|exception,ClassOrInterfaceType1|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0462] t,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0435] throwable,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+[0.0326] throwable,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0319] connect|exception,ClassOrInterfaceType0|CastExpr|ReturnStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,connect|exception
+[0.0309] t,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType0,connect|exception
+
+topk terminals for sub-token: exception
+['connect|exception', 'METHOD_NAME', 'METHOD_NAME', 'connect|exception', 'connect|exception', 'throwable', 'METHOD_NAME', 'connect|exception', 'connect|exception', 'connect|exception', 't', 'connect|exception', 'throwable', 'connect|exception', 'throwable', 'connect|exception', 'connect|exception', 'connect|exception', 't', 'connect|exception']
+

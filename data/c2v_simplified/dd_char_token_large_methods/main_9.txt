@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/main_9.txt
+method_name = main
+method_body = void main(String[]args)throws CryptoException{("");(""+""+toString());(""+(6));(""+toString());("".toString());("");alice("",random);(Payload);("");(aliceRound);("");(""+(6));(""+(6));(bobKeyingMaterial);("");}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 19:22:44.689064", "n_pass": [1, 1, 1], "score": "0.9989", "loss": "0.0017", "code": "void main(String[]args)throws CryptoException{(\"\");(\"\"+\"\"+toString());(\"\"+(6));(\"\"+toString());(\"\".toString());(\"\");alice(\"\",random);(Payload);(\"\");(aliceRound);(\"\");(\"\"+(6));(\"\"+(6));(bobKeyingMaterial);(\"\");}"}
+{"time": "2021-01-22 19:22:47.353628", "n_pass": [9, 2, 2], "score": "0.9951", "loss": "0.0064", "code": "void main(String[]args)throws CryptoException{(\"\");(ing());(\"\");alice(\"\",random);(Payload);(\"\");(aliceRound);(\"\");(\"\"+(6));(\"\"+(6));(bobKeyingMaterial);(\"\");}"}
+{"time": "2021-01-22 19:22:49.972769", "n_pass": [10, 3, 3], "score": "0.9974", "loss": "0.0034", "code": "void main(String[]args)throws CryptoException{(\"\");(nd);(\"\");(\"\"+(6));(\"\"+(6));(bobKeyingMaterial);(\"\");}"}
+{"time": "2021-01-22 19:22:52.580337", "n_pass": [27, 4, 4], "score": "0.9982", "loss": "0.0022", "code": "void main(String[]args)throws CryptoException{(\"\");((6));(\"\"+(6));(bobKeyingMaterial);(\"\");}"}
+{"time": "2021-01-22 19:22:55.197144", "n_pass": [51, 5, 5], "score": "0.9982", "loss": "0.0022", "code": "void main(String[]args)throws CryptoException{(\"\");((6));(\"\"+(6));(bobKterial);(\"\");}"}
+{"time": "2021-01-22 19:22:58.203339", "n_pass": [59, 6, 6], "score": "1.0", "loss": "0.0", "code": "void main(String[]args)throws Exception{(\"\");((6));(\"\"+(6));(bobKterial);(\"\");}"}
+{"time": "2021-01-22 19:23:00.802398", "n_pass": [60, 7, 7], "score": "0.9996", "loss": "0.0007", "code": "void main(String[]args)throws on{(\"\");((6));(\"\"+(6));(bobKterial);(\"\");}"}
+{"time": "2021-01-22 19:23:03.856728", "n_pass": [99, 8, 8], "score": "0.9997", "loss": "0.0005", "code": "void main(String[]args)throws on{(\"\");((6));((6));(bobKterial);(\"\");}"}
+{"time": "2021-01-22 19:23:06.460658", "n_pass": [102, 9, 9], "score": "0.9997", "loss": "0.0005", "code": "void main(String[]args)throws on{(\"\");((6));((6));(borial);(\"\");}"}
+{"time": "2021-01-22 19:23:09.066589", "n_pass": [103, 10, 10], "score": "0.9997", "loss": "0.0007", "code": "void main(String[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:11.672427", "n_pass": [106, 11, 11], "score": "0.9653", "loss": "0.056", "code": "d main(String[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:23.148460", "n_pass": [168, 14, 12], "score": "0.7705", "loss": "0.774", "code": "d main(tring[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:25.754458", "n_pass": [169, 15, 13], "score": "0.4705", "loss": "1.0425", "code": "d main(ring[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:30.982615", "n_pass": [171, 17, 14], "score": "0.4422", "loss": "1.2064", "code": "d main(rng[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:33.606957", "n_pass": [172, 18, 15], "score": "0.6261", "loss": "0.7852", "code": "d main(rg[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:36.237961", "n_pass": [173, 19, 16], "score": "0.8765", "loss": "0.2191", "code": "d main(r[]args)throws on{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:48.762610", "n_pass": [258, 22, 17], "score": "0.5851", "loss": "0.6093", "code": "d main(r[]args)throws n{(\"\");((6));((6));(bo);(\"\");}"}
+{"time": "2021-01-22 19:23:51.383722", "n_pass": [279, 23, 18], "score": "0.5421", "loss": "0.6779", "code": "d main(r[]args)throws n{(\"\");((6));((6));(o);(\"\");}"}
+
+Minimal simplified code:
+d main(r[]args)throws n{("");((6));((6));(o);("");}
+

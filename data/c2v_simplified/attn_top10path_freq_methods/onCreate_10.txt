@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/VideoDetailsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.fragment_details); }
+
+topk path-contexts:
+[0.2185] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr2),layout
+[0.2016] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),fragmentdetails
+[0.1332] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.1215] oncreate,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(FieldAccessExpr0)_(NameExpr0),r
+[0.1115] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0847] bundle,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),oncreate
+[0.0526] savedinstancestate,(NameExpr2)^(MethodCallExpr)_(NameExpr3),oncreate
+[0.0126] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr1)_(NameExpr2),fragmentdetails
+[0.0111] savedinstancestate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setcontentview
+[0.0095] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),savedinstancestate
+
+topk terminals:
+['oncreate', 'layout', 'oncreate', 'fragmentdetails', 'oncreate', 'setcontentview', 'oncreate', 'r', 'savedinstancestate', 'oncreate', 'bundle', 'oncreate', 'savedinstancestate', 'oncreate', 'savedinstancestate', 'fragmentdetails', 'savedinstancestate', 'setcontentview', 'super', 'savedinstancestate']
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/XiaoMi__linden/linden-core/src/main/java/com/xiaomi/linden/core/LindenConfig_setWebapp.java
+method_name = setWebapp
+method_body = public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:51:07.068643", "score": "0.4438", "loss": "0.9273", "code": "class T { public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; } }"}
+{"time": "2021-01-24 05:51:55.411865", "score": "0.9345", "loss": "0.1651", "code": "class T { public LindenConfig setWebapp(String webapp) { this.webapp = webapp; } }"}
+{"time": "2021-01-24 05:52:16.726024", "score": "0.835", "loss": "0.5641", "code": "class T { public LindenConfig setWebapp(String webapp) { webapp = webapp; } }"}
+{"time": "2021-01-24 05:52:38.017632", "score": "0.835", "loss": "0.5641", "code": "class T { LindenConfig setWebapp(String webapp) { webapp = webapp; } }"}
+
+Minimal simplified code:
+class T {
+       LindenConfig setWebapp(String webapp) {      webapp = webapp;              }
+}
+
+

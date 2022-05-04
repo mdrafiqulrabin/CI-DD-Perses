@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Hemumu__RxSample/app/src/main/java/com/helin/rxsample/http/ProgressSubscriber_onCancelProgress.java
+method_name = onCancelProgress
+method_body = @Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 18:51:22.617127", "score": "0.4463", "loss": "0.9729", "code": "class T { @Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } } }"}
+{"time": "2021-01-24 18:59:02.079760", "score": "0.4144", "loss": "1.0484", "code": "class T { void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } } }"}
+
+Minimal simplified code:
+class T {
+                 void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }
+}
+
+

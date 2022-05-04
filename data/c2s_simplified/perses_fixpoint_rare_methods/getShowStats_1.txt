@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/FeedbackComponent_getShowStats.java
+method_name = getShowStats
+method_body = public boolean getShowStats() { return this.showStats; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:47:12.481016", "score": "0.4868", "loss": "0.7752", "code": "class T { public boolean getShowStats() { return this.showStats; } }"}
+{"time": "2021-01-24 06:48:32.608400", "score": "0.4868", "loss": "0.7752", "code": "class T { boolean getShowStats() { return this.showStats; } }"}
+
+Minimal simplified code:
+class T {
+       boolean getShowStats() { return this.showStats; }
+}
+
+

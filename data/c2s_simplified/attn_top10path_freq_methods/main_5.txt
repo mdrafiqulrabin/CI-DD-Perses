@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+
+topk path-contexts for sub-token: main
+[0.2926] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1193] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.1086] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0310] args,VariableDeclaratorId0|Parameter|MethodDeclaration|ClassOrInterfaceType3,io|exception
+[0.0209] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,server
+[0.0167] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,server
+[0.0159] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,press|any|key|to|close
+[0.0157] void,VoidType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0153] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr0|NameExpr2,in
+[0.0134] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+
+topk terminals for sub-token: main
+['args', '[]', 'args', 'string', 'string', '[]', 'args', 'io|exception', 'args', 'server', 'args', 'server', 'args', 'press|any|key|to|close', 'void', '[]', 'args', 'in', 'METHOD_NAME', '[]']
+

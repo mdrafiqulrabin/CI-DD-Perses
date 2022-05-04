@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-schema/openam-liberty-schema/src/main/java/com/sun/identity/liberty/ws/meta/jaxb/impl/EntitiesDescriptorTypeImpl_getEntityDescriptor.java
+method_name = getEntityDescriptor
+method_body = public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }
+predict, score, loss = getEntityDescriptor, 0.31994643807411194, 1.3807977437973022
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:38:08.832894", "n_pass": [1, 1, 1], "score": "0.3199", "loss": "1.3808", "code": "public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:38:55.037762", "n_pass": [98, 18, 2], "score": "0.3199", "loss": "1.3808", "code": "public java.il.List getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:39:00.224091", "n_pass": [101, 20, 3], "score": "0.3199", "loss": "1.3808", "code": "public java.il.Lt getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:39:38.936454", "n_pass": [192, 33, 4], "score": "0.3199", "loss": "1.3808", "code": "public java.il.L getEntityDescriptor() { return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:39:49.326316", "n_pass": [214, 34, 5], "score": "0.3199", "loss": "1.3808", "code": "public java.il.L getEntityDescriptor(){ return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:39:51.919630", "n_pass": [216, 35, 6], "score": "0.3199", "loss": "1.3808", "code": "public java.il.L getEntityDescriptor(){return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:40:36.147246", "n_pass": [247, 52, 7], "score": "0.3199", "loss": "1.3808", "code": "public java.l.L getEntityDescriptor(){return _getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:41:34.508078", "n_pass": [335, 71, 8], "score": "0.3199", "loss": "1.3808", "code": "public java.l.L getEntityDescriptor(){return getEntityDescriptor(); }"}
+{"time": "2021-01-23 18:42:26.698604", "n_pass": [358, 91, 9], "score": "0.3199", "loss": "1.3808", "code": "public java.l.L getEntityDescriptor(){return getEntityDescriptor();}"}
+
+Minimal simplified code:
+public java.l.L getEntityDescriptor(){return getEntityDescriptor();}
+

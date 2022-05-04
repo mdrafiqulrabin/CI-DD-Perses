@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/jasper/compiler/TestParserNoStrictWhitespace_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { System.setProperty("org.apache.jasper.compiler.Parser.STRICT_WHITESPACE", "false"); super.setUp(); }
+
+topk path-contexts for sub-token: set
+[0.8119] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.0697] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0567] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0104] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,false
+[0.0069] false,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0059] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,false
+[0.0048] system,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0045] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|property
+[0.0030] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,orgapachejaspercompilerparserstrict|whitespace
+[0.0027] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|property
+
+topk terminals for sub-token: set
+['super', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'false', 'false', 'set|up', 'METHOD_NAME', 'false', 'system', 'set|up', 'exception', 'set|property', 'exception', 'orgapachejaspercompilerparserstrict|whitespace', 'METHOD_NAME', 'set|property']
+
+topk path-contexts for sub-token: up
+[0.6064] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.1681] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1275] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0224] set|property,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0191] false,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0129] system,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0117] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|property
+[0.0110] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|property
+[0.0110] orgapachejaspercompilerparserstrict|whitespace,StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0033] false,StringLiteralExpr3|MethodCallExpr|NameExpr3,set|property
+
+topk terminals for sub-token: up
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'set|property', 'set|up', 'false', 'set|up', 'system', 'set|up', 'exception', 'set|property', 'METHOD_NAME', 'set|property', 'orgapachejaspercompilerparserstrict|whitespace', 'set|up', 'false', 'set|property']
+

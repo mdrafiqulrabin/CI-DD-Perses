@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/tld/TldResourcePath_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:32:23.161138", "score": "0.9977", "loss": "0.0027", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); } }"}
+{"time": "2020-12-21 08:33:21.845751", "score": "0.9896", "loss": "0.0133", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } } }"}
+{"time": "2020-12-21 08:33:43.019218", "score": "0.9158", "loss": "0.1291", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } } }"}
+{"time": "2020-12-21 08:34:20.906032", "score": "0.952", "loss": "0.0674", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-21 08:34:31.435014", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override public boolean equals(Object o) { if ( o) return true; } }"}
+{"time": "2020-12-21 08:34:52.506641", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override boolean equals(Object o) { if ( o) return true; } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object o) { if (        o)   return true;                                                                                                                                                                                                                                           }
+}
+
+

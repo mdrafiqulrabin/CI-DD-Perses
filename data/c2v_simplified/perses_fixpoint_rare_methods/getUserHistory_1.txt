@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole-ext/src/main/java/org/apache/guacamole/net/auth/AbstractUserContext_getUserHistory.java
+method_name = getUserHistory
+method_body = @Override public ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 21:55:04.323223", "score": "0.3649", "loss": "1.4313", "code": "class T { @Override public ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); } }"}
+{"time": "2021-01-24 22:02:03.365239", "score": "0.3649", "loss": "1.4313", "code": "class T { @Override ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); } }"}
+
+Minimal simplified code:
+class T {
+@Override        ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }
+}
+
+

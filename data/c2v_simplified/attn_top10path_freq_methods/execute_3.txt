@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/ServerinfoTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/serverinfo"); }
+
+topk path-contexts:
+[0.3769] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr1),serverinfo
+[0.1570] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.1347] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr1),serverinfo
+[0.1123] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(StringLiteralExpr1),serverinfo
+[0.0551] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0452] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+[0.0452] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+[0.0125] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(ClassOrInterfaceType3),buildexception
+[0.0112] serverinfo,(StringLiteralExpr1)^(MethodCallExpr)_(NameExpr2),execute
+[0.0105] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+
+topk terminals:
+['buildexception', 'serverinfo', 'super', 'execute', 'execute', 'serverinfo', 'METHOD_NAME', 'serverinfo', 'buildexception', 'super', 'buildexception', 'execute', 'buildexception', 'execute', 'METHOD_NAME', 'buildexception', 'serverinfo', 'execute', 'override', 'METHOD_NAME']
+

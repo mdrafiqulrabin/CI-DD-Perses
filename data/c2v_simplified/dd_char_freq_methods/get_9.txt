@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/MultiMap_get.java
+method_name = get
+method_body = public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }
+predict, score, loss = get, 0.5867776274681091, 0.8344601988792419
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:06:16.070796", "n_pass": [1, 1, 1], "score": "0.5868", "loss": "0.8345", "code": "public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:19.122299", "n_pass": [23, 2, 2], "score": "0.4464", "loss": "1.6909", "code": "public CBuffer get(CharSequence key) { EntEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:22.570491", "n_pass": [52, 3, 3], "score": "0.4464", "loss": "1.6909", "code": "CBuffer get(CharSequence key) { EntEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:25.195532", "n_pass": [54, 4, 4], "score": "0.6457", "loss": "1.1244", "code": "CBuffer get(Chnce key) { EntEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:28.258090", "n_pass": [91, 5, 5], "score": "0.5614", "loss": "1.0615", "code": "CBuffer get(ce key) { EntEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:30.894541", "n_pass": [95, 6, 6], "score": "0.2941", "loss": "2.205", "code": "CBuffer get(ce key) {tEntry(key); return (entry == null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:33.920739", "n_pass": [102, 7, 7], "score": "0.3199", "loss": "2.0862", "code": "CBuffer get(ce key) {tEntry(key); return (en== null) ? null : entry.value; }"}
+{"time": "2020-12-28 11:06:39.151409", "n_pass": [106, 9, 8], "score": "0.2237", "loss": "2.9378", "code": "CBuffer get(ce key) {tEntry(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:06:47.022476", "n_pass": [111, 12, 9], "score": "0.2326", "loss": "2.7547", "code": "ffer get(ce key) {tEntry(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:06.878415", "n_pass": [171, 19, 10], "score": "0.2699", "loss": "2.4798", "code": "ffr get(ce key) {tEntry(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:09.468639", "n_pass": [172, 20, 11], "score": "0.1882", "loss": "3.0753", "code": "ff get(ce key) {tEntry(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:15.917305", "n_pass": [182, 22, 12], "score": "0.4339", "loss": "1.8493", "code": "ff get(ce key) {ttry(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:18.520452", "n_pass": [183, 23, 13], "score": "0.4095", "loss": "1.8389", "code": "ff get(ce key) {ty(key); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:21.137053", "n_pass": [185, 24, 14], "score": "0.3964", "loss": "1.9575", "code": "ff get(ce key) {ty(y); return (en== null) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:24.946783", "n_pass": [194, 25, 15], "score": "0.8326", "loss": "0.3484", "code": "ff get(ce key) {ty(y); return (en==ull) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:27.579776", "n_pass": [195, 26, 16], "score": "0.7211", "loss": "0.5616", "code": "ff get(ce key) {ty(y); return (en==l) ? n: entry.value; }"}
+{"time": "2020-12-28 11:07:30.201107", "n_pass": [201, 27, 17], "score": "0.5193", "loss": "1.5545", "code": "ff get(ce key) {ty(y); return (en==l) ? n: eny.value; }"}
+{"time": "2020-12-28 11:07:38.022685", "n_pass": [204, 30, 18], "score": "0.2126", "loss": "3.5242", "code": "ff get(ce key) {ty(y); return (en==l) ? n: eny.vae; }"}
+{"time": "2020-12-28 11:07:40.632884", "n_pass": [207, 31, 19], "score": "0.2617", "loss": "3.0273", "code": "f get(ce key) {ty(y); return (en==l) ? n: eny.vae; }"}
+{"time": "2020-12-28 11:07:51.324895", "n_pass": [231, 34, 20], "score": "0.2526", "loss": "2.2907", "code": "f get(ce key) {ty(y); return (en==l) ? n: y.vae; }"}
+{"time": "2020-12-28 11:07:53.940289", "n_pass": [232, 35, 21], "score": "0.3843", "loss": "1.5371", "code": "f get(ce key) {ty(y); return (en==l) ? n: vae; }"}
+{"time": "2020-12-28 11:07:56.564593", "n_pass": [233, 36, 22], "score": "0.3174", "loss": "1.4288", "code": "f get(ce key) {ty(y); return (en==l) ? n: e; }"}
+{"time": "2020-12-28 11:08:04.625769", "n_pass": [254, 38, 23], "score": "0.4304", "loss": "1.373", "code": "f get(ce key) {ty(y); return (enl) ? n: e; }"}
+{"time": "2020-12-28 11:08:08.885057", "n_pass": [268, 39, 24], "score": "0.2345", "loss": "2.0907", "code": "f get(ce k) {ty(y); return (enl) ? n: e; }"}
+{"time": "2020-12-28 11:08:12.705207", "n_pass": [278, 40, 25], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k) {ty(y); return (l) ? n: e; }"}
+{"time": "2020-12-28 11:08:21.918545", "n_pass": [338, 41, 26], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k) {ty(y); return (l)? n: e; }"}
+{"time": "2020-12-28 11:08:24.515025", "n_pass": [339, 42, 27], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k) {ty(y); return (l)?n: e; }"}
+{"time": "2020-12-28 11:08:27.107620", "n_pass": [342, 43, 28], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k) {ty(y); return (l)?n:e; }"}
+{"time": "2020-12-28 11:08:29.742813", "n_pass": [345, 44, 29], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k) {ty(y); return (l)?n:e;}"}
+{"time": "2020-12-28 11:08:39.644665", "n_pass": [358, 47, 30], "score": "0.1441", "loss": "2.4518", "code": "f get(ce k){ty(y); return (l)?n:e;}"}
+{"time": "2020-12-28 11:08:42.281539", "n_pass": [360, 48, 31], "score": "0.3134", "loss": "1.5458", "code": "f get(ce k){y(y); return (l)?n:e;}"}
+{"time": "2020-12-28 11:08:50.083438", "n_pass": [366, 51, 32], "score": "0.3134", "loss": "1.5458", "code": "f get(ce k){y(y);return (l)?n:e;}"}
+{"time": "2020-12-28 11:08:55.120989", "n_pass": [373, 52, 33], "score": "0.3134", "loss": "1.5458", "code": "f get(ce k){y(y);return(l)?n:e;}"}
+
+Minimal simplified code:
+f get(ce k){y(y);return(l)?n:e;}
+

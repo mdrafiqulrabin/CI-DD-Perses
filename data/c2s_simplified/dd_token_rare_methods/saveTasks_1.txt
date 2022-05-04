@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/storage/durability/WriteRecorder_saveTasks.java
+method_name = saveTasks
+method_body = @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }
+predict, score, loss = saveTasks, 0.34137204, 1.5960115
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:22:32.549344", "n_pass": [1, 1, 1], "score": "0.3414", "loss": "1.596", "code": "@Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:34.264007", "n_pass": [23, 2, 2], "score": "0.3838", "loss": "1.3999", "code": "@Override public void saveTasks(final Set<IScheduledTask> newTasks) { (Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:35.994206", "n_pass": [52, 3, 3], "score": "0.7475", "loss": "0.6497", "code": "public void saveTasks(final Set<IScheduledTask> newTasks) { (Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:37.690063", "n_pass": [56, 4, 4], "score": "0.8601", "loss": "0.3942", "code": "public void saveTasks(final Set newTasks) { (Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:40.073494", "n_pass": [97, 5, 5], "score": "0.8776", "loss": "0.3068", "code": "public void saveTasks(final Set newTasks) { (saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:41.421283", "n_pass": [98, 6, 6], "score": "0.7268", "loss": "0.5671", "code": "public void saveTasks(final Set newTasks) { (saveTasks(SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:42.767450", "n_pass": [100, 7, 7], "score": "0.7338", "loss": "0.5478", "code": "public void saveTasks(final Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }"}
+{"time": "2021-01-20 05:22:44.093922", "n_pass": [106, 8, 8], "score": "0.5933", "loss": "0.8398", "code": "public void saveTasks(final Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks)))); taskStore(newTasks); }"}
+{"time": "2021-01-20 05:22:45.426897", "n_pass": [110, 9, 9], "score": "0.5933", "loss": "0.8398", "code": " void saveTasks(final Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks)))); taskStore(newTasks); }"}
+{"time": "2021-01-20 05:22:46.768267", "n_pass": [111, 10, 10], "score": "0.5933", "loss": "0.8398", "code": "void saveTasks(final Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks)))); taskStore(newTasks); }"}
+{"time": "2021-01-20 05:22:48.808905", "n_pass": [115, 11, 11], "score": "0.5933", "loss": "0.8398", "code": "void saveTasks(Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks)))); taskStore(newTasks); }"}
+{"time": "2021-01-20 05:22:50.143477", "n_pass": [126, 12, 12], "score": "0.5894", "loss": "0.786", "code": "void saveTasks(Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks))));(newTasks); }"}
+{"time": "2021-01-20 05:22:54.240366", "n_pass": [175, 13, 13], "score": "0.5894", "loss": "0.786", "code": "void saveTasks(Set newTasks) { (saveTasks(SaveTasks(toBuildersSet(newTasks))));(newTasks);}"}
+{"time": "2021-01-20 05:22:56.308892", "n_pass": [184, 14, 14], "score": "0.5894", "loss": "0.786", "code": "void saveTasks(Set newTasks){ (saveTasks(SaveTasks(toBuildersSet(newTasks))));(newTasks);}"}
+{"time": "2021-01-20 05:22:57.631793", "n_pass": [186, 15, 15], "score": "0.5894", "loss": "0.786", "code": "void saveTasks(Set newTasks){(saveTasks(SaveTasks(toBuildersSet(newTasks))));(newTasks);}"}
+{"time": "2021-01-20 05:23:01.625275", "n_pass": [192, 18, 16], "score": "0.6298", "loss": "0.8114", "code": "void saveTasks(Set newTasks){(saveTasks(SaveTasks((newTasks))));(newTasks);}"}
+
+Minimal simplified code:
+void saveTasks(Set newTasks){(saveTasks(SaveTasks((newTasks))));(newTasks);}
+

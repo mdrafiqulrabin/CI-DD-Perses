@@ -1,0 +1,51 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MKergall__osmbonuspack/OSMBonusPack/src/main/java/org/osmdroid/bonuspack/kml/KmlFeature_setExtendedData.java
+method_name = setExtendedData
+method_body = public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); }
+
+topk path-contexts for sub-token: set
+[0.0650] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0626] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0611] value,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0536] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0536] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0465] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0450] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0301] name,NameExpr2|MethodCallExpr|NameExpr3,put
+[0.0259] string,ClassOrInterfaceType0|ClassOrInterfaceType|ClassOrInterfaceType1,string
+[0.0227] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+
+topk terminals for sub-token: set
+['value', 'put', 'name', 'put', 'value', 'put', 'string', 'put', 'string', 'put', 'null', 'put', 'void', 'METHOD_NAME', 'name', 'put', 'string', 'string', 'value', 'm|extended|data']
+
+topk path-contexts for sub-token: extended
+[0.1033] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.1033] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.1013] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0988] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0493] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0393] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0393] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0300] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0286] m|extended|data,NameExpr0|AssignExpr:assign|ExpressionStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0280] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+
+topk terminals for sub-token: extended
+['string', 'm|extended|data', 'string', 'm|extended|data', 'name', 'm|extended|data', 'value', 'm|extended|data', 'null', 'm|extended|data', 'string', 'm|extended|data', 'string', 'm|extended|data', 'name', 'm|extended|data', 'm|extended|data', 'm|extended|data', 'value', 'm|extended|data']
+
+topk path-contexts for sub-token: data
+[0.1065] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0992] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0674] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0674] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0503] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NameExpr0,m|extended|data
+[0.0450] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NameExpr0,m|extended|data
+[0.0420] name,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0385] value,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0333] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|extended|data
+[0.0317] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+[0.0317] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|extended|data
+
+topk terminals for sub-token: data
+['name', 'm|extended|data', 'value', 'm|extended|data', 'string', 'm|extended|data', 'string', 'm|extended|data', 'name', 'm|extended|data', 'value', 'm|extended|data', 'name', 'm|extended|data', 'value', 'm|extended|data', 'null', 'm|extended|data', 'string', 'm|extended|data', 'string', 'm|extended|data']
+

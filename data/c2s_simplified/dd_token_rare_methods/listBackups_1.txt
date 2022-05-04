@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/thrift/SchedulerThriftInterface_listBackups.java
+method_name = listBackups
+method_body = @Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }
+predict, score, loss = listBackups, 0.35265064, 1.345532
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:23:51.374997", "n_pass": [1, 1, 1], "score": "0.3527", "loss": "1.3455", "code": "@Override public Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:23:55.697153", "n_pass": [45, 4, 2], "score": "0.3527", "loss": "1.3455", "code": "@Override Response listBackups() { return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:05.216334", "n_pass": [97, 8, 3], "score": "0.3527", "loss": "1.3455", "code": "@Override Response listBackups(){ return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:06.536106", "n_pass": [98, 9, 4], "score": "0.3527", "loss": "1.3455", "code": "@Override Response listBackups(){return ok(Result.listBackupsResult(new ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:13.197728", "n_pass": [107, 14, 5], "score": "0.5078", "loss": "0.7894", "code": "@Override Response listBackups(){return ok(Result.listBackupsResult( ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:14.516826", "n_pass": [108, 15, 6], "score": "0.5078", "loss": "0.7894", "code": "@Override Response listBackups(){return ok(Result.listBackupsResult(ListBackupsResult().setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:15.864570", "n_pass": [110, 16, 7], "score": "0.5143", "loss": "0.8044", "code": "@Override Response listBackups(){return ok(Result.listBackupsResult(ListBackupsResult.setBackups(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:17.209769", "n_pass": [111, 17, 8], "score": "0.4651", "loss": "1.0083", "code": "@Override Response listBackups(){return ok(Result.listBackupsResult(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:25.629366", "n_pass": [129, 22, 9], "score": "0.8187", "loss": "0.302", "code": "@Override Response listBackups(){return (Result.listBackupsResult(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:26.950700", "n_pass": [132, 23, 10], "score": "0.4728", "loss": "0.8406", "code": "@Override Response listBackups(){return (ResultlistBackupsResult(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:28.298458", "n_pass": [133, 24, 11], "score": "0.7186", "loss": "0.5019", "code": "@Override Response listBackups(){return (Result(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:35.413705", "n_pass": [151, 28, 12], "score": "0.2546", "loss": "1.8472", "code": "@Override Response listBackups(){ (Result(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:36.728274", "n_pass": [152, 29, 13], "score": "0.2546", "loss": "1.8472", "code": "@Override Response listBackups(){(Result(ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:38.039612", "n_pass": [154, 30, 14], "score": "0.7855", "loss": "0.3695", "code": "@Override Response listBackups(){((ListBackupsResult(recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:39.353926", "n_pass": [156, 31, 15], "score": "0.6247", "loss": "0.7412", "code": "@Override Response listBackups(){(((recovery.listBackups()))); }"}
+{"time": "2021-01-20 05:24:45.782713", "n_pass": [193, 34, 16], "score": "0.6247", "loss": "0.7412", "code": "@Override Response listBackups(){(((recovery.listBackups())));}"}
+
+Minimal simplified code:
+@Override Response listBackups(){(((recovery.listBackups())));}
+

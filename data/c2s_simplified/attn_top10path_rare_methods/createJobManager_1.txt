@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_createJobManager.java
+method_name = createJobManager
+method_body = protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }
+
+topk path-contexts for sub-token: create
+[0.2177] job|manager,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0657] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0541] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0500] configuration,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0407] configuration|builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0370] configuration,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0336] job|manager,ClassOrInterfaceType0|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0310] configuration|builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0252] robolectric,NameExpr0|FieldAccessExpr|NameExpr2,application
+[0.0252] uuid,NameExpr0|MethodCallExpr0|NameExpr2,random|uuid
+
+topk terminals for sub-token: create
+['job|manager', 'METHOD_NAME', 'METHOD_NAME', 'job|manager', 'METHOD_NAME', 'application', 'configuration', 'job|manager', 'configuration|builder', 'job|manager', 'configuration', 'application', 'job|manager', 'application', 'configuration|builder', 'application', 'robolectric', 'application', 'uuid', 'random|uuid']
+
+topk path-contexts for sub-token: job
+[0.4162] job|manager,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1139] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0586] configuration|builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0572] configuration,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0368] job|manager,ClassOrInterfaceType0|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0256] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0204] job|manager,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,configuration|builder
+[0.0146] job|manager,ClassOrInterfaceType0|ObjectCreationExpr|MethodCallExpr2|NameExpr2,build
+[0.0140] robolectric,NameExpr0|FieldAccessExpr|NameExpr2,application
+[0.0140] job|manager,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,configuration
+
+topk terminals for sub-token: job
+['job|manager', 'METHOD_NAME', 'METHOD_NAME', 'job|manager', 'configuration|builder', 'job|manager', 'configuration', 'job|manager', 'job|manager', 'application', 'METHOD_NAME', 'application', 'job|manager', 'configuration|builder', 'job|manager', 'build', 'robolectric', 'application', 'job|manager', 'configuration']
+
+topk path-contexts for sub-token: manager
+[0.5476] job|manager,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1786] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.1081] configuration|builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0737] configuration,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,job|manager
+[0.0189] job|manager,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,configuration|builder
+[0.0102] job|manager,ClassOrInterfaceType0|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0101] job|manager,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,configuration
+[0.0047] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+[0.0039] robolectric,NameExpr0|FieldAccessExpr|NameExpr2,application
+[0.0030] configuration|builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|FieldAccessExpr1|NameExpr2,application
+
+topk terminals for sub-token: manager
+['job|manager', 'METHOD_NAME', 'METHOD_NAME', 'job|manager', 'configuration|builder', 'job|manager', 'configuration', 'job|manager', 'job|manager', 'configuration|builder', 'job|manager', 'application', 'job|manager', 'configuration', 'METHOD_NAME', 'application', 'robolectric', 'application', 'configuration|builder', 'application']
+

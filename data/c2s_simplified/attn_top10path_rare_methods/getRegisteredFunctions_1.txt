@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/authz/impl/FunctionManagerComponent_getRegisteredFunctions.java
+method_name = getRegisteredFunctions
+method_body = public List<String> getRegisteredFunctions(String prefix) { List<String> rv = new Vector<String>(); for (String function : m_registeredFunctions) { if (function.startsWith(prefix)) { rv.add(function); } } return rv; }
+
+topk path-contexts for sub-token: get
+[0.0817] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0621] string,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.0578] prefix,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0483] string,ClassOrInterfaceType0|ClassOrInterfaceType|ObjectCreationExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0324] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0286] rv,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0283] string,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0270] function,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.0262] prefix,NameExpr2|MethodCallExpr|NameExpr3,starts|with
+[0.0250] function,NameExpr2|MethodCallExpr|NameExpr3,add
+
+topk terminals for sub-token: get
+['METHOD_NAME', 'm|registered|functions', 'string', 'm|registered|functions', 'prefix', 'm|registered|functions', 'string', 'm|registered|functions', 'string', 'm|registered|functions', 'rv', 'm|registered|functions', 'string', 'METHOD_NAME', 'function', 'm|registered|functions', 'prefix', 'starts|with', 'function', 'add']
+
+topk path-contexts for sub-token: registered
+[0.1411] string,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.1238] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0711] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0703] string,ClassOrInterfaceType0|ClassOrInterfaceType|ObjectCreationExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0688] prefix,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0529] rv,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0491] function,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.0402] string,ClassOrInterfaceType0|ClassOrInterfaceType|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0273] string,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0121] m|registered|functions,NameExpr1|ForeachStmt|BlockStmt|IfStmt|MethodCallExpr0|NameExpr2,prefix
+
+topk terminals for sub-token: registered
+['string', 'm|registered|functions', 'METHOD_NAME', 'm|registered|functions', 'string', 'm|registered|functions', 'string', 'm|registered|functions', 'prefix', 'm|registered|functions', 'rv', 'm|registered|functions', 'function', 'm|registered|functions', 'string', 'm|registered|functions', 'string', 'METHOD_NAME', 'm|registered|functions', 'prefix']
+
+topk path-contexts for sub-token: functions
+[0.1230] string,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.0979] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0747] string,ClassOrInterfaceType0|ClassOrInterfaceType|ObjectCreationExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0651] prefix,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0591] string,ClassOrInterfaceType0|ClassOrInterfaceType|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0580] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0572] function,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|NameExpr1,m|registered|functions
+[0.0552] rv,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ForeachStmt|NameExpr1,m|registered|functions
+[0.0338] string,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0183] m|registered|functions,NameExpr1|ForeachStmt|BlockStmt|IfStmt|MethodCallExpr0|NameExpr0,function
+
+topk terminals for sub-token: functions
+['string', 'm|registered|functions', 'METHOD_NAME', 'm|registered|functions', 'string', 'm|registered|functions', 'prefix', 'm|registered|functions', 'string', 'm|registered|functions', 'string', 'm|registered|functions', 'function', 'm|registered|functions', 'rv', 'm|registered|functions', 'string', 'METHOD_NAME', 'm|registered|functions', 'function']
+

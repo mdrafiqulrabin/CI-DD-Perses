@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/tribes/transport/ReceiverBase_getMaxTasks.java
+method_name = getMaxTasks
+method_body = public int getMaxTasks() { return maxTasks; }
+predict, score, loss = getMaxTasks, 0.48880794644355774, 0.7880327701568604
+
+Trace of simplified code(s):
+{"time": "2021-01-23 14:44:16.639394", "n_pass": [1, 1, 1], "score": "0.4888", "loss": "0.788", "code": "public int getMaxTasks() { return maxTasks; }"}
+{"time": "2021-01-23 14:44:23.006384", "n_pass": [25, 3, 2], "score": "0.5357", "loss": "0.8116", "code": "public int getMaxTasks() {  maxTasks; }"}
+{"time": "2021-01-23 14:45:10.292843", "n_pass": [139, 18, 3], "score": "0.5357", "loss": "0.8116", "code": "public int getMaxTasks() { maxTasks; }"}
+{"time": "2021-01-23 14:45:30.928632", "n_pass": [148, 26, 4], "score": "0.5357", "loss": "0.8116", "code": "public int getMaxTasks() { maxTasks;}"}
+{"time": "2021-01-23 14:45:48.643665", "n_pass": [174, 31, 5], "score": "0.5357", "loss": "0.8116", "code": "public int getMaxTasks(){ maxTasks;}"}
+{"time": "2021-01-23 14:45:51.225278", "n_pass": [176, 32, 6], "score": "0.5357", "loss": "0.8116", "code": "public int getMaxTasks(){maxTasks;}"}
+
+Minimal simplified code:
+public int getMaxTasks(){maxTasks;}
+

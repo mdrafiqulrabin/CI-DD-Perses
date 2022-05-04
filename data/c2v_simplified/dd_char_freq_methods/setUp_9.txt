@@ -1,0 +1,62 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/channel/TestRemoteProcessException_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }
+predict, score, loss = setUp, 0.9998689889907837, 0.00014828535495325923
+
+Trace of simplified code(s):
+{"time": "2020-12-28 09:18:12.138751", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:14.815153", "n_pass": [9, 2, 2], "score": "1.0", "loss": "0.0", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); cstener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:17.455721", "n_pass": [18, 3, 3], "score": "0.9876", "loss": "0.0138", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); Domain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:20.501614", "n_pass": [43, 4, 4], "score": "0.8307", "loss": "0.2023", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:23.563773", "n_pass": [74, 5, 5], "score": "0.8326", "loss": "0.1977", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:26.229360", "n_pass": [78, 6, 6], "score": "0.7999", "loss": "0.2454", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:28.869156", "n_pass": [80, 7, 7], "score": "0.6912", "loss": "0.6026", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 09:18:36.903619", "n_pass": [127, 10, 8], "score": "0.6724", "loss": "0.6277", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(ChanEFAULT); }"}
+{"time": "2020-12-28 09:18:39.523270", "n_pass": [128, 11, 9], "score": "0.6724", "loss": "0.6277", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(ChanT); }"}
+{"time": "2020-12-28 09:18:42.139365", "n_pass": [131, 12, 10], "score": "0.1803", "loss": "2.9008", "code": "@Befpublic void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(ChanT); }"}
+{"time": "2020-12-28 09:18:44.755911", "n_pass": [132, 13, 11], "score": "0.1934", "loss": "2.9373", "code": "@Befc void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(ChanT); }"}
+{"time": "2020-12-28 09:19:03.927000", "n_pass": [148, 20, 12], "score": "0.1943", "loss": "2.8197", "code": "@Befc void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { el2 }); channel1.start(ChULT); chan(ChanT); }"}
+{"time": "2020-12-28 09:19:11.814585", "n_pass": [155, 23, 13], "score": "0.5371", "loss": "0.954", "code": "@Befc void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { el2 }); channel1.start(ChULT);(ChanT); }"}
+{"time": "2020-12-28 09:19:17.853373", "n_pass": [166, 25, 14], "score": "0.4566", "loss": "1.198", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new ManagedChannel[] { el2 }); channel1.start(ChULT);(ChanT); }"}
+{"time": "2020-12-28 09:19:25.726812", "n_pass": [171, 28, 15], "score": "0.5002", "loss": "1.0924", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); channel1.start(ChULT);(ChanT); }"}
+{"time": "2020-12-28 09:19:31.003607", "n_pass": [176, 30, 16], "score": "0.4263", "loss": "1.3354", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.start(ChULT);(ChanT); }"}
+{"time": "2020-12-28 09:19:50.137501", "n_pass": [243, 37, 17], "score": "0.349", "loss": "1.7999", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.st(ChULT);(ChanT); }"}
+{"time": "2020-12-28 09:19:52.767969", "n_pass": [245, 38, 18], "score": "0.4007", "loss": "1.4146", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.st(Ch);(ChanT); }"}
+{"time": "2020-12-28 09:19:55.373450", "n_pass": [246, 39, 19], "score": "0.3595", "loss": "1.7488", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.st(ChChanT); }"}
+{"time": "2020-12-28 09:19:57.971056", "n_pass": [247, 40, 20], "score": "0.3595", "loss": "1.7488", "code": "@Befc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:00.572050", "n_pass": [251, 41, 21], "score": "0.327", "loss": "1.6158", "code": "@Bc void setUp() throws Exception { cl1 = Domain(new Manaannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:23.525048", "n_pass": [270, 49, 22], "score": "0.327", "loss": "1.6158", "code": "@Bc void setUp() throws Exception { cl= Domain(new Manaannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:26.150622", "n_pass": [271, 50, 23], "score": "0.4312", "loss": "2.3043", "code": "@Bc void setUp() throws Exception { clDomain(new Manaannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:28.771365", "n_pass": [272, 51, 24], "score": "0.4312", "loss": "2.3043", "code": "@Bc void setUp() throws Exception { clain(new Manaannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:34.002878", "n_pass": [276, 53, 25], "score": "0.4312", "loss": "2.3043", "code": "@Bc void setUp() throws Exception { clain(new Mannel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:36.617692", "n_pass": [277, 54, 26], "score": "0.5952", "loss": "1.4867", "code": "@Bc void setUp() throws Exception { clain(new Mel[] { el2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:39.224190", "n_pass": [280, 55, 27], "score": "0.7342", "loss": "1.5122", "code": "@Bc void setUp() throws Exception { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:51.375838", "n_pass": [300, 59, 28], "score": "0.4485", "loss": "2.3514", "code": "@Bc void setUp() throws ception { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:53.986812", "n_pass": [301, 60, 29], "score": "0.4485", "loss": "2.3514", "code": "@Bc void setUp() throws ption { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:56.598672", "n_pass": [302, 61, 30], "score": "0.4925", "loss": "2.4271", "code": "@Bc void setUp() throws ion { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:20:59.236907", "n_pass": [303, 62, 31], "score": "0.5526", "loss": "2.3338", "code": "@Bc void setUp() throws n { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:12.719418", "n_pass": [322, 67, 32], "score": "0.4541", "loss": "3.343", "code": "@Bc vo setUp() throws n { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:30.321897", "n_pass": [409, 71, 33], "score": "0.4541", "loss": "3.343", "code": "@Bc vo setUp()throws n { clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:32.935609", "n_pass": [417, 72, 34], "score": "0.4541", "loss": "3.343", "code": "@Bc vo setUp()throws n{ clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:35.543804", "n_pass": [419, 73, 35], "score": "0.4541", "loss": "3.343", "code": "@Bc vo setUp()throws n{clain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:38.152961", "n_pass": [420, 74, 36], "score": "0.4541", "loss": "3.343", "code": "@Bc vo setUp()throws n{lain(new Mel[] {2 }); ch1.st(ChnT); }"}
+{"time": "2020-12-28 09:21:59.129113", "n_pass": [438, 82, 37], "score": "0.4349", "loss": "3.445", "code": "@Bc vo setUp()throws n{lain(new Mel[] {2 });h1.st(ChnT); }"}
+{"time": "2020-12-28 09:22:09.584282", "n_pass": [447, 86, 38], "score": "0.4346", "loss": "3.4735", "code": "@c vo setUp()throws n{lain(new Mel[] {2 });h1.st(ChnT); }"}
+{"time": "2020-12-28 09:22:13.007426", "n_pass": [450, 87, 39], "score": "0.2965", "loss": "3.9111", "code": "@c o setUp()throws n{lain(new Mel[] {2 });h1.st(ChnT); }"}
+{"time": "2020-12-28 09:22:47.336824", "n_pass": [519, 98, 40], "score": "0.2965", "loss": "3.9111", "code": "@c o setUp()throws n{lain(new Mel[]{2 });h1.st(ChnT); }"}
+{"time": "2020-12-28 09:22:52.572566", "n_pass": [522, 100, 41], "score": "0.2965", "loss": "3.9111", "code": "@c o setUp()throws n{lain(new Mel[]{2});h1.st(ChnT); }"}
+{"time": "2020-12-28 09:22:55.212158", "n_pass": [527, 101, 42], "score": "0.2965", "loss": "3.9111", "code": "@c o setUp()throws n{lain(new Mel[]{2});h.st(ChnT); }"}
+{"time": "2020-12-28 09:22:57.819642", "n_pass": [528, 102, 43], "score": "0.3262", "loss": "2.2586", "code": "@c o setUp()throws n{lain(new Mel[]{2});hst(ChnT); }"}
+{"time": "2020-12-28 09:23:05.689153", "n_pass": [532, 105, 44], "score": "0.3262", "loss": "2.2586", "code": "@c o setUp()throws n{lain(new Mel[]{2});hst(hnT); }"}
+{"time": "2020-12-28 09:23:08.326875", "n_pass": [533, 106, 45], "score": "0.2454", "loss": "2.5553", "code": "@c o setUp()throws n{lain(new Mel[]{2});hst(nT); }"}
+{"time": "2020-12-28 09:23:10.955568", "n_pass": [534, 107, 46], "score": "0.2633", "loss": "2.618", "code": "@c o setUp()throws n{lain(new Mel[]{2});hst(T); }"}
+{"time": "2020-12-28 09:23:16.182756", "n_pass": [538, 109, 47], "score": "0.2633", "loss": "2.618", "code": "@c o setUp()throws n{lain(new Mel[]{2});hst(T);}"}
+{"time": "2020-12-28 09:23:27.707364", "n_pass": [563, 112, 48], "score": "0.1715", "loss": "3.6679", "code": "@c o setUp()throws n{lan(new Mel[]{2});hst(T);}"}
+{"time": "2020-12-28 09:23:57.570473", "n_pass": [609, 122, 49], "score": "0.4133", "loss": "1.707", "code": "@c o setUp()throws n{an(new Mel[]{2});hst(T);}"}
+{"time": "2020-12-28 09:24:00.186349", "n_pass": [610, 123, 50], "score": "0.3778", "loss": "1.7597", "code": "@c o setUp()throws n{n(new Mel[]{2});hst(T);}"}
+{"time": "2020-12-28 09:24:13.275593", "n_pass": [623, 128, 51], "score": "0.2851", "loss": "1.8673", "code": "@c o setUp()throws n{n(new Mel[]{});hst(T);}"}
+
+Minimal simplified code:
+@c o setUp()throws n{n(new Mel[]{});hst(T);}
+

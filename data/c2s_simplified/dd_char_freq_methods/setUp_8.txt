@@ -1,0 +1,52 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestClientCert_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); Tomcat tomcat = getTomcatInstance(); TesterSupport.configureClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }
+predict, score, loss = setUp, 0.9983796, 0.0017957151
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:24:44.390069", "n_pass": [1, 1, 1], "score": "0.9984", "loss": "0.0018", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTomcatInstance(); TesterSupport.configureClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:45.983401", "n_pass": [25, 2, 2], "score": "0.998", "loss": "0.0022", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(tomcat); tomcat.start(); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:47.357297", "n_pass": [47, 3, 3], "score": "0.9986", "loss": "0.0015", "code": "@Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:48.713096", "n_pass": [50, 4, 4], "score": "0.9969", "loss": "0.0034", "code": "d setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:50.048036", "n_pass": [53, 5, 5], "score": "0.9977", "loss": "0.0026", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.security.ssl.allowUnsafeRenegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:51.382860", "n_pass": [56, 6, 6], "score": "0.9976", "loss": "0.0027", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securinegotiation\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:54.092312", "n_pass": [87, 8, 7], "score": "0.9976", "loss": "0.0027", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securin\", \"true\"); } super.setUp(); Tomcat tomcat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:56.795812", "n_pass": [90, 10, 8], "score": "0.9986", "loss": "0.0016", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securin\", \"true\"); } super.setUp(); cat = getTClientCertContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:24:59.500819", "n_pass": [92, 12, 9], "score": "0.9986", "loss": "0.0016", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securin\", \"true\"); } super.setUp(); cat = getTContext(to); TesterSupport.configureClientSsl(); }"}
+{"time": "2020-12-28 00:25:00.834188", "n_pass": [95, 13, 10], "score": "0.9984", "loss": "0.0018", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securin\", \"true\"); } super.setUp(); cat = getTContext(to); TesterSfigureClientSsl(); }"}
+{"time": "2020-12-28 00:25:02.180517", "n_pass": [96, 14, 11], "score": "0.9986", "loss": "0.0016", "code": "d setUp() throws Exception { if (!TesterPORTED) { System.setProperty(\"sun.securin\", \"true\"); } super.setUp(); cat = getTContext(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 00:25:03.517939", "n_pass": [103, 15, 12], "score": "0.9986", "loss": "0.0015", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"sun.securin\", \"true\"); } super.setUp(); cat = getTContext(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 00:25:04.837720", "n_pass": [105, 16, 13], "score": "0.9987", "loss": "0.0014", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); cat = getTContext(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 00:25:07.584244", "n_pass": [109, 18, 14], "score": "0.9965", "loss": "0.0045", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); Context(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 00:25:10.427661", "n_pass": [146, 20, 15], "score": "0.9959", "loss": "0.005", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); xt(to); TesterSntSsl(); }"}
+{"time": "2020-12-28 00:25:11.744834", "n_pass": [148, 21, 16], "score": "0.996", "loss": "0.0051", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); xt(to); TentSsl(); }"}
+{"time": "2020-12-28 00:25:13.131511", "n_pass": [149, 22, 17], "score": "0.9968", "loss": "0.0044", "code": "d setUp() throws Exception { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:14.810708", "n_pass": [155, 23, 18], "score": "0.9964", "loss": "0.0052", "code": "d setUp() throws Excn { if (!TesterPORTED) { Property(\"n\", \"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:16.127294", "n_pass": [158, 24, 19], "score": "0.9949", "loss": "0.0077", "code": "d setUp() throws Excn { if (!TPORTED) { Property(\"n\", \"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:17.439633", "n_pass": [159, 25, 20], "score": "0.9939", "loss": "0.0097", "code": "d setUp() throws Excn { if (!TD) { Property(\"n\", \"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:18.760846", "n_pass": [161, 26, 21], "score": "0.9877", "loss": "0.0231", "code": "d setUp() throws Excn { if (!TD) { rty(\"n\", \"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:20.096995", "n_pass": [163, 27, 22], "score": "0.9935", "loss": "0.0118", "code": "d setUp() throws Excn { if (!TD) { rty(\"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:24.425388", "n_pass": [213, 30, 23], "score": "0.9969", "loss": "0.0052", "code": "d setUp() throws Excn { if (!TD) { (\"true\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:25.738599", "n_pass": [215, 31, 24], "score": "0.9967", "loss": "0.0056", "code": "d setUp() throws Excn { if (!TD) { (\"t\"); } super.setUp(); xt(to); Te(); }"}
+{"time": "2020-12-28 00:25:31.046365", "n_pass": [226, 35, 25], "score": "0.9973", "loss": "0.004", "code": "d setUp() throws Excn { if (!TD) { (\"t\"); } super.setUp(); xt(to); T; }"}
+{"time": "2020-12-28 00:25:33.943660", "n_pass": [237, 36, 26], "score": "0.9978", "loss": "0.0031", "code": "d setUp() throws En { if (!TD) { (\"t\"); } super.setUp(); xt(to); T; }"}
+{"time": "2020-12-28 00:25:35.278164", "n_pass": [238, 37, 27], "score": "0.9981", "loss": "0.0026", "code": "d setUp() throws E{ if (!TD) { (\"t\"); } super.setUp(); xt(to); T; }"}
+{"time": "2020-12-28 00:25:36.657131", "n_pass": [242, 38, 28], "score": "0.9982", "loss": "0.0025", "code": "d setUp() throws E{ if (D) { (\"t\"); } super.setUp(); xt(to); T; }"}
+{"time": "2020-12-28 00:25:41.996959", "n_pass": [255, 42, 29], "score": "0.9967", "loss": "0.005", "code": "d setUp() throws E{ if (D) { (\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:25:54.635534", "n_pass": [342, 46, 30], "score": "0.9967", "loss": "0.005", "code": "d setUp()throws E{ if (D) { (\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:25:55.954612", "n_pass": [352, 47, 31], "score": "0.9967", "loss": "0.005", "code": "d setUp()throws E{if (D) { (\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:25:57.294149", "n_pass": [355, 48, 32], "score": "0.9967", "loss": "0.005", "code": "d setUp()throws E{if(D) { (\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:25:58.642914", "n_pass": [359, 49, 33], "score": "0.9967", "loss": "0.005", "code": "d setUp()throws E{if(D){ (\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:25:59.974725", "n_pass": [361, 50, 34], "score": "0.9967", "loss": "0.005", "code": "d setUp()throws E{if(D){(\"t\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:26:01.350768", "n_pass": [364, 51, 35], "score": "0.9963", "loss": "0.0065", "code": "d setUp()throws E{if(D){(\"\"); } super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:26:02.733994", "n_pass": [368, 52, 36], "score": "0.9963", "loss": "0.0065", "code": "d setUp()throws E{if(D){(\"\");} super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:26:04.108361", "n_pass": [370, 53, 37], "score": "0.9963", "loss": "0.0065", "code": "d setUp()throws E{if(D){(\"\");}super.setUp(); xt(to); }"}
+{"time": "2020-12-28 00:26:12.174805", "n_pass": [378, 59, 38], "score": "0.9954", "loss": "0.0079", "code": "d setUp()throws E{if(D){(\"\");}super.setUp();t(to); }"}
+{"time": "2020-12-28 00:26:13.511770", "n_pass": [380, 60, 39], "score": "0.9962", "loss": "0.0062", "code": "d setUp()throws E{if(D){(\"\");}super.setUp();t(); }"}
+{"time": "2020-12-28 00:26:25.252110", "n_pass": [442, 66, 40], "score": "0.9962", "loss": "0.0062", "code": "d setUp()throws E{if(D){(\"\");}super.setUp();t();}"}
+{"time": "2020-12-28 00:26:34.484651", "n_pass": [477, 71, 41], "score": "0.5388", "loss": "1.4538", "code": "d setUp()throws E{if(D){(\"\");}supe.setUp();t();}"}
+
+Minimal simplified code:
+d setUp()throws E{if(D){("");}supe.setUp();t();}
+

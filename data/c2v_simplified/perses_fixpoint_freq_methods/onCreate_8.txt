@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/VerticalGridFragment_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 12:02:22.587115", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); } }"}
+{"time": "2020-12-29 12:06:05.225048", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); } }"}
+{"time": "2020-12-29 12:07:20.840267", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); } }"}
+{"time": "2020-12-29 12:08:36.238471", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-29 12:09:51.828131", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-29 12:10:31.633116", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate( ) { super.onCreate(savedInstanceState); } }"}
+
+Minimal simplified code:
+class T {
+                 void onCreate(                         ) { super.onCreate(                  );                                                                                                                                                                                                                               }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/route/RouteRule_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((matches == null) ? 0 : matches.hashCode()); result = prime * result + ((unmatches == null) ? 0 : unmatches.hashCode()); return result; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 19:31:50.348505", "score": "1.0", "loss": "0.0", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((matches == null) ? 0 : matches.hashCode()); result = prime * result + ((unmatches == null) ? 0 : unmatches.hashCode()); return result; } }"}
+{"time": "2020-12-28 19:34:51.955726", "score": "1.0", "loss": "0.0", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((matches == null) ? 0 : matches.hashCode()); } }"}
+{"time": "2020-12-28 19:36:07.159326", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public int hashCode() { final int prime = 31; int result = 1; } }"}
+{"time": "2020-12-28 19:37:22.199174", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public int hashCode() { final int prime = 31; } }"}
+{"time": "2020-12-28 19:38:37.364852", "score": "0.981", "loss": "0.0256", "code": "class T { @Override public int hashCode() { final int prime ; } }"}
+{"time": "2020-12-28 19:39:16.844262", "score": "0.8128", "loss": "0.3689", "code": "class T { int hashCode() { final int prime ; } }"}
+
+Minimal simplified code:
+class T {
+                 int hashCode() {       int prime     ;                                                                                                                                                                                    }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/AsyncChannelWrapperSecure_get.java
+method_name = get
+method_body = @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { Long result = wrapped.get(timeout, unit); if (result.longValue() > Integer.MAX_VALUE) { throw new ExecutionException(sm.getString("asyncChannelWrapperSecure.tooBig", result), null); } return new Integer(result.intValue()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 23:40:09.742746", "score": "0.9907", "loss": "0.0192", "code": "class T { @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { Long result = wrapped.get(timeout, unit); if (result.longValue() > Integer.MAX_VALUE) { throw new ExecutionException(sm.getString(\"asyncChannelWrapperSecure.tooBig\", result), null); } return new Integer(result.intValue()); } }"}
+{"time": "2020-12-28 23:42:40.096019", "score": "0.996", "loss": "0.0059", "code": "class T { @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { throw new ExecutionException(sm.getString(\"asyncChannelWrapperSecure.tooBig\", result), null); } }"}
+{"time": "2020-12-28 23:45:06.583444", "score": "0.9952", "loss": "0.0066", "code": "class T { @Override public Integer get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { throw new ExecutionException( ); } }"}
+{"time": "2020-12-28 23:45:46.889020", "score": "0.842", "loss": "0.3456", "code": "class T { @Override public Integer get(long timeout, TimeUnit unit) { throw new ExecutionException( ); } }"}
+{"time": "2020-12-28 23:47:49.966916", "score": "0.6994", "loss": "0.4531", "code": "class T { Integer get(long timeout, TimeUnit unit) { throw new ExecutionException( ); } }"}
+{"time": "2020-12-28 23:53:12.989196", "score": "0.4565", "loss": "0.9251", "code": "class T { Integer get(long timeout, TimeUnit unit) { throw ExecutionException ; } }"}
+
+Minimal simplified code:
+class T {
+                 Integer get(                           )                                                                                                                                                           { throw     ExecutionException                                                                ; }
+}
+
+

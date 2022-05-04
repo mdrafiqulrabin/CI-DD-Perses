@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/core/MarkdownTextAreaWithPreview_setWrapStyleWord.java
+method_name = setWrapStyleWord
+method_body = public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }
+predict, score, loss = setWrapStyleWord, 0.39728352427482605, 2.0066943168640137
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:11:06.703812", "n_pass": [1, 1, 1], "score": "0.3973", "loss": "2.0067", "code": "public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-20 07:11:14.921422", "n_pass": [24, 4, 2], "score": "0.2758", "loss": "2.1479", "code": "public void setWrapStyleWord(boolean value) {TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-20 07:11:26.570598", "n_pass": [51, 8, 3], "score": "0.2758", "loss": "2.1479", "code": " void setWrapStyleWord(boolean value) {TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-20 07:11:29.175523", "n_pass": [52, 9, 4], "score": "0.2758", "loss": "2.1479", "code": "void setWrapStyleWord(boolean value) {TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-20 07:11:36.320152", "n_pass": [81, 11, 5], "score": "0.2758", "loss": "2.1479", "code": "void setWrapStyleWord(boolean value){TextCode.setWrapStyleWord(value); }"}
+{"time": "2021-01-20 07:11:44.155630", "n_pass": [90, 14, 6], "score": "0.2758", "loss": "2.1479", "code": "void setWrapStyleWord(boolean value){TextCode.setWrapStyleWord(value);}"}
+
+Minimal simplified code:
+void setWrapStyleWord(boolean value){TextCode.setWrapStyleWord(value);}
+

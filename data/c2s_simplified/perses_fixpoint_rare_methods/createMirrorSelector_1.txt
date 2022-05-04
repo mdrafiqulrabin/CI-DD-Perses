@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-cloud__spring-cloud-function/spring-cloud-function-compiler/src/main/java/org/springframework/cloud/function/compiler/java/MavenSettings_createMirrorSelector.java
+method_name = createMirrorSelector
+method_body = private MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId(), mirror.getUrl(), mirror.getLayout(), false, mirror.getMirrorOf(), mirror.getMirrorOfLayouts()); } return selector; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:47:14.791258", "score": "0.3698", "loss": "2.8052", "code": "class T { private MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId(), mirror.getUrl(), mirror.getLayout(), false, mirror.getMirrorOf(), mirror.getMirrorOfLayouts()); } return selector; } }"}
+{"time": "2021-01-24 02:50:31.214348", "score": "0.3683", "loss": "2.9071", "code": "class T { private MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId(), mirror.getUrl(), mirror.getLayout(), false, mirror.getMirrorOf() ); } return selector; } }"}
+{"time": "2021-01-24 02:50:53.057678", "score": "0.36", "loss": "2.8373", "code": "class T { private MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId() , mirror.getMirrorOf() ); } return selector; } }"}
+{"time": "2021-01-24 02:52:56.056351", "score": "0.36", "loss": "2.8373", "code": "class T { MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(mirror.getId() , mirror.getMirrorOf() ); } return selector; } }"}
+{"time": "2021-01-24 02:56:19.012862", "score": "0.4212", "loss": "2.3572", "code": "class T { MirrorSelector createMirrorSelector(Settings settings) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add( getId , mirror.getMirrorOf() ); } return selector; } }"}
+{"time": "2021-01-24 02:57:06.259687", "score": "0.4426", "loss": "2.427", "code": "class T { MirrorSelector createMirrorSelector( ) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add( getId , mirror.getMirrorOf() ); } return selector; } }"}
+
+Minimal simplified code:
+class T {
+        MirrorSelector createMirrorSelector(                 ) { DefaultMirrorSelector selector = new DefaultMirrorSelector(); for (Mirror mirror : settings.getMirrors()) { selector.add(       getId                                              , mirror.getMirrorOf()                             ); } return selector; }
+}
+
+

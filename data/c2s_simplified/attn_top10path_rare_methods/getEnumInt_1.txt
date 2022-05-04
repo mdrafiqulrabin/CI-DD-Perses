@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_getEnumInt.java
+method_name = getEnumInt
+method_body = public <E extends Enum<E>> E getEnumInt(int index, Class<E> enumClass) { return toEnum(enumClass, getInt(index)); }
+
+topk path-contexts for sub-token: get
+[0.0941] e,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0904] e,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,to|enum
+[0.0805] index,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,to|enum
+[0.0804] index,NameExpr1|MethodCallExpr2|NameExpr2,get|int
+[0.0790] e,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0746] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,to|enum
+[0.0617] index,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,to|enum
+[0.0590] get|int,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,to|enum
+[0.0405] enum|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,to|enum
+[0.0396] e,ClassOrInterfaceType0|ClassOrInterfaceType|TypeParameter|MethodDeclaration|ClassOrInterfaceType1,e
+
+topk terminals for sub-token: get
+['e', 'int', 'e', 'to|enum', 'index', 'to|enum', 'index', 'get|int', 'e', 'METHOD_NAME', 'int', 'to|enum', 'index', 'to|enum', 'get|int', 'to|enum', 'enum|class', 'to|enum', 'e', 'e']
+
+topk path-contexts for sub-token: enum
+[0.1551] e,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1295] e,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0943] index,NameExpr1|MethodCallExpr2|NameExpr2,get|int
+[0.0739] enum|class,NameExpr1|MethodCallExpr|MethodCallExpr2|NameExpr2,get|int
+[0.0528] e,ClassOrInterfaceType0|ClassOrInterfaceType|TypeParameter|MethodDeclaration|ClassOrInterfaceType1,e
+[0.0432] e,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,index
+[0.0396] get|int,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,to|enum
+[0.0310] enum|class,NameExpr1|MethodCallExpr|NameExpr3,to|enum
+[0.0283] enum|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+[0.0264] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+
+topk terminals for sub-token: enum
+['e', 'METHOD_NAME', 'e', 'int', 'index', 'get|int', 'enum|class', 'get|int', 'e', 'e', 'e', 'index', 'get|int', 'to|enum', 'enum|class', 'to|enum', 'enum|class', 'get|int', 'int', 'get|int']
+
+topk path-contexts for sub-token: int
+[0.2304] index,NameExpr1|MethodCallExpr2|NameExpr2,get|int
+[0.1099] enum|class,NameExpr1|MethodCallExpr|MethodCallExpr2|NameExpr2,get|int
+[0.0934] e,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0895] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+[0.0618] e,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0429] index,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+[0.0392] e,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+[0.0312] enum|class,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,get|int
+[0.0263] get|int,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,to|enum
+[0.0225] e,ClassOrInterfaceType0|ClassOrInterfaceType|TypeParameter|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: int
+['index', 'get|int', 'enum|class', 'get|int', 'e', 'METHOD_NAME', 'int', 'get|int', 'e', 'int', 'index', 'get|int', 'e', 'get|int', 'enum|class', 'get|int', 'get|int', 'to|enum', 'e', 'METHOD_NAME']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/JKStatusUpdateTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); checkParameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }
+
+topk path-contexts:
+[0.3420] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),createlink
+[0.0993] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.0447] createlink,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NullLiteralExpr3),null
+[0.0441] checkparameter,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),execute
+[0.0364] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),checkparameter
+[0.0363] checkparameter,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),createlink
+[0.0349] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0333] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),checkparameter
+[0.0327] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(NameExpr2),tostring
+[0.0296] createlink,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr5),execute
+
+topk terminals:
+['buildexception', 'createlink', 'super', 'execute', 'createlink', 'null', 'checkparameter', 'execute', 'execute', 'checkparameter', 'checkparameter', 'createlink', 'buildexception', 'super', 'buildexception', 'checkparameter', 'buildexception', 'tostring', 'createlink', 'execute']
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/MapDemo_run.java
+method_name = run
+method_body = @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:36:56.041635", "score": "0.9883", "loss": "0.0237", "code": "class T { @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); } }"}
+{"time": "2020-12-21 08:37:44.457062", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override public void run() { } }"}
+{"time": "2020-12-21 08:38:05.518377", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override void run() { } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run() {                                                                                           }
+}
+
+

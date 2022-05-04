@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/main/java/example/kurt/todo/widget/ProgressView_init.java
+method_name = init
+method_body = public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); }
+predict, score, loss = initPaintBar, 0.86582816, 1.842766
+
+Ignoring as original_method_name != predicted_method_name.
+

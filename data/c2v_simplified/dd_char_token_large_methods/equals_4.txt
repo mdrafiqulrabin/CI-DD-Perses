@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/equals_4.txt
+method_name = equals
+method_body = boolean equals(Object obj){if(this==obj){}{}if(getClass()){}if(bufferLenTrits){}if(fastFp){}if(null){if(other=null){}}{}if(hashSeed){}if(pkLen){}{}if(q)if(sparse){}}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 19:18:19.397008", "n_pass": [1, 1, 1], "score": "0.4166", "loss": "1.7767", "code": "boolean equals(Object obj){if(this==obj){}{}if(getClass()){}if(bufferLenTrits){}if(fastFp){}if(null){if(other=null){}}{}if(hashSeed){}if(pkLen){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:22.039133", "n_pass": [22, 2, 2], "score": "0.4234", "loss": "1.7284", "code": "boolean equals(Object obj){if(this==obj)if(bufferLenTrits){}if(fastFp){}if(null){if(other=null){}}{}if(hashSeed){}if(pkLen){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:24.677615", "n_pass": [46, 3, 3], "score": "0.4336", "loss": "1.6863", "code": "boolean equals(Object obj){if(this==obj)if(bufferLenTrits){}{}if(null){if(other=null){}}{}if(hashSeed){}if(pkLen){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:27.284097", "n_pass": [47, 4, 4], "score": "0.4575", "loss": "1.6116", "code": "boolean equals(Object obj){if(this==obj)if(bufferLenTrits){}{if(other=null){}}{}if(hashSeed){}if(pkLen){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:29.898634", "n_pass": [51, 5, 5], "score": "0.6648", "loss": "1.1183", "code": "boolean equals(Object obj){if(this==obj)if(bufferLenTrits){}{if(other=null){}}{}if(hashSeed){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:38.753058", "n_pass": [98, 8, 6], "score": "0.6648", "loss": "1.1183", "code": "boolean equals(Object obj){if(this==obj)if(buenTrits){}{if(other=null){}}{}if(hashSeed){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:41.359277", "n_pass": [99, 9, 7], "score": "0.6934", "loss": "1.0264", "code": "boolean equals(Object obj){if(this==obj)if(buts){}{if(other=null){}}{}if(hashSeed){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:43.950610", "n_pass": [102, 10, 8], "score": "0.4623", "loss": "1.8517", "code": "boolean equals(Object obj){if(this==obj)if(buts){}{if(onull){}}{}if(hashSeed){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:46.556410", "n_pass": [106, 11, 9], "score": "0.3749", "loss": "2.4284", "code": "boolean equals(Object obj){if(this==obj)if(buts){}{if(onull){}}{}if(had){}{}if(q)if(sparse){}}"}
+{"time": "2021-01-22 19:18:54.857503", "n_pass": [166, 14, 10], "score": "0.3543", "loss": "2.9356", "code": "boolean equals(Object obj){if(this==obj)if(buts){}{if(onull){}}{}if(had){}{}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:20.002512", "n_pass": [188, 23, 11], "score": "0.2609", "loss": "3.1181", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(onull){}}{}if(had){}{}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:22.608185", "n_pass": [192, 24, 12], "score": "0.3093", "loss": "2.5358", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(ol){}}{}if(had){}{}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:48.935943", "n_pass": [300, 33, 13], "score": "0.268", "loss": "2.6616", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(ol){}}if(had){}{}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:51.553744", "n_pass": [303, 34, 14], "score": "0.7525", "loss": "0.8806", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(ol){}}if(h){}{}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:54.166923", "n_pass": [305, 35, 15], "score": "0.7421", "loss": "0.9134", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(ol){}}if(h){}if(q)if(sse){}}"}
+{"time": "2021-01-22 19:19:56.797222", "n_pass": [311, 36, 16], "score": "0.9109", "loss": "0.2972", "code": "boolean equals(Object obj){if(this==obj)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:20:36.182999", "n_pass": [336, 50, 17], "score": "0.7712", "loss": "0.9067", "code": "boolean equals(Object bj){if(this==obj)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:20:38.783465", "n_pass": [337, 51, 18], "score": "0.6508", "loss": "0.9847", "code": "boolean equals(Object j){if(this==obj)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:20:46.610706", "n_pass": [346, 54, 19], "score": "0.497", "loss": "1.0593", "code": "boolean equals(Object j){if(ths==obj)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:20:57.068676", "n_pass": [350, 58, 20], "score": "0.4781", "loss": "1.2035", "code": "boolean equals(Object j){if(ths==bj)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:20:59.677132", "n_pass": [351, 59, 21], "score": "0.3883", "loss": "1.3976", "code": "boolean equals(Object j){if(ths==j)if(s){}{if(ol){}}if(h){}if(q)if(s){}}"}
+{"time": "2021-01-22 19:21:52.092849", "n_pass": [443, 78, 22], "score": "0.4019", "loss": "1.2393", "code": "boolean equals(Object j){if(ths==j)if(s){}{if(l){}}if(h){}if(q)if(s){}}"}
+
+Minimal simplified code:
+boolean equals(Object j){if(ths==j)if(s){}{if(l){}}if(h){}if(q)if(s){}}
+

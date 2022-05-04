@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/examples/twitter/TwitterClient/src/com/path/android/jobqueue/examples/twitter/controllers/TwitterController_loadTweets.java
+method_name = loadTweets
+method_body = public List<Status> loadTweets(Long sinceId) throws TwitterException { Paging paging = new Paging(); paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); }
+
+topk path-contexts:
+[0.3797] pagelength,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0880] twitterexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0781] sinceid,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0620] sinceid,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0583] setsinceid,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0347] null,(NullLiteralExpr1)^(BinaryExpr:notEquals)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0314] paging,(NameExpr0)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0269] sinceid,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),gethometimeline
+[0.0158] paging,(NameExpr2)^(MethodCallExpr)_(NameExpr3),gethometimeline
+[0.0146] sinceid,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setsinceid
+
+topk terminals:
+['pagelength', 'gethometimeline', 'twitterexception', 'gethometimeline', 'sinceid', 'gethometimeline', 'sinceid', 'gethometimeline', 'setsinceid', 'gethometimeline', 'null', 'gethometimeline', 'paging', 'gethometimeline', 'sinceid', 'gethometimeline', 'paging', 'gethometimeline', 'sinceid', 'setsinceid']
+

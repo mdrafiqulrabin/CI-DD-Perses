@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/storage/AbstractTaskStoreTest_deleteAllTasks.java
+method_name = deleteAllTasks
+method_body = protected void deleteAllTasks() { storage.write((NoResult.Quiet) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); }
+
+topk path-contexts for sub-token: delete
+[0.1213] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1007] storage,NameExpr0|MethodCallExpr|CastExpr|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0795] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0573] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,write
+[0.0556] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,write
+[0.0400] store|provider,VariableDeclaratorId0|Parameter|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0333] store|provider,NameExpr1|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0260] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,storage
+[0.0259] delete|all|tasks,NameExpr2|MethodCallExpr|ExpressionStmt|LambdaExpr|CastExpr2|MethodCallExpr|NameExpr3,write
+[0.0225] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|MethodCallExpr|NameExpr3,write
+
+topk terminals for sub-token: delete
+['void', 'METHOD_NAME', 'storage', 'delete|all|tasks', 'no|result', 'delete|all|tasks', 'void', 'write', 'METHOD_NAME', 'write', 'store|provider', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'void', 'storage', 'delete|all|tasks', 'write', 'no|result', 'write']
+
+topk path-contexts for sub-token: all
+[0.1606] storage,NameExpr0|MethodCallExpr|CastExpr|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.1301] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.1012] store|provider,VariableDeclaratorId0|Parameter|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0967] store|provider,NameExpr1|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0752] store|provider,NameExpr0|MethodCallExpr0|MethodCallExpr|NameExpr2,delete|all|tasks
+[0.0675] get|unsafe|task|store,NameExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,delete|all|tasks
+[0.0210] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0202] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,storage
+[0.0174] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|NameExpr1,store|provider
+[0.0151] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,storage
+
+topk terminals for sub-token: all
+['storage', 'delete|all|tasks', 'no|result', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'get|unsafe|task|store', 'delete|all|tasks', 'void', 'METHOD_NAME', 'void', 'storage', 'no|result', 'store|provider', 'METHOD_NAME', 'storage']
+
+topk path-contexts for sub-token: tasks
+[0.1831] storage,NameExpr0|MethodCallExpr|CastExpr|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.1627] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.1184] store|provider,NameExpr1|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0982] store|provider,NameExpr0|MethodCallExpr0|MethodCallExpr|NameExpr2,delete|all|tasks
+[0.0883] store|provider,VariableDeclaratorId0|Parameter|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr2,delete|all|tasks
+[0.0856] get|unsafe|task|store,NameExpr2|MethodCallExpr0|MethodCallExpr|NameExpr2,delete|all|tasks
+[0.0259] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0118] delete|all|tasks,NameExpr2|MethodCallExpr|ExpressionStmt|LambdaExpr|CastExpr2|MethodCallExpr|NameExpr3,write
+[0.0075] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,storage
+[0.0063] no|result,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr2|LambdaExpr|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,get|unsafe|task|store
+
+topk terminals for sub-token: tasks
+['storage', 'delete|all|tasks', 'no|result', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'store|provider', 'delete|all|tasks', 'get|unsafe|task|store', 'delete|all|tasks', 'void', 'METHOD_NAME', 'delete|all|tasks', 'write', 'void', 'storage', 'no|result', 'get|unsafe|task|store']
+

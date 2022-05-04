@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPPlant_isShearable.java
+method_name = isShearable
+method_body = @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:44:28.982868", "score": "0.4019", "loss": "1.0124", "code": "class T { @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } } }"}
+{"time": "2021-01-24 16:47:31.274643", "score": "0.9704", "loss": "0.0348", "code": "class T { @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); } }"}
+{"time": "2021-01-24 16:50:04.899524", "score": "0.983", "loss": "0.0196", "code": "class T { @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state ; } }"}
+{"time": "2021-01-24 16:52:02.879403", "score": "0.9743", "loss": "0.0273", "code": "class T { boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state ; } }"}
+
+Minimal simplified code:
+class T {
+                 boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state                           ;                                                                                                                                }
+}
+
+

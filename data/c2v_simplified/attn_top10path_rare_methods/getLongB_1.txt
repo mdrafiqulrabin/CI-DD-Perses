@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/util/src/main/java/org/kaazing/gateway/util/Utils_getLongB.java
+method_name = getLongB
+method_body = private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }
+
+topk path-contexts:
+[0.4496] bb,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(BinaryExpr:plus)_(IntegerLiteralExpr1),4
+[0.2972] index,(NameExpr2)^(MethodCallExpr1)^(MethodCallExpr)_(MethodCallExpr2)_(BinaryExpr:plus)_(NameExpr0),index
+[0.0582] 1,(IntegerLiteralExpr1)^(BinaryExpr:plus2)^(MethodCallExpr2)^(MethodCallExpr)_(MethodCallExpr4)_(BinaryExpr:plus)_(IntegerLiteralExpr1),3
+[0.0196] index,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr3),get
+[0.0183] bytebuffer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr6)_(NameExpr0),bb
+[0.0153] bb,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(BinaryExpr:plus)_(NameExpr0),index
+[0.0142] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr4)_(NameExpr0),bb
+[0.0135] index,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(NameExpr3),get
+[0.0121] index,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr4)_(NameExpr3),get
+[0.0104] bytebuffer,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(NameExpr0),bb
+
+topk terminals:
+['bb', '4', 'index', 'index', '1', '3', 'index', 'get', 'bytebuffer', 'bb', 'bb', 'index', 'int', 'bb', 'index', 'get', 'index', 'get', 'bytebuffer', 'bb']
+

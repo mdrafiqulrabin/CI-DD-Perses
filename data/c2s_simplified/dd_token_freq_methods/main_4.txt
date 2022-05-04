@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/NioSenderTest_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }
+predict, score, loss = main, 0.99949837, 0.0006735034
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:54:28.098099", "n_pass": [1, 1, 1], "score": "0.9995", "loss": "0.0007", "code": "public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 03:54:29.790288", "n_pass": [25, 2, 2], "score": "0.9998", "loss": "0.0003", "code": "public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTestinit(); sender.run(); }"}
+{"time": "2020-12-27 03:54:31.102811", "n_pass": [26, 3, 3], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:32.774651", "n_pass": [47, 4, 4], "score": "0.9999", "loss": "0.0001", "code": " void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:34.104015", "n_pass": [51, 5, 5], "score": "1.0", "loss": "0.0001", "code": " void main(String[] args)  { NioSenderTest sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:37.162419", "n_pass": [82, 6, 6], "score": "1.0", "loss": "0.0001", "code": " void main(String[]args)  { NioSenderTest sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:38.457926", "n_pass": [84, 7, 7], "score": "1.0", "loss": "0.0001", "code": " void main(String[]args){ NioSenderTest sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:39.752875", "n_pass": [86, 8, 8], "score": "0.999", "loss": "0.0019", "code": " void main(String[]args){ sender = new NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:41.046324", "n_pass": [89, 9, 9], "score": "0.9747", "loss": "0.0305", "code": " void main(String[]args){ sender = NioSenderTest.run(); }"}
+{"time": "2020-12-27 03:54:42.336787", "n_pass": [90, 10, 10], "score": "0.9908", "loss": "0.0112", "code": " void main(String[]args){ sender = run(); }"}
+{"time": "2020-12-27 03:54:43.679545", "n_pass": [94, 11, 11], "score": "0.9908", "loss": "0.0112", "code": "void main(String[]args){ sender = run(); }"}
+{"time": "2020-12-27 03:54:47.341518", "n_pass": [126, 12, 12], "score": "0.9908", "loss": "0.0112", "code": "void main(String[]args){sender = run(); }"}
+{"time": "2020-12-27 03:54:48.633321", "n_pass": [128, 13, 13], "score": "0.9908", "loss": "0.0112", "code": "void main(String[]args){sender= run(); }"}
+{"time": "2020-12-27 03:54:49.944335", "n_pass": [130, 14, 14], "score": "0.9908", "loss": "0.0112", "code": "void main(String[]args){sender=run(); }"}
+{"time": "2020-12-27 03:54:51.300708", "n_pass": [135, 15, 15], "score": "0.9908", "loss": "0.0112", "code": "void main(String[]args){sender=run();}"}
+{"time": "2020-12-27 03:54:53.333237", "n_pass": [148, 16, 16], "score": "0.999", "loss": "0.0023", "code": "void main(String[]args){senderrun();}"}
+{"time": "2020-12-27 03:54:54.647703", "n_pass": [149, 17, 17], "score": "0.9979", "loss": "0.0043", "code": "void main(String[]args){sender();}"}
+
+Minimal simplified code:
+void main(String[]args){sender();}
+

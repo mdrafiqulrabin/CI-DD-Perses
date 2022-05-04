@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/collections/TesterPerformanceSynchronizedStack_run.java
+method_name = run
+method_body = @Override public void run() { for (int i = 0; i < ITERATIONS; i++) { Object obj = QUEUE.poll(); if (obj == null) { obj = new Object(); } QUEUE.offer(obj); } super.run(); }
+
+topk path-contexts:
+[0.5514] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),run
+[0.0803] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)^(ForStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),run
+[0.0230] queue,(NameExpr0)^(MethodCallExpr)_(NameExpr2),poll
+[0.0216] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+[0.0202] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),offer
+[0.0192] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+[0.0155] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),run
+[0.0148] int,(PrimitiveType0)^(VariableDeclarationExpr)^(ForStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),poll
+[0.0121] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BinaryExpr:less)_(NameExpr1),iterations
+[0.0116] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),obj
+
+topk terminals:
+['super', 'run', 'null', 'run', 'queue', 'poll', 'void', 'null', 'void', 'offer', 'METHOD_NAME', 'null', 'void', 'run', 'int', 'poll', 'void', 'iterations', 'void', 'obj']
+

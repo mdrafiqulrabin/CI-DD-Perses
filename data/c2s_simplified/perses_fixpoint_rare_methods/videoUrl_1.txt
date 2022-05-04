@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/model/Video_videoUrl.java
+method_name = videoUrl
+method_body = public VideoBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:22:59.460569", "score": "0.4674", "loss": "0.8358", "code": "class T { public VideoBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; } }"}
+{"time": "2021-01-24 07:24:19.649715", "score": "0.6496", "loss": "0.8543", "code": "class T { public VideoBuilder videoUrl( ) { this.videoUrl = videoUrl; return this; } }"}
+{"time": "2021-01-24 07:24:40.965410", "score": "0.6496", "loss": "0.8543", "code": "class T { VideoBuilder videoUrl( ) { this.videoUrl = videoUrl; return this; } }"}
+{"time": "2021-01-24 07:25:50.447167", "score": "0.5108", "loss": "1.5915", "code": "class T { VideoBuilder videoUrl( ) { videoUrl = videoUrl; return this; } }"}
+
+Minimal simplified code:
+class T {
+       VideoBuilder videoUrl(               ) {      videoUrl = videoUrl; return this; }
+}
+
+

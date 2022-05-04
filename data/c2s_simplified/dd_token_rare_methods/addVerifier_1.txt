@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/libgdx__gdx-pay/gdx-pay-server/src/com/badlogic/gdx/pay/server/PurchaseVerifierManager_addVerifier.java
+method_name = addVerifier
+method_body = public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }
+predict, score, loss = addVerifier, 0.41030023, 4.29486
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:37:17.866517", "n_pass": [1, 1, 1], "score": "0.4103", "loss": "4.2949", "code": "public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-20 05:37:21.206531", "n_pass": [44, 3, 2], "score": "0.4103", "loss": "4.2949", "code": " void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-20 05:37:22.518604", "n_pass": [45, 4, 3], "score": "0.4103", "loss": "4.2949", "code": "void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-20 05:37:29.265306", "n_pass": [92, 7, 4], "score": "0.4103", "loss": "4.2949", "code": "void addVerifier(PurchaseVerifier verifier){ verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-20 05:37:30.571211", "n_pass": [94, 8, 5], "score": "0.4103", "loss": "4.2949", "code": "void addVerifier(PurchaseVerifier verifier){verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-20 05:37:34.567776", "n_pass": [105, 11, 6], "score": "0.4103", "loss": "4.2949", "code": "void addVerifier(PurchaseVerifier verifier){verifiers.put(verifier.storeName(),verifier); }"}
+{"time": "2021-01-20 05:37:35.892853", "n_pass": [109, 12, 7], "score": "0.4103", "loss": "4.2949", "code": "void addVerifier(PurchaseVerifier verifier){verifiers.put(verifier.storeName(),verifier);}"}
+
+Minimal simplified code:
+void addVerifier(PurchaseVerifier verifier){verifiers.put(verifier.storeName(),verifier);}
+

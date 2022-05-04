@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StartTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/start").toString()); }
+predict, score, loss = execute, 0.9991124, 0.0014739101
+
+Trace of simplified code(s):
+{"time": "2020-12-27 22:54:52.632632", "n_pass": [1, 1, 1], "score": "0.9991", "loss": "0.0015", "code": "@Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 22:54:55.310228", "n_pass": [45, 3, 2], "score": "0.9968", "loss": "0.0053", "code": "@Overriic void execute() throws BuildException { super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 22:54:57.340800", "n_pass": [50, 4, 3], "score": "0.9923", "loss": "0.0115", "code": "@Overriic void execute() throws Builon { super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 22:55:01.353424", "n_pass": [55, 7, 4], "score": "0.9938", "loss": "0.0093", "code": "@Overriic void execute() throws Builon { super.execute(); execute(cryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 22:55:02.697155", "n_pass": [57, 8, 5], "score": "0.9976", "loss": "0.0038", "code": "@Overriic void execute() throws Builon { super.execute(); execute(cryString().toString()); }"}
+{"time": "2020-12-27 22:55:07.465813", "n_pass": [95, 11, 6], "score": "0.9974", "loss": "0.0069", "code": "@Overriic void execute() throws Builon { super.execute(); execute(cryString().tong()); }"}
+{"time": "2020-12-27 22:55:08.786537", "n_pass": [96, 12, 7], "score": "0.9982", "loss": "0.0027", "code": "@Overriic void execute() throws Builon { super.execute(); execute(cryString().to); }"}
+{"time": "2020-12-27 22:55:10.126281", "n_pass": [99, 13, 8], "score": "0.9982", "loss": "0.0027", "code": "@Oviic void execute() throws Builon { super.execute(); execute(cryString().to); }"}
+{"time": "2020-12-27 22:55:11.422330", "n_pass": [100, 14, 9], "score": "0.9968", "loss": "0.0041", "code": "@Ov void execute() throws Builon { super.execute(); execute(cryString().to); }"}
+{"time": "2020-12-27 22:55:13.889359", "n_pass": [107, 15, 10], "score": "0.9941", "loss": "0.007", "code": "@Ov void execute() throws on { super.execute(); execute(cryString().to); }"}
+{"time": "2020-12-27 22:55:15.203929", "n_pass": [109, 16, 11], "score": "0.2488", "loss": "2.2747", "code": "@Ov void execute() throws on {er.execute(); execute(cryString().to); }"}
+{"time": "2020-12-27 22:55:20.504126", "n_pass": [114, 20, 12], "score": "0.5786", "loss": "1.1857", "code": "@Ov void execute() throws on {er.execute(); exe(cryString().to); }"}
+{"time": "2020-12-27 22:55:21.839237", "n_pass": [116, 21, 13], "score": "0.6013", "loss": "1.0673", "code": "@Ov void execute() throws on {er.execute(); exe(cring().to); }"}
+{"time": "2020-12-27 22:55:23.178989", "n_pass": [120, 22, 14], "score": "0.7977", "loss": "0.3758", "code": " void execute() throws on {er.execute(); exe(cring().to); }"}
+{"time": "2020-12-27 22:55:24.536149", "n_pass": [121, 23, 15], "score": "0.6143", "loss": "0.8249", "code": "id execute() throws on {er.execute(); exe(cring().to); }"}
+{"time": "2020-12-27 22:55:38.191171", "n_pass": [181, 31, 16], "score": "0.6162", "loss": "0.7741", "code": "id execute() throws on {er.execute; exe(cring().to); }"}
+{"time": "2020-12-27 22:55:43.565564", "n_pass": [186, 35, 17], "score": "0.6162", "loss": "0.7741", "code": "id execute() throws on {er.execute; exe(crg().to); }"}
+{"time": "2020-12-27 22:55:54.842277", "n_pass": [212, 42, 18], "score": "0.6377", "loss": "0.6586", "code": "id execute() throws on {er.execute; exe(g().to); }"}
+{"time": "2020-12-27 22:56:08.894201", "n_pass": [292, 49, 19], "score": "0.5173", "loss": "0.9941", "code": "id execute() throws on {er.execute; exe(g().o); }"}
+{"time": "2020-12-27 22:56:10.215024", "n_pass": [295, 50, 20], "score": "0.5173", "loss": "0.9941", "code": "id execute() throws on {er.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:11.528829", "n_pass": [297, 51, 21], "score": "0.4911", "loss": "0.9811", "code": "d execute() throws on {er.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:16.206132", "n_pass": [309, 52, 22], "score": "0.4911", "loss": "0.9811", "code": "d execute()throws on {er.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:17.552698", "n_pass": [317, 53, 23], "score": "0.3667", "loss": "1.4758", "code": "d execute()throws n {er.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:18.910037", "n_pass": [319, 54, 24], "score": "0.3667", "loss": "1.4758", "code": "d execute()throws n{er.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:20.251383", "n_pass": [321, 55, 25], "score": "0.2824", "loss": "1.7329", "code": "d execute()throws n{r.execute; exe(g().o);}"}
+{"time": "2020-12-27 22:56:32.182279", "n_pass": [332, 64, 26], "score": "0.2824", "loss": "1.7329", "code": "d execute()throws n{r.execute;exe(g().o);}"}
+
+Minimal simplified code:
+d execute()throws n{r.execute;exe(g().o);}
+

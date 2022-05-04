@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/test/java/org/apache/mina/transport/vmpipe/VmPipeBindTest_createSocketAddress.java
+method_name = createSocketAddress
+method_body = @Override protected SocketAddress createSocketAddress(int port) { return new VmPipeAddress(port); }
+
+topk path-contexts for sub-token: create
+[0.1365] socket|address,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1023] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0756] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,port
+[0.0666] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,port
+[0.0581] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.0541] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,socket|address
+[0.0540] vm|pipe|address,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,port
+[0.0535] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0488] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,port
+[0.0467] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+
+topk terminals for sub-token: create
+['socket|address', 'METHOD_NAME', 'socket|address', 'int', 'METHOD_NAME', 'port', 'socket|address', 'port', 'int', 'vm|pipe|address', 'override', 'socket|address', 'vm|pipe|address', 'port', 'override', 'METHOD_NAME', 'METHOD_NAME', 'port', 'METHOD_NAME', 'vm|pipe|address']
+
+topk path-contexts for sub-token: socket
+[0.1653] socket|address,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1135] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,socket|address
+[0.1111] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.1109] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.0853] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0837] port,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.0474] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,port
+[0.0452] vm|pipe|address,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,port
+[0.0246] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,port
+[0.0208] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: socket
+['socket|address', 'METHOD_NAME', 'override', 'socket|address', 'METHOD_NAME', 'vm|pipe|address', 'int', 'vm|pipe|address', 'socket|address', 'int', 'port', 'vm|pipe|address', 'socket|address', 'port', 'vm|pipe|address', 'port', 'METHOD_NAME', 'port', 'override', 'METHOD_NAME']
+
+topk path-contexts for sub-token: address
+[0.2289] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,socket|address
+[0.1781] socket|address,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1299] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.1071] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.1055] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.0773] port,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,vm|pipe|address
+[0.0251] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0206] socket|address,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,port
+[0.0161] vm|pipe|address,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,port
+[0.0086] port,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+
+topk terminals for sub-token: address
+['override', 'socket|address', 'socket|address', 'METHOD_NAME', 'socket|address', 'int', 'int', 'vm|pipe|address', 'METHOD_NAME', 'vm|pipe|address', 'port', 'vm|pipe|address', 'override', 'METHOD_NAME', 'socket|address', 'port', 'vm|pipe|address', 'port', 'port', 'int']
+

@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/AprEndpoint_getPollTime.java
+method_name = getPollTime
+method_body = public int getPollTime() { return pollTime; }
+predict, score, loss = getPollTime, 0.4840339720249176, 1.3665966987609863
+
+Trace of simplified code(s):
+{"time": "2021-01-23 14:20:09.087863", "n_pass": [1, 1, 1], "score": "0.484", "loss": "1.3666", "code": "public int getPollTime() { return pollTime; }"}
+{"time": "2021-01-23 14:20:38.520555", "n_pass": [98, 11, 2], "score": "0.2136", "loss": "2.9362", "code": "publicint getPollTime() { return pollTime; }"}
+{"time": "2021-01-23 14:21:29.446444", "n_pass": [161, 28, 3], "score": "0.2136", "loss": "2.9362", "code": "publicint getPollTime(){ return pollTime; }"}
+{"time": "2021-01-23 14:21:32.028853", "n_pass": [163, 29, 4], "score": "0.2136", "loss": "2.9362", "code": "publicint getPollTime(){return pollTime; }"}
+{"time": "2021-01-23 14:22:13.608614", "n_pass": [180, 45, 5], "score": "0.2136", "loss": "2.9362", "code": "publicint getPollTime(){return pollTime;}"}
+
+Minimal simplified code:
+publicint getPollTime(){return pollTime;}
+

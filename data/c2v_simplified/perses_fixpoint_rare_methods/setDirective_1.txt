@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/service/http.directory/src/main/java/org/kaazing/gateway/service/http/directory/cachecontrol/PatternCacheControl_setDirective.java
+method_name = setDirective
+method_body = public void setDirective(Directive directive, String value) { directives.put(directive, value); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 14:33:06.611475", "score": "0.4032", "loss": "0.9317", "code": "class T { public void setDirective(Directive directive, String value) { directives.put(directive, value); } }"}
+{"time": "2021-01-24 14:38:46.859737", "score": "0.5038", "loss": "0.702", "code": "class T { public void setDirective(Directive directive, String value) { directives.put(directive ); } }"}
+{"time": "2021-01-24 14:39:26.297272", "score": "0.5038", "loss": "0.702", "code": "class T { void setDirective(Directive directive, String value) { directives.put(directive ); } }"}
+
+Minimal simplified code:
+class T {
+       void setDirective(Directive directive, String value) { directives.put(directive       ); }
+}
+
+

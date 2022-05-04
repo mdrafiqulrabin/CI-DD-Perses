@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/jasper/compiler/TestParserNoStrictWhitespace_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { System.setProperty("org.apache.jasper.compiler.Parser.STRICT_WHITESPACE", "false"); super.setUp(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 01:40:24.240140", "score": "0.9995", "loss": "0.0005", "code": "class T { @Override public void setUp() throws Exception { System.setProperty(\"org.apache.jasper.compiler.Parser.STRICT_WHITESPACE\", \"false\"); super.setUp(); } }"}
+{"time": "2020-12-29 01:44:14.461537", "score": "0.9998", "loss": "0.0002", "code": "class T { @Override public void setUp() throws Exception { super.setUp(); } }"}
+{"time": "2020-12-29 01:45:31.127720", "score": "0.9998", "loss": "0.0002", "code": "class T { void setUp() throws Exception { super.setUp(); } }"}
+
+Minimal simplified code:
+class T {
+                 void setUp()                  {                                                                                     super.setUp(); }
+}
+
+

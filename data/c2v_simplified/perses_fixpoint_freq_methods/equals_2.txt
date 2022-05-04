@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/tld/TldResourcePath_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 17:54:55.504691", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); } }"}
+{"time": "2020-12-28 17:58:37.112731", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } } }"}
+{"time": "2020-12-28 17:59:51.791447", "score": "0.9997", "loss": "0.0004", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } } }"}
+{"time": "2020-12-28 18:01:44.981357", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-28 18:03:03.518156", "score": "0.9946", "loss": "0.0068", "code": "class T { boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-28 18:04:22.056783", "score": "0.8719", "loss": "0.2304", "code": "class T { boolean equals(Object o) { if (this == o) return ; } }"}
+{"time": "2020-12-28 18:08:02.987498", "score": "0.3367", "loss": "1.1769", "code": "class T { boolean equals(Object o) { if ( o) return ; } }"}
+
+Minimal simplified code:
+class T {
+                 boolean equals(Object o) { if (        o)   return     ;                                                                                                                                                                                                                                           }
+}
+
+

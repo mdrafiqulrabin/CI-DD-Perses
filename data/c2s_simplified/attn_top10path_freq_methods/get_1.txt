@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+
+topk path-contexts for sub-token: get
+[0.2304] v,ClassOrInterfaceType1|MethodDeclaration|Parameter|PrimitiveType1,long
+[0.1730] v,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0654] v,ClassOrInterfaceType1|MethodDeclaration|Parameter|VariableDeclaratorId0,timeout
+[0.0282] execution|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0232] timeout|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,value
+[0.0218] execution|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,try|acquire|shared|nanos
+[0.0193] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0189] timeout|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|MethodCallExpr0|NameExpr3,try|acquire|shared|nanos
+[0.0165] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,v
+[0.0162] timeout,VariableDeclaratorId0|Parameter|PrimitiveType1,long
+
+topk terminals for sub-token: get
+['v', 'long', 'v', 'METHOD_NAME', 'v', 'timeout', 'execution|exception', 'value', 'timeout|exception', 'value', 'execution|exception', 'try|acquire|shared|nanos', 'override', 'METHOD_NAME', 'timeout|exception', 'try|acquire|shared|nanos', 'override', 'v', 'timeout', 'long']
+

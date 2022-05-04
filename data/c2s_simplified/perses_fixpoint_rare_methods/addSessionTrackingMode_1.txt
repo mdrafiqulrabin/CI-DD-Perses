@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/SessionConfig_addSessionTrackingMode.java
+method_name = addSessionTrackingMode
+method_body = public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:18:00.789614", "score": "0.4526", "loss": "1.0878", "code": "class T { public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); } }"}
+{"time": "2021-01-24 04:18:49.131423", "score": "0.4922", "loss": "1.0503", "code": "class T { public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add( ); } }"}
+{"time": "2021-01-24 04:19:10.394899", "score": "0.4922", "loss": "1.0503", "code": "class T { void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add( ); } }"}
+
+Minimal simplified code:
+class T {
+       void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(                                                ); }
+}
+
+

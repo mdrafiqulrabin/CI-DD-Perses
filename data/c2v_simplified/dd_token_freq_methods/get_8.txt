@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/BBuffer_get.java
+method_name = get
+method_body = public int get(int off) { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; }
+predict, score, loss = get, 0.6971839070320129, 0.6652460098266602
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:31:19.798456", "n_pass": [1, 1, 1], "score": "0.6972", "loss": "0.6652", "code": "public int get(int off) { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; }"}
+{"time": "2020-12-26 23:31:22.923461", "n_pass": [46, 2, 2], "score": "0.895", "loss": "0.356", "code": "public int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[start + off] & 0xFF; }"}
+{"time": "2020-12-26 23:31:38.727156", "n_pass": [111, 7, 3], "score": "0.8903", "loss": "0.3568", "code": "public int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[+ off] & 0xFF; }"}
+{"time": "2020-12-26 23:31:41.403808", "n_pass": [112, 8, 4], "score": "0.8934", "loss": "0.3422", "code": "public int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[off] & 0xFF; }"}
+{"time": "2020-12-26 23:31:44.075803", "n_pass": [115, 9, 5], "score": "0.54", "loss": "1.216", "code": "public int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:31:46.733915", "n_pass": [118, 10, 6], "score": "0.54", "loss": "1.216", "code": " int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:31:49.382497", "n_pass": [119, 11, 7], "score": "0.54", "loss": "1.216", "code": "int get() { if (start + off >= end) { throw new ArrayIndexOutOfBoundsException(); } return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:31:55.947628", "n_pass": [133, 13, 8], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) { new ArrayIndexOutOfBoundsException(); } return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:32:12.467907", "n_pass": [202, 16, 9], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) {new ArrayIndexOutOfBoundsException(); } return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:32:17.806845", "n_pass": [208, 18, 10], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) {new ArrayIndexOutOfBoundsException();} return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:32:20.496254", "n_pass": [210, 19, 11], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off] &xFF; }"}
+{"time": "2020-12-26 23:32:24.038641", "n_pass": [217, 20, 12], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF; }"}
+{"time": "2020-12-26 23:32:26.693086", "n_pass": [221, 21, 13], "score": "0.1851", "loss": "2.8305", "code": "int get() { if (start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:30.194751", "n_pass": [228, 22, 14], "score": "0.1851", "loss": "2.8305", "code": "int get(){ if (start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:32.856049", "n_pass": [230, 23, 15], "score": "0.1851", "loss": "2.8305", "code": "int get(){if (start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:35.542911", "n_pass": [232, 24, 16], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start + off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:40.884002", "n_pass": [235, 26, 17], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start+ off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:43.571994", "n_pass": [237, 27, 18], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start+off >= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:46.246194", "n_pass": [239, 28, 19], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start+off>= end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:51.988087", "n_pass": [242, 30, 20], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start+off>=end) {new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+{"time": "2020-12-26 23:32:54.765877", "n_pass": [245, 31, 21], "score": "0.1851", "loss": "2.8305", "code": "int get(){if(start+off>=end){new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}"}
+
+Minimal simplified code:
+int get(){if(start+off>=end){new ArrayIndexOutOfBoundsException();}return buff[off]&xFF;}
+

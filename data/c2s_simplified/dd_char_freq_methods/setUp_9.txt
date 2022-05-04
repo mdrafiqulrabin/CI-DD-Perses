@@ -1,0 +1,56 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/channel/TestRemoteProcessException_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }
+predict, score, loss = setUp, 0.7702005, 0.27091575
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:41:09.410011", "n_pass": [1, 1, 1], "score": "0.7702", "loss": "0.2709", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:10.792826", "n_pass": [9, 2, 2], "score": "0.7442", "loss": "0.32", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); cstener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:12.153260", "n_pass": [18, 3, 3], "score": "0.7817", "loss": "0.2584", "code": "@Before public void setUp() throws Exception { channel1 = new GroupChannel(); Domain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:13.877337", "n_pass": [43, 4, 4], "score": "0.7782", "loss": "0.2603", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:15.600884", "n_pass": [74, 5, 5], "score": "0.806", "loss": "0.2244", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:16.938932", "n_pass": [78, 6, 6], "score": "0.7527", "loss": "0.2929", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); channel2.start(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:18.264964", "n_pass": [80, 7, 7], "score": "0.6591", "loss": "0.437", "code": "@Before public void setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:19.736996", "n_pass": [84, 8, 8], "score": "0.4308", "loss": "0.9139", "code": "@Before pd setUp() throws Exception { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:24.124937", "n_pass": [131, 11, 9], "score": "0.3896", "loss": "1.0245", "code": "@Before pd setUp() throws Excn { channel1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:25.487818", "n_pass": [132, 12, 10], "score": "0.3987", "loss": "1.0093", "code": "@Before pd setUp() throws Excn { cl1 = Domain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:26.818679", "n_pass": [133, 13, 11], "score": "0.2267", "loss": "1.6845", "code": "@Before pd setUp() throws Excn { cDomain(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:28.158014", "n_pass": [134, 14, 12], "score": "0.2442", "loss": "1.5913", "code": "@Before pd setUp() throws Excn { cn(new ManagedChannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:29.520900", "n_pass": [137, 15, 13], "score": "0.2562", "loss": "1.6198", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { channel2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:32.175202", "n_pass": [140, 17, 14], "score": "0.293", "loss": "1.5069", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); channel1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:33.547727", "n_pass": [143, 18, 15], "score": "0.3084", "loss": "1.4944", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1.start(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:42.415766", "n_pass": [210, 24, 16], "score": "0.2657", "loss": "1.7866", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(ChULT); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:45.114328", "n_pass": [213, 26, 17], "score": "0.2527", "loss": "1.8546", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(Ch); chan(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:46.466156", "n_pass": [215, 27, 18], "score": "0.3602", "loss": "1.4603", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(Ch); n(Channel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:47.796293", "n_pass": [217, 28, 19], "score": "0.3319", "loss": "1.7064", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(Ch); n(Cnel.DEFAULT); }"}
+{"time": "2020-12-28 00:41:49.115676", "n_pass": [218, 29, 20], "score": "0.3714", "loss": "1.5686", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(Ch); n(C.DEFAULT); }"}
+{"time": "2020-12-28 00:41:51.765677", "n_pass": [220, 31, 21], "score": "0.313", "loss": "1.8352", "code": "@Before pd setUp() throws Excn { cn(new Manaannel[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:41:57.658684", "n_pass": [236, 34, 22], "score": "0.3064", "loss": "1.5866", "code": "@Before pd setUp() throws cn { cn(new Manaannel[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:41:58.988298", "n_pass": [239, 35, 23], "score": "0.311", "loss": "1.6635", "code": "@Before pd setUp() throws cn {n(new Manaannel[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:00.340239", "n_pass": [243, 36, 24], "score": "0.311", "loss": "1.6635", "code": "@Before pd setUp() throws cn {n(new naannel[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:01.768126", "n_pass": [244, 37, 25], "score": "0.311", "loss": "1.6635", "code": "@Before pd setUp() throws cn {n(new annel[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:03.100293", "n_pass": [245, 38, 26], "score": "0.3895", "loss": "1.2382", "code": "@Before pd setUp() throws cn {n(new el[] { el2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:04.420108", "n_pass": [248, 39, 27], "score": "0.4725", "loss": "1.1416", "code": "@Before pd setUp() throws cn {n(new el[] {2 }); ch1art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:05.771987", "n_pass": [251, 40, 28], "score": "0.4631", "loss": "1.1718", "code": "@Before pd setUp() throws cn {n(new el[] {2 }); art(Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:07.117691", "n_pass": [252, 41, 29], "score": "0.5454", "loss": "1.0296", "code": "@Before pd setUp() throws cn {n(new el[] {2 }); (Ch); n(C.DELT); }"}
+{"time": "2020-12-28 00:42:08.473261", "n_pass": [256, 42, 30], "score": "0.4385", "loss": "1.3498", "code": "@Before pd setUp() throws cn {n(new el[] {2 }); (Ch); n(CLT); }"}
+{"time": "2020-12-28 00:42:17.092788", "n_pass": [339, 45, 31], "score": "0.5041", "loss": "1.2774", "code": "@Before pd setUp() throws cn {n(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:26.756562", "n_pass": [350, 52, 32], "score": "0.5284", "loss": "1.309", "code": "@Before d setUp() throws cn {n(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:30.667392", "n_pass": [360, 53, 33], "score": "0.5284", "loss": "1.309", "code": "@Before d setUp()throws cn {n(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:32.051523", "n_pass": [368, 54, 34], "score": "0.3601", "loss": "1.9422", "code": "@Before d setUp()throws n {n(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:33.371907", "n_pass": [370, 55, 35], "score": "0.3601", "loss": "1.9422", "code": "@Before d setUp()throws n{n(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:34.731000", "n_pass": [372, 56, 36], "score": "0.7763", "loss": "0.6669", "code": "@Before d setUp()throws n{(new el[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:36.080242", "n_pass": [378, 57, 37], "score": "0.6622", "loss": "1.0565", "code": "@Before d setUp()throws n{(new l[] {2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:37.402969", "n_pass": [382, 58, 38], "score": "0.6622", "loss": "1.0565", "code": "@Before d setUp()throws n{(new l[]{2 }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:38.763123", "n_pass": [384, 59, 39], "score": "0.6446", "loss": "1.1716", "code": "@Before d setUp()throws n{(new l[]{ }); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:40.100342", "n_pass": [385, 60, 40], "score": "0.6446", "loss": "1.1716", "code": "@Before d setUp()throws n{(new l[]{}); (Ch); n(C); }"}
+{"time": "2020-12-28 00:42:55.842080", "n_pass": [446, 68, 41], "score": "0.5607", "loss": "1.5198", "code": "@Before d setUp()throws n{(new l[]{}); (C); n(C); }"}
+{"time": "2020-12-28 00:42:57.555854", "n_pass": [449, 69, 42], "score": "0.5607", "loss": "1.5198", "code": "@Before d setUp()throws n{(new l[]{}); (C);n(C); }"}
+{"time": "2020-12-28 00:43:00.235350", "n_pass": [452, 71, 43], "score": "0.5856", "loss": "1.2652", "code": "@Before d setUp()throws n{(new l[]{}); (C);n(); }"}
+{"time": "2020-12-28 00:43:01.717898", "n_pass": [455, 72, 44], "score": "0.5856", "loss": "1.2652", "code": "@Before d setUp()throws n{(new l[]{}); (C);n();}"}
+{"time": "2020-12-28 00:43:14.043650", "n_pass": [495, 79, 45], "score": "0.5856", "loss": "1.2652", "code": "@Before d setUp()throws n{(new l[]{});(C);n();}"}
+
+Minimal simplified code:
+@Before d setUp()throws n{(new l[]{});(C);n();}
+

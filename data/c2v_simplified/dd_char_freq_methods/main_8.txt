@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/CoordinationDemo_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }
+predict, score, loss = main, 0.9999364614486694, 6.353653589030728e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 09:46:15.556930", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }"}
+{"time": "2020-12-28 09:46:18.169979", "n_pass": [10, 2, 2], "score": "0.9997", "loss": "0.0003", "code": "public static void main(String[] args) throws Exception { CoorationDemo(); run(args, demo); }"}
+{"time": "2020-12-28 09:46:20.810602", "n_pass": [19, 3, 3], "score": "1.0", "loss": "0.0", "code": "public static void main(String[] args) throws Exception { Coon(args, demo); }"}
+{"time": "2020-12-28 09:46:23.438568", "n_pass": [21, 4, 4], "score": "0.9998", "loss": "0.0003", "code": "oid main(String[] args) throws Exception { Coon(args, demo); }"}
+{"time": "2020-12-28 09:46:27.238051", "n_pass": [61, 5, 5], "score": "0.9996", "loss": "0.0004", "code": "oid main(Sg[] args) throws Exception { Coon(args, demo); }"}
+{"time": "2020-12-28 09:46:29.847178", "n_pass": [67, 6, 6], "score": "0.999", "loss": "0.0013", "code": "oid main(Sg[] args) throws Excon { Coon(args, demo); }"}
+{"time": "2020-12-28 09:46:32.439573", "n_pass": [69, 7, 7], "score": "0.9991", "loss": "0.0011", "code": "oid main(Sg[] args) throws Excon {n(args, demo); }"}
+{"time": "2020-12-28 09:46:35.030093", "n_pass": [71, 8, 8], "score": "0.81", "loss": "0.3553", "code": "oid main(Sg[] args) throws Excon {n(ardemo); }"}
+{"time": "2020-12-28 09:46:37.648885", "n_pass": [72, 9, 9], "score": "0.5199", "loss": "1.0009", "code": "oid main(Sg[] args) throws Excon {n(ar); }"}
+{"time": "2020-12-28 09:46:52.684597", "n_pass": [123, 14, 10], "score": "0.9995", "loss": "0.0007", "code": "oid main(Sg[] args) throws Eon {n(ar); }"}
+{"time": "2020-12-28 09:46:55.283831", "n_pass": [124, 15, 11], "score": "0.908", "loss": "0.1472", "code": "oid main(Sg[] args) throws E {n(ar); }"}
+{"time": "2020-12-28 09:46:57.873999", "n_pass": [127, 16, 12], "score": "0.9012", "loss": "0.1797", "code": "oid main(Sg[] args) throws E {n(); }"}
+{"time": "2020-12-28 09:47:14.714357", "n_pass": [183, 21, 13], "score": "0.9012", "loss": "0.1797", "code": "oid main(Sg[] args) throws E {n();}"}
+{"time": "2020-12-28 09:47:22.488709", "n_pass": [186, 24, 14], "score": "0.9902", "loss": "0.0102", "code": "oi main(Sg[] args) throws E {n();}"}
+{"time": "2020-12-28 09:47:27.128332", "n_pass": [193, 25, 15], "score": "0.9798", "loss": "0.021", "code": "oi main(g[] args) throws E {n();}"}
+{"time": "2020-12-28 09:47:29.718857", "n_pass": [197, 26, 16], "score": "0.9798", "loss": "0.021", "code": "oi main(g[]args) throws E {n();}"}
+{"time": "2020-12-28 09:47:42.726761", "n_pass": [203, 31, 17], "score": "0.9798", "loss": "0.021", "code": "oi main(g[]args)throws E {n();}"}
+{"time": "2020-12-28 09:47:45.356429", "n_pass": [212, 32, 18], "score": "0.9798", "loss": "0.021", "code": "oi main(g[]args)throws E{n();}"}
+{"time": "2020-12-28 09:47:47.981644", "n_pass": [219, 33, 19], "score": "0.9092", "loss": "0.0992", "code": "i main(g[]args)throws E{n();}"}
+
+Minimal simplified code:
+i main(g[]args)throws E{n();}
+

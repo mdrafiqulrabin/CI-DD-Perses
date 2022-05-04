@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/filter/stream/AbstractStreamWriteFilter_getWriteRequestQueue.java
+method_name = getWriteRequestQueue
+method_body = @SuppressWarnings("unchecked") private Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }
+
+topk path-contexts for sub-token: get
+[0.0788] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0780] session,NameExpr0|MethodCallExpr|NameExpr2,write|request|queue
+[0.0777] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+[0.0687] write|request|queue,NameExpr2|MethodCallExpr|NameExpr3,get|attribute
+[0.0485] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0464] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,session
+[0.0461] unchecked,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0397] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+[0.0391] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+[0.0378] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+
+topk terminals for sub-token: get
+['METHOD_NAME', 'write|request|queue', 'session', 'write|request|queue', 'METHOD_NAME', 'get|attribute', 'write|request|queue', 'get|attribute', 'session', 'write|request|queue', 'METHOD_NAME', 'session', 'unchecked', 'METHOD_NAME', 'session', 'get|attribute', 'io|session', 'get|attribute', 'write|request', 'write|request|queue']
+
+topk path-contexts for sub-token: write
+[0.1422] session,NameExpr0|MethodCallExpr|NameExpr2,write|request|queue
+[0.1069] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0991] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0828] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0732] write|request|queue,NameExpr2|MethodCallExpr|NameExpr3,get|attribute
+[0.0713] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0391] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0263] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+[0.0219] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr0,session
+[0.0214] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+
+topk terminals for sub-token: write
+['session', 'write|request|queue', 'METHOD_NAME', 'write|request|queue', 'io|session', 'write|request|queue', 'session', 'write|request|queue', 'write|request|queue', 'get|attribute', 'write|request', 'write|request|queue', 'write|request', 'METHOD_NAME', 'io|session', 'get|attribute', 'METHOD_NAME', 'session', 'METHOD_NAME', 'get|attribute']
+
+topk path-contexts for sub-token: request
+[0.1392] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.1243] session,NameExpr0|MethodCallExpr|NameExpr2,write|request|queue
+[0.1049] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0961] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0890] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0499] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0347] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|ClassOrInterfaceType|ClassOrInterfaceType0,write|request
+[0.0341] write|request|queue,NameExpr2|MethodCallExpr|NameExpr3,get|attribute
+[0.0229] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr|MethodCallExpr1|NameExpr0,session
+[0.0210] unchecked,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|ClassOrInterfaceType|ClassOrInterfaceType0,write|request
+
+topk terminals for sub-token: request
+['METHOD_NAME', 'write|request|queue', 'session', 'write|request|queue', 'io|session', 'write|request|queue', 'write|request', 'write|request|queue', 'session', 'write|request|queue', 'write|request', 'METHOD_NAME', 'METHOD_NAME', 'write|request', 'write|request|queue', 'get|attribute', 'write|request', 'session', 'unchecked', 'write|request']
+
+topk path-contexts for sub-token: queue
+[0.2798] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.1246] session,NameExpr0|MethodCallExpr|NameExpr2,write|request|queue
+[0.1039] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0841] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0566] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|CastExpr|MethodCallExpr1|NameExpr2,write|request|queue
+[0.0521] write|request,ClassOrInterfaceType0|ClassOrInterfaceType|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0262] write|request|queue,NameExpr2|MethodCallExpr|NameExpr3,get|attribute
+[0.0191] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+[0.0133] unchecked,StringLiteralExpr1|SingleMemberAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0107] io|session,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|CastExpr|MethodCallExpr1|NameExpr3,get|attribute
+
+topk terminals for sub-token: queue
+['METHOD_NAME', 'write|request|queue', 'session', 'write|request|queue', 'session', 'write|request|queue', 'io|session', 'write|request|queue', 'write|request', 'write|request|queue', 'write|request', 'METHOD_NAME', 'write|request|queue', 'get|attribute', 'METHOD_NAME', 'get|attribute', 'unchecked', 'METHOD_NAME', 'io|session', 'get|attribute']
+

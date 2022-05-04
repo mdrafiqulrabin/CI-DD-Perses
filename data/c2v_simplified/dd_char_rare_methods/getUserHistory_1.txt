@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole-ext/src/main/java/org/apache/guacamole/net/auth/AbstractUserContext_getUserHistory.java
+method_name = getUserHistory
+method_body = @Override public ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }
+predict, score, loss = getUserHistory, 0.3648833930492401, 1.4313105344772339
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:28:55.185273", "n_pass": [1, 1, 1], "score": "0.3649", "loss": "1.4313", "code": "@Override public ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:03.424034", "n_pass": [46, 4, 2], "score": "0.3649", "loss": "1.4313", "code": "@Override public AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:11.677265", "n_pass": [56, 7, 3], "score": "0.3649", "loss": "1.4313", "code": "@Override public AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpRecordSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:25.553695", "n_pass": [99, 12, 4], "score": "0.3649", "loss": "1.4313", "code": "@Override public AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpdSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:33.404840", "n_pass": [105, 15, 5], "score": "0.3557", "loss": "1.4512", "code": "@Ovee public AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpdSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:36.008491", "n_pass": [106, 16, 6], "score": "0.3557", "loss": "1.4512", "code": "@Oveblic AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpdSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:38.610380", "n_pass": [107, 17, 7], "score": "0.3447", "loss": "1.5325", "code": "@Ove AcordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpdSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:29:41.599794", "n_pass": [109, 18, 8], "score": "0.3447", "loss": "1.5325", "code": "@Ove Acot<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpdSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:30:45.661401", "n_pass": [212, 41, 9], "score": "0.3447", "loss": "1.5325", "code": "@Ove Acot<ActivityRecord> getUserHistory() throws GuacamoleException { return new SiSet<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:30:48.254852", "n_pass": [213, 42, 10], "score": "0.3447", "loss": "1.5325", "code": "@Ove Acot<ActivityRecord> getUserHistory() throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:31:01.282299", "n_pass": [222, 47, 11], "score": "0.3505", "loss": "1.4742", "code": "@O Acot<ActivityRecord> getUserHistory() throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:31:04.274803", "n_pass": [224, 48, 12], "score": "0.3505", "loss": "1.4742", "code": "@O At<ActivityRecord> getUserHistory() throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:32:01.846020", "n_pass": [351, 68, 13], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord> getUserHistory() throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:32:40.899799", "n_pass": [367, 83, 14], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory() throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:32:49.214657", "n_pass": [384, 84, 15], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory()throws GuacamoleException { return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:33:38.774710", "n_pass": [410, 103, 16], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory()throws GuacamoleException{ return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:33:41.381216", "n_pass": [412, 104, 17], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory()throws GuacamoleException{return new Si<ActivityRecord>(); }"}
+{"time": "2021-01-23 19:36:10.442743", "n_pass": [545, 158, 18], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory()throws GuacamoleException{return new Si<ActivityRecord>();}"}
+{"time": "2021-01-23 19:37:43.236151", "n_pass": [619, 191, 19], "score": "0.3505", "loss": "1.4742", "code": "@O A<ActivityRecord>getUserHistory()throws GuacamoleException{return new i<ActivityRecord>();}"}
+
+Minimal simplified code:
+@O A<ActivityRecord>getUserHistory()throws GuacamoleException{return new i<ActivityRecord>();}
+

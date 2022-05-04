@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/HistogramQuestionScoresBean_getQuestionNumber.java
+method_name = getQuestionNumber
+method_body = public String getQuestionNumber() { return Validator.check(questionNumber, "N/A"); }
+predict, score, loss = getQuestionNumber, 0.26003631949424744, 3.5218591690063477
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:03:37.065990", "n_pass": [1, 1, 1], "score": "0.26", "loss": "3.5219", "code": "public String getQuestionNumber() { return Validator.check(questionNumber, \"N/A\"); }"}
+{"time": "2021-01-20 07:03:40.467881", "n_pass": [23, 2, 2], "score": "0.6047", "loss": "2.3311", "code": "public String getQuestionNumber() {Validator.check(questionNumber, \"N/A\"); }"}
+{"time": "2021-01-20 07:03:49.117451", "n_pass": [49, 5, 3], "score": "0.3504", "loss": "3.378", "code": "public String getQuestionNumber() {Validator.check(questionNumber, \"A\"); }"}
+{"time": "2021-01-20 07:03:51.737826", "n_pass": [52, 6, 4], "score": "0.3504", "loss": "3.378", "code": " String getQuestionNumber() {Validator.check(questionNumber, \"A\"); }"}
+{"time": "2021-01-20 07:03:54.368596", "n_pass": [53, 7, 5], "score": "0.3504", "loss": "3.378", "code": "String getQuestionNumber() {Validator.check(questionNumber, \"A\"); }"}
+{"time": "2021-01-20 07:04:05.791580", "n_pass": [89, 10, 6], "score": "0.3504", "loss": "3.378", "code": "String getQuestionNumber(){Validator.check(questionNumber, \"A\"); }"}
+{"time": "2021-01-20 07:04:11.022248", "n_pass": [96, 12, 7], "score": "0.3504", "loss": "3.378", "code": "String getQuestionNumber(){Validator.check(questionNumber,\"A\"); }"}
+{"time": "2021-01-20 07:04:13.642999", "n_pass": [98, 13, 8], "score": "0.5671", "loss": "2.1987", "code": "String getQuestionNumber(){Validator.check(questionNumber,\"\"); }"}
+{"time": "2021-01-20 07:04:16.274358", "n_pass": [102, 14, 9], "score": "0.5671", "loss": "2.1987", "code": "String getQuestionNumber(){Validator.check(questionNumber,\"\");}"}
+
+Minimal simplified code:
+String getQuestionNumber(){Validator.check(questionNumber,"");}
+

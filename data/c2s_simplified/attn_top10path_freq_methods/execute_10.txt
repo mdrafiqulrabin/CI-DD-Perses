@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StopTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/stop").toString()); }
+
+topk path-contexts for sub-token: execute
+[0.5442] super,SuperExpr0|MethodCallExpr|NameExpr2,execute
+[0.0990] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0990] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0805] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0805] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0081] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr0|StringLiteralExpr1,stop
+[0.0079] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,build|exception
+[0.0075] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,build|exception
+[0.0073] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|MethodCallExpr0|StringLiteralExpr1,stop
+[0.0065] to|string,NameExpr2|MethodCallExpr1|MethodCallExpr|NameExpr2,execute
+
+topk terminals for sub-token: execute
+['super', 'execute', 'build|exception', 'execute', 'build|exception', 'execute', 'METHOD_NAME', 'execute', 'METHOD_NAME', 'execute', 'build|exception', 'stop', 'METHOD_NAME', 'build|exception', 'void', 'build|exception', 'METHOD_NAME', 'stop', 'to|string', 'execute']
+

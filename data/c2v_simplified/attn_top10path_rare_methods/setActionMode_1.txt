@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/DeliveryBean_setActionMode.java
+method_name = setActionMode
+method_body = private void setActionMode(int actionMode) { this.actionMode = actionMode; }
+
+topk path-contexts:
+[0.1723] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),actionmode
+[0.1594] actionmode,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),actionmode
+[0.1571] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),actionmode
+[0.1125] actionmode,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),actionmode
+[0.0838] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),actionmode
+[0.0650] actionmode,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),actionmode
+[0.0543] this,(ThisExpr0)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),actionmode
+[0.0525] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),actionmode
+[0.0435] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),actionmode
+[0.0383] this,(ThisExpr0)^(FieldAccessExpr0)_(NameExpr2),actionmode
+
+topk terminals:
+['METHOD_NAME', 'actionmode', 'actionmode', 'actionmode', 'int', 'actionmode', 'actionmode', 'actionmode', 'void', 'actionmode', 'actionmode', 'actionmode', 'this', 'actionmode', 'int', 'actionmode', 'METHOD_NAME', 'actionmode', 'this', 'actionmode']
+

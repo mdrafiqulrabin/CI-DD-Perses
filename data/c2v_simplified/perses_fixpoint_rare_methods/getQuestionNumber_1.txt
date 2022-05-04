@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/HistogramQuestionScoresBean_getQuestionNumber.java
+method_name = getQuestionNumber
+method_body = public String getQuestionNumber() { return Validator.check(questionNumber, "N/A"); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:34:30.498441", "score": "0.26", "loss": "3.5219", "code": "class T { public String getQuestionNumber() { return Validator.check(questionNumber, \"N/A\"); } }"}
+{"time": "2021-01-24 15:40:12.798528", "score": "0.677", "loss": "2.0298", "code": "class T { public String getQuestionNumber() { return Validator.check(questionNumber ); } }"}
+{"time": "2021-01-24 15:40:52.521082", "score": "0.677", "loss": "2.0298", "code": "class T { String getQuestionNumber() { return Validator.check(questionNumber ); } }"}
+
+Minimal simplified code:
+class T {
+       String getQuestionNumber() { return Validator.check(questionNumber       ); }
+}
+
+

@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/core/StandardWrapper_findMappings.java
+method_name = findMappings
+method_body = @Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }
+predict, score, loss = findMappings, 0.17804205417633057, 2.483205795288086
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:42:31.182684", "n_pass": [1, 1, 1], "score": "0.178", "loss": "2.4832", "code": "@Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }"}
+{"time": "2021-01-20 06:42:48.277823", "n_pass": [93, 7, 2], "score": "0.178", "loss": "2.4832", "code": "@Override String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:12.097972", "n_pass": [119, 16, 3], "score": "0.1958", "loss": "2.3826", "code": "@Override String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:43.816127", "n_pass": [224, 26, 4], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:46.446455", "n_pass": [227, 27, 5], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){ try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:49.083144", "n_pass": [229, 28, 6], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:51.719487", "n_pass": [231, 29, 7], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{ mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:54.345236", "n_pass": [233, 30, 8], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:43:59.613816", "n_pass": [244, 32, 9], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]); } finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:44:18.130972", "n_pass": [263, 39, 10], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);} finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:44:20.765245", "n_pass": [265, 40, 11], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);}finally {readLock().unlock(); } }"}
+{"time": "2021-01-20 06:44:23.418728", "n_pass": [267, 41, 12], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);}finally{readLock().unlock(); } }"}
+{"time": "2021-01-20 06:44:45.684145", "n_pass": [331, 49, 13], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);}finally{readLock().unlock();} }"}
+{"time": "2021-01-20 06:44:48.326216", "n_pass": [332, 50, 14], "score": "0.1958", "loss": "2.3826", "code": "@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);}finally{readLock().unlock();}}"}
+
+Minimal simplified code:
+@Override String[]findMappings(){try{mappingsLock.readLock().lock();return mappings.toArray(new String[mappings.size()]);}finally{readLock().unlock();}}
+

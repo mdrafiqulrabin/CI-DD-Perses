@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/lang/FunctionMapperImpl_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:45:42.128466", "score": "0.9963", "loss": "0.005", "code": "class T { @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; } }"}
+{"time": "2020-12-21 10:46:19.522105", "score": "0.9924", "loss": "0.0104", "code": "class T { @Override public boolean equals(Object obj) { return this.hashCode() == obj.hashCode(); } }"}
+{"time": "2020-12-21 10:46:30.145618", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override public boolean equals(Object obj) { } }"}
+{"time": "2020-12-21 10:46:51.180218", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override boolean equals(Object obj) { } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object obj)                                {                                           }
+}
+
+

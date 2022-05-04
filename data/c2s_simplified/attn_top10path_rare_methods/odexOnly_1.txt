@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_odexOnly.java
+method_name = odexOnly
+method_body = public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }
+
+topk path-contexts for sub-token: odex
+[0.3540] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.3107] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.1265] flags,NameExpr0|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.0307] odex|only,NameExpr1|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0169] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0153] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0136] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0127] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0116] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0070] flags,NameExpr0|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: odex
+['METHOD_NAME', 'odex|only', 'boolean', 'odex|only', 'flags', 'odex|only', 'odex|only', '0', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'flags', 'METHOD_NAME', '0', 'boolean', 'flags', 'boolean', '0', 'flags', '0']
+
+topk path-contexts for sub-token: only
+[0.3458] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.2513] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.1763] flags,NameExpr0|BinaryExpr:binAnd|NameExpr1,odex|only
+[0.0342] odex|only,NameExpr1|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0233] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0091] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0064] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|EnclosedExpr|BinaryExpr:binAnd|NameExpr0,flags
+[0.0057] flags,NameExpr0|BinaryExpr:binAnd|EnclosedExpr|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0047] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+[0.0043] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|BinaryExpr:notEquals|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: only
+['METHOD_NAME', 'odex|only', 'boolean', 'odex|only', 'flags', 'odex|only', 'odex|only', '0', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'flags', 'boolean', 'flags', 'flags', '0', 'boolean', '0', 'METHOD_NAME', '0']
+

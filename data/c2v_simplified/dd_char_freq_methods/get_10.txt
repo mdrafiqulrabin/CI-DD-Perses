@@ -1,0 +1,39 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap_get.java
+method_name = get
+method_body = @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }
+predict, score, loss = get, 0.964958131313324, 0.0442163422703743
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:16:43.631621", "n_pass": [1, 1, 1], "score": "0.965", "loss": "0.0442", "code": "@Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }"}
+{"time": "2020-12-28 11:16:46.248519", "n_pass": [10, 2, 2], "score": "0.8716", "loss": "0.1521", "code": "@Override public V get(Object key) { if (key == null) get(createLookupKey(key)); }"}
+{"time": "2020-12-28 11:16:48.867743", "n_pass": [39, 3, 3], "score": "0.7125", "loss": "0.3599", "code": "@Override public V get(Object key) { if (key == null) get(creupKey(key)); }"}
+{"time": "2020-12-28 11:16:51.483138", "n_pass": [43, 4, 4], "score": "0.7667", "loss": "0.2863", "code": "@Overrblic V get(Object key) { if (key == null) get(creupKey(key)); }"}
+{"time": "2020-12-28 11:16:54.099923", "n_pass": [74, 5, 5], "score": "0.7667", "loss": "0.2863", "code": "@Overrc V get(Object key) { if (key == null) get(creupKey(key)); }"}
+{"time": "2020-12-28 11:17:00.130797", "n_pass": [85, 7, 6], "score": "0.731", "loss": "0.3409", "code": "@Overrc V get(Object key) { if (key ==l) get(creupKey(key)); }"}
+{"time": "2020-12-28 11:17:02.741351", "n_pass": [88, 8, 7], "score": "0.7841", "loss": "0.2627", "code": "@Overrc V get(Object key) { if (key ==l) get(cKey(key)); }"}
+{"time": "2020-12-28 11:17:05.345672", "n_pass": [93, 9, 8], "score": "0.765", "loss": "0.3053", "code": "@Ovc V get(Object key) { if (key ==l) get(cKey(key)); }"}
+{"time": "2020-12-28 11:17:11.371978", "n_pass": [103, 11, 9], "score": "0.7868", "loss": "0.2755", "code": "@Ovc V get(Object key) { if (kel) get(cKey(key)); }"}
+{"time": "2020-12-28 11:17:23.821649", "n_pass": [153, 15, 10], "score": "0.6672", "loss": "0.6534", "code": "@Ovc V get(Object key) { if (kel) get(cy(key)); }"}
+{"time": "2020-12-28 11:17:26.417585", "n_pass": [154, 16, 11], "score": "0.4829", "loss": "1.279", "code": "@Ovc V get(Object key) { if (kel) get(cy(y)); }"}
+{"time": "2020-12-28 11:17:29.022025", "n_pass": [159, 17, 12], "score": "0.8181", "loss": "0.3145", "code": "@vc V get(Object key) { if (kel) get(cy(y)); }"}
+{"time": "2020-12-28 11:17:31.628667", "n_pass": [160, 18, 13], "score": "0.4562", "loss": "1.2248", "code": "@c V get(Object key) { if (kel) get(cy(y)); }"}
+{"time": "2020-12-28 11:17:36.652505", "n_pass": [168, 19, 14], "score": "0.4582", "loss": "2.2052", "code": "@c V get(ject key) { if (kel) get(cy(y)); }"}
+{"time": "2020-12-28 11:17:47.487045", "n_pass": [177, 23, 15], "score": "0.3872", "loss": "2.4138", "code": "@c V get(ject key) { if (l) get(cy(y)); }"}
+{"time": "2020-12-28 11:18:08.545849", "n_pass": [236, 29, 16], "score": "0.3872", "loss": "2.4138", "code": "@c V get(ject key) { if (l)get(cy(y)); }"}
+{"time": "2020-12-28 11:18:16.354030", "n_pass": [240, 32, 17], "score": "0.6158", "loss": "0.9609", "code": "@c V get(ject key) { if (l)get(y(y)); }"}
+{"time": "2020-12-28 11:18:18.956771", "n_pass": [241, 33, 18], "score": "0.4334", "loss": "1.1121", "code": "@c V get(ject key) { if (l)get((y)); }"}
+{"time": "2020-12-28 11:18:21.591806", "n_pass": [247, 34, 19], "score": "0.4334", "loss": "1.1121", "code": "@c V get(ject key) { if (l)get((y));}"}
+{"time": "2020-12-28 11:18:32.273217", "n_pass": [260, 37, 20], "score": "0.7445", "loss": "0.2995", "code": "@c V get(jet key) { if (l)get((y));}"}
+{"time": "2020-12-28 11:18:40.125576", "n_pass": [264, 40, 21], "score": "0.5251", "loss": "0.7435", "code": "@c V get(jet ky) { if (l)get((y));}"}
+{"time": "2020-12-28 11:18:42.753371", "n_pass": [265, 41, 22], "score": "0.6126", "loss": "0.4975", "code": "@c V get(jet k) { if (l)get((y));}"}
+{"time": "2020-12-28 11:18:45.348892", "n_pass": [267, 42, 23], "score": "0.6126", "loss": "0.4975", "code": "@c V get(jet k){ if (l)get((y));}"}
+{"time": "2020-12-28 11:18:47.974068", "n_pass": [269, 43, 24], "score": "0.6126", "loss": "0.4975", "code": "@c V get(jet k){if (l)get((y));}"}
+{"time": "2020-12-28 11:18:50.579228", "n_pass": [272, 44, 25], "score": "0.6126", "loss": "0.4975", "code": "@c V get(jet k){if(l)get((y));}"}
+{"time": "2020-12-28 11:18:53.183228", "n_pass": [276, 45, 26], "score": "0.5181", "loss": "0.6663", "code": "@c V get(jet k){if(l)et((y));}"}
+{"time": "2020-12-28 11:18:55.787766", "n_pass": [277, 46, 27], "score": "0.5235", "loss": "0.6558", "code": "@c V get(jet k){if(l)t((y));}"}
+{"time": "2020-12-28 11:18:58.408092", "n_pass": [278, 47, 28], "score": "0.5561", "loss": "0.5947", "code": "@c V get(jet k){if(l)((y));}"}
+
+Minimal simplified code:
+@c V get(jet k){if(l)((y));}
+

@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/AprEndpoint_getPollTime.java
+method_name = getPollTime
+method_body = public int getPollTime() { return pollTime; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 10:06:56.824638", "score": "0.484", "loss": "1.3666", "code": "class T { public int getPollTime() { return pollTime; } }"}
+{"time": "2021-01-24 10:10:38.310635", "score": "0.484", "loss": "1.3666", "code": "class T { int getPollTime() { return pollTime; } }"}
+
+Minimal simplified code:
+class T {
+       int getPollTime() { return pollTime; }
+}
+
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/service/http.directory/src/main/java/org/kaazing/gateway/service/http/directory/HttpDirectoryServiceHandler_addCacheControl.java
+method_name = addCacheControl
+method_body = private void addCacheControl(HttpAcceptSession session, File requestFile, String requestPath) { CacheControlHandler cacheControlHandler = urlCacheControlMap.computeIfAbsent(requestPath, path -> patterns.stream().filter(patternCacheControl -> PatternMatcherUtils.caseInsensitiveMatch(requestPath, patternCacheControl.getPattern())).findFirst().map(patternCacheControl -> new CacheControlHandler(requestFile, patternCacheControl)).orElse(null)); if (cacheControlHandler != null) { addCacheControlHeader(session, requestFile, cacheControlHandler); } }
+
+topk path-contexts for sub-token: add
+[0.1760] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0806] compute|if|absent,NameExpr3|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0357] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0257] patterns,NameExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|NullLiteralExpr2,null
+[0.0243] stream,NameExpr2|MethodCallExpr0|MethodCallExpr0|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr3,case|insensitive|match
+[0.0229] cache|control|handler,NameExpr3|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0221] request|file,NameExpr2|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0198] patterns,NameExpr0|MethodCallExpr0|MethodCallExpr0|LambdaExpr|ExpressionStmt|MethodCallExpr0|NameExpr3,case|insensitive|match
+[0.0186] stream,NameExpr2|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|NullLiteralExpr2,null
+[0.0182] session,NameExpr1|MethodCallExpr|NameExpr2,request|file
+
+topk terminals for sub-token: add
+['void', 'METHOD_NAME', 'compute|if|absent', 'null', 'null', 'add|cache|control|header', 'patterns', 'null', 'stream', 'case|insensitive|match', 'cache|control|handler', 'add|cache|control|header', 'request|file', 'add|cache|control|header', 'patterns', 'case|insensitive|match', 'stream', 'null', 'session', 'request|file']
+
+topk path-contexts for sub-token: cache
+[0.0364] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0306] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0304] request|file,NameExpr2|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0284] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0254] cache|control|handler,NameExpr3|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0248] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,url|cache|control|map
+[0.0246] file,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0214] request|file,NameExpr1|ObjectCreationExpr|NameExpr2,pattern|cache|control
+[0.0182] find|first,NameExpr2|MethodCallExpr0|MethodCallExpr0|LambdaExpr|ExpressionStmt|ObjectCreationExpr|ClassOrInterfaceType0,cache|control|handler
+[0.0180] find|first,NameExpr2|MethodCallExpr0|MethodCallExpr0|LambdaExpr|ExpressionStmt|ObjectCreationExpr|NameExpr2,pattern|cache|control
+
+topk terminals for sub-token: cache
+['null', 'add|cache|control|header', 'void', 'METHOD_NAME', 'request|file', 'add|cache|control|header', 'string', 'add|cache|control|header', 'cache|control|handler', 'add|cache|control|header', 'string', 'url|cache|control|map', 'file', 'add|cache|control|header', 'request|file', 'pattern|cache|control', 'find|first', 'cache|control|handler', 'find|first', 'pattern|cache|control']
+
+topk path-contexts for sub-token: control
+[0.0606] cache|control|handler,NameExpr3|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0519] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0496] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0495] request|file,NameExpr2|MethodCallExpr|NameExpr3,add|cache|control|header
+[0.0474] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0401] file,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0318] cache|control|handler,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0295] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,url|cache|control|map
+[0.0255] request|file,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+[0.0228] request|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|cache|control|header
+
+topk terminals for sub-token: control
+['cache|control|handler', 'add|cache|control|header', 'string', 'add|cache|control|header', 'null', 'add|cache|control|header', 'request|file', 'add|cache|control|header', 'void', 'METHOD_NAME', 'file', 'add|cache|control|header', 'cache|control|handler', 'add|cache|control|header', 'string', 'url|cache|control|map', 'request|file', 'add|cache|control|header', 'request|path', 'add|cache|control|header']
+

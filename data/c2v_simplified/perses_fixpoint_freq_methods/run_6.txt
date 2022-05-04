@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/EchoRpcTest_run.java
+method_name = run
+method_body = @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 00:08:24.806705", "score": "0.9991", "loss": "0.0013", "code": "class T { @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); } }"}
+{"time": "2020-12-29 00:12:30.612833", "score": "0.9987", "loss": "0.0022", "code": "class T { @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } } }"}
+{"time": "2020-12-29 00:14:34.418386", "score": "0.4849", "loss": "0.7267", "code": "class T { @Override public void run() { { Thread.sleep(delay); } } }"}
+{"time": "2020-12-29 00:16:14.870218", "score": "0.3218", "loss": "1.5675", "code": "class T { @Override public void run() { { } } }"}
+{"time": "2020-12-29 00:17:34.352266", "score": "0.3218", "loss": "1.5675", "code": "class T { @Override void run() { { } } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run() {     {                      }                                                              }
+}
+
+

@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/util/src/main/java/org/kaazing/gateway/util/Utils_getLongB.java
+method_name = getLongB
+method_body = private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }
+predict, score, loss = getLongB, 0.8347449898719788, 0.40670743584632874
+
+Trace of simplified code(s):
+{"time": "2021-01-23 15:56:11.299030", "n_pass": [1, 1, 1], "score": "0.8437", "loss": "0.3951", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.get(index + 2), bb.get(index + 3), bb.get(index + 4), bb.get(index + 5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-23 15:56:14.342544", "n_pass": [10, 2, 2], "score": "0.7602", "loss": "0.4817", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.gget(index + 5), bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-23 15:56:17.777798", "n_pass": [37, 3, 3], "score": "0.9113", "loss": "0.1899", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.g, bb.get(index + 6), bb.get(index + 7)); }"}
+{"time": "2021-01-23 15:56:20.404619", "n_pass": [38, 4, 4], "score": "0.8109", "loss": "0.4405", "code": "private static long getLongB(ByteBuffer bb, int index) { return makeLong(bb.get(index), bb.get(index + 1), bb.g, bb.get(indexindex + 7)); }"}
+{"time": "2021-01-23 15:56:26.918404", "n_pass": [77, 6, 5], "score": "0.7913", "loss": "0.5145", "code": "private static long getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(index + 1), bb.g, bb.get(indexindex + 7)); }"}
+{"time": "2021-01-23 15:56:32.172483", "n_pass": [84, 8, 6], "score": "0.8232", "loss": "0.3921", "code": "private static long getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb.get(indexindex + 7)); }"}
+{"time": "2021-01-23 15:56:43.602695", "n_pass": [143, 12, 7], "score": "0.881", "loss": "0.3673", "code": "private static long getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(indexindex + 7)); }"}
+{"time": "2021-01-23 15:56:46.225873", "n_pass": [145, 13, 8], "score": "0.8858", "loss": "0.3469", "code": "private static long getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(inddex + 7)); }"}
+{"time": "2021-01-23 15:56:48.851501", "n_pass": [146, 14, 9], "score": "0.8849", "loss": "0.3504", "code": "private static long getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:56:51.500767", "n_pass": [153, 15, 10], "score": "0.8498", "loss": "0.4459", "code": "private statlong getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:56:54.127393", "n_pass": [154, 16, 11], "score": "0.8498", "loss": "0.4459", "code": "private statg getLongB(ByteBuffer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:00.653238", "n_pass": [160, 18, 12], "score": "0.7338", "loss": "0.6156", "code": "private statg getLongB(Bytefer bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:03.275879", "n_pass": [161, 19, 13], "score": "0.739", "loss": "0.6325", "code": "private statg getLongB(Byte bindex) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:05.892720", "n_pass": [163, 20, 14], "score": "0.7431", "loss": "0.9627", "code": "private statg getLongB(Byte bix) { return makeLong(bb.get(index), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:16.409118", "n_pass": [172, 24, 15], "score": "0.7473", "loss": "0.9457", "code": "private statg getLongB(Byte bix) { return makeLong(bb.get(x), bb.get(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:19.027884", "n_pass": [174, 25, 16], "score": "0.761", "loss": "0.9116", "code": "private statg getLongB(Byte bix) { return makeLong(bb.get(x), et(in), bb.g, bb(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:21.648457", "n_pass": [178, 26, 17], "score": "0.3904", "loss": "2.32", "code": "private statg getLongB(Byte bix) { return makeLong(bb.get(x), et(in), bb.g(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:24.341707", "n_pass": [184, 27, 18], "score": "0.3904", "loss": "2.32", "code": "privattatg getLongB(Byte bix) { return makeLong(bb.get(x), et(in), bb.g(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:26.982036", "n_pass": [185, 28, 19], "score": "0.3904", "loss": "2.32", "code": "privatg getLongB(Byte bix) { return makeLong(bb.get(x), et(in), bb.g(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:30.861093", "n_pass": [190, 29, 20], "score": "0.423", "loss": "2.101", "code": "privatg getLongB(B bix) { return makeLong(bb.get(x), et(in), bb.g(ind+ 7)); }"}
+{"time": "2021-01-23 15:57:41.326349", "n_pass": [203, 33, 21], "score": "0.5798", "loss": "1.4079", "code": "privatg getLongB(B bix) { return makeLong(bb.get(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:57:46.559628", "n_pass": [208, 35, 22], "score": "0.5798", "loss": "1.4079", "code": "prig getLongB(B bix) { return makeLong(bb.get(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:57:58.262082", "n_pass": [228, 39, 23], "score": "0.446", "loss": "1.8155", "code": "g getLongB(B bix) { return makeLong(bb.get(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:58:14.081320", "n_pass": [297, 43, 24], "score": "0.3841", "loss": "1.4114", "code": "g getLongB(B x) { return makeLong(bb.get(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:58:29.748721", "n_pass": [309, 49, 25], "score": "0.3989", "loss": "1.335", "code": "g getLongB(B x) { return makeLong(bget(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:58:32.349560", "n_pass": [310, 50, 26], "score": "0.3677", "loss": "1.4478", "code": "g getLongB(B x) { return makeLong(bt(x), et(in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:58:34.958166", "n_pass": [314, 51, 27], "score": "0.3578", "loss": "1.4361", "code": "g getLongB(B x) { return makeLong(bt(x), (in), (ind+ 7)); }"}
+{"time": "2021-01-23 15:58:40.234088", "n_pass": [319, 53, 28], "score": "0.3543", "loss": "1.4334", "code": "g getLongB(B x) { return makeLong(bt(x), (in), (i+ 7)); }"}
+{"time": "2021-01-23 15:58:42.861758", "n_pass": [320, 54, 29], "score": "0.3547", "loss": "1.427", "code": "g getLongB(B x) { return makeLong(bt(x), (in), (i7)); }"}
+{"time": "2021-01-23 15:59:07.809311", "n_pass": [399, 61, 30], "score": "0.3547", "loss": "1.427", "code": "g getLongB(B x) { return makeLong(bt(x), (in), (i)); }"}
+{"time": "2021-01-23 15:59:10.429967", "n_pass": [402, 62, 31], "score": "0.3547", "loss": "1.427", "code": "g getLongB(B x) { return makeLong(bt(x), (in), (i));}"}
+{"time": "2021-01-23 15:59:17.092441", "n_pass": [419, 63, 32], "score": "0.3547", "loss": "1.427", "code": "g getLongB(B x){ return makeLong(bt(x), (in), (i));}"}
+{"time": "2021-01-23 15:59:19.698581", "n_pass": [421, 64, 33], "score": "0.3547", "loss": "1.427", "code": "g getLongB(B x){return makeLong(bt(x), (in), (i));}"}
+{"time": "2021-01-23 15:59:45.801819", "n_pass": [438, 74, 34], "score": "0.3872", "loss": "1.3072", "code": "g getLongB(B x){return makeLong(t(x), (in), (i));}"}
+{"time": "2021-01-23 15:59:48.409193", "n_pass": [439, 75, 35], "score": "0.4187", "loss": "1.2098", "code": "g getLongB(B x){return makeLong((x), (in), (i));}"}
+{"time": "2021-01-23 15:59:51.020950", "n_pass": [443, 76, 36], "score": "0.6815", "loss": "0.6216", "code": "g getLongB(B x){return makeLong((x) (in), (i));}"}
+{"time": "2021-01-23 15:59:53.634305", "n_pass": [444, 77, 37], "score": "0.6815", "loss": "0.6216", "code": "g getLongB(B x){return makeLong((x)(in), (i));}"}
+{"time": "2021-01-23 15:59:56.236979", "n_pass": [446, 78, 38], "score": "0.6771", "loss": "0.6282", "code": "g getLongB(B x){return makeLong((x)(n), (i));}"}
+{"time": "2021-01-23 16:00:01.496729", "n_pass": [450, 80, 39], "score": "0.6771", "loss": "0.6282", "code": "g getLongB(B x){return makeLong((x)(n),(i));}"}
+
+Minimal simplified code:
+g getLongB(B x){return makeLong((x)(n),(i));}
+

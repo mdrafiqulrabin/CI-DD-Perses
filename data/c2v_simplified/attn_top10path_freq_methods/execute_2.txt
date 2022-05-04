@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/FindLeaksTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/findleaks?statusLine=" + Boolean.toString(statusLine)); }
+
+topk path-contexts:
+[0.2218] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.1637] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr0),boolean
+[0.0819] boolean,(NameExpr0)^(MethodCallExpr)_(NameExpr2),statusline
+[0.0779] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0639] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+[0.0639] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),execute
+[0.0319] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(StringLiteralExpr0),findleaksstatusline
+[0.0315] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr0),boolean
+[0.0271] boolean,(NameExpr0)^(MethodCallExpr)^(BinaryExpr:plus1)^(MethodCallExpr)_(NameExpr2),execute
+[0.0231] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(StringLiteralExpr0),findleaksstatusline
+
+topk terminals:
+['super', 'execute', 'buildexception', 'boolean', 'boolean', 'statusline', 'buildexception', 'super', 'buildexception', 'execute', 'buildexception', 'execute', 'buildexception', 'findleaksstatusline', 'METHOD_NAME', 'boolean', 'boolean', 'execute', 'METHOD_NAME', 'findleaksstatusline']
+

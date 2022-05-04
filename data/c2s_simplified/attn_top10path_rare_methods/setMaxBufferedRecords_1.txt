@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxBufferedRecords.java
+method_name = setMaxBufferedRecords
+method_body = public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }
+
+topk path-contexts for sub-token: set
+[0.1286] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.1181] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0967] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0515] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0497] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0482] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0388] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0318] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0280] builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0257] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|buffered|records
+
+topk terminals for sub-token: set
+['METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'this', 'max|buffered|records', 'this', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'METHOD_NAME', 'int', 'max|buffered|records', 'max|buffered|records', 'builder', 'METHOD_NAME', 'METHOD_NAME', 'max|buffered|records']
+
+topk path-contexts for sub-token: max
+[0.1349] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.1275] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.1115] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0698] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0612] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0567] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0454] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0442] max|buffered|records,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0302] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|buffered|records
+[0.0299] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+
+topk terminals for sub-token: max
+['METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'this', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'this', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records']
+
+topk path-contexts for sub-token: buffered
+[0.1593] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.1484] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.1251] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0934] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0716] max|buffered|records,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0711] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0671] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0527] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0500] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|buffered|records
+[0.0436] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+
+topk terminals for sub-token: buffered
+['this', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'this', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'int', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records']
+
+topk path-contexts for sub-token: records
+[0.1027] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0921] max|buffered|records,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0899] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0898] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|buffered|records
+[0.0847] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0765] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|buffered|records
+[0.0719] max|buffered|records,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+[0.0614] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|buffered|records
+[0.0613] builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,max|buffered|records
+[0.0597] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|buffered|records
+
+topk terminals for sub-token: records
+['max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'int', 'max|buffered|records', 'int', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'METHOD_NAME', 'max|buffered|records', 'max|buffered|records', 'max|buffered|records', 'this', 'max|buffered|records', 'builder', 'max|buffered|records', 'this', 'max|buffered|records']
+

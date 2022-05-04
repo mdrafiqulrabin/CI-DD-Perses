@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/jasper/compiler/TestParserNoStrictWhitespace_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { System.setProperty("org.apache.jasper.compiler.Parser.STRICT_WHITESPACE", "false"); super.setUp(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:48:47.026299", "score": "0.9989", "loss": "0.0013", "code": "class T { @Override public void setUp() throws Exception { System.setProperty(\"org.apache.jasper.compiler.Parser.STRICT_WHITESPACE\", \"false\"); super.setUp(); } }"}
+{"time": "2020-12-21 09:49:34.782900", "score": "0.2496", "loss": "1.9488", "code": "class T { @Override public void setUp() throws Exception { System.setProperty(\"org.apache.jasper.compiler.Parser.STRICT_WHITESPACE\", \"false\"); } }"}
+{"time": "2020-12-21 09:49:55.884651", "score": "0.3742", "loss": "1.1909", "code": "class T { @Override public void setUp() throws Exception { System.setProperty( ); } }"}
+{"time": "2020-12-21 09:50:17.023315", "score": "0.3742", "loss": "1.1909", "code": "class T { @Override void setUp() throws Exception { System.setProperty( ); } }"}
+
+Minimal simplified code:
+class T {
+@Override        void setUp() throws Exception { System.setProperty(                                                              );                }
+}
+
+

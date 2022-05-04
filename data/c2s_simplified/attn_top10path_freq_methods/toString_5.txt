@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/modeler/BaseModelMBean_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (resource == null) return "BaseModelMbean[" + resourceType + "]"; return resource.toString(); }
+
+topk path-contexts for sub-token: to
+[0.2148] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.2017] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0879] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0593] resource,NameExpr0|MethodCallExpr|NameExpr2,to|string
+[0.0522] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0374] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0353] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BinaryExpr:plus|StringLiteralExpr1,]
+[0.0261] resource,NameExpr0|BinaryExpr:equals|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0248] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+[0.0242] resource|type,NameExpr1|BinaryExpr:plus|BinaryExpr:plus|ReturnStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+
+topk terminals for sub-token: to
+['string', 'METHOD_NAME', 'string', 'to|string', 'METHOD_NAME', 'to|string', 'resource', 'to|string', 'null', 'to|string', 'string', 'null', 'string', ']', 'resource', 'to|string', 'override', 'string', 'resource|type', 'to|string']
+
+topk path-contexts for sub-token: string
+[0.2596] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.2280] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.1027] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+[0.0931] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0752] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0547] resource,NameExpr0|MethodCallExpr|NameExpr2,to|string
+[0.0286] ],StringLiteralExpr1|BinaryExpr:plus|ReturnStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0258] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|BinaryExpr:plus|StringLiteralExpr1,]
+[0.0249] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0231] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: string
+['string', 'METHOD_NAME', 'string', 'to|string', 'override', 'string', 'METHOD_NAME', 'to|string', 'null', 'to|string', 'resource', 'to|string', ']', 'to|string', 'string', ']', 'override', 'METHOD_NAME', 'string', 'null']
+

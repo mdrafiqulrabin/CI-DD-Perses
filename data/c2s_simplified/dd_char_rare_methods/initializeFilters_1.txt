@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/choosers/AbstractExtensionFileFilterFileChooser_initializeFilters.java
+method_name = initializeFilters
+method_body = protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }
+predict, score, loss = initializeFilters, 0.3515565, 1.974188
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:47:07.365656", "n_pass": [1, 1, 1], "score": "0.3516", "loss": "1.9742", "code": "protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:09.419003", "n_pass": [23, 2, 2], "score": "0.4286", "loss": "1.4966", "code": "protected static synchronized void initializeFilters(AbstractExhooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:12.390718", "n_pass": [47, 4, 3], "score": "0.4794", "loss": "1.2935", "code": "protected static synchronized void initializeFilters(AbstractExhooser chooser) { if (tFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:16.316226", "n_pass": [52, 7, 4], "score": "0.4794", "loss": "1.2935", "code": "static synchronized void initializeFilters(AbstractExhooser chooser) { if (tFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:26.380769", "n_pass": [98, 13, 5], "score": "0.4167", "loss": "1.5805", "code": "static synchronized void initializeFilters(AbtExhooser chooser) { if (tFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:29.023925", "n_pass": [101, 15, 6], "score": "0.4649", "loss": "1.4979", "code": "static synchronized void initializeFilters(AbtExhooser er) { if (tFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:47:42.319604", "n_pass": [122, 24, 7], "score": "0.4151", "loss": "1.5536", "code": "static synchronized void initializeFilters(Aboser er) { if (tFiltersInitialized()) chooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:06.242748", "n_pass": [199, 41, 8], "score": "0.3896", "loss": "1.8472", "code": "static synchronized void initializeFilters(Aboser er) { if (tFiltersInitialized())ooser.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:07.550001", "n_pass": [200, 42, 9], "score": "0.5815", "loss": "1.1262", "code": "static synchronized void initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:19.343545", "n_pass": [219, 51, 10], "score": "0.2683", "loss": "2.6593", "code": "static synchronizevoid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:20.652998", "n_pass": [220, 52, 11], "score": "0.2683", "loss": "2.6593", "code": "static synchronizeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:45.135385", "n_pass": [253, 69, 12], "score": "0.2683", "loss": "2.6593", "code": "staticynchronizeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:46.438976", "n_pass": [254, 70, 13], "score": "0.2683", "loss": "2.6593", "code": "staticchronizeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:47.738694", "n_pass": [255, 71, 14], "score": "0.2683", "loss": "2.6593", "code": "staticronizeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:49.042815", "n_pass": [256, 72, 15], "score": "0.2683", "loss": "2.6593", "code": "staticnizeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:50.368845", "n_pass": [257, 73, 16], "score": "0.2683", "loss": "2.6593", "code": "staticzeid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:48:51.669077", "n_pass": [258, 74, 17], "score": "0.2683", "loss": "2.6593", "code": "staticid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:49:16.018228", "n_pass": [288, 91, 18], "score": "0.2683", "loss": "2.6593", "code": "aticid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:49:17.330382", "n_pass": [289, 92, 19], "score": "0.2683", "loss": "2.6593", "code": "icid initializeFilters(Aboser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:49:55.449708", "n_pass": [403, 114, 20], "score": "0.2683", "loss": "2.6593", "code": "icid initializeFilters(boser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:49:56.761772", "n_pass": [404, 115, 21], "score": "0.2683", "loss": "2.6593", "code": "icid initializeFilters(oser er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:49:59.370537", "n_pass": [406, 117, 22], "score": "0.5312", "loss": "1.6139", "code": "icid initializeFilters(osr er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:50:00.700340", "n_pass": [407, 118, 23], "score": "0.5949", "loss": "1.0227", "code": "icid initializeFilters(os er) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:50:02.001697", "n_pass": [409, 119, 24], "score": "0.4468", "loss": "1.871", "code": "icid initializeFilters(os r) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:50:42.567760", "n_pass": [463, 145, 25], "score": "0.3804", "loss": "2.2516", "code": "icid initializeFilters(o r) { if (tFiltersInitialized())er.doInitializeFilters(); }"}
+{"time": "2021-01-23 10:52:14.594031", "n_pass": [621, 209, 26], "score": "0.3804", "loss": "2.2516", "code": "icid initializeFilters(o r) { if (tFiltersInitialized())er.doInitializeFilters();}"}
+{"time": "2021-01-23 10:52:27.694946", "n_pass": [649, 214, 27], "score": "0.3804", "loss": "2.2516", "code": "icid initializeFilters(o r){ if (tFiltersInitialized())er.doInitializeFilters();}"}
+{"time": "2021-01-23 10:52:28.997725", "n_pass": [651, 215, 28], "score": "0.3804", "loss": "2.2516", "code": "icid initializeFilters(o r){if (tFiltersInitialized())er.doInitializeFilters();}"}
+{"time": "2021-01-23 10:52:30.296373", "n_pass": [654, 216, 29], "score": "0.3804", "loss": "2.2516", "code": "icid initializeFilters(o r){if(tFiltersInitialized())er.doInitializeFilters();}"}
+{"time": "2021-01-23 10:52:31.614357", "n_pass": [656, 217, 30], "score": "0.3644", "loss": "2.1336", "code": "icid initializeFilters(o r){if(FiltersInitialized())er.doInitializeFilters();}"}
+
+Minimal simplified code:
+icid initializeFilters(o r){if(FiltersInitialized())er.doInitializeFilters();}
+

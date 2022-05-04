@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 02:31:01.712404", "score": "0.9998", "loss": "0.0002", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); } }"}
+{"time": "2020-12-29 02:34:05.752470", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); } }"}
+{"time": "2020-12-29 02:35:22.115562", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); } }"}
+{"time": "2020-12-29 02:36:38.542307", "score": "0.9999", "loss": "0.0002", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); } }"}
+{"time": "2020-12-29 02:37:55.789613", "score": "0.9999", "loss": "0.0001", "code": "class T { void init(ProcessingEnvironment env) { super.init(env); } }"}
+{"time": "2020-12-29 02:38:36.526368", "score": "0.2171", "loss": "1.9998", "code": "class T { void init( ) { super.init(env); } }"}
+
+Minimal simplified code:
+class T {
+                              void init(                         ) { super.init(   );                                                                                                           }
+}
+
+

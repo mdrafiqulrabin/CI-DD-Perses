@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/citations/citations-osid/web2bridge/src/java/edu/indiana/lib/twinpeaks/search/HttpTransactionQueryBase_getResponseBytes.java
+method_name = getResponseBytes
+method_body = public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:06:41.513416", "score": "0.388", "loss": "2.0139", "code": "class T { public byte[] getResponseBytes() { return _transaction.getResponseBytes(); } }"}
+{"time": "2021-01-24 16:11:02.476153", "score": "0.388", "loss": "2.0139", "code": "class T { byte[] getResponseBytes() { return _transaction.getResponseBytes(); } }"}
+
+Minimal simplified code:
+class T {
+       byte[] getResponseBytes() { return _transaction.getResponseBytes(); }
+}
+
+

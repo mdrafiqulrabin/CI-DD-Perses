@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/polling/AbstractPollingIoProcessor_fireMessageSent.java
+method_name = fireMessageSent
+method_body = private void fireMessageSent(T session, WriteRequest req) { session.setCurrentWriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }
+
+topk path-contexts for sub-token: fire
+[0.1138] req,NameExpr2|MethodCallExpr|NameExpr3,fire|message|sent
+[0.0951] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0648] t,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0476] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0400] write|request,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0389] req,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0325] session,NameExpr0|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0318] session,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0296] null,NullLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0180] get|filter|chain,NameExpr2|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+
+topk terminals for sub-token: fire
+['req', 'fire|message|sent', 'void', 'METHOD_NAME', 't', 'fire|message|sent', 'session', 'fire|message|sent', 'write|request', 'fire|message|sent', 'req', 'fire|message|sent', 'session', 'fire|message|sent', 'session', 'fire|message|sent', 'null', 'fire|message|sent', 'get|filter|chain', 'fire|message|sent']
+
+topk path-contexts for sub-token: message
+[0.1127] req,NameExpr2|MethodCallExpr|NameExpr3,fire|message|sent
+[0.0648] write|request,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0597] t,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0410] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0349] session,NameExpr0|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0337] req,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,write|request
+[0.0317] req,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0312] t,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,write|request
+[0.0299] get|filter|chain,NameExpr2|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0297] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,write|request
+
+topk terminals for sub-token: message
+['req', 'fire|message|sent', 'write|request', 'fire|message|sent', 't', 'fire|message|sent', 'session', 'fire|message|sent', 'session', 'fire|message|sent', 'req', 'write|request', 'req', 'fire|message|sent', 't', 'write|request', 'get|filter|chain', 'fire|message|sent', 'METHOD_NAME', 'write|request']
+
+topk path-contexts for sub-token: sent
+[0.2062] req,NameExpr2|MethodCallExpr|NameExpr3,fire|message|sent
+[0.0865] t,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0791] write|request,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0776] req,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0683] session,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0650] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0482] session,NameExpr0|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0390] session,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0361] get|filter|chain,NameExpr2|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+[0.0339] null,NullLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,fire|message|sent
+
+topk terminals for sub-token: sent
+['req', 'fire|message|sent', 't', 'fire|message|sent', 'write|request', 'fire|message|sent', 'req', 'fire|message|sent', 'session', 'fire|message|sent', 'void', 'METHOD_NAME', 'session', 'fire|message|sent', 'session', 'fire|message|sent', 'get|filter|chain', 'fire|message|sent', 'null', 'fire|message|sent']
+

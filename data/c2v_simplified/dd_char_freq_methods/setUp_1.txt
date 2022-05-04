@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoActivityTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }
+predict, score, loss = setUp, 0.9999381303787231, 6.19869097135961e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 05:31:20.477970", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }"}
+{"time": "2020-12-28 05:31:23.521470", "n_pass": [26, 2, 2], "score": "0.9998", "loss": "0.0002", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstetActivity()); }"}
+{"time": "2020-12-28 05:31:26.535499", "n_pass": [48, 3, 3], "score": "0.9998", "loss": "0.0002", "code": "@Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-28 05:31:29.165556", "n_pass": [50, 4, 4], "score": "0.9998", "loss": "0.0002", "code": "@Overriected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-28 05:31:32.601176", "n_pass": [55, 5, 5], "score": "0.9997", "loss": "0.0003", "code": "@Overriected void setUp() throws Ex{ super.setUp(); solo = new Solo(getInstty()); }"}
+{"time": "2020-12-28 05:31:35.222172", "n_pass": [57, 6, 6], "score": "0.9939", "loss": "0.0109", "code": "@Overriected void setUp() throws Ex{ super. solo = new Solo(getInstty()); }"}
+{"time": "2020-12-28 05:31:37.821088", "n_pass": [59, 7, 7], "score": "0.983", "loss": "0.0362", "code": "@Overriected void setUp() throws Ex{ super. solo = (getInstty()); }"}
+{"time": "2020-12-28 05:31:41.241397", "n_pass": [88, 8, 8], "score": "0.6674", "loss": "0.9535", "code": "@Overriected void setUp() throws Ex{ super. solo = (getty()); }"}
+{"time": "2020-12-28 05:31:43.839900", "n_pass": [89, 9, 9], "score": "0.9836", "loss": "0.0348", "code": "@Overriected void setUp() throws Ex{ super. solo = (get); }"}
+{"time": "2020-12-28 05:31:46.441109", "n_pass": [92, 10, 10], "score": "0.9836", "loss": "0.0348", "code": "@Oviected void setUp() throws Ex{ super. solo = (get); }"}
+{"time": "2020-12-28 05:31:49.036075", "n_pass": [93, 11, 11], "score": "0.9836", "loss": "0.0348", "code": "@Ovted void setUp() throws Ex{ super. solo = (get); }"}
+{"time": "2020-12-28 05:32:03.292472", "n_pass": [136, 16, 12], "score": "0.9836", "loss": "0.0348", "code": "@Oted void setUp() throws Ex{ super. solo = (get); }"}
+{"time": "2020-12-28 05:32:05.892897", "n_pass": [137, 17, 13], "score": "0.8316", "loss": "0.7268", "code": "@Od void setUp() throws Ex{ super. solo = (get); }"}
+{"time": "2020-12-28 05:32:15.316077", "n_pass": [151, 20, 14], "score": "0.386", "loss": "2.2343", "code": "@Od void setUp() throws Ex{ per. solo = (get); }"}
+{"time": "2020-12-28 05:32:17.942115", "n_pass": [152, 21, 15], "score": "0.6988", "loss": "1.0402", "code": "@Od void setUp() throws Ex{ r. solo = (get); }"}
+{"time": "2020-12-28 05:32:33.574568", "n_pass": [159, 27, 16], "score": "0.7021", "loss": "1.0452", "code": "@Od void setUp() throws Ex{ r. solo = (g); }"}
+{"time": "2020-12-28 05:32:36.169939", "n_pass": [163, 28, 17], "score": "0.9842", "loss": "0.0321", "code": "@d void setUp() throws Ex{ r. solo = (g); }"}
+{"time": "2020-12-28 05:32:41.363412", "n_pass": [166, 30, 18], "score": "0.353", "loss": "1.881", "code": "@d vo setUp() throws Ex{ r. solo = (g); }"}
+{"time": "2020-12-28 05:33:05.124970", "n_pass": [236, 36, 19], "score": "0.353", "loss": "1.881", "code": "@d vo setUp()throws Ex{ r. solo = (g); }"}
+{"time": "2020-12-28 05:33:10.316979", "n_pass": [244, 38, 20], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{ r. solo = (g); }"}
+{"time": "2020-12-28 05:33:12.914640", "n_pass": [246, 39, 21], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{r. solo = (g); }"}
+{"time": "2020-12-28 05:33:18.119892", "n_pass": [249, 41, 22], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{r.solo = (g); }"}
+{"time": "2020-12-28 05:33:31.113199", "n_pass": [254, 46, 23], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{r.solo= (g); }"}
+{"time": "2020-12-28 05:33:36.310933", "n_pass": [256, 48, 24], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{r.solo=(g); }"}
+{"time": "2020-12-28 05:33:38.907523", "n_pass": [261, 49, 25], "score": "0.3306", "loss": "1.7874", "code": "@d vo setUp()throws E{r.solo=(g);}"}
+
+Minimal simplified code:
+@d vo setUp()throws E{r.solo=(g);}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TesterContext_removeSecurityRole.java
+method_name = removeSecurityRole
+method_body = @Override public void removeSecurityRole(String role) { securityRoles.remove(role); }
+
+topk path-contexts:
+[0.2407] role,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),securityroles
+[0.1633] role,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+[0.1380] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),securityroles
+[0.0941] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),role
+[0.0724] role,(NameExpr2)^(MethodCallExpr)_(NameExpr3),remove
+[0.0480] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),securityroles
+[0.0451] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),role
+[0.0431] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+[0.0430] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+[0.0308] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),role
+
+topk terminals:
+['role', 'securityroles', 'role', 'remove', 'string', 'securityroles', 'void', 'role', 'role', 'remove', 'METHOD_NAME', 'securityroles', 'METHOD_NAME', 'role', 'string', 'remove', 'METHOD_NAME', 'remove', 'METHOD_NAME', 'role']
+

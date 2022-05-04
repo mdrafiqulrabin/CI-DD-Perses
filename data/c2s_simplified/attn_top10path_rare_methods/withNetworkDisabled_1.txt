@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ConfigBuilder_withNetworkDisabled.java
+method_name = withNetworkDisabled
+method_body = public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; }
+
+topk path-contexts for sub-token: with
+[0.1411] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1167] this,ThisExpr0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1008] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0828] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0565] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0396] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0393] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,network|disabled
+[0.0384] network|disabled,VariableDeclaratorId0|Parameter|PrimitiveType1,boolean
+[0.0331] network|disabled,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+[0.0310] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+
+topk terminals for sub-token: with
+['boolean', 'network|disabled', 'this', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'network|disabled', 'network|disabled', 'boolean', 'network|disabled', 'network|disabled', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'network|disabled', 'boolean', 'network|disabled', 'network|disabled', 'this', 'network|disabled']
+
+topk path-contexts for sub-token: network
+[0.1689] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1553] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1362] this,ThisExpr0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1040] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0563] network|disabled,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+[0.0467] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0433] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,network|disabled
+[0.0410] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+[0.0383] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0360] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+
+topk terminals for sub-token: network
+['boolean', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'this', 'network|disabled', 'network|disabled', 'network|disabled', 'network|disabled', 'network|disabled', 'boolean', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'this', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'network|disabled', 'network|disabled']
+
+topk path-contexts for sub-token: disabled
+[0.1227] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.1160] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.1111] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0934] network|disabled,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0920] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0855] network|disabled,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+[0.0759] this,ThisExpr0|FieldAccessExpr0|NameExpr2,network|disabled
+[0.0720] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,network|disabled
+[0.0715] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,network|disabled
+[0.0663] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,network|disabled
+
+topk terminals for sub-token: disabled
+['boolean', 'network|disabled', 'network|disabled', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'network|disabled', 'network|disabled', 'boolean', 'network|disabled', 'network|disabled', 'network|disabled', 'this', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'METHOD_NAME', 'network|disabled', 'this', 'network|disabled']
+

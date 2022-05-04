@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/startup/Catalina_isAwait.java
+method_name = isAwait
+method_body = public boolean isAwait() { return await; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:25:29.593218", "score": "0.4773", "loss": "0.7911", "code": "class T { public boolean isAwait() { return await; } }"}
+{"time": "2021-01-24 04:26:28.594385", "score": "0.4773", "loss": "0.7911", "code": "class T { boolean isAwait() { return await; } }"}
+
+Minimal simplified code:
+class T {
+       boolean isAwait() { return await; }
+}
+
+

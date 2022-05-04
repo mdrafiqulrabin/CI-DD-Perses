@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/JKStatusUpdateTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); checkParameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }
+predict, score, loss = execute, 0.9997269511222839, 0.0003682888636831194
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:40:11.292489", "n_pass": [1, 1, 1], "score": "0.9997", "loss": "0.0004", "code": "@Override public void execute() throws BuildException { super.execute(); checkParameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:14.323223", "n_pass": [20, 2, 2], "score": "0.9991", "loss": "0.0012", "code": "d execute() throws BuildException { super.execute(); checkParameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:16.937368", "n_pass": [23, 3, 3], "score": "0.9971", "loss": "0.0045", "code": "d execute() throws BuildException { supeameter(); StringBuilder sb = createLink(); execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:19.542394", "n_pass": [24, 4, 4], "score": "0.9977", "loss": "0.0035", "code": "d execute() throws BuildException { supeer sb = createLink(); execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:22.191885", "n_pass": [40, 5, 5], "score": "0.9991", "loss": "0.0011", "code": "d execute() throws BuildException { supeeateLink(); execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:24.800591", "n_pass": [41, 6, 6], "score": "0.9991", "loss": "0.0011", "code": "d execute() throws BuildException { supe; execute(sb.toString(), null, null, -1); }"}
+{"time": "2020-12-28 08:40:27.421712", "n_pass": [44, 7, 7], "score": "0.9998", "loss": "0.0002", "code": "d execute() throws BuildException { supe; execute(sb.toStringull, -1); }"}
+{"time": "2020-12-28 08:40:32.630306", "n_pass": [51, 9, 8], "score": "1.0", "loss": "0.0001", "code": "d execute() throws BuildException { supe; execute(ull, -1); }"}
+{"time": "2020-12-28 08:40:37.822125", "n_pass": [70, 11, 9], "score": "1.0", "loss": "0.0", "code": "d execute() throws BuildException { supe; execute(-1); }"}
+{"time": "2020-12-28 08:40:40.794965", "n_pass": [75, 12, 10], "score": "0.616", "loss": "0.6114", "code": "d execute() throws Bxception { supe; execute(-1); }"}
+{"time": "2020-12-28 08:40:43.378127", "n_pass": [76, 13, 11], "score": "0.616", "loss": "0.6114", "code": "d execute() throws Bion { supe; execute(-1); }"}
+{"time": "2020-12-28 08:40:45.967333", "n_pass": [78, 14, 12], "score": "0.7353", "loss": "0.3749", "code": "d execute() throws Bion {; execute(-1); }"}
+{"time": "2020-12-28 08:40:58.311973", "n_pass": [118, 18, 13], "score": "0.8852", "loss": "0.1639", "code": "d execute() throws B {; execute(-1); }"}
+{"time": "2020-12-28 08:41:09.544288", "n_pass": [166, 21, 14], "score": "0.8852", "loss": "0.1639", "code": "d execute() throws B{; execute(-1); }"}
+{"time": "2020-12-28 08:41:12.149388", "n_pass": [167, 22, 15], "score": "0.8852", "loss": "0.1639", "code": "d execute() throws B{execute(-1); }"}
+{"time": "2020-12-28 08:41:28.713918", "n_pass": [186, 27, 16], "score": "0.8852", "loss": "0.1639", "code": "d execute()throws B{execute(-1); }"}
+{"time": "2020-12-28 08:42:06.993342", "n_pass": [240, 40, 17], "score": "0.8852", "loss": "0.1639", "code": "d execute()throws B{execute(-1);}"}
+
+Minimal simplified code:
+d execute()throws B{execute(-1);}
+

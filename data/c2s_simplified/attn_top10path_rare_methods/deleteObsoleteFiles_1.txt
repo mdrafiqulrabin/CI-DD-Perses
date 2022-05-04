@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javamelody__javamelody/javamelody-core/src/main/java/net/bull/javamelody/internal/model/Collector_deleteObsoleteFiles.java
+method_name = deleteObsoleteFiles
+method_body = void deleteObsoleteFiles() throws IOException { final long rrdDiskUsage = CounterStorage.deleteObsoleteCounterFiles(getApplication()); final long serGzDiskUsage = JRobin.deleteObsoleteJRobinFiles(getApplication()); diskUsage = rrdDiskUsage + serGzDiskUsage; LOG.debug("Obsolete files deleted. JavaMelody disk usage: " + diskUsage / 1024 + " KB"); }
+
+topk path-contexts for sub-token: delete
+[0.1264] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0352] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,log
+[0.0297] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|counter|files
+[0.0282] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,debug
+[0.0282] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:divide|IntegerLiteralExpr1,<NUM>
+[0.0252] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,disk|usage
+[0.0235] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:divide|IntegerLiteralExpr1,<NUM>
+[0.0234] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|j|robin|files
+[0.0231] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0209] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,log
+
+topk terminals for sub-token: delete
+['void', 'METHOD_NAME', 'METHOD_NAME', 'log', 'METHOD_NAME', 'delete|obsolete|counter|files', 'METHOD_NAME', 'debug', 'io|exception', '<NUM>', 'METHOD_NAME', 'disk|usage', 'METHOD_NAME', '<NUM>', 'METHOD_NAME', 'delete|obsolete|j|robin|files', 'METHOD_NAME', 'obsolete|files|deleted|java|melody|disk|usage', 'io|exception', 'log']
+
+topk path-contexts for sub-token: obsolete
+[0.0516] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,disk|usage
+[0.0511] get|application,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,delete|obsolete|counter|files
+[0.0502] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0491] obsolete|files|deleted|java|melody|disk|usage,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:divide|IntegerLiteralExpr1,<NUM>
+[0.0471] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|counter|files
+[0.0370] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|counter|files
+[0.0326] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0308] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0271] obsolete|files|deleted|java|melody|disk|usage,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:plus2|MethodCallExpr|NameExpr3,debug
+[0.0258] obsolete|files|deleted|java|melody|disk|usage,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:plus2|StringLiteralExpr1,kb
+
+topk terminals for sub-token: obsolete
+['METHOD_NAME', 'disk|usage', 'get|application', 'delete|obsolete|counter|files', 'METHOD_NAME', 'obsolete|files|deleted|java|melody|disk|usage', 'obsolete|files|deleted|java|melody|disk|usage', '<NUM>', 'METHOD_NAME', 'delete|obsolete|counter|files', 'io|exception', 'delete|obsolete|counter|files', 'io|exception', 'obsolete|files|deleted|java|melody|disk|usage', 'void', 'METHOD_NAME', 'obsolete|files|deleted|java|melody|disk|usage', 'debug', 'obsolete|files|deleted|java|melody|disk|usage', 'kb']
+
+topk path-contexts for sub-token: files
+[0.0817] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0555] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0552] obsolete|files|deleted|java|melody|disk|usage,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:divide|IntegerLiteralExpr1,<NUM>
+[0.0486] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|counter|files
+[0.0433] log,NameExpr0|MethodCallExpr|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0405] long,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr0,obsolete|files|deleted|java|melody|disk|usage
+[0.0387] io|exception,ClassOrInterfaceType2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,delete|obsolete|counter|files
+[0.0378] get|application,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,delete|obsolete|counter|files
+[0.0375] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|NameExpr0,rrd|disk|usage
+[0.0353] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,disk|usage
+
+topk terminals for sub-token: files
+['METHOD_NAME', 'obsolete|files|deleted|java|melody|disk|usage', 'io|exception', 'obsolete|files|deleted|java|melody|disk|usage', 'obsolete|files|deleted|java|melody|disk|usage', '<NUM>', 'METHOD_NAME', 'delete|obsolete|counter|files', 'log', 'obsolete|files|deleted|java|melody|disk|usage', 'long', 'obsolete|files|deleted|java|melody|disk|usage', 'io|exception', 'delete|obsolete|counter|files', 'get|application', 'delete|obsolete|counter|files', 'METHOD_NAME', 'rrd|disk|usage', 'METHOD_NAME', 'disk|usage']
+

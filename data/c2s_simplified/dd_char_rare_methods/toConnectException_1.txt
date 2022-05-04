@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/bulk/BulkProcessor_toConnectException.java
+method_name = toConnectException
+method_body = private static ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }
+predict, score, loss = toConnectException, 0.2480872, 1.8404332
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:36:45.261506", "n_pass": [1, 1, 1], "score": "0.2481", "loss": "1.8404", "code": "private static ConnectException toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:36:46.939754", "n_pass": [20, 2, 2], "score": "0.267", "loss": "2.4787", "code": "Exception toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:36:54.253428", "n_pass": [83, 7, 3], "score": "0.2737", "loss": "2.3359", "code": "tion toConnectException(Throwable t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:36:57.036289", "n_pass": [89, 8, 4], "score": "0.2534", "loss": "2.8345", "code": "tion toConnectException(Tble t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:08.124325", "n_pass": [170, 15, 5], "score": "0.3402", "loss": "2.8665", "code": "tion toConnectException(e t) { if (t instanceof ConnectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:10.761773", "n_pass": [179, 17, 6], "score": "0.2826", "loss": "2.6087", "code": "tion toConnectException(e t) { if (t instanceof nectException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:12.071296", "n_pass": [180, 18, 7], "score": "0.3356", "loss": "2.9385", "code": "tion toConnectException(e t) { if (t instanceof tException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:30.519399", "n_pass": [210, 32, 8], "score": "0.4299", "loss": "2.1937", "code": "on toConnectException(e t) { if (t instanceof tException) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:36.816760", "n_pass": [230, 34, 9], "score": "0.308", "loss": "2.3558", "code": "on toConnectException(e t) { if (t instanceof ception) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:38.128734", "n_pass": [231, 35, 10], "score": "0.3311", "loss": "2.6827", "code": "on toConnectException(e t) { if (t instanceof tion) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:37:39.446168", "n_pass": [232, 36, 11], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t) { if (t instanceof n) { return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:38:02.263509", "n_pass": [378, 48, 12], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t) { if (t instanceof n){ return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:38:03.576635", "n_pass": [380, 49, 13], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t) { if (t instanceof n){return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:38:36.958373", "n_pass": [446, 69, 14], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){ if (t instanceof n){return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:38:38.293438", "n_pass": [448, 70, 15], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if (t instanceof n){return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:38:39.609314", "n_pass": [451, 71, 16], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return (ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:16.848999", "n_pass": [606, 91, 17], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException) t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:39.208768", "n_pass": [625, 108, 18], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t; } else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:41.840561", "n_pass": [628, 110, 19], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;} else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:43.148077", "n_pass": [630, 111, 20], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else { return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:44.477319", "n_pass": [635, 112, 21], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{ return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:45.805676", "n_pass": [637, 113, 22], "score": "0.3326", "loss": "2.7893", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return new ConnectException(t); } }"}
+{"time": "2021-01-23 07:39:47.122088", "n_pass": [648, 114, 23], "score": "0.4028", "loss": "3.2462", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newConnectException(t); } }"}
+{"time": "2021-01-23 07:39:48.449637", "n_pass": [649, 115, 24], "score": "0.2495", "loss": "4.2995", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newonnectException(t); } }"}
+{"time": "2021-01-23 07:39:49.782337", "n_pass": [650, 116, 25], "score": "0.2495", "loss": "4.2995", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newnnectException(t); } }"}
+{"time": "2021-01-23 07:39:51.091220", "n_pass": [651, 117, 26], "score": "0.2495", "loss": "4.2995", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newnectException(t); } }"}
+{"time": "2021-01-23 07:39:52.417011", "n_pass": [652, 118, 27], "score": "0.2495", "loss": "4.2995", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newectException(t); } }"}
+{"time": "2021-01-23 07:39:53.726329", "n_pass": [653, 119, 28], "score": "0.2495", "loss": "4.2995", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newctException(t); } }"}
+{"time": "2021-01-23 07:40:02.931811", "n_pass": [660, 126, 29], "score": "0.3672", "loss": "3.8515", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newctExcetion(t); } }"}
+{"time": "2021-01-23 07:40:10.835029", "n_pass": [669, 132, 30], "score": "0.3672", "loss": "3.8515", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newctExcetion(t);} }"}
+{"time": "2021-01-23 07:40:12.145030", "n_pass": [671, 133, 31], "score": "0.3672", "loss": "3.8515", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return newctExcetion(t);}}"}
+{"time": "2021-01-23 07:40:46.806895", "n_pass": [758, 154, 32], "score": "0.3672", "loss": "3.8515", "code": "on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return ewctExcetion(t);}}"}
+
+Minimal simplified code:
+on toConnectException(e t){if(t instanceof n){return(ConnectException)t;}else{return ewctExcetion(t);}}
+

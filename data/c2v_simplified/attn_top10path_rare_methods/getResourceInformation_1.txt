@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/core/internal/resource/DocumentMapperUtil_getResourceInformation.java
+method_name = getResourceInformation
+method_body = public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); }
+
+topk path-contexts:
+[0.1493] resourcetype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getresourceinformation
+[0.1423] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getresourceinformation
+[0.1358] resourcetype,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),resourceregistry
+[0.0834] resourceinformation,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),resourcetype
+[0.0806] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),resourceregistry
+[0.0692] resourceinformation,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0556] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getresourceinformation
+[0.0541] resourceinformation,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),string
+[0.0516] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr0),resourceregistry
+[0.0313] resourcetype,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr)_(NameExpr2),getresourceinformation
+
+topk terminals:
+['resourcetype', 'getresourceinformation', 'METHOD_NAME', 'getresourceinformation', 'resourcetype', 'resourceregistry', 'resourceinformation', 'resourcetype', 'METHOD_NAME', 'resourceregistry', 'resourceinformation', 'METHOD_NAME', 'string', 'getresourceinformation', 'resourceinformation', 'string', 'string', 'resourceregistry', 'resourcetype', 'getresourceinformation']
+

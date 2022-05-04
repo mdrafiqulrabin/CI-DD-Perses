@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/AgentResults_getFinalScore.java
+method_name = getFinalScore
+method_body = public String getFinalScore() { return Validator.check(finalScore, "0").replace(',', '.'); }
+predict, score, loss = getFinalScore, 0.47387525, 1.6009771
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:57:53.068012", "n_pass": [1, 1, 1], "score": "0.4739", "loss": "1.601", "code": "public String getFinalScore() { return Validator.check(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-20 05:57:54.749603", "n_pass": [26, 2, 2], "score": "0.5247", "loss": "1.3656", "code": "public String getFinalScore() { return Validator.check(finalScore, \"0\").replace(','); }"}
+{"time": "2021-01-20 05:57:56.438170", "n_pass": [49, 3, 3], "score": "0.5247", "loss": "1.3656", "code": "String getFinalScore() { return Validator.check(finalScore, \"0\").replace(','); }"}
+{"time": "2021-01-20 05:57:57.745781", "n_pass": [53, 4, 4], "score": "0.3226", "loss": "2.2244", "code": "String getFinalScore() { Validator.check(finalScore, \"0\").replace(','); }"}
+{"time": "2021-01-20 05:58:04.765421", "n_pass": [96, 8, 5], "score": "0.3226", "loss": "2.2244", "code": "String getFinalScore() { Validator.check(finalScore,\"0\").replace(','); }"}
+{"time": "2021-01-20 05:58:06.100329", "n_pass": [98, 9, 6], "score": "0.3088", "loss": "2.3008", "code": "String getFinalScore() { Validator.check(finalScore,\"\").replace(','); }"}
+{"time": "2021-01-20 05:58:08.489622", "n_pass": [111, 10, 7], "score": "0.3088", "loss": "2.3008", "code": "String getFinalScore(){ Validator.check(finalScore,\"\").replace(','); }"}
+{"time": "2021-01-20 05:58:09.800319", "n_pass": [113, 11, 8], "score": "0.3088", "loss": "2.3008", "code": "String getFinalScore(){Validator.check(finalScore,\"\").replace(','); }"}
+{"time": "2021-01-20 05:58:14.529243", "n_pass": [152, 13, 9], "score": "0.3088", "loss": "2.3008", "code": "String getFinalScore(){Validator.check(finalScore,\"\").replace(',');}"}
+
+Minimal simplified code:
+String getFinalScore(){Validator.check(finalScore,"").replace(',');}
+

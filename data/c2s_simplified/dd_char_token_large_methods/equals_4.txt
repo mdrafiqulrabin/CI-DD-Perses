@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2seq/dd_token_large_methods/equals_4.txt
+method_name = equals
+method_body = boolean equals(Object obj){if(this==obj){}{}if(getClass()!=obj())if(N){}{}if(c){}if(db){}if(dr){}if(hashAlg){if(null){}}{}if(hashSeed){}if(pkLen){}{}if(q=other)if(sparse){}}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 00:48:57.530394", "n_pass": [1, 1, 1], "score": "0.2134", "loss": "2.5365", "code": "boolean equals(Object obj){if(this==obj){}{}if(getClass()!=obj())if(N){}{}if(c){}if(db){}if(dr){}if(hashAlg){if(null){}}{}if(hashSeed){}if(pkLen){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:48:58.888696", "n_pass": [10, 2, 2], "score": "0.3721", "loss": "1.787", "code": "boolean equals(Object obj){if(this==obj){}{}if(getClass()!=obj())if(N){}{}if(c){}if(dbSeed){}if(pkLen){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:49:00.241517", "n_pass": [37, 3, 3], "score": "0.343", "loss": "1.8728", "code": "boolean equals(Object obj){if(this==obj){}{}if(getClass()!=obj())if(N){}{}if(c){}if(dbkLen){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:49:06.361336", "n_pass": [79, 7, 4], "score": "0.1931", "loss": "2.5251", "code": "boolean equals(t obj){if(this==obj){}{}if(getClass()!=obj())if(N){}{}if(c){}if(dbkLen){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:49:09.067923", "n_pass": [86, 9, 5], "score": "0.208", "loss": "2.4608", "code": "boolean equals(t obj){if(this==obj){}{}if(get()!=obj())if(N){}{}if(c){}if(dbkLen){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:49:15.168991", "n_pass": [158, 13, 6], "score": "0.2292", "loss": "2.3064", "code": "boolean equals(t obj){if(this==obj){}{}if(get()!=obj())if(N){}{}if(c){}if(dbn){}{}if(q=other)if(sparse){}}"}
+{"time": "2021-01-22 00:49:19.314425", "n_pass": [166, 16, 7], "score": "0.1882", "loss": "2.4799", "code": "boolean equals(t obj){if(this==obj){}{}if(get()!=obj())if(N){}{}if(c){}if(dbn){}{}if(q=other)if(sse){}}"}
+{"time": "2021-01-22 00:49:26.256152", "n_pass": [178, 20, 8], "score": "0.1887", "loss": "2.4499", "code": "boolean equals(t o){if(this==obj){}{}if(get()!=obj())if(N){}{}if(c){}if(dbn){}{}if(q=other)if(sse){}}"}
+{"time": "2021-01-22 00:49:39.547656", "n_pass": [295, 28, 9], "score": "0.1503", "loss": "2.7336", "code": "boolean equals(t o){if(his==obj){}{}if(get()!=obj())if(N){}{}if(c){}if(dbn){}{}if(q=other)if(sse){}}"}
+{"time": "2021-01-22 00:49:57.458251", "n_pass": [325, 41, 10], "score": "0.1502", "loss": "2.7065", "code": "boolean equals(t o){if(his==obj){}{}if(get()!=obj())if(N){}if(c){}if(dbn){}{}if(q=other)if(sse){}}"}
+{"time": "2021-01-22 00:50:01.660435", "n_pass": [334, 44, 11], "score": "0.153", "loss": "2.6948", "code": "boolean equals(t o){if(his==obj){}{}if(get()!=obj())if(N){}if(c){}if(dbn){}if(q=other)if(sse){}}"}
+{"time": "2021-01-22 00:50:03.021551", "n_pass": [337, 45, 12], "score": "0.1439", "loss": "2.6824", "code": "boolean equals(t o){if(his==obj){}{}if(get()!=obj())if(N){}if(c){}if(dbn){}if(other)if(sse){}}"}
+{"time": "2021-01-22 00:50:05.677873", "n_pass": [339, 47, 13], "score": "0.1575", "loss": "2.5368", "code": "boolean equals(t o){if(his==obj){}{}if(get()!=obj())if(N){}if(c){}if(dbn){}if(otr)if(sse){}}"}
+{"time": "2021-01-22 00:50:34.114947", "n_pass": [387, 66, 14], "score": "0.18", "loss": "2.4687", "code": "boolean equals(t o){if(his==obj){}{}if(ge()!=obj())if(N){}if(c){}if(dbn){}if(otr)if(sse){}}"}
+{"time": "2021-01-22 00:50:37.581977", "n_pass": [401, 68, 15], "score": "0.2253", "loss": "2.2236", "code": "boolean equals(t o){if(his==obj){}{}if(ge()!=obj())if(N){}if(c)if(dbn){}if(otr)if(sse){}}"}
+{"time": "2021-01-22 00:50:54.943748", "n_pass": [438, 79, 16], "score": "0.1859", "loss": "2.4319", "code": "boolean equals(t o){if(is==obj){}{}if(ge()!=obj())if(N){}if(c)if(dbn){}if(otr)if(sse){}}"}
+{"time": "2021-01-22 00:50:58.069816", "n_pass": [440, 81, 17], "score": "0.1789", "loss": "2.4409", "code": "boolean equals(t o){if(i==obj){}{}if(ge()!=obj())if(N){}if(c)if(dbn){}if(otr)if(sse){}}"}
+
+Minimal simplified code:
+boolean equals(t o){if(i==obj){}{}if(ge()!=obj())if(N){}if(c)if(dbn){}if(otr)if(sse){}}
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/choosers/AbstractExtensionFileFilterFileChooser_initializeFilters.java
+method_name = initializeFilters
+method_body = protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:57:29.702195", "score": "0.3516", "loss": "1.9742", "code": "class T { protected static synchronized void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); } }"}
+{"time": "2021-01-24 05:58:49.839911", "score": "0.3516", "loss": "1.9742", "code": "class T { void initializeFilters(AbstractExtensionFileFilterFileChooser chooser) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); } }"}
+{"time": "2021-01-24 05:59:00.648551", "score": "0.5601", "loss": "0.8267", "code": "class T { void initializeFilters( ) { if (!chooser.getFiltersInitialized()) chooser.doInitializeFilters(); } }"}
+{"time": "2021-01-24 05:59:49.063177", "score": "0.4792", "loss": "0.8218", "code": "class T { void initializeFilters( ) { chooser.doInitializeFilters(); } }"}
+
+Minimal simplified code:
+class T {
+                              void initializeFilters(                                              ) {                                       chooser.doInitializeFilters(); }
+}
+
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/web/TestWebXmlOrdering_init.java
+method_name = init
+method_body = @Override public void init() { a.addAfterOrdering("b"); b.addAfterOrdering("z"); b.addBeforeOrdering("y"); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 18:37:37.150569", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterOrdering(\"z\"); b.addBeforeOrdering(\"y\"); } }"}
+{"time": "2020-12-28 18:40:38.440606", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public void init() { a.addAfterOrdering(\"b\"); b.addAfterOrdering(\"z\"); } }"}
+{"time": "2020-12-28 18:41:53.508523", "score": "0.9998", "loss": "0.0002", "code": "class T { @Override public void init() { a.addAfterOrdering(\"b\"); } }"}
+{"time": "2020-12-28 18:43:08.309217", "score": "1.0", "loss": "0.0", "code": "class T { void init() { a.addAfterOrdering(\"b\"); } }"}
+
+Minimal simplified code:
+class T {
+                 void init() { a.addAfterOrdering(   );                                                    }
+}
+
+

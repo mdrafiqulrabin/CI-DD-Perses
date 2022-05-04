@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/drakeet__MultiType/sample/src/androidTest/java/me/drakeet/multitype/sample/RecyclerViewMatcher_withRecyclerView.java
+method_name = withRecyclerView
+method_body = public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:43:57.703959", "score": "0.2744", "loss": "2.4624", "code": "class T { public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); } }"}
+{"time": "2021-01-24 02:45:19.823516", "score": "0.2744", "loss": "2.4624", "code": "class T { RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); } }"}
+{"time": "2021-01-24 02:45:30.672213", "score": "0.2744", "loss": "2.4624", "code": "class T { RecyclerViewMatcher withRecyclerView( int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); } }"}
+
+Minimal simplified code:
+class T {
+              RecyclerViewMatcher withRecyclerView(      int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }
+}
+
+

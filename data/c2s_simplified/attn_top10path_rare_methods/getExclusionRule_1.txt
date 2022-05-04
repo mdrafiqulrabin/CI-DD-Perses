@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/calendar/calendar-impl/impl/src/java/org/sakaiproject/calendar/impl/GenericCalendarImporter_getExclusionRule.java
+method_name = getExclusionRule
+method_body = public RecurrenceRule getExclusionRule() { return this.exclusionRule; }
+
+topk path-contexts for sub-token: get
+[0.2734] this,ThisExpr0|FieldAccessExpr|NameExpr2,exclusion|rule
+[0.2534] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.2479] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.0677] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0221] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0083] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: get
+['this', 'exclusion|rule', 'recurrence|rule', 'exclusion|rule', 'METHOD_NAME', 'exclusion|rule', 'recurrence|rule', 'METHOD_NAME', 'recurrence|rule', 'this', 'METHOD_NAME', 'this']
+
+topk path-contexts for sub-token: exclusion
+[0.3616] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.3614] this,ThisExpr0|FieldAccessExpr|NameExpr2,exclusion|rule
+[0.1573] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.0286] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0116] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0012] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: exclusion
+['METHOD_NAME', 'exclusion|rule', 'this', 'exclusion|rule', 'recurrence|rule', 'exclusion|rule', 'recurrence|rule', 'METHOD_NAME', 'recurrence|rule', 'this', 'METHOD_NAME', 'this']
+
+topk path-contexts for sub-token: rule
+[0.2815] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.2491] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.2170] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,exclusion|rule
+[0.1305] this,ThisExpr0|FieldAccessExpr|NameExpr2,exclusion|rule
+[0.0659] recurrence|rule,ClassOrInterfaceType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0028] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: rule
+['recurrence|rule', 'METHOD_NAME', 'recurrence|rule', 'exclusion|rule', 'METHOD_NAME', 'exclusion|rule', 'this', 'exclusion|rule', 'recurrence|rule', 'this', 'METHOD_NAME', 'this']
+

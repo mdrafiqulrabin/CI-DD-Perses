@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/udacity__Advanced_Android_Development/app/src/main/java/com/example/android/sunshine/app/widget/DetailWidgetProvider_setRemoteAdapter.java
+method_name = setRemoteAdapter
+method_body = @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }
+predict, score, loss = setRemoteAdapter, 0.48405152559280396, 0.7273780107498169
+
+Trace of simplified code(s):
+{"time": "2021-01-23 22:48:11.214154", "n_pass": [1, 1, 1], "score": "0.4841", "loss": "0.7274", "code": "@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }"}
+{"time": "2021-01-23 22:48:13.947469", "n_pass": [8, 2, 2], "score": "0.499", "loss": "0.6968", "code": "void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }"}
+{"time": "2021-01-23 22:48:19.885756", "n_pass": [44, 4, 3], "score": "0.4829", "loss": "0.7295", "code": "void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(contetRemoteViewsService.class)); }"}
+{"time": "2021-01-23 22:48:22.653486", "n_pass": [45, 5, 4], "score": "0.4829", "loss": "0.7295", "code": "void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(contevice.class)); }"}
+{"time": "2021-01-23 22:48:25.817635", "n_pass": [76, 6, 5], "score": "0.4786", "loss": "0.7384", "code": "void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(contass)); }"}
+{"time": "2021-01-23 22:48:29.822582", "n_pass": [84, 7, 6], "score": "0.5015", "loss": "0.6915", "code": "void setRemoteAdapter(Context context, @Noinal RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(contass)); }"}
+{"time": "2021-01-23 22:48:32.577077", "n_pass": [86, 8, 7], "score": "0.8918", "loss": "0.1191", "code": "void setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(contass)); }"}
+{"time": "2021-01-23 22:48:40.798556", "n_pass": [92, 11, 8], "score": "0.7282", "loss": "0.3253", "code": "void setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(Ret_list, new Intent(contass)); }"}
+{"time": "2021-01-23 22:48:43.527164", "n_pass": [94, 12, 9], "score": "0.7279", "loss": "0.3256", "code": "void setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(Ret_list,ent(contass)); }"}
+{"time": "2021-01-23 22:48:53.038477", "n_pass": [109, 15, 10], "score": "0.7124", "loss": "0.3466", "code": "void setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(Rent(contass)); }"}
+{"time": "2021-01-23 22:49:02.546527", "n_pass": [153, 18, 11], "score": "0.7628", "loss": "0.2814", "code": "void setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:05.277280", "n_pass": [156, 19, 12], "score": "0.7618", "loss": "0.283", "code": "d setRemoteAdapter(Context context, @Noinal Rews views) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:10.543762", "n_pass": [164, 20, 13], "score": "0.6638", "loss": "0.4223", "code": "d setRemoteAdapter(Coxt context, @Noinal Rews views) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:13.319906", "n_pass": [166, 21, 14], "score": "0.818", "loss": "0.2149", "code": "d setRemoteAdapter(Coxt text, @Noinal Rews views) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:16.063218", "n_pass": [169, 22, 15], "score": "0.8278", "loss": "0.2026", "code": "d setRemoteAdapter(Coxt text, @Nl Rews views) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:18.836966", "n_pass": [172, 23, 16], "score": "0.9028", "loss": "0.122", "code": "d setRemoteAdapter(Coxt text, @Nl Rews v) { views.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:21.589603", "n_pass": [174, 24, 17], "score": "0.9022", "loss": "0.1195", "code": "d setRemoteAdapter(Coxt text, @Nl Rews v) { s.setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:49:38.177422", "n_pass": [238, 29, 18], "score": "0.8766", "loss": "0.1824", "code": "d setRemoteAdapter(Coxt text, @Nl Rews v) { setRemoteAdapter(Rent(ass)); }"}
+{"time": "2021-01-23 22:50:00.132014", "n_pass": [247, 37, 19], "score": "0.9531", "loss": "0.0686", "code": "d setRemoteAdapter(Coxt text, @Nl Rews v) { setRemoteAdapter(Rt(ass)); }"}
+{"time": "2021-01-23 22:50:02.865339", "n_pass": [249, 38, 20], "score": "0.9462", "loss": "0.0662", "code": "d setRemoteAdapter(Coxt text, @Nl Rews v) { setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:50:11.015198", "n_pass": [267, 39, 21], "score": "0.9292", "loss": "0.0883", "code": "d setRemoteAdapter(Ct text, @Nl Rews v) { setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:50:13.766484", "n_pass": [269, 40, 22], "score": "0.7422", "loss": "0.3322", "code": "d setRemoteAdapter(Ct xt, @Nl Rews v) { setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:50:16.528418", "n_pass": [274, 41, 23], "score": "0.7535", "loss": "0.3205", "code": "d setRemoteAdapter(Ct xt, @Nl ws v) { setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:50:49.704947", "n_pass": [369, 50, 24], "score": "0.7535", "loss": "0.3205", "code": "d setRemoteAdapter(Ct xt, @Nl ws v){ setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:50:52.457207", "n_pass": [371, 51, 25], "score": "0.7535", "loss": "0.3205", "code": "d setRemoteAdapter(Ct xt, @Nl ws v){setRemoteAdapter(Rt(s)); }"}
+{"time": "2021-01-23 22:51:39.152804", "n_pass": [389, 68, 26], "score": "0.6748", "loss": "0.4356", "code": "d setRemoteAdapter(Ct xt, @Nl ws v){setRemoteAdapter(t(s)); }"}
+{"time": "2021-01-23 22:51:41.910136", "n_pass": [390, 69, 27], "score": "0.6769", "loss": "0.4335", "code": "d setRemoteAdapter(Ct xt, @Nl ws v){setRemoteAdapter((s)); }"}
+{"time": "2021-01-23 22:51:44.666886", "n_pass": [396, 70, 28], "score": "0.6769", "loss": "0.4335", "code": "d setRemoteAdapter(Ct xt, @Nl ws v){setRemoteAdapter((s));}"}
+{"time": "2021-01-23 22:51:55.131614", "n_pass": [417, 71, 29], "score": "0.7587", "loss": "0.3421", "code": "d setRemoteAdapter(t xt, @Nl ws v){setRemoteAdapter((s));}"}
+{"time": "2021-01-23 22:51:57.923265", "n_pass": [420, 72, 30], "score": "0.7642", "loss": "0.3259", "code": "d setRemoteAdapter(t t, @Nl ws v){setRemoteAdapter((s));}"}
+{"time": "2021-01-23 22:52:00.673379", "n_pass": [423, 73, 31], "score": "0.7642", "loss": "0.3259", "code": "d setRemoteAdapter(t t,@Nl ws v){setRemoteAdapter((s));}"}
+{"time": "2021-01-23 22:52:03.443379", "n_pass": [425, 74, 32], "score": "0.8221", "loss": "0.2464", "code": "d setRemoteAdapter(t t,@l ws v){setRemoteAdapter((s));}"}
+{"time": "2021-01-23 22:52:06.189869", "n_pass": [428, 75, 33], "score": "0.755", "loss": "0.3303", "code": "d setRemoteAdapter(t t,@l s v){setRemoteAdapter((s));}"}
+
+Minimal simplified code:
+d setRemoteAdapter(t t,@l s v){setRemoteAdapter((s));}
+

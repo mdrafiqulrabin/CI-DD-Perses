@@ -1,0 +1,49 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/tribes/membership/Constants_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { System.out.println(Arrays.toString("TRIBES-B".getBytes())); System.out.println(Arrays.toString("TRIBES-E".getBytes())); }
+predict, score, loss = main, 0.9974711, 0.0033789314
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:53:51.355147", "n_pass": [1, 1, 1], "score": "0.9975", "loss": "0.0034", "code": "public static void main(String[] args) throws Exception { System.out.println(Arrays.toString(\"TRIBES-B\".getBytes())); System.out.println(Arrays.toString(\"TRIBES-E\".getBytes())); }"}
+{"time": "2020-12-27 23:53:53.467344", "n_pass": [51, 2, 2], "score": "0.9978", "loss": "0.0031", "code": "public static void main(String[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); System.out.println(Arrays.toString(\"TRIBES-E\".getBytes())); }"}
+{"time": "2020-12-27 23:53:54.849361", "n_pass": [55, 3, 3], "score": "0.9961", "loss": "0.0055", "code": "public static void main(String[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arrays.toString(\"TRIBES-E\".getBytes())); }"}
+{"time": "2020-12-27 23:53:56.582274", "n_pass": [100, 4, 4], "score": "0.9987", "loss": "0.002", "code": "public static void main(String[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TRIBES-E\".getBytes())); }"}
+{"time": "2020-12-27 23:53:57.944093", "n_pass": [101, 5, 5], "score": "0.998", "loss": "0.003", "code": "public static void main(String[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:53:59.347240", "n_pass": [107, 6, 6], "score": "0.9922", "loss": "0.0113", "code": "public staoid main(String[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:01.091227", "n_pass": [110, 7, 7], "score": "0.989", "loss": "0.0144", "code": "public staoid main(S[] args) throws Exception { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:02.440731", "n_pass": [115, 8, 8], "score": "0.982", "loss": "0.027", "code": "public staoid main(S[] args) throws Exce { System.out.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:03.865916", "n_pass": [117, 9, 9], "score": "0.9866", "loss": "0.0198", "code": "public staoid main(S[] args) throws Exce { Syst.println(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:05.288111", "n_pass": [118, 10, 10], "score": "0.6612", "loss": "0.4834", "code": "public staoid main(S[] args) throws Exce { Systln(ring(\"TRIBES-B\".getBytes())); Sysntln(Arraysing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:09.287666", "n_pass": [126, 13, 11], "score": "0.8972", "loss": "0.1527", "code": "public staoid main(S[] args) throws Exce { Systln(ring(\"TRIBES-B\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:10.753875", "n_pass": [132, 14, 12], "score": "0.8972", "loss": "0.1527", "code": "publioid main(S[] args) throws Exce { Systln(ring(\"TRIBES-B\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:12.487585", "n_pass": [142, 15, 13], "score": "0.7094", "loss": "0.4548", "code": "publioid main(S[] args) throws Exce { Systln(ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:15.141126", "n_pass": [151, 17, 14], "score": "0.5708", "loss": "0.7031", "code": "oid main(S[] args) throws Exce { Systln(ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:18.219866", "n_pass": [203, 19, 15], "score": "0.7646", "loss": "0.3663", "code": "d main(S[] args) throws Exce { Systln(ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:23.462791", "n_pass": [214, 22, 16], "score": "0.9456", "loss": "0.0802", "code": "d main(S[] args) throws E { Systln(ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:24.827062", "n_pass": [216, 23, 17], "score": "0.9182", "loss": "0.129", "code": "d main(S[] args) throws E { tln(ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:26.163963", "n_pass": [217, 24, 18], "score": "0.9218", "loss": "0.132", "code": "d main(S[] args) throws E { (ring(\"TR\".getBytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:27.504806", "n_pass": [222, 25, 19], "score": "0.9504", "loss": "0.0767", "code": "d main(S[] args) throws E { (ring(\"TR\".gytes())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:28.852259", "n_pass": [223, 26, 20], "score": "0.908", "loss": "0.1511", "code": "d main(S[] args) throws E { (ring(\"TR\".gs())); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:30.226260", "n_pass": [224, 27, 21], "score": "0.8105", "loss": "0.3197", "code": "d main(S[] args) throws E { (ring(\"TR\".g)); Sysntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:31.559769", "n_pass": [226, 28, 22], "score": "0.8105", "loss": "0.3197", "code": "d main(S[] args) throws E { (ring(\"TR\".g));sntln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:32.908875", "n_pass": [227, 29, 23], "score": "0.8218", "loss": "0.3707", "code": "d main(S[] args) throws E { (ring(\"TR\".g));ln(ing(\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:34.269396", "n_pass": [229, 30, 24], "score": "0.272", "loss": "1.921", "code": "d main(S[] args) throws E { (ring(\"TR\".g));ln((\"TE\".getBytes())); }"}
+{"time": "2020-12-27 23:54:35.604444", "n_pass": [232, 31, 25], "score": "0.3596", "loss": "1.7006", "code": "d main(S[] args) throws E { (ring(\"TR\".g));ln((\"TE\".Bytes())); }"}
+{"time": "2020-12-27 23:54:36.939447", "n_pass": [233, 32, 26], "score": "0.3576", "loss": "1.5976", "code": "d main(S[] args) throws E { (ring(\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:46.025913", "n_pass": [316, 35, 27], "score": "0.3576", "loss": "1.5976", "code": "d main(S[]args) throws E { (ring(\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:52.729711", "n_pass": [322, 40, 28], "score": "0.3576", "loss": "1.5976", "code": "d main(S[]args)throws E { (ring(\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:54.086162", "n_pass": [331, 41, 29], "score": "0.3576", "loss": "1.5976", "code": "d main(S[]args)throws E{ (ring(\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:55.424696", "n_pass": [334, 42, 30], "score": "0.5344", "loss": "1.0132", "code": "d main(S[]args)throws E{ (ng(\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:56.756129", "n_pass": [335, 43, 31], "score": "0.5345", "loss": "1.033", "code": "d main(S[]args)throws E{ ((\"TR\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:58.085556", "n_pass": [337, 44, 32], "score": "0.7245", "loss": "0.5872", "code": "d main(S[]args)throws E{ ((\"\".g));ln((\"TE\".es())); }"}
+{"time": "2020-12-27 23:54:59.420468", "n_pass": [341, 45, 33], "score": "0.3484", "loss": "1.5291", "code": "d main(S[]args)throws E{ ((\"\".g));((\"TE\".es())); }"}
+{"time": "2020-12-27 23:55:12.573834", "n_pass": [414, 52, 34], "score": "0.3484", "loss": "1.5291", "code": "d main(S[]args)throws E{ ((\"\".g));((\"TE\".es()));}"}
+{"time": "2020-12-27 23:55:21.738701", "n_pass": [439, 57, 35], "score": "0.3484", "loss": "1.5291", "code": "d main(S[]args)throws E{((\"\".g));((\"TE\".es()));}"}
+{"time": "2020-12-27 23:55:23.162896", "n_pass": [452, 58, 36], "score": "0.4818", "loss": "1.1402", "code": "d main(S[]args)throws E{((\"\".g));((\"E\".es()));}"}
+{"time": "2020-12-27 23:55:24.468257", "n_pass": [453, 59, 37], "score": "0.521", "loss": "1.0599", "code": "d main(S[]args)throws E{((\"\".g));((\"\".es()));}"}
+{"time": "2020-12-27 23:55:25.828436", "n_pass": [456, 60, 38], "score": "0.5187", "loss": "1.0024", "code": "d main(S[]args)throws E{((\"\".g));((\"\".s()));}"}
+
+Minimal simplified code:
+d main(S[]args)throws E{(("".g));(("".s()));}
+

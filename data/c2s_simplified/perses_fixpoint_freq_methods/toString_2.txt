@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/http/Cookies_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println("=== Cookies ==="); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:40:48.376591", "score": "0.9511", "loss": "0.063", "code": "class T { @Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println(\"=== Cookies ===\"); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); } }"}
+{"time": "2020-12-21 09:41:25.760013", "score": "0.5124", "loss": "0.881", "code": "class T { @Override public String toString() { pw.println(getCookie(i).toString()); } }"}
+{"time": "2020-12-21 09:42:29.366953", "score": "0.5124", "loss": "0.881", "code": "class T { @Override String toString() { pw.println(getCookie(i).toString()); } }"}
+{"time": "2020-12-21 09:42:50.553293", "score": "0.8117", "loss": "0.3037", "code": "class T { @Override String toString() { pw.println(getCookie( ).toString()); } }"}
+{"time": "2020-12-21 09:44:11.065027", "score": "0.3681", "loss": "1.2735", "code": "class T { String toString() { pw.println(getCookie( ).toString()); } }"}
+
+Minimal simplified code:
+class T {
+                 String toString()                                                                                                                                                                            { pw.println(getCookie( ).toString()); }
+}
+
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/calendar/calendar-impl/impl/src/java/org/sakaiproject/calendar/impl/GenericCalendarImporter_getExclusionRule.java
+method_name = getExclusionRule
+method_body = public RecurrenceRule getExclusionRule() { return this.exclusionRule; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:34:30.763111", "score": "0.4556", "loss": "0.8926", "code": "class T { public RecurrenceRule getExclusionRule() { return this.exclusionRule; } }"}
+{"time": "2021-01-24 06:35:29.655023", "score": "0.9937", "loss": "0.1813", "code": "class T { public RecurrenceRule getExclusionRule() { return exclusionRule; } }"}
+{"time": "2021-01-24 06:35:40.317452", "score": "0.9937", "loss": "0.1813", "code": "class T { RecurrenceRule getExclusionRule() { return exclusionRule; } }"}
+
+Minimal simplified code:
+class T {
+       RecurrenceRule getExclusionRule() { return      exclusionRule; }
+}
+
+

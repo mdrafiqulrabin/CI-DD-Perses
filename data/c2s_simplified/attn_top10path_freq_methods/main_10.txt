@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/MonitorStarter_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, "conf/dubbo.properties"); Main.main(args); }
+
+topk path-contexts for sub-token: main
+[0.1073] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1031] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0947] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0368] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,system
+[0.0364] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,confdubboproperties
+[0.0349] args,NameExpr2|MethodCallExpr|NameExpr3,main
+[0.0226] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,dubbo|properties|key
+[0.0222] [],ArrayBracketPair2|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,confdubboproperties
+[0.0197] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0195] dubbo|properties|key,NameExpr2|FieldAccessExpr2|MethodCallExpr|StringLiteralExpr3,confdubboproperties
+
+topk terminals for sub-token: main
+['args', '[]', 'args', 'string', 'string', '[]', 'args', 'system', 'args', 'confdubboproperties', 'args', 'main', 'string', 'dubbo|properties|key', '[]', 'confdubboproperties', 'void', 'string', 'dubbo|properties|key', 'confdubboproperties']
+

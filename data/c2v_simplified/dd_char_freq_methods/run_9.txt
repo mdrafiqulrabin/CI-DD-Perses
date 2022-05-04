@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/jsp/applet/Clock2_run.java
+method_name = run
+method_body = @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }
+predict, score, loss = run, 0.9999914169311523, 1.0013530300057027e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 10:00:59.633873", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:02.283782", "n_pass": [20, 2, 2], "score": "0.952", "loss": "0.0773", "code": "d run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:07.596338", "n_pass": [53, 4, 3], "score": "0.9772", "loss": "0.0392", "code": "d run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:12.904428", "n_pass": [99, 6, 4], "score": "0.9797", "loss": "0.0355", "code": "d run() { d me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:15.546022", "n_pass": [101, 7, 5], "score": "0.8472", "loss": "0.2753", "code": "d run() { d me = ThrurrentThread(); while (timer == me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:18.184212", "n_pass": [102, 8, 6], "score": "0.8472", "loss": "0.2753", "code": "d run() { d me = ThrtThread(); while (timer == me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:20.830428", "n_pass": [103, 9, 7], "score": "0.8472", "loss": "0.2753", "code": "d run() { d me = Thrad(); while (timer == me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:23.458261", "n_pass": [107, 10, 8], "score": "0.7017", "loss": "0.4995", "code": "d run() { d me = Thrad(); while (ti= me) { try { Thread.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:26.100735", "n_pass": [111, 11, 9], "score": "0.7009", "loss": "0.4955", "code": "d run() { d me = Thrad(); while (ti= me) { try { T.sleep(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:28.736024", "n_pass": [112, 12, 10], "score": "0.7626", "loss": "0.485", "code": "d run() { d me = Thrad(); while (ti= me) { try { Tp(100); } catch (Interrupt e) { } repaint(); } }"}
+{"time": "2020-12-28 10:01:40.133773", "n_pass": [183, 16, 11], "score": "0.702", "loss": "0.6672", "code": "d run() { d me = Thrad(); while (ti= me) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:46.235234", "n_pass": [193, 18, 12], "score": "0.8347", "loss": "0.3571", "code": "d run() { me = Thrad(); while (ti= me) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:48.841733", "n_pass": [196, 19, 13], "score": "0.887", "loss": "0.2749", "code": "d run() { me =hrad(); while (ti= me) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:51.458652", "n_pass": [197, 20, 14], "score": "0.7941", "loss": "0.473", "code": "d run() { me =ad(); while (ti= me) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:54.076792", "n_pass": [199, 21, 15], "score": "0.5056", "loss": "1.2465", "code": "d run() { me =ad; while (ti= me) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:56.710262", "n_pass": [205, 22, 16], "score": "0.999", "loss": "0.0013", "code": "d run() { me =ad; while (tie) { try { Tp(100); } catch (Interrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:01:59.327429", "n_pass": [216, 23, 17], "score": "0.9968", "loss": "0.0036", "code": "d run() { me =ad; while (tie) { try { Tp(100); } catch (Irrupt e) { }paint(); } }"}
+{"time": "2020-12-28 10:02:01.956926", "n_pass": [217, 24, 18], "score": "0.9995", "loss": "0.0007", "code": "d run() { me =ad; while (tie) { try { Tp(100); } catch (Ipt e) { }paint(); } }"}
+{"time": "2020-12-28 10:02:04.575200", "n_pass": [221, 25, 19], "score": "0.9907", "loss": "0.0161", "code": "d run() { me =ad; while (tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:08.000617", "n_pass": [231, 26, 20], "score": "0.9804", "loss": "0.0344", "code": "d run() { mead; while (tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:10.619054", "n_pass": [232, 27, 21], "score": "0.9808", "loss": "0.0334", "code": "d run() { me; while (tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:14.077012", "n_pass": [259, 28, 22], "score": "0.9806", "loss": "0.0338", "code": "d run() { ; while (tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:16.708932", "n_pass": [260, 29, 23], "score": "0.9806", "loss": "0.0338", "code": "d run() { while (tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:23.551074", "n_pass": [341, 30, 24], "score": "0.9806", "loss": "0.0338", "code": "d run() { while(tie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:26.160652", "n_pass": [343, 31, 25], "score": "0.8711", "loss": "0.2727", "code": "d run() { while(ie) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:28.771184", "n_pass": [344, 32, 26], "score": "0.7512", "loss": "0.5989", "code": "d run() { while(e) { try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:31.386299", "n_pass": [347, 33, 27], "score": "0.7512", "loss": "0.5989", "code": "d run() { while(e){ try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:33.997672", "n_pass": [349, 34, 28], "score": "0.7512", "loss": "0.5989", "code": "d run() { while(e){try { Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:36.610736", "n_pass": [353, 35, 29], "score": "0.7512", "loss": "0.5989", "code": "d run() { while(e){try{ Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:39.217875", "n_pass": [355, 36, 30], "score": "0.7512", "loss": "0.5989", "code": "d run() { while(e){try{Tp(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:41.839509", "n_pass": [356, 37, 31], "score": "0.8229", "loss": "0.3883", "code": "d run() { while(e){try{p(100); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:47.053386", "n_pass": [359, 39, 32], "score": "0.4774", "loss": "1.1617", "code": "d run() { while(e){try{p(0); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:54.332303", "n_pass": [383, 41, 33], "score": "0.4774", "loss": "1.1617", "code": "d run(){ while(e){try{p(0); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:02:56.966862", "n_pass": [385, 42, 34], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0); } catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:03:13.292162", "n_pass": [460, 46, 35], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0);} catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:03:15.901092", "n_pass": [462, 47, 36], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0);}catch (Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:03:18.513951", "n_pass": [468, 48, 37], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0);}catch(Ipt e) { }nt(); } }"}
+{"time": "2020-12-28 10:03:28.970292", "n_pass": [476, 52, 38], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0);}catch(Ipt e){ }nt(); } }"}
+{"time": "2020-12-28 10:03:31.578544", "n_pass": [478, 53, 39], "score": "0.4774", "loss": "1.1617", "code": "d run(){while(e){try{p(0);}catch(Ipt e){}nt(); } }"}
+{"time": "2020-12-28 10:03:34.206696", "n_pass": [480, 54, 40], "score": "0.454", "loss": "0.9003", "code": "d run(){while(e){try{p(0);}catch(Ipt e){}t(); } }"}
+{"time": "2020-12-28 10:03:36.847657", "n_pass": [485, 55, 41], "score": "0.454", "loss": "0.9003", "code": "d run(){while(e){try{p(0);}catch(Ipt e){}t();} }"}
+{"time": "2020-12-28 10:03:39.481925", "n_pass": [487, 56, 42], "score": "0.454", "loss": "0.9003", "code": "d run(){while(e){try{p(0);}catch(Ipt e){}t();}}"}
+
+Minimal simplified code:
+d run(){while(e){try{p(0);}catch(Ipt e){}t();}}
+

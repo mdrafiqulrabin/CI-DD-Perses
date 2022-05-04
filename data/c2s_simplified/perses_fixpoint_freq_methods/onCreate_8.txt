@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/VerticalGridFragment_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:06:34.610418", "score": "1.0", "loss": "0.0001", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); } }"}
+{"time": "2020-12-21 12:07:33.069515", "score": "1.0", "loss": "0.0002", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); } }"}
+{"time": "2020-12-21 12:07:54.429859", "score": "1.0", "loss": "0.0003", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); } }"}
+{"time": "2020-12-21 12:08:36.671459", "score": "1.0", "loss": "0.0003", "code": "class T { @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper( ); } }"}
+{"time": "2020-12-21 12:08:47.321499", "score": "0.9989", "loss": "0.0019", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper( ); } }"}
+{"time": "2020-12-21 12:09:08.409194", "score": "0.9333", "loss": "0.1069", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate( ); mVideoCursorAdapter.setMapper( ); } }"}
+{"time": "2020-12-21 12:09:56.345319", "score": "0.8387", "loss": "0.9448", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate( ); } }"}
+{"time": "2020-12-21 12:10:17.418177", "score": "0.9312", "loss": "0.0818", "code": "class T { void onCreate( ) { super.onCreate( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void onCreate(                         ) { super.onCreate(                  );                                                                                                                                                                                                                               }
+}
+
+

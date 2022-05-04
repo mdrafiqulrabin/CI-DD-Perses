@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/Http11NioProtocol_getUseSendfile.java
+method_name = getUseSendfile
+method_body = public boolean getUseSendfile() { return ((NioEndpoint) endpoint).getUseSendfile(); }
+
+topk path-contexts for sub-token: get
+[0.1674] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.1602] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.1590] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1012] endpoint,NameExpr1|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.0967] nio|endpoint,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.0282] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0227] nio|endpoint,ClassOrInterfaceType0|CastExpr|NameExpr1,endpoint
+[0.0144] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0105] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+[0.0080] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+
+topk terminals for sub-token: get
+['METHOD_NAME', 'get|use|sendfile', 'boolean', 'get|use|sendfile', 'boolean', 'METHOD_NAME', 'endpoint', 'get|use|sendfile', 'nio|endpoint', 'get|use|sendfile', 'boolean', 'endpoint', 'nio|endpoint', 'endpoint', 'METHOD_NAME', 'endpoint', 'boolean', 'nio|endpoint', 'METHOD_NAME', 'nio|endpoint']
+
+topk path-contexts for sub-token: use
+[0.3034] nio|endpoint,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.2684] endpoint,NameExpr1|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.2193] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.1685] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.0122] nio|endpoint,ClassOrInterfaceType0|CastExpr|NameExpr1,endpoint
+[0.0050] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0025] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0022] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0015] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+[0.0015] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+
+topk terminals for sub-token: use
+['nio|endpoint', 'get|use|sendfile', 'endpoint', 'get|use|sendfile', 'METHOD_NAME', 'get|use|sendfile', 'boolean', 'get|use|sendfile', 'nio|endpoint', 'endpoint', 'boolean', 'endpoint', 'METHOD_NAME', 'endpoint', 'boolean', 'METHOD_NAME', 'boolean', 'nio|endpoint', 'METHOD_NAME', 'nio|endpoint']
+
+topk path-contexts for sub-token: sendfile
+[0.3715] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.2208] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,get|use|sendfile
+[0.2030] endpoint,NameExpr1|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.1976] nio|endpoint,ClassOrInterfaceType0|CastExpr|EnclosedExpr0|MethodCallExpr|NameExpr2,get|use|sendfile
+[0.0016] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0011] nio|endpoint,ClassOrInterfaceType0|CastExpr|NameExpr1,endpoint
+[0.0009] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|NameExpr1,endpoint
+[0.0006] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+[0.0005] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|EnclosedExpr|CastExpr|ClassOrInterfaceType0,nio|endpoint
+[0.0003] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: sendfile
+['METHOD_NAME', 'get|use|sendfile', 'boolean', 'get|use|sendfile', 'endpoint', 'get|use|sendfile', 'nio|endpoint', 'get|use|sendfile', 'boolean', 'endpoint', 'nio|endpoint', 'endpoint', 'METHOD_NAME', 'endpoint', 'METHOD_NAME', 'nio|endpoint', 'boolean', 'nio|endpoint', 'boolean', 'METHOD_NAME']
+

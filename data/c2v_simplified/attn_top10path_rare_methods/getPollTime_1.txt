@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/AprEndpoint_getPollTime.java
+method_name = getPollTime
+method_body = public int getPollTime() { return pollTime; }
+
+topk path-contexts:
+[0.4594] int,(PrimitiveType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),polltime
+[0.4396] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),polltime
+[0.1010] int,(PrimitiveType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['int', 'polltime', 'METHOD_NAME', 'polltime', 'int', 'METHOD_NAME']
+

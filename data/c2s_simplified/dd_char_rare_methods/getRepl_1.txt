@@ -1,0 +1,49 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_getRepl.java
+method_name = getRepl
+method_body = @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }
+predict, score, loss = getRepl, 0.47673824, 1.8164442
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:09:03.633919", "n_pass": [1, 1, 1], "score": "0.4767", "loss": "1.8164", "code": "@Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:06.264755", "n_pass": [21, 3, 2], "score": "0.5246", "loss": "2.4214", "code": "@Nonnull private syepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:09.277412", "n_pass": [45, 5, 3], "score": "0.5195", "loss": "2.2177", "code": "@Nonnull private syepl getRepl(Runtimey replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:11.945442", "n_pass": [50, 7, 4], "score": "0.7132", "loss": "2.3385", "code": "@Nonnull private syepl getRepl(Runtimey replFactory) { if (mRepl == null) { mRepl = replwInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:14.597536", "n_pass": [55, 9, 5], "score": "0.7132", "loss": "2.3385", "code": "@Nonnull yepl getRepl(Runtimey replFactory) { if (mRepl == null) { mRepl = replwInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:16.260929", "n_pass": [62, 10, 6], "score": "0.6388", "loss": "2.8174", "code": "@Nonnull yepl getRepl(Runtimey replFactory) { if (mRepl == null) { mRwInstance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:19.245298", "n_pass": [93, 12, 7], "score": "0.6665", "loss": "2.7533", "code": "@Nonnull yepl getRepl(Runtimey replFactory) { if (mRepl == null) { mRance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:24.262709", "n_pass": [103, 15, 8], "score": "0.7544", "loss": "2.6607", "code": "@Nonnull yepl getRepl(Ruy replFactory) { if (mRepl == null) { mRance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:26.870010", "n_pass": [109, 17, 9], "score": "0.7644", "loss": "2.8508", "code": "@Nonnull yepl getRepl(Ruy replFactory) { if (mRepnull) { mRance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:33.261273", "n_pass": [162, 21, 10], "score": "0.7759", "loss": "3.3449", "code": "@Nonnull yepl getRepl(Ruy replFactory) { if (pnull) { mRance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:34.568155", "n_pass": [163, 22, 11], "score": "0.7242", "loss": "2.1721", "code": "@Nonnull yepl getRepl(Ruy replFactory) { if (ll) { mRance(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:35.883273", "n_pass": [166, 23, 12], "score": "0.6763", "loss": "2.0744", "code": "@Nonnull yepl getRepl(Ruy replFactory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:42.475256", "n_pass": [176, 28, 13], "score": "0.3508", "loss": "2.7136", "code": "@Nnull yepl getRepl(Ruy replFactory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:43.803711", "n_pass": [177, 29, 14], "score": "0.5541", "loss": "1.9002", "code": "@Nll yepl getRepl(Ruy replFactory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:45.110710", "n_pass": [178, 30, 15], "score": "0.5454", "loss": "2.7566", "code": "@N yepl getRepl(Ruy replFactory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:49.572122", "n_pass": [186, 32, 16], "score": "0.5954", "loss": "2.7127", "code": "@N yepl getRepl(y replFactory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:54.795772", "n_pass": [191, 36, 17], "score": "0.5369", "loss": "3.388", "code": "@N yepl getRepl(y replFaory) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:09:56.099726", "n_pass": [192, 37, 18], "score": "0.5838", "loss": "2.531", "code": "@N yepl getRepl(y replFay) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:04.344082", "n_pass": [208, 43, 19], "score": "0.488", "loss": "2.6453", "code": "@N yl getRepl(y replFay) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:07.135669", "n_pass": [215, 44, 20], "score": "0.7108", "loss": "1.887", "code": "@N yl getRepl(y plFay) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:08.443008", "n_pass": [216, 45, 21], "score": "0.7153", "loss": "2.3987", "code": "@N yl getRepl(y Fay) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:21.813074", "n_pass": [283, 52, 22], "score": "0.5791", "loss": "2.8384", "code": "@N yl getRepl(y ay) { if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:24.462642", "n_pass": [286, 54, 23], "score": "0.5791", "loss": "2.8384", "code": "@N yl getRepl(y ay){ if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:25.801148", "n_pass": [288, 55, 24], "score": "0.5791", "loss": "2.8384", "code": "@N yl getRepl(y ay){if (ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:27.105477", "n_pass": [291, 56, 25], "score": "0.5791", "loss": "2.8384", "code": "@N yl getRepl(y ay){if(ll) { nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:31.048037", "n_pass": [296, 59, 26], "score": "0.5791", "loss": "2.8384", "code": "@N yl getRepl(y ay){if(ll){ nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:42.280472", "n_pass": [313, 67, 27], "score": "0.6608", "loss": "2.6738", "code": "@N l getRepl(y ay){if(ll){ nce(); } return mRepl; }"}
+{"time": "2021-01-23 10:10:57.382231", "n_pass": [344, 76, 28], "score": "0.5633", "loss": "4.1724", "code": "@N l getRepl(y ay){if(ll){ nce(); } returmRepl; }"}
+{"time": "2021-01-23 10:11:10.549850", "n_pass": [375, 83, 29], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){ e(); } returmRepl; }"}
+{"time": "2021-01-23 10:11:11.881257", "n_pass": [379, 84, 30], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){ e(); }eturmRepl; }"}
+{"time": "2021-01-23 10:11:29.280471", "n_pass": [435, 93, 31], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){ e(); }eturRepl; }"}
+{"time": "2021-01-23 10:11:34.555168", "n_pass": [440, 97, 32], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){ e(); }eturRepl;}"}
+{"time": "2021-01-23 10:11:45.158628", "n_pass": [468, 102, 33], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){e(); }eturRepl;}"}
+{"time": "2021-01-23 10:11:46.469824", "n_pass": [473, 103, 34], "score": "0.5441", "loss": "4.4411", "code": "@N l getRepl(y ay){if(ll){e();}eturRepl;}"}
+{"time": "2021-01-23 10:11:50.376510", "n_pass": [477, 106, 35], "score": "0.7882", "loss": "1.1673", "code": "@N l getRepl(y ay){if(ll){e();}etrRepl;}"}
+{"time": "2021-01-23 10:11:51.709100", "n_pass": [478, 107, 36], "score": "0.6173", "loss": "1.8938", "code": "@N l getRepl(y ay){if(ll){e();}etRepl;}"}
+{"time": "2021-01-23 10:12:02.283921", "n_pass": [500, 112, 37], "score": "0.503", "loss": "2.6552", "code": "@N l getRepl(y y){if(ll){e();}etRepl;}"}
+{"time": "2021-01-23 10:12:03.588597", "n_pass": [507, 113, 38], "score": "0.4797", "loss": "2.4217", "code": "@N l getRepl(y y){if(l){e();}etRepl;}"}
+
+Minimal simplified code:
+@N l getRepl(y y){if(l){e();}etRepl;}
+

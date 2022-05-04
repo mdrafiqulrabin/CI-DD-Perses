@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/udacity__Advanced_Android_Development/app/src/main/java/com/example/android/sunshine/app/widget/DetailWidgetProvider_setRemoteAdapter.java
+method_name = setRemoteAdapter
+method_body = @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:19:58.515007", "score": "0.4841", "loss": "0.7274", "code": "class T { @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); } }"}
+{"time": "2021-01-25 04:24:26.385424", "score": "0.54", "loss": "0.6184", "code": "class T { @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list ); } }"}
+{"time": "2021-01-25 04:25:06.256908", "score": "0.561", "loss": "0.5798", "code": "class T { void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list ); } }"}
+{"time": "2021-01-25 04:27:16.019433", "score": "0.602", "loss": "0.5091", "code": "class T { void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter( id ); } }"}
+{"time": "2021-01-25 04:28:35.673387", "score": "0.602", "loss": "0.5091", "code": "class T { void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter( id ); } }"}
+
+Minimal simplified code:
+class T {
+                                                           void setRemoteAdapter(Context context, @NonNull       RemoteViews views) { views.setRemoteAdapter(  id                                                                       ); }
+}
+
+

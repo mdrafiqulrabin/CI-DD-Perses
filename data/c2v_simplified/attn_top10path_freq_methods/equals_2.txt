@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/tld/TldResourcePath_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }
+
+topk path-contexts:
+[0.1525] o,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(BinaryExpr:and)_(MethodCallExpr0)_(NameExpr3),equals
+[0.1138] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(BinaryExpr:or)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr0),o
+[0.0571] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr4),equals
+[0.0451] this,(ThisExpr0)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:or)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+[0.0441] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(BinaryExpr:or)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),other
+[0.0356] other,(NameExpr0)^(FieldAccessExpr2)^(MethodCallExpr)^(BinaryExpr:and)^(BinaryExpr:and)_(MethodCallExpr1)_(FieldAccessExpr3)_(NameExpr2),entryname
+[0.0338] tldresourcepath,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr4),equals
+[0.0273] equals,(NameExpr3)^(MethodCallExpr)^(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr2),webapppath
+[0.0271] url,(NameExpr0)^(MethodCallExpr)^(BinaryExpr:and)_(MethodCallExpr1)_(NameExpr2),webapppath
+[0.0265] o,(NameExpr1)^(BinaryExpr:equals)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),tldresourcepath
+
+topk terminals:
+['o', 'equals', 'null', 'o', 'METHOD_NAME', 'equals', 'this', 'null', 'null', 'other', 'other', 'entryname', 'tldresourcepath', 'equals', 'equals', 'webapppath', 'url', 'webapppath', 'o', 'tldresourcepath']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole/src/main/java/org/apache/guacamole/rest/user/UserObjectTranslator_applyExternalChanges.java
+method_name = applyExternalChanges
+method_body = @Override public void applyExternalChanges(User existingObject, APIUser object) throws GuacamoleException { if (object.getPassword() != null) existingObject.setPassword(object.getPassword()); existingObject.setAttributes(object.getAttributes()); }
+
+topk path-contexts:
+[0.1431] apiuser,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),existingobject
+[0.1147] existingobject,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),apiuser
+[0.0986] existingobject,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType5),guacamoleexception
+[0.0969] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),existingobject
+[0.0766] apiuser,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),existingobject
+[0.0427] object,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),existingobject
+[0.0404] existingobject,(NameExpr0)^(MethodCallExpr)_(MethodCallExpr2)_(NameExpr2),getpassword
+[0.0343] getpassword,(NameExpr2)^(MethodCallExpr2)^(MethodCallExpr)^(ExpressionStmt)^(IfStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),existingobject
+[0.0333] guacamoleexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),existingobject
+[0.0303] guacamoleexception,(ClassOrInterfaceType5)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),getpassword
+
+topk terminals:
+['apiuser', 'existingobject', 'existingobject', 'apiuser', 'existingobject', 'guacamoleexception', 'METHOD_NAME', 'existingobject', 'apiuser', 'existingobject', 'object', 'existingobject', 'existingobject', 'getpassword', 'getpassword', 'existingobject', 'guacamoleexception', 'existingobject', 'guacamoleexception', 'getpassword']
+

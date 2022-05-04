@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/XiaoMi__linden/linden-core/src/main/java/com/xiaomi/linden/core/LindenConfig_setWebapp.java
+method_name = setWebapp
+method_body = public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }
+
+topk path-contexts for sub-token: set
+[0.1233] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.0909] this,ThisExpr0|FieldAccessExpr0|NameExpr2,webapp
+[0.0869] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.0593] webapp,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.0556] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,webapp
+[0.0486] linden|config,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0481] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,webapp
+[0.0291] linden|config,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,webapp
+[0.0284] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,webapp
+[0.0279] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,webapp
+
+topk terminals for sub-token: set
+['string', 'webapp', 'this', 'webapp', 'METHOD_NAME', 'webapp', 'webapp', 'webapp', 'METHOD_NAME', 'webapp', 'linden|config', 'METHOD_NAME', 'string', 'webapp', 'linden|config', 'webapp', 'METHOD_NAME', 'webapp', 'this', 'webapp']
+
+topk path-contexts for sub-token: webapp
+[0.1441] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.1064] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.0865] this,ThisExpr0|FieldAccessExpr0|NameExpr2,webapp
+[0.0832] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,webapp
+[0.0665] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,webapp
+[0.0656] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,webapp
+[0.0585] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,webapp
+[0.0504] webapp,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,webapp
+[0.0383] webapp,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,webapp
+[0.0351] webapp,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,webapp
+
+topk terminals for sub-token: webapp
+['string', 'webapp', 'METHOD_NAME', 'webapp', 'this', 'webapp', 'METHOD_NAME', 'webapp', 'string', 'webapp', 'METHOD_NAME', 'webapp', 'this', 'webapp', 'webapp', 'webapp', 'webapp', 'webapp', 'webapp', 'webapp']
+

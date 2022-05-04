@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javamelody__javamelody/javamelody-core/src/test/java/net/bull/javamelody/TestJpa_assertCounter.java
+method_name = assertCounter
+method_body = private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals("getRequestsCount", 1, counter.getRequestsCount()); assertEquals("requestName", method, counter.getRequests().get(0).getName()); counter.clear(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:16:59.997475", "score": "0.257", "loss": "3.957", "code": "class T { private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequestsCount()); assertEquals(\"requestName\", method, counter.getRequests().get(0).getName()); counter.clear(); } }"}
+{"time": "2021-01-24 08:17:48.315795", "score": "0.4381", "loss": "2.7758", "code": "class T { private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1, counter.getRequestsCount()); } }"}
+{"time": "2021-01-24 08:19:05.481991", "score": "0.378", "loss": "3.3528", "code": "class T { private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1 ); } }"}
+{"time": "2021-01-24 08:20:09.266862", "score": "0.378", "loss": "3.3528", "code": "class T { void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1 ); } }"}
+{"time": "2021-01-24 08:20:19.988672", "score": "0.378", "loss": "3.3528", "code": "class T { void assertCounter(String method) { Counter counter = JpaWrapper.getJpaCounter(); assertEquals(\"getRequestsCount\", 1 ); } }"}
+
+Minimal simplified code:
+class T {
+               void assertCounter(String method) {       Counter counter = JpaWrapper.getJpaCounter(); assertEquals("getRequestsCount", 1                            );                                                                                               }
+}
+
+

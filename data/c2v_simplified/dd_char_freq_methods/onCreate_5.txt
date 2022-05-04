@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { Log.i(LOG_TAG, "onCreate"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); }
+predict, score, loss = onCreate, 0.9999984502792358, 1.7881377516459906e-06
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:19:47.105288", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); memoryInfo = new MemoryInfo(); fomart = new DecimalFormat(); fomart.setMaximumFractionDigits(2); fomart.setMinimumFractionDigits(0); }"}
+{"time": "2020-12-28 08:19:49.729869", "n_pass": [10, 2, 2], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); memoryInfo = new MemoryInfactionDigits(2); fomart.setMinimumFractionDigits(0); }"}
+{"time": "2020-12-28 08:19:52.378701", "n_pass": [19, 3, 3], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate(); memoryInfo = new MemoryInfMinimumFractionDigits(0); }"}
+{"time": "2020-12-28 08:19:55.384956", "n_pass": [23, 4, 4], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); super.onCreate();MinimumFractionDigits(0); }"}
+{"time": "2020-12-28 08:19:58.828368", "n_pass": [43, 5, 5], "score": "0.9998", "loss": "0.0003", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); su;MinimumFractionDigits(0); }"}
+{"time": "2020-12-28 08:20:01.428410", "n_pass": [44, 6, 6], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); suonDigits(0); }"}
+{"time": "2020-12-28 08:20:04.435237", "n_pass": [63, 7, 7], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate() { Log.i(LOG_TAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:07.043509", "n_pass": [65, 8, 8], "score": "1.0", "loss": "0.0", "code": "@Overrblic void onCreate() { Log.i(LOG_TAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:13.437671", "n_pass": [96, 10, 9], "score": "1.0", "loss": "0.0", "code": "@Overrc void onCreate() { Log.i(LOG_TAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:16.041694", "n_pass": [97, 11, 10], "score": "0.9993", "loss": "0.0012", "code": "@Overrc v onCreate() { Log.i(LOG_TAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:19.853691", "n_pass": [103, 12, 11], "score": "0.9968", "loss": "0.006", "code": "@Overrc v onCreate() { Li(LOG_TAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:22.446770", "n_pass": [105, 13, 12], "score": "0.9942", "loss": "0.0138", "code": "@Overrc v onCreate() { Li(LTAG, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:25.061033", "n_pass": [106, 14, 13], "score": "0.9929", "loss": "0.0132", "code": "@Overrc v onCreate() { Li(L, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:30.311218", "n_pass": [114, 16, 14], "score": "0.9928", "loss": "0.0137", "code": "@Ovc v onCreate() { Li(L, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:37.905911", "n_pass": [157, 18, 15], "score": "0.9928", "loss": "0.0134", "code": "@Oc v onCreate() { Li(L, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:40.507728", "n_pass": [158, 19, 16], "score": "0.9929", "loss": "0.0132", "code": "@O v onCreate() { Li(L, \"onCreate\"); sus(0); }"}
+{"time": "2020-12-28 08:20:53.744941", "n_pass": [178, 23, 17], "score": "0.993", "loss": "0.013", "code": "@O v onCreate() { Li(L, \"onCreate\");us(0); }"}
+{"time": "2020-12-28 08:20:56.364439", "n_pass": [179, 24, 18], "score": "0.964", "loss": "0.0594", "code": "@O v onCreate() { Li(L, \"onCreate\");(0); }"}
+{"time": "2020-12-28 08:21:12.267982", "n_pass": [244, 28, 19], "score": "0.964", "loss": "0.0594", "code": "@O v onCreate() { Li(L, \"onCreate\");(0);}"}
+{"time": "2020-12-28 08:21:19.698268", "n_pass": [260, 29, 20], "score": "0.964", "loss": "0.0594", "code": "@O v onCreate(){ Li(L, \"onCreate\");(0);}"}
+{"time": "2020-12-28 08:21:22.292250", "n_pass": [262, 30, 21], "score": "0.964", "loss": "0.0594", "code": "@O v onCreate(){Li(L, \"onCreate\");(0);}"}
+{"time": "2020-12-28 08:21:24.890304", "n_pass": [263, 31, 22], "score": "0.9779", "loss": "0.0352", "code": "@O v onCreate(){i(L, \"onCreate\");(0);}"}
+{"time": "2020-12-28 08:21:27.486858", "n_pass": [268, 32, 23], "score": "0.9779", "loss": "0.0352", "code": "@O v onCreate(){i(L,\"onCreate\");(0);}"}
+
+Minimal simplified code:
+@O v onCreate(){i(L,"onCreate");(0);}
+

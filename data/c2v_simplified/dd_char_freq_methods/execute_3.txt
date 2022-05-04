@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/ServerinfoTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/serverinfo"); }
+predict, score, loss = execute, 0.9998953342437744, 0.00024256148026324809
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:08:30.672548", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0002", "code": "@Override public void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-28 06:08:34.080280", "n_pass": [45, 2, 2], "score": "0.9999", "loss": "0.0003", "code": "@Overrblic void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-28 06:08:42.619774", "n_pass": [54, 5, 3], "score": "0.9446", "loss": "0.0613", "code": "@Overrblic void execute() throws BuildException { supeute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-28 06:08:47.807141", "n_pass": [58, 7, 4], "score": "0.9104", "loss": "0.1654", "code": "@Overrblic void execute() throws BuildException { supeute(); execute(\"/sfo\"); }"}
+{"time": "2020-12-28 06:08:56.379951", "n_pass": [70, 10, 5], "score": "0.5999", "loss": "1.0114", "code": "@Overrblic void execute() throws BuildException { supeute();te(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:04.910400", "n_pass": [82, 13, 6], "score": "0.5317", "loss": "1.2354", "code": "@Overrblic void execute() throws BuildException { supete(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:13.483706", "n_pass": [121, 16, 7], "score": "0.5317", "loss": "1.2354", "code": "@Ovblic void execute() throws BuildException { supete(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:16.094023", "n_pass": [122, 17, 8], "score": "0.3825", "loss": "1.7804", "code": "@Ovc void execute() throws BuildException { supete(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:19.074285", "n_pass": [124, 18, 9], "score": "0.7228", "loss": "0.7689", "code": "@Ovc v execute() throws BuildException { supete(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:35.465198", "n_pass": [137, 24, 10], "score": "0.627", "loss": "1.1146", "code": "@Ovc v execute() throws BuildException { ste(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:53.387125", "n_pass": [193, 30, 11], "score": "0.7202", "loss": "0.7055", "code": "@Ovc v execute() throws BuildException { e(\"/sfo\"); }"}
+{"time": "2020-12-28 06:09:55.981185", "n_pass": [196, 31, 12], "score": "0.3445", "loss": "1.8963", "code": "@Ovc v execute() throws BuildException { e(\"/o\"); }"}
+{"time": "2020-12-28 06:09:58.578138", "n_pass": [201, 32, 13], "score": "0.4142", "loss": "1.1997", "code": "@vc v execute() throws BuildException { e(\"/o\"); }"}
+{"time": "2020-12-28 06:10:01.193048", "n_pass": [202, 33, 14], "score": "0.763", "loss": "0.5064", "code": "@c v execute() throws BuildException { e(\"/o\"); }"}
+{"time": "2020-12-28 06:10:08.196424", "n_pass": [216, 34, 15], "score": "0.763", "loss": "0.5064", "code": "@c v execute()throws BuildException { e(\"/o\"); }"}
+{"time": "2020-12-28 06:11:11.653742", "n_pass": [296, 56, 16], "score": "0.763", "loss": "0.5064", "code": "@c v execute()throws BuildException{ e(\"/o\"); }"}
+{"time": "2020-12-28 06:11:14.248234", "n_pass": [298, 57, 17], "score": "0.763", "loss": "0.5064", "code": "@c v execute()throws BuildException{e(\"/o\"); }"}
+{"time": "2020-12-28 06:11:16.822368", "n_pass": [299, 58, 18], "score": "0.549", "loss": "0.9012", "code": "@c v execute()throws BuildException{(\"/o\"); }"}
+{"time": "2020-12-28 06:11:19.414418", "n_pass": [302, 59, 19], "score": "0.549", "loss": "0.9012", "code": "@c v execute()throws BuildException{(\"o\"); }"}
+{"time": "2020-12-28 06:11:21.995406", "n_pass": [303, 60, 20], "score": "0.5258", "loss": "0.9549", "code": "@c v execute()throws BuildException{(\"\"); }"}
+{"time": "2020-12-28 06:11:24.575283", "n_pass": [307, 61, 21], "score": "0.5258", "loss": "0.9549", "code": "@c v execute()throws BuildException{(\"\");}"}
+
+Minimal simplified code:
+@c v execute()throws BuildException{("");}
+

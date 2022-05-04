@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+predict, score, loss = onCreate, 0.5593332, 0.74711144
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:26:53.503275", "n_pass": [1, 1, 1], "score": "0.5593", "loss": "0.7471", "code": "@Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:26:54.837121", "n_pass": [9, 2, 2], "score": "0.6375", "loss": "0.6546", "code": "@Override public boolean onCreate() { Conte= context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:26:56.151414", "n_pass": [10, 3, 3], "score": "0.538", "loss": "0.977", "code": "@Override public boolean onCreate() { Conte= new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:26:58.769831", "n_pass": [27, 5, 4], "score": "0.3212", "loss": "2.0413", "code": "@Override public boolean onCreate() { ConteDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:27:00.091389", "n_pass": [30, 6, 5], "score": "0.3967", "loss": "2.1649", "code": "public boolean onCreate() { ConteDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:27:14.297487", "n_pass": [96, 15, 6], "score": "0.4658", "loss": "2.2017", "code": "public boolean onCreate() {nteDbHelper(context); return true; }"}
+{"time": "2020-12-28 00:27:15.642624", "n_pass": [97, 16, 7], "score": "0.5004", "loss": "2.1702", "code": "public boolean onCreate() {DbHelper(context); return true; }"}
+{"time": "2020-12-28 00:27:18.268787", "n_pass": [99, 18, 8], "score": "0.6407", "loss": "3.2102", "code": "public boolean onCreate() {DbHer(context); return true; }"}
+{"time": "2020-12-28 00:27:32.853425", "n_pass": [164, 27, 9], "score": "0.6407", "loss": "3.2102", "code": "public boolean onCreate(){DbHer(context); return true; }"}
+{"time": "2020-12-28 00:27:48.732949", "n_pass": [191, 39, 10], "score": "0.2551", "loss": "3.1559", "code": "public booean onCreate(){DbHer(context); return true; }"}
+{"time": "2020-12-28 00:28:25.823662", "n_pass": [272, 63, 11], "score": "0.2361", "loss": "3.6566", "code": "public booean onCreate(){DbHer(contxt); return true; }"}
+{"time": "2020-12-28 00:28:28.514690", "n_pass": [276, 65, 12], "score": "0.2361", "loss": "3.6566", "code": "public booean onCreate(){DbHer(contxt);return true; }"}
+{"time": "2020-12-28 00:28:36.450105", "n_pass": [289, 71, 13], "score": "0.2361", "loss": "3.6566", "code": "public booean onCreate(){DbHer(contxt);return true;}"}
+
+Minimal simplified code:
+public booean onCreate(){DbHer(contxt);return true;}
+

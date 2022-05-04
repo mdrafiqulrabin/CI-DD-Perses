@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/cloud-content/impl/src/main/java/coza/opencollab/sakai/cloudcontent/BlobStoreFileSystemHandler_deleteContainerIfEmpty.java
+method_name = deleteContainerIfEmpty
+method_body = private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }
+predict, score, loss = deleteContainerIfEmpty, 0.4757763, 1.6435586
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:26:34.116080", "n_pass": [1, 1, 1], "score": "0.4758", "loss": "1.6436", "code": "private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-23 11:26:39.137890", "n_pass": [44, 4, 2], "score": "0.4758", "loss": "1.6436", "code": "void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-23 11:26:41.533648", "n_pass": [52, 5, 3], "score": "0.4496", "loss": "1.9313", "code": "void deleteContainerIfEmpty(String container) { if (deleteainers) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-23 11:26:49.321189", "n_pass": [95, 10, 4], "score": "0.4496", "loss": "1.9313", "code": "void deleteContainerIfEmpty(String container) { if (deleners) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-23 11:26:50.624630", "n_pass": [96, 11, 5], "score": "0.4486", "loss": "2.0948", "code": "void deleteContainerIfEmpty(String container) { if (dele) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-23 11:26:58.543741", "n_pass": [106, 17, 6], "score": "0.4552", "loss": "2.2414", "code": "void deleteContainerIfEmpty(String container) { if (dele) { getBlobStore().deleteContainerIfEmpty(iner); } }"}
+{"time": "2021-01-23 11:27:12.513758", "n_pass": [183, 26, 7], "score": "0.5441", "loss": "2.6214", "code": "void deleteContainerIfEmpty(String container) { if (dele) { getBlobStore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:27:20.491042", "n_pass": [200, 29, 8], "score": "0.4385", "loss": "2.7512", "code": "void deleteContainerIfEmpty(ring container) { if (dele) { getBlobStore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:27:29.670838", "n_pass": [212, 36, 9], "score": "0.4954", "loss": "2.2563", "code": "void deleteContainerIfEmpty(ring container) { if (le) { getBlobStore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:27:30.976169", "n_pass": [216, 37, 10], "score": "0.4988", "loss": "2.3554", "code": "void deleteContainerIfEmpty(ring container) { if (le) { tBlobStore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:27:33.591467", "n_pass": [218, 39, 11], "score": "0.4458", "loss": "2.019", "code": "void deleteContainerIfEmpty(ring container) { if (le) { tBbStore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:27:34.924603", "n_pass": [219, 40, 12], "score": "0.3999", "loss": "2.3643", "code": "void deleteContainerIfEmpty(ring container) { if (le) { tBtore().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:28:10.202343", "n_pass": [353, 62, 13], "score": "0.3999", "loss": "2.3643", "code": "void deleteContainerIfEmpty(ring container) { if (le) { tBtre().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:28:12.815362", "n_pass": [355, 64, 14], "score": "0.4442", "loss": "2.1417", "code": "void deleteContainerIfEmpty(ring container) { if (le) { tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:28:40.388761", "n_pass": [383, 85, 15], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container) { if (le) { tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:09.663852", "n_pass": [425, 101, 16], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container){ if (le) { tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:10.967038", "n_pass": [427, 102, 17], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container){if (le) { tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:12.272955", "n_pass": [430, 103, 18], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container){if(le) { tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:16.204719", "n_pass": [435, 106, 19], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container){if(le){ tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:17.511804", "n_pass": [437, 107, 20], "score": "0.4204", "loss": "2.4941", "code": "vid deleteContainerIfEmpty(ring container){if(le){tBtr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:18.828821", "n_pass": [438, 108, 21], "score": "0.4197", "loss": "2.5571", "code": "vid deleteContainerIfEmpty(ring container){if(le){Btr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:29:48.941964", "n_pass": [468, 131, 22], "score": "0.4345", "loss": "2.5135", "code": "id deleteContainerIfEmpty(ring container){if(le){Btr().deleteContainerIfEmpty(i); } }"}
+{"time": "2021-01-23 11:30:59.921796", "n_pass": [571, 178, 23], "score": "0.4345", "loss": "2.5135", "code": "id deleteContainerIfEmpty(ring container){if(le){Btr().deleteContainerIfEmpty(i);} }"}
+{"time": "2021-01-23 11:31:01.224054", "n_pass": [572, 179, 24], "score": "0.4345", "loss": "2.5135", "code": "id deleteContainerIfEmpty(ring container){if(le){Btr().deleteContainerIfEmpty(i);}}"}
+
+Minimal simplified code:
+id deleteContainerIfEmpty(ring container){if(le){Btr().deleteContainerIfEmpty(i);}}
+

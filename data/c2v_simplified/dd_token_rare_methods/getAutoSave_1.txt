@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/TemplateBean_getAutoSave.java
+method_name = getAutoSave
+method_body = public String getAutoSave() { if ("0".equals(autoSave)) return "1"; return checker(autoSave, "1"); }
+predict, score, loss = getAutoSave, 0.21753597259521484, 4.10355281829834
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:05:04.598784", "n_pass": [1, 1, 1], "score": "0.2175", "loss": "4.1036", "code": "public String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:07.238380", "n_pass": [44, 2, 2], "score": "0.2175", "loss": "4.1036", "code": "String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; return checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:10.296163", "n_pass": [55, 3, 3], "score": "0.2153", "loss": "4.2305", "code": "String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:18.676730", "n_pass": [111, 5, 4], "score": "0.2153", "loss": "4.2305", "code": "String getAutoSave(){ if (\"0\".equals(autoSave)) return \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:21.297618", "n_pass": [113, 6, 5], "score": "0.2153", "loss": "4.2305", "code": "String getAutoSave(){if (\"0\".equals(autoSave)) return \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:23.916871", "n_pass": [115, 7, 6], "score": "0.2153", "loss": "4.2305", "code": "String getAutoSave(){if(\"0\".equals(autoSave)) return \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:26.536872", "n_pass": [118, 8, 7], "score": "0.3139", "loss": "3.4696", "code": "String getAutoSave(){if(\"\".equals(autoSave)) return \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:29.172957", "n_pass": [125, 9, 8], "score": "0.4339", "loss": "2.4571", "code": "String getAutoSave(){if(\"\".equals(autoSave)) \"1\";checker(autoSave, \"1\"); }"}
+{"time": "2021-01-20 07:05:37.537072", "n_pass": [173, 11, 9], "score": "0.4339", "loss": "2.4571", "code": "String getAutoSave(){if(\"\".equals(autoSave)) \"1\";checker(autoSave,\"1\"); }"}
+{"time": "2021-01-20 07:05:40.160102", "n_pass": [174, 12, 10], "score": "0.4931", "loss": "1.3999", "code": "String getAutoSave(){if(\"\".equals(autoSave)) \"1\";checker(autoSave,\"\"); }"}
+{"time": "2021-01-20 07:05:42.777114", "n_pass": [178, 13, 11], "score": "0.4931", "loss": "1.3999", "code": "String getAutoSave(){if(\"\".equals(autoSave)) \"1\";checker(autoSave,\"\");}"}
+{"time": "2021-01-20 07:05:49.237304", "n_pass": [196, 15, 12], "score": "0.4931", "loss": "1.3999", "code": "String getAutoSave(){if(\"\".equals(autoSave))\"1\";checker(autoSave,\"\");}"}
+{"time": "2021-01-20 07:05:51.868726", "n_pass": [198, 16, 13], "score": "0.4868", "loss": "1.4636", "code": "String getAutoSave(){if(\"\".equals(autoSave))\"\";checker(autoSave,\"\");}"}
+
+Minimal simplified code:
+String getAutoSave(){if("".equals(autoSave))"";checker(autoSave,"");}
+

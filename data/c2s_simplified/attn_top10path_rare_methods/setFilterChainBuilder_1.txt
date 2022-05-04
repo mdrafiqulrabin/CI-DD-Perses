@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.netty/src/main/java/org/kaazing/mina/core/service/AbstractIoService_setFilterChainBuilder.java
+method_name = setFilterChainBuilder
+method_body = @Override public final void setFilterChainBuilder(IoFilterChainBuilder builder) { if (builder == null) { builder = new DefaultIoFilterChainBuilder(); } filterChainBuilder = builder; }
+
+topk path-contexts for sub-token: set
+[0.0886] builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0791] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0584] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0479] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0449] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0396] builder,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0374] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0291] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0249] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0230] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,builder
+
+topk terminals for sub-token: set
+['builder', 'filter|chain|builder', 'METHOD_NAME', 'filter|chain|builder', 'void', 'METHOD_NAME', 'void', 'io|filter|chain|builder', 'METHOD_NAME', 'io|filter|chain|builder', 'builder', 'io|filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'override', 'void', 'override', 'METHOD_NAME', 'METHOD_NAME', 'builder']
+
+topk path-contexts for sub-token: filter
+[0.1622] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.1213] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.1191] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0711] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0683] builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0607] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0527] builder,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0344] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0312] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,default|io|filter|chain|builder
+[0.0292] builder,NameExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+
+topk terminals for sub-token: filter
+['METHOD_NAME', 'filter|chain|builder', 'void', 'io|filter|chain|builder', 'METHOD_NAME', 'io|filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'builder', 'filter|chain|builder', 'null', 'filter|chain|builder', 'builder', 'io|filter|chain|builder', 'io|filter|chain|builder', 'null', 'METHOD_NAME', 'default|io|filter|chain|builder', 'builder', 'filter|chain|builder']
+
+topk path-contexts for sub-token: chain
+[0.2069] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.1475] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.1269] builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0785] builder,NameExpr0|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0750] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0742] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0675] null,NullLiteralExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0592] builder,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0335] builder,NameExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0227] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: chain
+['METHOD_NAME', 'filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'builder', 'filter|chain|builder', 'builder', 'filter|chain|builder', 'void', 'io|filter|chain|builder', 'METHOD_NAME', 'io|filter|chain|builder', 'null', 'filter|chain|builder', 'builder', 'io|filter|chain|builder', 'builder', 'filter|chain|builder', 'io|filter|chain|builder', 'null']
+
+topk path-contexts for sub-token: builder
+[0.1281] builder,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.1154] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.1005] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0787] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0763] builder,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0663] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0618] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,io|filter|chain|builder
+[0.0552] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,builder
+[0.0484] builder,NameExpr0|BinaryExpr:equals|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,filter|chain|builder
+[0.0430] io|filter|chain|builder,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,builder
+
+topk terminals for sub-token: builder
+['builder', 'filter|chain|builder', 'METHOD_NAME', 'filter|chain|builder', 'io|filter|chain|builder', 'filter|chain|builder', 'io|filter|chain|builder', 'null', 'builder', 'io|filter|chain|builder', 'void', 'io|filter|chain|builder', 'METHOD_NAME', 'io|filter|chain|builder', 'io|filter|chain|builder', 'builder', 'builder', 'filter|chain|builder', 'io|filter|chain|builder', 'builder']
+

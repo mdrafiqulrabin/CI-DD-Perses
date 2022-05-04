@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/SessionsTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/sessions").toString()); }
+predict, score, loss = execute, 0.9999452829360962, 9.548207890475169e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 09:55:08.455074", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-28 09:55:13.708719", "n_pass": [45, 3, 2], "score": "0.9999", "loss": "0.0001", "code": "@Overriic void execute() throws BuildException { super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-28 09:55:16.331958", "n_pass": [50, 4, 3], "score": "0.8688", "loss": "0.4529", "code": "@Overriic void execute() throws BuildEx{ super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-28 09:55:21.592231", "n_pass": [94, 6, 4], "score": "0.2564", "loss": "2.9932", "code": "@Overriic void execute() throws BuildEx{ suexecute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-28 09:55:24.211054", "n_pass": [95, 7, 5], "score": "0.2564", "loss": "2.9932", "code": "@Overriic void execute() throws BuildEx{ suute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-28 09:55:42.382219", "n_pass": [108, 14, 6], "score": "0.2814", "loss": "2.7982", "code": "@Overriic void execute() throws BuildEx{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:55:47.615957", "n_pass": [112, 16, 7], "score": "0.2814", "loss": "2.7982", "code": "@Ovic void execute() throws BuildEx{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:12.272324", "n_pass": [185, 25, 8], "score": "0.2827", "loss": "2.8376", "code": "@Ov void execute() throws BuildEx{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:14.882529", "n_pass": [186, 26, 9], "score": "0.1973", "loss": "4.063", "code": "@Ov vd execute() throws BuildEx{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:19.125609", "n_pass": [197, 27, 10], "score": "0.1973", "loss": "4.063", "code": "@Ov vd execute() throws BldEx{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:24.322643", "n_pass": [199, 29, 11], "score": "0.793", "loss": "0.5898", "code": "@Ov vd execute() throws Bld{ suute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:26.930963", "n_pass": [201, 30, 12], "score": "0.817", "loss": "0.5405", "code": "@Ov vd execute() throws Bld{ ute(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:29.537246", "n_pass": [202, 31, 13], "score": "0.7942", "loss": "0.5565", "code": "@Ov vd execute() throws Bld{ e(); execute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:32.141847", "n_pass": [205, 32, 14], "score": "0.6006", "loss": "1.1313", "code": "@Ov vd execute() throws Bld{ e();xecute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:34.750850", "n_pass": [206, 33, 15], "score": "0.4252", "loss": "2.8415", "code": "@Ov vd execute() throws Bld{ e();cute(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:56:37.346857", "n_pass": [207, 34, 16], "score": "0.5906", "loss": "1.1109", "code": "@Ov vd execute() throws Bld{ e();te(createQueryString(\"/sessions\").tong()); }"}
+{"time": "2020-12-28 09:57:13.921828", "n_pass": [225, 48, 17], "score": "0.6084", "loss": "1.1837", "code": "@Ov vd execute() throws Bld{ e();te(createQueryString(\"/sessions\").ng()); }"}
+{"time": "2020-12-28 09:58:01.221813", "n_pass": [338, 64, 18], "score": "0.6235", "loss": "1.0272", "code": "@Ov vd execute() throws Bld{ e();te(createQueryString(\"/sessions\").g()); }"}
+{"time": "2020-12-28 09:58:03.832868", "n_pass": [343, 65, 19], "score": "0.6235", "loss": "1.0272", "code": "@Ov vd execute() throws Bld{ e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:06.439870", "n_pass": [346, 66, 20], "score": "0.7807", "loss": "0.5143", "code": "@v vd execute() throws Bld{ e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:09.854316", "n_pass": [349, 67, 21], "score": "0.7664", "loss": "0.5006", "code": "@v d execute() throws Bld{ e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:16.102382", "n_pass": [361, 68, 22], "score": "0.7664", "loss": "0.5006", "code": "@v d execute()throws Bld{ e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:18.725723", "n_pass": [369, 69, 23], "score": "0.5057", "loss": "2.1974", "code": "@v d execute()throws ld{ e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:26.540648", "n_pass": [373, 72, 24], "score": "0.5057", "loss": "2.1974", "code": "@v d execute()throws ld{e();te(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:58:29.160938", "n_pass": [378, 73, 25], "score": "0.6143", "loss": "2.081", "code": "@v d execute()throws ld{e();e(createQueryString(\"/sessions\").g());}"}
+{"time": "2020-12-28 09:59:18.707706", "n_pass": [400, 92, 26], "score": "0.6143", "loss": "2.081", "code": "@v d execute()throws ld{e();e(createQueryString(\"sessions\").g());}"}
+{"time": "2020-12-28 09:59:39.560432", "n_pass": [408, 100, 27], "score": "0.2327", "loss": "2.8582", "code": "@v d execute()throws ld{e();e(createQueryString(\"session\").g());}"}
+
+Minimal simplified code:
+@v d execute()throws ld{e();e(createQueryString("session").g());}
+

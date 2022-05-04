@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/TemplateBean_getAutoSave.java
+method_name = getAutoSave
+method_body = public String getAutoSave() { if ("0".equals(autoSave)) return "1"; return checker(autoSave, "1"); }
+
+topk path-contexts:
+[0.1058] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(MethodCallExpr0)_(NameExpr2),autosave
+[0.0892] 0,(StringLiteralExpr0)^(MethodCallExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),checker
+[0.0829] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr2),1
+[0.0771] 1,(StringLiteralExpr0)^(ReturnStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),checker
+[0.0719] 0,(StringLiteralExpr0)^(MethodCallExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr1),autosave
+[0.0678] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(MethodCallExpr0)_(StringLiteralExpr0),0
+[0.0665] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr2),1
+[0.0590] autosave,(NameExpr2)^(MethodCallExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr2),1
+[0.0541] autosave,(NameExpr2)^(MethodCallExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr1),autosave
+[0.0533] autosave,(NameExpr2)^(MethodCallExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),checker
+
+topk terminals:
+['string', 'autosave', '0', 'checker', 'METHOD_NAME', '1', '1', 'checker', '0', 'autosave', 'string', '0', 'string', '1', 'autosave', '1', 'autosave', 'autosave', 'autosave', 'checker']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/connector/TestMaxConnections_run.java
+method_name = run
+method_body = @Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }
+
+topk path-contexts:
+[0.2133] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),testclient
+[0.1820] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),dohttprequest
+[0.1341] testclient,(ClassOrInterfaceType0)^(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),testclient
+[0.1194] testclient,(ClassOrInterfaceType0)^(ObjectCreationExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),dohttprequest
+[0.1107] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),dohttprequest
+[0.0612] client,(NameExpr0)^(MethodCallExpr)_(NameExpr2),dohttprequest
+[0.0440] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),exception
+[0.0282] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),client
+[0.0259] x,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),exception
+[0.0191] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+
+topk terminals:
+['void', 'testclient', 'void', 'dohttprequest', 'testclient', 'testclient', 'testclient', 'dohttprequest', 'METHOD_NAME', 'dohttprequest', 'client', 'dohttprequest', 'void', 'exception', 'void', 'client', 'x', 'exception', 'override', 'METHOD_NAME']
+

@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/spring-ws-core/src/main/java/org/springframework/ws/client/core/support/WebServiceGatewaySupport_setDefaultUri.java
+method_name = setDefaultUri
+method_body = public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }
+predict, score, loss = setDefaultUri, 0.47273868322372437, 1.2874542474746704
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:13:45.373863", "n_pass": [1, 1, 1], "score": "0.4727", "loss": "1.2875", "code": "public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:13:49.605950", "n_pass": [25, 2, 2], "score": "0.9954", "loss": "0.0113", "code": "public final void setDefaultUri(String uri) { webServ.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:00.889850", "n_pass": [52, 6, 3], "score": "0.9736", "loss": "0.063", "code": "public finid setDefaultUri(String uri) { webServ.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:04.316220", "n_pass": [58, 7, 4], "score": "0.9826", "loss": "0.0405", "code": "public finid setDefaultUri(String uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:12.173069", "n_pass": [64, 10, 5], "score": "0.9826", "loss": "0.0405", "code": "publiid setDefaultUri(String uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:21.196016", "n_pass": [75, 13, 6], "score": "0.9699", "loss": "0.0962", "code": "id setDefaultUri(String uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:33.072534", "n_pass": [114, 16, 7], "score": "0.6435", "loss": "0.9912", "code": "id setDefaultUri(Sng uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:52.302186", "n_pass": [173, 22, 8], "score": "0.9217", "loss": "0.1661", "code": "id setDefaultUri(ng uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:54.908075", "n_pass": [174, 23, 9], "score": "0.9398", "loss": "0.164", "code": "id setDefaultUri(g uri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:14:57.544264", "n_pass": [177, 24, 10], "score": "0.8366", "loss": "0.4584", "code": "id setDefaultUri(g ri) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:15:00.175727", "n_pass": [178, 25, 11], "score": "0.8471", "loss": "0.4672", "code": "id setDefaultUri(g i) {rv.setDefaultUri(uri); }"}
+{"time": "2021-01-23 21:15:21.056329", "n_pass": [191, 33, 12], "score": "0.6143", "loss": "1.0565", "code": "id setDefaultUri(g i) {rv.setDefaultUri(u); }"}
+{"time": "2021-01-23 21:15:23.718555", "n_pass": [194, 34, 13], "score": "0.6224", "loss": "0.8042", "code": "d setDefaultUri(g i) {rv.setDefaultUri(u); }"}
+{"time": "2021-01-23 21:15:51.888571", "n_pass": [251, 42, 14], "score": "0.6224", "loss": "0.8042", "code": "d setDefaultUri(g i){rv.setDefaultUri(u); }"}
+{"time": "2021-01-23 21:15:54.522022", "n_pass": [252, 43, 15], "score": "0.5268", "loss": "1.0794", "code": "d setDefaultUri(g i){v.setDefaultUri(u); }"}
+{"time": "2021-01-23 21:16:33.836578", "n_pass": [269, 58, 16], "score": "0.3525", "loss": "2.0631", "code": "d setDefaultUri(g i){v.setDefaultUri(); }"}
+{"time": "2021-01-23 21:16:36.468981", "n_pass": [272, 59, 17], "score": "0.3525", "loss": "2.0631", "code": "d setDefaultUri(g i){v.setDefaultUri();}"}
+
+Minimal simplified code:
+d setDefaultUri(g i){v.setDefaultUri();}
+

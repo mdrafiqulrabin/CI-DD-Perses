@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/assignment/impl/src/java/org/sakaiproject/assignment/impl/conversion/AssignmentSubmissionAccess_getLastmod.java
+method_name = getLastmod
+method_body = public String getLastmod() { return lastmod; }
+predict, score, loss = getLastmod, 0.4512885808944702, 1.2011858224868774
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:00:12.692270", "n_pass": [1, 1, 1], "score": "0.4513", "loss": "1.2012", "code": "public String getLastmod() { return lastmod; }"}
+{"time": "2021-01-20 07:00:16.049387", "n_pass": [20, 2, 2], "score": "0.4513", "loss": "1.2012", "code": "String getLastmod() { return lastmod; }"}
+{"time": "2021-01-20 07:00:24.676622", "n_pass": [46, 4, 3], "score": "0.4513", "loss": "1.2012", "code": "String getLastmod(){ return lastmod; }"}
+{"time": "2021-01-20 07:00:27.268455", "n_pass": [48, 5, 4], "score": "0.4513", "loss": "1.2012", "code": "String getLastmod(){return lastmod; }"}
+{"time": "2021-01-20 07:00:37.708419", "n_pass": [53, 9, 5], "score": "0.4513", "loss": "1.2012", "code": "String getLastmod(){return lastmod;}"}
+
+Minimal simplified code:
+String getLastmod(){return lastmod;}
+

@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/core/src/main/java/org/bouncycastle/pqc/crypto/ntru/NTRUSigningKeyGenerationParameters_equals.java
+method_name = equals
+method_body = public boolean equals(Object obj) { if (this == obj) { return true; } if (obj == null) { return false; } if (!(obj instanceof NTRUSigningKeyGenerationParameters)) { return false; } NTRUSigningKeyGenerationParameters other = (NTRUSigningKeyGenerationParameters) obj; if (B != other.B) { return false; } if (N != other.N) { return false; } if (basisType != other.basisType) { return false; } if (Double.doubleToLongBits(beta) != Double.doubleToLongBits(other.beta)) { return false; } if (Double.doubleToLongBits(betaSq) != Double.doubleToLongBits(other.betaSq)) { return false; } if (bitsF != other.bitsF) { return false; } if (d != other.d) { return false; } if (d1 != other.d1) { return false; } if (d2 != other.d2) { return false; } if (d3 != other.d3) { return false; } if (hashAlg == null) { if (other.hashAlg != null) { return false; } } else if (!hashAlg.getAlgorithmName().equals(other.hashAlg.getAlgorithmName())) { return false; } if (keyGenAlg != other.keyGenAlg) { return false; } if (Double.doubleToLongBits(keyNormBound) != Double.doubleToLongBits(other.keyNormBound)) { return false; } if (Double.doubleToLongBits(keyNormBoundSq) != Double.doubleToLongBits(other.keyNormBoundSq)) { return false; } if (Double.doubleToLongBits(normBound) != Double.doubleToLongBits(other.normBound)) { return false; } if (Double.doubleToLongBits(normBoundSq) != Double.doubleToLongBits(other.normBoundSq)) { return false; } if (polyType != other.polyType) { return false; } if (primeCheck != other.primeCheck) { return false; } if (q != other.q) { return false; } if (signFailTolerance != other.signFailTolerance) { return false; } if (sparse != other.sparse) { return false; } return true; }
+
+topk path-contexts:
+[0.0891] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr3),doubletolongbits
+[0.0601] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0601] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+[0.0469] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0395] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr0),double
+[0.0266] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr2),n
+[0.0266] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr3),doubletolongbits
+[0.0253] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(NameExpr0),d
+[0.0200] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr0)_(NameExpr2),hashalg
+[0.0200] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),other
+[0.0200] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr2),d
+
+topk terminals:
+['METHOD_NAME', 'doubletolongbits', 'obj', 'false', 'obj', 'null', 'METHOD_NAME', 'false', 'METHOD_NAME', 'double', 'METHOD_NAME', 'n', 'obj', 'doubletolongbits', 'obj', 'd', 'METHOD_NAME', 'hashalg', 'METHOD_NAME', 'other', 'obj', 'd']
+

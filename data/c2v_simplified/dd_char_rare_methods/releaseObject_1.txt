@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_releaseObject.java
+method_name = releaseObject
+method_body = @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString("objectId"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }
+predict, score, loss = releaseObject, 0.4314937889575958, 1.8319058418273926
+
+Trace of simplified code(s):
+{"time": "2021-01-23 15:13:43.836201", "n_pass": [1, 1, 1], "score": "0.4315", "loss": "1.8319", "code": "@ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-23 15:13:46.477002", "n_pass": [20, 2, 2], "score": "0.3794", "loss": "1.9612", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-23 15:13:52.133092", "n_pass": [47, 4, 3], "score": "0.4136", "loss": "2.2905", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-23 15:13:54.755534", "n_pass": [50, 5, 4], "score": "0.4417", "loss": "2.1296", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); gegetObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-23 15:13:57.378923", "n_pass": [51, 6, 5], "score": "0.5024", "loss": "1.9461", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); gemoveObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-23 15:13:59.984537", "n_pass": [53, 7, 6], "score": "0.5216", "loss": "1.5696", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); gemoveObjectById(t(objectId)); }"}
+{"time": "2021-01-23 15:14:06.451670", "n_pass": [89, 9, 7], "score": "0.2652", "loss": "2.721", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); gemoveObjectById(t(objectId)); }"}
+{"time": "2021-01-23 15:14:19.548077", "n_pass": [102, 14, 8], "score": "0.2652", "loss": "2.721", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); jectById(t(objectId)); }"}
+{"time": "2021-01-23 15:14:22.161031", "n_pass": [103, 15, 9], "score": "0.3124", "loss": "2.5142", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); (t(objectId)); }"}
+{"time": "2021-01-23 15:14:36.028704", "n_pass": [156, 20, 10], "score": "0.2934", "loss": "2.7201", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Strinrams.getString(\"objectId\"); (t(otId)); }"}
+{"time": "2021-01-23 15:15:04.233105", "n_pass": [181, 30, 11], "score": "0.2934", "loss": "2.7201", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Srams.getString(\"objectId\"); (t(otId)); }"}
+{"time": "2021-01-23 15:16:14.948415", "n_pass": [294, 56, 12], "score": "0.2172", "loss": "3.1887", "code": "void releaseObject(Jser peer, JSONObject params) throws JSONException { Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:16:32.897564", "n_pass": [314, 61, 13], "score": "0.2207", "loss": "3.1748", "code": "void releaseObject(er peer, JSONObject params) throws JSONException { Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:16:35.538511", "n_pass": [317, 62, 14], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params) throws JSONException { Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:18:29.313843", "n_pass": [482, 102, 15], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params)throws JSONException { Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:19:05.882697", "n_pass": [503, 116, 16], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{ Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:19:08.489182", "n_pass": [505, 117, 17], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Srams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:19:13.727296", "n_pass": [507, 119, 18], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\"); (t(od)); }"}
+{"time": "2021-01-23 15:20:11.339603", "n_pass": [534, 141, 19], "score": "0.2484", "loss": "2.9066", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\");(t(od)); }"}
+{"time": "2021-01-23 15:20:13.948362", "n_pass": [536, 142, 20], "score": "0.2997", "loss": "2.482", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\");((od)); }"}
+{"time": "2021-01-23 15:20:16.555831", "n_pass": [538, 143, 21], "score": "0.3261", "loss": "2.3305", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\");((d)); }"}
+{"time": "2021-01-23 15:20:19.169379", "n_pass": [543, 144, 22], "score": "0.3261", "loss": "2.3305", "code": "void releaseObject(er pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\");((d));}"}
+{"time": "2021-01-23 15:20:37.972410", "n_pass": [564, 149, 23], "score": "0.2952", "loss": "2.3901", "code": "void releaseObject(r pr, JSONObject params)throws JSONException{Sams.getString(\"objectId\");((d));}"}
+{"time": "2021-01-23 15:20:40.583799", "n_pass": [567, 150, 24], "score": "0.2545", "loss": "2.7134", "code": "void releaseObject(r r, JSONObject params)throws JSONException{Sams.getString(\"objectId\");((d));}"}
+{"time": "2021-01-23 15:20:43.192220", "n_pass": [570, 151, 25], "score": "0.2545", "loss": "2.7134", "code": "void releaseObject(r r,JSONObject params)throws JSONException{Sams.getString(\"objectId\");((d));}"}
+
+Minimal simplified code:
+void releaseObject(r r,JSONObject params)throws JSONException{Sams.getString("objectId");((d));}
+

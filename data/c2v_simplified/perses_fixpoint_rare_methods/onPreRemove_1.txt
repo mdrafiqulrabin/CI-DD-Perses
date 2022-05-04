@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/ws/src/main/java/org/kaazing/gateway/transport/ws/bridge/filter/WsCheckAliveFilter_onPreRemove.java
+method_name = onPreRemove
+method_body = @Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 14:20:24.816526", "score": "0.4296", "loss": "1.0286", "code": "class T { @Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); } }"}
+{"time": "2021-01-24 14:23:26.515640", "score": "0.5318", "loss": "0.7344", "code": "class T { @Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession() .setReaderIdleTime(0); } }"}
+{"time": "2021-01-24 14:26:46.205679", "score": "0.5062", "loss": "0.7696", "code": "class T { void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession() .setReaderIdleTime(0); } }"}
+{"time": "2021-01-24 14:27:25.698481", "score": "0.5066", "loss": "0.7639", "code": "class T { void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession() .setReaderIdleTime( ); } }"}
+
+Minimal simplified code:
+class T {
+                 void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession()            .setReaderIdleTime( ); }
+}
+
+

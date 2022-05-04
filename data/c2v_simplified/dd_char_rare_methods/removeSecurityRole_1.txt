@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TesterContext_removeSecurityRole.java
+method_name = removeSecurityRole
+method_body = @Override public void removeSecurityRole(String role) { securityRoles.remove(role); }
+predict, score, loss = removeSecurityRole, 0.4078701436519623, 1.1881390810012817
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:51:41.738085", "n_pass": [1, 1, 1], "score": "0.4079", "loss": "1.1881", "code": "@Override public void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:51:44.759125", "n_pass": [20, 2, 2], "score": "0.667", "loss": "0.5907", "code": "public void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:51:47.381964", "n_pass": [21, 3, 3], "score": "0.6169", "loss": "0.7334", "code": "d removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:52:08.746255", "n_pass": [86, 9, 4], "score": "0.2406", "loss": "2.5626", "code": "d removeSecurityRole(Stg role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:52:39.252157", "n_pass": [158, 19, 5], "score": "0.7702", "loss": "0.5737", "code": "d removeSecurityRole(Sg role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:52:41.859953", "n_pass": [159, 20, 6], "score": "0.6661", "loss": "0.7704", "code": "d removeSecurityRole(S role) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:52:49.698399", "n_pass": [163, 23, 7], "score": "0.3401", "loss": "2.1719", "code": "d removeSecurityRole(S roe) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:52:52.304084", "n_pass": [164, 24, 8], "score": "0.492", "loss": "1.9626", "code": "d removeSecurityRole(S ro) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:53:37.095365", "n_pass": [206, 38, 9], "score": "0.3376", "loss": "2.4199", "code": "d removeSecurityRole(S r) { securityRoles.remove(role); }"}
+{"time": "2021-01-23 13:54:38.935236", "n_pass": [287, 58, 10], "score": "0.3073", "loss": "1.6893", "code": "d removeSecurityRole(S r) { securityRole.remove(role); }"}
+{"time": "2021-01-23 13:54:59.831232", "n_pass": [296, 66, 11], "score": "0.4966", "loss": "1.992", "code": "d removeSecurityRole(S r) { securityRole.remove(ole); }"}
+{"time": "2021-01-23 13:55:05.045406", "n_pass": [298, 68, 12], "score": "0.5278", "loss": "1.7113", "code": "d removeSecurityRole(S r) { securityRole.remove(oe); }"}
+{"time": "2021-01-23 13:55:07.661608", "n_pass": [299, 69, 13], "score": "0.4468", "loss": "1.8852", "code": "d removeSecurityRole(S r) { securityRole.remove(o); }"}
+{"time": "2021-01-23 13:55:10.263189", "n_pass": [302, 70, 14], "score": "0.4468", "loss": "1.8852", "code": "d removeSecurityRole(S r) { securityRole.remove(o);}"}
+{"time": "2021-01-23 13:55:20.990798", "n_pass": [329, 71, 15], "score": "0.4468", "loss": "1.8852", "code": "d removeSecurityRole(S r){ securityRole.remove(o);}"}
+{"time": "2021-01-23 13:55:23.590857", "n_pass": [331, 72, 16], "score": "0.4468", "loss": "1.8852", "code": "d removeSecurityRole(S r){securityRole.remove(o);}"}
+{"time": "2021-01-23 13:56:15.705806", "n_pass": [352, 92, 17], "score": "0.8959", "loss": "0.2536", "code": "d removeSecurityRole(S r){securityRole.remove();}"}
+
+Minimal simplified code:
+d removeSecurityRole(S r){securityRole.remove();}
+

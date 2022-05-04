@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxBufferedRecords.java
+method_name = setMaxBufferedRecords
+method_body = public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:14:58.606588", "score": "0.4769", "loss": "0.8254", "code": "class T { public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; } }"}
+{"time": "2021-01-24 02:15:36.468821", "score": "0.2202", "loss": "2.9622", "code": "class T { public Builder setMaxBufferedRecords(int maxBufferedRecords) { } }"}
+{"time": "2021-01-24 02:15:57.878616", "score": "0.2202", "loss": "2.9622", "code": "class T { Builder setMaxBufferedRecords(int maxBufferedRecords) { } }"}
+
+Minimal simplified code:
+class T {
+       Builder setMaxBufferedRecords(int maxBufferedRecords) {                                                            }
+}
+
+

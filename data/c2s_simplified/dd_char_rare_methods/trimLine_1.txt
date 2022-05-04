@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/jobscheduler/scheduler-component-shared/src/java/org/sakaiproject/component/app/scheduler/jobs/cm/processor/BaseCsvFileProcessor_trimLine.java
+method_name = trimLine
+method_body = protected String[] trimLine(String[] line) { String trim = ""; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }
+predict, score, loss = trimLine, 0.23536146, 3.0522814
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:14:09.043380", "n_pass": [1, 1, 1], "score": "0.2354", "loss": "3.0523", "code": "protected String[] trimLine(String[] line) { String trim = \"\"; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-23 11:14:12.476322", "n_pass": [44, 3, 2], "score": "0.2354", "loss": "3.0523", "code": " String[] trimLine(String[] line) { String trim = \"\"; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-23 11:14:19.574981", "n_pass": [91, 8, 3], "score": "0.2801", "loss": "2.9884", "code": " Str trimLine(String[] line) { String trim = \"\"; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-23 11:14:21.326306", "n_pass": [94, 9, 4], "score": "0.2357", "loss": "3.4981", "code": " Str trimLine(g[] line) { String trim = \"\"; for (int i = 0; i < line.length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-23 11:14:25.356931", "n_pass": [105, 12, 5], "score": "0.2091", "loss": "5.1128", "code": " Str trimLine(g[] line) { String trim = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); line[i] = trim; } return line; }"}
+{"time": "2021-01-23 11:14:29.359287", "n_pass": [114, 15, 6], "score": "0.3067", "loss": "4.4619", "code": " Str trimLine(g[] line) { String trim = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = trim; } return line; }"}
+{"time": "2021-01-23 11:14:42.479841", "n_pass": [196, 24, 7], "score": "0.3831", "loss": "4.4334", "code": " Str trimLine(g[] line) { String trim = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:14:56.013472", "n_pass": [216, 33, 8], "score": "0.544", "loss": "4.0238", "code": " Str trimLine(g[] line) { ring trim = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:14:57.346868", "n_pass": [217, 34, 9], "score": "0.4939", "loss": "4.1983", "code": " Str trimLine(g[] line) { ng trim = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:01.386535", "n_pass": [220, 37, 10], "score": "0.4938", "loss": "4.2498", "code": " Str trimLine(g[] line) { ng tm = \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:02.719328", "n_pass": [221, 38, 11], "score": "0.5133", "loss": "4.2025", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0; i < length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:06.754062", "n_pass": [232, 41, 12], "score": "0.3224", "loss": "3.5259", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; i++) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:10.893648", "n_pass": [236, 44, 13], "score": "0.366", "loss": "3.2536", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; ) { trim = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:12.244250", "n_pass": [238, 45, 14], "score": "0.2788", "loss": "3.7623", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; ) {im = line[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:13.574600", "n_pass": [241, 46, 15], "score": "0.2675", "loss": "5.1214", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; ) {im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:15:46.234042", "n_pass": [371, 64, 16], "score": "0.2675", "loss": "5.1214", "code": " Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:02.392882", "n_pass": [395, 76, 17], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[] line) { ng t= \"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:11.122744", "n_pass": [412, 80, 18], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line) { ng t= \"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:17.790715", "n_pass": [418, 85, 19], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ ng t= \"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:19.169493", "n_pass": [420, 86, 20], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t= \"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:25.863667", "n_pass": [426, 91, 21], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\"; for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:27.193641", "n_pass": [430, 92, 22], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for (int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:28.531183", "n_pass": [434, 93, 23], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i = 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:35.200543", "n_pass": [441, 98, 24], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i= 0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:36.532654", "n_pass": [443, 99, 25], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;  length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:37.865843", "n_pass": [446, 100, 26], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0; length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:39.233445", "n_pass": [447, 101, 27], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length; ){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:16:48.604518", "n_pass": [455, 108, 28], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim(); li = t; } return line; }"}
+{"time": "2021-01-23 11:17:45.519682", "n_pass": [575, 145, 29], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li = t; } return line; }"}
+{"time": "2021-01-23 11:17:49.544245", "n_pass": [578, 148, 30], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li= t; } return line; }"}
+{"time": "2021-01-23 11:17:52.210993", "n_pass": [580, 150, 31], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li=t; } return line; }"}
+{"time": "2021-01-23 11:17:53.542947", "n_pass": [583, 151, 32], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li=t;} return line; }"}
+{"time": "2021-01-23 11:17:54.873784", "n_pass": [585, 152, 33], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li=t;}return line; }"}
+{"time": "2021-01-23 11:18:10.901907", "n_pass": [598, 164, 34], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im = l[i].trim();li=t;}return line;}"}
+{"time": "2021-01-23 11:18:47.697745", "n_pass": [653, 189, 35], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im= l[i].trim();li=t;}return line;}"}
+{"time": "2021-01-23 11:18:49.035871", "n_pass": [655, 190, 36], "score": "0.2675", "loss": "5.1214", "code": "Str trimLine(g[]line){ng t=\"\";for(int i=0;length;){im=l[i].trim();li=t;}return line;}"}
+
+Minimal simplified code:
+Str trimLine(g[]line){ng t="";for(int i=0;length;){im=l[i].trim();li=t;}return line;}
+

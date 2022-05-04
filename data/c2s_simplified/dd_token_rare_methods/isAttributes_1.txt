@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/storeconfig/StoreDescription_isAttributes.java
+method_name = isAttributes
+method_body = public boolean isAttributes() { return attributes; }
+predict, score, loss = isAttributes, 0.49032325, 0.8227007
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:32:16.566511", "n_pass": [1, 1, 1], "score": "0.4903", "loss": "0.8227", "code": "public boolean isAttributes() { return attributes; }"}
+{"time": "2021-01-20 05:32:18.544867", "n_pass": [20, 2, 2], "score": "0.4903", "loss": "0.8227", "code": "boolean isAttributes() { return attributes; }"}
+{"time": "2021-01-20 05:32:19.824288", "n_pass": [24, 3, 3], "score": "0.6305", "loss": "1.2127", "code": "boolean isAttributes() { attributes; }"}
+{"time": "2021-01-20 05:32:25.765992", "n_pass": [45, 6, 4], "score": "0.6305", "loss": "1.2127", "code": "boolean isAttributes() { attributes;}"}
+{"time": "2021-01-20 05:32:27.762441", "n_pass": [51, 7, 5], "score": "0.6305", "loss": "1.2127", "code": "boolean isAttributes(){ attributes;}"}
+{"time": "2021-01-20 05:32:29.057523", "n_pass": [53, 8, 6], "score": "0.6305", "loss": "1.2127", "code": "boolean isAttributes(){attributes;}"}
+
+Minimal simplified code:
+boolean isAttributes(){attributes;}
+

@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_init.java
+method_name = init
+method_body = @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter("attribute"); }
+predict, score, loss = init, 0.999962568283081, 4.124556289752945e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:23:41.201179", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:23:43.974300", "n_pass": [10, 2, 2], "score": "0.9998", "loss": "0.0002", "code": "@Override public void init(FilterConfig fConfig) throws ServletException { this. fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:23:46.804845", "n_pass": [22, 3, 3], "score": "0.9998", "loss": "0.0003", "code": "void init(FilterConfig fConfig) throws ServletException { this. fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:23:50.096635", "n_pass": [43, 4, 4], "score": "0.9998", "loss": "0.0002", "code": "void init(FilterConfig fConfig) throws ServletException { fConfig.getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:23:53.134984", "n_pass": [44, 5, 5], "score": "0.9987", "loss": "0.0035", "code": "void init(FilterConfig fConfig) throws ServletException {getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:23:58.474445", "n_pass": [83, 6, 6], "score": "0.9987", "loss": "0.0035", "code": "void init(FilterConfig fConfig)throws ServletException {getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:24:03.993895", "n_pass": [112, 7, 7], "score": "0.9987", "loss": "0.0035", "code": "void init(FilterConfig fConfig)throws ServletException{getInitParameter(\"attribute\"); }"}
+{"time": "2020-12-26 22:24:06.777458", "n_pass": [114, 8, 8], "score": "0.9998", "loss": "0.0004", "code": "void init(FilterConfig fConfig)throws ServletException{(\"attribute\"); }"}
+{"time": "2020-12-26 22:24:09.563544", "n_pass": [117, 9, 9], "score": "0.9998", "loss": "0.0004", "code": "void init(FilterConfig fConfig)throws ServletException{(\"\"); }"}
+{"time": "2020-12-26 22:24:12.460438", "n_pass": [121, 10, 10], "score": "0.9998", "loss": "0.0004", "code": "void init(FilterConfig fConfig)throws ServletException{(\"\");}"}
+
+Minimal simplified code:
+void init(FilterConfig fConfig)throws ServletException{("");}
+

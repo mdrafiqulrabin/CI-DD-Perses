@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/http/Cookies_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println("=== Cookies ==="); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }
+
+topk path-contexts:
+[0.1380] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BinaryExpr:less)_(NameExpr0),i
+[0.0748] i,(NameExpr0)^(UnaryExpr:preIncrement)^(ForStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),tostring
+[0.0687] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ForStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),println
+[0.0560] i,(NameExpr0)^(UnaryExpr:preIncrement)^(ForStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),println
+[0.0484] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(PrimitiveType0),int
+[0.0434] int,(PrimitiveType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ForStmt)_(UnaryExpr:preIncrement)_(NameExpr0),i
+[0.0368] println,(NameExpr3)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),count
+[0.0256] 0,(IntegerLiteralExpr1)^(VariableDeclarator)^(VariableDeclarationExpr)^(ForStmt)_(UnaryExpr:preIncrement)_(NameExpr0),i
+[0.0247] int,(PrimitiveType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ForStmt)_(VariableDeclarationExpr)_(PrimitiveType0),int
+[0.0229] stringwriter,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(NameExpr1),sw
+
+topk terminals:
+['string', 'i', 'i', 'tostring', 'string', 'println', 'i', 'println', 'string', 'int', 'int', 'i', 'println', 'count', '0', 'i', 'int', 'int', 'stringwriter', 'sw']
+

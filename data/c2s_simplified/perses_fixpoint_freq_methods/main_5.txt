@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:01:15.795902", "score": "0.9993", "loss": "0.001", "code": "class T { public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); } }"}
+{"time": "2020-12-21 10:01:53.140876", "score": "0.997", "loss": "0.0066", "code": "class T { public static void main(String[] args) throws IOException { } }"}
+{"time": "2020-12-21 10:02:14.273748", "score": "0.8976", "loss": "0.2642", "code": "class T { public static void main(String args) throws IOException { } }"}
+{"time": "2020-12-21 10:02:24.765334", "score": "0.7634", "loss": "0.5046", "code": "class T { public static void main(String args) { } }"}
+{"time": "2020-12-21 10:02:35.254783", "score": "0.7634", "loss": "0.5046", "code": "class T { void main(String args) { } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                    {                                                                                                                                                                                               }
+}
+
+

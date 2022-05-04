@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/OnboardingActivity_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.onboarding); }
+
+topk path-contexts for sub-token: on
+[0.2731] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.2575] saved|instance|state,NameExpr2|MethodCallExpr|NameExpr3,on|create
+[0.2387] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.1151] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0124] saved|instance|state,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr0,r
+[0.0105] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|NameExpr2,onboarding
+[0.0102] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|content|view
+[0.0101] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr0,r
+[0.0097] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr2,layout
+[0.0055] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr0,r
+
+topk terminals for sub-token: on
+['METHOD_NAME', 'on|create', 'saved|instance|state', 'on|create', 'bundle', 'on|create', 'saved|instance|state', 'on|create', 'saved|instance|state', 'r', 'on|create', 'onboarding', 'METHOD_NAME', 'set|content|view', 'on|create', 'r', 'on|create', 'layout', 'saved|instance|state', 'r']
+
+topk path-contexts for sub-token: create
+[0.5764] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.2789] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0784] saved|instance|state,NameExpr2|MethodCallExpr|NameExpr3,on|create
+[0.0529] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0084] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr0,r
+[0.0023] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|FieldAccessExpr0|NameExpr2,layout
+[0.0008] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr1|NameExpr2,onboarding
+[0.0002] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,saved|instance|state
+[0.0002] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+
+topk terminals for sub-token: create
+['METHOD_NAME', 'on|create', 'bundle', 'on|create', 'saved|instance|state', 'on|create', 'saved|instance|state', 'on|create', 'on|create', 'r', 'on|create', 'layout', 'on|create', 'onboarding', 'override', 'METHOD_NAME', 'METHOD_NAME', 'saved|instance|state', 'override', 'void']
+

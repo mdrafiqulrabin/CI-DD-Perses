@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/protyposis__MediaPlayer-Extended/MediaPlayer/src/main/java/net/protyposis/android/mediaplayer/MediaCodecAudioDecoder_onOutputFormatChanged.java
+method_name = onOutputFormatChanged
+method_body = @Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }
+predict, score, loss = onOutputFormatChanged, 0.43241316080093384, 0.9770388603210449
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:54:08.160308", "n_pass": [1, 1, 1], "score": "0.4324", "loss": "0.977", "code": "@Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }"}
+{"time": "2021-01-23 17:54:16.873314", "n_pass": [45, 4, 2], "score": "0.4395", "loss": "0.9611", "code": "@Overrotected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }"}
+{"time": "2021-01-23 17:54:19.478978", "n_pass": [46, 5, 3], "score": "0.4395", "loss": "0.9611", "code": "@Overrd void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }"}
+{"time": "2021-01-23 17:54:26.314882", "n_pass": [56, 7, 4], "score": "0.4395", "loss": "0.9611", "code": "@Overrd void onOutputFormatChanged(MediaFormat format) { mAuyback.init(format); }"}
+{"time": "2021-01-23 17:54:35.771765", "n_pass": [96, 10, 5], "score": "0.4395", "loss": "0.9611", "code": "@Overrd void onOutputFormatChanged(MediaFormat format) { mAuck.init(format); }"}
+{"time": "2021-01-23 17:54:43.587125", "n_pass": [100, 13, 6], "score": "0.4554", "loss": "0.9239", "code": "@Overrd void onOutputFormatChanged(MediaFormat format) { mAuck.init(fo); }"}
+{"time": "2021-01-23 17:54:46.211468", "n_pass": [103, 14, 7], "score": "0.4554", "loss": "0.9239", "code": "@Ovd void onOutputFormatChanged(MediaFormat format) { mAuck.init(fo); }"}
+{"time": "2021-01-23 17:54:49.231029", "n_pass": [105, 15, 8], "score": "0.2882", "loss": "1.5828", "code": "@Ovd v onOutputFormatChanged(MediaFormat format) { mAuck.init(fo); }"}
+{"time": "2021-01-23 17:55:05.157222", "n_pass": [121, 20, 9], "score": "0.2421", "loss": "1.8498", "code": "@Ovd v onOutputFormatChanged(MediaFormat format) { ck.init(fo); }"}
+{"time": "2021-01-23 17:55:35.277771", "n_pass": [194, 30, 10], "score": "0.2418", "loss": "1.8583", "code": "@vd v onOutputFormatChanged(MediaFormat format) { ck.init(fo); }"}
+{"time": "2021-01-23 17:55:37.902130", "n_pass": [195, 31, 11], "score": "0.2435", "loss": "1.8409", "code": "@d v onOutputFormatChanged(MediaFormat format) { ck.init(fo); }"}
+{"time": "2021-01-23 17:57:07.126674", "n_pass": [310, 60, 12], "score": "0.2435", "loss": "1.8409", "code": "@d v onOutputFormatChanged(MediaFormat format){ ck.init(fo); }"}
+{"time": "2021-01-23 17:57:09.736189", "n_pass": [312, 61, 13], "score": "0.2435", "loss": "1.8409", "code": "@d v onOutputFormatChanged(MediaFormat format){ck.init(fo); }"}
+{"time": "2021-01-23 17:57:28.072364", "n_pass": [321, 68, 14], "score": "0.2118", "loss": "1.9943", "code": "@d v onOutputFormatChanged(MediaFormat format){ck.init(o); }"}
+{"time": "2021-01-23 17:57:33.270803", "n_pass": [325, 70, 15], "score": "0.2118", "loss": "1.9943", "code": "@d v onOutputFormatChanged(MediaFormat format){ck.init(o);}"}
+
+Minimal simplified code:
+@d v onOutputFormatChanged(MediaFormat format){ck.init(o);}
+

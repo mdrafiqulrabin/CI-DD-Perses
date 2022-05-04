@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/StringCache_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof CharEntry) { return value.equals(((CharEntry) obj).value); } return false; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:34:19.076399", "score": "0.9896", "loss": "0.0138", "code": "class T { @Override public boolean equals(Object obj) { if (obj instanceof CharEntry) { return value.equals(((CharEntry) obj).value); } return false; } }"}
+{"time": "2020-12-21 10:34:56.451453", "score": "0.9781", "loss": "0.03", "code": "class T { @Override public boolean equals(Object obj) { return value.equals(((CharEntry) obj).value); } }"}
+{"time": "2020-12-21 10:35:07.153512", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override public boolean equals(Object obj) { } }"}
+{"time": "2020-12-21 10:35:28.187474", "score": "0.4175", "loss": "1.0593", "code": "class T { @Override boolean equals(Object obj) { } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object obj)                                 {                                               }
+}
+
+

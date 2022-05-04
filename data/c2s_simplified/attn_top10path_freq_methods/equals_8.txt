@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/naming/NamingEntry_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }
+
+topk path-contexts for sub-token: equals
+[0.1771] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.1472] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.1209] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,obj
+[0.0984] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0522] obj,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0420] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+[0.0399] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,obj
+[0.0326] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0306] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+[0.0257] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|InstanceOfExpr|NameExpr0,obj
+
+topk terminals for sub-token: equals
+['object', 'false', 'obj', 'false', 'boolean', 'obj', 'boolean', 'object', 'obj', 'object', 'obj', 'equals', 'METHOD_NAME', 'obj', 'boolean', 'METHOD_NAME', 'object', 'equals', 'obj', 'obj']
+

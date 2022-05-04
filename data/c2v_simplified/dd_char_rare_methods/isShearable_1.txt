@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPPlant_isShearable.java
+method_name = isShearable
+method_body = @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }
+predict, score, loss = isShearable, 0.4018533229827881, 1.01241934299469
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:01:54.240347", "n_pass": [1, 1, 1], "score": "0.4019", "loss": "1.0124", "code": "@Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:01:57.321655", "n_pass": [44, 2, 2], "score": "0.2436", "loss": "1.5065", "code": " boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:01:59.948138", "n_pass": [47, 3, 3], "score": "0.4316", "loss": "0.9599", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:02.568608", "n_pass": [49, 4, 4], "score": "0.7738", "loss": "0.4759", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockSld.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:05.197133", "n_pass": [50, 5, 5], "score": "0.9636", "loss": "0.0652", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:08.339126", "n_pass": [89, 6, 6], "score": "0.9635", "loss": "0.0658", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:10.974766", "n_pass": [93, 7, 7], "score": "0.9635", "loss": "0.0658", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:13.605203", "n_pass": [97, 8, 8], "score": "0.9892", "loss": "0.0154", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: cCANE: return false; default: return true; } }"}
+{"time": "2021-01-23 17:02:16.244675", "n_pass": [99, 9, 9], "score": "0.9895", "loss": "0.0149", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: cCANE: ret; default: return true; } }"}
+{"time": "2021-01-23 17:02:18.875104", "n_pass": [100, 10, 10], "score": "0.9943", "loss": "0.0067", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: cCANE: ret: return true; } }"}
+{"time": "2021-01-23 17:02:21.503221", "n_pass": [101, 11, 11], "score": "0.9942", "loss": "0.0068", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) { IBlockS(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: cCANE: rettrue; } }"}
+{"time": "2021-01-23 17:02:27.620255", "n_pass": [110, 13, 12], "score": "0.9965", "loss": "0.0037", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case CATTAIL: cCANE: rettrue; } }"}
+{"time": "2021-01-23 17:02:30.247909", "n_pass": [118, 14, 13], "score": "0.9965", "loss": "0.0037", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case CCANE: rettrue; } }"}
+{"time": "2021-01-23 17:02:36.335378", "n_pass": [167, 16, 14], "score": "0.9968", "loss": "0.0034", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case C: rettrue; } }"}
+{"time": "2021-01-23 17:02:38.950564", "n_pass": [169, 17, 15], "score": "0.9969", "loss": "0.0033", "code": " boolean isShearable(ItemStack item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:02:41.594302", "n_pass": [171, 18, 16], "score": "0.9963", "loss": "0.004", "code": "lean isShearable(ItemStack item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:02:45.860352", "n_pass": [177, 19, 17], "score": "0.9789", "loss": "0.0229", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) state.getValue(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:02:56.369674", "n_pass": [190, 23, 18], "score": "0.9828", "loss": "0.0184", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) stgetValue(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:02:58.979735", "n_pass": [191, 24, 19], "score": "0.9828", "loss": "0.0184", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) stalue(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:03:01.587677", "n_pass": [192, 25, 20], "score": "0.9823", "loss": "0.0189", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(this.vaperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:03:04.215741", "n_pass": [194, 26, 21], "score": "0.984", "loss": "0.017", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(thiperty)) { case C: re; } }"}
+{"time": "2021-01-23 17:03:06.823927", "n_pass": [195, 27, 22], "score": "0.984", "loss": "0.017", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: re; } }"}
+{"time": "2021-01-23 17:03:19.314288", "n_pass": [272, 31, 23], "score": "0.984", "loss": "0.017", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: ; } }"}
+{"time": "2021-01-23 17:03:21.924679", "n_pass": [273, 32, 24], "score": "0.984", "loss": "0.017", "code": "lean isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:24.544011", "n_pass": [275, 33, 25], "score": "0.9868", "loss": "0.014", "code": "an isShearable(Iteck item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:30.019238", "n_pass": [284, 34, 26], "score": "0.8436", "loss": "0.1762", "code": "an isShearable(Ick item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:32.633279", "n_pass": [285, 35, 27], "score": "0.9924", "loss": "0.0083", "code": "an isShearable(I item, IBlockAccess pos) {(pos); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:53.611504", "n_pass": [296, 43, 28], "score": "0.9923", "loss": "0.0088", "code": "an isShearable(I item, IBlockAccess s) {(pos); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:56.255430", "n_pass": [300, 44, 29], "score": "0.9924", "loss": "0.0086", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) st(thiy)) { case C: } }"}
+{"time": "2021-01-23 17:03:58.880270", "n_pass": [308, 45, 30], "score": "0.9918", "loss": "0.0092", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (thiy)) { case C: } }"}
+{"time": "2021-01-23 17:04:01.500231", "n_pass": [310, 46, 31], "score": "0.9911", "loss": "0.0102", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (ty)) { case C: } }"}
+{"time": "2021-01-23 17:04:29.801259", "n_pass": [422, 54, 32], "score": "0.9925", "loss": "0.0084", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (t)) { case C: } }"}
+{"time": "2021-01-23 17:04:32.432127", "n_pass": [424, 55, 33], "score": "0.9925", "loss": "0.0084", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (t)){ case C: } }"}
+{"time": "2021-01-23 17:04:35.036128", "n_pass": [426, 56, 34], "score": "0.9925", "loss": "0.0084", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (t)){case C: } }"}
+{"time": "2021-01-23 17:04:37.652501", "n_pass": [434, 57, 35], "score": "0.9925", "loss": "0.0084", "code": "an isShearable(I item, IBlockAccess s) {(p); switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:04:40.284419", "n_pass": [437, 58, 36], "score": "0.9928", "loss": "0.0119", "code": "n isShearable(I item, IBlockAccess s) {(p); switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:04:50.791730", "n_pass": [455, 60, 37], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem, IBlockAccess s) {(p); switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:04:58.631435", "n_pass": [459, 63, 38], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem,IBlockAccess s) {(p); switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:05:32.640836", "n_pass": [475, 76, 39], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem,IBlockAccess s){(p); switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:05:35.275556", "n_pass": [481, 77, 40], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem,IBlockAccess s){(p);switch((B) (t)){case C:} }"}
+{"time": "2021-01-23 17:05:37.900469", "n_pass": [492, 78, 41], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem,IBlockAccess s){(p);switch((B)(t)){case C:} }"}
+{"time": "2021-01-23 17:06:25.425430", "n_pass": [559, 94, 42], "score": "0.3525", "loss": "1.6002", "code": "n isShearable(I iem,IBlockAccess s){(p);switch((B)(t)){case C:}}"}
+
+Minimal simplified code:
+n isShearable(I iem,IBlockAccess s){(p);switch((B)(t)){case C:}}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/protyposis__MediaPlayer-Extended/MediaPlayer/src/main/java/net/protyposis/android/mediaplayer/MediaCodecAudioDecoder_onOutputFormatChanged.java
+method_name = onOutputFormatChanged
+method_body = @Override protected void onOutputFormatChanged(MediaFormat format) { mAudioPlayback.init(format); }
+
+topk path-contexts:
+[0.5457] mediaformat,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),init
+[0.1133] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),mediaformat
+[0.0989] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),mediaformat
+[0.0605] format,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),init
+[0.0508] mediaformat,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),maudioplayback
+[0.0262] format,(NameExpr2)^(MethodCallExpr)_(NameExpr3),init
+[0.0190] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),format
+[0.0171] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),init
+[0.0129] mediaformat,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),format
+[0.0126] format,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),mediaformat
+
+topk terminals:
+['mediaformat', 'init', 'void', 'mediaformat', 'METHOD_NAME', 'mediaformat', 'format', 'init', 'mediaformat', 'maudioplayback', 'format', 'init', 'void', 'format', 'METHOD_NAME', 'init', 'mediaformat', 'format', 'format', 'mediaformat']
+

@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/handler/decoration/DecorateBiomeEventHandler_onBiomeDecorate.java
+method_name = onBiomeDecorate
+method_body = @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (BOPBiomes.excludedDecoratedWorldTypes.contains(event.getWorld().getWorldType())) return; if (event.getType() != Decorate.EventType.CUSTOM) { runGeneratorStage(event.getWorld(), event.getRand(), event.getPos(), GeneratorStage.mapDecorateType(event.getType())); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:45:24.196880", "score": "0.3974", "loss": "3.3578", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (BOPBiomes.excludedDecoratedWorldTypes.contains(event.getWorld().getWorldType())) return; if (event.getType() != Decorate.EventType.CUSTOM) { runGeneratorStage(event.getWorld(), event.getRand(), event.getPos(), GeneratorStage.mapDecorateType(event.getType())); } } }"}
+{"time": "2021-01-24 04:46:33.747174", "score": "0.4615", "loss": "3.3134", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate.EventType.CUSTOM) { runGeneratorStage(event.getWorld(), event.getRand(), event.getPos(), GeneratorStage.mapDecorateType(event.getType())); } } }"}
+{"time": "2021-01-24 04:46:56.177558", "score": "0.5349", "loss": "3.1708", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate.EventType.CUSTOM) runGeneratorStage(event.getWorld(), event.getRand(), event.getPos(), GeneratorStage.mapDecorateType(event.getType())); } }"}
+{"time": "2021-01-24 04:47:41.891009", "score": "0.5909", "loss": "3.1484", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate.EventType.CUSTOM) runGeneratorStage(event.getWorld(), event.getRand(), event.getPos() ); } }"}
+{"time": "2021-01-24 04:48:03.456862", "score": "0.5882", "loss": "3.0005", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate.EventType.CUSTOM) runGeneratorStage(event.getWorld(), event.getRand() ); } }"}
+{"time": "2021-01-24 04:48:44.465451", "score": "0.3836", "loss": "3.5908", "code": "class T { @SubscribeEvent public void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate ) runGeneratorStage(event.getWorld(), event.getRand() ); } }"}
+{"time": "2021-01-24 04:49:50.184696", "score": "0.3836", "loss": "3.5908", "code": "class T { @SubscribeEvent void onBiomeDecorate(DecorateBiomeEvent.Decorate event) { if (event.getType() != Decorate ) runGeneratorStage(event.getWorld(), event.getRand() ); } }"}
+
+Minimal simplified code:
+class T {
+@SubscribeEvent        void onBiomeDecorate(DecorateBiomeEvent.Decorate event) {                                                                                              if (event.getType() != Decorate                 )   runGeneratorStage(event.getWorld(), event.getRand()                                                                 );   }
+}
+
+

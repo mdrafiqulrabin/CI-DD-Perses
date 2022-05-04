@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:58:13.521774", "score": "0.9973", "loss": "0.0032", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); } }"}
+{"time": "2020-12-21 09:59:01.394287", "score": "0.9975", "loss": "0.0027", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); } }"}
+{"time": "2020-12-21 09:59:22.579488", "score": "0.9966", "loss": "0.0041", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); } }"}
+{"time": "2020-12-21 09:59:43.710021", "score": "0.9961", "loss": "0.0051", "code": "class T { @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); } }"}
+{"time": "2020-12-21 10:00:04.724949", "score": "0.9915", "loss": "0.0208", "code": "class T { void init(ProcessingEnvironment env) { super.init(env); } }"}
+{"time": "2020-12-21 10:00:15.314021", "score": "0.9486", "loss": "0.1902", "code": "class T { void init( ) { super.init(env); } }"}
+{"time": "2020-12-21 10:00:25.842636", "score": "0.9685", "loss": "0.0923", "code": "class T { void init( ) { super.init( ); } }"}
+
+Minimal simplified code:
+class T {
+                              void init(                         ) { super.init(   );                                                                                                           }
+}
+
+

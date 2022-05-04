@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/tld/TldResourcePath_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }
+predict, score, loss = equals, 0.9953851, 0.005158889
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:34:36.027123", "n_pass": [1, 1, 1], "score": "0.9969", "loss": "0.0038", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) && Objects.equals(webappPath, other.webappPath) && Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:37.367090", "n_pass": [26, 2, 2], "score": "0.9947", "loss": "0.0062", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) & Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:38.732711", "n_pass": [55, 3, 3], "score": "0.9925", "loss": "0.0089", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null ||o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url.equals(other.url) & Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:40.072476", "n_pass": [59, 4, 4], "score": "0.9868", "loss": "0.0162", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null ||o.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url& Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:41.398896", "n_pass": [67, 5, 5], "score": "0.9872", "loss": "0.0148", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) { return false; } TldResourcePath other = (TldResourcePath) o; return url& Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:42.745912", "n_pass": [103, 6, 6], "score": "0.9717", "loss": "0.0327", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o; return url& Objects.equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:44.077641", "n_pass": [108, 7, 7], "score": "0.9636", "loss": "0.0434", "code": "@Override public boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o; return urlequals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:45.424988", "n_pass": [112, 8, 8], "score": "0.9287", "loss": "0.0975", "code": " boolean equals(Object o) { if (this == o) { return true; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o; return urlequals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:46.762175", "n_pass": [117, 9, 9], "score": "0.6666", "loss": "0.5808", "code": " boolean equals(Object o) { if (thiso) { return true; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o; return urlequals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:48.082526", "n_pass": [119, 10, 10], "score": "0.5175", "loss": "1.0214", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o; return urlequals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:49.397624", "n_pass": [128, 11, 11], "score": "0.9438", "loss": "0.0723", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o;equals(entryName, other.entryName); }"}
+{"time": "2020-12-27 03:34:51.401091", "n_pass": [178, 12, 12], "score": "0.955", "loss": "0.057", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o;equals( other.entryName); }"}
+{"time": "2020-12-27 03:34:52.706174", "n_pass": [180, 13, 13], "score": "0.9514", "loss": "0.0645", "code": " boolean equals(Object o) { if (thiso) {; } if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o;equals( other); }"}
+{"time": "2020-12-27 03:34:54.388137", "n_pass": [193, 14, 14], "score": "0.9514", "loss": "0.0645", "code": " boolean equals(Object o) { if (thiso) {} if (oo.getClass()) {; } TldResourcePath other = (TldResourcePath) o;equals( other); }"}
+{"time": "2020-12-27 03:34:55.725669", "n_pass": [197, 15, 15], "score": "0.9486", "loss": "0.0698", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {; } TldResourcePath other = (TldResourcePath) o;equals( other); }"}
+{"time": "2020-12-27 03:34:57.036909", "n_pass": [201, 16, 16], "score": "0.9486", "loss": "0.0698", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} TldResourcePath other = (TldResourcePath) o;equals( other); }"}
+{"time": "2020-12-27 03:34:58.356226", "n_pass": [203, 17, 17], "score": "0.7234", "loss": "0.4875", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) o;equals( other); }"}
+{"time": "2020-12-27 03:34:59.685734", "n_pass": [208, 18, 18], "score": "0.83", "loss": "0.2749", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals( other); }"}
+{"time": "2020-12-27 03:35:01.024978", "n_pass": [210, 19, 19], "score": "0.8217", "loss": "0.2772", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals(); }"}
+{"time": "2020-12-27 03:35:07.940321", "n_pass": [285, 20, 20], "score": "0.8217", "loss": "0.2772", "code": " boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:09.236421", "n_pass": [286, 21, 21], "score": "0.8217", "loss": "0.2772", "code": "boolean equals(Object o) { if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:11.241280", "n_pass": [295, 22, 22], "score": "0.8217", "loss": "0.2772", "code": "boolean equals(Object o){ if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:12.534594", "n_pass": [297, 23, 23], "score": "0.8217", "loss": "0.2772", "code": "boolean equals(Object o){if (thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:13.832100", "n_pass": [299, 24, 24], "score": "0.8217", "loss": "0.2772", "code": "boolean equals(Object o){if(thiso) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:15.130181", "n_pass": [301, 25, 25], "score": "0.8709", "loss": "0.1947", "code": "boolean equals(Object o){if(o) {} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:16.435554", "n_pass": [304, 26, 26], "score": "0.8709", "loss": "0.1947", "code": "boolean equals(Object o){if(o){} if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:17.733612", "n_pass": [307, 27, 27], "score": "0.8709", "loss": "0.1947", "code": "boolean equals(Object o){if(o){}if (ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:19.036621", "n_pass": [309, 28, 28], "score": "0.8709", "loss": "0.1947", "code": "boolean equals(Object o){if(o){}if(ogetClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:20.340572", "n_pass": [311, 29, 29], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()) {} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:21.670239", "n_pass": [316, 30, 30], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()){} other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:22.976265", "n_pass": [319, 31, 31], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()){}other = (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:24.272668", "n_pass": [321, 32, 32], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()){}other= (TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:25.567534", "n_pass": [323, 33, 33], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()){}other=(TldResourcePath) equals();}"}
+{"time": "2020-12-27 03:35:26.885921", "n_pass": [327, 34, 34], "score": "0.9019", "loss": "0.1573", "code": "boolean equals(Object o){if(o){}if(getClass()){}other=(TldResourcePath)equals();}"}
+
+Minimal simplified code:
+boolean equals(Object o){if(o){}if(getClass()){}other=(TldResourcePath)equals();}
+

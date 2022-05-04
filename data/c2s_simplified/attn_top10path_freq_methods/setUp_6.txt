@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/naming/resources/TestWarDirContext_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance(); tomcat.getServer().addLifecycleListener(new JreMemoryLeakPreventionListener()); }
+
+topk path-contexts for sub-token: set
+[0.8983] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.0599] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0336] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0024] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0019] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0005] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|lifecycle|listener
+[0.0005] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0003] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,get|server
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,add|lifecycle|listener
+[0.0001] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+
+topk terminals for sub-token: set
+['super', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'set|up', 'void', 'exception', 'METHOD_NAME', 'exception', 'exception', 'add|lifecycle|listener', 'void', 'METHOD_NAME', 'exception', 'get|server', 'METHOD_NAME', 'add|lifecycle|listener', 'override', 'void']
+
+topk path-contexts for sub-token: up
+[0.6882] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.1711] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1390] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0002] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,get|tomcat|instance
+[0.0002] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,get|server
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,get|server
+[0.0001] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr2,get|server
+[0.0001] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0001] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,tomcat
+[0.0001] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,exception
+
+topk terminals for sub-token: up
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'set|up', 'get|tomcat|instance', 'exception', 'get|server', 'METHOD_NAME', 'get|server', 'set|up', 'get|server', 'METHOD_NAME', 'exception', 'set|up', 'tomcat', 'void', 'exception']
+

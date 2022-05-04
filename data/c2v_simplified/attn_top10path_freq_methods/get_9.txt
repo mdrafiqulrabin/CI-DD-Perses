@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/MultiMap_get.java
+method_name = get
+method_body = public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }
+
+topk path-contexts:
+[0.1039] cbuffer,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),charsequence
+[0.0975] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(EnclosedExpr)^(ConditionalExpr)_(FieldAccessExpr2)_(NameExpr0),entry
+[0.0808] entry,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ConditionalExpr)_(FieldAccessExpr2)_(NameExpr2),value
+[0.0542] key,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ConditionalExpr)_(NullLiteralExpr1),null
+[0.0512] entry,(VariableDeclaratorId0)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ConditionalExpr)_(FieldAccessExpr2)_(NameExpr2),value
+[0.0460] cbuffer,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0408] charsequence,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),getentry
+[0.0330] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ConditionalExpr)_(FieldAccessExpr2)_(NameExpr0),entry
+[0.0312] entry,(NameExpr0)^(BinaryExpr:equals)^(EnclosedExpr)^(ConditionalExpr)_(FieldAccessExpr2)_(NameExpr0),entry
+[0.0312] cbuffer,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),key
+
+topk terminals:
+['cbuffer', 'charsequence', 'null', 'entry', 'entry', 'value', 'key', 'null', 'entry', 'value', 'cbuffer', 'METHOD_NAME', 'charsequence', 'getentry', 'key', 'entry', 'entry', 'entry', 'cbuffer', 'key']
+

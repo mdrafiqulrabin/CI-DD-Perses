@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/chat/ChatServlet_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { messageSender = new MessageSender(); Thread messageSenderThread = new Thread(messageSender, "MessageSender[" + getServletContext().getContextPath() + "]"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }
+predict, score, loss = init, 0.6333805322647095, 0.5654627084732056
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:51:43.057386", "n_pass": [1, 1, 1], "score": "0.6334", "loss": "0.5655", "code": "@Override public void init() throws ServletException { messageSender = new MessageSender(); Thread messageSenderThread = new Thread(messageSender, \"MessageSender[\" + getServletContext().getContextPath() + \"]\"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }"}
+{"time": "2020-12-26 21:51:45.748456", "n_pass": [22, 2, 2], "score": "0.4954", "loss": "0.8705", "code": "@Override public void init() throws ServletException { messageSender =messageSenderThread = new Thread(messageSender, \"MessageSender[\" + getServletContext().getContextPath() + \"]\"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }"}
+{"time": "2020-12-26 21:51:48.424158", "n_pass": [43, 3, 3], "score": "0.8063", "loss": "0.2575", "code": "@Override public void init() throws ServletException { messageSender = Thread(messageSender, \"MessageSender[\" + getServletContext().getContextPath() + \"]\"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }"}
+{"time": "2020-12-26 21:51:51.089580", "n_pass": [44, 4, 4], "score": "0.829", "loss": "0.21", "code": "@Override public void init() throws ServletException { messageSender = Thread(messageSender, + getServletContext().getContextPath() + \"]\"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }"}
+{"time": "2020-12-26 21:51:53.777605", "n_pass": [49, 5, 5], "score": "0.7927", "loss": "0.269", "code": "@Override public void init() throws ServletException { messageSender = Thread(messageSender, + getServletContext().getContextPath() + \"]\"); messageSenderThread; messageSenderThread.start(); }"}
+{"time": "2020-12-26 21:51:56.457624", "n_pass": [50, 6, 6], "score": "0.7786", "loss": "0.3084", "code": "@Override public void init() throws ServletException { messageSender = Thread(messageSender, + getServletContext().getContextPath() + \"]\"); messageSenderThread(); }"}
+{"time": "2020-12-26 21:51:59.132524", "n_pass": [52, 7, 7], "score": "0.5202", "loss": "0.7344", "code": "void init() throws ServletException { messageSender = Thread(messageSender, + getServletContext().getContextPath() + \"]\"); messageSenderThread(); }"}
+{"time": "2020-12-26 21:52:04.860039", "n_pass": [89, 9, 8], "score": "0.6897", "loss": "0.4384", "code": "void init() throws ServletException { messageSender = Thread(+ getServletContext().getContextPath() + \"]\"); messageSenderThread(); }"}
+{"time": "2020-12-26 21:52:07.506068", "n_pass": [91, 10, 9], "score": "0.6866", "loss": "0.4584", "code": "void init() throws ServletException { messageSender = Thread(+ getServletContextgetContextPath() + \"]\"); messageSenderThread(); }"}
+{"time": "2020-12-26 21:52:10.156458", "n_pass": [92, 11, 10], "score": "0.6637", "loss": "0.4772", "code": "void init() throws ServletException { messageSender = Thread(+ getServletContext + \"]\"); messageSenderThread(); }"}
+{"time": "2020-12-26 21:52:12.817219", "n_pass": [96, 12, 11], "score": "0.6494", "loss": "0.4976", "code": "void init() throws ServletException { messageSender = Thread(+ getServletContext + \"]\"); ; }"}
+{"time": "2020-12-26 21:52:15.873288", "n_pass": [107, 13, 12], "score": "0.8571", "loss": "0.1799", "code": "void init() throws ServletException { messageSender = Thread( + \"]\"); ; }"}
+{"time": "2020-12-26 21:52:18.530156", "n_pass": [108, 14, 13], "score": "0.7912", "loss": "0.3316", "code": "void init() throws ServletException { messageSender = Thread(\"]\"); ; }"}
+{"time": "2020-12-26 21:52:21.162646", "n_pass": [109, 15, 14], "score": "0.9019", "loss": "0.1233", "code": "void init() throws ServletException { messageSender = Thread(); ; }"}
+{"time": "2020-12-26 21:52:27.772494", "n_pass": [144, 16, 15], "score": "0.9019", "loss": "0.1233", "code": "void init() throws ServletException { messageSender = Thread() ; }"}
+{"time": "2020-12-26 21:52:31.238701", "n_pass": [152, 17, 16], "score": "0.9019", "loss": "0.1233", "code": "void init()throws ServletException { messageSender = Thread() ; }"}
+{"time": "2020-12-26 21:52:33.876056", "n_pass": [156, 18, 17], "score": "0.9019", "loss": "0.1233", "code": "void init()throws ServletException{ messageSender = Thread() ; }"}
+{"time": "2020-12-26 21:52:36.528607", "n_pass": [158, 19, 18], "score": "0.9019", "loss": "0.1233", "code": "void init()throws ServletException{messageSender = Thread() ; }"}
+{"time": "2020-12-26 21:52:39.155890", "n_pass": [160, 20, 19], "score": "0.9019", "loss": "0.1233", "code": "void init()throws ServletException{messageSender= Thread() ; }"}
+{"time": "2020-12-26 21:52:41.793934", "n_pass": [162, 21, 20], "score": "0.9019", "loss": "0.1233", "code": "void init()throws ServletException{messageSender=Thread() ; }"}
+{"time": "2020-12-26 21:52:45.266085", "n_pass": [178, 22, 21], "score": "0.9287", "loss": "0.0904", "code": "void init()throws ServletException{messageSenderThread() ; }"}
+{"time": "2020-12-26 21:52:47.883060", "n_pass": [179, 23, 22], "score": "0.4198", "loss": "0.9014", "code": "void init()throws ServletException{messageSender() ; }"}
+{"time": "2020-12-26 21:52:52.518398", "n_pass": [198, 24, 23], "score": "0.4198", "loss": "0.9014", "code": "void init()throws ServletException{messageSender(); }"}
+{"time": "2020-12-26 21:52:55.163360", "n_pass": [199, 25, 24], "score": "0.4198", "loss": "0.9014", "code": "void init()throws ServletException{messageSender();}"}
+
+Minimal simplified code:
+void init()throws ServletException{messageSender();}
+

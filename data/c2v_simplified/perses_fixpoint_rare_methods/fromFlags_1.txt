@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/api/java/powercrystals/minefactoryreloaded/api/rednet/connectivity/RedNetConnectionType_fromFlags.java
+method_name = fromFlags
+method_body = public static final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 00:17:39.645163", "score": "0.4012", "loss": "1.4482", "code": "class T { public static final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); } }"}
+{"time": "2021-01-25 00:20:48.083871", "score": "0.3689", "loss": "1.3058", "code": "class T { public static final RedNetConnectionType fromFlags(short flags) { return ; } }"}
+{"time": "2021-01-25 00:21:28.569397", "score": "0.3689", "loss": "1.3058", "code": "class T { RedNetConnectionType fromFlags(short flags) { return ; } }"}
+
+Minimal simplified code:
+class T {
+                    RedNetConnectionType fromFlags(short flags) { return                       ; }
+}
+
+

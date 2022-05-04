@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/a-student__BetterVectorDrawable/lib/src/main/java/com/bettervectordrawable/lib/graphics/drawable/VectorDrawable_drawCachedBitmapWithRootAlpha.java
+method_name = drawCachedBitmapWithRootAlpha
+method_body = public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 00:59:17.728499", "score": "0.4204", "loss": "1.5179", "code": "class T { public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); } }"}
+{"time": "2021-01-25 01:03:04.465810", "score": "0.5061", "loss": "1.2477", "code": "class T { public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); } }"}
+{"time": "2021-01-25 01:07:03.856126", "score": "0.8124", "loss": "0.2315", "code": "class T { public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { canvas.drawBitmap(mCachedBitmap ); } }"}
+{"time": "2021-01-25 01:09:11.435627", "score": "0.8124", "loss": "0.2315", "code": "class T { void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { canvas.drawBitmap(mCachedBitmap ); } }"}
+
+Minimal simplified code:
+class T {
+       void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) {                                   canvas.drawBitmap(mCachedBitmap                         ); }
+}
+
+

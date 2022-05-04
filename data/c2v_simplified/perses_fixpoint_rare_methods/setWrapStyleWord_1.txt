@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/core/MarkdownTextAreaWithPreview_setWrapStyleWord.java
+method_name = setWrapStyleWord
+method_body = public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 17:08:27.831375", "score": "0.3973", "loss": "2.0067", "code": "class T { public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); } }"}
+{"time": "2021-01-24 17:12:48.931706", "score": "0.3973", "loss": "2.0067", "code": "class T { void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); } }"}
+
+Minimal simplified code:
+class T {
+       void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }
+}
+
+

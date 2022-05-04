@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/taggable/taggable-impl/impl/src/java/org/sakaiproject/taggable/impl/TaggingManagerImpl_createTagList.java
+method_name = createTagList
+method_body = public TagList createTagList(List<TagColumn> columns) { return new TagListImpl(columns); }
+
+topk path-contexts for sub-token: create
+[0.1291] tag|list,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0921] tag|list|impl,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,columns
+[0.0886] columns,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0839] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0706] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,columns
+[0.0536] tag|column,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0463] tag|list,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,columns
+[0.0294] columns,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,columns
+[0.0194] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,columns
+[0.0178] tag|column,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,columns
+
+topk terminals for sub-token: create
+['tag|list', 'METHOD_NAME', 'tag|list|impl', 'columns', 'columns', 'tag|list|impl', 'METHOD_NAME', 'tag|list|impl', 'METHOD_NAME', 'columns', 'tag|column', 'tag|list|impl', 'tag|list', 'columns', 'columns', 'columns', 'METHOD_NAME', 'columns', 'tag|column', 'columns']
+
+topk path-contexts for sub-token: tag
+[0.2248] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.2072] tag|list,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1844] columns,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0970] tag|column,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0598] tag|list,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,columns
+[0.0470] tag|list|impl,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,columns
+[0.0214] tag|list,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,tag|column
+[0.0199] columns,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,tag|column
+[0.0125] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,tag|column
+[0.0111] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,columns
+
+topk terminals for sub-token: tag
+['METHOD_NAME', 'tag|list|impl', 'tag|list', 'METHOD_NAME', 'columns', 'tag|list|impl', 'tag|column', 'tag|list|impl', 'tag|list', 'columns', 'tag|list|impl', 'columns', 'tag|list', 'tag|column', 'columns', 'tag|column', 'METHOD_NAME', 'tag|column', 'METHOD_NAME', 'columns']
+
+topk path-contexts for sub-token: list
+[0.3643] tag|list,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1922] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.1364] columns,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0925] tag|column,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,tag|list|impl
+[0.0532] tag|list,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,columns
+[0.0259] tag|list,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,tag|column
+[0.0224] tag|list|impl,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,columns
+[0.0123] columns,VariableDeclaratorId0|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,tag|column
+[0.0115] columns,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,columns
+[0.0093] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,columns
+
+topk terminals for sub-token: list
+['tag|list', 'METHOD_NAME', 'METHOD_NAME', 'tag|list|impl', 'columns', 'tag|list|impl', 'tag|column', 'tag|list|impl', 'tag|list', 'columns', 'tag|list', 'tag|column', 'tag|list|impl', 'columns', 'columns', 'tag|column', 'columns', 'columns', 'METHOD_NAME', 'columns']
+

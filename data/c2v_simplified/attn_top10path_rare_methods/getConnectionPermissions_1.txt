@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/apache/guacamole/auth/jdbc/sharing/user/SharedUser_getConnectionPermissions.java
+method_name = getConnectionPermissions
+method_body = @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }
+
+topk path-contexts:
+[0.5354] objectpermissionset,(ClassOrInterfaceType1)^(MethodDeclaration)_(ClassOrInterfaceType3),guacamoleexception
+[0.1234] guacamoleexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(MethodCallExpr1)_(NameExpr2),getidentifiers
+[0.0791] objectpermissionset,(ClassOrInterfaceType1)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0775] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(ClassOrInterfaceType1),objectpermissionset
+[0.0351] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(MethodCallExpr1)_(NameExpr2),getidentifiers
+[0.0258] usercontext,(NameExpr0)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),sharedobjectpermissionset
+[0.0188] guacamoleexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),sharedobjectpermissionset
+[0.0170] connection,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),sharedobjectpermissionset
+[0.0109] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),sharedobjectpermissionset
+[0.0075] sharedobjectpermissionset,(ClassOrInterfaceType0)^(ObjectCreationExpr)_(MethodCallExpr1)_(NameExpr2),getidentifiers
+
+topk terminals:
+['objectpermissionset', 'guacamoleexception', 'guacamoleexception', 'getidentifiers', 'objectpermissionset', 'METHOD_NAME', 'override', 'objectpermissionset', 'METHOD_NAME', 'getidentifiers', 'usercontext', 'sharedobjectpermissionset', 'guacamoleexception', 'sharedobjectpermissionset', 'connection', 'sharedobjectpermissionset', 'METHOD_NAME', 'sharedobjectpermissionset', 'sharedobjectpermissionset', 'getidentifiers']
+

@@ -1,0 +1,42 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/libgdx__gdx-pay/gdx-pay-server/src/com/badlogic/gdx/pay/server/PurchaseVerifierManager_addVerifier.java
+method_name = addVerifier
+method_body = public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }
+predict, score, loss = addVerifier, 0.41030023, 4.29486
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:52:12.227718", "n_pass": [1, 1, 1], "score": "0.4103", "loss": "4.2949", "code": "public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-23 09:52:15.551590", "n_pass": [44, 3, 2], "score": "0.4103", "loss": "4.2949", "code": " void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-23 09:52:19.861023", "n_pass": [50, 6, 3], "score": "0.4677", "loss": "1.569", "code": " void addVerifier(PurchaseVerifier vr) { verifiers.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-23 09:52:21.164714", "n_pass": [52, 7, 4], "score": "0.5628", "loss": "3.5625", "code": " void addVerifier(PurchaseVerifier vr) { vrs.put(verifier.storeName(), verifier); }"}
+{"time": "2021-01-23 09:52:25.096123", "n_pass": [56, 10, 5], "score": "0.5083", "loss": "1.377", "code": " void addVerifier(PurchaseVerifier vr) { vrs.put(verifier.stor, verifier); }"}
+{"time": "2021-01-23 09:52:26.397433", "n_pass": [57, 11, 6], "score": "0.4459", "loss": "5.2403", "code": " void addVerifier(PurchaseVerifier vr) { vrs.put(verifier.storier); }"}
+{"time": "2021-01-23 09:52:33.619706", "n_pass": [91, 16, 7], "score": "0.5161", "loss": "4.1053", "code": " void addVerifier(PurchaseVerifier vr) { vrs.put(verifier.sto); }"}
+{"time": "2021-01-23 09:52:48.178093", "n_pass": [112, 26, 8], "score": "0.5865", "loss": "4.7845", "code": " void addVerifier(PurchaseVerifier vr) { vrs.put(verifier); }"}
+{"time": "2021-01-23 09:53:03.387919", "n_pass": [175, 36, 9], "score": "0.5865", "loss": "4.7845", "code": "void addVerifier(PurchaseVerifier vr) { vrs.put(verifier); }"}
+{"time": "2021-01-23 09:53:14.220799", "n_pass": [193, 41, 10], "score": "0.5643", "loss": "3.474", "code": "void addVerifier(urchaseVerifier vr) { vrs.put(verifier); }"}
+{"time": "2021-01-23 09:53:16.838318", "n_pass": [195, 43, 11], "score": "0.5643", "loss": "3.474", "code": "void addVerifier(uraseVerifier vr) { vrs.put(verifier); }"}
+{"time": "2021-01-23 09:53:24.677115", "n_pass": [205, 49, 12], "score": "0.4652", "loss": "1.7404", "code": "void addVerifier(uraseVerifier vr) { s.put(verifier); }"}
+{"time": "2021-01-23 09:53:25.973782", "n_pass": [206, 50, 13], "score": "0.436", "loss": "1.4579", "code": "void addVerifier(uraseVerifier vr) { put(verifier); }"}
+{"time": "2021-01-23 09:53:43.332770", "n_pass": [232, 60, 14], "score": "0.4765", "loss": "1.4411", "code": "void addVerifier(aseVerifier vr) { put(verifier); }"}
+{"time": "2021-01-23 09:53:44.650924", "n_pass": [233, 61, 15], "score": "0.5587", "loss": "1.072", "code": "void addVerifier(eVerifier vr) { put(verifier); }"}
+{"time": "2021-01-23 09:54:10.263641", "n_pass": [301, 76, 16], "score": "0.5301", "loss": "1.1038", "code": "void addVerifier(eVerifier r) { put(verifier); }"}
+{"time": "2021-01-23 09:54:11.558752", "n_pass": [303, 77, 17], "score": "0.5301", "loss": "1.1038", "code": "void addVerifier(eVerifier r){ put(verifier); }"}
+{"time": "2021-01-23 09:54:12.855203", "n_pass": [305, 78, 18], "score": "0.5301", "loss": "1.1038", "code": "void addVerifier(eVerifier r){put(verifier); }"}
+{"time": "2021-01-23 09:54:19.418475", "n_pass": [311, 83, 19], "score": "0.5956", "loss": "1.1381", "code": "void addVerifier(eVerifier r){put(vrifier); }"}
+{"time": "2021-01-23 09:54:28.559078", "n_pass": [320, 90, 20], "score": "0.5956", "loss": "1.1381", "code": "void addVerifier(eVerifier r){put(vrifier);}"}
+{"time": "2021-01-23 09:54:39.428295", "n_pass": [339, 95, 21], "score": "0.5614", "loss": "0.8949", "code": "void addVerifier(Verifier r){put(vrifier);}"}
+{"time": "2021-01-23 09:54:55.018488", "n_pass": [356, 107, 22], "score": "0.5402", "loss": "1.4171", "code": "void addVerifier(Verifier r){put(rifier);}"}
+{"time": "2021-01-23 09:54:56.313415", "n_pass": [357, 108, 23], "score": "0.5402", "loss": "1.4171", "code": "void addVerifier(Verifier r){put(ifier);}"}
+{"time": "2021-01-23 09:54:57.605903", "n_pass": [358, 109, 24], "score": "0.6388", "loss": "0.7726", "code": "void addVerifier(Verifier r){put(fier);}"}
+{"time": "2021-01-23 09:54:58.899694", "n_pass": [359, 110, 25], "score": "0.4924", "loss": "1.0358", "code": "void addVerifier(Verifier r){put(ier);}"}
+{"time": "2021-01-23 09:55:00.195545", "n_pass": [360, 111, 26], "score": "0.6164", "loss": "0.7311", "code": "void addVerifier(Verifier r){put(er);}"}
+{"time": "2021-01-23 09:55:01.502209", "n_pass": [361, 112, 27], "score": "0.5423", "loss": "1.0936", "code": "void addVerifier(Verifier r){put(r);}"}
+{"time": "2021-01-23 09:55:02.798036", "n_pass": [362, 113, 28], "score": "0.542", "loss": "1.3169", "code": "void addVerifier(Verifier r){put();}"}
+{"time": "2021-01-23 09:55:04.108676", "n_pass": [366, 114, 29], "score": "0.2999", "loss": "2.4598", "code": "oid addVerifier(Verifier r){put();}"}
+{"time": "2021-01-23 09:55:05.410783", "n_pass": [367, 115, 30], "score": "0.3229", "loss": "2.4457", "code": "id addVerifier(Verifier r){put();}"}
+{"time": "2021-01-23 09:55:06.725108", "n_pass": [368, 116, 31], "score": "0.3629", "loss": "1.9172", "code": "d addVerifier(Verifier r){put();}"}
+
+Minimal simplified code:
+d addVerifier(Verifier r){put();}
+

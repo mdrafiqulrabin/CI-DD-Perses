@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/service/http.directory/src/main/java/org/kaazing/gateway/service/http/directory/cachecontrol/PatternCacheControl_setDirective.java
+method_name = setDirective
+method_body = public void setDirective(Directive directive, String value) { directives.put(directive, value); }
+predict, score, loss = setDirective, 0.40320441126823425, 0.9317132234573364
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:57:36.888221", "n_pass": [1, 1, 1], "score": "0.4032", "loss": "0.9317", "code": "public void setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-20 06:57:45.957704", "n_pass": [44, 4, 2], "score": "0.4032", "loss": "0.9317", "code": " void setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-20 06:57:48.593306", "n_pass": [45, 5, 3], "score": "0.4032", "loss": "0.9317", "code": "void setDirective(Directive directive, String value) { directives.put(directive, value); }"}
+{"time": "2021-01-20 06:58:00.661219", "n_pass": [95, 8, 4], "score": "0.4032", "loss": "0.9317", "code": "void setDirective(Directive directive,String value) { directives.put(directive, value); }"}
+{"time": "2021-01-20 06:58:03.280600", "n_pass": [99, 9, 5], "score": "0.4032", "loss": "0.9317", "code": "void setDirective(Directive directive,String value){ directives.put(directive, value); }"}
+{"time": "2021-01-20 06:58:05.902280", "n_pass": [101, 10, 6], "score": "0.4032", "loss": "0.9317", "code": "void setDirective(Directive directive,String value){directives.put(directive, value); }"}
+{"time": "2021-01-20 06:58:08.524219", "n_pass": [103, 11, 7], "score": "0.7086", "loss": "0.3561", "code": "void setDirective(Directive directive,String value){directivesput(directive, value); }"}
+{"time": "2021-01-20 06:58:11.139912", "n_pass": [104, 12, 8], "score": "0.7038", "loss": "0.3687", "code": "void setDirective(Directive directive,String value){directives(directive, value); }"}
+{"time": "2021-01-20 06:58:13.789503", "n_pass": [108, 13, 9], "score": "0.7038", "loss": "0.3687", "code": "void setDirective(Directive directive,String value){directives(directive,value); }"}
+{"time": "2021-01-20 06:58:16.389699", "n_pass": [112, 14, 10], "score": "0.7038", "loss": "0.3687", "code": "void setDirective(Directive directive,String value){directives(directive,value);}"}
+{"time": "2021-01-20 06:58:19.803791", "n_pass": [130, 15, 11], "score": "0.2728", "loss": "1.4518", "code": "void setDirective(Directive directive,String value){directives(directivevalue);}"}
+{"time": "2021-01-20 06:58:22.406015", "n_pass": [131, 16, 12], "score": "0.8422", "loss": "0.1778", "code": "void setDirective(Directive directive,String value){directives(directive);}"}
+{"time": "2021-01-20 06:58:28.440904", "n_pass": [150, 18, 13], "score": "0.4534", "loss": "0.8665", "code": "void setDirective(Directive directive,String value){directives();}"}
+
+Minimal simplified code:
+void setDirective(Directive directive,String value){directives();}
+

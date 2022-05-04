@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/udacity__Advanced_Android_Development/app/src/main/java/com/example/android/sunshine/app/widget/DetailWidgetProvider_setRemoteAdapter.java
+method_name = setRemoteAdapter
+method_body = @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }
+predict, score, loss = setRemoteAdapter, 0.48405152559280396, 0.7273778915405273
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:07:57.041988", "n_pass": [1, 1, 1], "score": "0.4841", "loss": "0.7274", "code": "@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }"}
+{"time": "2021-01-20 08:07:59.677077", "n_pass": [8, 2, 2], "score": "0.499", "loss": "0.6968", "code": "private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }"}
+{"time": "2021-01-20 08:08:02.733368", "n_pass": [42, 3, 3], "score": "0.5542", "loss": "0.5923", "code": "private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }"}
+{"time": "2021-01-20 08:08:05.358284", "n_pass": [45, 4, 4], "score": "0.5473", "loss": "0.6047", "code": "private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R_list, new Intent(context)); }"}
+{"time": "2021-01-20 08:08:08.406192", "n_pass": [78, 5, 5], "score": "0.5473", "loss": "0.6047", "code": "void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R_list, new Intent(context)); }"}
+{"time": "2021-01-20 08:08:11.033513", "n_pass": [84, 6, 6], "score": "0.5473", "loss": "0.6047", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(R_list, new Intent(context)); }"}
+{"time": "2021-01-20 08:08:16.281785", "n_pass": [91, 8, 7], "score": "0.5114", "loss": "0.6721", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(R, new Intent(context)); }"}
+{"time": "2021-01-20 08:08:18.899989", "n_pass": [93, 9, 8], "score": "0.5507", "loss": "0.598", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(R, Intent(context)); }"}
+{"time": "2021-01-20 08:08:24.601602", "n_pass": [109, 11, 9], "score": "0.6006", "loss": "0.5117", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(RIntent(context)); }"}
+{"time": "2021-01-20 08:08:32.941511", "n_pass": [155, 13, 10], "score": "0.6216", "loss": "0.4772", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(R(context)); }"}
+{"time": "2021-01-20 08:08:35.571927", "n_pass": [156, 14, 11], "score": "0.5798", "loss": "0.5467", "code": "void setRemoteAdapter(Context context, @NonNull RemoteViews views) { views.setRemoteAdapter(R()); }"}
+{"time": "2021-01-20 08:08:39.022039", "n_pass": [168, 15, 12], "score": "0.5798", "loss": "0.5467", "code": "void setRemoteAdapter(Context context,@NonNull RemoteViews views) { views.setRemoteAdapter(R()); }"}
+{"time": "2021-01-20 08:08:41.643783", "n_pass": [176, 16, 13], "score": "0.5798", "loss": "0.5467", "code": "void setRemoteAdapter(Context context,@NonNull RemoteViews views){ views.setRemoteAdapter(R()); }"}
+{"time": "2021-01-20 08:08:44.262528", "n_pass": [178, 17, 14], "score": "0.5798", "loss": "0.5467", "code": "void setRemoteAdapter(Context context,@NonNull RemoteViews views){views.setRemoteAdapter(R()); }"}
+{"time": "2021-01-20 08:08:51.120605", "n_pass": [210, 19, 15], "score": "0.5798", "loss": "0.5467", "code": "void setRemoteAdapter(Context context,@NonNull RemoteViews views){views.setRemoteAdapter(R());}"}
+
+Minimal simplified code:
+void setRemoteAdapter(Context context,@NonNull RemoteViews views){views.setRemoteAdapter(R());}
+

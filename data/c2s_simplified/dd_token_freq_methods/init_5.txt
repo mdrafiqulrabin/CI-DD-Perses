@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_init.java
+method_name = init
+method_body = @Override public void init(FilterConfig fConfig) throws ServletException { this.filterConfig = fConfig; this.attribute = fConfig.getInitParameter("attribute"); }
+predict, score, loss = initConfig, 0.82280606, 0.24939014
+
+Ignoring as original_method_name != predicted_method_name.
+

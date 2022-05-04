@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/JoinNode_getJoinClause.java
+method_name = getJoinClause
+method_body = public ValueNode getJoinClause() { return joinClause; }
+
+topk path-contexts:
+[0.6936] valuenode,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),joinclause
+[0.1899] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),joinclause
+[0.1165] valuenode,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['valuenode', 'joinclause', 'METHOD_NAME', 'joinclause', 'valuenode', 'METHOD_NAME']
+

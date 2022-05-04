@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/assignment/impl/src/java/org/sakaiproject/assignment/impl/conversion/AssignmentSubmissionAccess_getLastmod.java
+method_name = getLastmod
+method_body = public String getLastmod() { return lastmod; }
+
+topk path-contexts:
+[0.5500] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),lastmod
+[0.4110] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),lastmod
+[0.0390] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['METHOD_NAME', 'lastmod', 'string', 'lastmod', 'string', 'METHOD_NAME']
+

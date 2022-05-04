@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslTupleImpl_get.java
+method_name = get
+method_body = @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException("selection " + name + " not found"); } return get(index.intValue(), clazz); }
+predict, score, loss = getSelection, 0.9846763, 1.9531273
+
+Ignoring as original_method_name != predicted_method_name.
+

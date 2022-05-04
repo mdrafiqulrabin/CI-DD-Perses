@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/storage/AbstractTaskStoreTest_deleteAllTasks.java
+method_name = deleteAllTasks
+method_body = protected void deleteAllTasks() { storage.write((NoResult.Quiet) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); }
+predict, score, loss = deleteAllTasks, 0.44454166, 1.3766749
+
+Trace of simplified code(s):
+{"time": "2021-01-23 08:42:21.683603", "n_pass": [1, 1, 1], "score": "0.4445", "loss": "1.3767", "code": "protected void deleteAllTasks() { storage.write((NoResult.Quiet) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:22.984280", "n_pass": [10, 2, 2], "score": "0.725", "loss": "0.7189", "code": "protected void deleteAllTasks() { storage.write((NoResult.Quiet) stoafeTaskStore().deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:25.997192", "n_pass": [37, 4, 3], "score": "0.5717", "loss": "1.0222", "code": "protected void deleteAllTasks() { storage.write((NoResult.Quiet) sttore().deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:31.894900", "n_pass": [71, 8, 4], "score": "0.6114", "loss": "0.8877", "code": "protected void deleteAllTasks() { storage.write((NoResult.Quiet)re().deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:33.199001", "n_pass": [72, 9, 5], "score": "0.7477", "loss": "0.5441", "code": "protected void deleteAllTasks() { storage.write((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:37.108781", "n_pass": [79, 12, 6], "score": "0.8122", "loss": "0.4935", "code": "protecteid deleteAllTasks() { storage.write((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:39.853313", "n_pass": [86, 13, 7], "score": "0.6197", "loss": "0.9595", "code": "protecteid deleteAllTasks() { ste.write((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:41.147132", "n_pass": [87, 14, 8], "score": "0.419", "loss": "1.5248", "code": "protecteid deleteAllTasks() { stite((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:47.581396", "n_pass": [97, 19, 9], "score": "0.419", "loss": "1.5248", "code": "ecteid deleteAllTasks() { stite((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:48.866916", "n_pass": [98, 20, 10], "score": "0.5058", "loss": "1.3716", "code": "id deleteAllTasks() { stite((NoResult.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:51.595762", "n_pass": [107, 21, 11], "score": "0.3828", "loss": "1.9113", "code": "id deleteAllTasks() { stite((NoRt.Quiet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:42:59.536098", "n_pass": [151, 26, 12], "score": "0.3828", "loss": "1.9113", "code": "id deleteAllTasks() { stite((NoRt.iet)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:00.821121", "n_pass": [152, 27, 13], "score": "0.3828", "loss": "1.9113", "code": "id deleteAllTasks() { stite((NoRt.t)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:12.689996", "n_pass": [173, 34, 14], "score": "0.7896", "loss": "0.9226", "code": "id deleteAllTasks() { ite((NoRt.t)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:13.977505", "n_pass": [174, 35, 15], "score": "0.5961", "loss": "1.5637", "code": "id deleteAllTasks() { e((NoRt.t)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:15.256055", "n_pass": [177, 36, 16], "score": "0.5639", "loss": "1.6926", "code": "id deleteAllTasks() { e((Nt.t)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:16.552216", "n_pass": [178, 37, 17], "score": "0.3045", "loss": "2.7633", "code": "id deleteAllTasks() { e((Nt)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:29.437986", "n_pass": [245, 44, 18], "score": "0.4095", "loss": "2.1523", "code": "id deleteAllTasks() { e((N)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:48.865294", "n_pass": [262, 59, 19], "score": "0.2087", "loss": "3.5276", "code": "d deleteAllTasks() { e((N)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:55.820842", "n_pass": [281, 60, 20], "score": "0.2087", "loss": "3.5276", "code": "d deleteAllTasks(){ e((N)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:57.114075", "n_pass": [283, 61, 21], "score": "0.2087", "loss": "3.5276", "code": "d deleteAllTasks(){e((N)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:43:58.443794", "n_pass": [284, 62, 22], "score": "0.5371", "loss": "1.0081", "code": "d deleteAllTasks(){((N)deleteAllTasks()); }"}
+{"time": "2021-01-23 08:44:27.005080", "n_pass": [338, 79, 23], "score": "0.5371", "loss": "1.0081", "code": "d deleteAllTasks(){((N)deleteAllTasks());}"}
+
+Minimal simplified code:
+d deleteAllTasks(){((N)deleteAllTasks());}
+

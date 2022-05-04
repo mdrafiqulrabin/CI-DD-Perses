@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreKey.java
+method_name = setIgnoreKey
+method_body = public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }
+predict, score, loss = setIgnoreKey, 0.44740182, 1.9016299
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:09:49.474865", "n_pass": [1, 1, 1], "score": "0.4474", "loss": "1.9016", "code": "public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }"}
+{"time": "2021-01-20 05:09:52.471464", "n_pass": [44, 3, 2], "score": "0.4474", "loss": "1.9016", "code": "Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }"}
+{"time": "2021-01-20 05:09:59.496268", "n_pass": [58, 8, 3], "score": "0.7871", "loss": "1.3983", "code": "Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; ; }"}
+{"time": "2021-01-20 05:10:01.200923", "n_pass": [64, 9, 4], "score": "0.8524", "loss": "1.4595", "code": "Builder setIgnoreKey(boolean ignoreKey, Set ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; ; }"}
+{"time": "2021-01-20 05:10:02.508413", "n_pass": [68, 10, 5], "score": "0.4845", "loss": "2.4149", "code": "Builder setIgnoreKey(boolean ignoreKey, Set ignoreKeyTopics) { this.ignoreKeyignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; ; }"}
+{"time": "2021-01-20 05:10:14.426645", "n_pass": [113, 17, 6], "score": "0.4845", "loss": "2.4149", "code": "Builder setIgnoreKey(boolean ignoreKey, Set ignoreKeyTopics) { this.ignoreKeyignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:16.846247", "n_pass": [123, 18, 7], "score": "0.4845", "loss": "2.4149", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics) { this.ignoreKeyignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:18.151867", "n_pass": [128, 19, 8], "score": "0.4845", "loss": "2.4149", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKeyignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:26.824152", "n_pass": [168, 23, 9], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:28.148943", "n_pass": [170, 24, 10], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKey;this.ignoreKeyTopics = ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:30.770896", "n_pass": [174, 26, 11], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKey;this.ignoreKeyTopics= ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:32.114833", "n_pass": [176, 27, 12], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKey;this.ignoreKeyTopics=ignoreKeyTopics; }"}
+{"time": "2021-01-20 05:10:33.442794", "n_pass": [179, 28, 13], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){ this.ignoreKey;this.ignoreKeyTopics=ignoreKeyTopics;}"}
+{"time": "2021-01-20 05:10:35.833272", "n_pass": [194, 29, 14], "score": "0.4729", "loss": "2.3053", "code": "Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){this.ignoreKey;this.ignoreKeyTopics=ignoreKeyTopics;}"}
+
+Minimal simplified code:
+Builder setIgnoreKey(boolean ignoreKey,Set ignoreKeyTopics){this.ignoreKey;this.ignoreKeyTopics=ignoreKeyTopics;}
+

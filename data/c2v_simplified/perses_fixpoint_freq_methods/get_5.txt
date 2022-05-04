@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/util/ContextUtil_get.java
+method_name = get
+method_body = public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 01:49:23.642727", "score": "0.9754", "loss": "0.0315", "code": "class T { public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; } }"}
+{"time": "2020-12-29 01:52:01.130787", "score": "0.9458", "loss": "0.0831", "code": "class T { public static Object get(Map<String, Object> context, Object key, Object defaultv) { res = defaultv; } }"}
+{"time": "2020-12-29 01:55:49.625859", "score": "0.9674", "loss": "0.0511", "code": "class T { public static Object get(Map context, Object key, Object defaultv) { res = defaultv; } }"}
+{"time": "2020-12-29 01:57:07.327478", "score": "0.4631", "loss": "0.9826", "code": "class T { public static Object get(Map context , Object defaultv) { res = defaultv; } }"}
+{"time": "2020-12-29 01:57:48.304446", "score": "0.4631", "loss": "0.9826", "code": "class T { Object get(Map context , Object defaultv) { res = defaultv; } }"}
+
+Minimal simplified code:
+class T {
+              Object get(Map                 context            , Object defaultv)                                                   { res = defaultv; }
+}
+
+

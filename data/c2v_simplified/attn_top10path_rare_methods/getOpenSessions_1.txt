@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/websocket/WsSession_getOpenSessions.java
+method_name = getOpenSessions
+method_body = @Override public Set<Session> getOpenSessions() { checkState(); return webSocketContainer.getOpenSessions(localEndpoint.getClass()); }
+
+topk path-contexts:
+[0.2449] session,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),getopensessions
+[0.1603] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),getopensessions
+[0.0883] session,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),websocketcontainer
+[0.0849] checkstate,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),getopensessions
+[0.0849] session,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr2),getclass
+[0.0698] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),websocketcontainer
+[0.0626] session,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr2)_(NameExpr0),localendpoint
+[0.0467] websocketcontainer,(NameExpr0)^(MethodCallExpr)_(MethodCallExpr2)_(NameExpr0),localendpoint
+[0.0304] localendpoint,(NameExpr0)^(MethodCallExpr2)^(MethodCallExpr)_(NameExpr3),getopensessions
+[0.0267] checkstate,(NameExpr1)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),websocketcontainer
+
+topk terminals:
+['session', 'getopensessions', 'METHOD_NAME', 'getopensessions', 'session', 'websocketcontainer', 'checkstate', 'getopensessions', 'session', 'getclass', 'METHOD_NAME', 'websocketcontainer', 'session', 'localendpoint', 'websocketcontainer', 'localendpoint', 'localendpoint', 'getopensessions', 'checkstate', 'websocketcontainer']
+

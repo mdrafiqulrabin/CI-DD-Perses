@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+predict, score, loss = onCreate, 0.9996018, 0.0005889211
+
+Trace of simplified code(s):
+{"time": "2020-12-28 01:30:38.469574", "n_pass": [1, 1, 1], "score": "0.9996", "loss": "0.0006", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-28 01:30:39.828489", "n_pass": [10, 2, 2], "score": "0.9999", "loss": "0.0003", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNomService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-28 01:30:41.558091", "n_pass": [38, 3, 3], "score": "0.9998", "loss": "0.0004", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNomService(CFICATION_SERVICE); } }"}
+{"time": "2020-12-28 01:30:42.882590", "n_pass": [39, 4, 4], "score": "0.9998", "loss": "0.0004", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:44.257028", "n_pass": [41, 5, 5], "score": "0.9985", "loss": "0.0018", "code": "public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:45.620761", "n_pass": [42, 6, 6], "score": "0.9992", "loss": "0.0011", "code": "d onCreate() { super.onCreate(); if (mNotifManager == null) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:49.001071", "n_pass": [75, 8, 7], "score": "0.9978", "loss": "0.0025", "code": "d onCreate() { super.onCreate(); if (mNonager == null) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:50.316658", "n_pass": [76, 9, 8], "score": "0.9977", "loss": "0.0026", "code": "d onCreate() { super.onCreate(); if (mNo == null) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:51.658400", "n_pass": [77, 10, 9], "score": "0.9979", "loss": "0.0023", "code": "d onCreate() { super.onCreate(); if (mNoll) { mNomService(CRVICE); } }"}
+{"time": "2020-12-28 01:30:53.057047", "n_pass": [79, 11, 10], "score": "0.9858", "loss": "0.0148", "code": "d onCreate() { super.onCreate(); if (mNoll) { rvice(CRVICE); } }"}
+{"time": "2020-12-28 01:30:54.387576", "n_pass": [81, 12, 11], "score": "0.9965", "loss": "0.0038", "code": "d onCreate() { super.onCreate(); if (mNoll) { rvice(); } }"}
+{"time": "2020-12-28 01:31:06.215261", "n_pass": [129, 19, 12], "score": "0.4916", "loss": "1.2215", "code": "d onCreate() { super.onCreat; if (mNoll) { rvice(); } }"}
+{"time": "2020-12-28 01:31:07.551637", "n_pass": [132, 20, 13], "score": "0.7549", "loss": "0.9206", "code": "d onCreate() { super.onCreat; if (ll) { rvice(); } }"}
+{"time": "2020-12-28 01:31:08.904972", "n_pass": [135, 21, 14], "score": "0.7", "loss": "0.7827", "code": "d onCreate() { super.onCreat; if (ll) { ce(); } }"}
+{"time": "2020-12-28 01:31:19.727691", "n_pass": [194, 27, 15], "score": "0.728", "loss": "1.0061", "code": "d onCreate() { super.onCreat; if (ll) {e(); } }"}
+{"time": "2020-12-28 01:31:24.766644", "n_pass": [211, 28, 16], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){ super.onCreat; if (ll) {e(); } }"}
+{"time": "2020-12-28 01:31:26.129618", "n_pass": [213, 29, 17], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat; if (ll) {e(); } }"}
+{"time": "2020-12-28 01:31:50.997576", "n_pass": [271, 43, 18], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat;if (ll) {e(); } }"}
+{"time": "2020-12-28 01:31:52.324673", "n_pass": [273, 44, 19], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat;if(ll) {e(); } }"}
+{"time": "2020-12-28 01:31:56.372916", "n_pass": [278, 47, 20], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat;if(ll){e(); } }"}
+{"time": "2020-12-28 01:31:57.702777", "n_pass": [284, 48, 21], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat;if(ll){e();} }"}
+{"time": "2020-12-28 01:31:59.013897", "n_pass": [286, 49, 22], "score": "0.728", "loss": "1.0061", "code": "d onCreate(){super.onCreat;if(ll){e();}}"}
+
+Minimal simplified code:
+d onCreate(){super.onCreat;if(ll){e();}}
+

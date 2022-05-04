@@ -1,0 +1,51 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataViewerMainPanel_updateFrameTitle.java
+method_name = updateFrameTitle
+method_body = public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }
+
+topk path-contexts for sub-token: update
+[0.1991] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0429] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0429] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0292] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0292] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0257] set|title,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+[0.0165] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0165] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0159] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0159] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+
+topk terminals for sub-token: update
+['void', 'METHOD_NAME', 'void', 'null', 'void', 'null', 'METHOD_NAME', 'null', 'METHOD_NAME', 'null', 'set|title', 'null', 'null', 'set|title', 'null', 'set|title', 'void', 'set|title', 'void', 'set|title']
+
+topk path-contexts for sub-token: frame
+[0.0511] get|parent|internal|frame,NameExpr1|MethodCallExpr|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0460] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|parent|internal|frame
+[0.0404] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|parent|internal|frame
+[0.0399] get|parent|frame,NameExpr1|MethodCallExpr|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0337] get|frame|title,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,set|title
+[0.0337] get|frame|title,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,set|title
+[0.0336] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|parent|internal|frame
+[0.0334] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0334] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0320] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr0|NameExpr1,get|parent|frame
+
+topk terminals for sub-token: frame
+['get|parent|internal|frame', 'set|title', 'null', 'get|parent|internal|frame', 'METHOD_NAME', 'get|parent|internal|frame', 'get|parent|frame', 'set|title', 'get|frame|title', 'set|title', 'get|frame|title', 'set|title', 'void', 'get|parent|internal|frame', 'null', 'set|title', 'null', 'set|title', 'null', 'get|parent|frame']
+
+topk path-contexts for sub-token: title
+[0.0770] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0770] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0518] get|parent|internal|frame,NameExpr1|MethodCallExpr|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0499] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0499] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0466] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0466] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0438] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0427] get|parent|frame,NameExpr1|MethodCallExpr|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|title
+[0.0384] get|frame|title,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,set|title
+[0.0384] get|frame|title,NameExpr1|MethodCallExpr2|MethodCallExpr|NameExpr3,set|title
+
+topk terminals for sub-token: title
+['null', 'set|title', 'null', 'set|title', 'get|parent|internal|frame', 'set|title', 'METHOD_NAME', 'set|title', 'METHOD_NAME', 'set|title', 'void', 'set|title', 'void', 'set|title', 'null', 'set|title', 'get|parent|frame', 'set|title', 'get|frame|title', 'set|title', 'get|frame|title', 'set|title']
+

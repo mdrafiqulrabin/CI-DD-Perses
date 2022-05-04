@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/citations/citations-osid/web2bridge/src/java/edu/indiana/lib/twinpeaks/search/HttpTransactionQueryBase_getResponseBytes.java
+method_name = getResponseBytes
+method_body = public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }
+
+topk path-contexts:
+[0.2503] [],(ArrayBracketPair2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getresponsebytes
+[0.2240] [],(ArrayBracketPair2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),transaction
+[0.1543] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),transaction
+[0.1118] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getresponsebytes
+[0.0950] byte,(PrimitiveType0)^(MethodDeclaration)_(ArrayBracketPair2),[]
+[0.0880] byte,(PrimitiveType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0517] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(ArrayBracketPair2),[]
+[0.0250] transaction,(NameExpr0)^(MethodCallExpr)_(NameExpr2),getresponsebytes
+
+topk terminals:
+['[]', 'getresponsebytes', '[]', 'transaction', 'METHOD_NAME', 'transaction', 'METHOD_NAME', 'getresponsebytes', 'byte', '[]', 'byte', 'METHOD_NAME', 'METHOD_NAME', '[]', 'transaction', 'getresponsebytes']
+

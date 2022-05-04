@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/threads/TestLimitLatch_run.java
+method_name = run
+method_body = @Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:54:53.575215", "score": "0.978", "loss": "0.0374", "code": "class T { @Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } } }"}
+{"time": "2020-12-21 10:55:42.011746", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override public void run() { } }"}
+{"time": "2020-12-21 10:56:03.034883", "score": "0.3314", "loss": "1.8159", "code": "class T { @Override void run() { } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run() {                                                                                                                                    }
+}
+
+

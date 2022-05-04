@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/anbud__MarkovComposer/src/rs/zx/ml/MLMain_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }
+
+topk path-contexts:
+[0.4039] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setlookandfeel
+[0.0912] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),gui
+[0.0684] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setlookandfeel
+[0.0644] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),uimanager
+[0.0503] getsystemlookandfeelclassname,(NameExpr2)^(MethodCallExpr2)^(MethodCallExpr)_(NameExpr3),setlookandfeel
+[0.0455] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),gui
+[0.0331] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setlookandfeel
+[0.0272] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setlookandfeel
+[0.0265] args,(VariableDeclaratorId0)^(Parameter)_(ArrayBracketPair2),[]
+[0.0250] uimanager,(NameExpr0)^(MethodCallExpr2)^(MethodCallExpr)_(NameExpr3),setlookandfeel
+
+topk terminals:
+['args', 'setlookandfeel', '[]', 'gui', 'string', 'setlookandfeel', 'args', 'uimanager', 'getsystemlookandfeelclassname', 'setlookandfeel', 'args', 'gui', '[]', 'setlookandfeel', 'METHOD_NAME', 'setlookandfeel', 'args', '[]', 'uimanager', 'setlookandfeel']
+

@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/dronekit__dronekit-android/ClientLib/src/main/java/com/o3dr/services/android/lib/drone/mission/item/complex/SurveyDetail_setOverlap.java
+method_name = setOverlap
+method_body = public void setOverlap(double overlap) { this.overlap = overlap; }
+predict, score, loss = setOverlap, 0.4924618601799011, 0.7974422574043274
+
+Trace of simplified code(s):
+{"time": "2021-01-23 22:31:57.677849", "n_pass": [1, 1, 1], "score": "0.4925", "loss": "0.7974", "code": "public void setOverlap(double overlap) { this.overlap = overlap; }"}
+{"time": "2021-01-23 22:32:04.315465", "n_pass": [25, 3, 2], "score": "0.5154", "loss": "1.5301", "code": "public void setOverlap(double overlap) {erlap = overlap; }"}
+{"time": "2021-01-23 22:32:13.147208", "n_pass": [47, 6, 3], "score": "0.3018", "loss": "1.6122", "code": "public void setOverlap(double overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:32:50.920862", "n_pass": [105, 18, 4], "score": "0.3396", "loss": "2.5861", "code": "public void setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:33:13.216765", "n_pass": [121, 26, 5], "score": "0.316", "loss": "2.877", "code": "publicoid setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:33:15.984538", "n_pass": [122, 27, 6], "score": "0.316", "loss": "2.877", "code": "publicd setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:33:43.896696", "n_pass": [143, 36, 7], "score": "0.316", "loss": "2.877", "code": "blicd setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:34:18.926667", "n_pass": [210, 47, 8], "score": "0.316", "loss": "2.877", "code": "licd setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:34:24.426414", "n_pass": [212, 49, 9], "score": "0.3272", "loss": "3.0346", "code": "lid setOverlap(dble overlap) {p = overlap; }"}
+{"time": "2021-01-23 22:35:05.412125", "n_pass": [239, 62, 10], "score": "0.3272", "loss": "3.0346", "code": "lid setOverlap(dble overlap){p = overlap; }"}
+{"time": "2021-01-23 22:35:08.133475", "n_pass": [242, 63, 11], "score": "0.3272", "loss": "3.0346", "code": "lid setOverlap(dble overlap){p= overlap; }"}
+{"time": "2021-01-23 22:35:13.700647", "n_pass": [244, 65, 12], "score": "0.3272", "loss": "3.0346", "code": "lid setOverlap(dble overlap){p=overlap; }"}
+{"time": "2021-01-23 22:35:33.197864", "n_pass": [253, 72, 13], "score": "0.3088", "loss": "2.9357", "code": "id setOverlap(dble overlap){p=overlap; }"}
+{"time": "2021-01-23 22:35:35.965750", "n_pass": [254, 73, 14], "score": "0.2728", "loss": "2.6453", "code": "d setOverlap(dble overlap){p=overlap; }"}
+{"time": "2021-01-23 22:36:37.576210", "n_pass": [298, 93, 15], "score": "0.2728", "loss": "2.6453", "code": "d setOverlap(dble overlap){p=overlap;}"}
+
+Minimal simplified code:
+d setOverlap(dble overlap){p=overlap;}
+

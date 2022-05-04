@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/apache/guacamole/auth/jdbc/sharing/user/SharedUser_getConnectionPermissions.java
+method_name = getConnectionPermissions
+method_body = @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }
+predict, score, loss = getConnectionPermissions, 0.3991371989250183, 1.5334231853485107
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:19:15.909679", "n_pass": [1, 1, 1], "score": "0.3991", "loss": "1.5334", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:21.571269", "n_pass": [23, 3, 2], "score": "0.3656", "loss": "2.0687", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:24.187228", "n_pass": [24, 4, 3], "score": "0.4391", "loss": "1.4874", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:26.800614", "n_pass": [25, 5, 4], "score": "0.3789", "loss": "1.0983", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DaredObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:32.028855", "n_pass": [41, 7, 5], "score": "0.3789", "loss": "1.0983", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DsionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:40.684501", "n_pass": [69, 10, 6], "score": "0.3846", "loss": "1.1137", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DsionSet(onDirectory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:43.289223", "n_pass": [70, 11, 7], "score": "0.3789", "loss": "1.0983", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DsionSet(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:19:51.118218", "n_pass": [75, 14, 8], "score": "0.3942", "loss": "1.0437", "code": "@Overriic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DsionSet(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:20:30.273801", "n_pass": [141, 27, 9], "score": "0.3018", "loss": "2.1568", "code": "@Overriic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DSet(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:20:45.930466", "n_pass": [149, 33, 10], "score": "0.3018", "loss": "2.1568", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { DSet(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:22:20.858896", "n_pass": [273, 66, 11], "score": "0.3719", "loss": "1.1017", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {Set(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:22:23.465869", "n_pass": [274, 67, 12], "score": "0.404", "loss": "1.0094", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {t(ory.getIdentifiers()); }"}
+{"time": "2021-01-23 19:22:26.087981", "n_pass": [276, 68, 13], "score": "0.3961", "loss": "1.0365", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {t(y.getIdentifiers()); }"}
+{"time": "2021-01-23 19:22:28.686982", "n_pass": [277, 69, 14], "score": "0.3452", "loss": "1.1468", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {t(getIdentifiers()); }"}
+{"time": "2021-01-23 19:22:49.509805", "n_pass": [285, 77, 15], "score": "0.3443", "loss": "1.1191", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws GuacamoleException {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:26.461748", "n_pass": [319, 89, 16], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws acamoleException {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:29.056560", "n_pass": [320, 90, 17], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws amoleException {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:31.643887", "n_pass": [321, 91, 18], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws oleException {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:34.236589", "n_pass": [322, 92, 19], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eException {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:39.418955", "n_pass": [324, 94, 20], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eEeption {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:42.006942", "n_pass": [325, 95, 21], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eEtion {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:23:44.629657", "n_pass": [326, 96, 22], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eEon {t(getIdentifiers); }"}
+{"time": "2021-01-23 19:24:52.725622", "n_pass": [459, 119, 23], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eEon{t(getIdentifiers); }"}
+{"time": "2021-01-23 19:25:34.390154", "n_pass": [478, 135, 24], "score": "0.1743", "loss": "3.7375", "code": "@Oviic ObjectPermissionSet getConnectionPermissions() throws eEon{t(getIdentifiers);}"}
+{"time": "2021-01-23 19:25:37.000850", "n_pass": [481, 136, 25], "score": "0.1743", "loss": "3.7375", "code": "@viic ObjectPermissionSet getConnectionPermissions() throws eEon{t(getIdentifiers);}"}
+{"time": "2021-01-23 19:26:50.028121", "n_pass": [533, 160, 26], "score": "0.1743", "loss": "3.7375", "code": "@viic ObjectPermissionSet getConnectionPermissions()throws eEon{t(getIdentifiers);}"}
+
+Minimal simplified code:
+@viic ObjectPermissionSet getConnectionPermissions()throws eEon{t(getIdentifiers);}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/jamesdbloom__mockserver/mockserver-core/src/main/java/org/mockserver/client/serialization/model/HttpClassCallbackDTO_setCallbackClass.java
+method_name = setCallbackClass
+method_body = public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }
+predict, score, loss = setCallbackClass, 0.4290981, 0.90690804
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:18:47.102563", "n_pass": [1, 1, 1], "score": "0.4291", "loss": "0.9069", "code": "public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClass; return this; }"}
+{"time": "2021-01-20 06:18:51.411435", "n_pass": [26, 4, 2], "score": "0.9232", "loss": "0.133", "code": "public HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClassthis; }"}
+{"time": "2021-01-20 06:18:56.379061", "n_pass": [50, 7, 3], "score": "0.9232", "loss": "0.133", "code": " HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClassthis; }"}
+{"time": "2021-01-20 06:18:57.692184", "n_pass": [51, 8, 4], "score": "0.9232", "loss": "0.133", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass = callbackClassthis; }"}
+{"time": "2021-01-20 06:18:59.737745", "n_pass": [60, 9, 5], "score": "0.7838", "loss": "0.3337", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass =this; }"}
+{"time": "2021-01-20 06:19:05.492217", "n_pass": [92, 11, 6], "score": "0.7838", "loss": "0.3337", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass) { this.callbackClass =this;}"}
+{"time": "2021-01-20 06:19:07.883081", "n_pass": [101, 12, 7], "score": "0.7838", "loss": "0.3337", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass){ this.callbackClass =this;}"}
+{"time": "2021-01-20 06:19:09.211222", "n_pass": [103, 13, 8], "score": "0.7838", "loss": "0.3337", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass){this.callbackClass =this;}"}
+{"time": "2021-01-20 06:19:11.818877", "n_pass": [107, 15, 9], "score": "0.7838", "loss": "0.3337", "code": "HttpClassCallbackDTO setCallbackClass(String callbackClass){this.callbackClass=this;}"}
+
+Minimal simplified code:
+HttpClassCallbackDTO setCallbackClass(String callbackClass){this.callbackClass=this;}
+

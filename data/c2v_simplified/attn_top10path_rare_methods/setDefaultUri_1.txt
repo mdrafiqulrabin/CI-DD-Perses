@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/spring-ws-core/src/main/java/org/springframework/ws/client/core/support/WebServiceGatewaySupport_setDefaultUri.java
+method_name = setDefaultUri
+method_body = public final void setDefaultUri(String uri) { webServiceTemplate.setDefaultUri(uri); }
+
+topk path-contexts:
+[0.2008] uri,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),webservicetemplate
+[0.1751] uri,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setdefaulturi
+[0.1635] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),webservicetemplate
+[0.1634] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),webservicetemplate
+[0.0999] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setdefaulturi
+[0.0752] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setdefaulturi
+[0.0697] uri,(NameExpr2)^(MethodCallExpr)_(NameExpr3),setdefaulturi
+[0.0106] uri,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),uri
+[0.0100] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0078] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),uri
+
+topk terminals:
+['uri', 'webservicetemplate', 'uri', 'setdefaulturi', 'METHOD_NAME', 'webservicetemplate', 'string', 'webservicetemplate', 'METHOD_NAME', 'setdefaulturi', 'string', 'setdefaulturi', 'uri', 'setdefaulturi', 'uri', 'uri', 'void', 'METHOD_NAME', 'void', 'uri']
+

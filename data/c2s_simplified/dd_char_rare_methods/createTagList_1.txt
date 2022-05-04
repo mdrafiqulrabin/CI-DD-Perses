@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/taggable/taggable-impl/impl/src/java/org/sakaiproject/taggable/impl/TaggingManagerImpl_createTagList.java
+method_name = createTagList
+method_body = public TagList createTagList(List<TagColumn> columns) { return new TagListImpl(columns); }
+predict, score, loss = createTagList, 0.33231607, 7.404985
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:09:11.355269", "n_pass": [1, 1, 1], "score": "0.3323", "loss": "7.405", "code": "public TagList createTagList(List<TagColumn> columns) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:13.056388", "n_pass": [20, 2, 2], "score": "0.3567", "loss": "2.6411", "code": "ist createTagList(List<TagColumn> columns) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:25.488596", "n_pass": [91, 9, 3], "score": "0.3567", "loss": "2.6411", "code": "ist createTagList(L<TagColumn> columns) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:28.117162", "n_pass": [94, 11, 4], "score": "0.3967", "loss": "2.3525", "code": "ist createTagList(L<TagCon> columns) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:29.422682", "n_pass": [96, 12, 5], "score": "0.4591", "loss": "2.1022", "code": "ist createTagList(L<TagCon> umns) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:30.721683", "n_pass": [97, 13, 6], "score": "0.3432", "loss": "2.5034", "code": "ist createTagList(L<TagCon> s) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:47.903554", "n_pass": [172, 24, 7], "score": "0.3275", "loss": "2.6139", "code": "ist createTagList(L<TagCn> s) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:49.252310", "n_pass": [173, 25, 8], "score": "0.3323", "loss": "2.576", "code": "ist createTagList(L<TagC> s) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:50.583681", "n_pass": [175, 26, 9], "score": "0.3323", "loss": "2.576", "code": "ist createTagList(L<TagC>s) { return new TagListImpl(columns); }"}
+{"time": "2021-01-23 11:09:59.706606", "n_pass": [191, 33, 10], "score": "0.3782", "loss": "2.8601", "code": "ist createTagList(L<TagC>s) { return new TagListImpl(cumns); }"}
+{"time": "2021-01-23 11:10:02.303136", "n_pass": [193, 35, 11], "score": "0.2818", "loss": "3.2624", "code": "ist createTagList(L<TagC>s) { return new TagListImpl(cum); }"}
+{"time": "2021-01-23 11:10:16.495947", "n_pass": [219, 42, 12], "score": "0.3018", "loss": "3.1464", "code": "ist createTagList(L<Tag>s) { return new TagListImpl(cum); }"}
+{"time": "2021-01-23 11:10:35.981343", "n_pass": [259, 53, 13], "score": "0.3616", "loss": "2.8944", "code": "ist createTagList(L<ag>s) { return new TagListImpl(cum); }"}
+{"time": "2021-01-23 11:10:37.265926", "n_pass": [260, 54, 14], "score": "0.3883", "loss": "2.5733", "code": "ist createTagList(L<g>s) { return new TagListImpl(cum); }"}
+{"time": "2021-01-23 11:10:46.400959", "n_pass": [278, 61, 15], "score": "0.3376", "loss": "2.8757", "code": "ist createTagList(L<g>s) { return new TagListImpl(c); }"}
+{"time": "2021-01-23 11:10:50.306733", "n_pass": [283, 64, 16], "score": "0.4387", "loss": "2.881", "code": "is createTagList(L<g>s) { return new TagListImpl(c); }"}
+{"time": "2021-01-23 11:11:05.819528", "n_pass": [321, 72, 17], "score": "0.5028", "loss": "2.5605", "code": "i createTagList(L<g>s) { return new TagListImpl(c); }"}
+{"time": "2021-01-23 11:11:22.385758", "n_pass": [392, 79, 18], "score": "0.5028", "loss": "2.5605", "code": "i createTagList(L<g>s){ return new TagListImpl(c); }"}
+{"time": "2021-01-23 11:11:23.690960", "n_pass": [394, 80, 19], "score": "0.5028", "loss": "2.5605", "code": "i createTagList(L<g>s){return new TagListImpl(c); }"}
+{"time": "2021-01-23 11:11:40.701709", "n_pass": [418, 93, 20], "score": "0.507", "loss": "2.1905", "code": "i createTagList(L<g>s){return new TagListImpl(); }"}
+{"time": "2021-01-23 11:11:42.007233", "n_pass": [421, 94, 21], "score": "0.507", "loss": "2.1905", "code": "i createTagList(L<g>s){return new TagListImpl();}"}
+
+Minimal simplified code:
+i createTagList(L<g>s){return new TagListImpl();}
+

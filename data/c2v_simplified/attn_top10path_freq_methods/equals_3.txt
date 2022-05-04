@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/async/Stockticker_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }
+
+topk path-contexts:
+[0.1504] other,(NameExpr0)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(ThisExpr0),this
+[0.1142] other,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0977] this,(ThisExpr0)^(FieldAccessExpr0)^(MethodCallExpr)_(FieldAccessExpr2)_(EnclosedExpr)_(CastExpr)_(NameExpr1),other
+[0.0594] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),other
+[0.0550] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.0548] symbol,(NameExpr2)^(FieldAccessExpr2)^(MethodCallExpr)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0535] other,(NameExpr0)^(InstanceOfExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0401] other,(NameExpr0)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),symbol
+[0.0382] stock,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0362] other,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),equals
+
+topk terminals:
+['other', 'this', 'other', 'false', 'this', 'other', 'boolean', 'other', 'boolean', 'object', 'symbol', 'false', 'other', 'false', 'other', 'symbol', 'stock', 'false', 'other', 'equals']
+

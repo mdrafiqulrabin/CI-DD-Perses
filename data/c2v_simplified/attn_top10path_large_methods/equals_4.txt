@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/core/src/main/java/org/bouncycastle/pqc/crypto/ntru/NTRUEncryptionKeyGenerationParameters_equals.java
+method_name = equals
+method_body = public boolean equals(Object obj) { if (this == obj) { return true; } if (obj == null) { return false; } if (getClass() != obj.getClass()) { return false; } NTRUEncryptionKeyGenerationParameters other = (NTRUEncryptionKeyGenerationParameters) obj; if (N != other.N) { return false; } if (bufferLenBits != other.bufferLenBits) { return false; } if (bufferLenTrits != other.bufferLenTrits) { return false; } if (c != other.c) { return false; } if (db != other.db) { return false; } if (df != other.df) { return false; } if (df1 != other.df1) { return false; } if (df2 != other.df2) { return false; } if (df3 != other.df3) { return false; } if (dg != other.dg) { return false; } if (dm0 != other.dm0) { return false; } if (dr != other.dr) { return false; } if (dr1 != other.dr1) { return false; } if (dr2 != other.dr2) { return false; } if (dr3 != other.dr3) { return false; } if (fastFp != other.fastFp) { return false; } if (hashAlg == null) { if (other.hashAlg != null) { return false; } } else if (!hashAlg.getAlgorithmName().equals(other.hashAlg.getAlgorithmName())) { return false; } if (hashSeed != other.hashSeed) { return false; } if (llen != other.llen) { return false; } if (maxMsgLenBytes != other.maxMsgLenBytes) { return false; } if (minCallsMask != other.minCallsMask) { return false; } if (minCallsR != other.minCallsR) { return false; } if (!Arrays.equals(oid, other.oid)) { return false; } if (pkLen != other.pkLen) { return false; } if (polyType != other.polyType) { return false; } if (q != other.q) { return false; } if (sparse != other.sparse) { return false; } return true; }
+
+topk path-contexts:
+[0.1131] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),other
+[0.1054] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr2),bufferlentrits
+[0.0720] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(MethodCallExpr1)_(NameExpr0),obj
+[0.0646] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),other
+[0.0414] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(MethodCallExpr0)_(NameExpr1),getclass
+[0.0319] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(FieldAccessExpr3)_(NameExpr0),other
+[0.0293] boolean,(PrimitiveType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0254] boolean,(PrimitiveType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),obj
+[0.0226] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr0),other
+[0.0226] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0226] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr1)_(NameExpr2),pklen
+
+topk terminals:
+['METHOD_NAME', 'other', 'METHOD_NAME', 'bufferlentrits', 'METHOD_NAME', 'obj', 'METHOD_NAME', 'other', 'obj', 'getclass', 'METHOD_NAME', 'other', 'boolean', 'METHOD_NAME', 'boolean', 'obj', 'METHOD_NAME', 'other', 'METHOD_NAME', 'false', 'METHOD_NAME', 'pklen']
+

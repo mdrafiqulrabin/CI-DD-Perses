@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/http/TestBug49158_addServlets.java
+method_name = addServlets
+method_body = public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext("", System.getProperty("java.io.tmpdir")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping("/" + path, path); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:43:52.995336", "score": "0.334", "loss": "1.6351", "code": "class T { public static void addServlets(Tomcat tomcat) { Context ctx = tomcat.addContext(\"\", System.getProperty(\"java.io.tmpdir\")); Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); } }"}
+{"time": "2021-01-24 08:48:54.199046", "score": "0.4454", "loss": "0.9788", "code": "class T { public static void addServlets(Tomcat tomcat) { Tomcat.addServlet(ctx, path, new TestBug49158Servlet()); ctx.addServletMapping(\"/\" + path, path); } }"}
+{"time": "2021-01-24 08:52:17.862362", "score": "0.5057", "loss": "0.9465", "code": "class T { public static void addServlets(Tomcat tomcat) { Tomcat.addServlet(ctx ); ctx.addServletMapping(\"/\" + path, path); } }"}
+{"time": "2021-01-24 08:52:57.626736", "score": "0.5665", "loss": "0.7575", "code": "class T { public static void addServlets(Tomcat tomcat) { Tomcat.addServlet(ctx ); ctx.addServletMapping( ); } }"}
+{"time": "2021-01-24 08:54:16.980915", "score": "0.5665", "loss": "0.7575", "code": "class T { void addServlets(Tomcat tomcat) { Tomcat.addServlet(ctx ); ctx.addServletMapping( ); } }"}
+{"time": "2021-01-24 08:57:19.476309", "score": "0.3692", "loss": "1.1298", "code": "class T { void addServlets(Tomcat tomcat) { Tomcat.addServlet(ctx ); } }"}
+
+Minimal simplified code:
+class T {
+              void addServlets(Tomcat tomcat) {                                                                            Tomcat.addServlet(ctx                                 );                                          }
+}
+
+

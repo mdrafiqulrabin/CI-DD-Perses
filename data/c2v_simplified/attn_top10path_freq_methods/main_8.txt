@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/CoordinationDemo_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }
+
+topk path-contexts:
+[0.1673] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),run
+[0.1519] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType3),exception
+[0.0891] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(ClassOrInterfaceType0),coordinationdemo
+[0.0613] args,(NameExpr1)^(MethodCallExpr)_(NameExpr3),run
+[0.0564] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),run
+[0.0520] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),demo
+[0.0510] args,(NameExpr1)^(MethodCallExpr)_(NameExpr2),demo
+[0.0494] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),demo
+[0.0356] args,(VariableDeclaratorId0)^(Parameter)_(ArrayBracketPair2),[]
+[0.0334] [],(ArrayBracketPair2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),run
+
+topk terminals:
+['args', 'run', 'args', 'exception', 'args', 'coordinationdemo', 'args', 'run', 'string', 'run', 'args', 'demo', 'args', 'demo', 'args', 'demo', 'args', '[]', '[]', 'run']
+

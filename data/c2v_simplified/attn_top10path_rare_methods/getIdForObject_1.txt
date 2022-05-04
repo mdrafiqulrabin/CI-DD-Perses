@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/helper/ObjectIdMapper_getIdForObject.java
+method_name = getIdForObject
+method_body = @Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }
+
+topk path-contexts:
+[0.3198] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SynchronizedStmt)_(NameExpr0),msync
+[0.1174] object,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SynchronizedStmt)_(NameExpr0),msync
+[0.0956] int,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),object
+[0.0848] int,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.0403] object,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SynchronizedStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0305] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),object
+[0.0302] int,(PrimitiveType1)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0301] msync,(NameExpr0)^(SynchronizedStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),object
+[0.0277] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(SynchronizedStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),object
+[0.0270] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(SynchronizedStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+
+topk terminals:
+['object', 'msync', 'object', 'msync', 'int', 'object', 'int', 'object', 'object', 'get', 'METHOD_NAME', 'object', 'int', 'METHOD_NAME', 'msync', 'object', 'METHOD_NAME', 'object', 'METHOD_NAME', 'get']
+

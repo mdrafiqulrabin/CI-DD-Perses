@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/policy/Rule_getServiceTypeName.java
+method_name = getServiceTypeName
+method_body = public String getServiceTypeName() { return (serviceTypeName); }
+
+topk path-contexts:
+[0.5180] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(NameExpr0),servicetypename
+[0.4442] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(EnclosedExpr)_(NameExpr0),servicetypename
+[0.0378] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['string', 'servicetypename', 'METHOD_NAME', 'servicetypename', 'string', 'METHOD_NAME']
+

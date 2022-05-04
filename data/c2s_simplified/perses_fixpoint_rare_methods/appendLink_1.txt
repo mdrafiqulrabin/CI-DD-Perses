@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/rwiki/rwiki-util/radeox/src/test/java/org/radeox/test/filter/mock/MockOldWikiRenderEngine_appendLink.java
+method_name = appendLink
+method_body = public void appendLink(StringBuffer buffer, String name, String view) { buffer.append("link:" + view); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:28:26.851288", "score": "0.4143", "loss": "1.1743", "code": "class T { public void appendLink(StringBuffer buffer, String name, String view) { buffer.append(\"link:\" + view); } }"}
+{"time": "2021-01-24 06:29:49.307962", "score": "0.7605", "loss": "0.4869", "code": "class T { public void appendLink(StringBuffer buffer , String view) { buffer.append(\"link:\" + view); } }"}
+{"time": "2021-01-24 06:30:21.988433", "score": "0.7605", "loss": "0.4869", "code": "class T { void appendLink(StringBuffer buffer , String view) { buffer.append(\"link:\" + view); } }"}
+
+Minimal simplified code:
+class T {
+       void appendLink(StringBuffer buffer             , String view) { buffer.append("link:" + view); }
+}
+
+

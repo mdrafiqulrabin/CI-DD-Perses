@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/core/internal/resource/DocumentMapperUtil_getResourceInformation.java
+method_name = getResourceInformation
+method_body = public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); }
+predict, score, loss = getResourceInformation, 0.4607948064804077, 1.9781339168548584
+
+Trace of simplified code(s):
+{"time": "2021-01-23 15:00:57.198755", "n_pass": [1, 1, 1], "score": "0.4608", "loss": "1.9781", "code": "public ResourceInformation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:00.222144", "n_pass": [20, 2, 2], "score": "0.249", "loss": "3.0455", "code": "ormation getResourceInformation(String resourceType) { return resourceRegistry.getEntry(resourceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:09.231246", "n_pass": [48, 5, 3], "score": "0.6329", "loss": "1.8902", "code": "ormation getResourceInformation(String resourceType) { return rgistry.getEntry(resourceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:11.856725", "n_pass": [49, 6, 4], "score": "0.852", "loss": "0.9124", "code": "ormation getResourceInformation(String resourceType) { return rtEntry(resourceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:23.571850", "n_pass": [86, 10, 5], "score": "0.4037", "loss": "2.2483", "code": "ormation getResourceInformation(String resourceType) { returntry(resourceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:26.168451", "n_pass": [88, 11, 6], "score": "0.4199", "loss": "2.6713", "code": "ormation getResourceInformation(String resourceType) { returntry(rceType).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:28.763839", "n_pass": [89, 12, 7], "score": "0.4829", "loss": "2.2071", "code": "ormation getResourceInformation(String resourceType) { returntry(re).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:51.695346", "n_pass": [106, 20, 8], "score": "0.2683", "loss": "3.4383", "code": "ormation getResourceInformation(String reeType) { returntry(re).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:54.319118", "n_pass": [107, 21, 9], "score": "0.2887", "loss": "3.2051", "code": "ormation getResourceInformation(String re) { returntry(re).getResourceInformation(); }"}
+{"time": "2021-01-23 15:01:56.917361", "n_pass": [109, 22, 10], "score": "0.2887", "loss": "3.2051", "code": "ormation getResourceInformation(String re) { rtry(re).getResourceInformation(); }"}
+{"time": "2021-01-23 15:02:19.823102", "n_pass": [165, 30, 11], "score": "0.2412", "loss": "3.8511", "code": "ormation getResourceInformation(String re) { ry(re).getResourceInformation(); }"}
+{"time": "2021-01-23 15:02:22.457669", "n_pass": [167, 31, 12], "score": "0.4103", "loss": "2.9213", "code": "ormation getResourceInformation(String re) { ry().getResourceInformation(); }"}
+{"time": "2021-01-23 15:02:45.894918", "n_pass": [178, 40, 13], "score": "0.4103", "loss": "2.9213", "code": "mation getResourceInformation(String re) { ry().getResourceInformation(); }"}
+{"time": "2021-01-23 15:02:51.091489", "n_pass": [180, 42, 14], "score": "0.4103", "loss": "2.9213", "code": "maon getResourceInformation(String re) { ry().getResourceInformation(); }"}
+{"time": "2021-01-23 15:03:03.351689", "n_pass": [195, 45, 15], "score": "0.3125", "loss": "3.3015", "code": "maon getResourceInformation(Stng re) { ry().getResourceInformation(); }"}
+{"time": "2021-01-23 15:03:08.544048", "n_pass": [200, 47, 16], "score": "0.2047", "loss": "3.9205", "code": "maon getResourceInformation(Stng re) {y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:04:29.764737", "n_pass": [314, 76, 17], "score": "0.2225", "loss": "3.7957", "code": "mon getResourceInformation(Stng re) {y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:04:54.711544", "n_pass": [344, 82, 18], "score": "0.3146", "loss": "3.6771", "code": "mon getResourceInformation(Stn re) {y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:04:57.306671", "n_pass": [346, 83, 19], "score": "0.2368", "loss": "4.1259", "code": "mon getResourceInformation(Stn e) {y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:04:59.908444", "n_pass": [349, 84, 20], "score": "0.2368", "loss": "4.1259", "code": "mon getResourceInformation(Stn e){y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:05:44.177446", "n_pass": [374, 101, 21], "score": "0.201", "loss": "4.559", "code": "mn getResourceInformation(Stn e){y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:05:46.776908", "n_pass": [375, 102, 22], "score": "0.1655", "loss": "4.7272", "code": "m getResourceInformation(Stn e){y().getResourceInformation(); }"}
+{"time": "2021-01-23 15:07:20.775999", "n_pass": [464, 134, 23], "score": "0.1655", "loss": "4.7272", "code": "m getResourceInformation(Stn e){y().getResourceInformation();}"}
+
+Minimal simplified code:
+m getResourceInformation(Stn e){y().getResourceInformation();}
+

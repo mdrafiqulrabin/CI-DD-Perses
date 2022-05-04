@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bladecoder__bladecoder-adventure-engine/blade-engine/src/com/bladecoder/engine/model/VerbManager_addVerb.java
+method_name = addVerb
+method_body = public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }
+predict, score, loss = addVerb, 0.35578522, 1.4712824
+
+Trace of simplified code(s):
+{"time": "2021-01-23 13:43:05.441045", "n_pass": [1, 1, 1], "score": "0.3558", "loss": "1.4713", "code": "public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-23 13:43:07.135132", "n_pass": [20, 2, 2], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-23 13:43:10.128672", "n_pass": [42, 4, 3], "score": "0.28", "loss": "2.0852", "code": "d addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-23 13:43:32.391561", "n_pass": [102, 19, 4], "score": "0.2951", "loss": "1.981", "code": "d addVerb(Verb v) { verbs.put(v.getHashy(), v); }"}
+{"time": "2021-01-23 13:43:38.091351", "n_pass": [118, 22, 5], "score": "0.2838", "loss": "2.7907", "code": "d addVerb(Verb v) { vbs.put(v.getHashy(), v); }"}
+{"time": "2021-01-23 13:44:09.738858", "n_pass": [202, 43, 6], "score": "0.2838", "loss": "2.7907", "code": "d addVerb(Verb v) { vbs.put(v.getHshy(), v); }"}
+{"time": "2021-01-23 13:44:12.421769", "n_pass": [204, 45, 7], "score": "0.425", "loss": "1.7732", "code": "d addVerb(Verb v) { vbs.put(v.getHsy(), v); }"}
+{"time": "2021-01-23 13:44:15.053113", "n_pass": [209, 47, 8], "score": "0.425", "loss": "1.7732", "code": "d addVerb(Verb v) { vbs.put(v.getHsy(),v); }"}
+{"time": "2021-01-23 13:44:16.349551", "n_pass": [213, 48, 9], "score": "0.425", "loss": "1.7732", "code": "d addVerb(Verb v) { vbs.put(v.getHsy(),v);}"}
+{"time": "2021-01-23 13:44:26.198127", "n_pass": [232, 53, 10], "score": "0.425", "loss": "1.7732", "code": "d addVerb(Verb v){ vbs.put(v.getHsy(),v);}"}
+{"time": "2021-01-23 13:44:27.517604", "n_pass": [234, 54, 11], "score": "0.425", "loss": "1.7732", "code": "d addVerb(Verb v){vbs.put(v.getHsy(),v);}"}
+{"time": "2021-01-23 13:44:28.835897", "n_pass": [235, 55, 12], "score": "0.3457", "loss": "2.1858", "code": "d addVerb(Verb v){bs.put(v.getHsy(),v);}"}
+{"time": "2021-01-23 13:44:44.520643", "n_pass": [249, 67, 13], "score": "0.3607", "loss": "2.2598", "code": "d addVerb(Verb v){bs.put(v.getHy(),v);}"}
+
+Minimal simplified code:
+d addVerb(Verb v){bs.put(v.getHy(),v);}
+

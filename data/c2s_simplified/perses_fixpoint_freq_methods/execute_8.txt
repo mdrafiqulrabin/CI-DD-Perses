@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/UndeployTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/undeploy").toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:10:14.061769", "score": "0.999", "loss": "0.0015", "code": "class T { @Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/undeploy\").toString()); } }"}
+{"time": "2020-12-21 11:11:01.908848", "score": "0.998", "loss": "0.0024", "code": "class T { @Override public void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 11:11:23.053409", "score": "0.9853", "loss": "0.0197", "code": "class T { void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 11:11:33.623100", "score": "0.7564", "loss": "0.4306", "code": "class T { void execute() { super.execute(); } }"}
+
+Minimal simplified code:
+class T {
+                 void execute()                       { super.execute();                                                     }
+}
+
+

@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/connector/TestMaxConnections_run.java
+method_name = run
+method_body = @Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }
+predict, score, loss = run, 0.9954968690872192, 0.005462244618684053
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:42:09.422965", "n_pass": [1, 1, 1], "score": "0.9955", "loss": "0.0055", "code": "@Override public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:12.536970", "n_pass": [44, 2, 2], "score": "0.6377", "loss": "0.5293", "code": "public void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:21.728825", "n_pass": [89, 5, 3], "score": "0.6377", "loss": "0.5293", "code": " void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:24.382804", "n_pass": [90, 6, 4], "score": "0.6377", "loss": "0.5293", "code": "void run() { try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:27.466160", "n_pass": [95, 7, 5], "score": "0.6377", "loss": "0.5293", "code": "void run(){ try { TestClient client = new TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:35.500944", "n_pass": [102, 10, 6], "score": "0.9476", "loss": "0.084", "code": "void run(){ try { TestClient client = TestClient(); client.doHttp10Request(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:40.860591", "n_pass": [107, 12, 7], "score": "0.9476", "loss": "0.084", "code": "void run(){ try { TestClient client = TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:44.382755", "n_pass": [126, 13, 8], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client = TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:56.494247", "n_pass": [189, 15, 9], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient(); client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:42:59.163109", "n_pass": [194, 16, 10], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest(); } catch (Exception x) { } }"}
+{"time": "2020-12-26 21:43:09.786670", "n_pass": [202, 20, 11], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();} catch (Exception x) { } }"}
+{"time": "2020-12-26 21:43:12.461608", "n_pass": [204, 21, 12], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();}catch (Exception x) { } }"}
+{"time": "2020-12-26 21:43:15.107087", "n_pass": [206, 22, 13], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();}catch(Exception x) { } }"}
+{"time": "2020-12-26 21:43:17.766410", "n_pass": [212, 23, 14], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();}catch(Exception x){ } }"}
+{"time": "2020-12-26 21:43:20.425541", "n_pass": [214, 24, 15], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();}catch(Exception x){} }"}
+{"time": "2020-12-26 21:43:23.091312", "n_pass": [216, 25, 16], "score": "0.4727", "loss": "0.8064", "code": "void run(){ try { client =TestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:26.584866", "n_pass": [224, 26, 17], "score": "0.4727", "loss": "0.8064", "code": "void run(){try { client =TestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:29.260729", "n_pass": [226, 27, 18], "score": "0.4727", "loss": "0.8064", "code": "void run(){try{ client =TestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:31.916015", "n_pass": [228, 28, 19], "score": "0.4727", "loss": "0.8064", "code": "void run(){try{client =TestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:34.566967", "n_pass": [230, 29, 20], "score": "0.4727", "loss": "0.8064", "code": "void run(){try{client=TestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:37.224034", "n_pass": [231, 30, 21], "score": "0.8225", "loss": "0.3034", "code": "void run(){try{clientTestClient();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:39.875771", "n_pass": [232, 31, 22], "score": "0.9813", "loss": "0.0251", "code": "void run(){try{client();client.doHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:42.543187", "n_pass": [237, 32, 23], "score": "0.8608", "loss": "0.2778", "code": "void run(){try{client();clientdoHttpRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:45.204304", "n_pass": [238, 33, 24], "score": "0.9381", "loss": "0.1462", "code": "void run(){try{client();clientRequest();}catch(Exception x){}}"}
+{"time": "2020-12-26 21:43:47.839704", "n_pass": [239, 34, 25], "score": "0.5548", "loss": "0.7326", "code": "void run(){try{client();client();}catch(Exception x){}}"}
+
+Minimal simplified code:
+void run(){try{client();client();}catch(Exception x){}}
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/scene3d/SimpleNode_getLocalPosition.java
+method_name = getLocalPosition
+method_body = @Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:48:09.330747", "score": "0.472", "loss": "1.5389", "code": "class T { @Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); } }"}
+{"time": "2021-01-24 05:49:23.319999", "score": "0.674", "loss": "1.4392", "code": "class T { Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); } }"}
+{"time": "2021-01-24 05:49:34.040433", "score": "0.9562", "loss": "1.0529", "code": "class T { Vector3 getLocalPosition( ) { return out.set(localPosition); } }"}
+
+Minimal simplified code:
+class T {
+                 Vector3 getLocalPosition(           ) { return out.set(localPosition); }
+}
+
+

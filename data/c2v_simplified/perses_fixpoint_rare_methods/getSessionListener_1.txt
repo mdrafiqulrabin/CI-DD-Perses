@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-impl/src/main/java/org/sakaiproject/tool/impl/SessionComponent_getSessionListener.java
+method_name = getSessionListener
+method_body = public SessionAttributeListener getSessionListener() { return sessionListener; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:15:27.591548", "score": "0.2991", "loss": "1.6092", "code": "class T { public SessionAttributeListener getSessionListener() { return sessionListener; } }"}
+{"time": "2021-01-24 16:19:09.239548", "score": "0.2991", "loss": "1.6092", "code": "class T { SessionAttributeListener getSessionListener() { return sessionListener; } }"}
+
+Minimal simplified code:
+class T {
+       SessionAttributeListener getSessionListener() { return sessionListener; }
+}
+
+

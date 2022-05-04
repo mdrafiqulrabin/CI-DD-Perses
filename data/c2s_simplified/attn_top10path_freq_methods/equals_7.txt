@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/lang/FunctionMapperImpl_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }
+
+topk path-contexts for sub-token: equals
+[0.1832] obj,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.1130] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0872] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0781] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0723] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0611] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|InstanceOfExpr|NameExpr0,obj
+[0.0455] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|InstanceOfExpr|NameExpr0,obj
+[0.0443] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,obj
+[0.0331] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,obj
+[0.0316] obj,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|BinaryExpr:equals|MethodCallExpr0|ThisExpr0,this
+
+topk terminals for sub-token: equals
+['obj', 'object', 'object', 'false', 'obj', 'false', 'METHOD_NAME', 'object', 'boolean', 'object', 'object', 'obj', 'obj', 'obj', 'METHOD_NAME', 'obj', 'boolean', 'obj', 'obj', 'this']
+

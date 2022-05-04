@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Node_hasIncludeAction.java
+method_name = hasIncludeAction
+method_body = public boolean hasIncludeAction() { return hasIncludeAction; }
+
+topk path-contexts for sub-token: has
+[0.2245] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.1993] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.0587] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: has
+['boolean', 'has|include|action', 'METHOD_NAME', 'has|include|action', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: include
+[0.4674] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.4361] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.0086] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: include
+['boolean', 'has|include|action', 'METHOD_NAME', 'has|include|action', 'boolean', 'METHOD_NAME']
+
+topk path-contexts for sub-token: action
+[0.5067] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.4466] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,has|include|action
+[0.0021] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: action
+['METHOD_NAME', 'has|include|action', 'boolean', 'has|include|action', 'boolean', 'METHOD_NAME']
+

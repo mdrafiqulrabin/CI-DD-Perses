@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/SimpleMonitorService_run.java
+method_name = run
+method_body = public void run() { try { draw(); } catch (Throwable t) { logger.error("Unexpected error occur at draw stat chart, cause: " + t.getMessage(), t); } }
+predict, score, loss = run, 0.8132311, 0.40889314
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:28:49.119596", "n_pass": [1, 1, 1], "score": "0.8132", "loss": "0.4089", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"Unexpected error occur at draw stat chart, cause: \" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 23:28:50.452952", "n_pass": [10, 2, 2], "score": "0.6086", "loss": "0.8336", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"Unrt, cause: \" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 23:28:52.185796", "n_pass": [37, 3, 3], "score": "0.8159", "loss": "0.3748", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"e: \" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 23:28:54.885129", "n_pass": [73, 5, 4], "score": "0.7725", "loss": "0.556", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:28:57.981043", "n_pass": [83, 7, 5], "score": "0.7444", "loss": "0.7012", "code": "public void run() { try { dr; } catch (Throwable t) { logger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:28:59.348759", "n_pass": [87, 8, 6], "score": "0.4979", "loss": "1.4265", "code": "public void run() { try { dr; } catch (Thro t) { logger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:29:05.466444", "n_pass": [145, 12, 7], "score": "0.6542", "loss": "1.0007", "code": "public void run() { try { dr; } catch (To t) { logger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:29:06.815199", "n_pass": [149, 13, 8], "score": "0.5159", "loss": "1.4649", "code": "public void run() { try { dr; } catch (To t) {ogger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:29:08.267074", "n_pass": [150, 14, 9], "score": "0.7126", "loss": "0.7701", "code": "public void run() { try { dr; } catch (To t) {ger.error(\"e: \" + t.gsage(), t); } }"}
+{"time": "2020-12-27 23:29:12.342817", "n_pass": [157, 17, 10], "score": "0.6256", "loss": "0.9787", "code": "public void run() { try { dr; } catch (To t) {ger.error(\"e: \" + sage(), t); } }"}
+{"time": "2020-12-27 23:29:13.702128", "n_pass": [158, 18, 11], "score": "0.634", "loss": "0.9949", "code": "public void run() { try { dr; } catch (To t) {ger.error(\"e: \" + e(), t); } }"}
+{"time": "2020-12-27 23:29:15.040869", "n_pass": [160, 19, 12], "score": "0.5806", "loss": "1.1701", "code": "public void run() { try { dr; } catch (To t) {ger.error(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:19.854752", "n_pass": [176, 22, 13], "score": "0.7086", "loss": "0.8938", "code": "public void run() { try { ; } catch (To t) {ger.error(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:21.279231", "n_pass": [177, 23, 14], "score": "0.7086", "loss": "0.8938", "code": "public void run() { try { } catch (To t) {ger.error(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:22.642393", "n_pass": [187, 24, 15], "score": "0.3193", "loss": "1.9519", "code": "public void run() { try { } catch (To t) {gerror(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:23.989314", "n_pass": [188, 25, 16], "score": "0.6396", "loss": "0.855", "code": "public void run() { try { } catch (To t) {ger(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:28.777455", "n_pass": [216, 28, 17], "score": "0.4948", "loss": "1.1536", "code": "public void run() { try { } catch (To t) {(\"e: \" + e()); } }"}
+{"time": "2020-12-27 23:29:37.254095", "n_pass": [300, 31, 18], "score": "0.479", "loss": "1.203", "code": "public void run() { try { } catch (To t) {(\": \" + e()); } }"}
+{"time": "2020-12-27 23:29:38.582770", "n_pass": [301, 32, 19], "score": "0.4423", "loss": "1.4479", "code": "public void run() { try { } catch (To t) {(\" \" + e()); } }"}
+{"time": "2020-12-27 23:29:39.930783", "n_pass": [302, 33, 20], "score": "0.3708", "loss": "1.5902", "code": "public void run() { try { } catch (To t) {(\"\" + e()); } }"}
+{"time": "2020-12-27 23:29:41.271377", "n_pass": [306, 34, 21], "score": "0.4885", "loss": "1.1999", "code": "public void run() { try { } catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:50.830969", "n_pass": [327, 40, 22], "score": "0.4885", "loss": "1.1999", "code": "public void run(){ try { } catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:52.153175", "n_pass": [329, 41, 23], "score": "0.4885", "loss": "1.1999", "code": "public void run(){try { } catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:53.480706", "n_pass": [333, 42, 24], "score": "0.4885", "loss": "1.1999", "code": "public void run(){try{ } catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:54.798559", "n_pass": [335, 43, 25], "score": "0.4885", "loss": "1.1999", "code": "public void run(){try{} catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:56.146599", "n_pass": [337, 44, 26], "score": "0.4885", "loss": "1.1999", "code": "public void run(){try{}catch (To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:29:57.501085", "n_pass": [343, 45, 27], "score": "0.4885", "loss": "1.1999", "code": "public void run(){try{}catch(To t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:30:00.154278", "n_pass": [346, 47, 28], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t) {(\"\" + e); } }"}
+{"time": "2020-12-27 23:30:01.479370", "n_pass": [350, 48, 29], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t){(\"\" + e); } }"}
+{"time": "2020-12-27 23:30:12.769175", "n_pass": [403, 54, 30], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t){(\"\"+ e); } }"}
+{"time": "2020-12-27 23:30:14.134237", "n_pass": [404, 55, 31], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t){(\"\"+e); } }"}
+{"time": "2020-12-27 23:30:15.456771", "n_pass": [408, 56, 32], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t){(\"\"+e);} }"}
+{"time": "2020-12-27 23:30:16.776077", "n_pass": [410, 57, 33], "score": "0.5194", "loss": "1.1232", "code": "public void run(){try{}catch(T t){(\"\"+e);}}"}
+
+Minimal simplified code:
+public void run(){try{}catch(T t){(""+e);}}
+

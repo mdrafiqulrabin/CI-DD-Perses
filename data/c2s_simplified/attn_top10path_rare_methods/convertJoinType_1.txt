@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslUtils_convertJoinType.java
+method_name = convertJoinType
+method_body = public static com.querydsl.core.JoinType convertJoinType(JoinType joinType) { switch(joinType) { case INNER: return com.querydsl.core.JoinType.JOIN; case LEFT: return com.querydsl.core.JoinType.LEFTJOIN; case RIGHT: return com.querydsl.core.JoinType.RIGHTJOIN; default: throw new IllegalStateException(joinType.toString() + " unknown"); } }
+
+topk path-contexts for sub-token: convert
+[0.0793] com,ClassOrInterfaceType0|ClassOrInterfaceType|ClassOrInterfaceType|ClassOrInterfaceType|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0276] to|string,NameExpr2|MethodCallExpr|BinaryExpr:plus|StringLiteralExpr1,unknown
+[0.0230] com,NameExpr0|FieldAccessExpr0|NameExpr2,querydsl
+[0.0230] com,NameExpr0|FieldAccessExpr0|NameExpr2,querydsl
+[0.0230] com,NameExpr0|FieldAccessExpr0|NameExpr2,querydsl
+[0.0195] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|FieldAccessExpr|NameExpr2,leftjoin
+[0.0156] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|SwitchEntryStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,leftjoin
+[0.0152] join|type,NameExpr2|FieldAccessExpr0|FieldAccessExpr|NameExpr2,leftjoin
+[0.0147] illegal|state|exception,ClassOrInterfaceType0|ObjectCreationExpr|BinaryExpr:plus|MethodCallExpr0|NameExpr2,to|string
+[0.0146] querydsl,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,core
+[0.0146] querydsl,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,core
+[0.0146] querydsl,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,core
+
+topk terminals for sub-token: convert
+['com', 'METHOD_NAME', 'to|string', 'unknown', 'com', 'querydsl', 'com', 'querydsl', 'com', 'querydsl', 'core', 'leftjoin', 'METHOD_NAME', 'leftjoin', 'join|type', 'leftjoin', 'illegal|state|exception', 'to|string', 'querydsl', 'core', 'querydsl', 'core', 'querydsl', 'core']
+
+topk path-contexts for sub-token: join
+[0.0940] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,join|type
+[0.0698] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0428] join|type,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0274] join|type,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0221] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,join|type
+[0.0217] join|type,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|SwitchStmt|SwitchEntryStmt|NameExpr0,left
+[0.0214] join|type,NameExpr2|FieldAccessExpr0|FieldAccessExpr|NameExpr2,leftjoin
+[0.0187] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0187] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0187] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+
+topk terminals for sub-token: join
+['METHOD_NAME', 'join|type', 'METHOD_NAME', 'join|type', 'join|type', 'join|type', 'join|type', 'join|type', 'METHOD_NAME', 'join|type', 'join|type', 'left', 'join|type', 'leftjoin', 'core', 'join|type', 'core', 'join|type', 'core', 'join|type']
+
+topk path-contexts for sub-token: type
+[0.0919] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,join|type
+[0.0674] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0294] join|type,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0244] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,join|type
+[0.0218] join|type,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|SwitchStmt|NameExpr0,join|type
+[0.0212] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|SwitchEntryStmt|ReturnStmt|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0212] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|SwitchEntryStmt|ReturnStmt|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0212] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|SwitchStmt|SwitchEntryStmt|ReturnStmt|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0206] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0206] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+[0.0206] core,NameExpr2|FieldAccessExpr0|FieldAccessExpr0|NameExpr2,join|type
+
+topk terminals for sub-token: type
+['METHOD_NAME', 'join|type', 'METHOD_NAME', 'join|type', 'join|type', 'join|type', 'METHOD_NAME', 'join|type', 'join|type', 'join|type', 'METHOD_NAME', 'join|type', 'METHOD_NAME', 'join|type', 'METHOD_NAME', 'join|type', 'core', 'join|type', 'core', 'join|type', 'core', 'join|type']
+

@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataTableModel_clearUndo.java
+method_name = clearUndo
+method_body = @Override public void clearUndo() { m_UndoList = new Vector<File>(); }
+predict, score, loss = clearUndo, 0.4909564256668091, 0.713696300983429
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:07:15.178249", "n_pass": [1, 1, 1], "score": "0.491", "loss": "0.7137", "code": "@Override public void clearUndo() { m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-23 17:07:20.440784", "n_pass": [21, 3, 2], "score": "0.5142", "loss": "0.6674", "code": "@Overrid void clearUndo() { m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-23 17:07:52.841204", "n_pass": [104, 14, 3], "score": "0.5142", "loss": "0.6674", "code": "@Overrid void clearUndo() { m_UndoList = new Ver<File>(); }"}
+{"time": "2021-01-23 17:07:55.442796", "n_pass": [106, 15, 4], "score": "0.6511", "loss": "0.4325", "code": "@Overrid void clearUndo() { m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:07:58.048385", "n_pass": [110, 16, 5], "score": "0.6511", "loss": "0.4325", "code": "@Orrid void clearUndo() { m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:08:00.651206", "n_pass": [111, 17, 6], "score": "0.6414", "loss": "0.4476", "code": "@Oid void clearUndo() { m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:08:03.254665", "n_pass": [112, 18, 7], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo() { m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:08:44.075464", "n_pass": [199, 30, 8], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){ m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:08:46.675911", "n_pass": [201, 31, 9], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){m_UndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:08:51.917816", "n_pass": [203, 33, 10], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList = new Ver<F>(); }"}
+{"time": "2021-01-23 17:09:15.399618", "n_pass": [212, 42, 11], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList= new Ver<F>(); }"}
+{"time": "2021-01-23 17:09:17.999952", "n_pass": [214, 43, 12], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList=new Ver<F>(); }"}
+{"time": "2021-01-23 17:09:20.601442", "n_pass": [219, 44, 13], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList=new er<F>(); }"}
+{"time": "2021-01-23 17:09:23.202244", "n_pass": [220, 45, 14], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList=new r<F>(); }"}
+{"time": "2021-01-23 17:10:04.880813", "n_pass": [272, 59, 15], "score": "0.6498", "loss": "0.4347", "code": "@O void clearUndo(){mUndoList=new r<F>();}"}
+
+Minimal simplified code:
+@O void clearUndo(){mUndoList=new r<F>();}
+

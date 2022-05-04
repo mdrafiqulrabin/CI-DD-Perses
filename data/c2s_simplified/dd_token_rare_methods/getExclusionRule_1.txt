@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/calendar/calendar-impl/impl/src/java/org/sakaiproject/calendar/impl/GenericCalendarImporter_getExclusionRule.java
+method_name = getExclusionRule
+method_body = public RecurrenceRule getExclusionRule() { return this.exclusionRule; }
+predict, score, loss = getExclusionRule, 0.4555693, 0.8925508
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:55:23.387428", "n_pass": [1, 1, 1], "score": "0.4556", "loss": "0.8926", "code": "public RecurrenceRule getExclusionRule() { return this.exclusionRule; }"}
+{"time": "2021-01-20 05:55:25.049843", "n_pass": [20, 2, 2], "score": "0.4556", "loss": "0.8926", "code": "RecurrenceRule getExclusionRule() { return this.exclusionRule; }"}
+{"time": "2021-01-20 05:55:26.340564", "n_pass": [24, 3, 3], "score": "0.4768", "loss": "0.9702", "code": "RecurrenceRule getExclusionRule() { this.exclusionRule; }"}
+{"time": "2021-01-20 05:55:32.664441", "n_pass": [52, 6, 4], "score": "0.4768", "loss": "0.9702", "code": "RecurrenceRule getExclusionRule(){ this.exclusionRule; }"}
+{"time": "2021-01-20 05:55:33.963413", "n_pass": [54, 7, 5], "score": "0.4768", "loss": "0.9702", "code": "RecurrenceRule getExclusionRule(){this.exclusionRule; }"}
+{"time": "2021-01-20 05:55:38.279832", "n_pass": [71, 9, 6], "score": "0.4768", "loss": "0.9702", "code": "RecurrenceRule getExclusionRule(){this.exclusionRule;}"}
+
+Minimal simplified code:
+RecurrenceRule getExclusionRule(){this.exclusionRule;}
+

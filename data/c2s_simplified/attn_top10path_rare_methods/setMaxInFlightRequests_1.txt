@@ -1,0 +1,80 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxInFlightRequests.java
+method_name = setMaxInFlightRequests
+method_body = public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }
+
+topk path-contexts for sub-token: set
+[0.1391] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1348] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1070] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0610] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0587] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0525] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0404] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0377] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0344] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0194] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: set
+['int', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'METHOD_NAME', 'int', 'max|in|flight|requests', 'max|in|flight|requests', 'int', 'this']
+
+topk path-contexts for sub-token: max
+[0.1451] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1363] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1194] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0551] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0490] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0458] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0418] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0386] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0313] max|in|flight|requests,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0176] builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+
+topk terminals for sub-token: max
+['int', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'builder', 'max|in|flight|requests']
+
+topk path-contexts for sub-token: in
+[0.1407] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1344] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1329] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0780] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0739] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0700] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0584] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0560] max|in|flight|requests,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0491] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0352] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+
+topk terminals for sub-token: in
+['METHOD_NAME', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests']
+
+topk path-contexts for sub-token: flight
+[0.1563] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1410] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1196] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.1002] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0861] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0714] max|in|flight|requests,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0684] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0548] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0504] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0391] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+
+topk terminals for sub-token: flight
+['this', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'max|in|flight|requests', 'max|in|flight|requests', 'int', 'max|in|flight|requests']
+
+topk path-contexts for sub-token: requests
+[0.0880] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0877] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0788] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0787] max|in|flight|requests,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0740] this,ThisExpr0|FieldAccessExpr0|NameExpr2,max|in|flight|requests
+[0.0664] max|in|flight|requests,NameExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ReturnStmt|ThisExpr0,this
+[0.0649] builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,max|in|flight|requests
+[0.0593] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,max|in|flight|requests
+[0.0552] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,max|in|flight|requests
+[0.0486] max|in|flight|requests,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+
+topk terminals for sub-token: requests
+['METHOD_NAME', 'max|in|flight|requests', 'METHOD_NAME', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'max|in|flight|requests', 'this', 'this', 'max|in|flight|requests', 'max|in|flight|requests', 'this', 'builder', 'max|in|flight|requests', 'this', 'max|in|flight|requests', 'int', 'max|in|flight|requests', 'max|in|flight|requests', 'int']
+

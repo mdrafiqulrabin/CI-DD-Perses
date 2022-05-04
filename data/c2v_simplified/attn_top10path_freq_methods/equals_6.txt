@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/StringCache_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof CharEntry) { return value.equals(((CharEntry) obj).value); } return false; }
+
+topk path-contexts:
+[0.1008] charentry,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),equals
+[0.0920] charentry,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0917] obj,(NameExpr0)^(InstanceOfExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0871] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.0609] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),obj
+[0.0598] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(InstanceOfExpr)_(ClassOrInterfaceType1),charentry
+[0.0562] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0463] value,(NameExpr2)^(FieldAccessExpr2)^(MethodCallExpr)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0412] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(InstanceOfExpr)_(ClassOrInterfaceType1),charentry
+[0.0403] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),equals
+
+topk terminals:
+['charentry', 'equals', 'charentry', 'false', 'obj', 'false', 'boolean', 'object', 'boolean', 'obj', 'obj', 'charentry', 'obj', 'false', 'value', 'false', 'object', 'charentry', 'obj', 'equals']
+

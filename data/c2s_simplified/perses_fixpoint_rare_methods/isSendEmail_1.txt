@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/msgcntr/messageforums-app/src/java/org/sakaiproject/tool/messageforums/PrivateMessagesTool_isSendEmail.java
+method_name = isSendEmail
+method_body = public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true; } else { sendEmail = false; } return sendEmail; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:08:16.234066", "score": "0.46", "loss": "1.6664", "code": "class T { public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true; } else { sendEmail = false; } return sendEmail; } }"}
+{"time": "2021-01-24 06:09:30.920419", "score": "0.7567", "loss": "0.3219", "code": "class T { public boolean isSendEmail() { return sendEmail; } }"}
+{"time": "2021-01-24 06:10:02.798309", "score": "0.7567", "loss": "0.3219", "code": "class T { boolean isSendEmail() { return sendEmail; } }"}
+
+Minimal simplified code:
+class T {
+       boolean isSendEmail() {                                                                                                                                                  return sendEmail; }
+}
+
+

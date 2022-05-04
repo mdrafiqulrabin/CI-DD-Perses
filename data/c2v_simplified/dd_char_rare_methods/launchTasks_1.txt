@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/jmh/java/org/apache/aurora/benchmark/fakes/FakeSchedulerDriver_launchTasks.java
+method_name = launchTasks
+method_body = @Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }
+predict, score, loss = launchTasks, 0.4093838632106781, 1.3146177530288696
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:21:50.222843", "n_pass": [1, 1, 1], "score": "0.4094", "loss": "1.3146", "code": "@Override public Protos.Status launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-23 17:21:52.823663", "n_pass": [8, 2, 2], "score": "0.508", "loss": "1.6991", "code": "s launchTasks(Protos.OfferID offerId, Collection<Protos.TaskInfo> tasks) { return null; }"}
+{"time": "2021-01-23 17:21:58.509749", "n_pass": [43, 4, 3], "score": "0.4434", "loss": "1.7926", "code": "s launchTasks(Protos.OfferID offerId, Collection<askInfo> tasks) { return null; }"}
+{"time": "2021-01-23 17:22:09.332188", "n_pass": [83, 8, 4], "score": "0.3518", "loss": "2.0487", "code": "s launchTasks(Protos.OfferID offerId, Collection<askInfo> tasks) { returnl; }"}
+{"time": "2021-01-23 17:22:18.756884", "n_pass": [91, 11, 5], "score": "0.3518", "loss": "2.0487", "code": "s launchTasks(Protos.rID offerId, Collection<askInfo> tasks) { returnl; }"}
+{"time": "2021-01-23 17:22:23.952626", "n_pass": [95, 13, 6], "score": "0.3518", "loss": "2.0487", "code": "s launchTasks(Protos.rID offerId,lection<askInfo> tasks) { returnl; }"}
+{"time": "2021-01-23 17:22:26.576661", "n_pass": [96, 14, 7], "score": "0.3518", "loss": "2.0487", "code": "s launchTasks(Protos.rID offerId,ion<askInfo> tasks) { returnl; }"}
+{"time": "2021-01-23 17:22:34.433025", "n_pass": [103, 17, 8], "score": "0.3713", "loss": "1.9239", "code": "s launchTasks(Protos.rID offerId,ion<askInfo> tasks) { rel; }"}
+{"time": "2021-01-23 17:23:03.942279", "n_pass": [171, 26, 9], "score": "0.3713", "loss": "1.9239", "code": "s launchTasks(Protos.D offerId,ion<askInfo> tasks) { rel; }"}
+{"time": "2021-01-23 17:23:14.364525", "n_pass": [176, 30, 10], "score": "0.3713", "loss": "1.9239", "code": "s launchTasks(Protos.D offerId,n<askInfo> tasks) { rel; }"}
+{"time": "2021-01-23 17:23:19.598160", "n_pass": [179, 32, 11], "score": "0.3713", "loss": "1.9239", "code": "s launchTasks(Protos.D offerId,n<asnfo> tasks) { rel; }"}
+{"time": "2021-01-23 17:23:32.633899", "n_pass": [187, 37, 12], "score": "0.3682", "loss": "1.934", "code": "s launchTasks(Protos.D offerId,n<asnfo> tasks) { l; }"}
+{"time": "2021-01-23 17:24:12.649157", "n_pass": [264, 50, 13], "score": "0.374", "loss": "1.9115", "code": "s launchTasks(Protos.D offerId,n<asnfo> tasks) { ; }"}
+{"time": "2021-01-23 17:24:15.254132", "n_pass": [265, 51, 14], "score": "0.374", "loss": "1.9115", "code": "s launchTasks(Protos.D offerId,n<asnfo> tasks) { ;}"}
+{"time": "2021-01-23 17:24:59.608611", "n_pass": [300, 66, 15], "score": "0.374", "loss": "1.9115", "code": "s launchTasks(Protos.D offerId,n<snfo> tasks) { ;}"}
+{"time": "2021-01-23 17:25:04.805602", "n_pass": [302, 68, 16], "score": "0.2875", "loss": "2.4542", "code": "s launchTasks(Protos.D offerId,n<sfo> tasks) { ;}"}
+{"time": "2021-01-23 17:25:07.425425", "n_pass": [303, 69, 17], "score": "0.3344", "loss": "2.1831", "code": "s launchTasks(Protos.D offerId,n<so> tasks) { ;}"}
+{"time": "2021-01-23 17:25:10.034783", "n_pass": [304, 70, 18], "score": "0.2962", "loss": "2.1434", "code": "s launchTasks(Protos.D offerId,n<s> tasks) { ;}"}
+{"time": "2021-01-23 17:25:12.621408", "n_pass": [306, 71, 19], "score": "0.2962", "loss": "2.1434", "code": "s launchTasks(Protos.D offerId,n<s>tasks) { ;}"}
+{"time": "2021-01-23 17:25:28.219594", "n_pass": [313, 77, 20], "score": "0.2962", "loss": "2.1434", "code": "s launchTasks(Protos.D offerId,n<s>tasks){ ;}"}
+{"time": "2021-01-23 17:25:30.820740", "n_pass": [315, 78, 21], "score": "0.2962", "loss": "2.1434", "code": "s launchTasks(Protos.D offerId,n<s>tasks){;}"}
+
+Minimal simplified code:
+s launchTasks(Protos.D offerId,n<s>tasks){;}
+

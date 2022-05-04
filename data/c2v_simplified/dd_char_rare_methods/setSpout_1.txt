@@ -1,0 +1,45 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-heron/heron/api/src/java/org/apache/heron/api/topology/TopologyBuilder_setSpout.java
+method_name = setSpout
+method_body = public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }
+predict, score, loss = setSpout, 0.3595748245716095, 1.5657083988189697
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:52:19.233715", "n_pass": [1, 1, 1], "score": "0.3596", "loss": "1.5657", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:22.303257", "n_pass": [44, 2, 2], "score": "0.364", "loss": "1.5436", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:27.600089", "n_pass": [50, 4, 3], "score": "0.364", "loss": "1.5436", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validame(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:30.233808", "n_pass": [51, 5, 4], "score": "0.3868", "loss": "1.4387", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validtDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:32.864462", "n_pass": [53, 6, 5], "score": "0.9279", "loss": "0.1171", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validtDeclarer s =larer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:35.494951", "n_pass": [55, 7, 6], "score": "0.6941", "loss": "0.6542", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validtDeclarer s =larer(id, sposmHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-23 19:52:38.148494", "n_pass": [57, 8, 7], "score": "0.7792", "loss": "0.2938", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validtDeclarer s =larer(id, sposmHint); spou; return s; }"}
+{"time": "2021-01-23 19:52:43.796088", "n_pass": [65, 10, 8], "score": "0.7927", "loss": "0.2925", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validlarer(id, sposmHint); spou; return s; }"}
+{"time": "2021-01-23 19:52:49.422794", "n_pass": [93, 12, 9], "score": "0.8276", "loss": "0.2422", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { var(id, sposmHint); spou; return s; }"}
+{"time": "2021-01-23 19:52:52.052154", "n_pass": [95, 13, 10], "score": "0.8448", "loss": "0.2261", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { var(id, st); spou; return s; }"}
+{"time": "2021-01-23 19:52:54.665221", "n_pass": [97, 14, 11], "score": "0.8757", "loss": "0.173", "code": "Declarer setSpout(String id, IRichSpout spout, Number parallelismHint) { var(id, st); sporn s; }"}
+{"time": "2021-01-23 19:52:57.286132", "n_pass": [99, 15, 12], "score": "0.8712", "loss": "0.1781", "code": "er setSpout(String id, IRichSpout spout, Number parallelismHint) { var(id, st); sporn s; }"}
+{"time": "2021-01-23 19:53:00.322446", "n_pass": [103, 16, 13], "score": "0.9253", "loss": "0.273", "code": "er setSpout(StringRichSpout spout, Number parallelismHint) { var(id, st); sporn s; }"}
+{"time": "2021-01-23 19:53:02.932159", "n_pass": [104, 17, 14], "score": "0.4926", "loss": "2.267", "code": "er setSpout(Stringout spout, Number parallelismHint) { var(id, st); sporn s; }"}
+{"time": "2021-01-23 19:53:11.270061", "n_pass": [116, 20, 15], "score": "0.8516", "loss": "0.446", "code": "er setSpout(out spout, Number parallelismHint) { var(id, st); sporn s; }"}
+{"time": "2021-01-23 19:53:37.878100", "n_pass": [166, 30, 16], "score": "0.8692", "loss": "0.3669", "code": "er setSpout(out spout, Number parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:01.119699", "n_pass": [232, 38, 17], "score": "0.8898", "loss": "0.2948", "code": "r setSpout(out spout, Number parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:07.791335", "n_pass": [244, 39, 18], "score": "0.9248", "loss": "0.2539", "code": "r setSpout(ut spout, Number parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:10.399596", "n_pass": [245, 40, 19], "score": "0.9642", "loss": "0.1105", "code": "r setSpout(t spout, Number parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:18.221333", "n_pass": [251, 43, 20], "score": "0.964", "loss": "0.105", "code": "r setSpout(t spout,umber parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:20.828019", "n_pass": [252, 44, 21], "score": "0.8021", "loss": "1.3778", "code": "r setSpout(t spout,ber parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:23.440975", "n_pass": [253, 45, 22], "score": "0.9665", "loss": "0.1014", "code": "r setSpout(t spout,r parallelismHint) { var(id, st); sps; }"}
+{"time": "2021-01-23 19:54:44.351429", "n_pass": [264, 53, 23], "score": "0.9612", "loss": "0.1099", "code": "r setSpout(t spout,r parallelismHint) {ar(id, st); sps; }"}
+{"time": "2021-01-23 19:54:46.956974", "n_pass": [268, 54, 24], "score": "0.9685", "loss": "0.066", "code": "r setSpout(t spout,r parallelismHint) {ar(id,t); sps; }"}
+{"time": "2021-01-23 19:54:49.583659", "n_pass": [271, 55, 25], "score": "0.9712", "loss": "0.0591", "code": "r setSpout(t spout,r parallelismHint) {ar(id,t); s; }"}
+{"time": "2021-01-23 19:54:52.200946", "n_pass": [272, 56, 26], "score": "0.9715", "loss": "0.058", "code": "r setSpout(t spout,r parallelismHint) {ar(id,t);  }"}
+{"time": "2021-01-23 19:55:22.328640", "n_pass": [302, 66, 27], "score": "0.9742", "loss": "0.0384", "code": "r setSpout(t spout,r parallelismHint) {ar(it);  }"}
+{"time": "2021-01-23 19:55:52.415275", "n_pass": [332, 76, 28], "score": "0.9688", "loss": "0.0369", "code": "r setSpout(t spout,r parallelismHint) {(it);  }"}
+{"time": "2021-01-23 19:56:24.445434", "n_pass": [397, 86, 29], "score": "0.9689", "loss": "0.0366", "code": "r setSpout(t spout,r parallelismHint) {(t);  }"}
+{"time": "2021-01-23 19:56:27.059213", "n_pass": [401, 87, 30], "score": "0.9689", "loss": "0.0366", "code": "r setSpout(t spout,r parallelismHint) {(t); }"}
+{"time": "2021-01-23 19:56:29.688451", "n_pass": [402, 88, 31], "score": "0.9689", "loss": "0.0366", "code": "r setSpout(t spout,r parallelismHint) {(t);}"}
+{"time": "2021-01-23 19:56:41.529719", "n_pass": [419, 91, 32], "score": "0.4526", "loss": "2.6635", "code": "r setSpout(t sput,r parallelismHint) {(t);}"}
+{"time": "2021-01-23 19:56:46.749864", "n_pass": [421, 93, 33], "score": "0.4324", "loss": "1.5518", "code": "r setSpout(t spu,r parallelismHint) {(t);}"}
+{"time": "2021-01-23 19:57:28.386395", "n_pass": [441, 109, 34], "score": "0.4324", "loss": "1.5518", "code": "r setSpout(t spu,r parallelismHint){(t);}"}
+
+Minimal simplified code:
+r setSpout(t spu,r parallelismHint){(t);}
+

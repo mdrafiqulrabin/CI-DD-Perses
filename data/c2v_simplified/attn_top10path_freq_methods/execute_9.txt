@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/SessionsTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/sessions").toString()); }
+
+topk path-contexts:
+[0.4742] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(StringLiteralExpr1),sessions
+[0.1095] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.1066] sessions,(StringLiteralExpr1)^(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0704] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0598] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0414] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.0145] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(SuperExpr0),super
+[0.0138] createquerystring,(NameExpr2)^(MethodCallExpr0)^(MethodCallExpr1)^(MethodCallExpr)_(NameExpr2),execute
+[0.0136] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(NameExpr2),tostring
+[0.0128] sessions,(StringLiteralExpr1)^(MethodCallExpr0)^(MethodCallExpr1)_(NameExpr2),tostring
+
+topk terminals:
+['buildexception', 'sessions', 'execute', 'createquerystring', 'sessions', 'createquerystring', 'METHOD_NAME', 'createquerystring', 'buildexception', 'createquerystring', 'super', 'execute', 'buildexception', 'super', 'createquerystring', 'execute', 'buildexception', 'tostring', 'sessions', 'tostring']
+

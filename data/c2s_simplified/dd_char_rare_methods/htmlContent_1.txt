@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/kernel/kernel-util/src/main/java/org/sakaiproject/util/EmailNotification_htmlContent.java
+method_name = htmlContent
+method_body = protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }
+predict, score, loss = htmlContent, 0.48359835, 3.8923104
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:43:28.811968", "n_pass": [1, 1, 1], "score": "0.4836", "loss": "3.8923", "code": "protected String htmlContent(Event event) { return Web.encodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:43:34.841645", "n_pass": [51, 5, 2], "score": "0.3938", "loss": "4.2204", "code": "protected String htmlContent(Event event) { returcodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:43:40.099900", "n_pass": [61, 9, 3], "score": "0.285", "loss": "4.5002", "code": "protectng htmlContent(Event event) { returcodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:43:47.401466", "n_pass": [104, 14, 4], "score": "0.285", "loss": "4.5002", "code": "protec htmlContent(Event event) { returcodeUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:43:52.409596", "n_pass": [114, 17, 5], "score": "0.285", "loss": "4.5002", "code": "protec htmlContent(Event event) { returUrlsAsHtml(Web.escapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:43:56.317161", "n_pass": [118, 20, 6], "score": "0.2214", "loss": "4.1508", "code": "protec htmlContent(Event event) { returUrlsAsHtml(WscapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:09.155031", "n_pass": [136, 29, 7], "score": "0.2978", "loss": "3.7236", "code": "protec htmlContent(t event) { returUrlsAsHtml(WscapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:10.469035", "n_pass": [140, 30, 8], "score": "0.3354", "loss": "3.4883", "code": "protec htmlContent(t event) { rUrlsAsHtml(WscapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:11.772815", "n_pass": [141, 31, 9], "score": "0.2398", "loss": "3.8601", "code": "protec htmlContent(t event) { rAsHtml(WscapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:29.971387", "n_pass": [212, 44, 10], "score": "0.2398", "loss": "3.8601", "code": "protec htmlContent(t event) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:49.602560", "n_pass": [233, 59, 11], "score": "0.2398", "loss": "3.8601", "code": "rotec htmlContent(t event) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:44:50.914096", "n_pass": [234, 60, 12], "score": "0.2398", "loss": "3.8601", "code": "otec htmlContent(t event) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:45:33.971958", "n_pass": [368, 86, 13], "score": "0.3368", "loss": "3.3506", "code": "otec htmlContent(t vent) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:45:35.277157", "n_pass": [369, 87, 14], "score": "0.4209", "loss": "3.2713", "code": "otec htmlContent(t vnt) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:45:37.909943", "n_pass": [371, 89, 15], "score": "0.2687", "loss": "4.0134", "code": "otec htmlContent(t vn) { rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:45:39.212789", "n_pass": [373, 90, 16], "score": "0.2687", "loss": "4.0134", "code": "otec htmlContent(t vn){ rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:45:40.518366", "n_pass": [375, 91, 17], "score": "0.2687", "loss": "4.0134", "code": "otec htmlContent(t vn){rAsHtml(WapeHtml(plainTextContent(event), true)); }"}
+{"time": "2021-01-23 11:46:28.993351", "n_pass": [417, 128, 18], "score": "0.2687", "loss": "4.0134", "code": "otec htmlContent(t vn){rAsHtml(WapeHtml(plainTextContent(event),true)); }"}
+{"time": "2021-01-23 11:46:35.541109", "n_pass": [425, 133, 19], "score": "0.2687", "loss": "4.0134", "code": "otec htmlContent(t vn){rAsHtml(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:46:38.168244", "n_pass": [428, 135, 20], "score": "0.238", "loss": "4.3821", "code": "oec htmlContent(t vn){rAsHtml(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:46:46.561588", "n_pass": [446, 138, 21], "score": "0.3533", "loss": "3.5425", "code": "oec htmlContent(t n){rAsHtml(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:46:55.759357", "n_pass": [456, 145, 22], "score": "0.2787", "loss": "3.8339", "code": "oec htmlContent(t n){rAsHtm(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:47:42.834102", "n_pass": [501, 181, 23], "score": "0.3703", "loss": "3.748", "code": "oe htmlContent(t n){rAsHtm(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:47:53.711573", "n_pass": [524, 186, 24], "score": "0.3038", "loss": "4.0666", "code": "oe htmlContent(t n){rAsHm(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:48:39.568091", "n_pass": [568, 221, 25], "score": "0.2588", "loss": "3.77", "code": "e htmlContent(t n){rAsHm(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:48:45.593557", "n_pass": [588, 222, 26], "score": "0.294", "loss": "3.4982", "code": "e htmlContent(t n){AsHm(WapeHtml(plainTextContent(event),true));}"}
+{"time": "2021-01-23 11:49:23.561932", "n_pass": [620, 251, 27], "score": "0.2367", "loss": "4.1475", "code": "e htmlContent(t n){AsHm(WapeHtml(plainTextContent(vent),true));}"}
+{"time": "2021-01-23 11:49:28.827471", "n_pass": [624, 255, 28], "score": "0.2454", "loss": "3.9991", "code": "e htmlContent(t n){AsHm(WapeHtml(plainTextContent(ven),true));}"}
+{"time": "2021-01-23 11:50:16.863607", "n_pass": [685, 288, 29], "score": "0.1713", "loss": "4.7264", "code": "e htmlContent(t n){AsHm(WapeHtml(plainTextContent(en),true));}"}
+{"time": "2021-01-23 11:50:19.470896", "n_pass": [687, 290, 30], "score": "0.1894", "loss": "4.2264", "code": "e htmlContent(t n){AsHm(WapeHtml(plainTextContent(e),true));}"}
+
+Minimal simplified code:
+e htmlContent(t n){AsHm(WapeHtml(plainTextContent(e),true));}
+

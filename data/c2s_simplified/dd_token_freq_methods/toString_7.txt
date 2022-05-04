@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/SimpleNode_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (this.image != null) { return ELParserTreeConstants.jjtNodeName[id] + "[" + this.image + "]"; } return ELParserTreeConstants.jjtNodeName[id]; }
+predict, score, loss = getNameNode, 0.5848922, 4.2767715
+
+Ignoring as original_method_name != predicted_method_name.
+

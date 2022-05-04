@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/SessionsTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/sessions").toString()); }
+predict, score, loss = execute, 0.9999452829360962, 9.548207890475169e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 23:23:34.216813", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "@Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:23:36.885533", "n_pass": [20, 2, 2], "score": "0.9981", "loss": "0.0032", "code": "void execute() throws BuildException { super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:23:39.575493", "n_pass": [21, 3, 3], "score": "0.6234", "loss": "0.7674", "code": "void execute(){ super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:23:48.026569", "n_pass": [78, 5, 4], "score": "0.6234", "loss": "0.7674", "code": "void execute(){super.execute(); execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:23:53.640862", "n_pass": [84, 7, 5], "score": "0.6234", "loss": "0.7674", "code": "void execute(){super.execute();execute(createQueryString(\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:23:59.566817", "n_pass": [87, 9, 6], "score": "0.9805", "loss": "0.021", "code": "void execute(){super.execute();execute((\"/sessions\").toString()); }"}
+{"time": "2020-12-26 23:24:02.231341", "n_pass": [89, 10, 7], "score": "0.9625", "loss": "0.0393", "code": "void execute(){super.execute();execute((\"\").toString()); }"}
+{"time": "2020-12-26 23:24:04.898201", "n_pass": [92, 11, 8], "score": "0.9339", "loss": "0.0706", "code": "void execute(){super.execute();execute((\"\").toString); }"}
+{"time": "2020-12-26 23:24:08.365980", "n_pass": [102, 12, 9], "score": "0.2385", "loss": "1.8758", "code": "void execute(){superexecute();execute((\"\").toString); }"}
+{"time": "2020-12-26 23:24:14.097470", "n_pass": [111, 14, 10], "score": "0.6371", "loss": "0.6059", "code": "void execute(){superexecute();execute((\"\")); }"}
+{"time": "2020-12-26 23:24:17.612236", "n_pass": [120, 15, 11], "score": "0.9756", "loss": "0.0279", "code": "void execute(){execute();execute((\"\")); }"}
+{"time": "2020-12-26 23:24:20.247473", "n_pass": [125, 16, 12], "score": "0.6763", "loss": "0.4942", "code": "void execute(){execute();((\"\")); }"}
+{"time": "2020-12-26 23:24:24.493247", "n_pass": [154, 17, 13], "score": "0.6763", "loss": "0.4942", "code": "void execute(){execute();((\"\"));}"}
+
+Minimal simplified code:
+void execute(){execute();((""));}
+

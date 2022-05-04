@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_canInitializeReference.java
+method_name = canInitializeReference
+method_body = public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }
+predict, score, loss = canInitializeReference, 0.41068852, 1.1456877
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:02:52.727172", "n_pass": [1, 1, 1], "score": "0.4107", "loss": "1.1457", "code": "public final boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:02:55.344071", "n_pass": [20, 3, 2], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference() { return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:07.569979", "n_pass": [88, 9, 3], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){ return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:08.860881", "n_pass": [90, 10, 4], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return (flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:10.539755", "n_pass": [92, 11, 5], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags & CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:11.842307", "n_pass": [95, 12, 6], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags& CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:13.130813", "n_pass": [97, 13, 7], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags&CAN_INITIALIZE_REFERENCE) != 0; }"}
+{"time": "2021-01-20 06:03:20.887902", "n_pass": [104, 19, 8], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags&CAN_INITIALIZE_REFERENCE)!= 0; }"}
+{"time": "2021-01-20 06:03:22.544634", "n_pass": [107, 20, 9], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags&CAN_INITIALIZE_REFERENCE)!=0; }"}
+{"time": "2021-01-20 06:03:33.406646", "n_pass": [131, 27, 10], "score": "0.4107", "loss": "1.1457", "code": "boolean canInitializeReference(){return(flags&CAN_INITIALIZE_REFERENCE)!=0;}"}
+
+Minimal simplified code:
+boolean canInitializeReference(){return(flags&CAN_INITIALIZE_REFERENCE)!=0;}
+

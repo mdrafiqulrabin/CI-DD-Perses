@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/main/java/erogenousbeef/bigreactors/common/multiblock/helpers/FuelContainer_setFuel.java
+method_name = setFuel
+method_body = public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 00:25:58.022403", "score": "0.4926", "loss": "1.0749", "code": "class T { public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); } }"}
+{"time": "2021-01-25 00:31:31.578279", "score": "0.49", "loss": "1.0046", "code": "class T { public void setFuel(ReactantStack newFuel) { setReactant(FUEL ); } }"}
+{"time": "2021-01-25 00:32:11.543247", "score": "0.49", "loss": "1.0046", "code": "class T { void setFuel(ReactantStack newFuel) { setReactant(FUEL ); } }"}
+
+Minimal simplified code:
+class T {
+       void setFuel(ReactantStack newFuel) { setReactant(FUEL         ); }
+}
+
+

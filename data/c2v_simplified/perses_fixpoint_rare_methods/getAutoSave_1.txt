@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/author/TemplateBean_getAutoSave.java
+method_name = getAutoSave
+method_body = public String getAutoSave() { if ("0".equals(autoSave)) return "1"; return checker(autoSave, "1"); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:53:22.170906", "score": "0.2175", "loss": "4.1036", "code": "class T { public String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; return checker(autoSave, \"1\"); } }"}
+{"time": "2021-01-24 15:56:23.912389", "score": "0.2467", "loss": "3.5754", "code": "class T { public String getAutoSave() { if (\"0\".equals(autoSave)) return \"1\"; } }"}
+{"time": "2021-01-24 16:00:20.577495", "score": "0.2773", "loss": "2.9604", "code": "class T { public String getAutoSave() { if (\"0\".equals(autoSave)) return ; } }"}
+{"time": "2021-01-24 16:01:00.188851", "score": "0.2773", "loss": "2.9604", "code": "class T { String getAutoSave() { if (\"0\".equals(autoSave)) return ; } }"}
+
+Minimal simplified code:
+class T {
+       String getAutoSave() { if ("0".equals(autoSave)) return    ;                                }
+}
+
+

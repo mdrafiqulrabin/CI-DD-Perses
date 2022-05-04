@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_run.java
+method_name = run
+method_body = public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }
+
+topk path-contexts for sub-token: run
+[0.1279] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0515] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr1,data|refresh
+[0.0483] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr1,data|refresh
+[0.0426] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ThisExpr2,this
+[0.0386] void,VoidType0|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,post|delayed
+[0.0367] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,post|delayed
+[0.0339] this,ThisExpr2|MethodCallExpr|NameExpr3,post|delayed
+[0.0309] wm|params,NameExpr3|MethodCallExpr|NameExpr3,update|view|layout
+[0.0303] delaytime,NameExpr3|MethodCallExpr|NameExpr3,post|delayed
+[0.0276] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ThisExpr2,this
+
+topk terminals for sub-token: run
+['void', 'METHOD_NAME', 'void', 'data|refresh', 'METHOD_NAME', 'data|refresh', 'void', 'this', 'void', 'post|delayed', 'METHOD_NAME', 'post|delayed', 'this', 'post|delayed', 'wm|params', 'update|view|layout', 'delaytime', 'post|delayed', 'METHOD_NAME', 'this']
+

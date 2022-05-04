@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/http/src/main/java/org/kaazing/gateway/transport/http/bridge/filter/HttpHeaderDecodingState_initHeaders.java
+method_name = initHeaders
+method_body = private void initHeaders() { headers = new TreeMap<>(HttpHeaderNameComparator.INSTANCE); }
+predict, score, loss = initHeaders, 0.47173426, 1.797474
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:55:20.244232", "n_pass": [1, 1, 1], "score": "0.4717", "loss": "1.7975", "code": "private void initHeaders() { headers = new TreeMap<>(HttpHeaderNameComparator.INSTANCE); }"}
+{"time": "2021-01-23 12:55:23.604298", "n_pass": [25, 3, 2], "score": "0.5276", "loss": "1.4524", "code": "private void initHeaders() { headers = new TreeMap<>(HteComparator.INSTANCE); }"}
+{"time": "2021-01-23 12:55:24.906744", "n_pass": [26, 4, 3], "score": "0.4111", "loss": "4.8706", "code": "private void initHeaders() { headers = new TreeMap<>(HtINSTANCE); }"}
+{"time": "2021-01-23 12:55:27.877720", "n_pass": [45, 6, 4], "score": "0.3424", "loss": "5.0943", "code": "private void initHeaders() { headers = new TreeMap<>(HtCE); }"}
+{"time": "2021-01-23 12:55:32.472930", "n_pass": [54, 9, 5], "score": "0.4779", "loss": "4.1966", "code": "private void initHeaders() { headers = new p<>(HtCE); }"}
+{"time": "2021-01-23 12:55:45.749800", "n_pass": [149, 17, 6], "score": "0.4062", "loss": "4.3911", "code": "private void initHeaders() { headers = new p<>(CE); }"}
+{"time": "2021-01-23 12:55:47.081090", "n_pass": [150, 18, 7], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders() { headers = new p<>(); }"}
+{"time": "2021-01-23 12:56:06.941884", "n_pass": [216, 28, 8], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders() { headers = new p<>();}"}
+{"time": "2021-01-23 12:56:19.219925", "n_pass": [243, 34, 9], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders(){ headers = new p<>();}"}
+{"time": "2021-01-23 12:56:20.535510", "n_pass": [245, 35, 10], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders(){headers = new p<>();}"}
+{"time": "2021-01-23 12:56:30.995768", "n_pass": [253, 43, 11], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders(){headers= new p<>();}"}
+{"time": "2021-01-23 12:56:32.294991", "n_pass": [255, 44, 12], "score": "0.3693", "loss": "5.3604", "code": "private void initHeaders(){headers=new p<>();}"}
+
+Minimal simplified code:
+private void initHeaders(){headers=new p<>();}
+

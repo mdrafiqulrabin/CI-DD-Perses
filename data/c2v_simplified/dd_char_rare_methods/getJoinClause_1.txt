@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/JoinNode_getJoinClause.java
+method_name = getJoinClause
+method_body = public ValueNode getJoinClause() { return joinClause; }
+predict, score, loss = getJoinClause, 0.36722901463508606, 1.7936006784439087
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:34:33.144487", "n_pass": [1, 1, 1], "score": "0.3672", "loss": "1.7936", "code": "public ValueNode getJoinClause() { return joinClause; }"}
+{"time": "2021-01-23 21:34:39.171751", "n_pass": [20, 3, 2], "score": "0.3672", "loss": "1.7936", "code": " ValueNode getJoinClause() { return joinClause; }"}
+{"time": "2021-01-23 21:34:47.817316", "n_pass": [41, 6, 3], "score": "0.8884", "loss": "0.2973", "code": "lueNode getJoinClause() { return joinClause; }"}
+{"time": "2021-01-23 21:34:50.441582", "n_pass": [42, 7, 4], "score": "0.4476", "loss": "1.1942", "code": "Node getJoinClause() { return joinClause; }"}
+{"time": "2021-01-23 21:34:53.053789", "n_pass": [43, 8, 5], "score": "0.7292", "loss": "0.5241", "code": "e getJoinClause() { return joinClause; }"}
+{"time": "2021-01-23 21:35:39.008806", "n_pass": [148, 21, 6], "score": "0.7292", "loss": "0.5241", "code": "e getJoinClause(){ return joinClause; }"}
+{"time": "2021-01-23 21:35:41.639401", "n_pass": [150, 22, 7], "score": "0.7292", "loss": "0.5241", "code": "e getJoinClause(){return joinClause; }"}
+{"time": "2021-01-23 21:36:29.069300", "n_pass": [169, 40, 8], "score": "0.7292", "loss": "0.5241", "code": "e getJoinClause(){return joinClause;}"}
+
+Minimal simplified code:
+e getJoinClause(){return joinClause;}
+

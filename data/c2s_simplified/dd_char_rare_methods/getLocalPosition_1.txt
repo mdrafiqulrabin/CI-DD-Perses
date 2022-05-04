@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/scene3d/SimpleNode_getLocalPosition.java
+method_name = getLocalPosition
+method_body = @Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }
+predict, score, loss = getLocalPosition, 0.47198933, 1.5388579
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:36:47.096043", "n_pass": [1, 1, 1], "score": "0.472", "loss": "1.5389", "code": "@Override public Vector3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-23 10:36:48.409667", "n_pass": [8, 2, 2], "score": "0.4732", "loss": "2.177", "code": "r3 getLocalPosition(Vector3 out) { return out.set(localPosition); }"}
+{"time": "2021-01-23 10:36:53.795706", "n_pass": [43, 5, 3], "score": "0.4401", "loss": "3.5515", "code": "r3 getLocalPosition(Vector3 out) { return o(localPosition); }"}
+{"time": "2021-01-23 10:37:09.865587", "n_pass": [145, 14, 4], "score": "0.894", "loss": "1.5779", "code": "r3 getLocalPosition(Vector3 out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:18.996352", "n_pass": [156, 21, 5], "score": "0.894", "loss": "1.5779", "code": "r getLocalPosition(Vector3 out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:26.428282", "n_pass": [175, 22, 6], "score": "0.9118", "loss": "2.7608", "code": "r getLocalPosition(ector3 out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:29.018648", "n_pass": [177, 24, 7], "score": "0.9118", "loss": "2.7608", "code": "r getLocalPosition(etor3 out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:30.325347", "n_pass": [178, 25, 8], "score": "0.8542", "loss": "2.0279", "code": "r getLocalPosition(eor3 out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:34.243054", "n_pass": [181, 28, 9], "score": "0.8542", "loss": "2.0279", "code": "r getLocalPosition(eor out) { return(localPosition); }"}
+{"time": "2021-01-23 10:37:35.567520", "n_pass": [183, 29, 10], "score": "0.8463", "loss": "2.5231", "code": "r getLocalPosition(eor o) { return(localPosition); }"}
+{"time": "2021-01-23 10:38:20.105640", "n_pass": [269, 57, 11], "score": "0.8463", "loss": "2.5231", "code": "r getLocalPosition(eor o) { return(localPosition);}"}
+{"time": "2021-01-23 10:38:31.805220", "n_pass": [295, 61, 12], "score": "0.8463", "loss": "2.5231", "code": "r getLocalPosition(eor o){ return(localPosition);}"}
+{"time": "2021-01-23 10:38:33.098417", "n_pass": [297, 62, 13], "score": "0.8463", "loss": "2.5231", "code": "r getLocalPosition(eor o){return(localPosition);}"}
+
+Minimal simplified code:
+r getLocalPosition(eor o){return(localPosition);}
+

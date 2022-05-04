@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/core/MatrixUtils_squaredError.java
+method_name = squaredError
+method_body = public static double squaredError(double[] vector1, double[] vector2) { double squaredError = 0; for (int i = 0; i < vector1.length; i++) { squaredError += (vector1[i] - vector2[i]) * (vector1[i] - vector2[i]); } return squaredError; }
+
+topk path-contexts for sub-token: squared
+[0.1015] double,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0369] double,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,vector
+[0.0284] double,PrimitiveType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0275] squared|error,NameExpr0|AssignExpr:plus|BinaryExpr:times|EnclosedExpr|BinaryExpr:minus|ArrayAccessExpr0|NameExpr1,i
+[0.0275] squared|error,NameExpr0|AssignExpr:plus|BinaryExpr:times|EnclosedExpr|BinaryExpr:minus|ArrayAccessExpr0|NameExpr1,i
+[0.0205] i,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0195] i,NameExpr0|UnaryExpr:posIncrement|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0178] squared|error,VariableDeclaratorId0|VariableDeclarator|IntegerLiteralExpr1,0
+[0.0172] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0163] double,PrimitiveType0|MethodDeclaration|Parameter|PrimitiveType1,double
+
+topk terminals for sub-token: squared
+['double', 'METHOD_NAME', 'double', 'vector', 'double', '[]', 'squared|error', 'i', 'squared|error', 'i', 'i', 'squared|error', 'i', 'squared|error', 'squared|error', '0', 'int', 'squared|error', 'double', 'double']
+
+topk path-contexts for sub-token: error
+[0.2051] double,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0639] double,PrimitiveType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0391] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0386] i,NameExpr0|UnaryExpr:posIncrement|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0330] i,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0312] double,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0282] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0276] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+[0.0252] double,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,vector
+[0.0205] i,NameExpr0|BinaryExpr:less|ForStmt|BlockStmt|ReturnStmt|NameExpr0,squared|error
+
+topk terminals for sub-token: error
+['double', 'METHOD_NAME', 'double', '[]', 'int', 'squared|error', 'i', 'squared|error', 'i', 'squared|error', 'double', 'squared|error', '0', 'squared|error', '0', 'squared|error', 'double', 'vector', 'i', 'squared|error']
+

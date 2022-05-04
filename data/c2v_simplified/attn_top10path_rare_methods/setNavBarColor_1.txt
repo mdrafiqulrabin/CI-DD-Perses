@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/BarUtils_setNavBarColor.java
+method_name = setNavBarColor
+method_body = @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }
+
+topk path-contexts:
+[0.1386] color,(VariableDeclaratorId1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setnavigationbarcolor
+[0.1004] lollipop,(NameExpr2)^(FieldAccessExpr)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(VoidType1),void
+[0.0984] colorint,(NameExpr0)^(MarkerAnnotationExpr)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setnavigationbarcolor
+[0.0847] window,(VariableDeclaratorId1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setnavigationbarcolor
+[0.0787] window,(ClassOrInterfaceType2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setnavigationbarcolor
+[0.0576] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId1),window
+[0.0517] color,(NameExpr2)^(MethodCallExpr)_(NameExpr3),setnavigationbarcolor
+[0.0371] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType2),window
+[0.0339] colorint,(NameExpr0)^(MarkerAnnotationExpr)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),window
+[0.0287] int,(PrimitiveType2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setnavigationbarcolor
+
+topk terminals:
+['color', 'setnavigationbarcolor', 'lollipop', 'void', 'colorint', 'setnavigationbarcolor', 'window', 'setnavigationbarcolor', 'window', 'setnavigationbarcolor', 'void', 'window', 'color', 'setnavigationbarcolor', 'void', 'window', 'colorint', 'window', 'int', 'setnavigationbarcolor']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/UndeployTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/undeploy").toString()); }
+
+topk path-contexts:
+[0.4649] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(StringLiteralExpr1),undeploy
+[0.1308] undeploy,(StringLiteralExpr1)^(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0889] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0572] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0486] buildexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(NameExpr2),createquerystring
+[0.0397] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(StringLiteralExpr1),undeploy
+[0.0336] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),execute
+[0.0224] execute,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(MethodCallExpr0)_(StringLiteralExpr1),undeploy
+[0.0142] undeploy,(StringLiteralExpr1)^(MethodCallExpr0)^(MethodCallExpr1)_(NameExpr2),tostring
+[0.0125] undeploy,(StringLiteralExpr1)^(MethodCallExpr0)^(MethodCallExpr1)^(MethodCallExpr)_(NameExpr2),execute
+
+topk terminals:
+['buildexception', 'undeploy', 'undeploy', 'createquerystring', 'execute', 'createquerystring', 'METHOD_NAME', 'createquerystring', 'buildexception', 'createquerystring', 'METHOD_NAME', 'undeploy', 'super', 'execute', 'execute', 'undeploy', 'undeploy', 'tostring', 'undeploy', 'execute']
+

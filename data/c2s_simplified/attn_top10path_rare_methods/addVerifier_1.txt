@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/libgdx__gdx-pay/gdx-pay-server/src/com/badlogic/gdx/pay/server/PurchaseVerifierManager_addVerifier.java
+method_name = addVerifier
+method_body = public void addVerifier(PurchaseVerifier verifier) { verifiers.put(verifier.storeName(), verifier); }
+
+topk path-contexts for sub-token: add
+[0.2396] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0778] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0738] verifier,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0494] store|name,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0476] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verifiers
+[0.0455] purchase|verifier,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0445] verifier,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0436] verifier,NameExpr0|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0266] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,verifier
+[0.0241] verifier,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verifiers
+
+topk terminals for sub-token: add
+['METHOD_NAME', 'put', 'void', 'METHOD_NAME', 'verifier', 'put', 'store|name', 'put', 'METHOD_NAME', 'verifiers', 'purchase|verifier', 'put', 'verifier', 'put', 'verifier', 'put', 'METHOD_NAME', 'verifier', 'verifier', 'verifiers']
+
+topk path-contexts for sub-token: verifier
+[0.1121] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,purchase|verifier
+[0.0975] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,purchase|verifier
+[0.0922] purchase|verifier,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,put
+[0.0860] purchase|verifier,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,verifiers
+[0.0479] verifier,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,purchase|verifier
+[0.0463] purchase|verifier,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,verifier
+[0.0387] store|name,NameExpr2|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+[0.0276] verifiers,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,store|name
+[0.0268] verifier,NameExpr3|MethodCallExpr|NameExpr3,put
+[0.0263] verifier,NameExpr0|MethodCallExpr2|MethodCallExpr|NameExpr3,put
+
+topk terminals for sub-token: verifier
+['METHOD_NAME', 'purchase|verifier', 'void', 'purchase|verifier', 'purchase|verifier', 'put', 'purchase|verifier', 'verifiers', 'verifier', 'purchase|verifier', 'purchase|verifier', 'verifier', 'store|name', 'put', 'verifiers', 'store|name', 'verifier', 'put', 'verifier', 'put']
+

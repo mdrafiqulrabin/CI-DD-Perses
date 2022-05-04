@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mucommander__mucommander/src/main/java/com/mucommander/ui/event/LocationManager_removeLocationListener.java
+method_name = removeLocationListener
+method_body = public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 00:08:19.568372", "score": "0.4702", "loss": "0.7736", "code": "class T { public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); } }"}
+{"time": "2021-01-25 00:12:13.626156", "score": "0.4702", "loss": "0.7736", "code": "class T { void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); } }"}
+
+Minimal simplified code:
+class T {
+                    void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }
+}
+
+

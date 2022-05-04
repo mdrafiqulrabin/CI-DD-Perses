@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/AbstractPsqlTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { PostgresStarter<PostgresExecutable, PostgresProcess> runtime = PostgresStarter.getDefaultInstance(); final PostgresConfig config = new PostgresConfig(PRODUCTION, new AbstractPostgresConfig.Net("localhost", findFreePort()), new AbstractPostgresConfig.Storage("test"), new AbstractPostgresConfig.Timeout(), new AbstractPostgresConfig.Credentials("user", "password")); config.getAdditionalInitDbParams().addAll(asList("-E", "SQL_ASCII", "--locale=C", "--lc-collate=C", "--lc-ctype=C")); PostgresExecutable exec = runtime.prepare(config); process = exec.start(); String url = format("jdbc:postgresql://%s:%s/%s?user=%s&password=%s", config.net().host(), config.net().port(), config.storage().dbName(), config.credentials().username(), config.credentials().password()); conn = DriverManager.getConnection(url); }
+
+topk path-contexts for sub-token: set
+[0.4273] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.3753] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0097] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,process
+[0.0086] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,start
+[0.0078] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,process
+[0.0064] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0050] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,conn
+[0.0039] exec,NameExpr0|MethodCallExpr1|NameExpr2,start
+[0.0038] production,NameExpr1|ObjectCreationExpr|ObjectCreationExpr|StringLiteralExpr1,test
+[0.0038] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,postgres|starter
+
+topk terminals for sub-token: set
+['before', 'METHOD_NAME', 'before', 'void', 'exception', 'process', 'exception', 'start', 'METHOD_NAME', 'process', 'METHOD_NAME', 'exception', 'METHOD_NAME', 'conn', 'exec', 'start', 'production', 'test', 'exception', 'postgres|starter']
+
+topk path-contexts for sub-token: up
+[0.0574] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,process
+[0.0560] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,conn
+[0.0545] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,process
+[0.0505] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0436] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0278] postgres|executable,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,process
+[0.0247] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|ObjectCreationExpr|ClassOrInterfaceType0,postgres|config
+[0.0217] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr0,driver|manager
+[0.0206] process,NameExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr0,driver|manager
+[0.0158] driver|manager,NameExpr0|MethodCallExpr1|NameExpr2,url
+
+topk terminals for sub-token: up
+['exception', 'process', 'METHOD_NAME', 'conn', 'METHOD_NAME', 'process', 'before', 'METHOD_NAME', 'before', 'void', 'postgres|executable', 'process', 'exception', 'postgres|config', 'METHOD_NAME', 'driver|manager', 'process', 'driver|manager', 'driver|manager', 'url']
+

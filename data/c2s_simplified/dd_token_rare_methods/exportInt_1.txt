@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/commons/src/main/java/org/apache/aurora/common/stats/Stats_exportInt.java
+method_name = exportInt
+method_body = public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); return intVar; }
+predict, score, loss = exportInt, 0.34342724, 2.5947087
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:25:47.440315", "n_pass": [1, 1, 1], "score": "0.3434", "loss": "2.5947", "code": "public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); return intVar; }"}
+{"time": "2021-01-20 05:25:49.179751", "n_pass": [54, 2, 2], "score": "0.274", "loss": "2.864", "code": "public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); return intVar; }"}
+{"time": "2021-01-20 05:25:53.628603", "n_pass": [108, 5, 3], "score": "0.4353", "loss": "2.709", "code": "public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:25:54.973951", "n_pass": [109, 6, 4], "score": "0.4353", "loss": "2.709", "code": "static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:25:56.331855", "n_pass": [110, 7, 5], "score": "0.4353", "loss": "2.709", "code": "AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:25:58.052974", "n_pass": [113, 8, 6], "score": "0.4353", "loss": "2.709", "code": "AtomicInteger exportInt(String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:25:59.392101", "n_pass": [117, 9, 7], "score": "0.4353", "loss": "2.709", "code": "AtomicInteger exportInt(String name) { AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:02.115078", "n_pass": [119, 11, 8], "score": "0.4031", "loss": "2.4391", "code": "AtomicInteger exportInt(String name) { AtomicInteger = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:03.436083", "n_pass": [121, 12, 9], "score": "0.3854", "loss": "2.4306", "code": "AtomicInteger exportInt(String name) { AtomicInteger = (0); export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:04.784229", "n_pass": [127, 13, 10], "score": "0.2895", "loss": "2.6185", "code": "AtomicInteger exportInt(String name) { AtomicInteger = (0); export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:07.848580", "n_pass": [144, 15, 11], "score": "0.5592", "loss": "2.0815", "code": "AtomicInteger exportInt(String name) { AtomicInteger(0); export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:09.181132", "n_pass": [145, 16, 12], "score": "0.2874", "loss": "2.7305", "code": "AtomicInteger exportInt(String name) { AtomicInteger; export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:13.528612", "n_pass": [165, 19, 13], "score": "0.4359", "loss": "2.4808", "code": "AtomicInteger exportInt(String name) {; export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:20.596555", "n_pass": [223, 22, 14], "score": "0.4359", "loss": "2.4808", "code": "AtomicInteger exportInt(String name) { export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:21.912958", "n_pass": [224, 23, 15], "score": "0.4359", "loss": "2.4808", "code": "AtomicInteger exportInt(String name) {export(new SampledStat<Integer>(name) { Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:25.924566", "n_pass": [235, 26, 16], "score": "0.4359", "loss": "2.4808", "code": "AtomicInteger exportInt(String name) {export(new SampledStat<Integer>(name){ Integer doSample() { return intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:28.605265", "n_pass": [241, 28, 17], "score": "0.4277", "loss": "2.5334", "code": "AtomicInteger exportInt(String name) {export(new SampledStat<Integer>(name){ Integer doSample() { intVar.get(); } }); ; }"}
+{"time": "2021-01-20 05:26:31.247473", "n_pass": [248, 30, 18], "score": "0.4277", "loss": "2.5334", "code": "AtomicInteger exportInt(String name) {export(new SampledStat<Integer>(name){ Integer doSample() { intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:33.714251", "n_pass": [258, 31, 19], "score": "0.4277", "loss": "2.5334", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){ Integer doSample() { intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:45.821829", "n_pass": [316, 37, 20], "score": "0.4277", "loss": "2.5334", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer doSample() { intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:49.800805", "n_pass": [319, 40, 21], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer () { intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:51.115266", "n_pass": [322, 41, 22], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer (){ intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:52.428837", "n_pass": [324, 42, 23], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer (){intVar.get(); } }); }"}
+{"time": "2021-01-20 05:26:55.078799", "n_pass": [331, 44, 24], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer (){intVar.get();} }); }"}
+{"time": "2021-01-20 05:26:56.372125", "n_pass": [333, 45, 25], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer (){intVar.get();}}); }"}
+{"time": "2021-01-20 05:26:57.698993", "n_pass": [337, 46, 26], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer (){intVar.get();}});}"}
+{"time": "2021-01-20 05:27:04.140212", "n_pass": [361, 50, 27], "score": "0.4753", "loss": "2.5358", "code": "AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer(){intVar.get();}});}"}
+
+Minimal simplified code:
+AtomicInteger exportInt(String name){export(new SampledStat<Integer>(name){Integer(){intVar.get();}});}
+

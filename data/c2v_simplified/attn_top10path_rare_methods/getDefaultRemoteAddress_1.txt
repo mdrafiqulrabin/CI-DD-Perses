@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/service/AbstractIoConnector_getDefaultRemoteAddress.java
+method_name = getDefaultRemoteAddress
+method_body = public SocketAddress getDefaultRemoteAddress() { return defaultRemoteAddress; }
+
+topk path-contexts:
+[0.4801] socketaddress,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),defaultremoteaddress
+[0.4385] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),defaultremoteaddress
+[0.0814] socketaddress,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['socketaddress', 'defaultremoteaddress', 'METHOD_NAME', 'defaultremoteaddress', 'socketaddress', 'METHOD_NAME']
+

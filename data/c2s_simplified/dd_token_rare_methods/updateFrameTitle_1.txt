@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataViewerMainPanel_updateFrameTitle.java
+method_name = updateFrameTitle
+method_body = public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }
+predict, score, loss = updateFrameTitle, 0.48172224, 2.6162286
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:46:44.609299", "n_pass": [1, 1, 1], "score": "0.4817", "loss": "2.6162", "code": "public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { getParentInternalFrame().setTitle(getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:46.692733", "n_pass": [57, 2, 2], "score": "0.3441", "loss": "2.564", "code": "public void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:49.745375", "n_pass": [107, 4, 3], "score": "0.3441", "loss": "2.564", "code": "void updateFrameTitle() { if (getParentFrame() != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:51.074705", "n_pass": [113, 5, 4], "score": "0.3676", "loss": "2.457", "code": "void updateFrameTitle() { if (getParentFrame != null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:52.398885", "n_pass": [114, 6, 5], "score": "0.3164", "loss": "2.607", "code": "void updateFrameTitle() { if (getParentFrame= null) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:53.739496", "n_pass": [115, 7, 6], "score": "0.3585", "loss": "2.8043", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame().setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:55.064002", "n_pass": [119, 8, 7], "score": "0.3517", "loss": "2.5816", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle()); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:46:57.733054", "n_pass": [122, 10, 8], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle); } if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:05.518040", "n_pass": [197, 12, 9], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);} if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:06.845117", "n_pass": [198, 13, 10], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if (getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:08.175589", "n_pass": [200, 14, 11], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame() != null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:09.532235", "n_pass": [205, 15, 12], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!= null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:11.216594", "n_pass": [208, 16, 13], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null) { (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:12.538546", "n_pass": [211, 17, 14], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){ (getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:13.850753", "n_pass": [213, 18, 15], "score": "0.3011", "loss": "2.629", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle()); } }"}
+{"time": "2021-01-20 05:47:15.172291", "n_pass": [216, 19, 16], "score": "0.3197", "loss": "2.6917", "code": "void updateFrameTitle() { if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:17.216038", "n_pass": [225, 20, 17], "score": "0.3197", "loss": "2.6917", "code": "void updateFrameTitle(){ if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:18.537687", "n_pass": [227, 21, 18], "score": "0.3197", "loss": "2.6917", "code": "void updateFrameTitle(){if (getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:19.876630", "n_pass": [229, 22, 19], "score": "0.3197", "loss": "2.6917", "code": "void updateFrameTitle(){if(getParentFramenull) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:21.197155", "n_pass": [231, 23, 20], "score": "0.2681", "loss": "2.43", "code": "void updateFrameTitle(){if(null) { getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:22.539553", "n_pass": [234, 24, 21], "score": "0.2681", "loss": "2.43", "code": "void updateFrameTitle(){if(null){ getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:23.868437", "n_pass": [236, 25, 22], "score": "0.2681", "loss": "2.43", "code": "void updateFrameTitle(){if(null){getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle); } }"}
+{"time": "2021-01-20 05:47:30.027040", "n_pass": [279, 28, 23], "score": "0.2681", "loss": "2.43", "code": "void updateFrameTitle(){if(null){getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle);} }"}
+{"time": "2021-01-20 05:47:31.358525", "n_pass": [280, 29, 24], "score": "0.2681", "loss": "2.43", "code": "void updateFrameTitle(){if(null){getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle);}}"}
+
+Minimal simplified code:
+void updateFrameTitle(){if(null){getParentFrame.setTitle(getFrameTitle);}if(getParentInternalFrame()!=null){(getFrameTitle);}}
+

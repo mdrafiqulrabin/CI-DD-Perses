@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/FeedbackComponent_getShowStats.java
+method_name = getShowStats
+method_body = public boolean getShowStats() { return this.showStats; }
+predict, score, loss = getShowStats, 0.48680267, 0.7751613
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:57:30.333915", "n_pass": [1, 1, 1], "score": "0.4868", "loss": "0.7752", "code": "public boolean getShowStats() { return this.showStats; }"}
+{"time": "2021-01-20 05:57:31.980454", "n_pass": [20, 2, 2], "score": "0.4868", "loss": "0.7752", "code": "boolean getShowStats() { return this.showStats; }"}
+{"time": "2021-01-20 05:57:37.926006", "n_pass": [46, 5, 3], "score": "0.4868", "loss": "0.7752", "code": "boolean getShowStats(){ return this.showStats; }"}
+{"time": "2021-01-20 05:57:39.226039", "n_pass": [48, 6, 4], "score": "0.4868", "loss": "0.7752", "code": "boolean getShowStats(){return this.showStats; }"}
+{"time": "2021-01-20 05:57:45.834521", "n_pass": [67, 10, 5], "score": "0.4868", "loss": "0.7752", "code": "boolean getShowStats(){return this.showStats;}"}
+
+Minimal simplified code:
+boolean getShowStats(){return this.showStats;}
+

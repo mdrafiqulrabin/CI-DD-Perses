@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/main_6.txt
+method_name = main
+method_body = void main(String[]args){try{setProperty("","");"".verifyEncodedString("");if(1)println();("");("");if(map)(""+1);("");("");("");(""+3);(1);(1);(1);("");getEncodedString();verifyEncodedString();if(null)("");("");}catch(Exception exception){(""+exception);}}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 18:50:29.648204", "n_pass": [1, 1, 1], "score": "0.9895", "loss": "0.0121", "code": "void main(String[]args){try{setProperty(\"\",\"\");\"\".verifyEncodedString(\"\");if(1)println();(\"\");(\"\");if(map)(\"\"+1);(\"\");(\"\");(\"\");(\"\"+3);(1);(1);(1);(\"\");getEncodedString();verifyEncodedString();if(null)(\"\");(\"\");}catch(Exception exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:32.292917", "n_pass": [9, 2, 2], "score": "0.993", "loss": "0.0087", "code": "void main(String[]args){try{setProperty(\"\",\"\");\"\".verifyEncodedS(\"\"+3);(1);(1);(1);(\"\");getEncodedString();verifyEncodedString();if(null)(\"\");(\"\");}catch(Exception exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:34.943015", "n_pass": [10, 3, 3], "score": "0.9815", "loss": "0.0218", "code": "void main(String[]args){try{setProperty(\"\",\"\");\"\".verifyEncodedS;if(null)(\"\");(\"\");}catch(Exception exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:37.598863", "n_pass": [18, 4, 4], "score": "0.9069", "loss": "0.1069", "code": "void main(String[]args){try{setP;if(null)(\"\");(\"\");}catch(Exception exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:43.294821", "n_pass": [83, 6, 5], "score": "0.9259", "loss": "0.0835", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exception exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:45.929349", "n_pass": [87, 7, 6], "score": "0.9827", "loss": "0.0236", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exion exception){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:48.536360", "n_pass": [89, 8, 7], "score": "0.9935", "loss": "0.0089", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exion ption){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:51.164646", "n_pass": [90, 9, 8], "score": "0.9902", "loss": "0.0152", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exion n){(\"\"+exception);}}"}
+{"time": "2021-01-22 18:50:53.795595", "n_pass": [92, 10, 9], "score": "0.9657", "loss": "0.0605", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exion n){(xception);}}"}
+{"time": "2021-01-22 18:50:59.001797", "n_pass": [94, 12, 10], "score": "0.9924", "loss": "0.0121", "code": "void main(String[]args){try{setP;if(null);(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:02.416678", "n_pass": [99, 13, 11], "score": "0.9743", "loss": "0.0437", "code": "void main(St[]args){try{setP;if(null);(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:05.017054", "n_pass": [103, 14, 12], "score": "0.9828", "loss": "0.029", "code": "void main(St[]args){try{;if(null);(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:08.456859", "n_pass": [152, 15, 13], "score": "0.9943", "loss": "0.0059", "code": "void main(St[]args){try{f(null);(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:11.078411", "n_pass": [153, 16, 14], "score": "0.9985", "loss": "0.0022", "code": "void main(St[]args){try{f(ll);(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:13.723595", "n_pass": [154, 17, 15], "score": "0.9956", "loss": "0.006", "code": "void main(St[]args){try{f();(\"\");}catch(Exion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:16.341618", "n_pass": [162, 18, 16], "score": "0.9985", "loss": "0.0024", "code": "void main(St[]args){try{f();(\"\");}catch(ion n){(xcep);}}"}
+{"time": "2021-01-22 18:51:18.969411", "n_pass": [163, 19, 17], "score": "0.9969", "loss": "0.0037", "code": "void main(St[]args){try{f();(\"\");}catch(n n){(xcep);}}"}
+{"time": "2021-01-22 18:51:21.580070", "n_pass": [167, 20, 18], "score": "0.9966", "loss": "0.0041", "code": "void main(St[]args){try{f();(\"\");}catch(n n){(ep);}}"}
+{"time": "2021-01-22 18:51:26.801933", "n_pass": [172, 22, 19], "score": "0.6274", "loss": "0.5709", "code": "vo main(St[]args){try{f();(\"\");}catch(n n){(ep);}}"}
+{"time": "2021-01-22 18:51:39.755859", "n_pass": [254, 25, 20], "score": "0.8574", "loss": "0.2108", "code": "vo main(t[]args){try{f();(\"\");}catch(n n){(ep);}}"}
+{"time": "2021-01-22 18:51:52.887113", "n_pass": [289, 30, 21], "score": "0.8653", "loss": "0.1952", "code": "vo main(t[]args){try{f();(\"\");}catch(n n){(p);}}"}
+
+Minimal simplified code:
+vo main(t[]args){try{f();("");}catch(n n){(p);}}
+

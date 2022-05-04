@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/FindLeaksTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/findleaks?statusLine=" + Boolean.toString(statusLine)); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:03:02.953150", "score": "0.9993", "loss": "0.0012", "code": "class T { @Override public void execute() throws BuildException { super.execute(); execute(\"/findleaks?statusLine=\" + Boolean.toString(statusLine)); } }"}
+{"time": "2020-12-21 09:03:50.821027", "score": "0.998", "loss": "0.0024", "code": "class T { @Override public void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 09:04:11.903138", "score": "0.9853", "loss": "0.0197", "code": "class T { void execute() throws BuildException { super.execute(); } }"}
+{"time": "2020-12-21 09:04:22.431387", "score": "0.7564", "loss": "0.4306", "code": "class T { void execute() { super.execute(); } }"}
+
+Minimal simplified code:
+class T {
+                 void execute()                       { super.execute();                                                                   }
+}
+
+

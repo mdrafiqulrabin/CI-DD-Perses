@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/filters/ExampleFilter_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (filterConfig == null) return ("TimingFilter()"); StringBuilder sb = new StringBuilder("TimingFilter("); sb.append(filterConfig); sb.append(")"); return (sb.toString()); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 10:27:55.844367", "score": "0.9917", "loss": "0.0102", "code": "class T { @Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\"); StringBuilder sb = new StringBuilder(\"TimingFilter(\"); sb.append(filterConfig); sb.append(\")\"); return (sb.toString()); } }"}
+{"time": "2020-12-29 10:30:57.801448", "score": "0.4521", "loss": "1.4961", "code": "class T { @Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\"); StringBuilder sb = new StringBuilder(\"TimingFilter(\"); sb.append(filterConfig); } }"}
+{"time": "2020-12-29 10:32:13.229537", "score": "0.5225", "loss": "0.9494", "code": "class T { @Override public String toString() { if (filterConfig == null) return (\"TimingFilter()\"); StringBuilder sb = new StringBuilder(\"TimingFilter(\"); } }"}
+{"time": "2020-12-29 10:34:08.342621", "score": "0.6398", "loss": "0.5282", "code": "class T { @Override public String toString() { StringBuilder sb = new StringBuilder(\"TimingFilter(\"); } }"}
+{"time": "2020-12-29 10:36:06.602436", "score": "0.4503", "loss": "1.1001", "code": "class T { @Override public String toString() { StringBuilder sb ; } }"}
+{"time": "2020-12-29 10:37:25.805652", "score": "0.4503", "loss": "1.1001", "code": "class T { @Override String toString() { StringBuilder sb ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        String toString() {                                                      StringBuilder sb                                     ;                                                                  }
+}
+
+

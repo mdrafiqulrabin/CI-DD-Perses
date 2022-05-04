@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/QueryTreeNode_setDebugOutput.java
+method_name = setDebugOutput
+method_body = public static void setDebugOutput(Writer writer) { debugOutput = writer; }
+predict, score, loss = setDebugOutput, 0.40521952509880066, 1.032421588897705
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:58:46.237535", "n_pass": [1, 1, 1], "score": "0.4052", "loss": "1.0324", "code": "public static void setDebugOutput(Writer writer) { debugOutput = writer; }"}
+{"time": "2021-01-20 07:58:49.256275", "n_pass": [20, 2, 2], "score": "0.4052", "loss": "1.0324", "code": "static void setDebugOutput(Writer writer) { debugOutput = writer; }"}
+{"time": "2021-01-20 07:58:57.909483", "n_pass": [41, 5, 3], "score": "0.4052", "loss": "1.0324", "code": " void setDebugOutput(Writer writer) { debugOutput = writer; }"}
+{"time": "2021-01-20 07:59:00.520554", "n_pass": [42, 6, 4], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer) { debugOutput = writer; }"}
+{"time": "2021-01-20 07:59:08.869142", "n_pass": [71, 8, 5], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer){ debugOutput = writer; }"}
+{"time": "2021-01-20 07:59:11.480574", "n_pass": [73, 9, 6], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer){debugOutput = writer; }"}
+{"time": "2021-01-20 07:59:14.108956", "n_pass": [75, 10, 7], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer){debugOutput= writer; }"}
+{"time": "2021-01-20 07:59:19.331131", "n_pass": [77, 12, 8], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer){debugOutput=writer; }"}
+{"time": "2021-01-20 07:59:21.969058", "n_pass": [80, 13, 9], "score": "0.4052", "loss": "1.0324", "code": "void setDebugOutput(Writer writer){debugOutput=writer;}"}
+
+Minimal simplified code:
+void setDebugOutput(Writer writer){debugOutput=writer;}
+

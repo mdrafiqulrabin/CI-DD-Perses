@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 09:00:53.672437", "score": "0.999", "loss": "0.0013", "code": "class T { public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); } }"}
+{"time": "2020-12-21 09:01:31.033363", "score": "0.9972", "loss": "0.0044", "code": "class T { public static void main(String[] args) throws Exception { } }"}
+{"time": "2020-12-21 09:01:52.073800", "score": "0.9611", "loss": "0.0677", "code": "class T { public static void main(String args) throws Exception { } }"}
+{"time": "2020-12-21 09:02:02.627939", "score": "0.7634", "loss": "0.5046", "code": "class T { public static void main(String args) { } }"}
+{"time": "2020-12-21 09:02:13.149503", "score": "0.7634", "loss": "0.5046", "code": "class T { void main(String args) { } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args)                  {                                                                                                                                                                                                                       }
+}
+
+

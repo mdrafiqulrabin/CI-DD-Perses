@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/DOM_setAttributesAsText.java
+method_name = setAttributesAsText
+method_body = @ChromeDevtoolsMethod public void setAttributesAsText(JsonRpcPeer peer, JSONObject params) { final SetAttributesAsTextRequest request = mObjectMapper.convertValue(params, SetAttributesAsTextRequest.class); mDocument.postAndWait(new Runnable() { @Override public void run() { Object element = mDocument.getElementForNodeId(request.nodeId); if (element != null) { mDocument.setAttributesAsText(element, request.text); } } }); }
+
+topk path-contexts for sub-token: set
+[0.1476] chrome|devtools|method,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1413] chrome|devtools|method,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0374] params,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0278] params,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|VoidType1,void
+[0.0256] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+[0.0253] params,NameExpr2|MethodCallExpr|NameExpr3,convert|value
+[0.0239] element,NameExpr2|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0224] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0184] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|ObjectCreationExpr|MethodDeclaration|VoidType1,void
+[0.0154] json|rpc|peer,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+
+topk terminals for sub-token: set
+['chrome|devtools|method', 'METHOD_NAME', 'chrome|devtools|method', 'void', 'params', 'METHOD_NAME', 'params', 'void', 'peer', 'params', 'params', 'convert|value', 'element', 'set|attributes|as|text', 'peer', 'METHOD_NAME', 'peer', 'void', 'json|rpc|peer', 'params']
+
+topk path-contexts for sub-token: attributes
+[0.0798] params,NameExpr2|MethodCallExpr|ClassExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0528] element,NameExpr2|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0464] request,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0412] set|attributes|as|text|request,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|ClassExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0366] request,NameExpr0|FieldAccessExpr2|NameExpr2,node|id
+[0.0283] json|rpc|peer,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+[0.0275] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+[0.0269] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0255] json|rpc|peer,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0243] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,peer
+
+topk terminals for sub-token: attributes
+['params', 'set|attributes|as|text|request', 'element', 'set|attributes|as|text', 'request', 'set|attributes|as|text|request', 'set|attributes|as|text|request', 'set|attributes|as|text|request', 'request', 'node|id', 'json|rpc|peer', 'params', 'peer', 'params', 'peer', 'set|attributes|as|text|request', 'json|rpc|peer', 'set|attributes|as|text|request', 'void', 'peer']
+
+topk path-contexts for sub-token: as
+[0.1581] element,NameExpr2|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0846] element,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0841] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0564] text,NameExpr2|FieldAccessExpr3|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0413] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0313] object,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0294] void,VoidType1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0275] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0238] peer,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+[0.0219] params,NameExpr2|MethodCallExpr|ClassExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+
+topk terminals for sub-token: as
+['element', 'set|attributes|as|text', 'element', 'set|attributes|as|text', 'null', 'set|attributes|as|text', 'text', 'set|attributes|as|text', 'METHOD_NAME', 'set|attributes|as|text', 'object', 'set|attributes|as|text', 'void', 'set|attributes|as|text', 'runnable', 'set|attributes|as|text', 'peer', 'params', 'params', 'set|attributes|as|text|request']
+
+topk path-contexts for sub-token: text
+[0.1278] element,NameExpr2|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0972] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0867] element,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0589] object,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0453] runnable,ClassOrInterfaceType0|ObjectCreationExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0446] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0433] params,NameExpr2|MethodCallExpr|ClassExpr|ClassOrInterfaceType0,set|attributes|as|text|request
+[0.0363] void,VoidType1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|attributes|as|text
+[0.0348] text,NameExpr2|FieldAccessExpr3|MethodCallExpr|NameExpr3,set|attributes|as|text
+[0.0266] json|rpc|peer,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,params
+
+topk terminals for sub-token: text
+['element', 'set|attributes|as|text', 'null', 'set|attributes|as|text', 'element', 'set|attributes|as|text', 'object', 'set|attributes|as|text', 'runnable', 'set|attributes|as|text', 'METHOD_NAME', 'set|attributes|as|text', 'params', 'set|attributes|as|text|request', 'void', 'set|attributes|as|text', 'text', 'set|attributes|as|text', 'json|rpc|peer', 'params']
+

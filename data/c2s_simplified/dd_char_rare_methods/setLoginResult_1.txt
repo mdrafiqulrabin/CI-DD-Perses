@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server.spi/src/main/java/org/kaazing/gateway/server/spi/security/LoginResultCallback_setLoginResult.java
+method_name = setLoginResult
+method_body = public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException("A Login Result already exists in this callback and cannot be set again."); } }
+predict, score, loss = setLoginResult, 0.47101846, 1.0800812
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:56:55.036405", "n_pass": [1, 1, 1], "score": "0.471", "loss": "1.0801", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-23 12:56:56.752088", "n_pass": [24, 2, 2], "score": "0.5336", "loss": "1.213", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) {nException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-23 12:56:58.091215", "n_pass": [26, 3, 3], "score": "0.5649", "loss": "1.0315", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) {nException(\"A Login Result alrnd cannot be set again.\"); } }"}
+{"time": "2021-01-23 12:56:59.800323", "n_pass": [45, 4, 4], "score": "0.6424", "loss": "0.9668", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) {nException(\"A Login Result alrt again.\"); } }"}
+{"time": "2021-01-23 12:57:01.114725", "n_pass": [46, 5, 5], "score": "0.5166", "loss": "1.3111", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) {nException(\"A Login Result alrt again.\"); } }"}
+{"time": "2021-01-23 12:57:02.795404", "n_pass": [51, 6, 6], "score": "0.6846", "loss": "2.6519", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.loreAndSet(null, loginResult)) {nException(\"A Login Result alrt again.\"); } }"}
+{"time": "2021-01-23 12:57:04.098861", "n_pass": [55, 7, 7], "score": "0.6119", "loss": "2.6134", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.loreAndSet(null, loginResult)) {nException(\"A Lt again.\"); } }"}
+{"time": "2021-01-23 12:57:05.770480", "n_pass": [80, 8, 8], "score": "0.6827", "loss": "2.4701", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.loreAndSet(null, loginResult)) {nException(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:10.438942", "n_pass": [90, 11, 9], "score": "0.734", "loss": "0.7935", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.Set(null, loginResult)) {nException(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:16.717130", "n_pass": [135, 15, 10], "score": "0.5746", "loss": "2.0334", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.Set(nuloginResult)) {nException(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:18.016362", "n_pass": [136, 16, 11], "score": "0.6444", "loss": "1.3966", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.Set(nuloginlt)) {nException(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:19.325023", "n_pass": [139, 17, 12], "score": "0.5099", "loss": "1.6008", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.Set(nuloginlt)) {nEtion(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:20.622713", "n_pass": [140, 18, 13], "score": "0.6483", "loss": "1.5582", "code": "oid setLoginResult(LoginResult loginResult) { if (!this.Set(nuloginlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:24.110026", "n_pass": [151, 19, 14], "score": "0.6032", "loss": "2.9642", "code": "oid setLoginResult(LoResult loginResult) { if (!this.Set(nuloginlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:25.438206", "n_pass": [152, 20, 15], "score": "0.6244", "loss": "3.2673", "code": "oid setLoginResult(Loult loginResult) { if (!this.Set(nuloginlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:42.760995", "n_pass": [232, 31, 16], "score": "0.5097", "loss": "3.6182", "code": "oid setLoginResult(Loult loginResult) { if (!th.Set(nuloginlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:46.686727", "n_pass": [236, 34, 17], "score": "0.5097", "loss": "3.6182", "code": "oid setLoginResult(Loult loginResult) { if (!th.Set(noginlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:47.983265", "n_pass": [237, 35, 18], "score": "0.5097", "loss": "3.6182", "code": "oid setLoginResult(Loult loginResult) { if (!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:57:54.519361", "n_pass": [249, 40, 19], "score": "0.4787", "loss": "3.9094", "code": "id setLoginResult(Loult loginResult) { if (!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:58:01.701619", "n_pass": [262, 43, 20], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult) { if (!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:58:41.968992", "n_pass": [380, 69, 21], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult){ if (!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:58:43.268305", "n_pass": [381, 70, 22], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult){if (!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:58:44.603590", "n_pass": [384, 71, 23], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult){if(!th.Set(ninlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:58:55.046759", "n_pass": [394, 79, 24], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)) {nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:59:00.274199", "n_pass": [401, 83, 25], "score": "0.3255", "loss": "4.6315", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)){nE(\"A .\"); } }"}
+{"time": "2021-01-23 12:59:05.483928", "n_pass": [408, 87, 26], "score": "0.3126", "loss": "4.1287", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)){nE(\"A.\"); } }"}
+{"time": "2021-01-23 12:59:06.807189", "n_pass": [409, 88, 27], "score": "0.3126", "loss": "4.1287", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)){nE(\"A\"); } }"}
+{"time": "2021-01-23 12:59:08.139736", "n_pass": [413, 89, 28], "score": "0.3126", "loss": "4.1287", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)){nE(\"A\");} }"}
+{"time": "2021-01-23 12:59:09.451164", "n_pass": [415, 90, 29], "score": "0.3126", "loss": "4.1287", "code": "id setLoginResult(ult loginResult){if(!th.Set(inlt)){nE(\"A\");}}"}
+{"time": "2021-01-23 12:59:20.154472", "n_pass": [436, 94, 30], "score": "0.4829", "loss": "3.0371", "code": "id setLoginResult(ut loginResult){if(!th.Set(inlt)){nE(\"A\");}}"}
+{"time": "2021-01-23 12:59:21.452951", "n_pass": [437, 95, 31], "score": "0.5413", "loss": "3.4251", "code": "id setLoginResult(u loginResult){if(!th.Set(inlt)){nE(\"A\");}}"}
+{"time": "2021-01-23 12:59:37.150388", "n_pass": [455, 107, 32], "score": "0.328", "loss": "3.8213", "code": "id setLoginResult(u loginResult){if(th.Set(inlt)){nE(\"A\");}}"}
+{"time": "2021-01-23 12:59:38.457920", "n_pass": [456, 108, 33], "score": "0.4877", "loss": "3.8969", "code": "id setLoginResult(u loginResult){if(h.Set(inlt)){nE(\"A\");}}"}
+{"time": "2021-01-23 12:59:51.626940", "n_pass": [474, 118, 34], "score": "0.4259", "loss": "4.4711", "code": "id setLoginResult(u loginResult){if(h.Set(inlt)){nE(\"\");}}"}
+{"time": "2021-01-23 13:00:24.654071", "n_pass": [529, 139, 35], "score": "0.3434", "loss": "4.2545", "code": "id setLoginResult(u loginResult){if(h.Set(inlt)){E(\"\");}}"}
+{"time": "2021-01-23 13:00:28.582007", "n_pass": [539, 142, 36], "score": "0.4106", "loss": "4.1558", "code": "i setLoginResult(u loginResult){if(h.Set(inlt)){E(\"\");}}"}
+
+Minimal simplified code:
+i setLoginResult(u loginResult){if(h.Set(inlt)){E("");}}
+

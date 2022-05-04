@@ -1,0 +1,34 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+predict, score, loss = main, 0.99928206, 0.0009971377
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:55:43.190359", "n_pass": [1, 1, 1], "score": "0.9993", "loss": "0.001", "code": "public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 03:55:44.920829", "n_pass": [48, 2, 2], "score": "0.9988", "loss": "0.0017", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 03:55:46.284353", "n_pass": [50, 3, 3], "score": "0.9981", "loss": "0.0027", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 03:55:47.614472", "n_pass": [52, 4, 4], "score": "0.9964", "loss": "0.0049", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 03:55:48.949363", "n_pass": [54, 5, 5], "score": "0.9977", "loss": "0.0032", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 03:55:50.284736", "n_pass": [57, 6, 6], "score": "0.9958", "loss": "0.006", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\"); System.in.readshutdownNow(); }"}
+{"time": "2020-12-27 03:55:51.970316", "n_pass": [68, 7, 7], "score": "0.9961", "loss": "0.0054", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\");shutdownNow(); }"}
+{"time": "2020-12-27 03:55:53.702735", "n_pass": [99, 8, 8], "score": "0.9939", "loss": "0.008", "code": "public static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:55:55.045598", "n_pass": [100, 9, 9], "score": "0.9939", "loss": "0.008", "code": "static void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:55:56.365502", "n_pass": [101, 10, 10], "score": "0.9939", "loss": "0.008", "code": "void main(String[] args) throws IOException {server = GrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:55:58.053505", "n_pass": [110, 11, 11], "score": "0.9968", "loss": "0.0044", "code": "void main(String[] args) throws IOException {serverGrizzlyHttpServerFactory.createHttpServer(BASE_JerseyApplication());println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:55:59.382562", "n_pass": [111, 12, 12], "score": "0.9318", "loss": "0.0945", "code": "void main(String[] args) throws IOException {server(BASE_JerseyApplication());println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:56:00.712472", "n_pass": [113, 13, 13], "score": "0.9454", "loss": "0.0842", "code": "void main(String[] args) throws IOException {server(BASE_);println(\"Press  close\");; }"}
+{"time": "2020-12-27 03:56:02.015967", "n_pass": [116, 14, 14], "score": "0.9778", "loss": "0.0354", "code": "void main(String[] args) throws IOException {server(BASE_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:06.365178", "n_pass": [167, 15, 15], "score": "0.9778", "loss": "0.0354", "code": "void main(String[]args) throws IOException {server(BASE_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:07.687639", "n_pass": [170, 16, 16], "score": "0.9778", "loss": "0.0354", "code": "void main(String[]args)throws IOException {server(BASE_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:08.994128", "n_pass": [174, 17, 17], "score": "0.9778", "loss": "0.0354", "code": "void main(String[]args)throws IOException{server(BASE_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:10.309497", "n_pass": [176, 18, 18], "score": "0.9936", "loss": "0.0108", "code": "void main(String[]args)throws IOException{(BASE_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:11.620416", "n_pass": [178, 19, 19], "score": "0.985", "loss": "0.0256", "code": "void main(String[]args)throws IOException{(_);println(\"Press\");; }"}
+{"time": "2020-12-27 03:56:14.991957", "n_pass": [214, 20, 20], "score": "0.9954", "loss": "0.0076", "code": "void main(String[]args)throws IOException{(_);println(\"\");; }"}
+{"time": "2020-12-27 03:56:16.314784", "n_pass": [217, 21, 21], "score": "0.9954", "loss": "0.0076", "code": "void main(String[]args)throws IOException{(_);println(\"\"); }"}
+{"time": "2020-12-27 03:56:17.616410", "n_pass": [219, 22, 22], "score": "0.9954", "loss": "0.0076", "code": "void main(String[]args)throws IOException{(_);println(\"\");}"}
+{"time": "2020-12-27 03:56:20.016644", "n_pass": [238, 23, 23], "score": "0.9961", "loss": "0.0062", "code": "void main(String[]args)throws IOException{(_);(\"\");}"}
+
+Minimal simplified code:
+void main(String[]args)throws IOException{(_);("");}
+

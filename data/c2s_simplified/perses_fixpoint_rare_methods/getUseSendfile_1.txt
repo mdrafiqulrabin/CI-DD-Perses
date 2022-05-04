@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/coyote/http11/Http11NioProtocol_getUseSendfile.java
+method_name = getUseSendfile
+method_body = public boolean getUseSendfile() { return ((NioEndpoint) endpoint).getUseSendfile(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:55:56.786115", "score": "0.4474", "loss": "0.918", "code": "class T { public boolean getUseSendfile() { return ((NioEndpoint) endpoint).getUseSendfile(); } }"}
+{"time": "2021-01-24 03:57:24.347832", "score": "0.4474", "loss": "0.918", "code": "class T { boolean getUseSendfile() { return ((NioEndpoint) endpoint).getUseSendfile(); } }"}
+
+Minimal simplified code:
+class T {
+       boolean getUseSendfile() { return ((NioEndpoint) endpoint).getUseSendfile(); }
+}
+
+

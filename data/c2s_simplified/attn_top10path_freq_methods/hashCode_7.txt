@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/SimpleNode_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + Arrays.hashCode(children); result = prime * result + id; result = prime * result + ((image == null) ? 0 : image.hashCode()); return result; }
+
+topk path-contexts for sub-token: hash
+[0.1472] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.1472] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0935] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.0759] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,<NUM>
+[0.0636] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0558] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr3,hash|code
+[0.0416] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|EnclosedExpr|ConditionalExpr|IntegerLiteralExpr1,0
+[0.0402] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr0,arrays
+[0.0287] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,prime
+[0.0194] 0,IntegerLiteralExpr1|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+
+topk terminals for sub-token: hash
+['int', 'int', 'int', 'int', 'int', '1', 'int', '<NUM>', 'int', 'METHOD_NAME', 'int', 'hash|code', 'int', '0', 'int', 'arrays', 'int', 'prime', '0', 'hash|code']
+
+topk path-contexts for sub-token: code
+[0.2379] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.1476] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1308] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,<NUM>
+[0.1056] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.1056] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0379] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|MethodCallExpr1|NameExpr3,hash|code
+[0.0289] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.0251] null,NullLiteralExpr1|BinaryExpr:equals|EnclosedExpr|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+[0.0199] 0,IntegerLiteralExpr1|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+[0.0191] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,result
+
+topk terminals for sub-token: code
+['int', '1', 'int', 'METHOD_NAME', 'int', '<NUM>', 'int', 'int', 'int', 'int', 'int', 'hash|code', 'METHOD_NAME', '1', 'null', 'hash|code', '0', 'hash|code', 'int', 'result']
+

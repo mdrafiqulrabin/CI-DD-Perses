@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/test/java/org/apache/aurora/scheduler/storage/AbstractTaskStoreTest_deleteAllTasks.java
+method_name = deleteAllTasks
+method_body = protected void deleteAllTasks() { storage.write((NoResult.Quiet) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:34:27.089281", "score": "0.4445", "loss": "1.3767", "code": "class T { protected void deleteAllTasks() { storage.write((NoResult.Quiet) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); } }"}
+{"time": "2021-01-24 03:36:24.003397", "score": "0.4267", "loss": "1.3834", "code": "class T { protected void deleteAllTasks() { storage.write((NoResult ) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); } }"}
+{"time": "2021-01-24 03:36:35.055381", "score": "0.4267", "loss": "1.3834", "code": "class T { void deleteAllTasks() { storage.write((NoResult ) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); } }"}
+
+Minimal simplified code:
+class T {
+          void deleteAllTasks() { storage.write((NoResult      ) storeProvider -> storeProvider.getUnsafeTaskStore().deleteAllTasks()); }
+}
+
+

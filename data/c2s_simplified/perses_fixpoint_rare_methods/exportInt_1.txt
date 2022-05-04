@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/commons/src/main/java/org/apache/aurora/common/stats/Stats_exportInt.java
+method_name = exportInt
+method_body = public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); return intVar; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:42:47.151614", "score": "0.3434", "loss": "2.5947", "code": "class T { public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); return intVar; } }"}
+{"time": "2021-01-24 03:43:37.052668", "score": "0.5965", "loss": "2.3407", "code": "class T { public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar = new AtomicInteger(0); export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:45:39.229626", "score": "0.6891", "loss": "2.4088", "code": "class T { public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar ; export(new SampledStat<Integer>(name, 0) { @Override public Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:46:21.701080", "score": "0.5344", "loss": "2.5897", "code": "class T { public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar ; export(new SampledStat<Integer>(name, 0) { Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:47:04.115374", "score": "0.3935", "loss": "2.7261", "code": "class T { public static AtomicInteger exportInt(final String name) { final AtomicInteger intVar ; export(new SampledStat<Integer>(name ) { Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:47:14.880206", "score": "0.3935", "loss": "2.7261", "code": "class T { AtomicInteger exportInt(final String name) { final AtomicInteger intVar ; export(new SampledStat<Integer>(name ) { Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:47:25.666697", "score": "0.3935", "loss": "2.7261", "code": "class T { AtomicInteger exportInt( String name) { final AtomicInteger intVar ; export(new SampledStat<Integer>(name ) { Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:47:36.460406", "score": "0.3935", "loss": "2.7261", "code": "class T { AtomicInteger exportInt( String name) { AtomicInteger intVar ; export(new SampledStat<Integer>(name ) { Integer doSample() { return intVar.get(); } }); } }"}
+{"time": "2021-01-24 03:48:37.235093", "score": "0.4359", "loss": "2.4808", "code": "class T { AtomicInteger exportInt( String name) { export(new SampledStat<Integer>(name ) { Integer doSample() { return intVar.get(); } }); } }"}
+
+Minimal simplified code:
+class T {
+              AtomicInteger exportInt(      String name) {                                                    export(new SampledStat<Integer>(name   ) {                  Integer doSample() { return intVar.get(); } });                }
+}
+
+

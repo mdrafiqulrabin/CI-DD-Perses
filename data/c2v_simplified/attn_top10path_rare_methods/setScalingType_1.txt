@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/SurfaceViewRenderer_setScalingType.java
+method_name = setScalingType
+method_body = public void setScalingType(RendererCommon.ScalingType scalingTypeMatchOrientation, RendererCommon.ScalingType scalingTypeMismatchOrientation) { ThreadUtils.checkIsOnMainThread(); videoLayoutMeasure.setScalingType(scalingTypeMatchOrientation, scalingTypeMismatchOrientation); requestLayout(); }
+
+topk path-contexts:
+[0.1262] renderercommon,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setscalingtype
+[0.1262] renderercommon,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setscalingtype
+[0.0633] scalingtypematchorientation,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),renderercommon
+[0.0633] scalingtypemismatchorientation,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),renderercommon
+[0.0588] renderercommon,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),requestlayout
+[0.0588] renderercommon,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),requestlayout
+[0.0522] scalingtypematchorientation,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setscalingtype
+[0.0522] scalingtypemismatchorientation,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setscalingtype
+[0.0475] scalingtypematchorientation,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),renderercommon
+[0.0433] checkisonmainthread,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setscalingtype
+
+topk terminals:
+['renderercommon', 'setscalingtype', 'renderercommon', 'setscalingtype', 'scalingtypematchorientation', 'renderercommon', 'scalingtypemismatchorientation', 'renderercommon', 'renderercommon', 'requestlayout', 'renderercommon', 'requestlayout', 'scalingtypematchorientation', 'setscalingtype', 'scalingtypemismatchorientation', 'setscalingtype', 'scalingtypematchorientation', 'renderercommon', 'checkisonmainthread', 'setscalingtype']
+

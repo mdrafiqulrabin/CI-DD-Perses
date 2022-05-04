@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/guacamole-ext/src/main/java/org/apache/guacamole/net/auth/AbstractUserContext_getUserHistory.java
+method_name = getUserHistory
+method_body = @Override public ActivityRecordSet<ActivityRecord> getUserHistory() throws GuacamoleException { return new SimpleActivityRecordSet<ActivityRecord>(); }
+
+topk path-contexts:
+[0.6341] activityrecord,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(ClassOrInterfaceType3),guacamoleexception
+[0.1591] guacamoleexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),activityrecord
+[0.1188] activityrecord,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0620] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),activityrecord
+[0.0145] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),activityrecord
+[0.0072] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0042] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(ClassOrInterfaceType3),guacamoleexception
+
+topk terminals:
+['activityrecord', 'guacamoleexception', 'guacamoleexception', 'activityrecord', 'activityrecord', 'METHOD_NAME', 'METHOD_NAME', 'activityrecord', 'override', 'activityrecord', 'override', 'METHOD_NAME', 'METHOD_NAME', 'guacamoleexception']
+

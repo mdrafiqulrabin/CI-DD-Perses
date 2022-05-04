@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_unlockDrawer.java
+method_name = unlockDrawer
+method_body = private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }
+predict, score, loss = unlockDrawer, 0.19100524, 2.6604183
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:44:49.238147", "n_pass": [1, 1, 1], "score": "0.191", "loss": "2.6604", "code": "private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:44:51.873490", "n_pass": [44, 3, 2], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:02.264828", "n_pass": [95, 8, 3], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){ if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:03.584451", "n_pass": [97, 9, 4], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:04.904557", "n_pass": [99, 10, 5], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if(mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:06.229227", "n_pass": [102, 11, 6], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if(mDrawer!= null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:08.905104", "n_pass": [105, 13, 7], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if(mDrawer!=null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:10.224710", "n_pass": [108, 14, 8], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if(mDrawer!=null){ mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:11.569605", "n_pass": [110, 15, 9], "score": "0.191", "loss": "2.6604", "code": "void unlockDrawer(){if(mDrawer!=null){mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:12.883156", "n_pass": [112, 16, 10], "score": "0.3041", "loss": "1.6771", "code": "void unlockDrawer(){if(mDrawer!=null){mDrawer(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:15.556700", "n_pass": [115, 18, 11], "score": "0.3706", "loss": "1.3323", "code": "void unlockDrawer(){if(mDrawer!=null){mDrawer(DrawerLayout.LOCK_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:20.234638", "n_pass": [134, 21, 12], "score": "0.2263", "loss": "3.346", "code": "void unlockDrawer(){if(mDrawer!=null){(DrawerLayout.LOCK_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:24.916914", "n_pass": [150, 24, 13], "score": "0.2023", "loss": "2.4244", "code": "void unlockDrawer(){if(mDrawer=null){(DrawerLayout.LOCK_UNLOCKED); } }"}
+{"time": "2021-01-20 05:45:37.268722", "n_pass": [190, 32, 14], "score": "0.2023", "loss": "2.4244", "code": "void unlockDrawer(){if(mDrawer=null){(DrawerLayout.LOCK_UNLOCKED);} }"}
+{"time": "2021-01-20 05:45:38.579778", "n_pass": [191, 33, 15], "score": "0.2023", "loss": "2.4244", "code": "void unlockDrawer(){if(mDrawer=null){(DrawerLayout.LOCK_UNLOCKED);}}"}
+
+Minimal simplified code:
+void unlockDrawer(){if(mDrawer=null){(DrawerLayout.LOCK_UNLOCKED);}}
+

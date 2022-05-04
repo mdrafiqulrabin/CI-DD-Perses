@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/core/MarkdownTextAreaWithPreview_setWrapStyleWord.java
+method_name = setWrapStyleWord
+method_body = public void setWrapStyleWord(boolean value) { m_TextCode.setWrapStyleWord(value); }
+
+topk path-contexts:
+[0.2814] boolean,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setwrapstyleword
+[0.1857] value,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setwrapstyleword
+[0.1730] boolean,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),mtextcode
+[0.1252] value,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),mtextcode
+[0.0838] value,(NameExpr2)^(MethodCallExpr)_(NameExpr3),setwrapstyleword
+[0.0689] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setwrapstyleword
+[0.0659] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),mtextcode
+[0.0039] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0029] boolean,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),value
+[0.0026] mtextcode,(NameExpr0)^(MethodCallExpr)_(NameExpr2),value
+
+topk terminals:
+['boolean', 'setwrapstyleword', 'value', 'setwrapstyleword', 'boolean', 'mtextcode', 'value', 'mtextcode', 'value', 'setwrapstyleword', 'METHOD_NAME', 'setwrapstyleword', 'METHOD_NAME', 'mtextcode', 'void', 'METHOD_NAME', 'boolean', 'value', 'mtextcode', 'value']
+

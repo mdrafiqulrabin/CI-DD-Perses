@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ouya__ouya-sdk-examples/Twine/ControllerExample/src/media/base/android/java/src/org/chromium/media/MediaCodecBridge_presentationTimeMicroseconds.java
+method_name = presentationTimeMicroseconds
+method_body = @CalledByNative("DequeueOutputResult") private long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; }
+predict, score, loss = presentationTimeMicroseconds, 0.4425293207168579, 1.7800288200378418
+
+Trace of simplified code(s):
+{"time": "2021-01-23 22:53:03.471922", "n_pass": [1, 1, 1], "score": "0.4425", "loss": "1.78", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() { return mPresentationTimeMicroseconds; }"}
+{"time": "2021-01-23 22:53:07.474218", "n_pass": [26, 2, 2], "score": "0.4425", "loss": "1.78", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() { return eMicroseconds; }"}
+{"time": "2021-01-23 22:53:23.790388", "n_pass": [61, 7, 3], "score": "0.7647", "loss": "0.3116", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() {eMicroseconds; }"}
+{"time": "2021-01-23 22:53:26.504123", "n_pass": [62, 8, 4], "score": "0.5974", "loss": "0.6172", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() {conds; }"}
+{"time": "2021-01-23 22:53:39.099240", "n_pass": [99, 12, 5], "score": "0.7336", "loss": "0.3561", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() {s; }"}
+{"time": "2021-01-23 22:55:11.176310", "n_pass": [298, 41, 6], "score": "0.7757", "loss": "0.2918", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() {; }"}
+{"time": "2021-01-23 22:55:13.939000", "n_pass": [299, 42, 7], "score": "0.7757", "loss": "0.2918", "code": "@CalledByNative(\"DequeueOutputResult\") private long presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:56:45.853379", "n_pass": [339, 76, 8], "score": "0.7757", "loss": "0.2918", "code": "@CalledByNative(\"DequeueOutputResult\")private long presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:56:48.473812", "n_pass": [347, 77, 9], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")privatelong presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:56:51.095002", "n_pass": [348, 78, 10], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")privateong presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:56:53.714524", "n_pass": [349, 79, 11], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")privateng presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:56:56.309537", "n_pass": [350, 80, 12], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")privateg presentationTimeMicroseconds() {;}"}
+{"time": "2021-01-23 22:57:10.741397", "n_pass": [383, 81, 13], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")privateg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:58:42.355289", "n_pass": [425, 116, 14], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")rivateg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:58:45.019008", "n_pass": [426, 117, 15], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")ivateg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:58:47.648487", "n_pass": [427, 118, 16], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")vateg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:58:50.239232", "n_pass": [428, 119, 17], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")ateg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:58:52.826595", "n_pass": [429, 120, 18], "score": "0.2971", "loss": "1.4576", "code": "@CalledByNative(\"DequeueOutputResult\")teg presentationTimeMicroseconds(){;}"}
+{"time": "2021-01-23 22:59:00.710976", "n_pass": [432, 123, 19], "score": "0.8617", "loss": "0.1835", "code": "@CalledByNative(\"DequeueOutputResult\")te presentationTimeMicroseconds(){;}"}
+
+Minimal simplified code:
+@CalledByNative("DequeueOutputResult")te presentationTimeMicroseconds(){;}
+

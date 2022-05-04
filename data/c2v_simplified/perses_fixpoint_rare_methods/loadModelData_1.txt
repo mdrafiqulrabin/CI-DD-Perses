@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mbrlabs__Mundus/commons/src/main/com/mbrlabs/mundus/commons/g3d/MG3dModelLoader_loadModelData.java
+method_name = loadModelData
+method_body = @Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 12:00:52.566699", "score": "0.3584", "loss": "1.9809", "code": "class T { @Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return parseModel(fileHandle); } }"}
+{"time": "2021-01-24 12:05:12.287102", "score": "0.4937", "loss": "1.206", "code": "class T { @Override public ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return ; } }"}
+{"time": "2021-01-24 12:07:10.936289", "score": "0.4937", "loss": "1.206", "code": "class T { @Override ModelData loadModelData(FileHandle fileHandle, ModelLoader.ModelParameters parameters) { return ; } }"}
+{"time": "2021-01-24 12:08:29.855334", "score": "0.4527", "loss": "1.2547", "code": "class T { @Override ModelData loadModelData(FileHandle fileHandle, ModelLoader parameters) { return ; } }"}
+{"time": "2021-01-24 12:10:56.114311", "score": "0.9729", "loss": "0.0414", "code": "class T { @Override ModelData loadModelData( ) { return ; } }"}
+
+Minimal simplified code:
+class T {
+                 ModelData loadModelData(                                                             ) { return                       ; }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/util/ServerInfo_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.out.println("Server version: " + getServerInfo()); System.out.println("Server built: " + getServerBuilt()); System.out.println("Server number: " + getServerNumber()); System.out.println("OS Name: " + System.getProperty("os.name")); System.out.println("OS Version: " + System.getProperty("os.version")); System.out.println("Architecture: " + System.getProperty("os.arch")); System.out.println("JVM Version: " + System.getProperty("java.runtime.version")); System.out.println("JVM Vendor: " + System.getProperty("java.vm.vendor")); }
+
+topk path-contexts:
+[0.0648] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr0),system
+[0.0637] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr2),out
+[0.0563] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0539] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0427] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),args
+[0.0356] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(StringLiteralExpr0),architecture
+[0.0340] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr2),out
+[0.0328] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr0),system
+[0.0307] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(BinaryExpr:plus)_(StringLiteralExpr0),osversion
+[0.0305] string,(ClassOrInterfaceType1)^(Parameter)_(ArrayBracketPair2),[]
+
+topk terminals:
+['string', 'system', 'args', 'out', 'args', 'system', 'METHOD_NAME', 'system', 'METHOD_NAME', 'args', 'args', 'architecture', 'string', 'out', 'METHOD_NAME', 'system', 'args', 'osversion', 'string', '[]']
+

@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_odexOnly.java
+method_name = odexOnly
+method_body = public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }
+predict, score, loss = odexOnly, 0.44307154, 0.9001164
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:13:52.567080", "n_pass": [1, 1, 1], "score": "0.4431", "loss": "0.9001", "code": "public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:13:53.855196", "n_pass": [8, 2, 2], "score": "0.7551", "loss": "0.589", "code": "ean odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:00.230785", "n_pass": [71, 5, 3], "score": "0.8717", "loss": "0.2408", "code": "n odexOnly() { return (flags & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:04.345288", "n_pass": [83, 6, 4], "score": "0.5852", "loss": "1.0608", "code": "n odexOnly() { return (fgs & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:05.621870", "n_pass": [84, 7, 5], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly() { return (f & ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:18.898737", "n_pass": [148, 13, 6], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly() { return (f& ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:20.199958", "n_pass": [149, 14, 7], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly() { return (f&ODEX_ONLY) != 0; }"}
+{"time": "2021-01-23 12:14:33.241717", "n_pass": [160, 24, 8], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly() { return (f&ODEX_ONLY)!= 0; }"}
+{"time": "2021-01-23 12:14:38.484111", "n_pass": [177, 25, 9], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly(){ return (f&ODEX_ONLY)!= 0; }"}
+{"time": "2021-01-23 12:14:39.807364", "n_pass": [179, 26, 10], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly(){return (f&ODEX_ONLY)!= 0; }"}
+{"time": "2021-01-23 12:14:43.247445", "n_pass": [186, 27, 11], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly(){return(f&ODEX_ONLY)!= 0; }"}
+{"time": "2021-01-23 12:15:04.588587", "n_pass": [230, 38, 12], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly(){return(f&ODEX_ONLY)!=0; }"}
+{"time": "2021-01-23 12:15:05.876437", "n_pass": [233, 39, 13], "score": "0.8191", "loss": "0.4713", "code": "n odexOnly(){return(f&ODEX_ONLY)!=0;}"}
+
+Minimal simplified code:
+n odexOnly(){return(f&ODEX_ONLY)!=0;}
+

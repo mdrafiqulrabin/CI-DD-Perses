@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/DOM_setInspectModeEnabled.java
+method_name = setInspectModeEnabled
+method_body = @ChromeDevtoolsMethod public void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest.class); mDocument.postAndWait(new Runnable() { @Override public void run() { mDocument.setInspectModeEnabled(request.enabled); } }); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:24:29.816781", "score": "0.3394", "loss": "2.7664", "code": "class T { @ChromeDevtoolsMethod public void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest.class); mDocument.postAndWait(new Runnable() { @Override public void run() { mDocument.setInspectModeEnabled(request.enabled); } }); } }"}
+{"time": "2021-01-24 05:26:23.536888", "score": "0.2368", "loss": "3.4467", "code": "class T { @ChromeDevtoolsMethod public void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest.class); mDocument.postAndWait(new Runnable() { { mDocument.setInspectModeEnabled(request.enabled); } }); } }"}
+{"time": "2021-01-24 05:28:38.414416", "score": "0.3549", "loss": "3.0171", "code": "class T { @ChromeDevtoolsMethod public void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest ); mDocument.postAndWait(new Runnable() { { mDocument.setInspectModeEnabled(request.enabled); } }); } }"}
+{"time": "2021-01-24 05:29:11.147867", "score": "0.4511", "loss": "2.3456", "code": "class T { void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { final SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest ); mDocument.postAndWait(new Runnable() { { mDocument.setInspectModeEnabled(request.enabled); } }); } }"}
+{"time": "2021-01-24 05:29:22.008058", "score": "0.4511", "loss": "2.3456", "code": "class T { void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) { SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest ); mDocument.postAndWait(new Runnable() { { mDocument.setInspectModeEnabled(request.enabled); } }); } }"}
+
+Minimal simplified code:
+class T {
+                             void setInspectModeEnabled(JsonRpcPeer peer, JSONObject params) {       SetInspectModeEnabledRequest request = mObjectMapper.convertValue(params, SetInspectModeEnabledRequest      ); mDocument.postAndWait(new Runnable() {                             { mDocument.setInspectModeEnabled(request.enabled); } }); }
+}
+
+

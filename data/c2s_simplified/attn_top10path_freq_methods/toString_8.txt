@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/AstLambdaExpression_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder result = new StringBuilder(); for (Node n : children) { result.append(n.toString()); } return result.toString(); }
+
+topk path-contexts for sub-token: to
+[0.1416] children,NameExpr1|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.1269] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1097] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0735] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0516] node,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0482] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr0,n
+[0.0410] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,children
+[0.0280] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0273] n,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0259] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ForeachStmt|NameExpr1,children
+
+topk terminals for sub-token: to
+['children', 'to|string', 'string', 'METHOD_NAME', 'string', 'to|string', 'METHOD_NAME', 'to|string', 'node', 'to|string', 'string', 'n', 'string', 'children', 'string', 'to|string', 'n', 'to|string', 'METHOD_NAME', 'children']
+
+topk path-contexts for sub-token: string
+[0.2467] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.1608] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.1039] children,NameExpr1|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0905] node,ClassOrInterfaceType0|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0557] n,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForeachStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0473] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0397] n,NameExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0371] result,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,to|string
+[0.0292] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0290] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: string
+['string', 'to|string', 'METHOD_NAME', 'to|string', 'children', 'to|string', 'node', 'to|string', 'n', 'to|string', 'string', 'METHOD_NAME', 'n', 'to|string', 'result', 'to|string', 'string', 'to|string', 'override', 'string']
+

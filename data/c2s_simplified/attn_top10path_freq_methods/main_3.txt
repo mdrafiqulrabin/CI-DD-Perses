@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+
+topk path-contexts for sub-token: main
+[0.4336] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.2390] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.1474] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0525] args,VariableDeclaratorId0|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0186] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,true
+[0.0155] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0133] [],ArrayBracketPair2|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0129] void,VoidType0|MethodDeclaration|Parameter|ArrayBracketPair2,[]
+[0.0097] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0061] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: main
+['args', '[]', 'string', '[]', 'args', 'string', 'args', 'exception', 'args', 'true', 'METHOD_NAME', '[]', '[]', 'exception', 'void', '[]', 'string', 'exception', 'void', 'string']
+

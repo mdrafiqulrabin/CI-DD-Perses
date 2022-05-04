@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/util/ContextUtil_get.java
+method_name = get
+method_body = public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }
+
+topk path-contexts for sub-token: get
+[0.0825] object,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,context
+[0.0610] object,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0467] object,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType|ClassOrInterfaceType0,string
+[0.0353] defaultv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,context
+[0.0323] res,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr3,get
+[0.0322] key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,context
+[0.0301] res,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr0,context
+[0.0263] defaultv,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,get
+[0.0257] get,NameExpr3|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0239] key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr3,get
+
+topk terminals for sub-token: get
+['object', 'context', 'object', 'METHOD_NAME', 'object', 'string', 'defaultv', 'context', 'res', 'get', 'key', 'context', 'res', 'context', 'defaultv', 'get', 'get', 'null', 'key', 'get']
+

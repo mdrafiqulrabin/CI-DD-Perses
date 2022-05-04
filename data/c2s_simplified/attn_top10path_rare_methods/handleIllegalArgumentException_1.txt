@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/vmware__burp-rest-api/src/main/java/com/vmware/burp/extension/web/BurpController_handleIllegalArgumentException.java
+method_name = handleIllegalArgumentException
+method_body = @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus.BAD_REQUEST.value(), e.getMessage()); }
+
+topk path-contexts for sub-token: handle
+[0.2907] exception|handler,NameExpr0|NormalAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.2715] exception|handler,NameExpr0|NormalAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0252] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0217] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0206] illegal|argument|exception,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0169] io|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,send|error
+[0.0167] e,VariableDeclaratorId0|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0162] http|servlet|response,ClassOrInterfaceType1|Parameter|MethodDeclaration|ClassOrInterfaceType3,io|exception
+[0.0123] response,NameExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0114] io|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+
+topk terminals for sub-token: handle
+['exception|handler', 'METHOD_NAME', 'exception|handler', 'void', 'void', 'METHOD_NAME', 'METHOD_NAME', 'http|servlet|response', 'illegal|argument|exception', 'http|servlet|response', 'io|exception', 'send|error', 'e', 'http|servlet|response', 'http|servlet|response', 'io|exception', 'response', 'bad|request', 'io|exception', 'bad|request']
+
+topk path-contexts for sub-token: illegal
+[0.2456] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.2429] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.0681] e,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.0492] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0355] http|servlet|response,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0308] illegal|argument|exception,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0213] response,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0209] io|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0187] response,NameExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0155] illegal|argument|exception,ClassOrInterfaceType1|Parameter|MethodDeclaration|ClassOrInterfaceType3,io|exception
+
+topk terminals for sub-token: illegal
+['METHOD_NAME', 'illegal|argument|exception', 'void', 'illegal|argument|exception', 'e', 'illegal|argument|exception', 'METHOD_NAME', 'http|servlet|response', 'http|servlet|response', 'bad|request', 'illegal|argument|exception', 'http|servlet|response', 'response', 'bad|request', 'io|exception', 'bad|request', 'response', 'bad|request', 'illegal|argument|exception', 'io|exception']
+
+topk path-contexts for sub-token: argument
+[0.3224] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.2236] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.1644] e,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.0212] bad|request,NameExpr2|FieldAccessExpr0|MethodCallExpr2|NameExpr2,value
+[0.0201] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0167] illegal|argument|exception,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,http|servlet|response
+[0.0155] http|servlet|response,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,value
+[0.0134] io|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0132] http|servlet|response,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+[0.0101] response,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr0|NameExpr2,bad|request
+
+topk terminals for sub-token: argument
+['METHOD_NAME', 'illegal|argument|exception', 'void', 'illegal|argument|exception', 'e', 'illegal|argument|exception', 'bad|request', 'value', 'METHOD_NAME', 'http|servlet|response', 'illegal|argument|exception', 'http|servlet|response', 'http|servlet|response', 'value', 'io|exception', 'bad|request', 'http|servlet|response', 'bad|request', 'response', 'bad|request']
+
+topk path-contexts for sub-token: exception
+[0.1873] e,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.1714] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.1523] void,VoidType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,illegal|argument|exception
+[0.0471] exception|handler,NameExpr0|NormalAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0430] exception|handler,NameExpr0|NormalAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0383] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0264] illegal|argument|exception,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|VariableDeclaratorId0,response
+[0.0192] void,VoidType1|MethodDeclaration|Parameter|VariableDeclaratorId0,e
+[0.0146] bad|request,NameExpr2|FieldAccessExpr0|MethodCallExpr2|NameExpr2,value
+[0.0137] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|VariableDeclaratorId0,e
+
+topk terminals for sub-token: exception
+['e', 'illegal|argument|exception', 'METHOD_NAME', 'illegal|argument|exception', 'void', 'illegal|argument|exception', 'exception|handler', 'METHOD_NAME', 'exception|handler', 'void', 'void', 'METHOD_NAME', 'illegal|argument|exception', 'response', 'void', 'e', 'bad|request', 'value', 'METHOD_NAME', 'e']
+

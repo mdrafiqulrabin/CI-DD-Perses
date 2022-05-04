@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestStop_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { LOG.info("Starting postgres"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, "test-db")).start(); LOG.info("Stopping postgres"); process.stop(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 20:30:23.505691", "score": "0.9839", "loss": "0.018", "code": "class T { public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); LOG.info(\"Stopping postgres\"); process.stop(); } }"}
+{"time": "2020-12-28 20:33:25.610446", "score": "0.9875", "loss": "0.0168", "code": "class T { public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); PostgresProcess process = PostgresStarter.getDefaultInstance().prepare(new PostgresConfig(Version.Main.PRODUCTION, \"test-db\")).start(); } }"}
+{"time": "2020-12-28 20:34:40.700931", "score": "0.9999", "loss": "0.0001", "code": "class T { public static void main(String[] args) throws Exception { LOG.info(\"Starting postgres\"); } }"}
+{"time": "2020-12-28 20:36:34.613806", "score": "0.999", "loss": "0.0011", "code": "class T { public static void main(String args) throws Exception { LOG.info(\"Starting postgres\"); } }"}
+{"time": "2020-12-28 20:37:53.730387", "score": "0.999", "loss": "0.0011", "code": "class T { void main(String args) throws Exception { LOG.info(\"Starting postgres\"); } }"}
+{"time": "2020-12-28 20:38:33.548452", "score": "0.9995", "loss": "0.0006", "code": "class T { void main(String args) throws Exception { LOG.info( ); } }"}
+
+Minimal simplified code:
+class T {
+              void main(String   args) throws Exception { LOG.info(                   );                                                                                                                                                                                        }
+}
+
+

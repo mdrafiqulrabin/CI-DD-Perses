@@ -1,0 +1,41 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/FilterDef_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("FilterDef["); sb.append("filterName="); sb.append(this.filterName); sb.append(", filterClass="); sb.append(this.filterClass); sb.append("]"); return (sb.toString()); }
+predict, score, loss = toString, 0.9987459, 0.0017013205
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:43:28.195173", "n_pass": [1, 1, 1], "score": "0.9987", "loss": "0.0017", "code": "@Override public String toString() { StringBuilder sb = new StringBuilder(\"FilterDef[\"); sb.append(\"filterName=\"); sb.append(this.filterName); sb.append(\", filterClass=\"); sb.append(this.filterClass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:29.564291", "n_pass": [9, 2, 2], "score": "0.9984", "loss": "0.0022", "code": "@Override public String toString() { StringBuilder sb = new pend(this.filterName); sb.append(\", filterClass=\"); sb.append(this.filterClass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:30.935912", "n_pass": [19, 3, 3], "score": "0.999", "loss": "0.0016", "code": "@Override public String toString() { StringBuilder sb = new nd(\", filterClass=\"); sb.append(this.filterClass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:32.294325", "n_pass": [20, 4, 4], "score": "0.9988", "loss": "0.0027", "code": "@Override public String toString() { StringBuilder sb = new d(this.filterClass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:34.390059", "n_pass": [40, 5, 5], "score": "0.9948", "loss": "0.008", "code": "@Override public String toString() { StringBud(this.filterClass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:36.081033", "n_pass": [62, 6, 6], "score": "0.9837", "loss": "0.0274", "code": "@Override public String toString() { StringBud(thislass); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:37.404455", "n_pass": [64, 7, 7], "score": "0.9516", "loss": "0.0972", "code": "@Override public String toString() { StringBud(thislass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:41.400579", "n_pass": [70, 10, 8], "score": "0.8313", "loss": "0.3502", "code": "@Overriic String toString() { StringBud(thislass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:46.234406", "n_pass": [104, 13, 9], "score": "0.8422", "loss": "0.3386", "code": "@Overr String toString() { StringBud(thislass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:48.032296", "n_pass": [106, 14, 10], "score": "0.7761", "loss": "0.5844", "code": "@Overr St toString() { StringBud(thislass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:50.110850", "n_pass": [111, 15, 11], "score": "0.521", "loss": "1.0907", "code": "@Overr St toString() { StBud(thislass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:51.454754", "n_pass": [113, 16, 12], "score": "0.7728", "loss": "0.4711", "code": "@Overr St toString() { StBud(lass); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:52.803268", "n_pass": [114, 17, 13], "score": "0.8934", "loss": "0.2653", "code": "@Overr St toString() { StBud(); s(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-28 00:43:58.091092", "n_pass": [122, 21, 14], "score": "0.291", "loss": "2.143", "code": "@Overr St toString() { StBud(); s(\"]\"); return (sb.toStri); }"}
+{"time": "2020-12-28 00:43:59.451109", "n_pass": [125, 22, 15], "score": "0.3243", "loss": "1.8892", "code": "@Ov St toString() { StBud(); s(\"]\"); return (sb.toStri); }"}
+{"time": "2020-12-28 00:44:01.867327", "n_pass": [135, 23, 16], "score": "0.3565", "loss": "2.8663", "code": "@Ov St toString() { StBud(); s(\"]\"); rn (sb.toStri); }"}
+{"time": "2020-12-28 00:44:04.509490", "n_pass": [138, 25, 17], "score": "0.4049", "loss": "2.3928", "code": "@Ov St toString() { StBud(); s(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:05.830786", "n_pass": [140, 26, 18], "score": "0.3879", "loss": "2.8634", "code": " St toString() { StBud(); s(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:09.958589", "n_pass": [177, 28, 19], "score": "0.3879", "loss": "2.8634", "code": "St toString() { StBud(); s(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:15.546465", "n_pass": [189, 31, 20], "score": "0.4522", "loss": "2.9941", "code": "St toString() { StBud();(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:22.695596", "n_pass": [208, 35, 21], "score": "0.5718", "loss": "2.5785", "code": "St toString() { Bud();(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:24.009776", "n_pass": [209, 36, 22], "score": "0.5222", "loss": "2.6128", "code": "St toString() { d();(\"]\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:34.247519", "n_pass": [276, 40, 23], "score": "0.3654", "loss": "3.6352", "code": "St toString() { d();(\"\"); rn (sb.to); }"}
+{"time": "2020-12-28 00:44:35.634904", "n_pass": [279, 41, 24], "score": "0.3654", "loss": "3.6352", "code": "St toString() { d();(\"\");rn (sb.to); }"}
+{"time": "2020-12-28 00:44:39.683213", "n_pass": [282, 44, 25], "score": "0.3654", "loss": "3.6352", "code": "St toString() { d();(\"\");rn(sb.to); }"}
+{"time": "2020-12-28 00:44:47.657638", "n_pass": [291, 50, 26], "score": "0.3654", "loss": "3.6352", "code": "St toString() { d();(\"\");rn(sb.to);}"}
+{"time": "2020-12-28 00:44:48.999257", "n_pass": [293, 51, 27], "score": "0.4331", "loss": "3.5191", "code": "t toString() { d();(\"\");rn(sb.to);}"}
+{"time": "2020-12-28 00:44:54.114757", "n_pass": [306, 52, 28], "score": "0.4331", "loss": "3.5191", "code": "t toString(){ d();(\"\");rn(sb.to);}"}
+{"time": "2020-12-28 00:44:55.447941", "n_pass": [308, 53, 29], "score": "0.4331", "loss": "3.5191", "code": "t toString(){d();(\"\");rn(sb.to);}"}
+{"time": "2020-12-28 00:45:00.695733", "n_pass": [322, 57, 30], "score": "0.3345", "loss": "3.6112", "code": "t toString(){d();(\"\");rn(s.to);}"}
+
+Minimal simplified code:
+t toString(){d();("");rn(s.to);}
+

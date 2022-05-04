@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/rakam-io__rakam/rakam-parser/src/main/java/com/facebook/presto/sql/RakamExpressionFormatter_visitCharLiteral.java
+method_name = visitCharLiteral
+method_body = @Override protected String visitCharLiteral(CharLiteral node, Void context) { return "CHAR " + formatStringLiteral(node.getValue()); }
+
+topk path-contexts:
+[0.1477] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),void
+[0.1272] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),charliteral
+[0.0920] context,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr0),char
+[0.0816] charliteral,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),void
+[0.0753] node,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr0),char
+[0.0710] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),charliteral
+[0.0637] node,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),void
+[0.0610] void,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr0),char
+[0.0500] charliteral,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr0),char
+[0.0426] void,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr2),formatstringliteral
+
+topk terminals:
+['METHOD_NAME', 'void', 'string', 'charliteral', 'context', 'char', 'charliteral', 'void', 'node', 'char', 'METHOD_NAME', 'charliteral', 'node', 'void', 'void', 'char', 'charliteral', 'char', 'void', 'formatstringliteral']
+

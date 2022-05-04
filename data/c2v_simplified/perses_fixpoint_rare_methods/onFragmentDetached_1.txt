@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_onFragmentDetached.java
+method_name = onFragmentDetached
+method_body = public void onFragmentDetached(String tag) { FragmentManager fragmentManager = getSupportFragmentManager(); Fragment fragment = fragmentManager.findFragmentByTag(tag); if (fragment != null) { fragmentManager.beginTransaction().disallowAddToBackStack().setCustomAnimations(R.anim.slide_left, R.anim.slide_right).remove(fragment).commitNow(); unlockDrawer(); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 13:19:19.287856", "score": "0.3826", "loss": "1.1065", "code": "class T { public void onFragmentDetached(String tag) { FragmentManager fragmentManager = getSupportFragmentManager(); Fragment fragment = fragmentManager.findFragmentByTag(tag); if (fragment != null) { fragmentManager.beginTransaction().disallowAddToBackStack().setCustomAnimations(R.anim.slide_left, R.anim.slide_right).remove(fragment).commitNow(); unlockDrawer(); } } }"}
+{"time": "2021-01-24 13:23:40.488030", "score": "0.3792", "loss": "1.1471", "code": "class T { public void onFragmentDetached(String tag) { if (fragment != null) { fragmentManager.beginTransaction().disallowAddToBackStack().setCustomAnimations(R.anim.slide_left, R.anim.slide_right).remove(fragment).commitNow(); unlockDrawer(); } } }"}
+{"time": "2021-01-24 13:26:18.883631", "score": "0.384", "loss": "1.1253", "code": "class T { public void onFragmentDetached(String tag) { if (fragment != null) { fragmentManager.beginTransaction().disallowAddToBackStack().setCustomAnimations(R.anim.slide_left, R.anim.slide_right).remove(fragment).commitNow(); } } }"}
+{"time": "2021-01-24 13:29:36.337410", "score": "0.3603", "loss": "1.1822", "code": "class T { public void onFragmentDetached(String tag) { if (fragment != null) { fragmentManager.beginTransaction() .remove(fragment).commitNow(); } } }"}
+{"time": "2021-01-24 13:32:12.393956", "score": "0.4556", "loss": "1.1745", "code": "class T { public void onFragmentDetached(String tag) { if (fragment != null) { fragmentManager.beginTransaction() .remove( ).commitNow(); } } }"}
+{"time": "2021-01-24 13:32:51.942208", "score": "0.4556", "loss": "1.1745", "code": "class T { void onFragmentDetached(String tag) { if (fragment != null) { fragmentManager.beginTransaction() .remove( ).commitNow(); } } }"}
+
+Minimal simplified code:
+class T {
+       void onFragmentDetached(String tag) {                                                                                                                            if (fragment != null) { fragmentManager.beginTransaction()                                                                                    .remove(        ).commitNow();                 } }
+}
+
+

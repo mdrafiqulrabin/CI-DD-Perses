@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Mark_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:20:54.753377", "score": "0.995", "loss": "0.0057", "code": "class T { @Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; } }"}
+{"time": "2020-12-21 12:21:32.219431", "score": "0.9915", "loss": "0.0095", "code": "class T { @Override public boolean equals(Object other) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } }"}
+{"time": "2020-12-21 12:21:42.777743", "score": "0.5429", "loss": "0.8584", "code": "class T { @Override public boolean equals(Object other) { } }"}
+{"time": "2020-12-21 12:21:53.335250", "score": "0.7651", "loss": "0.5366", "code": "class T { boolean equals(Object other) { } }"}
+
+Minimal simplified code:
+class T {
+                 boolean equals(Object other)                              {                                                                                                                                                          }
+}
+
+

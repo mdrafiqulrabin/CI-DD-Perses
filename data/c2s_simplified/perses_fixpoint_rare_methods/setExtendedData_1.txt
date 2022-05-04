@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MKergall__osmbonuspack/OSMBonusPack/src/main/java/org/osmdroid/bonuspack/kml/KmlFeature_setExtendedData.java
+method_name = setExtendedData
+method_body = public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:39:03.510645", "score": "0.494", "loss": "0.8437", "code": "class T { public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); mExtendedData.put(name, value); } }"}
+{"time": "2021-01-24 04:39:51.753909", "score": "0.8551", "loss": "1.5444", "code": "class T { public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap<String, String>(); } }"}
+{"time": "2021-01-24 04:40:55.282675", "score": "0.7152", "loss": "3.0416", "code": "class T { public void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap (); } }"}
+{"time": "2021-01-24 04:41:16.293168", "score": "0.7152", "loss": "3.0416", "code": "class T { void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = new HashMap (); } }"}
+{"time": "2021-01-24 04:42:39.004283", "score": "0.8916", "loss": "1.3287", "code": "class T { void setExtendedData(String name, String value) { if (mExtendedData == null) mExtendedData = HashMap ; } }"}
+{"time": "2021-01-24 04:43:37.782879", "score": "0.9525", "loss": "0.7901", "code": "class T { void setExtendedData(String name, String value) { mExtendedData = HashMap ; } }"}
+
+Minimal simplified code:
+class T {
+       void setExtendedData(String name, String value) {                            mExtendedData =     HashMap                  ;                                 }
+}
+
+

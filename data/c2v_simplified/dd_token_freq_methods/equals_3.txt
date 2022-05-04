@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/async/Stockticker_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }
+predict, score, loss = equals, 0.999953031539917, 6.389413465512916e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:42:51.675730", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0001", "code": "@Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-26 22:42:55.361660", "n_pass": [24, 2, 2], "score": "0.9971", "loss": "0.0034", "code": "@Override public boolean equals(Object other) { if (other instanceof Stock) { (((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-26 22:42:58.577256", "n_pass": [51, 3, 3], "score": "0.9983", "loss": "0.0022", "code": "public boolean equals(Object other) { if (other instanceof Stock) { (((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:01.807916", "n_pass": [54, 4, 4], "score": "0.6653", "loss": "0.6771", "code": "public boolean equals() { if (other instanceof Stock) { (((Stock) other).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:06.268354", "n_pass": [103, 5, 5], "score": "0.5309", "loss": "0.948", "code": "public boolean equals() { if (other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:11.857174", "n_pass": [110, 7, 6], "score": "0.5309", "loss": "0.948", "code": " boolean equals() { if (other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:14.650608", "n_pass": [111, 8, 7], "score": "0.5309", "loss": "0.948", "code": "boolean equals() { if (other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:26.642294", "n_pass": [171, 10, 8], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){ if (other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:29.452477", "n_pass": [172, 11, 9], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if (other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:32.222196", "n_pass": [174, 12, 10], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock) { (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:34.960672", "n_pass": [182, 13, 11], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock){ (((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:37.732361", "n_pass": [184, 14, 12], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock){(((Stock)).symbol); } return false; }"}
+{"time": "2020-12-26 22:43:40.538306", "n_pass": [195, 15, 13], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock){(((Stock)).symbol);} return false; }"}
+{"time": "2020-12-26 22:43:43.318863", "n_pass": [197, 16, 14], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock){(((Stock)).symbol);}return false; }"}
+{"time": "2020-12-26 22:43:54.196322", "n_pass": [202, 20, 15], "score": "0.5309", "loss": "0.948", "code": "boolean equals(){if(other instanceof Stock){(((Stock)).symbol);}return false;}"}
+
+Minimal simplified code:
+boolean equals(){if(other instanceof Stock){(((Stock)).symbol);}return false;}
+

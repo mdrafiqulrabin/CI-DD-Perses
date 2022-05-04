@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/alphatica__genotick/src/main/java/com/alphatica/genotick/data/DataSet_getTimePoints.java
+method_name = getTimePoints
+method_body = List<TimePoint> getTimePoints() { return Arrays.asList(timePoints); }
+predict, score, loss = getTimePoints, 0.3224004805088043, 2.275987386703491
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:07:13.568289", "n_pass": [1, 1, 1], "score": "0.3224", "loss": "2.276", "code": "List<TimePoint> getTimePoints() { return Arrays.asList(timePoints); }"}
+{"time": "2021-01-20 08:07:21.792011", "n_pass": [25, 4, 2], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint> getTimePoints() { return (timePoints); }"}
+{"time": "2021-01-20 08:07:30.757734", "n_pass": [54, 7, 3], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint>getTimePoints() { return (timePoints); }"}
+{"time": "2021-01-20 08:07:33.385974", "n_pass": [58, 8, 4], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint>getTimePoints(){ return (timePoints); }"}
+{"time": "2021-01-20 08:07:43.101689", "n_pass": [82, 11, 5], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint>getTimePoints(){ return(timePoints); }"}
+{"time": "2021-01-20 08:07:45.712226", "n_pass": [87, 12, 6], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint>getTimePoints(){ return(timePoints);}"}
+{"time": "2021-01-20 08:07:48.716629", "n_pass": [97, 13, 7], "score": "0.9266", "loss": "0.4926", "code": "List<TimePoint>getTimePoints(){return(timePoints);}"}
+
+Minimal simplified code:
+List<TimePoint>getTimePoints(){return(timePoints);}
+

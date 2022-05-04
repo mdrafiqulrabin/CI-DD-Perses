@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/BarUtils_setNavBarColor.java
+method_name = setNavBarColor
+method_body = @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 18:43:56.573791", "score": "0.4374", "loss": "0.9107", "code": "class T { @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); } }"}
+{"time": "2021-01-24 18:46:23.325470", "score": "0.8113", "loss": "0.463", "code": "class T { @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor( ) { window.setNavigationBarColor(color); } }"}
+{"time": "2021-01-24 18:47:03.089139", "score": "0.9549", "loss": "0.05", "code": "class T { void setNavBarColor( ) { window.setNavigationBarColor(color); } }"}
+
+Minimal simplified code:
+class T {
+                                                         void setNavBarColor(                                                       ) { window.setNavigationBarColor(     ); }
+}
+
+

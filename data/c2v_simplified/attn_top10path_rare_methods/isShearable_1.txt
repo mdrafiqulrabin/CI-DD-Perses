@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/block/BlockBOPPlant_isShearable.java
+method_name = isShearable
+method_body = @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) { IBlockState state = world.getBlockState(pos); switch((BOPPlants) state.getValue(this.variantProperty)) { case CATTAIL: case RIVERCANE: return false; default: return true; } }
+
+topk path-contexts:
+[0.1145] iblockstate,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(SwitchStmt)_(SwitchEntryStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.1133] item,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),iblockaccess
+[0.0745] iblockstate,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(SwitchStmt)_(SwitchEntryStmt)_(ReturnStmt)_(BooleanLiteralExpr0),true
+[0.0649] iblockaccess,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SwitchStmt)_(SwitchEntryStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0648] iblockaccess,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SwitchStmt)_(SwitchEntryStmt)_(ReturnStmt)_(BooleanLiteralExpr0),true
+[0.0620] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),iblockaccess
+[0.0616] itemstack,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),iblockaccess
+[0.0377] blockpos,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(SwitchStmt)_(SwitchEntryStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0338] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),itemstack
+[0.0330] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),item
+
+topk terminals:
+['iblockstate', 'false', 'item', 'iblockaccess', 'iblockstate', 'true', 'iblockaccess', 'false', 'iblockaccess', 'true', 'METHOD_NAME', 'iblockaccess', 'itemstack', 'iblockaccess', 'blockpos', 'false', 'boolean', 'itemstack', 'boolean', 'item']
+

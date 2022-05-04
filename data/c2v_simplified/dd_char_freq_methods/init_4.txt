@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/main/java/example/kurt/todo/widget/ProgressView_init.java
+method_name = init
+method_body = public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); }
+predict, score, loss = init, 0.8418163061141968, 0.20509395003318787
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:48:18.068291", "n_pass": [1, 1, 1], "score": "0.8418", "loss": "0.2051", "code": "public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); barPaint.setColor(barColor); barPaint.setStyle(Paint.Style.FILL_AND_STROKE); }"}
+{"time": "2020-12-28 06:48:23.298714", "n_pass": [10, 3, 2], "score": "0.4907", "loss": "0.7275", "code": "public void init() { barPaint = new Paint(); barPaint.setAntiAlias(true); batStyle(Paint.Style.FILL_AND_STROKE); }"}
+{"time": "2020-12-28 06:48:25.903150", "n_pass": [12, 4, 3], "score": "0.5611", "loss": "0.591", "code": "public void init() { barPaint = new PatStyle(Paint.Style.FILL_AND_STROKE); }"}
+{"time": "2020-12-28 06:48:31.492269", "n_pass": [31, 6, 4], "score": "0.9949", "loss": "0.0056", "code": "public void init() { barPaint = new PatStyle(Paint.StyleSTROKE); }"}
+{"time": "2020-12-28 06:48:34.082166", "n_pass": [33, 7, 5], "score": "0.8853", "loss": "0.1841", "code": "id init() { barPaint = new PatStyle(Paint.StyleSTROKE); }"}
+{"time": "2020-12-28 06:48:45.276248", "n_pass": [58, 11, 6], "score": "0.8853", "loss": "0.1841", "code": "id init() { barPaint = new yle(Paint.StyleSTROKE); }"}
+{"time": "2020-12-28 06:48:50.475607", "n_pass": [60, 13, 7], "score": "0.6991", "loss": "0.675", "code": "id init() { barPaint = new yle(Paint.STROKE); }"}
+{"time": "2020-12-28 06:48:53.054199", "n_pass": [61, 14, 8], "score": "0.8768", "loss": "0.1965", "code": "id init() { barPaint = new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:02.448196", "n_pass": [97, 17, 9], "score": "0.3695", "loss": "1.9158", "code": "id init() { rPaint = new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:21.499346", "n_pass": [149, 23, 10], "score": "0.2795", "loss": "1.5954", "code": "id init() { Paint = new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:31.845608", "n_pass": [153, 27, 11], "score": "0.8469", "loss": "0.1952", "code": "id init() { Pain = new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:34.454371", "n_pass": [154, 28, 12], "score": "0.8469", "loss": "0.1952", "code": "id init() { Pain= new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:37.043992", "n_pass": [156, 29, 13], "score": "0.8469", "loss": "0.1952", "code": "id init() { Pain=new yle(Paint.E); }"}
+{"time": "2020-12-28 06:49:44.824468", "n_pass": [162, 32, 14], "score": "0.4484", "loss": "0.8434", "code": "id init() { Pain=new ye(Paint.E); }"}
+{"time": "2020-12-28 06:49:47.417356", "n_pass": [163, 33, 15], "score": "0.7423", "loss": "0.3493", "code": "id init() { Pain=new y(Paint.E); }"}
+{"time": "2020-12-28 06:49:55.170355", "n_pass": [167, 36, 16], "score": "0.8459", "loss": "0.2106", "code": "id init() { Pain=new y(Paint); }"}
+{"time": "2020-12-28 06:49:57.751284", "n_pass": [170, 37, 17], "score": "0.9445", "loss": "0.0635", "code": "d init() { Pain=new y(Paint); }"}
+{"time": "2020-12-28 06:50:02.341289", "n_pass": [179, 38, 18], "score": "0.9445", "loss": "0.0635", "code": "d init(){ Pain=new y(Paint); }"}
+{"time": "2020-12-28 06:50:04.918352", "n_pass": [181, 39, 19], "score": "0.9445", "loss": "0.0635", "code": "d init(){Pain=new y(Paint); }"}
+{"time": "2020-12-28 06:50:10.094128", "n_pass": [183, 41, 20], "score": "0.41", "loss": "1.0511", "code": "d init(){Pin=new y(Paint); }"}
+{"time": "2020-12-28 06:50:41.433857", "n_pass": [222, 52, 21], "score": "0.9914", "loss": "0.0103", "code": "d init(){Pin=new y(Pain); }"}
+{"time": "2020-12-28 06:50:44.019864", "n_pass": [225, 53, 22], "score": "0.9914", "loss": "0.0103", "code": "d init(){Pin=new y(Pain);}"}
+{"time": "2020-12-28 06:50:48.591527", "n_pass": [236, 54, 23], "score": "0.9217", "loss": "0.0904", "code": "d init(){in=new y(Pain);}"}
+{"time": "2020-12-28 06:50:51.194743", "n_pass": [237, 55, 24], "score": "0.9145", "loss": "0.0979", "code": "d init(){n=new y(Pain);}"}
+
+Minimal simplified code:
+d init(){n=new y(Pain);}
+

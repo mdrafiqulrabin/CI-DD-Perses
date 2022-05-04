@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/ItemContentsBean_getRationale.java
+method_name = getRationale
+method_body = public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, ""); }
+
+topk path-contexts:
+[0.1922] rationale,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),rationale
+[0.1199] rationale,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),check
+[0.0814] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),rationale
+[0.0707] count,(NameExpr0)^(BinaryExpr:greater)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),rationale
+[0.0555] string,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(MethodCallExpr1)_(NameExpr0),formattedtext
+[0.0549] size,(NameExpr2)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),rationale
+[0.0451] rationale,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr3),BLANK
+[0.0436] itemgradingdata,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),rationale
+[0.0310] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),rationale
+[0.0273] count,(NameExpr0)^(BinaryExpr:greater)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),check
+
+topk terminals:
+['rationale', 'rationale', 'rationale', 'check', 'string', 'rationale', 'count', 'rationale', 'string', 'formattedtext', 'size', 'rationale', 'rationale', 'BLANK', 'itemgradingdata', 'rationale', 'METHOD_NAME', 'rationale', 'count', 'check']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/parser/SimpleNode_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (this.image != null) { return ELParserTreeConstants.jjtNodeName[id] + "[" + this.image + "]"; } return ELParserTreeConstants.jjtNodeName[id]; }
+
+topk path-contexts:
+[0.2017] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.1976] jjtnodename,(NameExpr2)^(FieldAccessExpr0)^(ArrayAccessExpr)^(BinaryExpr:plus)_(StringLiteralExpr1),[
+[0.1841] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ArrayAccessExpr0)_(FieldAccessExpr0)_(NameExpr2),jjtnodename
+[0.0593] null,(NullLiteralExpr1)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0566] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(ArrayAccessExpr0)_(NameExpr1),id
+[0.0526] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0360] id,(NameExpr1)^(ArrayAccessExpr)^(BinaryExpr:plus)^(BinaryExpr:plus)^(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0212] this,(ThisExpr0)^(FieldAccessExpr)_(NameExpr2),image
+[0.0212] this,(ThisExpr0)^(FieldAccessExpr)_(NameExpr2),image
+[0.0198] string,(ClassOrInterfaceType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:notEquals)_(FieldAccessExpr0)_(NameExpr2),image
+
+topk terminals:
+['string', ']', 'jjtnodename', '[', 'METHOD_NAME', 'jjtnodename', 'null', ']', 'string', 'id', 'METHOD_NAME', ']', 'id', ']', 'this', 'image', 'this', 'image', 'string', 'image']
+

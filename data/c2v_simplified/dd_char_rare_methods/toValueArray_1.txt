@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/core/src/main/java/org/bouncycastle/asn1/x500/style/IETFUtils_toValueArray.java
+method_name = toValueArray
+method_body = private static String[] toValueArray(Vector values) { String[] tmp = new String[values.size()]; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) values.elementAt(i); } return tmp; }
+predict, score, loss = toValueArray, 0.3435118794441223, 1.7992477416992188
+
+Trace of simplified code(s):
+{"time": "2021-01-23 20:23:31.569709", "n_pass": [1, 1, 1], "score": "0.3435", "loss": "1.7992", "code": "private static String[] toValueArray(Vector values) { String[] tmp = new String[values.size()]; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) values.elementAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:23:34.630654", "n_pass": [23, 2, 2], "score": "0.435", "loss": "1.6606", "code": "private static String[] toValueArray(Vector values) { String[] tmp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) values.elementAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:23:37.717799", "n_pass": [50, 3, 3], "score": "0.4175", "loss": "1.7518", "code": "private static String[] toValueArray(Vector values) { String[] tmp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:23:45.641785", "n_pass": [95, 6, 4], "score": "0.3761", "loss": "2.1824", "code": "private sttring[] toValueArray(Vector values) { String[] tmp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:23:48.691692", "n_pass": [103, 7, 5], "score": "0.1771", "loss": "3.5914", "code": "private sttring[] toValueArray(Vector values) { Strimp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:01.873571", "n_pass": [120, 12, 6], "score": "0.1771", "loss": "3.5914", "code": "privatring[] toValueArray(Vector values) { Strimp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:18.209573", "n_pass": [190, 18, 7], "score": "0.1771", "loss": "3.5914", "code": "privang[] toValueArray(Vector values) { Strimp = n; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:35.316791", "n_pass": [204, 24, 8], "score": "0.2787", "loss": "2.5272", "code": "privang[] toValueArray(Vector values) { Strimp ; for (int i = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:37.948922", "n_pass": [208, 25, 9], "score": "0.2676", "loss": "2.636", "code": "privang[] toValueArray(Vector values) { Strimp ; for (in = 0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:40.606358", "n_pass": [209, 26, 10], "score": "0.2868", "loss": "2.4924", "code": "privang[] toValueArray(Vector values) { Strimp ; for (in0; i != tmp.length; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:45.857322", "n_pass": [214, 28, 11], "score": "0.2818", "loss": "2.5196", "code": "privang[] toValueArray(Vector values) { Strimp ; for (in0; i != tmp.gth; i++) { tmp[i] = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:48.483799", "n_pass": [220, 29, 12], "score": "0.2915", "loss": "2.3684", "code": "privang[] toValueArray(Vector values) { Strimp ; for (in0; i != tmp.gth; i++) { tmp = (String) ntAt(i); } return tmp; }"}
+{"time": "2021-01-23 20:24:53.775374", "n_pass": [225, 31, 13], "score": "0.2962", "loss": "2.341", "code": "privang[] toValueArray(Vector values) { Strimp ; for (in0; i != tmp.gth; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:04.317085", "n_pass": [233, 35, 14], "score": "0.2962", "loss": "2.341", "code": "ivang[] toValueArray(Vector values) { Strimp ; for (in0; i != tmp.gth; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:18.841387", "n_pass": [247, 40, 15], "score": "0.226", "loss": "2.7831", "code": "ivang[] toValueArray(Vector values) { Smp ; for (in0; i != tmp.gth; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:21.471855", "n_pass": [248, 41, 16], "score": "0.2938", "loss": "2.3504", "code": "ivang[] toValueArray(Vector values) { S; for (in0; i != tmp.gth; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:24.103790", "n_pass": [255, 42, 17], "score": "0.2926", "loss": "3.0573", "code": "ivang[] toValueArray(Vector values) { S; for (in0; i != tgth; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:26.759456", "n_pass": [256, 43, 18], "score": "0.2211", "loss": "2.7482", "code": "ivang[] toValueArray(Vector values) { S; for (in0; i != t; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:52.418274", "n_pass": [361, 52, 19], "score": "0.2158", "loss": "2.7604", "code": "ivang[] toValueArray(Vector values) { S; for (0; i != t; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:25:55.047654", "n_pass": [364, 53, 20], "score": "0.1802", "loss": "2.9072", "code": "ivang[] toValueArray(Vector values) { S; for (0; i= t; i++) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:26:00.307461", "n_pass": [368, 55, 21], "score": "0.1823", "loss": "2.886", "code": "ivang[] toValueArray(Vector values) { S; for (0; i= t; i) { tmp = (String) t(i); } return tmp; }"}
+{"time": "2021-01-23 20:26:13.442201", "n_pass": [378, 60, 22], "score": "0.1924", "loss": "2.8179", "code": "ivang[] toValueArray(Vector values) { S; for (0; i= t; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:26:29.217693", "n_pass": [389, 66, 23], "score": "0.1924", "loss": "2.8179", "code": "vang[] toValueArray(Vector values) { S; for (0; i= t; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:26:34.469097", "n_pass": [391, 68, 24], "score": "0.1924", "loss": "2.8179", "code": "vng[] toValueArray(Vector values) { S; for (0; i= t; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:26:42.360360", "n_pass": [396, 71, 25], "score": "0.1924", "loss": "2.8179", "code": "vng[]toValueArray(Vector values) { S; for (0; i= t; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:27:21.428133", "n_pass": [425, 84, 26], "score": "0.1976", "loss": "2.7788", "code": "vng[]toValueArray(Vector values) {  for (0; i= t; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:27:24.072681", "n_pass": [431, 85, 27], "score": "0.2015", "loss": "2.7351", "code": "vng[]toValueArray(Vector values) {  for (0; it; i) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:27:26.691169", "n_pass": [433, 86, 28], "score": "0.2034", "loss": "2.723", "code": "vng[]toValueArray(Vector values) {  for (0; it;) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:28:37.158300", "n_pass": [490, 111, 29], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values) {  for (0;t;) { tmp = (String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:29:53.725084", "n_pass": [601, 136, 30], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values) {  for (0;t;) { tmp =(String)(i); } return tmp; }"}
+{"time": "2021-01-23 20:30:12.121745", "n_pass": [614, 143, 31], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values) {  for (0;t;) { tmp =(String)(i);} return tmp; }"}
+{"time": "2021-01-23 20:30:14.739405", "n_pass": [616, 144, 32], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values) {  for (0;t;) { tmp =(String)(i);}return tmp; }"}
+{"time": "2021-01-23 20:30:43.683413", "n_pass": [628, 155, 33], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values) {  for (0;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:30.642215", "n_pass": [662, 171, 34], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values){  for (0;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:33.299401", "n_pass": [664, 172, 35], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values){ for (0;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:35.922322", "n_pass": [665, 173, 36], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values){for (0;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:38.569159", "n_pass": [669, 174, 37], "score": "0.2062", "loss": "2.6991", "code": "vng[]toValueArray(Vector values){for(0;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:41.194393", "n_pass": [671, 175, 38], "score": "0.2085", "loss": "2.6723", "code": "vng[]toValueArray(Vector values){for(;t;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:43.803616", "n_pass": [673, 176, 39], "score": "0.2105", "loss": "2.6546", "code": "vng[]toValueArray(Vector values){for(;;) { tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:46.443640", "n_pass": [676, 177, 40], "score": "0.2105", "loss": "2.6546", "code": "vng[]toValueArray(Vector values){for(;;){ tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:49.065107", "n_pass": [678, 178, 41], "score": "0.2105", "loss": "2.6546", "code": "vng[]toValueArray(Vector values){for(;;){tmp =(String)(i);}return tmp;}"}
+{"time": "2021-01-23 20:31:59.495246", "n_pass": [682, 182, 42], "score": "0.2105", "loss": "2.6546", "code": "vng[]toValueArray(Vector values){for(;;){tmp=(String)(i);}return tmp;}"}
+
+Minimal simplified code:
+vng[]toValueArray(Vector values){for(;;){tmp=(String)(i);}return tmp;}
+

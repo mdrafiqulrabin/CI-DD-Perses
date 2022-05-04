@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/filter/stream/AbstractStreamWriteFilter_getWriteRequestQueue.java
+method_name = getWriteRequestQueue
+method_body = @SuppressWarnings("unchecked") private Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }
+predict, score, loss = getWriteRequestQueue, 0.46360818, 1.9227631
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:06:17.372964", "n_pass": [1, 1, 1], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\") private Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:19.095195", "n_pass": [47, 2, 2], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:24.118820", "n_pass": [98, 5, 3], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:33.499885", "n_pass": [155, 10, 4], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session){ return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:34.819194", "n_pass": [157, 11, 5], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session){return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:36.505167", "n_pass": [159, 12, 6], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session){return(Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:37.828050", "n_pass": [166, 13, 7], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session){return(Queue<WriteRequest>)session.getAttribute(WRITE_REQUEST_QUEUE); }"}
+{"time": "2021-01-20 06:06:47.175458", "n_pass": [178, 20, 8], "score": "0.4636", "loss": "1.9228", "code": "@SuppressWarnings(\"unchecked\")Queue<WriteRequest>getWriteRequestQueue(IoSession session){return(Queue<WriteRequest>)session.getAttribute(WRITE_REQUEST_QUEUE);}"}
+
+Minimal simplified code:
+@SuppressWarnings("unchecked")Queue<WriteRequest>getWriteRequestQueue(IoSession session){return(Queue<WriteRequest>)session.getAttribute(WRITE_REQUEST_QUEUE);}
+

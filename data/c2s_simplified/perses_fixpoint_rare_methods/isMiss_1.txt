@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/domain/Entity_isMiss.java
+method_name = isMiss
+method_body = public boolean isMiss() { return miss; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:01:09.548635", "score": "0.4905", "loss": "0.7415", "code": "class T { public boolean isMiss() { return miss; } }"}
+{"time": "2021-01-24 03:02:08.997315", "score": "0.4905", "loss": "0.7415", "code": "class T { boolean isMiss() { return miss; } }"}
+
+Minimal simplified code:
+class T {
+       boolean isMiss() { return miss; }
+}
+
+

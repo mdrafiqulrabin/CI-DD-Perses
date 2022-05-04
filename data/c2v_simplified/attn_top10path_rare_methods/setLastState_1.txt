@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ha/deploy/WarWatcher_setLastState.java
+method_name = setLastState
+method_body = protected void setLastState(int lastState) { this.lastState = lastState; }
+
+topk path-contexts:
+[0.2249] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),laststate
+[0.1643] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),laststate
+[0.1227] laststate,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),laststate
+[0.0860] laststate,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),laststate
+[0.0644] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),laststate
+[0.0613] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),laststate
+[0.0489] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),laststate
+[0.0431] this,(ThisExpr0)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),laststate
+[0.0408] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(ThisExpr0),this
+[0.0398] this,(ThisExpr0)^(FieldAccessExpr0)_(NameExpr2),laststate
+
+topk terminals:
+['METHOD_NAME', 'laststate', 'int', 'laststate', 'laststate', 'laststate', 'laststate', 'laststate', 'int', 'laststate', 'METHOD_NAME', 'laststate', 'void', 'laststate', 'this', 'laststate', 'int', 'this', 'this', 'laststate']
+

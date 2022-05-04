@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/glyptodon__guacamole-client/extensions/guacamole-auth-jdbc/modules/guacamole-auth-jdbc-base/src/main/java/org/apache/guacamole/auth/jdbc/sharing/user/SharedUser_getConnectionPermissions.java
+method_name = getConnectionPermissions
+method_body = @Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }
+predict, score, loss = getConnectionPermissions, 0.3991371989250183, 1.5334233045578003
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:35:32.073956", "n_pass": [1, 1, 1], "score": "0.3991", "loss": "1.5334", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory<Connection> connectionDirectory = userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:35.136485", "n_pass": [23, 2, 2], "score": "0.3451", "loss": "2.3963", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory= userContext.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:38.206580", "n_pass": [44, 3, 3], "score": "0.3736", "loss": "2.2768", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory.getConnectionDirectory(); return new SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:40.834625", "n_pass": [46, 4, 4], "score": "0.3813", "loss": "1.2273", "code": "@Override public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory.getConnectionDirectory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:43.486251", "n_pass": [51, 5, 5], "score": "0.3159", "loss": "2.1872", "code": "public ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory.getConnectionDirectory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:48.431251", "n_pass": [85, 6, 6], "score": "0.3159", "loss": "2.1872", "code": " ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory.getConnectionDirectory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:51.056673", "n_pass": [86, 7, 7], "score": "0.3159", "loss": "2.1872", "code": "ObjectPermissionSet getConnectionPermissions() throws GuacamoleException { Directory.getConnectionDirectory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:54.463488", "n_pass": [91, 8, 8], "score": "0.3159", "loss": "2.1872", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { Directory.getConnectionDirectory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:57.092485", "n_pass": [97, 9, 9], "score": "0.3228", "loss": "1.8284", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { Directory();  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:35:59.723748", "n_pass": [98, 10, 10], "score": "0.3238", "loss": "1.6018", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { Directory;  SharedObjectPermissionSet(connectionDirectory.getIdentifiers()); }"}
+{"time": "2021-01-20 07:36:07.574192", "n_pass": [103, 13, 11], "score": "0.3385", "loss": "1.6022", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { Directory;  SharedObjectPermissionSet(connectionDirectory.getIdentifiers); }"}
+{"time": "2021-01-20 07:36:11.385897", "n_pass": [115, 14, 12], "score": "0.337", "loss": "1.5561", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException {;  SharedObjectPermissionSet(connectionDirectory.getIdentifiers); }"}
+{"time": "2021-01-20 07:36:14.003732", "n_pass": [116, 15, 13], "score": "0.337", "loss": "1.5561", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { SharedObjectPermissionSet(connectionDirectory.getIdentifiers); }"}
+{"time": "2021-01-20 07:36:27.208558", "n_pass": [149, 19, 14], "score": "0.337", "loss": "1.5561", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException { SharedObjectPermissionSet(connectionDirectory.getIdentifiers);}"}
+{"time": "2021-01-20 07:36:31.019047", "n_pass": [158, 20, 15], "score": "0.337", "loss": "1.5561", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException{ SharedObjectPermissionSet(connectionDirectory.getIdentifiers);}"}
+{"time": "2021-01-20 07:36:33.652811", "n_pass": [160, 21, 16], "score": "0.337", "loss": "1.5561", "code": "ObjectPermissionSet getConnectionPermissions()throws GuacamoleException{SharedObjectPermissionSet(connectionDirectory.getIdentifiers);}"}
+
+Minimal simplified code:
+ObjectPermissionSet getConnectionPermissions()throws GuacamoleException{SharedObjectPermissionSet(connectionDirectory.getIdentifiers);}
+

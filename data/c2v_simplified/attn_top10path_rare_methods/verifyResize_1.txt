@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wso2-attic__product-emm/modules/mobile-agents/android/app-catalog/volley/src/test/java/com/android/volley/toolbox/ImageRequestTest_verifyResize.java
+method_name = verifyResize
+method_body = private void verifyResize(NetworkResponse networkResponse, int maxWidth, int maxHeight, ScaleType scaleType, int expectedWidth, int expectedHeight) { ImageRequest request = new ImageRequest("", null, maxWidth, maxHeight, scaleType, Config.RGB_565, null); Response<Bitmap> response = request.parseNetworkResponse(networkResponse); assertNotNull(response); assertTrue(response.isSuccess()); Bitmap bitmap = response.result; assertNotNull(bitmap); assertEquals(expectedWidth, bitmap.getWidth()); assertEquals(expectedHeight, bitmap.getHeight()); }
+
+topk path-contexts:
+[0.4278] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr3),parsenetworkresponse
+[0.1691] expectedheight,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),imagerequest
+[0.1496] expectedwidth,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),asserttrue
+[0.0305] networkresponse,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),int
+[0.0166] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),bitmap
+[0.0160] expectedwidth,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr1)_(NameExpr0),response
+[0.0153] expectedheight,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(NameExpr5),scaletype
+[0.0106] expectedwidth,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(NameExpr4),maxheight
+[0.0098] scaletype,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),expectedwidth
+[0.0090] expectedheight,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(StringLiteralExpr1),BLANK
+
+topk terminals:
+['int', 'parsenetworkresponse', 'expectedheight', 'imagerequest', 'expectedwidth', 'asserttrue', 'networkresponse', 'int', 'int', 'bitmap', 'expectedwidth', 'response', 'expectedheight', 'scaletype', 'expectedwidth', 'maxheight', 'scaletype', 'expectedwidth', 'expectedheight', 'BLANK']
+

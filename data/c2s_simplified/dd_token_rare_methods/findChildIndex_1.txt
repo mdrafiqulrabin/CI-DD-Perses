@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/common/android/ViewGroupUtil_findChildIndex.java
+method_name = findChildIndex
+method_body = public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }
+predict, score, loss = findChildIndex, 0.46184656, 1.8109801
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:37:41.948770", "n_pass": [1, 1, 1], "score": "0.4618", "loss": "1.811", "code": "public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:43.707428", "n_pass": [46, 2, 2], "score": "0.4359", "loss": "1.5071", "code": "public static int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:45.074657", "n_pass": [55, 3, 3], "score": "0.4777", "loss": "1.4329", "code": "public static int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent== child) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:46.845362", "n_pass": [98, 4, 4], "score": "0.3923", "loss": "1.8421", "code": "public static int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:49.530381", "n_pass": [105, 6, 5], "score": "0.3923", "loss": "1.8421", "code": "static int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:50.870116", "n_pass": [106, 7, 6], "score": "0.3923", "loss": "1.8421", "code": "int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:52.212170", "n_pass": [117, 8, 7], "score": "0.4087", "loss": "1.8039", "code": "int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i0; i < count; ++i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:54.888479", "n_pass": [121, 10, 8], "score": "0.4258", "loss": "1.9286", "code": "int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (int i0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:37:57.590869", "n_pass": [141, 12, 9], "score": "0.4178", "loss": "1.9562", "code": "int findChildIndex(ViewGroup child) { int count = parent.getChildCount(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:04.632537", "n_pass": [208, 15, 10], "score": "0.3224", "loss": "2.3228", "code": "int findChildIndex(ViewGroup child) { int count = parentgetChildCount(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:05.977792", "n_pass": [209, 16, 11], "score": "0.4084", "loss": "2.2078", "code": "int findChildIndex(ViewGroup child) { int count = parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:11.123580", "n_pass": [241, 19, 12], "score": "0.4084", "loss": "2.2078", "code": "int findChildIndex(ViewGroup child){ int count = parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:12.456978", "n_pass": [243, 20, 13], "score": "0.4084", "loss": "2.2078", "code": "int findChildIndex(ViewGroup child){int count = parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:13.778059", "n_pass": [244, 21, 14], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){ count = parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:15.099237", "n_pass": [245, 22, 15], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count = parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:16.426260", "n_pass": [247, 23, 16], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count= parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:17.752070", "n_pass": [249, 24, 17], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count=parent(); for (0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:31.301001", "n_pass": [330, 28, 18], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0; i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:33.971902", "n_pass": [334, 30, 19], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i < count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:35.291900", "n_pass": [336, 31, 20], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i< count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:36.613227", "n_pass": [338, 32, 21], "score": "0.5051", "loss": "2.5718", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;i) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:37.953328", "n_pass": [341, 33, 22], "score": "0.4997", "loss": "2.756", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;) { if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:39.303293", "n_pass": [343, 34, 23], "score": "0.4997", "loss": "2.756", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){ if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:40.659774", "n_pass": [345, 35, 24], "score": "0.4997", "loss": "2.756", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if (parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:41.992671", "n_pass": [347, 36, 25], "score": "0.4997", "loss": "2.756", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(parentchild) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:43.327117", "n_pass": [349, 37, 26], "score": "0.536", "loss": "2.5418", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child) { return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:44.660130", "n_pass": [352, 38, 27], "score": "0.536", "loss": "2.5418", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){ return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:45.993984", "n_pass": [354, 39, 28], "score": "0.536", "loss": "2.5418", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){return i; } } return -1; }"}
+{"time": "2021-01-20 05:38:47.329356", "n_pass": [355, 40, 29], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){ i; } } return -1; }"}
+{"time": "2021-01-20 05:38:48.669309", "n_pass": [356, 41, 30], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i; } } return -1; }"}
+{"time": "2021-01-20 05:38:51.338929", "n_pass": [359, 43, 31], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i;} } return -1; }"}
+{"time": "2021-01-20 05:38:52.700689", "n_pass": [361, 44, 32], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i;}} return -1; }"}
+{"time": "2021-01-20 05:38:54.032052", "n_pass": [363, 45, 33], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i;}}return -1; }"}
+{"time": "2021-01-20 05:38:55.732102", "n_pass": [365, 46, 34], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i;}}return-1; }"}
+{"time": "2021-01-20 05:38:58.396691", "n_pass": [369, 48, 35], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent(); for(0;i<count;){if(child){i;}}return-1;}"}
+{"time": "2021-01-20 05:39:01.815876", "n_pass": [386, 50, 36], "score": "0.3852", "loss": "3.3798", "code": "int findChildIndex(ViewGroup child){count=parent();for(0;i<count;){if(child){i;}}return-1;}"}
+
+Minimal simplified code:
+int findChildIndex(ViewGroup child){count=parent();for(0;i<count;){if(child){i;}}return-1;}
+

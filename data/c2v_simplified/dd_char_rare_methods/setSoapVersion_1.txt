@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/spring-projects__spring-ws/sandbox/src/main/java/org/springframework/ws/soap/stroap/StroapMessageFactory_setSoapVersion.java
+method_name = setSoapVersion
+method_body = public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }
+predict, score, loss = setSoapVersion, 0.4846594035625458, 1.1102478504180908
+
+Trace of simplified code(s):
+{"time": "2021-01-23 21:09:03.480618", "n_pass": [1, 1, 1], "score": "0.4847", "loss": "1.1102", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnsupportedOperationException(); } }"}
+{"time": "2021-01-23 21:09:09.116861", "n_pass": [26, 3, 2], "score": "0.4057", "loss": "1.2131", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new UnnException(); } }"}
+{"time": "2021-01-23 21:09:14.736500", "n_pass": [47, 5, 3], "score": "0.4057", "loss": "1.2131", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { throw new Uon(); } }"}
+{"time": "2021-01-23 21:09:26.072439", "n_pass": [60, 9, 4], "score": "0.3665", "loss": "1.3703", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { thon(); } }"}
+{"time": "2021-01-23 21:09:37.349519", "n_pass": [97, 13, 5], "score": "0.4298", "loss": "1.0033", "code": "public void setSoapVersion(SoapVersion version) { if (version != SoapVersion.SOAP_11) { t; } }"}
+{"time": "2021-01-23 21:09:49.450706", "n_pass": [109, 17, 6], "score": "0.6391", "loss": "2.1945", "code": "public void setSoapVersion(SoapVersion von) { if (version != SoapVersion.SOAP_11) { t; } }"}
+{"time": "2021-01-23 21:09:54.662835", "n_pass": [115, 19, 7], "score": "0.2295", "loss": "4.0091", "code": "public void setSoapVersion(SoapVersion von) { if (version !=pVersion.SOAP_11) { t; } }"}
+{"time": "2021-01-23 21:09:57.290295", "n_pass": [116, 20, 8], "score": "0.3969", "loss": "3.7695", "code": "public void setSoapVersion(SoapVersion von) { if (version !=sion.SOAP_11) { t; } }"}
+{"time": "2021-01-23 21:09:59.915789", "n_pass": [118, 21, 9], "score": "0.6659", "loss": "2.755", "code": "public void setSoapVersion(SoapVersion von) { if (version !=sionP_11) { t; } }"}
+{"time": "2021-01-23 21:10:02.523751", "n_pass": [119, 22, 10], "score": "0.6659", "loss": "2.755", "code": "public void setSoapVersion(SoapVersion von) { if (version !=sion) { t; } }"}
+{"time": "2021-01-23 21:10:17.219332", "n_pass": [136, 27, 11], "score": "0.402", "loss": "3.8328", "code": "public void setSoapVersion(SoapVersion von) { if (versiosion) { t; } }"}
+{"time": "2021-01-23 21:10:19.817810", "n_pass": [137, 28, 12], "score": "0.402", "loss": "3.8328", "code": "public void setSoapVersion(SoapVersion von) { if (versio) { t; } }"}
+{"time": "2021-01-23 21:10:31.909091", "n_pass": [153, 32, 13], "score": "0.2602", "loss": "4.4634", "code": "public void setSoapVersion(SoapVersion von) { if (ve) { t; } }"}
+{"time": "2021-01-23 21:10:43.982998", "n_pass": [201, 36, 14], "score": "0.286", "loss": "4.2969", "code": "public void setSoapVersion(SoapVersion von) { if (ve) { } }"}
+{"time": "2021-01-23 21:11:08.155205", "n_pass": [223, 44, 15], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v) { if (ve) { } }"}
+{"time": "2021-01-23 21:11:35.307427", "n_pass": [309, 52, 16], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){ if (ve) { } }"}
+{"time": "2021-01-23 21:11:37.910996", "n_pass": [311, 53, 17], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){if (ve) { } }"}
+{"time": "2021-01-23 21:11:40.521911", "n_pass": [314, 54, 18], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){if(ve) { } }"}
+{"time": "2021-01-23 21:11:48.361940", "n_pass": [319, 57, 19], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){if(ve){ } }"}
+{"time": "2021-01-23 21:11:50.980260", "n_pass": [321, 58, 20], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){if(ve){} }"}
+{"time": "2021-01-23 21:12:47.030346", "n_pass": [375, 77, 21], "score": "0.2763", "loss": "3.5713", "code": "public void setSoapVersion(SoapVersion v){if(ve){}}"}
+
+Minimal simplified code:
+public void setSoapVersion(SoapVersion v){if(ve){}}
+

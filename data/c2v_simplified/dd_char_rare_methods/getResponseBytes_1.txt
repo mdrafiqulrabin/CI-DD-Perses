@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/citations/citations-osid/web2bridge/src/java/edu/indiana/lib/twinpeaks/search/HttpTransactionQueryBase_getResponseBytes.java
+method_name = getResponseBytes
+method_body = public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }
+predict, score, loss = getResponseBytes, 0.38796091079711914, 2.013909339904785
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:42:40.333258", "n_pass": [1, 1, 1], "score": "0.388", "loss": "2.0139", "code": "public byte[] getResponseBytes() { return _transaction.getResponseBytes(); }"}
+{"time": "2021-01-23 16:42:54.577411", "n_pass": [26, 6, 2], "score": "0.388", "loss": "2.0139", "code": "public byte[] getResponseBytes() { return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:43:08.394029", "n_pass": [51, 11, 3], "score": "0.1958", "loss": "3.1876", "code": "publyte[] getResponseBytes() { return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:43:22.207828", "n_pass": [64, 16, 4], "score": "0.1958", "loss": "3.1876", "code": "yte[] getResponseBytes() { return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:44:09.301311", "n_pass": [177, 32, 5], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes() { return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:44:18.384714", "n_pass": [196, 33, 6], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes(){ return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:44:20.977692", "n_pass": [198, 34, 7], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes(){return _transaction.gBytes(); }"}
+{"time": "2021-01-23 16:44:26.165716", "n_pass": [206, 36, 8], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes(){return transaction.gBytes(); }"}
+{"time": "2021-01-23 16:44:49.504355", "n_pass": [215, 45, 9], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes(){return transaction.gtes(); }"}
+{"time": "2021-01-23 16:45:33.075664", "n_pass": [280, 59, 10], "score": "0.1958", "loss": "3.1876", "code": "yte[]getResponseBytes(){return transaction.gtes();}"}
+
+Minimal simplified code:
+yte[]getResponseBytes(){return transaction.gtes();}
+

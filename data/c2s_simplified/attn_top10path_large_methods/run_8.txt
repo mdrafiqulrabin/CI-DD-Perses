@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MariaDB__mariadb-connector-j/src/test/java/org/mariadb/jdbc/failover/TcpProxySocket_run.java
+method_name = run
+method_body = @Override public void run() { logger.trace("host proxy port " + this.localport + " for " + host + " started"); stop = false; try { try { if (ss.isClosed()) { ss = new ServerSocket(localport); } } catch (BindException b) { try { Thread.sleep(100); } catch (InterruptedException i) { } if (ss.isClosed()) { ss = new ServerSocket(localport); } } final byte[] request = new byte[1024]; byte[] reply = new byte[4096]; while (!stop) { try { client = ss.accept(); final InputStream fromClient = client.getInputStream(); final OutputStream toClient = client.getOutputStream(); try { server = new Socket(host, remoteport); } catch (IOException e) { PrintWriter out = new PrintWriter(new OutputStreamWriter(toClient)); out.println("Proxy server cannot connect to " + host + ":" + remoteport + ":\n" + e); out.flush(); client.close(); continue; } final InputStream fromServer = server.getInputStream(); final OutputStream toServer = server.getOutputStream(); new Thread(() -> { int bytesRead; try { while ((bytesRead = fromClient.read(request)) != -1) { if (delay > 0) { try { Thread.sleep(delay); } catch (InterruptedException e) { e.printStackTrace(); } } toServer.write(request, 0, bytesRead); toServer.flush(); } } catch (IOException e) { } try { toServer.close(); } catch (IOException e) { } }).start(); int bytesRead; try { while ((bytesRead = fromServer.read(reply)) != -1) { try { Thread.sleep(1); } catch (InterruptedException e) { e.printStackTrace(); } toClient.write(reply, 0, bytesRead); toClient.flush(); } } catch (IOException e) { } toClient.close(); } catch (IOException e) { } finally { try { if (server != null) { server.close(); } if (client != null) { client.close(); } } catch (IOException e) { } } } } catch (IOException e) { e.printStackTrace(); } }
+
+topk path-contexts for sub-token: run
+[0.3011] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|TryStmt|CatchClause|Parameter|VariableDeclaratorId0,b
+[0.1792] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|WhileStmt|UnaryExpr:not|NameExpr0,stop
+[0.0854] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,byte
+[0.0620] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|StringLiteralExpr1,started
+[0.0531] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,for
+[0.0487] proxy|server|cannot|connect|to,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:plus|StringLiteralExpr1,:
+[0.0361] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|VariableDeclarationExpr|ArrayBracketPair2,[]
+[0.0239] stop,NameExpr0|UnaryExpr:not|WhileStmt|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,io|exception
+[0.0129] host|proxy|port,StringLiteralExpr0|BinaryExpr:plus|BinaryExpr:plus|BinaryExpr:plus|NameExpr1,host
+[0.0097] socket,ClassOrInterfaceType0|ObjectCreationExpr1|NameExpr2,remoteport
+
+topk terminals for sub-token: run
+['void', 'b', 'void', 'stop', 'void', 'byte', 'void', 'started', 'void', 'for', 'proxy|server|cannot|connect|to', ':', 'void', '[]', 'stop', 'io|exception', 'host|proxy|port', 'host', 'socket', 'remoteport']
+

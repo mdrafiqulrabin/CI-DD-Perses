@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/util/block/VariantPagingHelper_getVariantProperty.java
+method_name = getVariantProperty
+method_body = public PropertyEnum getVariantProperty(int pageNum) { return this.pageNumToProperty.get(pageNum); }
+
+topk path-contexts:
+[0.3856] propertyenum,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),int
+[0.3212] propertyenum,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),pagenum
+[0.1587] propertyenum,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0355] pagenum,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),pagenum
+[0.0232] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),pagenum
+[0.0188] pagenum,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0154] pagenum,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(FieldAccessExpr0)_(NameExpr2),pagenumtoproperty
+[0.0066] this,(ThisExpr0)^(FieldAccessExpr0)^(MethodCallExpr)_(NameExpr2),pagenum
+[0.0047] pagenum,(NameExpr2)^(MethodCallExpr)_(NameExpr3),get
+[0.0047] pagenum,(VariableDeclaratorId0)^(Parameter)_(PrimitiveType1),int
+
+topk terminals:
+['propertyenum', 'int', 'propertyenum', 'pagenum', 'propertyenum', 'METHOD_NAME', 'pagenum', 'pagenum', 'METHOD_NAME', 'pagenum', 'pagenum', 'get', 'pagenum', 'pagenumtoproperty', 'this', 'pagenum', 'pagenum', 'get', 'pagenum', 'int']
+

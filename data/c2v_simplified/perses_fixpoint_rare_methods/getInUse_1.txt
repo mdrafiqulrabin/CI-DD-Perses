@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/HttpConnector_getInUse.java
+method_name = getInUse
+method_body = public int getInUse() { return inUse.get(); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 11:40:03.663473", "score": "0.4358", "loss": "1.4175", "code": "class T { public int getInUse() { return inUse.get(); } }"}
+{"time": "2021-01-24 11:44:29.238019", "score": "0.4358", "loss": "1.4175", "code": "class T { int getInUse() { return inUse.get(); } }"}
+
+Minimal simplified code:
+class T {
+       int getInUse() { return inUse.get(); }
+}
+
+

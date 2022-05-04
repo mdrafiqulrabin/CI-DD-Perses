@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/vmware__burp-rest-api/src/main/java/com/vmware/burp/extension/web/BurpController_handleIllegalArgumentException.java
+method_name = handleIllegalArgumentException
+method_body = @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus.BAD_REQUEST.value(), e.getMessage()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:05:44.569412", "score": "0.4779", "loss": "1.3571", "code": "class T { @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { response.sendError(HttpStatus.BAD_REQUEST.value(), e.getMessage()); } }"}
+{"time": "2021-01-24 06:06:22.195320", "score": "0.4182", "loss": "2.857", "code": "class T { @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) throws IOException { } }"}
+{"time": "2021-01-24 06:07:05.166453", "score": "0.3152", "loss": "3.2423", "code": "class T { @ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response) { } }"}
+
+Minimal simplified code:
+class T {
+@ExceptionHandler() void handleIllegalArgumentException(IllegalArgumentException e, HttpServletResponse response)                    {                                                                     }
+}
+
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-services/src/java/org/sakaiproject/tool/assessment/osid/authz/impl/FunctionIteratorImpl_nextFunction.java
+method_name = nextFunction
+method_body = public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:41:02.562834", "score": "0.4779", "loss": "1.1064", "code": "class T { public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } } }"}
+{"time": "2021-01-24 06:42:14.264865", "score": "0.6031", "loss": "1.1624", "code": "class T { public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { } } }"}
+{"time": "2021-01-24 06:43:14.793707", "score": "0.6031", "loss": "1.1624", "code": "class T { Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { } } }"}
+
+Minimal simplified code:
+class T {
+       Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) {                                                   } }
+}
+
+

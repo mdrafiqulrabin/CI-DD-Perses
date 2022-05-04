@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoActivityTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); solo = new Solo(getInstrumentation(), getActivity()); }
+
+topk path-contexts for sub-token: set
+[0.7340] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.1324] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1229] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0035] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0022] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0007] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr1|NameExpr1,get|instrumentation
+[0.0006] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0004] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr1|NameExpr1,get|instrumentation
+[0.0004] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr1|NameExpr1,get|instrumentation
+[0.0003] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,solo
+
+topk terminals for sub-token: set
+['super', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'set|up', 'void', 'exception', 'METHOD_NAME', 'exception', 'exception', 'get|instrumentation', 'void', 'METHOD_NAME', 'set|up', 'get|instrumentation', 'METHOD_NAME', 'get|instrumentation', 'exception', 'solo']
+
+topk path-contexts for sub-token: up
+[0.6609] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.1748] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1534] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0046] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,solo
+[0.0040] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,solo
+[0.0004] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,solo
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.0002] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr2|NameExpr1,get|activity
+[0.0002] set|up,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr2|NameExpr1,get|activity
+[0.0001] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|MethodCallExpr2|NameExpr1,get|activity
+
+topk terminals for sub-token: up
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'solo', 'exception', 'solo', 'set|up', 'solo', 'METHOD_NAME', 'exception', 'exception', 'get|activity', 'set|up', 'get|activity', 'METHOD_NAME', 'get|activity']
+

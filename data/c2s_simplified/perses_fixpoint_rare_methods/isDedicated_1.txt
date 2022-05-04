@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/base/Conversions_isDedicated.java
+method_name = isDedicated
+method_body = public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:14:29.353338", "score": "0.386", "loss": "1.5912", "code": "class T { public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); } }"}
+{"time": "2021-01-24 03:16:13.234449", "score": "0.3598", "loss": "1.717", "code": "class T { public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()) .anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); } }"}
+{"time": "2021-01-24 03:16:34.711085", "score": "0.5344", "loss": "1.1236", "code": "class T { public static boolean isDedicated(Offer offer) { return offer.getAttributesList() .anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); } }"}
+{"time": "2021-01-24 03:17:40.826438", "score": "0.7549", "loss": "0.6275", "code": "class T { public static boolean isDedicated( ) { return offer.getAttributesList() .anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); } }"}
+{"time": "2021-01-24 03:17:51.696743", "score": "0.7549", "loss": "0.6275", "code": "class T { boolean isDedicated( ) { return offer.getAttributesList() .anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); } }"}
+
+Minimal simplified code:
+class T {
+              boolean isDedicated(           ) { return                     offer.getAttributesList()                           .anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }
+}
+
+

@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javaee__javamail/mail/src/main/java/com/sun/mail/pop3/DefaultFolder_getInbox.java
+method_name = getInbox
+method_body = protected Folder getInbox() throws MessagingException { return getStore().getFolder("INBOX"); }
+predict, score, loss = getInbox, 0.3322128653526306, 1.5216864347457886
+
+Trace of simplified code(s):
+{"time": "2021-01-23 22:15:53.885075", "n_pass": [1, 1, 1], "score": "0.3322", "loss": "1.5217", "code": "protected Folder getInbox() throws MessagingException { return getStore().getFolder(\"INBOX\"); }"}
+{"time": "2021-01-23 22:15:56.995966", "n_pass": [20, 2, 2], "score": "0.4187", "loss": "1.5255", "code": "older getInbox() throws MessagingException { return getStore().getFolder(\"INBOX\"); }"}
+{"time": "2021-01-23 22:15:59.811011", "n_pass": [22, 3, 3], "score": "0.7504", "loss": "0.7006", "code": "older getInbox() throws eption { return getStore().getFolder(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:05.290038", "n_pass": [25, 5, 4], "score": "0.7419", "loss": "0.6002", "code": "older getInbox() throws eption { return getStore(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:14.693610", "n_pass": [50, 8, 5], "score": "0.6363", "loss": "1.6548", "code": "older getInbox() throws eption { return ge(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:21.072082", "n_pass": [81, 10, 6], "score": "0.6714", "loss": "1.4303", "code": "er getInbox() throws eption { return ge(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:24.657023", "n_pass": [88, 11, 7], "score": "0.6345", "loss": "1.9043", "code": "er getInbox() throws ion { return ge(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:34.889334", "n_pass": [142, 14, 8], "score": "0.6209", "loss": "1.6601", "code": "er getInbox() throws i { return ge(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:37.601975", "n_pass": [147, 15, 9], "score": "0.3584", "loss": "4.3779", "code": "er getInbox() throws i { returge(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:40.318991", "n_pass": [148, 16, 10], "score": "0.3584", "loss": "4.3779", "code": "er getInbox() throws i { retur(\"INBOX\"); }"}
+{"time": "2021-01-23 22:16:57.536315", "n_pass": [168, 21, 11], "score": "0.3584", "loss": "4.3779", "code": "er getInbox()throws i { retur(\"INBOX\"); }"}
+{"time": "2021-01-23 22:17:00.252930", "n_pass": [175, 22, 12], "score": "0.3584", "loss": "4.3779", "code": "er getInbox()throws i {etur(\"INBOX\"); }"}
+{"time": "2021-01-23 22:17:02.973513", "n_pass": [176, 23, 13], "score": "0.2178", "loss": "4.7943", "code": "er getInbox()throws i {ur(\"INBOX\"); }"}
+{"time": "2021-01-23 22:17:38.003228", "n_pass": [233, 34, 14], "score": "0.2178", "loss": "4.7942", "code": "er getInbox()throws i {ur(\"INBOX\");}"}
+{"time": "2021-01-23 22:17:49.859412", "n_pass": [255, 37, 15], "score": "0.2178", "loss": "4.7943", "code": "er getInbox()throws i{ur(\"INBOX\");}"}
+{"time": "2021-01-23 22:17:52.545834", "n_pass": [257, 38, 16], "score": "0.3342", "loss": "4.3982", "code": "er getInbox()throws i{r(\"INBOX\");}"}
+
+Minimal simplified code:
+er getInbox()throws i{r("INBOX");}
+

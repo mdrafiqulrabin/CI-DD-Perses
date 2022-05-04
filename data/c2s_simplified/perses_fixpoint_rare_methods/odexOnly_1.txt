@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/org/jf/dexlib2/Opcode_odexOnly.java
+method_name = odexOnly
+method_body = public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:16:35.313670", "score": "0.4431", "loss": "0.9001", "code": "class T { public final boolean odexOnly() { return (flags & ODEX_ONLY) != 0; } }"}
+{"time": "2021-01-24 07:18:09.517549", "score": "0.4431", "loss": "0.9001", "code": "class T { boolean odexOnly() { return (flags & ODEX_ONLY) != 0; } }"}
+
+Minimal simplified code:
+class T {
+             boolean odexOnly() { return (flags & ODEX_ONLY) != 0; }
+}
+
+

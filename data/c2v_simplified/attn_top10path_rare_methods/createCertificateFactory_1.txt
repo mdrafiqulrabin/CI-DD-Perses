@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/pkix/src/main/java/org/bouncycastle/cert/jcajce/NamedCertHelper_createCertificateFactory.java
+method_name = createCertificateFactory
+method_body = protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }
+
+topk path-contexts:
+[0.2211] certificateexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),providername
+[0.1233] certificateexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),certificatefactory
+[0.0855] type,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(ClassOrInterfaceType4),nosuchproviderexception
+[0.0813] nosuchproviderexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),certificatefactory
+[0.0710] certificateexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),getinstance
+[0.0701] nosuchproviderexception,(ClassOrInterfaceType4)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),providername
+[0.0567] certificatefactory,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),type
+[0.0536] certificateexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),type
+[0.0469] certificatefactory,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0387] certificatefactory,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),string
+
+topk terminals:
+['certificateexception', 'providername', 'certificateexception', 'certificatefactory', 'type', 'nosuchproviderexception', 'nosuchproviderexception', 'certificatefactory', 'certificateexception', 'getinstance', 'nosuchproviderexception', 'providername', 'certificatefactory', 'type', 'certificateexception', 'type', 'certificatefactory', 'METHOD_NAME', 'certificatefactory', 'string']
+

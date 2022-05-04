@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/common/module/screen/Error_404_execute.java
+method_name = execute
+method_body = public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get("request.contextPath"); context.put("rootContextPath", new RootContextPath(contextPath)); }
+predict, score, loss = execute, 0.9999902248382568, 1.0013530300057027e-05
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:29:31.891051", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get(\"request.contextPath\"); context.put(\"rootContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:34.559271", "n_pass": [25, 2, 2], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get(\"request.contextContextPath\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:37.209488", "n_pass": [46, 3, 3], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<String, Object> context) throws Throwable { String contextPath = (String) context.get(\"request.conte\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:40.243520", "n_pass": [52, 4, 4], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<ct> context) throws Throwable { String contextPath = (String) context.get(\"request.conte\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:42.855698", "n_pass": [56, 5, 5], "score": "0.9861", "loss": "0.0233", "code": "public void execute(Map<ct> context) throws Throwable { Strih = (String) context.get(\"request.conte\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:45.468520", "n_pass": [57, 6, 6], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<ct> context) throws Throwable { Stricontext.get(\"request.conte\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:48.080100", "n_pass": [59, 7, 7], "score": "1.0", "loss": "0.0", "code": "public void execute(Map<ct> context) throws Throwable { Stricontext.get(\"\", new RootContextPath(contextPath)); }"}
+{"time": "2020-12-28 08:29:56.366447", "n_pass": [91, 10, 8], "score": "0.9999", "loss": "0.0001", "code": "public void execute(Map<ct> context) throws Throwable { Stricontext.get(\"\", new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:29:58.963357", "n_pass": [93, 11, 9], "score": "0.9999", "loss": "0.0001", "code": " void execute(Map<ct> context) throws Throwable { Stricontext.get(\"\", new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:02.413784", "n_pass": [101, 12, 10], "score": "1.0", "loss": "0.0", "code": " void execute(Map<ct> context) throws Thro{ Stricontext.get(\"\", new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:05.023170", "n_pass": [103, 13, 11], "score": "1.0", "loss": "0.0", "code": " void execute(Map<ct> context) throws Thro{ Strit.get(\"\", new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:13.691257", "n_pass": [146, 16, 12], "score": "1.0", "loss": "0.0", "code": " void execute(Map<ct> context) throws Thro{ Striet(\"\", new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:16.325034", "n_pass": [147, 17, 13], "score": "1.0", "loss": "0.0", "code": " void execute(Map<ct> context) throws Thro{ Striet( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:31.936824", "n_pass": [157, 23, 14], "score": "1.0", "loss": "0.0", "code": "id execute(Map<ct> context) throws Thro{ Striet( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:35.759444", "n_pass": [164, 24, 15], "score": "1.0", "loss": "0.0", "code": "id execute(Map<ct>ntext) throws Thro{ Striet( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:38.370187", "n_pass": [165, 25, 16], "score": "0.9998", "loss": "0.0002", "code": "id execute(Map<ct>xt) throws Thro{ Striet( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:40.971173", "n_pass": [170, 26, 17], "score": "0.9999", "loss": "0.0002", "code": "id execute(Map<ct>xt) throws T{ Striet( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:30:43.586033", "n_pass": [172, 27, 18], "score": "0.9996", "loss": "0.0005", "code": "id execute(Map<ct>xt) throws T{ Set( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:31:00.890157", "n_pass": [239, 33, 19], "score": "0.9999", "loss": "0.0001", "code": "id execute(Map<ct>xt) throws T{ t( new RootContextPath(coth)); }"}
+{"time": "2020-12-28 08:31:24.324107", "n_pass": [252, 42, 20], "score": "1.0", "loss": "0.0", "code": "id execute(Map<ct>xt) throws T{ t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:31:26.926470", "n_pass": [256, 43, 21], "score": "1.0", "loss": "0.0", "code": "d execute(Map<ct>xt) throws T{ t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:31:33.181099", "n_pass": [267, 44, 22], "score": "1.0", "loss": "0.0", "code": "d execute(ap<ct>xt) throws T{ t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:31:35.780250", "n_pass": [268, 45, 23], "score": "1.0", "loss": "0.0", "code": "d execute(p<ct>xt) throws T{ t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:31:38.382586", "n_pass": [271, 46, 24], "score": "1.0", "loss": "0.0", "code": "d execute(p<t>xt) throws T{ t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:32:08.123081", "n_pass": [360, 55, 25], "score": "1.0", "loss": "0.0", "code": "d execute(p<t>xt) throws T{t( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:32:10.721363", "n_pass": [361, 56, 26], "score": "0.9876", "loss": "0.013", "code": "d execute(p<t>xt) throws T{( new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:32:13.324204", "n_pass": [363, 57, 27], "score": "0.9876", "loss": "0.013", "code": "d execute(p<t>xt) throws T{(new RootContextPath(ch)); }"}
+{"time": "2020-12-28 08:32:57.682039", "n_pass": [384, 74, 28], "score": "0.9877", "loss": "0.0129", "code": "d execute(p<t>xt) throws T{(new RootContextPath(h)); }"}
+{"time": "2020-12-28 08:33:00.295576", "n_pass": [385, 75, 29], "score": "0.9868", "loss": "0.014", "code": "d execute(p<t>xt) throws T{(new RootContextPath()); }"}
+{"time": "2020-12-28 08:33:02.898529", "n_pass": [389, 76, 30], "score": "0.9868", "loss": "0.014", "code": "d execute(p<t>xt) throws T{(new RootContextPath());}"}
+{"time": "2020-12-28 08:33:09.140455", "n_pass": [405, 77, 31], "score": "0.9961", "loss": "0.0045", "code": "d execute(p<t>t) throws T{(new RootContextPath());}"}
+{"time": "2020-12-28 08:33:11.767547", "n_pass": [408, 78, 32], "score": "0.9961", "loss": "0.0045", "code": "d execute(p<t>t)throws T{(new RootContextPath());}"}
+
+Minimal simplified code:
+d execute(p<t>t)throws T{(new RootContextPath());}
+

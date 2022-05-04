@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/net/TestSsl_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { if (!TesterSupport.RFC_5746_SUPPORTED) { System.setProperty("sun.security.ssl.allowUnsafeRenegotiation", "true"); } super.setUp(); }
+
+topk path-contexts for sub-token: set
+[0.8668] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.0589] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0401] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0059] true,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0024] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|FieldAccessExpr0|NameExpr2,rfc|supported
+[0.0022] system,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0020] tester|support,NameExpr0|FieldAccessExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0020] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,true
+[0.0015] tester|support,NameExpr0|FieldAccessExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr3,true
+[0.0013] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|IfStmt|UnaryExpr:not|FieldAccessExpr0|NameExpr2,rfc|supported
+
+topk terminals for sub-token: set
+['super', 'set|up', 'exception', 'set|up', 'METHOD_NAME', 'set|up', 'true', 'set|up', 'exception', 'rfc|supported', 'system', 'set|up', 'tester|support', 'set|up', 'exception', 'true', 'tester|support', 'true', 'METHOD_NAME', 'rfc|supported']
+
+topk path-contexts for sub-token: up
+[0.5456] super,SuperExpr0|MethodCallExpr|NameExpr2,set|up
+[0.2270] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.1504] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0211] true,StringLiteralExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0180] set|property,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0104] system,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0069] sunsecuritysslallow|unsafe|renegotiation,StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0061] tester|support,NameExpr0|FieldAccessExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0036] rfc|supported,NameExpr2|FieldAccessExpr|UnaryExpr:not|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|up
+[0.0020] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|property
+
+topk terminals for sub-token: up
+['super', 'set|up', 'METHOD_NAME', 'set|up', 'exception', 'set|up', 'true', 'set|up', 'set|property', 'set|up', 'system', 'set|up', 'sunsecuritysslallow|unsafe|renegotiation', 'set|up', 'tester|support', 'set|up', 'rfc|supported', 'set|up', 'exception', 'set|property']
+

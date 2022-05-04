@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/a-student__BetterVectorDrawable/lib/src/main/java/com/bettervectordrawable/lib/graphics/drawable/VectorDrawable_drawCachedBitmapWithRootAlpha.java
+method_name = drawCachedBitmapWithRootAlpha
+method_body = public void drawCachedBitmapWithRootAlpha(Canvas canvas, ColorFilter filter, Rect originalBounds) { final Paint p = getPaint(filter); canvas.drawBitmap(mCachedBitmap, null, originalBounds, p); }
+
+topk path-contexts:
+[0.2764] colorfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),mcachedbitmap
+[0.0956] originalbounds,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),originalbounds
+[0.0938] colorfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),originalbounds
+[0.0750] originalbounds,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),mcachedbitmap
+[0.0692] colorfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr6),drawbitmap
+[0.0439] colorfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),originalbounds
+[0.0414] mcachedbitmap,(NameExpr2)^(MethodCallExpr)_(NameExpr4),originalbounds
+[0.0336] originalbounds,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr6),drawbitmap
+[0.0239] colorfilter,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr2),getpaint
+[0.0216] filter,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),originalbounds
+
+topk terminals:
+['colorfilter', 'mcachedbitmap', 'originalbounds', 'originalbounds', 'colorfilter', 'originalbounds', 'originalbounds', 'mcachedbitmap', 'colorfilter', 'drawbitmap', 'colorfilter', 'originalbounds', 'mcachedbitmap', 'originalbounds', 'originalbounds', 'drawbitmap', 'colorfilter', 'getpaint', 'filter', 'originalbounds']
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/cflint__CFLint/src/main/java/com/cflint/CFLint_setLogError.java
+method_name = setLogError
+method_body = public void setLogError(final boolean logError) { this.logError = logError; }
+predict, score, loss = setLogError, 0.30292433500289917, 1.4257302284240723
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:11:55.427820", "n_pass": [1, 1, 1], "score": "0.3029", "loss": "1.4257", "code": "public void setLogError(final boolean logError) { this.logError = logError; }"}
+{"time": "2021-01-20 07:12:02.203915", "n_pass": [44, 3, 2], "score": "0.3029", "loss": "1.4257", "code": " void setLogError(final boolean logError) { this.logError = logError; }"}
+{"time": "2021-01-20 07:12:04.810603", "n_pass": [45, 4, 3], "score": "0.3029", "loss": "1.4257", "code": "void setLogError(final boolean logError) { this.logError = logError; }"}
+{"time": "2021-01-20 07:12:07.818929", "n_pass": [49, 5, 4], "score": "0.3029", "loss": "1.4257", "code": "void setLogError( boolean logError) { this.logError = logError; }"}
+{"time": "2021-01-20 07:12:10.410064", "n_pass": [54, 6, 5], "score": "0.3285", "loss": "1.1735", "code": "void setLogError( boolean logError) { logError = logError; }"}
+{"time": "2021-01-20 07:12:19.459041", "n_pass": [83, 8, 6], "score": "0.3285", "loss": "1.1735", "code": "void setLogError( boolean logError) { logError= logError; }"}
+{"time": "2021-01-20 07:12:24.668408", "n_pass": [85, 10, 7], "score": "0.3285", "loss": "1.1735", "code": "void setLogError( boolean logError) { logError=logError; }"}
+{"time": "2021-01-20 07:12:27.261418", "n_pass": [88, 11, 8], "score": "0.3285", "loss": "1.1735", "code": "void setLogError( boolean logError) { logError=logError;}"}
+{"time": "2021-01-20 07:12:30.668682", "n_pass": [94, 12, 9], "score": "0.3285", "loss": "1.1735", "code": "void setLogError(boolean logError) { logError=logError;}"}
+{"time": "2021-01-20 07:12:33.271079", "n_pass": [99, 13, 10], "score": "0.3285", "loss": "1.1735", "code": "void setLogError(boolean logError){ logError=logError;}"}
+{"time": "2021-01-20 07:12:35.867035", "n_pass": [101, 14, 11], "score": "0.3285", "loss": "1.1735", "code": "void setLogError(boolean logError){logError=logError;}"}
+
+Minimal simplified code:
+void setLogError(boolean logError){logError=logError;}
+

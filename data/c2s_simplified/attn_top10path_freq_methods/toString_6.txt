@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/FilterDef_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("FilterDef["); sb.append("filterName="); sb.append(this.filterName); sb.append(", filterClass="); sb.append(this.filterClass); sb.append("]"); return (sb.toString()); }
+
+topk path-contexts for sub-token: to
+[0.1416] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|ThisExpr0,this
+[0.1416] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|ThisExpr0,this
+[0.0841] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,]
+[0.0822] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0539] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0382] ],StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0280] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0280] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0248] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0230] sb,NameExpr0|MethodCallExpr|NameExpr2,to|string
+
+topk terminals for sub-token: to
+['string', 'this', 'string', 'this', 'string', ']', 'string', 'METHOD_NAME', 'string', 'to|string', ']', 'to|string', 'sb', 'to|string', 'sb', 'to|string', 'METHOD_NAME', 'to|string', 'sb', 'to|string']
+
+topk path-contexts for sub-token: string
+[0.1333] ],StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.1141] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.1141] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0839] sb,NameExpr0|MethodCallExpr|NameExpr2,to|string
+[0.0739] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0570] append,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0570] append,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0532] this,ThisExpr0|FieldAccessExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0438] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0422] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: string
+[']', 'to|string', 'sb', 'to|string', 'sb', 'to|string', 'sb', 'to|string', 'string', 'to|string', 'append', 'to|string', 'append', 'to|string', 'this', 'to|string', 'METHOD_NAME', 'to|string', 'string', 'METHOD_NAME']
+

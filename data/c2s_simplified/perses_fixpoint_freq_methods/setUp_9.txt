@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/channel/TestRemoteProcessException_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:02:19.535721", "score": "0.7702", "loss": "0.2709", "code": "class T { @Before public void setUp() throws Exception { channel1 = new GroupChannel(); channel2 = new GroupChannel(); listener1 = new Listener(); channel2.addChannelListener(listener1); TesterUtil.addRandomDomain(new ManagedChannel[] { channel1, channel2 }); channel1.start(Channel.DEFAULT); channel2.start(Channel.DEFAULT); } }"}
+{"time": "2020-12-21 11:02:56.820794", "score": "0.5984", "loss": "0.5429", "code": "class T { @Before public void setUp() throws Exception { } }"}
+{"time": "2020-12-21 11:03:17.931760", "score": "0.5984", "loss": "0.5429", "code": "class T { @Before void setUp() throws Exception { } }"}
+{"time": "2020-12-21 11:03:38.884604", "score": "0.3207", "loss": "1.2068", "code": "class T { @Before void setUp() { } }"}
+
+Minimal simplified code:
+class T {
+@Before        void setUp()                  {                                                                                                                                                                                                                                                                              }
+}
+
+

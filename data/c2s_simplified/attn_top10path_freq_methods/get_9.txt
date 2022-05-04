@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/MultiMap_get.java
+method_name = get
+method_body = public CBuffer get(CharSequence key) { Entry entry = getEntry(key); return (entry == null) ? null : entry.value; }
+
+topk path-contexts for sub-token: get
+[0.1504] c|buffer,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1146] key,NameExpr1|MethodCallExpr|NameExpr2,get|entry
+[0.0793] key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ConditionalExpr|FieldAccessExpr2|NameExpr2,value
+[0.0542] char|sequence,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ConditionalExpr|FieldAccessExpr2|NameExpr2,value
+[0.0523] c|buffer,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,key
+[0.0504] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ConditionalExpr|FieldAccessExpr2|NameExpr2,value
+[0.0464] null,NullLiteralExpr1|BinaryExpr:equals|EnclosedExpr|ConditionalExpr|FieldAccessExpr2|NameExpr2,value
+[0.0407] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,get|entry
+[0.0372] key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,get|entry
+[0.0314] null,NullLiteralExpr1|ConditionalExpr|FieldAccessExpr2|NameExpr2,value
+
+topk terminals for sub-token: get
+['c|buffer', 'METHOD_NAME', 'key', 'get|entry', 'key', 'value', 'char|sequence', 'value', 'c|buffer', 'key', 'METHOD_NAME', 'value', 'null', 'value', 'METHOD_NAME', 'get|entry', 'key', 'get|entry', 'null', 'value']
+

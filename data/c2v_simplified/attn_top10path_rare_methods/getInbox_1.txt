@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javaee__javamail/mail/src/main/java/com/sun/mail/pop3/DefaultFolder_getInbox.java
+method_name = getInbox
+method_body = protected Folder getInbox() throws MessagingException { return getStore().getFolder("INBOX"); }
+
+topk path-contexts:
+[0.3471] messagingexception,(ClassOrInterfaceType2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr2),inbox
+[0.2363] folder,(ClassOrInterfaceType0)^(MethodDeclaration)_(ClassOrInterfaceType2),messagingexception
+[0.1931] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(StringLiteralExpr2),inbox
+[0.0516] folder,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0515] getstore,(NameExpr1)^(MethodCallExpr0)^(MethodCallExpr)_(StringLiteralExpr2),inbox
+[0.0461] messagingexception,(ClassOrInterfaceType2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),getfolder
+[0.0314] messagingexception,(ClassOrInterfaceType2)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr1),getstore
+[0.0198] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),getfolder
+[0.0120] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr0)_(NameExpr1),getstore
+[0.0104] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(ClassOrInterfaceType2),messagingexception
+
+topk terminals:
+['messagingexception', 'inbox', 'folder', 'messagingexception', 'METHOD_NAME', 'inbox', 'folder', 'METHOD_NAME', 'getstore', 'inbox', 'messagingexception', 'getfolder', 'messagingexception', 'getstore', 'METHOD_NAME', 'getfolder', 'METHOD_NAME', 'getstore', 'METHOD_NAME', 'messagingexception']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/north2016__PianoView/Vpager/src/com/test/vp/MainActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 03:53:50.948953", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); InitTabViews(); InitViewPager(); } }"}
+{"time": "2020-12-29 03:56:53.188746", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); init(); } }"}
+{"time": "2020-12-29 03:58:08.864849", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); } }"}
+{"time": "2020-12-29 03:59:24.373222", "score": "1.0", "loss": "0.0", "code": "class T { @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-29 04:00:39.975195", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); } }"}
+{"time": "2020-12-29 04:01:19.735720", "score": "1.0", "loss": "0.0", "code": "class T { void onCreate( ) { super.onCreate(savedInstanceState); } }"}
+
+Minimal simplified code:
+class T {
+                    void onCreate(                         ) { super.onCreate(                  );                                                                         }
+}
+
+

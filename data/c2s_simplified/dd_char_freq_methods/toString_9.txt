@@ -1,0 +1,39 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/ByteChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+predict, score, loss = toString, 0.87369126, 0.19194557
+
+Trace of simplified code(s):
+{"time": "2020-12-28 01:02:40.143942", "n_pass": [1, 1, 1], "score": "0.8737", "loss": "0.1919", "code": "@Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 01:02:41.528335", "n_pass": [20, 2, 2], "score": "0.6044", "loss": "0.7153", "code": "tring toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 01:02:43.307001", "n_pass": [49, 3, 3], "score": "0.7825", "loss": "0.3852", "code": "tring toString() { if (null == buff) { return null; } else if (rt == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 01:02:44.655736", "n_pass": [51, 4, 4], "score": "0.7531", "loss": "0.4499", "code": "tring toString() { if (null == buff) { return null; } else if (rt == 0) {; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 01:02:50.334516", "n_pass": [91, 8, 5], "score": "0.5137", "loss": "1.1905", "code": "tring toString() { if (null == buff) { return null; } else if (rt == 0) {; } return Strihe.toString(this); }"}
+{"time": "2020-12-28 01:02:51.690445", "n_pass": [92, 9, 6], "score": "0.349", "loss": "1.996", "code": "tring toString() { if (null == buff) { return null; } else if (rt == 0) {; } return StriString(this); }"}
+{"time": "2020-12-28 01:02:59.074134", "n_pass": [108, 14, 7], "score": "0.3696", "loss": "1.9795", "code": "tring toString() { if (null == buff) { return null; } if (rt == 0) {; } return StriString(this); }"}
+{"time": "2020-12-28 01:03:13.440975", "n_pass": [184, 24, 8], "score": "0.3939", "loss": "1.6535", "code": "tring toString() { if (null == buff) { return null; } if (rt == 0) {; } return SString(this); }"}
+{"time": "2020-12-28 01:03:16.062867", "n_pass": [186, 26, 9], "score": "0.3122", "loss": "2.0797", "code": "tring toString() { if (null == buff) { return null; } if (rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:03:23.208224", "n_pass": [203, 30, 10], "score": "0.256", "loss": "2.3679", "code": "tring toString() { if (nul== buff) { return null; } if (rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:03:28.921920", "n_pass": [213, 34, 11], "score": "0.2473", "loss": "2.568", "code": "tring toString() { if (nul== buff) { return ll; } if (rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:03:57.327362", "n_pass": [331, 50, 12], "score": "0.2473", "loss": "2.568", "code": "tring toString() { if (nul== buff) { return ll;} if (rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:03:58.666727", "n_pass": [333, 51, 13], "score": "0.2473", "loss": "2.568", "code": "tring toString() { if (nul== buff) { return ll;}if (rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:03:59.972291", "n_pass": [336, 52, 14], "score": "0.2473", "loss": "2.568", "code": "tring toString() { if (nul== buff) { return ll;}if(rt == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:04:01.281234", "n_pass": [338, 53, 15], "score": "0.228", "loss": "2.616", "code": "tring toString() { if (nul== buff) { return ll;}if(t == 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:04:02.589266", "n_pass": [340, 54, 16], "score": "0.228", "loss": "2.616", "code": "tring toString() { if (nul== buff) { return ll;}if(t== 0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:04:06.569901", "n_pass": [343, 57, 17], "score": "0.228", "loss": "2.616", "code": "tring toString() { if (nul== buff) { return ll;}if(t==0) {; } return SStr(this); }"}
+{"time": "2020-12-28 01:04:07.915122", "n_pass": [346, 58, 18], "score": "0.228", "loss": "2.616", "code": "tring toString() { if (nul== buff) { return ll;}if(t==0){; } return SStr(this); }"}
+{"time": "2020-12-28 01:04:09.242109", "n_pass": [348, 59, 19], "score": "0.228", "loss": "2.616", "code": "tring toString() { if (nul== buff) { return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:26.092600", "n_pass": [376, 69, 20], "score": "0.228", "loss": "2.616", "code": "tring toString(){ if (nul== buff) { return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:27.400474", "n_pass": [378, 70, 21], "score": "0.228", "loss": "2.616", "code": "tring toString(){if (nul== buff) { return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:28.727814", "n_pass": [381, 71, 22], "score": "0.228", "loss": "2.616", "code": "tring toString(){if(nul== buff) { return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:36.663757", "n_pass": [388, 77, 23], "score": "0.228", "loss": "2.616", "code": "tring toString(){if(nul==buff) { return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:43.715805", "n_pass": [394, 82, 24], "score": "0.228", "loss": "2.616", "code": "tring toString(){if(nul==buff){ return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:04:45.065323", "n_pass": [396, 83, 25], "score": "0.228", "loss": "2.616", "code": "tring toString(){if(nul==buff){return ll;}if(t==0){} return SStr(this); }"}
+{"time": "2020-12-28 01:05:29.960432", "n_pass": [482, 113, 26], "score": "0.228", "loss": "2.616", "code": "tring toString(){if(nul==buff){return ll;}if(t==0){}return SStr(this); }"}
+{"time": "2020-12-28 01:05:32.632164", "n_pass": [490, 115, 27], "score": "0.3034", "loss": "2.5267", "code": "tring toString(){if(nul==buff){return ll;}if(t==0){}return Str(this); }"}
+{"time": "2020-12-28 01:05:43.359271", "n_pass": [501, 123, 28], "score": "0.3034", "loss": "2.5267", "code": "tring toString(){if(nul==buff){return ll;}if(t==0){}return Str(this);}"}
+
+Minimal simplified code:
+tring toString(){if(nul==buff){return ll;}if(t==0){}return Str(this);}
+

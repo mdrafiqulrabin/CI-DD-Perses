@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/DeliveryBean_setActionMode.java
+method_name = setActionMode
+method_body = private void setActionMode(int actionMode) { this.actionMode = actionMode; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 15:12:07.061877", "score": "0.3428", "loss": "1.1626", "code": "class T { private void setActionMode(int actionMode) { this.actionMode = actionMode; } }"}
+{"time": "2021-01-24 15:15:09.255864", "score": "0.2993", "loss": "1.2286", "code": "class T { private void setActionMode(int actionMode) { actionMode = actionMode; } }"}
+{"time": "2021-01-24 15:16:28.331816", "score": "0.2993", "loss": "1.2286", "code": "class T { void setActionMode(int actionMode) { actionMode = actionMode; } }"}
+
+Minimal simplified code:
+class T {
+        void setActionMode(int actionMode) {      actionMode = actionMode; }
+}
+
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/signup/tool/src/java/org/sakaiproject/signup/tool/jsf/NewSignupMeetingBean_getSendEmail.java
+method_name = getSendEmail
+method_body = public boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:15:13.807949", "score": "0.4551", "loss": "0.8835", "code": "class T { public boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; } }"}
+{"time": "2021-01-24 06:16:34.085085", "score": "0.4338", "loss": "0.9252", "code": "class T { public boolean getSendEmail() { if ( getPublishedSite()) sendEmail = false; return sendEmail; } }"}
+{"time": "2021-01-24 06:17:16.613182", "score": "0.4338", "loss": "0.9252", "code": "class T { boolean getSendEmail() { if ( getPublishedSite()) sendEmail = false; return sendEmail; } }"}
+
+Minimal simplified code:
+class T {
+       boolean getSendEmail() { if ( getPublishedSite()) sendEmail = false; return sendEmail; }
+}
+
+

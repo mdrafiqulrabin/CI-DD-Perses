@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withHostConfig.java
+method_name = withHostConfig
+method_body = public ContainerBuilder withHostConfig(HostConfig hostConfig) { this.hostConfig = hostConfig; return this; }
+predict, score, loss = withHostConfig, 0.46483698, 1.0494962
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:44:43.702478", "n_pass": [1, 1, 1], "score": "0.4648", "loss": "1.0495", "code": "public ContainerBuilder withHostConfig(HostConfig hostConfig) { this.hostConfig = hostConfig; return this; }"}
+{"time": "2021-01-23 07:44:47.039163", "n_pass": [25, 3, 2], "score": "0.578", "loss": "2.7954", "code": "public ContainerBuilder withHostConfig(HostConfig hostConfig) { th= hostConfig; return this; }"}
+{"time": "2021-01-23 07:44:50.040402", "n_pass": [47, 5, 3], "score": "0.3395", "loss": "2.3749", "code": "public ContainerBuilder withHostConfig(HostConfig hostConfig) { thonfig; return this; }"}
+{"time": "2021-01-23 07:44:52.686172", "n_pass": [50, 7, 4], "score": "0.3395", "loss": "2.3749", "code": " ContainerBuilder withHostConfig(HostConfig hostConfig) { thonfig; return this; }"}
+{"time": "2021-01-23 07:45:15.080231", "n_pass": [105, 22, 5], "score": "0.3395", "loss": "2.3749", "code": " ContainerBuilder withHostConfig(HostConfig hostConfig) {nfig; return this; }"}
+{"time": "2021-01-23 07:45:16.369795", "n_pass": [106, 23, 6], "score": "0.5855", "loss": "1.357", "code": " ContainerBuilder withHostConfig(HostConfig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:45:24.206910", "n_pass": [115, 29, 7], "score": "0.4827", "loss": "1.7808", "code": " ContainerBuer withHostConfig(HostConfig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:45:46.149875", "n_pass": [183, 44, 8], "score": "0.4814", "loss": "1.4401", "code": " ContainerBur withHostConfig(HostConfig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:45:47.454060", "n_pass": [184, 45, 9], "score": "0.684", "loss": "1.4483", "code": " ContainerBu withHostConfig(HostConfig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:45:53.913181", "n_pass": [195, 48, 10], "score": "0.3895", "loss": "3.2075", "code": " ContainerBu withHostConfig(Hostnfig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:45:55.203549", "n_pass": [196, 49, 11], "score": "0.3895", "loss": "3.2075", "code": " ContainerBu withHostConfig(Hostig hostConfig) {; return this; }"}
+{"time": "2021-01-23 07:46:02.990132", "n_pass": [205, 55, 12], "score": "0.3895", "loss": "3.2075", "code": " ContainerBu withHostConfig(Hostig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:46:06.854492", "n_pass": [213, 58, 13], "score": "0.3895", "loss": "3.2075", "code": "ContainerBu withHostConfig(Hostig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:46:24.936158", "n_pass": [233, 70, 14], "score": "0.3895", "loss": "3.2075", "code": "ContainerBu withHostConfig(stig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:46:26.225089", "n_pass": [234, 71, 15], "score": "0.5997", "loss": "3.5044", "code": "ContainerBu withHostConfig(ig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:46:45.640856", "n_pass": [258, 86, 16], "score": "0.4303", "loss": "3.8015", "code": "ContaineBu withHostConfig(ig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:47:08.886017", "n_pass": [291, 102, 17], "score": "0.3524", "loss": "3.4147", "code": "ContainBu withHostConfig(ig hostConfig) {return this; }"}
+{"time": "2021-01-23 07:47:54.108200", "n_pass": [397, 130, 18], "score": "0.3524", "loss": "3.4147", "code": "ContainBu withHostConfig(ig hostConfig){return this; }"}
+{"time": "2021-01-23 07:48:02.023708", "n_pass": [410, 136, 19], "score": "0.3524", "loss": "3.4147", "code": "ContainBu withHostConfig(ig hostConfig){return this;}"}
+
+Minimal simplified code:
+ContainBu withHostConfig(ig hostConfig){return this;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/CCIP-App__CCIP-Android/app/src/main/java/org/pycontw/ccip/model/Scenario_setCountdown.java
+method_name = setCountdown
+method_body = public void setCountdown(Integer countdown) { this.countdown = countdown; }
+
+topk path-contexts:
+[0.2160] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),countdown
+[0.1657] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),countdown
+[0.0999] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),countdown
+[0.0900] countdown,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),countdown
+[0.0753] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),countdown
+[0.0559] countdown,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),countdown
+[0.0507] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),countdown
+[0.0492] int,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(ThisExpr0),this
+[0.0478] this,(ThisExpr0)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),countdown
+[0.0408] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['int', 'countdown', 'METHOD_NAME', 'countdown', 'METHOD_NAME', 'countdown', 'countdown', 'countdown', 'int', 'countdown', 'countdown', 'countdown', 'void', 'countdown', 'int', 'this', 'this', 'countdown', 'void', 'METHOD_NAME']
+

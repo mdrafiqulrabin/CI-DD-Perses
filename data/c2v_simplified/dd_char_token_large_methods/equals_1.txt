@@ -1,0 +1,40 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2vec/dd_token_large_methods/equals_1.txt
+method_name = equals
+method_body = boolean equals(){(this==obj);if(obj){(null);}if((other))if(fileSize){}if(equals())(isLink);if(null){(null);}((other));if(mimeType){(null);}((other));if(null){(other);}(status());}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 17:54:53.831502", "n_pass": [1, 1, 1], "score": "0.3474", "loss": "1.6937", "code": "boolean equals(){(this==obj);if(obj){(null);}if((other))if(fileSize){}if(equals())(isLink);if(null){(null);}((other));if(mimeType){(null);}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:54:56.473562", "n_pass": [23, 2, 2], "score": "0.4007", "loss": "1.7879", "code": "boolean equals(){(this==obj);if(obj){(null);}if((other))if(fileSizk);if(null){(null);}((other));if(mimeType){(null);}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:54:59.550686", "n_pass": [58, 3, 3], "score": "0.4305", "loss": "1.621", "code": "boolean equals(){(this==obj);if(obj){(null);}if((other)k);if(null){(null);}((other));if(mimeType){(null);}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:02.612879", "n_pass": [98, 4, 4], "score": "0.5461", "loss": "1.2735", "code": "boolean equals(){(this==obj);if(obj){(null);}if((other)kull){(null);}((other));if(mimeType){(null);}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:05.286745", "n_pass": [105, 5, 5], "score": "0.6059", "loss": "1.0984", "code": "boolean equals(){(this==obj);if(obj){(null);}if((other)kull){(null);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:10.964989", "n_pass": [117, 7, 6], "score": "0.3859", "loss": "1.6753", "code": "boolean equals(){(thbj);if(obj){(null);}if((other)kull){(null);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:16.662591", "n_pass": [188, 9, 7], "score": "0.4012", "loss": "1.6172", "code": "boolean equals(){(j);if(obj){(null);}if((other)kull){(null);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:19.320595", "n_pass": [193, 10, 8], "score": "0.4403", "loss": "1.4735", "code": "boolean equals(){(j);if(obj){(l);}if((other)kull){(null);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:21.950879", "n_pass": [197, 11, 9], "score": "0.1622", "loss": "2.9886", "code": "boolean equals(){(j);if(obj){(l);}if((or)kull){(null);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:27.208534", "n_pass": [201, 13, 10], "score": "0.1945", "loss": "2.7761", "code": "boolean equals(){(j);if(obj){(l);}if((or)kull){(l);}((other));if(mimeType){;}((other));if(null){(other);}(status());}"}
+{"time": "2021-01-22 17:55:45.746782", "n_pass": [222, 20, 11], "score": "0.2365", "loss": "2.5195", "code": "boolean equals(){(j);if(obj){(l);}if((or)kull){(l);}((other));if(mimeType){;}((other));if(null){(other);}(sts());}"}
+{"time": "2021-01-22 17:55:48.389417", "n_pass": [223, 21, 12], "score": "0.2169", "loss": "2.6008", "code": "boolean equals(){(j);if(obj){(l);}if((or)kull){(l);}((other));if(mimeType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:00.559697", "n_pass": [242, 25, 13], "score": "0.2069", "loss": "2.6576", "code": "boolean equals(){(j);if(obj){(l);}if((or)k){(l);}((other));if(mimeType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:30.100161", "n_pass": [364, 35, 14], "score": "0.3231", "loss": "1.9313", "code": "boolean equals(){(j);if(obj){(l);}if((r)k){(l);}((other));if(mimeType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:32.747493", "n_pass": [367, 36, 15], "score": "0.323", "loss": "1.8724", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((other));if(mimeType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:38.039349", "n_pass": [377, 38, 16], "score": "0.9644", "loss": "0.0979", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(mimeType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:43.311980", "n_pass": [382, 40, 17], "score": "0.9602", "loss": "0.0992", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miType){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:48.550627", "n_pass": [384, 42, 18], "score": "0.9838", "loss": "0.0321", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((other));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:51.180490", "n_pass": [388, 43, 19], "score": "0.9506", "loss": "0.0982", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((her));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:53.802945", "n_pass": [389, 44, 20], "score": "0.9763", "loss": "0.0475", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(null){(other);}(st);}"}
+{"time": "2021-01-22 17:56:56.427264", "n_pass": [394, 45, 21], "score": "0.9674", "loss": "0.0745", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(nl){(other);}(st);}"}
+{"time": "2021-01-22 17:56:59.049455", "n_pass": [397, 46, 22], "score": "0.8934", "loss": "0.2079", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(nl){(her);}(st);}"}
+{"time": "2021-01-22 17:57:01.671026", "n_pass": [398, 47, 23], "score": "0.9543", "loss": "0.1017", "code": "boolean equals(){(j);if(obj){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(nl){(r);}(st);}"}
+{"time": "2021-01-22 17:57:25.629093", "n_pass": [428, 55, 24], "score": "0.9603", "loss": "0.1368", "code": "boolean equals(){(j);if(bj){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(nl){(r);}(st);}"}
+{"time": "2021-01-22 17:57:28.249569", "n_pass": [429, 56, 25], "score": "0.812", "loss": "0.4627", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(miTy){;}((r));if(nl){(r);}(st);}"}
+{"time": "2021-01-22 17:57:33.525550", "n_pass": [456, 58, 26], "score": "0.621", "loss": "0.991", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(Ty){;}((r));if(nl){(r);}(st);}"}
+{"time": "2021-01-22 17:58:01.929662", "n_pass": [569, 67, 27], "score": "0.4341", "loss": "1.3606", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(Ty){;}((r));if(l){(r);}(st);}"}
+{"time": "2021-01-22 17:58:04.602715", "n_pass": [579, 68, 28], "score": "0.4835", "loss": "1.2298", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(Ty){;}((r));if(l){(r);}(t);}"}
+{"time": "2021-01-22 17:58:36.435056", "n_pass": [640, 79, 29], "score": "0.7926", "loss": "0.4108", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(y){;}((r));if(l){(r);}(t);}"}
+{"time": "2021-01-22 17:58:39.054347", "n_pass": [644, 80, 30], "score": "0.7926", "loss": "0.4108", "code": "boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(y){}((r));if(l){(r);}(t);}"}
+
+Minimal simplified code:
+boolean equals(){(j);if(j){(l);}if((r)){(l);}((oth));if(y){}((r));if(l){(r);}(t);}
+

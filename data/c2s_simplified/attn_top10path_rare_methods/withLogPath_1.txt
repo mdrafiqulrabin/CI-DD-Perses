@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withLogPath.java
+method_name = withLogPath
+method_body = public ContainerBuilder withLogPath(String logPath) { this.logPath = logPath; return this; }
+
+topk path-contexts for sub-token: with
+[0.1431] this,ThisExpr0|FieldAccessExpr0|NameExpr2,log|path
+[0.1348] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.1272] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0636] container|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0512] log|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0355] container|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0300] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,log|path
+[0.0253] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,log|path
+[0.0252] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+[0.0248] container|builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,log|path
+
+topk terminals for sub-token: with
+['this', 'log|path', 'string', 'log|path', 'METHOD_NAME', 'log|path', 'container|builder', 'METHOD_NAME', 'log|path', 'log|path', 'container|builder', 'string', 'this', 'log|path', 'METHOD_NAME', 'log|path', 'string', 'log|path', 'container|builder', 'log|path']
+
+topk path-contexts for sub-token: log
+[0.1510] this,ThisExpr0|FieldAccessExpr0|NameExpr2,log|path
+[0.1389] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.1361] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0864] log|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0752] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,log|path
+[0.0403] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+[0.0325] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,log|path
+[0.0314] log|path,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,log|path
+[0.0272] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+[0.0256] log|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+
+topk terminals for sub-token: log
+['this', 'log|path', 'METHOD_NAME', 'log|path', 'string', 'log|path', 'log|path', 'log|path', 'METHOD_NAME', 'log|path', 'METHOD_NAME', 'log|path', 'this', 'log|path', 'log|path', 'log|path', 'string', 'log|path', 'log|path', 'log|path']
+
+topk path-contexts for sub-token: path
+[0.2292] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,log|path
+[0.1057] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0921] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0855] log|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,log|path
+[0.0734] this,ThisExpr0|FieldAccessExpr0|NameExpr2,log|path
+[0.0611] log|path,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0447] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+[0.0416] log|path,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+[0.0406] log|path,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,log|path
+[0.0359] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,log|path
+
+topk terminals for sub-token: path
+['METHOD_NAME', 'log|path', 'string', 'log|path', 'METHOD_NAME', 'log|path', 'log|path', 'log|path', 'this', 'log|path', 'log|path', 'string', 'string', 'log|path', 'log|path', 'log|path', 'log|path', 'log|path', 'METHOD_NAME', 'log|path']
+

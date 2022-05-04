@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ContainerBuilder_withHostConfig.java
+method_name = withHostConfig
+method_body = public ContainerBuilder withHostConfig(HostConfig hostConfig) { this.hostConfig = hostConfig; return this; }
+
+topk path-contexts for sub-token: with
+[0.1442] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.1177] this,ThisExpr0|FieldAccessExpr0|NameExpr2,host|config
+[0.0826] host|config,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0764] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0425] container|builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0260] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,host|config
+[0.0244] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,host|config
+[0.0221] host|config,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,host|config
+[0.0219] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0197] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,host|config
+
+topk terminals for sub-token: with
+['METHOD_NAME', 'host|config', 'this', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'container|builder', 'METHOD_NAME', 'METHOD_NAME', 'host|config', 'this', 'host|config', 'host|config', 'host|config', 'host|config', 'this', 'METHOD_NAME', 'host|config']
+
+topk path-contexts for sub-token: host
+[0.1330] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.1104] this,ThisExpr0|FieldAccessExpr0|NameExpr2,host|config
+[0.0832] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,host|config
+[0.0735] host|config,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0637] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0315] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0304] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,host|config
+[0.0250] host|config,NameExpr2|FieldAccessExpr0|AssignExpr:assign|NameExpr1,host|config
+[0.0240] host|config,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0237] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,host|config
+
+topk terminals for sub-token: host
+['METHOD_NAME', 'host|config', 'this', 'host|config', 'METHOD_NAME', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'this', 'METHOD_NAME', 'host|config', 'host|config', 'host|config', 'host|config', 'this', 'this', 'host|config']
+
+topk path-contexts for sub-token: config
+[0.1810] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,host|config
+[0.0914] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,host|config
+[0.0875] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0698] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0694] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0623] host|config,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,host|config
+[0.0490] host|config,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr1,host|config
+[0.0445] host|config,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,host|config
+[0.0410] this,ThisExpr0|FieldAccessExpr0|NameExpr2,host|config
+[0.0386] host|config,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: config
+['METHOD_NAME', 'host|config', 'METHOD_NAME', 'host|config', 'host|config', 'this', 'host|config', 'host|config', 'METHOD_NAME', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'host|config', 'this', 'host|config', 'host|config', 'this']
+

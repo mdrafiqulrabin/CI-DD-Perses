@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/Stetho_newInitializerBuilder.java
+method_name = newInitializerBuilder
+method_body = public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:37:22.449676", "score": "0.348", "loss": "4.8937", "code": "class T { public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); } }"}
+{"time": "2021-01-24 05:38:42.146975", "score": "0.348", "loss": "4.8937", "code": "class T { InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); } }"}
+
+Minimal simplified code:
+class T {
+              InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }
+}
+
+

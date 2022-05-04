@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxBufferedRecords.java
+method_name = setMaxBufferedRecords
+method_body = public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }
+predict, score, loss = setMaxBufferedRecords, 0.47694722, 0.8253592
+
+Trace of simplified code(s):
+{"time": "2021-01-23 07:33:21.321732", "n_pass": [1, 1, 1], "score": "0.4769", "loss": "0.8254", "code": "public Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:26.667270", "n_pass": [44, 4, 2], "score": "0.4769", "loss": "0.8254", "code": "Builder setMaxBufferedRecords(int maxBufferedRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:29.398081", "n_pass": [50, 5, 3], "score": "0.6196", "loss": "0.5847", "code": "Builder setMaxBufferedRecords(int madRecords) { this.maxBufferedRecords = maxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:33.291481", "n_pass": [54, 8, 4], "score": "0.6607", "loss": "1.1527", "code": "Builder setMaxBufferedRecords(int madRecords) { this.maxBuffrds = maxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:34.607877", "n_pass": [55, 9, 5], "score": "0.4558", "loss": "1.846", "code": "Builder setMaxBufferedRecords(int madRecords) { this.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:48.982035", "n_pass": [100, 19, 6], "score": "0.5335", "loss": "1.7547", "code": "lder setMaxBufferedRecords(int madRecords) { this.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:50.299723", "n_pass": [101, 20, 7], "score": "0.5698", "loss": "1.6322", "code": "r setMaxBufferedRecords(int madRecords) { this.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:33:53.759088", "n_pass": [110, 21, 8], "score": "0.3731", "loss": "2.1686", "code": "r setMaxBufferedRecords(int maords) { this.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:34:08.315831", "n_pass": [174, 30, 9], "score": "0.3731", "loss": "2.1686", "code": "r setMaxBufferedRecords(int mads) { this.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:34:09.603485", "n_pass": [177, 31, 10], "score": "0.4768", "loss": "2.3018", "code": "r setMaxBufferedRecords(int mads) { is.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:34:33.363087", "n_pass": [212, 46, 11], "score": "0.4008", "loss": "3.3412", "code": "r setMaxBufferedRecords(t mads) { is.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:34:34.665956", "n_pass": [214, 47, 12], "score": "0.4298", "loss": "3.0793", "code": "r setMaxBufferedRecords(t ds) { is.maxBuffxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:34:39.857768", "n_pass": [222, 51, 13], "score": "0.3032", "loss": "2.6252", "code": "r setMaxBufferedRecords(t ds) { is.maxBuxBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:35:05.079538", "n_pass": [330, 65, 14], "score": "0.3332", "loss": "3.865", "code": "r setMaxBufferedRecords(t ds) { is.maxBuBufferedRecords; return this; }"}
+{"time": "2021-01-23 07:35:24.724841", "n_pass": [346, 80, 15], "score": "0.3332", "loss": "3.865", "code": "r setMaxBufferedRecords(t ds) { is.maxBuBufferedRecords;return this; }"}
+{"time": "2021-01-23 07:35:32.569392", "n_pass": [359, 86, 16], "score": "0.3332", "loss": "3.865", "code": "r setMaxBufferedRecords(t ds) { is.maxBuBufferedRecords;return this;}"}
+{"time": "2021-01-23 07:35:44.813421", "n_pass": [390, 89, 17], "score": "0.3332", "loss": "3.865", "code": "r setMaxBufferedRecords(t ds){ is.maxBuBufferedRecords;return this;}"}
+{"time": "2021-01-23 07:35:46.114643", "n_pass": [392, 90, 18], "score": "0.3332", "loss": "3.865", "code": "r setMaxBufferedRecords(t ds){is.maxBuBufferedRecords;return this;}"}
+{"time": "2021-01-23 07:35:56.490713", "n_pass": [400, 98, 19], "score": "0.314", "loss": "3.0102", "code": "r setMaxBufferedRecords(t ds){is.maxBBufferedRecords;return this;}"}
+{"time": "2021-01-23 07:35:57.789356", "n_pass": [401, 99, 20], "score": "0.3", "loss": "2.4947", "code": "r setMaxBufferedRecords(t ds){is.maxBufferedRecords;return this;}"}
+
+Minimal simplified code:
+r setMaxBufferedRecords(t ds){is.maxBufferedRecords;return this;}
+

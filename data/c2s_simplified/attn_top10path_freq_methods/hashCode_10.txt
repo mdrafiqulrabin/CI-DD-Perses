@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/sync/util/Pair_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((key == null) ? 0 : key.hashCode()); result = prime * result + ((value == null) ? 0 : value.hashCode()); return result; }
+
+topk path-contexts for sub-token: hash
+[0.1373] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.1373] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.1034] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.0748] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0738] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,<NUM>
+[0.0356] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,prime
+[0.0302] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|EnclosedExpr|ConditionalExpr|IntegerLiteralExpr1,0
+[0.0302] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|BinaryExpr:plus|EnclosedExpr|ConditionalExpr|IntegerLiteralExpr1,0
+[0.0256] 0,IntegerLiteralExpr1|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+[0.0256] 0,IntegerLiteralExpr1|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+
+topk terminals for sub-token: hash
+['int', 'int', 'int', 'int', 'int', '1', 'int', 'METHOD_NAME', 'int', '<NUM>', 'int', 'prime', 'int', '0', 'int', '0', '0', 'hash|code', '0', 'hash|code']
+
+topk path-contexts for sub-token: code
+[0.2558] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.2103] int,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1195] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,<NUM>
+[0.0968] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0968] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|PrimitiveType0,int
+[0.0284] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,1
+[0.0200] int,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,result
+[0.0139] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,int
+[0.0137] null,NullLiteralExpr1|BinaryExpr:equals|EnclosedExpr|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+[0.0137] null,NullLiteralExpr1|BinaryExpr:equals|EnclosedExpr|ConditionalExpr|MethodCallExpr2|NameExpr2,hash|code
+
+topk terminals for sub-token: code
+['int', '1', 'int', 'METHOD_NAME', 'int', '<NUM>', 'int', 'int', 'int', 'int', 'METHOD_NAME', '1', 'int', 'result', 'override', 'int', 'null', 'hash|code', 'null', 'hash|code']
+

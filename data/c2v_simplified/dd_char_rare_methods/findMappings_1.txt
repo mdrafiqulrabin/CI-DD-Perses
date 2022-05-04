@@ -1,0 +1,53 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/core/StandardWrapper_findMappings.java
+method_name = findMappings
+method_body = @Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }
+predict, score, loss = findMappings, 0.17804205417633057, 2.4832053184509277
+
+Trace of simplified code(s):
+{"time": "2021-01-23 14:46:32.342714", "n_pass": [1, 1, 1], "score": "0.178", "loss": "2.4832", "code": "@Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mappingsLock.readLock().unlock(); } }"}
+{"time": "2021-01-23 14:46:51.223150", "n_pass": [57, 8, 2], "score": "0.205", "loss": "3.2129", "code": "@Override public String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:47:15.314031", "n_pass": [108, 17, 3], "score": "0.2146", "loss": "3.1599", "code": "@Overpublic String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:47:17.950090", "n_pass": [109, 18, 4], "score": "0.2146", "loss": "3.1599", "code": "@Overc String[] findMappings() { try { mappingsLock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:47:24.045771", "n_pass": [117, 20, 5], "score": "0.2146", "loss": "3.1599", "code": "@Overc String[] findMappings() { try { mapock.readLock().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:47:29.277595", "n_pass": [119, 22, 6], "score": "0.2012", "loss": "3.2375", "code": "@Overc String[] findMappings() { try { mapock.re().lock(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:48:01.594583", "n_pass": [199, 34, 7], "score": "0.2605", "loss": "2.8776", "code": "@Overc String[] findMappings() { try { mapock.re().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:48:58.536245", "n_pass": [247, 55, 8], "score": "0.2605", "loss": "2.8776", "code": "@Overc String[] findMappings() { try { ock.re().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:49:01.153753", "n_pass": [249, 56, 9], "score": "0.3052", "loss": "2.8297", "code": "@Overc String[] findMappings() { try { ock().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().unlock(); } }"}
+{"time": "2021-01-23 14:49:43.060619", "n_pass": [279, 72, 10], "score": "0.311", "loss": "2.4405", "code": "@Overc String[] findMappings() { try { ock().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:49:48.286357", "n_pass": [285, 74, 11], "score": "0.2154", "loss": "3.1946", "code": "@Ove String[] findMappings() { try { ock().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:50:39.688554", "n_pass": [332, 93, 12], "score": "0.289", "loss": "2.5381", "code": "@O String[] findMappings() { try { ock().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:51:31.111102", "n_pass": [378, 112, 13], "score": "0.2914", "loss": "1.8796", "code": " String[] findMappings() { try { ock().k(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:51:45.884399", "n_pass": [392, 117, 14], "score": "0.4894", "loss": "1.1625", "code": " String[] findMappings() { try { ockk(); return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:51:48.524386", "n_pass": [393, 118, 15], "score": "0.5019", "loss": "1.1417", "code": " String[] findMappings() { try { ock; return mappings.toArray(new String[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:52:12.118909", "n_pass": [405, 127, 16], "score": "0.4565", "loss": "1.2405", "code": " String[] findMappings() { try { ock; return mappings.toArray(new Str[mappings.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:52:14.724431", "n_pass": [407, 128, 17], "score": "0.1989", "loss": "2.5716", "code": " String[] findMappings() { try { ock; return mappings.toArray(new Str[mangs.size()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:52:19.946669", "n_pass": [409, 130, 18], "score": "0.2202", "loss": "2.4973", "code": " String[] findMappings() { try { ock; return mappings.toArray(new Str[mangsze()]); } finally { mreadLock().uck(); } }"}
+{"time": "2021-01-23 14:52:22.564687", "n_pass": [417, 131, 19], "score": "0.4343", "loss": "0.9165", "code": " String[] findMappings() { try { ock; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:52:39.958382", "n_pass": [436, 137, 20], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings() { try { ; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:21.408489", "n_pass": [551, 151, 21], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){ try { ; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:24.043692", "n_pass": [553, 152, 22], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){try { ; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:26.685968", "n_pass": [557, 153, 23], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){try{ ; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:29.347705", "n_pass": [559, 154, 24], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){try{; return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:31.959151", "n_pass": [560, 155, 25], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){try{ return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:34.569848", "n_pass": [561, 156, 26], "score": "0.4331", "loss": "0.9182", "code": " String[] findMappings(){try{return mappings.toArray(new Str[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:53:58.197312", "n_pass": [578, 165, 27], "score": "0.4594", "loss": "0.8534", "code": " String[] findMappings(){try{return mappings.toArray(neStr[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:54:00.820736", "n_pass": [579, 166, 28], "score": "0.5931", "loss": "0.6571", "code": " String[] findMappings(){try{return mappings.toArray(ner[mangsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:54:03.466630", "n_pass": [581, 167, 29], "score": "0.5931", "loss": "0.6571", "code": " String[] findMappings(){try{return mappings.toArray(ner[ngsze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:54:06.077780", "n_pass": [582, 168, 30], "score": "0.6052", "loss": "0.649", "code": " String[] findMappings(){try{return mappings.toArray(ner[sze()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:54:08.694138", "n_pass": [583, 169, 31], "score": "0.5907", "loss": "0.6615", "code": " String[] findMappings(){try{return mappings.toArray(ner[e()]); } finally { mdLock().uck(); } }"}
+{"time": "2021-01-23 14:54:13.932435", "n_pass": [594, 171, 32], "score": "0.6248", "loss": "0.6139", "code": " String[] findMappings(){try{return mappings.toArray(ner[e()]); } finally { mock().uck(); } }"}
+{"time": "2021-01-23 14:54:16.539531", "n_pass": [595, 172, 33], "score": "0.5283", "loss": "0.9364", "code": " String[] findMappings(){try{return mappings.toArray(ner[e()]); } finally { mk().uck(); } }"}
+{"time": "2021-01-23 14:54:19.146064", "n_pass": [598, 173, 34], "score": "0.3853", "loss": "1.3395", "code": " String[] findMappings(){try{return mappings.toArray(ner[e()]); } finally { mk().k(); } }"}
+{"time": "2021-01-23 14:54:21.780143", "n_pass": [603, 174, 35], "score": "0.3853", "loss": "1.3395", "code": "String[] findMappings(){try{return mappings.toArray(ner[e()]); } finally { mk().k(); } }"}
+{"time": "2021-01-23 14:54:40.100292", "n_pass": [612, 181, 36], "score": "0.3853", "loss": "1.3395", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]); } finally { mk().k(); } }"}
+{"time": "2021-01-23 14:55:11.229231", "n_pass": [658, 191, 37], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]); } finally {k().k(); } }"}
+{"time": "2021-01-23 14:56:01.100434", "n_pass": [775, 207, 38], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]); } finally {k().k();} }"}
+{"time": "2021-01-23 14:56:03.731752", "n_pass": [776, 208, 39], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]); } finally {k().k();}}"}
+{"time": "2021-01-23 14:57:19.325127", "n_pass": [839, 235, 40], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]);} finally {k().k();}}"}
+{"time": "2021-01-23 14:57:21.936123", "n_pass": [841, 236, 41], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]);}finally {k().k();}}"}
+{"time": "2021-01-23 14:57:24.571884", "n_pass": [849, 237, 42], "score": "0.4325", "loss": "1.053", "code": "String[]findMappings(){try{return mappings.toArray(ner[e()]);}finally{k().k();}}"}
+
+Minimal simplified code:
+String[]findMappings(){try{return mappings.toArray(ner[e()]);}finally{k().k();}}
+

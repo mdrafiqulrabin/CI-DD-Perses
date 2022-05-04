@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/main/java/erogenousbeef/bigreactors/common/multiblock/helpers/FuelContainer_setFuel.java
+method_name = setFuel
+method_body = public void setFuel(ReactantStack newFuel) { setReactant(FUEL, newFuel); }
+
+topk path-contexts:
+[0.2362] fuel,(NameExpr1)^(MethodCallExpr)_(NameExpr3),setreactant
+[0.1915] reactantstack,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),fuel
+[0.1061] fuel,(NameExpr1)^(MethodCallExpr)_(NameExpr2),newfuel
+[0.0882] newfuel,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),fuel
+[0.0542] reactantstack,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),newfuel
+[0.0532] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr1),fuel
+[0.0399] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setreactant
+[0.0346] reactantstack,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setreactant
+[0.0338] void,(VoidType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0332] newfuel,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),setreactant
+
+topk terminals:
+['fuel', 'setreactant', 'reactantstack', 'fuel', 'fuel', 'newfuel', 'newfuel', 'fuel', 'reactantstack', 'newfuel', 'METHOD_NAME', 'fuel', 'METHOD_NAME', 'setreactant', 'reactantstack', 'setreactant', 'void', 'METHOD_NAME', 'newfuel', 'setreactant']
+

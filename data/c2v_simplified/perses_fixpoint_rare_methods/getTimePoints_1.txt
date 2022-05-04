@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/alphatica__genotick/src/main/java/com/alphatica/genotick/data/DataSet_getTimePoints.java
+method_name = getTimePoints
+method_body = List<TimePoint> getTimePoints() { return Arrays.asList(timePoints); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 04:09:49.870297", "score": "0.3224", "loss": "2.276", "code": "class T { List<TimePoint> getTimePoints() { return Arrays.asList(timePoints); } }"}
+{"time": "2021-01-25 04:13:34.339363", "score": "0.8302", "loss": "1.0588", "code": "class T { List<TimePoint> getTimePoints() { return asList ; } }"}
+
+Minimal simplified code:
+class T {
+List<TimePoint> getTimePoints() { return        asList            ; }
+}
+
+

@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+predict, score, loss = get, 0.9183927, 0.66571724
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:15:57.264136", "n_pass": [1, 1, 1], "score": "0.9184", "loss": "0.6657", "code": "public T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-27 04:15:58.605311", "n_pass": [44, 2, 2], "score": "0.9184", "loss": "0.6657", "code": "T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-27 04:16:02.585608", "n_pass": [57, 5, 3], "score": "0.7447", "loss": "1.8943", "code": "T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } ; }"}
+{"time": "2020-12-27 04:16:05.219635", "n_pass": [69, 7, 4], "score": "0.7156", "loss": "2.1875", "code": "T get() { if (value == null) { throw new NoSuchElementException(\"No \"); } ; }"}
+{"time": "2020-12-27 04:16:06.531975", "n_pass": [80, 8, 5], "score": "0.7632", "loss": "2.7666", "code": "T get() { if (value == null) {  NoSuchElementException(\"No \"); } ; }"}
+{"time": "2020-12-27 04:16:09.868368", "n_pass": [119, 9, 6], "score": "0.7632", "loss": "2.7666", "code": "T get() { if (value == null) {NoSuchElementException(\"No \"); } ; }"}
+{"time": "2020-12-27 04:16:11.167430", "n_pass": [125, 10, 7], "score": "0.7632", "loss": "2.7666", "code": "T get() { if (value == null) {NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:13.539236", "n_pass": [132, 11, 8], "score": "0.7632", "loss": "2.7666", "code": "T get(){ if (value == null) {NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:14.872693", "n_pass": [134, 12, 9], "score": "0.7632", "loss": "2.7666", "code": "T get(){if (value == null) {NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:16.194741", "n_pass": [136, 13, 10], "score": "0.7632", "loss": "2.7666", "code": "T get(){if(value == null) {NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:26.171605", "n_pass": [178, 18, 11], "score": "0.7632", "loss": "2.7666", "code": "T get(){if(value ==null) {NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:27.497485", "n_pass": [181, 19, 12], "score": "0.7632", "loss": "2.7666", "code": "T get(){if(value ==null){NoSuchElementException(\"No \"); } }"}
+{"time": "2020-12-27 04:16:30.172060", "n_pass": [186, 21, 13], "score": "0.7137", "loss": "2.8452", "code": "T get(){if(value ==null){NoSuchElementException(\" \"); } }"}
+{"time": "2020-12-27 04:16:32.793642", "n_pass": [191, 23, 14], "score": "0.7137", "loss": "2.8452", "code": "T get(){if(value ==null){NoSuchElementException(\" \");} }"}
+{"time": "2020-12-27 04:16:34.114701", "n_pass": [193, 24, 15], "score": "0.7137", "loss": "2.8452", "code": "T get(){if(value ==null){NoSuchElementException(\" \");}}"}
+{"time": "2020-12-27 04:16:36.492937", "n_pass": [204, 25, 16], "score": "0.7137", "loss": "2.8452", "code": "T get(){if(value==null){NoSuchElementException(\" \");}}"}
+
+Minimal simplified code:
+T get(){if(value==null){NoSuchElementException(" ");}}
+

@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/NioSenderTest_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }
+predict, score, loss = main, 0.9992907047271729, 0.0007219092221930623
+
+Trace of simplified code(s):
+{"time": "2020-12-28 07:38:10.103593", "n_pass": [1, 1, 1], "score": "0.9993", "loss": "0.0007", "code": "public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:12.725082", "n_pass": [20, 2, 2], "score": "0.9967", "loss": "0.0036", "code": "id main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:15.352909", "n_pass": [46, 3, 3], "score": "0.9816", "loss": "0.0199", "code": "id main(String[] args) throws Ex{ NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:17.964834", "n_pass": [47, 4, 4], "score": "0.9706", "loss": "0.034", "code": "id main(String[] args) throws Ex{ NioSensender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:20.602294", "n_pass": [49, 5, 5], "score": "0.9607", "loss": "0.0437", "code": "id main(String[] args) throws Ex{ NioSensender =SenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:23.208999", "n_pass": [50, 6, 6], "score": "0.9583", "loss": "0.0462", "code": "id main(String[] args) throws Ex{ NioSensender =st(); sender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:25.810954", "n_pass": [51, 7, 7], "score": "0.9812", "loss": "0.0228", "code": "id main(String[] args) throws Ex{ NioSensender =der.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:28.423287", "n_pass": [60, 8, 8], "score": "0.9932", "loss": "0.0072", "code": "id main(String[] args) throws Ex{ NioSender.init(); sender.run(); }"}
+{"time": "2020-12-28 07:38:31.057722", "n_pass": [85, 9, 9], "score": "0.7898", "loss": "0.2687", "code": "id main(String[] args) throws Ex{ NioSeninit(); sender.run(); }"}
+{"time": "2020-12-28 07:38:33.659809", "n_pass": [86, 10, 10], "score": "0.7898", "loss": "0.2687", "code": "id main(String[] args) throws Ex{ NioSen(); sender.run(); }"}
+{"time": "2020-12-28 07:38:36.270652", "n_pass": [87, 11, 11], "score": "0.8981", "loss": "0.1331", "code": "id main(String[] args) throws Ex{ NioSensender.run(); }"}
+{"time": "2020-12-28 07:38:38.883651", "n_pass": [88, 12, 12], "score": "0.8981", "loss": "0.1331", "code": "id main(String[] args) throws Ex{ NioSenr.run(); }"}
+{"time": "2020-12-28 07:38:44.464752", "n_pass": [93, 14, 13], "score": "0.7116", "loss": "0.5333", "code": "id main(ng[] args) throws Ex{ NioSenr.run(); }"}
+{"time": "2020-12-28 07:38:49.646629", "n_pass": [100, 16, 14], "score": "0.3864", "loss": "1.3392", "code": "id main(ng[] args) throws Ex{ Nir.run(); }"}
+{"time": "2020-12-28 07:39:14.695572", "n_pass": [150, 25, 15], "score": "0.6311", "loss": "0.5964", "code": "id main(ng[] args) throws Ex{ r.run(); }"}
+{"time": "2020-12-28 07:39:26.328647", "n_pass": [160, 29, 16], "score": "0.4056", "loss": "1.0957", "code": "id main(ng args) throws Ex{ r.run(); }"}
+{"time": "2020-12-28 07:39:52.851984", "n_pass": [221, 38, 17], "score": "0.4056", "loss": "1.0957", "code": "id main(ng args)throws Ex{ r.run(); }"}
+{"time": "2020-12-28 07:39:55.459152", "n_pass": [228, 39, 18], "score": "0.6173", "loss": "0.6126", "code": "id main(ng args)throws x{ r.run(); }"}
+{"time": "2020-12-28 07:39:58.054168", "n_pass": [231, 40, 19], "score": "0.6173", "loss": "0.6126", "code": "id main(ng args)throws x{r.run(); }"}
+{"time": "2020-12-28 07:40:11.066525", "n_pass": [240, 45, 20], "score": "0.9539", "loss": "0.0482", "code": "d main(ng args)throws x{r.run(); }"}
+{"time": "2020-12-28 07:40:16.106922", "n_pass": [248, 46, 21], "score": "0.7781", "loss": "0.252", "code": "d main(g args)throws x{r.run(); }"}
+{"time": "2020-12-28 07:40:29.077950", "n_pass": [266, 51, 22], "score": "0.4282", "loss": "0.9354", "code": "d main(g args)throws x{rrun(); }"}
+{"time": "2020-12-28 07:40:31.671126", "n_pass": [267, 52, 23], "score": "0.9042", "loss": "0.1036", "code": "d main(g args)throws x{run(); }"}
+{"time": "2020-12-28 07:40:55.677602", "n_pass": [303, 60, 24], "score": "0.9042", "loss": "0.1036", "code": "d main(g args)throws x{run();}"}
+
+Minimal simplified code:
+d main(g args)throws x{run();}
+

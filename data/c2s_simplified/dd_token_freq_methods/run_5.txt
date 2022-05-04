@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/SimpleMonitorService_run.java
+method_name = run
+method_body = public void run() { try { draw(); } catch (Throwable t) { logger.error("Unexpected error occur at draw stat chart, cause: " + t.getMessage(), t); } }
+predict, score, loss = run, 0.8132311, 0.40889314
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:48:45.633976", "n_pass": [1, 1, 1], "score": "0.8132", "loss": "0.4089", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"Unexpected error occur at draw stat chart, cause: \" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 03:48:46.968705", "n_pass": [10, 2, 2], "score": "0.6869", "loss": "0.6958", "code": "public void run() { try { draw(); } catch (Throwable t) { logger.error(\"\" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 03:48:48.664475", "n_pass": [73, 3, 3], "score": "0.7988", "loss": "0.4667", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" + t.getMessage(), t); } }"}
+{"time": "2020-12-27 03:48:49.989985", "n_pass": [76, 4, 4], "score": "0.6981", "loss": "0.7389", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage(), t); } }"}
+{"time": "2020-12-27 03:48:51.301708", "n_pass": [78, 5, 5], "score": "0.7607", "loss": "0.5999", "code": "public void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-27 03:48:52.622865", "n_pass": [81, 6, 6], "score": "0.7607", "loss": "0.5999", "code": "void run() { try { draw(); } catch (Throwable t) { logger(\"\" +getMessage()); } }"}
+{"time": "2020-12-27 03:48:54.276900", "n_pass": [96, 7, 7], "score": "0.8486", "loss": "0.2936", "code": "void run() { try { draw(); } catch (Throwable t) {(\"\" +getMessage()); } }"}
+{"time": "2020-12-27 03:48:59.903994", "n_pass": [157, 8, 8], "score": "0.8486", "loss": "0.2936", "code": "void run() { try { draw(); } catch (Throwable t) {(\"\"+getMessage()); } }"}
+{"time": "2020-12-27 03:49:01.204385", "n_pass": [160, 9, 9], "score": "0.9053", "loss": "0.1866", "code": "void run() { try { draw(); } catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:03.233719", "n_pass": [169, 10, 10], "score": "0.9053", "loss": "0.1866", "code": "void run(){ try { draw(); } catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:04.550789", "n_pass": [171, 11, 11], "score": "0.9053", "loss": "0.1866", "code": "void run(){try { draw(); } catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:05.834894", "n_pass": [173, 12, 12], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{ draw(); } catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:07.129213", "n_pass": [175, 13, 13], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw(); } catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:08.422918", "n_pass": [180, 14, 14], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();} catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:09.744319", "n_pass": [182, 15, 15], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();}catch (Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:11.053822", "n_pass": [184, 16, 16], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();}catch(Throwable t) {(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:12.348182", "n_pass": [190, 17, 17], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();}catch(Throwable t){(\"\"+getMessage); } }"}
+{"time": "2020-12-27 03:49:15.360406", "n_pass": [227, 18, 18], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();}catch(Throwable t){(\"\"+getMessage);} }"}
+{"time": "2020-12-27 03:49:16.682166", "n_pass": [228, 19, 19], "score": "0.9053", "loss": "0.1866", "code": "void run(){try{draw();}catch(Throwable t){(\"\"+getMessage);}}"}
+
+Minimal simplified code:
+void run(){try{draw();}catch(Throwable t){(""+getMessage);}}
+

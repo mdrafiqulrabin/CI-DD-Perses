@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/anbud__MarkovComposer/src/rs/zx/ml/MLMain_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }
+
+topk path-contexts for sub-token: main
+[0.4365] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.2584] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.0693] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,exception
+[0.0563] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0466] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,ui|manager
+[0.0281] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|VariableDeclaratorId0,e
+[0.0198] e,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,exception
+[0.0121] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0087] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0081] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|ObjectCreationExpr|ClassOrInterfaceType0,gui
+
+topk terminals for sub-token: main
+['args', 'string', 'args', '[]', 'args', 'exception', 'string', '[]', 'args', 'ui|manager', 'args', 'e', 'e', 'exception', 'void', 'string', 'METHOD_NAME', 'string', 'args', 'gui']
+

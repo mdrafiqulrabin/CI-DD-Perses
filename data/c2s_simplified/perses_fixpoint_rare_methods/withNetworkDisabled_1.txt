@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-docker-api/src/main/java/fr/treeptik/cloudunit/docker/builders/ConfigBuilder_withNetworkDisabled.java
+method_name = withNetworkDisabled
+method_body = public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:31:05.640531", "score": "0.3359", "loss": "1.337", "code": "class T { public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { this.networkDisabled = networkDisabled; return this; } }"}
+{"time": "2021-01-24 02:32:05.497090", "score": "0.4198", "loss": "1.7574", "code": "class T { public ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { return this; } }"}
+{"time": "2021-01-24 02:32:48.599679", "score": "0.4198", "loss": "1.7574", "code": "class T { ConfigBuilder withNetworkDisabled(Boolean networkDisabled) { return this; } }"}
+
+Minimal simplified code:
+class T {
+       ConfigBuilder withNetworkDisabled(Boolean networkDisabled) {                                         return this; }
+}
+
+

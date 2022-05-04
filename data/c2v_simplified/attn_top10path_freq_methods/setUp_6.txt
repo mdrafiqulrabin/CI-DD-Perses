@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/naming/resources/TestWarDirContext_setUp.java
+method_name = setUp
+method_body = @Override public void setUp() throws Exception { super.setUp(); Tomcat tomcat = getTomcatInstance(); tomcat.getServer().addLifecycleListener(new JreMemoryLeakPreventionListener()); }
+
+topk path-contexts:
+[0.3285] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),setup
+[0.2798] gettomcatinstance,(NameExpr1)^(MethodCallExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addlifecyclelistener
+[0.1216] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),gettomcatinstance
+[0.0614] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),gettomcatinstance
+[0.0424] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addlifecyclelistener
+[0.0348] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),tomcat
+[0.0194] setup,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(ClassOrInterfaceType0),tomcat
+[0.0178] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),addlifecyclelistener
+[0.0130] exception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),setup
+[0.0129] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(MethodCallExpr1)_(NameExpr1),gettomcatinstance
+
+topk terminals:
+['super', 'setup', 'gettomcatinstance', 'addlifecyclelistener', 'setup', 'gettomcatinstance', 'exception', 'gettomcatinstance', 'setup', 'addlifecyclelistener', 'setup', 'tomcat', 'setup', 'tomcat', 'METHOD_NAME', 'addlifecyclelistener', 'exception', 'setup', 'METHOD_NAME', 'gettomcatinstance']
+

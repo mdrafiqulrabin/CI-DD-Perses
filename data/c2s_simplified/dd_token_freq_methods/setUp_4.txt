@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/yandex-qatools__postgresql-embedded/src/test/java/ru/yandex/qatools/embed/postgresql/TestPostgresWithPgCtl_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() throws Exception { PostgresStarter<PostgresExecutable, PostgresProcess> runtime = PostgresStarter.getInstance(new RuntimeConfigBuilder().defaults(Command.PgCtl).build()); final PostgresConfig config = new PostgresConfig(Version.Main.PRODUCTION, new AbstractPostgresConfig.Net("localhost", findFreePort()), new AbstractPostgresConfig.Storage("test"), new AbstractPostgresConfig.Timeout(), new AbstractPostgresConfig.Credentials("user", "password"), Command.PgCtl); config.getAdditionalInitDbParams().addAll(asList("-E", "SQL_ASCII", "--locale=C", "--lc-collate=C", "--lc-ctype=C")); PostgresExecutable exec = runtime.prepare(config); process = exec.start(); sleep(2000); String url = format("jdbc:postgresql://%s:%s/%s?user=%s&password=%s", config.net().host(), config.net().port(), config.storage().dbName(), config.credentials().username(), config.credentials().password()); conn = DriverManager.getConnection(url); }
+predict, score, loss = testPostgres, 0.51897526, 12.509713
+
+Ignoring as original_method_name != predicted_method_name.
+

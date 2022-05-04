@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/test/java/br/com/six2six/fixturefactory/ObjectFactoryWithProcessorTest_setUp.java
+method_name = setUp
+method_body = @Before public void setUp() { session = mock(Session.class); processor = new HibernateProcessor(session); }
+
+topk path-contexts for sub-token: set
+[0.3584] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.3154] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0463] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0210] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,mock
+[0.0173] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,mock
+[0.0158] session,ClassOrInterfaceType0|ClassExpr1|MethodCallExpr1|NameExpr2,mock
+[0.0087] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,hibernate|processor
+[0.0085] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,session
+[0.0082] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,hibernate|processor
+[0.0080] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,session
+
+topk terminals for sub-token: set
+['before', 'void', 'before', 'METHOD_NAME', 'void', 'METHOD_NAME', 'METHOD_NAME', 'mock', 'void', 'mock', 'session', 'mock', 'void', 'hibernate|processor', 'METHOD_NAME', 'session', 'METHOD_NAME', 'hibernate|processor', 'void', 'session']
+
+topk path-contexts for sub-token: up
+[0.1400] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.1221] before,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.0665] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,session
+[0.0585] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,session
+[0.0484] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,processor
+[0.0461] session,NameExpr0|AssignExpr:assign|MethodCallExpr1|NameExpr2,mock
+[0.0389] void,VoidType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,processor
+[0.0385] session,ClassOrInterfaceType0|ClassExpr1|MethodCallExpr1|NameExpr2,mock
+[0.0284] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0219] session,ClassOrInterfaceType0|ClassExpr1|MethodCallExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,processor
+
+topk terminals for sub-token: up
+['before', 'METHOD_NAME', 'before', 'void', 'METHOD_NAME', 'session', 'void', 'session', 'METHOD_NAME', 'processor', 'session', 'mock', 'void', 'processor', 'session', 'mock', 'void', 'METHOD_NAME', 'session', 'processor']
+

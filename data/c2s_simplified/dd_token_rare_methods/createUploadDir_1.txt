@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Treeptik__cloudunit/cu-manager/src/main/java/fr/treeptik/cloudunit/utils/FilesUtils_createUploadDir.java
+method_name = createUploadDir
+method_body = public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + "/uploadDir_" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }
+predict, score, loss = createUploadDir, 0.44031093, 2.190401
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:15:29.780078", "n_pass": [1, 1, 1], "score": "0.4403", "loss": "2.1904", "code": "public static void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:31.157254", "n_pass": [44, 2, 2], "score": "0.4403", "loss": "2.1904", "code": "void createUploadDir(Server server, String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:32.482341", "n_pass": [46, 3, 3], "score": "0.4302", "loss": "2.2135", "code": "void createUploadDir( String uploadDir) throws DockerJSONException { File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:33.809011", "n_pass": [48, 4, 4], "score": "0.327", "loss": "2.5782", "code": "void createUploadDir( String uploadDir){ File uploadFolder = new File(uploadDir + \"/uploadDir_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:40.507955", "n_pass": [97, 9, 5], "score": "0.3756", "loss": "3.1372", "code": "void createUploadDir( String uploadDir){ File uploadFolder = new File(uploadDir + \"_\" + server.getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:41.850744", "n_pass": [99, 10, 6], "score": "0.3494", "loss": "3.093", "code": "void createUploadDir( String uploadDir){ File uploadFolder = new File(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:46.215269", "n_pass": [118, 13, 7], "score": "0.3319", "loss": "3.8861", "code": "void createUploadDir( String uploadDir){ File uploadFolder = File(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:47.580043", "n_pass": [119, 14, 8], "score": "0.2937", "loss": "3.4121", "code": "void createUploadDir( String uploadDir){ File uploadFolder =(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:50.650030", "n_pass": [140, 16, 9], "score": "0.2729", "loss": "3.6579", "code": "void createUploadDir( String uploadDir){ File =(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:51.985488", "n_pass": [141, 17, 10], "score": "0.2918", "loss": "3.701", "code": "void createUploadDir( String uploadDir){ File(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:53.676726", "n_pass": [161, 18, 11], "score": "0.2426", "loss": "3.0802", "code": "void createUploadDir( String uploadDir){(uploadDir + \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:15:59.421834", "n_pass": [221, 20, 12], "score": "0.2426", "loss": "3.0802", "code": "void createUploadDir( String uploadDir){(uploadDir+ \"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:00.744410", "n_pass": [222, 21, 13], "score": "0.2426", "loss": "3.0802", "code": "void createUploadDir( String uploadDir){(uploadDir+\"_\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:02.057696", "n_pass": [224, 22, 14], "score": "0.2337", "loss": "3.3812", "code": "void createUploadDir( String uploadDir){(uploadDir+\"\" .getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:03.402654", "n_pass": [226, 23, 15], "score": "0.2337", "loss": "3.3812", "code": "void createUploadDir( String uploadDir){(uploadDir+\"\".getContainerID()); if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:04.721839", "n_pass": [233, 24, 16], "score": "0.2337", "loss": "3.3812", "code": "void createUploadDir( String uploadDir){(uploadDir+\"\".getContainerID());if (!uploadFolder.exists()) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:07.379897", "n_pass": [238, 26, 17], "score": "0.2035", "loss": "3.4482", "code": "void createUploadDir( String uploadDir){(uploadDir+\"\".getContainerID());if (!uploadFolder.exists) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:10.774922", "n_pass": [250, 28, 18], "score": "0.2035", "loss": "3.4482", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if (!uploadFolder.exists) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:18.814977", "n_pass": [302, 32, 19], "score": "0.2035", "loss": "3.4482", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(!uploadFolder.exists) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:20.141284", "n_pass": [303, 33, 20], "score": "0.2188", "loss": "3.5486", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(uploadFolder.exists) { uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:22.805158", "n_pass": [308, 35, 21], "score": "0.2188", "loss": "3.5486", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(uploadFolder.exists){ uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:24.131076", "n_pass": [310, 36, 22], "score": "0.2188", "loss": "3.5486", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(uploadFolder.exists){uploadFolder.mkdir(); } }"}
+{"time": "2021-01-20 05:16:26.796455", "n_pass": [317, 38, 23], "score": "0.2188", "loss": "3.5486", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(uploadFolder.exists){uploadFolder.mkdir();} }"}
+{"time": "2021-01-20 05:16:28.146706", "n_pass": [319, 39, 24], "score": "0.2188", "loss": "3.5486", "code": "void createUploadDir(String uploadDir){(uploadDir+\"\".getContainerID());if(uploadFolder.exists){uploadFolder.mkdir();}}"}
+
+Minimal simplified code:
+void createUploadDir(String uploadDir){(uploadDir+"".getContainerID());if(uploadFolder.exists){uploadFolder.mkdir();}}
+

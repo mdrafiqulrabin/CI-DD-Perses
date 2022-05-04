@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/cloud-content/impl/src/main/java/coza/opencollab/sakai/cloudcontent/BlobStoreFileSystemHandler_deleteContainerIfEmpty.java
+method_name = deleteContainerIfEmpty
+method_body = private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:36:41.163040", "score": "0.4758", "loss": "1.6436", "code": "class T { private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } } }"}
+{"time": "2021-01-24 06:37:18.895825", "score": "0.6094", "loss": "0.9061", "code": "class T { private void deleteContainerIfEmpty(String container) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-24 06:37:50.993966", "score": "0.5174", "loss": "2.2131", "code": "class T { private void deleteContainerIfEmpty(String container) { getBlobStore().deleteContainerIfEmpty( ); } }"}
+{"time": "2021-01-24 06:38:01.679441", "score": "0.5174", "loss": "2.2131", "code": "class T { void deleteContainerIfEmpty(String container) { getBlobStore().deleteContainerIfEmpty( ); } }"}
+
+Minimal simplified code:
+class T {
+        void deleteContainerIfEmpty(String container)                              { getBlobStore().deleteContainerIfEmpty(         ); }
+}
+
+

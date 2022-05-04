@@ -1,0 +1,69 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/MainActivity_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this); if (!sharedPreferences.getBoolean(OnboardingFragment.COMPLETED_ONBOARDING, false)) { startActivity(new Intent(this, OnboardingActivity.class)); } }
+predict, score, loss = onCreate, 1.0, 0.0
+
+Trace of simplified code(s):
+{"time": "2020-12-28 07:09:34.400328", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this); if (!sharedPreferences.getBoolean(OnboardingFragment.COMPLETED_ONBOARDING, false)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:37.055614", "n_pass": [23, 2, 2], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPrr.getDefaultSharedPreferences(this); if (!sharedPreferences.getBoolean(OnboardingFragment.COMPLETED_ONBOARDING, false)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:39.733893", "n_pass": [45, 3, 3], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPrrences(this); if (!sharedPreferences.getBoolean(OnboardingFragment.COMPLETED_ONBOARDING, false)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:42.372293", "n_pass": [46, 4, 4], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPrrences(this); if (!sharn(OnboardingFragment.COMPLETED_ONBOARDING, false)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:45.016979", "n_pass": [48, 5, 5], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); SharedPrrences(this); if (!sharn(OnboardingFragment.COse)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:48.057932", "n_pass": [56, 6, 6], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceS.layout.main); SharedPrrences(this); if (!sharn(OnboardingFragment.COse)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:51.148231", "n_pass": [87, 7, 7], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstancein); SharedPrrences(this); if (!sharn(OnboardingFragment.COse)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:53.804105", "n_pass": [92, 8, 8], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstancein); SharedPrrences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(this, OnboardingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:56.444988", "n_pass": [96, 9, 9], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstancein); SharedPrrences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(tingActivity.class)); } }"}
+{"time": "2020-12-28 07:09:59.067598", "n_pass": [97, 10, 10], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstancein); SharedPrrences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(tclass)); } }"}
+{"time": "2020-12-28 07:10:02.113984", "n_pass": [103, 11, 11], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedIe) { super.onCreate(savedInstancein); SharedPrrences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(tclass)); } }"}
+{"time": "2020-12-28 07:10:04.741616", "n_pass": [106, 12, 12], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedIe) { super.onCreate(sain); SharedPrrences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(tclass)); } }"}
+{"time": "2020-12-28 07:10:07.806506", "n_pass": [151, 13, 13], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedIe) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { startActivity(new Intent(tclass)); } }"}
+{"time": "2020-12-28 07:10:10.459310", "n_pass": [159, 14, 14], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedIe) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(new Intent(tclass)); } }"}
+{"time": "2020-12-28 07:10:13.088219", "n_pass": [161, 15, 15], "score": "1.0", "loss": "0.0", "code": "@Override public void onCreate(Bundle savedIe) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:15.726987", "n_pass": [166, 16, 16], "score": "1.0", "loss": "0.0", "code": "@Overpublic void onCreate(Bundle savedIe) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:18.350955", "n_pass": [167, 17, 17], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle savedIe) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:22.203884", "n_pass": [173, 18, 18], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { super.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:31.361619", "n_pass": [242, 21, 19], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(sain); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:39.243565", "n_pass": [246, 24, 20], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); Shaences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:41.884164", "n_pass": [248, 25, 21], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); ences(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:44.510959", "n_pass": [249, 26, 22], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(this); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:47.164885", "n_pass": [251, 27, 23], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!sharn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:49.796979", "n_pass": [255, 28, 24], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(Onboar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:52.415497", "n_pass": [257, 29, 25], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oar.COse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:55.034547", "n_pass": [259, 30, 26], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) { stivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:10:57.649797", "n_pass": [262, 31, 27], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ivity(tent(tclass)); } }"}
+{"time": "2020-12-28 07:11:00.279260", "n_pass": [263, 32, 28], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(tent(tclass)); } }"}
+{"time": "2020-12-28 07:11:02.898259", "n_pass": [265, 33, 29], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tclass)); } }"}
+{"time": "2020-12-28 07:11:05.534483", "n_pass": [267, 34, 30], "score": "1.0", "loss": "0.0", "code": "@Overc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:08.152617", "n_pass": [272, 35, 31], "score": "1.0", "loss": "0.0", "code": "@Orc void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:10.769482", "n_pass": [273, 36, 32], "score": "1.0", "loss": "0.0", "code": "@O void onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:13.795187", "n_pass": [275, 37, 33], "score": "1.0", "loss": "0.0", "code": "@O vd onCreate(Bundle sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:18.056407", "n_pass": [281, 38, 34], "score": "0.9722", "loss": "0.0956", "code": "@O vd onCreate(Bue sa) { sr.onCreate(s); es(s); if (!rn(oarse)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:28.602532", "n_pass": [295, 42, 35], "score": "0.937", "loss": "0.1934", "code": "@O vd onCreate(Bue sa) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:31.225393", "n_pass": [303, 43, 36], "score": "0.9944", "loss": "0.0106", "code": " vd onCreate(Bue sa) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:33.845553", "n_pass": [304, 44, 37], "score": "0.9949", "loss": "0.0093", "code": "d onCreate(Bue sa) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:51.897944", "n_pass": [391, 48, 38], "score": "0.9902", "loss": "0.0118", "code": "d onCreate(ue sa) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:54.524643", "n_pass": [392, 49, 39], "score": "0.9492", "loss": "0.058", "code": "d onCreate(e sa) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:57.131769", "n_pass": [395, 50, 40], "score": "0.9931", "loss": "0.0102", "code": "d onCreate(e a) { sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:11:59.755835", "n_pass": [398, 51, 41], "score": "0.9931", "loss": "0.0102", "code": "d onCreate(e a){ sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:12:02.375954", "n_pass": [400, 52, 42], "score": "0.9931", "loss": "0.0102", "code": "d onCreate(e a){sr.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:12:05.022991", "n_pass": [401, 53, 43], "score": "0.9931", "loss": "0.0101", "code": "d onCreate(e a){r.onCreate(s); es(s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:12:23.342655", "n_pass": [412, 60, 44], "score": "0.9721", "loss": "0.0377", "code": "d onCreate(e a){r.onCreate(s); (s); if (!rn(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:12:25.949949", "n_pass": [418, 61, 45], "score": "0.95", "loss": "0.0675", "code": "d onCreate(e a){r.onCreate(s); (s); if (!(se)) {ty(t(tss)); } }"}
+{"time": "2020-12-28 07:12:28.576692", "n_pass": [425, 62, 46], "score": "0.9491", "loss": "0.0687", "code": "d onCreate(e a){r.onCreate(s); (s); if (!(se)) {ty(t(s)); } }"}
+{"time": "2020-12-28 07:12:54.303449", "n_pass": [509, 69, 47], "score": "0.9491", "loss": "0.0687", "code": "d onCreate(e a){r.onCreate(s); (s); if (!(se)) {ty(t(s));} }"}
+{"time": "2020-12-28 07:12:56.938316", "n_pass": [510, 70, 48], "score": "0.9491", "loss": "0.0687", "code": "d onCreate(e a){r.onCreate(s); (s); if (!(se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:27.069145", "n_pass": [539, 80, 49], "score": "0.905", "loss": "0.1485", "code": "d onCreate(e a){r.onCreate(); (s); if (!(se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:29.673909", "n_pass": [542, 81, 50], "score": "0.905", "loss": "0.1485", "code": "d onCreate(e a){r.onCreate();(s); if (!(se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:32.297683", "n_pass": [547, 82, 51], "score": "0.905", "loss": "0.1485", "code": "d onCreate(e a){r.onCreate();(s);if (!(se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:34.924136", "n_pass": [550, 83, 52], "score": "0.905", "loss": "0.1485", "code": "d onCreate(e a){r.onCreate();(s);if(!(se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:37.534780", "n_pass": [552, 84, 53], "score": "0.905", "loss": "0.1485", "code": "d onCreate(e a){r.onCreate();(s);if((se)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:40.145306", "n_pass": [554, 85, 54], "score": "0.9522", "loss": "0.0824", "code": "d onCreate(e a){r.onCreate();(s);if((e)) {ty(t(s));}}"}
+{"time": "2020-12-28 07:13:42.781077", "n_pass": [558, 86, 55], "score": "0.9522", "loss": "0.0824", "code": "d onCreate(e a){r.onCreate();(s);if((e)){ty(t(s));}}"}
+{"time": "2020-12-28 07:13:45.413128", "n_pass": [560, 87, 56], "score": "0.9646", "loss": "0.057", "code": "d onCreate(e a){r.onCreate();(s);if((e)){y(t(s));}}"}
+{"time": "2020-12-28 07:13:48.030097", "n_pass": [561, 88, 57], "score": "0.9093", "loss": "0.1475", "code": "d onCreate(e a){r.onCreate();(s);if((e)){(t(s));}}"}
+{"time": "2020-12-28 07:13:50.640549", "n_pass": [563, 89, 58], "score": "0.9099", "loss": "0.1459", "code": "d onCreate(e a){r.onCreate();(s);if((e)){((s));}}"}
+
+Minimal simplified code:
+d onCreate(e a){r.onCreate();(s);if((e)){((s));}}
+

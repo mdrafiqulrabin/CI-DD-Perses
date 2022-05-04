@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/msgcntr/messageforums-app/src/java/org/sakaiproject/tool/messageforums/PrivateMessagesTool_isSendEmail.java
+method_name = isSendEmail
+method_body = public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true; } else { sendEmail = false; } return sendEmail; }
+
+topk path-contexts for sub-token: is
+[0.0963] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0510] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0452] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0432] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,true
+[0.0394] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0308] is|email|copy|always,NameExpr1|MethodCallExpr|BinaryExpr:or|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0302] boolean,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0286] is|email|copy|always,NameExpr1|MethodCallExpr|BinaryExpr:or|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,true
+[0.0241] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|BooleanLiteralExpr1,false
+[0.0221] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:or|EnclosedExpr|BinaryExpr:and|MethodCallExpr1|NameExpr1,get|boolean|email|out
+
+topk terminals for sub-token: is
+['boolean', 'METHOD_NAME', 'boolean', 'send|email', 'send|email', 'false', 'send|email', 'true', 'METHOD_NAME', 'send|email', 'is|email|copy|always', 'false', 'boolean', 'send|email', 'is|email|copy|always', 'true', 'boolean', 'false', 'boolean', 'get|boolean|email|out']
+
+topk path-contexts for sub-token: send
+[0.0500] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0471] is|email|copy|always,NameExpr1|MethodCallExpr|BinaryExpr:or|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0454] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:or|MethodCallExpr0|NameExpr1,is|email|copy|always
+[0.0449] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0436] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0434] is|email|copy|always,NameExpr1|MethodCallExpr|BinaryExpr:or|EnclosedExpr|BinaryExpr:and|MethodCallExpr0|NameExpr1,is|email|copy|optional
+[0.0407] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,true
+[0.0369] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:or|EnclosedExpr|BinaryExpr:and|MethodCallExpr0|NameExpr1,is|email|copy|optional
+[0.0351] boolean,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0311] false,BooleanLiteralExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+
+topk terminals for sub-token: send
+['boolean', 'send|email', 'is|email|copy|always', 'send|email', 'METHOD_NAME', 'is|email|copy|always', 'send|email', 'false', 'METHOD_NAME', 'send|email', 'is|email|copy|always', 'is|email|copy|optional', 'send|email', 'true', 'METHOD_NAME', 'is|email|copy|optional', 'boolean', 'send|email', 'false', 'send|email']
+
+topk path-contexts for sub-token: email
+[0.0822] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0747] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,true
+[0.0650] send|email,NameExpr0|AssignExpr:assign|BooleanLiteralExpr1,false
+[0.0601] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0348] boolean,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|NameExpr0,send|email
+[0.0296] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:or|EnclosedExpr|BinaryExpr:and|MethodCallExpr0|NameExpr1,is|email|copy|optional
+[0.0278] is|email|copy|always,NameExpr1|MethodCallExpr|BinaryExpr:or|EnclosedExpr|BinaryExpr:and|MethodCallExpr0|NameExpr1,is|email|copy|optional
+[0.0243] is|email|copy|optional,NameExpr1|MethodCallExpr|BinaryExpr:and|MethodCallExpr1|NameExpr1,get|boolean|email|out
+[0.0220] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+[0.0220] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,send|email
+
+topk terminals for sub-token: email
+['boolean', 'send|email', 'send|email', 'true', 'send|email', 'false', 'METHOD_NAME', 'send|email', 'boolean', 'send|email', 'METHOD_NAME', 'is|email|copy|optional', 'is|email|copy|always', 'is|email|copy|optional', 'is|email|copy|optional', 'get|boolean|email|out', 'METHOD_NAME', 'send|email', 'METHOD_NAME', 'send|email']
+

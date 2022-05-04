@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Hemumu__RxSample/app/src/main/java/com/helin/rxsample/http/ProgressSubscriber_onCancelProgress.java
+method_name = onCancelProgress
+method_body = @Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }
+
+topk path-contexts:
+[0.2894] this,(ThisExpr0)^(MethodCallExpr)^(UnaryExpr:not)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),unsubscribe
+[0.2497] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr2),isunsubscribed
+[0.0902] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(NameExpr2),isunsubscribed
+[0.0835] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(ThisExpr0),this
+[0.0769] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),unsubscribe
+[0.0649] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(UnaryExpr:not)_(MethodCallExpr0)_(ThisExpr0),this
+[0.0525] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),unsubscribe
+[0.0242] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(NameExpr2),METHOD_NAME
+[0.0151] override,(NameExpr0)^(MarkerAnnotationExpr)^(MethodDeclaration)_(VoidType1),void
+[0.0148] isunsubscribed,(NameExpr2)^(MethodCallExpr)^(UnaryExpr:not)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),unsubscribe
+
+topk terminals:
+['this', 'unsubscribe', 'void', 'isunsubscribed', 'METHOD_NAME', 'isunsubscribed', 'void', 'this', 'void', 'unsubscribe', 'METHOD_NAME', 'this', 'METHOD_NAME', 'unsubscribe', 'override', 'METHOD_NAME', 'override', 'void', 'isunsubscribed', 'unsubscribe']
+

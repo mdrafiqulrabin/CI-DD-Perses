@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/async/Stockticker_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }
+
+topk path-contexts for sub-token: equals
+[0.1625] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0936] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+[0.0930] other,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0921] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0744] other,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|BooleanLiteralExpr0,false
+[0.0528] other,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+[0.0396] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,other
+[0.0371] METHOD_NAME,NameExpr2|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0360] other,NameExpr0|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+[0.0358] stock,ClassOrInterfaceType1|InstanceOfExpr|IfStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,equals
+
+topk terminals for sub-token: equals
+['object', 'false', 'object', 'equals', 'other', 'object', 'boolean', 'object', 'other', 'false', 'other', 'equals', 'boolean', 'other', 'METHOD_NAME', 'object', 'other', 'equals', 'stock', 'equals']
+

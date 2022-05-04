@@ -1,0 +1,42 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+predict, score, loss = get, 0.9183927, 0.66571724
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:51:46.125062", "n_pass": [1, 1, 1], "score": "0.9184", "loss": "0.6657", "code": "public T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 00:51:50.155808", "n_pass": [44, 4, 2], "score": "0.9184", "loss": "0.6657", "code": " T get() { if (value == null) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 00:51:51.525144", "n_pass": [48, 5, 3], "score": "0.789", "loss": "0.9338", "code": " T get() { if (valull) { throw new NoSuchElementException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 00:51:54.171649", "n_pass": [52, 7, 4], "score": "0.8071", "loss": "1.3107", "code": " T get() { if (valull) { throw new NoSuctException(\"No value present\"); } return value; }"}
+{"time": "2020-12-28 00:51:59.475302", "n_pass": [58, 11, 5], "score": "0.4789", "loss": "3.9216", "code": " T get() { if (valull) { throw new NoSuctException(\"No value present\"); } ralue; }"}
+{"time": "2020-12-28 00:52:02.178188", "n_pass": [66, 13, 6], "score": "0.3985", "loss": "4.5043", "code": " T get() { if (valull) { throw new NoSucion(\"No value present\"); } ralue; }"}
+{"time": "2020-12-28 00:52:14.245548", "n_pass": [108, 22, 7], "score": "0.4711", "loss": "2.6474", "code": " T get() { if (valull) { throw new NoSucion(\"No value present\"); } e; }"}
+{"time": "2020-12-28 00:52:16.296241", "n_pass": [115, 23, 8], "score": "0.4197", "loss": "2.0357", "code": " T get() { if (ull) { throw new NoSucion(\"No value present\"); } e; }"}
+{"time": "2020-12-28 00:52:18.970859", "n_pass": [122, 25, 9], "score": "0.3618", "loss": "2.2483", "code": " T get() { if (ull) { throw new Ncion(\"No value present\"); } e; }"}
+{"time": "2020-12-28 00:52:21.653546", "n_pass": [125, 27, 10], "score": "0.4395", "loss": "2.3186", "code": " T get() { if (ull) { throw new Ncion(\"Noue present\"); } e; }"}
+{"time": "2020-12-28 00:52:27.671876", "n_pass": [142, 31, 11], "score": "0.3369", "loss": "2.3848", "code": " T get() { if (ull) { throw new N(\"Noue present\"); } e; }"}
+{"time": "2020-12-28 00:52:35.407885", "n_pass": [195, 35, 12], "score": "0.6885", "loss": "1.1637", "code": " T get() { if (ull) { throw new N(\"ue present\"); } e; }"}
+{"time": "2020-12-28 00:52:36.734810", "n_pass": [196, 36, 13], "score": "0.2648", "loss": "2.2401", "code": " T get() { if (ull) { throw new N(\" present\"); } e; }"}
+{"time": "2020-12-28 00:52:43.337132", "n_pass": [204, 41, 14], "score": "0.317", "loss": "2.4165", "code": " T get() { if (ull) { throw new N(\" present\"); }  }"}
+{"time": "2020-12-28 00:52:44.669578", "n_pass": [206, 42, 15], "score": "0.317", "loss": "2.4165", "code": "T get() { if (ull) { throw new N(\" present\"); }  }"}
+{"time": "2020-12-28 00:52:47.862777", "n_pass": [214, 43, 16], "score": "0.317", "loss": "2.4165", "code": "T get(){ if (ull) { throw new N(\" present\"); }  }"}
+{"time": "2020-12-28 00:52:49.166288", "n_pass": [216, 44, 17], "score": "0.317", "loss": "2.4165", "code": "T get(){if (ull) { throw new N(\" present\"); }  }"}
+{"time": "2020-12-28 00:52:50.494992", "n_pass": [219, 45, 18], "score": "0.3467", "loss": "2.1584", "code": "T get(){if (l) { throw new N(\" present\"); }  }"}
+{"time": "2020-12-28 00:52:54.476243", "n_pass": [231, 48, 19], "score": "0.3186", "loss": "3.6515", "code": "T get(){if (l) { throw new N(\" prent\"); }  }"}
+{"time": "2020-12-28 00:53:05.243471", "n_pass": [294, 52, 20], "score": "0.3198", "loss": "2.3818", "code": "T get(){if (l) { throw new N(\" pren\"); }  }"}
+{"time": "2020-12-28 00:53:06.554040", "n_pass": [298, 53, 21], "score": "0.3198", "loss": "2.3818", "code": "T get(){if (l) { throw new N(\" pren\");}  }"}
+{"time": "2020-12-28 00:53:07.879014", "n_pass": [300, 54, 22], "score": "0.3198", "loss": "2.3818", "code": "T get(){if (l) { throw new N(\" pren\");} }"}
+{"time": "2020-12-28 00:53:09.184206", "n_pass": [301, 55, 23], "score": "0.3198", "loss": "2.3818", "code": "T get(){if (l) { throw new N(\" pren\");}}"}
+{"time": "2020-12-28 00:53:12.609107", "n_pass": [313, 56, 24], "score": "0.3198", "loss": "2.3818", "code": "T get(){if(l) { throw new N(\" pren\");}}"}
+{"time": "2020-12-28 00:53:13.964410", "n_pass": [317, 57, 25], "score": "0.3198", "loss": "2.3818", "code": "T get(){if(l){ throw new N(\" pren\");}}"}
+{"time": "2020-12-28 00:53:15.278640", "n_pass": [319, 58, 26], "score": "0.3198", "loss": "2.3818", "code": "T get(){if(l){throw new N(\" pren\");}}"}
+{"time": "2020-12-28 00:53:17.932576", "n_pass": [333, 60, 27], "score": "0.3198", "loss": "2.3818", "code": "T get(){if(l){throw new N(\"pren\");}}"}
+{"time": "2020-12-28 00:53:19.257929", "n_pass": [334, 61, 28], "score": "0.2452", "loss": "2.2581", "code": "T get(){if(l){throw new N(\"ren\");}}"}
+{"time": "2020-12-28 00:53:20.618188", "n_pass": [335, 62, 29], "score": "0.3968", "loss": "2.3198", "code": "T get(){if(l){throw new N(\"en\");}}"}
+{"time": "2020-12-28 00:53:21.975541", "n_pass": [336, 63, 30], "score": "0.26", "loss": "3.0733", "code": "T get(){if(l){throw new N(\"n\");}}"}
+{"time": "2020-12-28 00:53:23.294376", "n_pass": [337, 64, 31], "score": "0.2814", "loss": "3.2852", "code": "T get(){if(l){throw new N(\"\");}}"}
+
+Minimal simplified code:
+T get(){if(l){throw new N("");}}
+

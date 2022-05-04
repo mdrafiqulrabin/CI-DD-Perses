@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/examples/twitter/TwitterClient/src/com/path/android/jobqueue/examples/twitter/controllers/TwitterController_loadTweets.java
+method_name = loadTweets
+method_body = public List<Status> loadTweets(Long sinceId) throws TwitterException { Paging paging = new Paging(); paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 17:39:28.553852", "score": "0.4525", "loss": "1.0848", "code": "class T { public List<Status> loadTweets(Long sinceId) throws TwitterException { Paging paging = new Paging(); paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:46:27.421271", "score": "0.4584", "loss": "1.0558", "code": "class T { public List<Status> loadTweets(Long sinceId) throws TwitterException { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:52:25.428604", "score": "0.4607", "loss": "1.0499", "code": "class T { public List loadTweets(Long sinceId) throws TwitterException { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:53:46.019958", "score": "0.5089", "loss": "0.9597", "code": "class T { public List loadTweets( ) throws TwitterException { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:54:25.820297", "score": "0.5318", "loss": "0.9649", "code": "class T { public List loadTweets( ) { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId(sinceId); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:55:45.093226", "score": "0.5013", "loss": "0.9385", "code": "class T { public List loadTweets( ) { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId( ); } return twitter.getHomeTimeline(paging); } }"}
+{"time": "2021-01-24 17:56:24.733066", "score": "0.6213", "loss": "0.8423", "code": "class T { public List loadTweets( ) { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId( ); } return twitter.getHomeTimeline( ); } }"}
+{"time": "2021-01-24 17:57:04.309148", "score": "0.6213", "loss": "0.8423", "code": "class T { List loadTweets( ) { paging.setCount(PAGE_LENGTH); if (sinceId != null) { paging.setSinceId( ); } return twitter.getHomeTimeline( ); } }"}
+{"time": "2021-01-24 18:02:05.116491", "score": "0.7083", "loss": "0.628", "code": "class T { List loadTweets( ) { paging.setCount(PAGE_LENGTH); return twitter.getHomeTimeline( ); } }"}
+
+Minimal simplified code:
+class T {
+       List         loadTweets(            )                         {                               paging.setCount(PAGE_LENGTH);                                                      return twitter.getHomeTimeline(      ); }
+}
+
+

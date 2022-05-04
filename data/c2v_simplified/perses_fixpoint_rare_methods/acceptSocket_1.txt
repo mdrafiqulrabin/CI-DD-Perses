@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/jsse/JSSESocketFactory_acceptSocket.java
+method_name = acceptSocket
+method_body = @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock = null; try { asock = (SSLSocket) socket.accept(); } catch (SSLException e) { throw new SocketException("SSL handshake error" + e.toString()); } return asock; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 10:14:22.109744", "score": "0.3392", "loss": "1.1936", "code": "class T { @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock = null; try { asock = (SSLSocket) socket.accept(); } catch (SSLException e) { throw new SocketException(\"SSL handshake error\" + e.toString()); } return asock; } }"}
+{"time": "2021-01-24 10:18:04.419359", "score": "0.5729", "loss": "0.5834", "code": "class T { @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock = null; try { asock = (SSLSocket) socket.accept(); } catch (SSLException e) { throw new SocketException(\"SSL handshake error\" + e.toString()); } } }"}
+{"time": "2021-01-24 10:19:19.795891", "score": "0.6169", "loss": "0.494", "code": "class T { @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock = null; } }"}
+{"time": "2021-01-24 10:20:34.944309", "score": "0.6296", "loss": "0.4729", "code": "class T { @Override public Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock ; } }"}
+{"time": "2021-01-24 10:21:53.915389", "score": "0.6296", "loss": "0.4729", "code": "class T { @Override Socket acceptSocket(ServerSocket socket) throws IOException { SSLSocket asock ; } }"}
+{"time": "2021-01-24 10:23:52.599280", "score": "0.5681", "loss": "0.5732", "code": "class T { @Override Socket acceptSocket(ServerSocket socket) { SSLSocket asock ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        Socket acceptSocket(ServerSocket socket)                    { SSLSocket asock       ;                                                                                                                                                        }
+}
+
+

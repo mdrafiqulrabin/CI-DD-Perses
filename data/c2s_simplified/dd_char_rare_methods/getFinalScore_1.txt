@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/evaluation/AgentResults_getFinalScore.java
+method_name = getFinalScore
+method_body = public String getFinalScore() { return Validator.check(finalScore, "0").replace(',', '.'); }
+predict, score, loss = getFinalScore, 0.47387525, 1.6009771
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:41:00.886138", "n_pass": [1, 1, 1], "score": "0.4739", "loss": "1.601", "code": "public String getFinalScore() { return Validator.check(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:04.193262", "n_pass": [23, 3, 2], "score": "0.4446", "loss": "2.1184", "code": "public String getFinalScore() { rator.check(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:07.202789", "n_pass": [45, 5, 3], "score": "0.2891", "loss": "4.0774", "code": "public String getFinalScore() { rheck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:25.144093", "n_pass": [168, 15, 4], "score": "0.3268", "loss": "3.1465", "code": "public String getFinalScore() {heck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:26.449797", "n_pass": [169, 16, 5], "score": "0.3676", "loss": "3.3432", "code": "public String getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:36.970906", "n_pass": [196, 24, 6], "score": "0.3441", "loss": "3.1758", "code": "publicString getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:38.269484", "n_pass": [197, 25, 7], "score": "0.3336", "loss": "3.9893", "code": "publictring getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:39.575638", "n_pass": [198, 26, 8], "score": "0.3336", "loss": "3.9893", "code": "publicring getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:40.894345", "n_pass": [199, 27, 9], "score": "0.3336", "loss": "3.9893", "code": "publicing getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:42.194707", "n_pass": [200, 28, 10], "score": "0.3336", "loss": "3.9893", "code": "publicng getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:43.499230", "n_pass": [201, 29, 11], "score": "0.3336", "loss": "3.9893", "code": "publicg getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:41:59.370590", "n_pass": [240, 37, 12], "score": "0.3336", "loss": "3.9893", "code": "ublicg getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:00.698923", "n_pass": [241, 38, 13], "score": "0.3336", "loss": "3.9893", "code": "blicg getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:02.015292", "n_pass": [242, 39, 14], "score": "0.3336", "loss": "3.9893", "code": "licg getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:03.333618", "n_pass": [243, 40, 15], "score": "0.2685", "loss": "5.0423", "code": "icg getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:05.935645", "n_pass": [245, 42, 16], "score": "0.4389", "loss": "4.6224", "code": "ig getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:07.234733", "n_pass": [246, 43, 17], "score": "0.387", "loss": "3.959", "code": "i getFinalScore() {ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:24.767821", "n_pass": [327, 51, 18], "score": "0.387", "loss": "3.959", "code": "i getFinalScore(){ck(finalScore, \"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:41.760643", "n_pass": [342, 64, 19], "score": "0.387", "loss": "3.959", "code": "i getFinalScore(){ck(finalScore,\"0\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:43.056136", "n_pass": [344, 65, 20], "score": "0.4206", "loss": "4.128", "code": "i getFinalScore(){ck(finalScore,\"\").replace(',', '.'); }"}
+{"time": "2021-01-23 11:42:53.756665", "n_pass": [360, 73, 21], "score": "0.4206", "loss": "4.128", "code": "i getFinalScore(){ck(finalScore,\"\").replace(',','.'); }"}
+{"time": "2021-01-23 11:42:55.381554", "n_pass": [366, 74, 22], "score": "0.4206", "loss": "4.128", "code": "i getFinalScore(){ck(finalScore,\"\").replace(',','.');}"}
+
+Minimal simplified code:
+i getFinalScore(){ck(finalScore,"").replace(',','.');}
+

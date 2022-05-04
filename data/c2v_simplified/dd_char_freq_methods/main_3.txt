@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+predict, score, loss = main, 0.9997450709342957, 0.0002890407631639391
+
+Trace of simplified code(s):
+{"time": "2020-12-28 07:03:08.795953", "n_pass": [1, 1, 1], "score": "0.9997", "loss": "0.0003", "code": "public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-28 07:03:11.433954", "n_pass": [10, 2, 2], "score": "0.9203", "loss": "0.0878", "code": "public static void main(String[] args) throws Exception { recreate = truestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-28 07:03:14.060992", "n_pass": [19, 3, 3], "score": "0.7561", "loss": "0.2867", "code": "public static void main(String[] args) throws Exception { recreate = trustPopulateData(); }"}
+{"time": "2020-12-28 07:03:17.077061", "n_pass": [35, 4, 4], "score": "0.7561", "loss": "0.2867", "code": "public static void main(String[] args) throws Exception { recreate = trueData(); }"}
+{"time": "2020-12-28 07:03:19.688932", "n_pass": [37, 5, 5], "score": "0.6053", "loss": "0.5139", "code": "public st main(String[] args) throws Exception { recreate = trueData(); }"}
+{"time": "2020-12-28 07:03:22.296188", "n_pass": [43, 6, 6], "score": "0.9997", "loss": "0.0003", "code": "public st main(String[] args) throws Exception { recreeData(); }"}
+{"time": "2020-12-28 07:03:25.310687", "n_pass": [65, 7, 7], "score": "0.9997", "loss": "0.0003", "code": "public st main(String[] args) throws Exception { recre(); }"}
+{"time": "2020-12-28 07:03:27.911629", "n_pass": [67, 8, 8], "score": "0.9963", "loss": "0.0042", "code": "publt main(String[] args) throws Exception { recre(); }"}
+{"time": "2020-12-28 07:03:30.905971", "n_pass": [70, 9, 9], "score": "0.9895", "loss": "0.0117", "code": "publt main(Sg[] args) throws Exception { recre(); }"}
+{"time": "2020-12-28 07:03:33.504066", "n_pass": [75, 10, 10], "score": "0.9248", "loss": "0.1337", "code": "publt main(Sg[] args) throws Exon { recre(); }"}
+{"time": "2020-12-28 07:03:36.100517", "n_pass": [79, 11, 11], "score": "0.9907", "loss": "0.0141", "code": "t main(Sg[] args) throws Exon { recre(); }"}
+{"time": "2020-12-28 07:03:45.504470", "n_pass": [120, 14, 12], "score": "0.5975", "loss": "0.5739", "code": "t main(Sg[] args) throws Ex{ recre(); }"}
+{"time": "2020-12-28 07:04:01.603366", "n_pass": [172, 19, 13], "score": "0.9816", "loss": "0.0208", "code": "t main(Sg[] args) throws E{ recre(); }"}
+{"time": "2020-12-28 07:04:04.199940", "n_pass": [174, 20, 14], "score": "0.9816", "loss": "0.0208", "code": "t main(Sg[] args) throws E{recre(); }"}
+{"time": "2020-12-28 07:04:06.794942", "n_pass": [175, 21, 15], "score": "0.9492", "loss": "0.055", "code": "t main(Sg[] args) throws E{cre(); }"}
+{"time": "2020-12-28 07:04:09.392239", "n_pass": [176, 22, 16], "score": "0.9321", "loss": "0.0739", "code": "t main(Sg[] args) throws E{e(); }"}
+{"time": "2020-12-28 07:04:14.403628", "n_pass": [187, 23, 17], "score": "0.6011", "loss": "0.5147", "code": "t main(g[] args) throws E{e(); }"}
+{"time": "2020-12-28 07:04:17.015630", "n_pass": [191, 24, 18], "score": "0.6011", "loss": "0.5147", "code": "t main(g[]args) throws E{e(); }"}
+{"time": "2020-12-28 07:04:29.991294", "n_pass": [197, 29, 19], "score": "0.6011", "loss": "0.5147", "code": "t main(g[]args)throws E{e(); }"}
+{"time": "2020-12-28 07:04:46.194349", "n_pass": [235, 34, 20], "score": "0.6011", "loss": "0.5147", "code": "t main(g[]args)throws E{e();}"}
+
+Minimal simplified code:
+t main(g[]args)throws E{e();}
+

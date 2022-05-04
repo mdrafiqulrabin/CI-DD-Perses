@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mucommander__mucommander/src/main/java/com/mucommander/ui/event/LocationManager_removeLocationListener.java
+method_name = removeLocationListener
+method_body = public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }
+predict, score, loss = removeLocationListener, 0.4701961576938629, 0.7735679745674133
+
+Trace of simplified code(s):
+{"time": "2021-01-23 20:33:38.486946", "n_pass": [1, 1, 1], "score": "0.4702", "loss": "0.7736", "code": "public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }"}
+{"time": "2021-01-23 20:33:44.919612", "n_pass": [44, 3, 2], "score": "0.4702", "loss": "0.7736", "code": "synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }"}
+{"time": "2021-01-23 20:34:18.190330", "n_pass": [107, 14, 3], "score": "0.6266", "loss": "0.5079", "code": "synchronized void removeLocationListener(LocationListener lner) { locationListeners.remove(listener); }"}
+{"time": "2021-01-23 20:34:33.876131", "n_pass": [116, 20, 4], "score": "0.5572", "loss": "0.7025", "code": "synchronized void removeLocationListener(LocationListener lner) { locationListeners.remove(ener); }"}
+{"time": "2021-01-23 20:34:36.482598", "n_pass": [117, 21, 5], "score": "0.5735", "loss": "0.5881", "code": "synchronized void removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:34:39.095594", "n_pass": [123, 22, 6], "score": "0.5391", "loss": "0.6572", "code": "synchronizedid removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:35:05.847005", "n_pass": [146, 31, 7], "score": "0.5391", "loss": "0.6572", "code": "chronizedid removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:35:08.439732", "n_pass": [147, 32, 8], "score": "0.5391", "loss": "0.6572", "code": "onizedid removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:35:11.042948", "n_pass": [148, 33, 9], "score": "0.5391", "loss": "0.6572", "code": "zedid removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:35:13.639094", "n_pass": [149, 34, 10], "score": "0.565", "loss": "0.6114", "code": "id removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:35:40.690036", "n_pass": [216, 43, 11], "score": "0.5559", "loss": "0.6262", "code": "d removeLocationListener(LocationListener lner) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:36:10.302557", "n_pass": [242, 52, 12], "score": "0.6476", "loss": "0.4982", "code": "d removeLocationListener(LocationListener lr) { locationListeners.remove(); }"}
+{"time": "2021-01-23 20:36:39.007660", "n_pass": [255, 63, 13], "score": "0.4654", "loss": "0.8234", "code": "d removeLocationListener(LocationListener lr) { locationListeners.rove(); }"}
+{"time": "2021-01-23 20:36:41.606196", "n_pass": [256, 64, 14], "score": "0.5357", "loss": "0.6777", "code": "d removeLocationListener(LocationListener lr) { locationListeners.re(); }"}
+{"time": "2021-01-23 20:37:39.218534", "n_pass": [363, 83, 15], "score": "0.4413", "loss": "0.8821", "code": "d removeLocationListener(LocationListener lr) { locationListeners.r(); }"}
+{"time": "2021-01-23 20:37:41.817837", "n_pass": [366, 84, 16], "score": "0.4413", "loss": "0.8821", "code": "d removeLocationListener(LocationListener lr) { locationListeners.r();}"}
+{"time": "2021-01-23 20:38:41.115197", "n_pass": [413, 103, 17], "score": "0.4413", "loss": "0.8821", "code": "d removeLocationListener(LocationListener lr){ locationListeners.r();}"}
+{"time": "2021-01-23 20:38:43.711143", "n_pass": [415, 104, 18], "score": "0.4413", "loss": "0.8821", "code": "d removeLocationListener(LocationListener lr){locationListeners.r();}"}
+
+Minimal simplified code:
+d removeLocationListener(LocationListener lr){locationListeners.r();}
+

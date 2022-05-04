@@ -1,0 +1,8 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap_get.java
+method_name = get
+method_body = @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }
+predict, score, loss = getKey, 0.8920223, 0.21826811
+
+Ignoring as original_method_name != predicted_method_name.
+

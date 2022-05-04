@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/signup/tool/src/java/org/sakaiproject/signup/tool/jsf/NewSignupMeetingBean_getSendEmail.java
+method_name = getSendEmail
+method_body = public boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; }
+predict, score, loss = getSendEmail, 0.45512483, 0.88346744
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:52:23.873502", "n_pass": [1, 1, 1], "score": "0.4551", "loss": "0.8835", "code": "public boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:28.925067", "n_pass": [44, 4, 2], "score": "0.4551", "loss": "0.8835", "code": "boolean getSendEmail() { if (!getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:36.340125", "n_pass": [94, 6, 3], "score": "0.4551", "loss": "0.8835", "code": "boolean getSendEmail(){ if (!getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:37.655666", "n_pass": [96, 7, 4], "score": "0.4551", "loss": "0.8835", "code": "boolean getSendEmail(){if (!getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:38.979242", "n_pass": [98, 8, 5], "score": "0.4551", "loss": "0.8835", "code": "boolean getSendEmail(){if(!getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:40.286884", "n_pass": [100, 9, 6], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite()) sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:41.591260", "n_pass": [105, 10, 7], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmail = false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:42.900949", "n_pass": [107, 11, 8], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmail= false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:44.208805", "n_pass": [109, 12, 9], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmail=false; return sendEmail; }"}
+{"time": "2021-01-20 05:52:45.518270", "n_pass": [112, 13, 10], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmail=false;return sendEmail; }"}
+{"time": "2021-01-20 05:52:50.768855", "n_pass": [117, 17, 11], "score": "0.4338", "loss": "0.9252", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmail=false;return sendEmail;}"}
+{"time": "2021-01-20 05:52:52.811087", "n_pass": [132, 18, 12], "score": "0.3441", "loss": "1.2329", "code": "boolean getSendEmail(){if(getPublishedSite())sendEmailfalse;return sendEmail;}"}
+
+Minimal simplified code:
+boolean getSendEmail(){if(getPublishedSite())sendEmailfalse;return sendEmail;}
+

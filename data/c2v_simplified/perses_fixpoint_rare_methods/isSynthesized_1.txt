@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/droidefense__engine/mods/memapktool/src/main/java/brut/androlib/res/data/ResValuesFile_isSynthesized.java
+method_name = isSynthesized
+method_body = public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:22:52.658229", "score": "0.3271", "loss": "3.0053", "code": "class T { public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec().getId()); } }"}
+{"time": "2021-01-24 16:28:31.833913", "score": "0.3341", "loss": "2.9555", "code": "class T { public boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec() ); } }"}
+{"time": "2021-01-24 16:29:51.131585", "score": "0.3341", "loss": "2.9555", "code": "class T { boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec() ); } }"}
+
+Minimal simplified code:
+class T {
+       boolean isSynthesized(ResResource res) { return mPackage.isSynthesized(res.getResSpec()        ); }
+}
+
+

@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/MapDemo_run.java
+method_name = run
+method_body = @Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }
+predict, score, loss = run, 0.9991191029548645, 0.0013162767281755805
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:40:59.419360", "n_pass": [1, 1, 1], "score": "0.9991", "loss": "0.0013", "code": "@Override public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:02.510935", "n_pass": [44, 2, 2], "score": "0.9925", "loss": "0.0153", "code": "public void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:06.779029", "n_pass": [89, 3, 3], "score": "0.9925", "loss": "0.0153", "code": " void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:09.449089", "n_pass": [90, 4, 4], "score": "0.9925", "loss": "0.0153", "code": "void run() { try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:12.528160", "n_pass": [95, 5, 5], "score": "0.9925", "loss": "0.0153", "code": "void run(){ try { Thread.sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:15.197545", "n_pass": [99, 6, 6], "score": "0.9901", "loss": "0.02", "code": "void run(){ try { sleep(delay); } catch (Exception x) { x.printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:17.872470", "n_pass": [109, 7, 7], "score": "0.9897", "loss": "0.0208", "code": "void run(){ try { sleep(delay); } catch (Exception x) { printStackTrace(); } System.exit(0); }"}
+{"time": "2020-12-26 21:41:20.556790", "n_pass": [114, 8, 8], "score": "0.9623", "loss": "0.0501", "code": "void run(){ try { sleep(delay); } catch (Exception x) { printStackTrace(); } System(0); }"}
+{"time": "2020-12-26 21:41:24.077133", "n_pass": [138, 9, 9], "score": "0.8992", "loss": "0.115", "code": "void run(){ try { sleep(delay); } catch (Exception x) { printStackTrace(); }(0); }"}
+{"time": "2020-12-26 21:41:33.160443", "n_pass": [202, 10, 10], "score": "0.8992", "loss": "0.115", "code": "void run(){ try { sleep(delay); } catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:36.693032", "n_pass": [209, 11, 11], "score": "0.8992", "loss": "0.115", "code": "void run(){try { sleep(delay); } catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:39.351164", "n_pass": [211, 12, 12], "score": "0.8992", "loss": "0.115", "code": "void run(){try{ sleep(delay); } catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:42.002149", "n_pass": [213, 13, 13], "score": "0.8992", "loss": "0.115", "code": "void run(){try{sleep(delay); } catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:47.296629", "n_pass": [216, 15, 14], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep(); } catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:49.979152", "n_pass": [219, 16, 15], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();} catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:52.622687", "n_pass": [221, 17, 16], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();}catch (Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:55.261975", "n_pass": [223, 18, 17], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();}catch(Exception x) { printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:41:57.909527", "n_pass": [229, 19, 18], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();}catch(Exception x){ printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:42:00.550185", "n_pass": [231, 20, 19], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();}catch(Exception x){printStackTrace(); }(0);}"}
+{"time": "2020-12-26 21:42:03.202670", "n_pass": [236, 21, 20], "score": "0.7431", "loss": "0.3222", "code": "void run(){try{sleep();}catch(Exception x){printStackTrace();}(0);}"}
+
+Minimal simplified code:
+void run(){try{sleep();}catch(Exception x){printStackTrace();}(0);}
+

@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/deployment/root-simplify/sm-code2seq/dd_token_large_methods/equals_1.txt
+method_name = equals
+method_body = boolean equals(Object obj){(this==obj);if(null){(null);}if((other))if(null){}if((filename))(isLink);if(null){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}
+
+Trace of simplified code(s):
+{"time": "2021-01-22 00:19:11.595315", "n_pass": [1, 1, 1], "score": "0.3809", "loss": "1.816", "code": "boolean equals(Object obj){(this==obj);if(null){(null);}if((other))if(null){}if((filename))(isLink);if(null){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:12.951237", "n_pass": [22, 2, 2], "score": "0.4913", "loss": "1.4076", "code": "boolean equals(Object obj){(this==obj);if(nullnull){}if((filename))(isLink);if(null){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:14.294230", "n_pass": [23, 3, 3], "score": "0.486", "loss": "1.5805", "code": "boolean equals(Object obj){(this==obj);if(nullLink);if(null){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:15.662845", "n_pass": [42, 4, 4], "score": "0.7058", "loss": "0.7364", "code": "boolean equals(Object obj){(this==obj);if(nulll){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:19.252363", "n_pass": [94, 6, 5], "score": "0.4679", "loss": "1.6267", "code": "boolean equals(Object obj){(obj);if(nulll){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:22.297761", "n_pass": [160, 8, 6], "score": "0.359", "loss": "2.0652", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((other))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:23.644803", "n_pass": [166, 9, 7], "score": "0.5328", "loss": "1.1506", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mimeType){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:24.984021", "n_pass": [170, 10, 8], "score": "0.3656", "loss": "1.9157", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(miype){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:26.329431", "n_pass": [171, 11, 9], "score": "0.3111", "loss": "2.239", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(null);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:27.665881", "n_pass": [173, 12, 10], "score": "0.3048", "loss": "2.1649", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((other))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:28.996688", "n_pass": [177, 13, 11], "score": "0.2479", "loss": "2.3138", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(null){(status);}((other));}"}
+{"time": "2021-01-22 00:19:30.321704", "n_pass": [180, 14, 12], "score": "0.2413", "loss": "2.3238", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(status);}((other));}"}
+{"time": "2021-01-22 00:19:31.691112", "n_pass": [183, 15, 13], "score": "0.2878", "loss": "2.068", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(sts);}((other));}"}
+{"time": "2021-01-22 00:19:33.047293", "n_pass": [186, 16, 14], "score": "0.327", "loss": "1.7298", "code": "boolean equals(Object obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(sts);}((er));}"}
+{"time": "2021-01-22 00:19:56.321977", "n_pass": [307, 30, 15], "score": "0.5019", "loss": "1.0503", "code": "boolean equals(Obect obj){(obj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(sts);}((er));}"}
+{"time": "2021-01-22 00:20:06.073281", "n_pass": [318, 37, 16], "score": "0.4249", "loss": "1.219", "code": "boolean equals(Obect obj){(bj);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(sts);}((er));}"}
+{"time": "2021-01-22 00:20:07.397281", "n_pass": [319, 38, 17], "score": "0.415", "loss": "1.2918", "code": "boolean equals(Obect obj){(j);if(nl){(null);}if((er))if(mi){(l);}if((or))if(l){(sts);}((er));}"}
+{"time": "2021-01-22 00:20:08.722492", "n_pass": [328, 39, 18], "score": "0.4716", "loss": "1.1027", "code": "boolean equals(Obect obj){(j);if(nl){(ll);}if((er))if(mi){(l);}if((or))if(l){(sts);}((er));}"}
+{"time": "2021-01-22 00:20:10.064956", "n_pass": [349, 40, 19], "score": "0.4543", "loss": "1.112", "code": "boolean equals(Obect obj){(j);if(nl){(ll);}if((er))if(mi){(l);}if((or))if(l){(s);}((er));}"}
+{"time": "2021-01-22 00:20:38.750125", "n_pass": [479, 58, 20], "score": "0.4326", "loss": "1.1896", "code": "boolean equals(Obect obj){(j);if(l){(ll);}if((er))if(mi){(l);}if((or))if(l){(s);}((er));}"}
+{"time": "2021-01-22 00:20:40.075964", "n_pass": [484, 59, 21], "score": "0.3399", "loss": "1.5297", "code": "boolean equals(Obect obj){(j);if(l){(l);}if((er))if(mi){(l);}if((or))if(l){(s);}((er));}"}
+{"time": "2021-01-22 00:20:44.103127", "n_pass": [500, 62, 22], "score": "0.4131", "loss": "1.2341", "code": "boolean equals(Obect obj){(j);if(l){(l);}if((er))if(i){(l);}if((or))if(l){(s);}((er));}"}
+{"time": "2021-01-22 00:20:45.436644", "n_pass": [513, 63, 23], "score": "0.4451", "loss": "1.1247", "code": "boolean equals(Obect obj){(j);if(l){(l);}if((er))if(i){(l);}if((r))if(l){(s);}((er));}"}
+
+Minimal simplified code:
+boolean equals(Obect obj){(j);if(l){(l);}if((er))if(i){(l);}if((r))if(l){(s);}((er));}
+

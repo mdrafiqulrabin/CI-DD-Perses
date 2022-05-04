@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/connector/Request_addPathParameter.java
+method_name = addPathParameter
+method_body = protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }
+predict, score, loss = addPathParameter, 0.46326566, 1.3055434
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:21:19.257723", "n_pass": [1, 1, 1], "score": "0.4633", "loss": "1.3055", "code": "protected void addPathParameter(String name, String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-23 09:21:20.924300", "n_pass": [20, 2, 2], "score": "0.4696", "loss": "1.5367", "code": "oid addPathParameter(String name, String value) { pathParameters.put(name, value); }"}
+{"time": "2021-01-23 09:21:27.211971", "n_pass": [53, 6, 3], "score": "0.3131", "loss": "2.4315", "code": "oid addPathParameter(String name, String value) { pathParameters.put(namue); }"}
+{"time": "2021-01-23 09:21:34.354285", "n_pass": [101, 9, 4], "score": "0.3181", "loss": "2.9838", "code": "oid addPathParameter(ing name, String value) { pathParameters.put(namue); }"}
+{"time": "2021-01-23 09:21:46.109000", "n_pass": [117, 18, 5], "score": "0.321", "loss": "2.7979", "code": "oid addPathParameter(ing name, String value) { pathParameters.put(ue); }"}
+{"time": "2021-01-23 09:22:00.469369", "n_pass": [191, 27, 6], "score": "0.3139", "loss": "4.5895", "code": "oid addPathParameter(ing name, String value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:01.764860", "n_pass": [194, 28, 7], "score": "0.3699", "loss": "4.1976", "code": "id addPathParameter(ing name, String value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:03.061252", "n_pass": [195, 29, 8], "score": "0.4234", "loss": "3.2169", "code": "d addPathParameter(ing name, String value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:10.875844", "n_pass": [215, 30, 9], "score": "0.5337", "loss": "2.672", "code": "d addPathParameter(ng name, String value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:12.201204", "n_pass": [216, 31, 10], "score": "0.2603", "loss": "3.1227", "code": "d addPathParameter(g name, String value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:14.795251", "n_pass": [221, 33, 11], "score": "0.2744", "loss": "3.2659", "code": "d addPathParameter(g name,tring value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:16.122485", "n_pass": [222, 34, 12], "score": "0.4141", "loss": "4.2515", "code": "d addPathParameter(g name,ing value) { pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:44.252838", "n_pass": [308, 49, 13], "score": "0.4141", "loss": "4.2515", "code": "d addPathParameter(g name,ing value){ pathParameters.put(); }"}
+{"time": "2021-01-23 09:22:45.560973", "n_pass": [309, 50, 14], "score": "0.4141", "loss": "4.2515", "code": "d addPathParameter(g name,ing value){pathParameters.put(); }"}
+{"time": "2021-01-23 09:23:10.346069", "n_pass": [331, 69, 15], "score": "0.4141", "loss": "4.2515", "code": "d addPathParameter(g name,ing value){pathParameters.put();}"}
+{"time": "2021-01-23 09:23:23.375962", "n_pass": [359, 74, 16], "score": "0.3794", "loss": "3.596", "code": "d addPathParameter(g name,ng value){pathParameters.put();}"}
+{"time": "2021-01-23 09:23:31.220549", "n_pass": [366, 80, 17], "score": "0.4184", "loss": "3.1983", "code": "d addPathParameter(g name,ng vale){pathParameters.put();}"}
+{"time": "2021-01-23 09:24:09.223445", "n_pass": [418, 104, 18], "score": "0.2536", "loss": "3.4702", "code": "d addPathParameter(g name,g vale){pathParameters.put();}"}
+
+Minimal simplified code:
+d addPathParameter(g name,g vale){pathParameters.put();}
+

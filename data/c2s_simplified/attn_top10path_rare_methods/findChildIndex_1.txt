@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/common/android/ViewGroupUtil_findChildIndex.java
+method_name = findChildIndex
+method_body = public static int findChildIndex(ViewGroup parent, View child) { int count = parent.getChildCount(); for (int i = 0; i < count; ++i) { if (parent.getChildAt(i) == child) { return i; } } return -1; }
+
+topk path-contexts for sub-token: find
+[0.1171] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0570] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+[0.0520] child,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0470] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0459] int,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,parent
+[0.0443] parent,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0381] i,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0368] count,NameExpr1|BinaryExpr:less|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0354] i,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+[0.0354] child,NameExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+
+topk terminals for sub-token: find
+['int', 'METHOD_NAME', 'int', 'i', 'child', '1', 'int', '1', 'int', 'parent', 'parent', '1', 'i', '1', 'count', '1', 'i', 'i', 'child', '1']
+
+topk path-contexts for sub-token: child
+[0.0580] child,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,view
+[0.0465] view,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0433] view|group,ClassOrInterfaceType1|Parameter|MethodDeclaration|Parameter|ClassOrInterfaceType1,view
+[0.0426] view|group,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0369] child,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0267] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|ClassOrInterfaceType1,view
+[0.0246] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0237] parent,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0220] get|child|count,NameExpr2|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0218] view|group,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ForStmt|VariableDeclarationExpr|VariableDeclarator|IntegerLiteralExpr1,0
+
+topk terminals for sub-token: child
+['child', 'view', 'view', '1', 'view|group', 'view', 'view|group', '1', 'child', '1', 'METHOD_NAME', 'view', 'int', 'METHOD_NAME', 'parent', '1', 'get|child|count', '1', 'view|group', '0']
+
+topk path-contexts for sub-token: index
+[0.0704] int,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0453] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+[0.0391] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+[0.0301] get|child|count,NameExpr2|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0284] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0278] int,PrimitiveType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0268] i,NameExpr0|UnaryExpr:preIncrement|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+[0.0267] child,NameExpr1|BinaryExpr:equals|IfStmt|BlockStmt|ForStmt|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0266] view,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|UnaryExpr:negative|IntegerLiteralExpr0,1
+[0.0250] i,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|IfStmt|BlockStmt|ReturnStmt|NameExpr0,i
+
+topk terminals for sub-token: index
+['int', 'METHOD_NAME', '0', 'i', 'int', 'i', 'get|child|count', '1', 'int', '1', 'int', '1', 'i', 'i', 'child', '1', 'view', '1', 'i', 'i']
+

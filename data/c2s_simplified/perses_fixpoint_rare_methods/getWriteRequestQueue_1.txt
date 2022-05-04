@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/filter/stream/AbstractStreamWriteFilter_getWriteRequestQueue.java
+method_name = getWriteRequestQueue
+method_body = @SuppressWarnings("unchecked") private Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 07:35:03.228545", "score": "0.4636", "loss": "1.9228", "code": "class T { @SuppressWarnings(\"unchecked\") private Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); } }"}
+{"time": "2021-01-24 07:36:30.736860", "score": "0.7733", "loss": "1.2645", "code": "class T { Queue<WriteRequest> getWriteRequestQueue(IoSession session) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); } }"}
+{"time": "2021-01-24 07:37:21.716434", "score": "0.9845", "loss": "0.8671", "code": "class T { Queue<WriteRequest> getWriteRequestQueue( ) { return (Queue<WriteRequest>) session.getAttribute(WRITE_REQUEST_QUEUE); } }"}
+{"time": "2021-01-24 07:39:23.493552", "score": "0.9816", "loss": "1.46", "code": "class T { Queue<WriteRequest> getWriteRequestQueue( ) { return (Queue ) session.getAttribute(WRITE_REQUEST_QUEUE); } }"}
+
+Minimal simplified code:
+class T {
+                                       Queue<WriteRequest> getWriteRequestQueue(                 ) { return (Queue              ) session.getAttribute(WRITE_REQUEST_QUEUE); }
+}
+
+

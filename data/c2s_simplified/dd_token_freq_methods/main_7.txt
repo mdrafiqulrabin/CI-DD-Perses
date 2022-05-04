@@ -1,0 +1,29 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/anbud__MarkovComposer/src/rs/zx/ml/MLMain_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }
+predict, score, loss = main, 0.99993336, 0.00020574417
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:08:12.034825", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0002", "code": "public static void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-27 04:08:14.091246", "n_pass": [44, 2, 2], "score": "0.9999", "loss": "0.0002", "code": " void main(String[] args) { try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-27 04:08:15.449902", "n_pass": [50, 3, 3], "score": "0.9999", "loss": "0.0001", "code": " void main(String[] args) { try { (UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-27 04:08:18.256153", "n_pass": [94, 4, 4], "score": "0.9999", "loss": "0.0001", "code": " void main(String[] args) { try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } new GUI(); }"}
+{"time": "2020-12-27 04:08:19.579568", "n_pass": [105, 5, 5], "score": "0.9995", "loss": "0.0008", "code": " void main(String[] args) { try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:20.926427", "n_pass": [109, 6, 6], "score": "0.9995", "loss": "0.0008", "code": "void main(String[] args) { try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:28.040634", "n_pass": [174, 7, 7], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args) { try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:29.365283", "n_pass": [177, 8, 8], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){ try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:30.697254", "n_pass": [179, 9, 9], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try { (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:32.039380", "n_pass": [181, 10, 10], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{ (getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:33.384159", "n_pass": [183, 11, 11], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName()); } catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:34.706776", "n_pass": [190, 12, 12], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());} catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:36.016563", "n_pass": [192, 13, 13], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch (Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:37.354236", "n_pass": [194, 14, 14], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e) { } GUI(); }"}
+{"time": "2020-12-27 04:08:38.684592", "n_pass": [200, 15, 15], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e){ } GUI(); }"}
+{"time": "2020-12-27 04:08:40.008260", "n_pass": [202, 16, 16], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e){} GUI(); }"}
+{"time": "2020-12-27 04:08:41.312706", "n_pass": [204, 17, 17], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e){}GUI(); }"}
+{"time": "2020-12-27 04:08:42.644142", "n_pass": [209, 18, 18], "score": "0.9995", "loss": "0.0008", "code": "void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e){}GUI();}"}
+
+Minimal simplified code:
+void main(String[]args){try{(getSystemLookAndFeelClassName());}catch(Exception e){}GUI();}
+

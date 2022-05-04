@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoHelperTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }
+predict, score, loss = setUp, 0.99955946, 0.0005041454
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:30:33.176779", "n_pass": [1, 1, 1], "score": "0.9996", "loss": "0.0005", "code": "@Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }"}
+{"time": "2020-12-27 23:30:34.883077", "n_pass": [10, 2, 2], "score": "0.1823", "loss": "2.31", "code": "@Override protected void setUp() throws Exception { supeext().getContentResolver(); }"}
+{"time": "2020-12-27 23:31:03.604882", "n_pass": [146, 22, 3], "score": "0.1823", "loss": "2.31", "code": "@Override protected void setUp() throws Exception { seext().getContentResolver(); }"}
+{"time": "2020-12-27 23:31:10.253373", "n_pass": [152, 27, 4], "score": "0.1832", "loss": "2.2752", "code": "@Override protected void setUp() throws Exception { seext().getCoentResolver(); }"}
+{"time": "2020-12-27 23:31:50.081509", "n_pass": [269, 54, 5], "score": "0.1832", "loss": "2.2752", "code": "@Override protected void setUp() throws Exception { seext().getCoetResolver(); }"}
+{"time": "2020-12-27 23:31:51.396666", "n_pass": [270, 55, 6], "score": "0.2194", "loss": "2.0159", "code": "@Override protected void setUp() throws Exception { seext().getCoeResolver(); }"}
+{"time": "2020-12-27 23:31:55.394060", "n_pass": [273, 58, 7], "score": "0.332", "loss": "2.6504", "code": "@Override protected void setUp() throws Exception { seext().getCoeReolver(); }"}
+{"time": "2020-12-27 23:32:03.347104", "n_pass": [282, 64, 8], "score": "0.332", "loss": "2.6504", "code": "@Override protected void setUp() throws Exception { seext().getCoeReolver();}"}
+{"time": "2020-12-27 23:32:25.518858", "n_pass": [316, 79, 9], "score": "0.332", "loss": "2.6504", "code": "@Override protected void setUp()throws Exception { seext().getCoeReolver();}"}
+{"time": "2020-12-27 23:32:38.821303", "n_pass": [333, 89, 10], "score": "0.332", "loss": "2.6504", "code": "@Override protected void setUp()throws Exception{ seext().getCoeReolver();}"}
+{"time": "2020-12-27 23:32:40.149751", "n_pass": [335, 90, 11], "score": "0.332", "loss": "2.6504", "code": "@Override protected void setUp()throws Exception{seext().getCoeReolver();}"}
+{"time": "2020-12-27 23:32:42.756106", "n_pass": [337, 92, 12], "score": "0.2338", "loss": "2.7863", "code": "@Override protected void setUp()throws Exception{sext().getCoeReolver();}"}
+{"time": "2020-12-27 23:32:48.063207", "n_pass": [344, 96, 13], "score": "0.3318", "loss": "2.3208", "code": "@Override protected void setUp()throws Exception{sext().etCoeReolver();}"}
+{"time": "2020-12-27 23:32:50.714097", "n_pass": [346, 98, 14], "score": "0.2592", "loss": "2.8741", "code": "@Override protected void setUp()throws Exception{sext().eCoeReolver();}"}
+{"time": "2020-12-27 23:33:38.153103", "n_pass": [410, 132, 15], "score": "0.2243", "loss": "2.8972", "code": "@Override protected void setUp()throws Exception{ext().eCoeReolver();}"}
+{"time": "2020-12-27 23:33:39.462062", "n_pass": [411, 133, 16], "score": "0.2233", "loss": "2.1104", "code": "@Override protected void setUp()throws Exception{xt().eCoeReolver();}"}
+
+Minimal simplified code:
+@Override protected void setUp()throws Exception{xt().eCoeReolver();}
+

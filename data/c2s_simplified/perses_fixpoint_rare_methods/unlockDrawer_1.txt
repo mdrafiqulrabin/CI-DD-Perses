@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_unlockDrawer.java
+method_name = unlockDrawer
+method_body = private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 05:43:59.101378", "score": "0.191", "loss": "2.6604", "code": "class T { private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } } }"}
+{"time": "2021-01-24 05:46:04.525090", "score": "0.191", "loss": "2.6604", "code": "class T { void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } } }"}
+
+Minimal simplified code:
+class T {
+        void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }
+}
+
+

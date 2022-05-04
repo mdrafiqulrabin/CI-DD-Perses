@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/internal/Column_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; Column column = (Column) o; return name.equalsIgnoreCase(column.name); }
+predict, score, loss = equals, 0.99957997, 0.0004804265
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:03:20.967982", "n_pass": [1, 1, 1], "score": "0.9996", "loss": "0.0005", "code": "@Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; Column column = (Column) o; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:22.371403", "n_pass": [25, 2, 2], "score": "0.995", "loss": "0.0064", "code": "@Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return(Column) o; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:23.706588", "n_pass": [47, 3, 3], "score": "0.9942", "loss": "0.007", "code": "@Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:25.031922", "n_pass": [50, 4, 4], "score": "0.99", "loss": "0.0131", "code": " boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:26.355987", "n_pass": [56, 5, 5], "score": "0.9686", "loss": "0.0408", "code": " boolean equals(Object o) { if (this == o) if (!(o instanceof Column)) return; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:27.693425", "n_pass": [94, 6, 6], "score": "0.9535", "loss": "0.059", "code": " boolean equals(Object o) { if (this == o) if (!( Column)) return; return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:29.020851", "n_pass": [97, 7, 7], "score": "0.9552", "loss": "0.0621", "code": " boolean equals(Object o) { if (this == o) if (!( Column)) return name.equalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:30.344951", "n_pass": [98, 8, 8], "score": "0.8825", "loss": "0.2419", "code": " boolean equals(Object o) { if (this == o) if (!( Column)) returnequalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:36.913166", "n_pass": [156, 9, 9], "score": "0.8825", "loss": "0.2419", "code": " boolean equals(Object o) { if (this == o) if (!( Column))returnequalsIgnoreCase(column.name); }"}
+{"time": "2020-12-27 04:03:38.337630", "n_pass": [157, 10, 10], "score": "0.8284", "loss": "0.2512", "code": " boolean equals(Object o) { if (this == o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:41.058562", "n_pass": [162, 12, 11], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o) { if (this == o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:43.107051", "n_pass": [171, 13, 12], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){ if (this == o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:44.453238", "n_pass": [173, 14, 13], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if (this == o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:45.778395", "n_pass": [175, 15, 14], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if(this == o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:47.105475", "n_pass": [178, 16, 15], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if(this== o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:49.169708", "n_pass": [181, 17, 16], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if(this==o) if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:50.498385", "n_pass": [184, 18, 17], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if(this==o)if (!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:51.794811", "n_pass": [186, 19, 18], "score": "0.8284", "loss": "0.2512", "code": "boolean equals(Object o){if(this==o)if(!( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:53.090712", "n_pass": [188, 20, 19], "score": "0.7582", "loss": "0.3654", "code": "boolean equals(Object o){if(this==o)if(( Column))(column.name); }"}
+{"time": "2020-12-27 04:03:54.404550", "n_pass": [190, 21, 20], "score": "0.7582", "loss": "0.3654", "code": "boolean equals(Object o){if(this==o)if((Column))(column.name); }"}
+{"time": "2020-12-27 04:04:00.506559", "n_pass": [231, 24, 21], "score": "0.7582", "loss": "0.3654", "code": "boolean equals(Object o){if(this==o)if((Column))(column.name);}"}
+
+Minimal simplified code:
+boolean equals(Object o){if(this==o)if((Column))(column.name);}
+

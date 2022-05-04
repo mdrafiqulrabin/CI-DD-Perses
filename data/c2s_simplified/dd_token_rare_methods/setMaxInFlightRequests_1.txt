@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setMaxInFlightRequests.java
+method_name = setMaxInFlightRequests
+method_body = public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }
+predict, score, loss = setMaxInFlightRequests, 0.49909967, 13.332167
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:13:00.391252", "n_pass": [1, 1, 1], "score": "0.4991", "loss": "13.3322", "code": "public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequests; return this; }"}
+{"time": "2021-01-20 05:13:04.681775", "n_pass": [26, 4, 2], "score": "0.8132", "loss": "12.3705", "code": "public Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequeststhis; }"}
+{"time": "2021-01-20 05:13:09.666420", "n_pass": [50, 7, 3], "score": "0.8132", "loss": "12.3705", "code": " Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequeststhis; }"}
+{"time": "2021-01-20 05:13:10.968130", "n_pass": [51, 8, 4], "score": "0.8132", "loss": "12.3705", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests = maxInFlightRequeststhis; }"}
+{"time": "2021-01-20 05:13:12.987651", "n_pass": [60, 9, 5], "score": "0.5689", "loss": "14.7376", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests =this; }"}
+{"time": "2021-01-20 05:13:18.705079", "n_pass": [92, 11, 6], "score": "0.5689", "loss": "14.7376", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests) { this.maxInFlightRequests =this;}"}
+{"time": "2021-01-20 05:13:21.114079", "n_pass": [101, 12, 7], "score": "0.5689", "loss": "14.7376", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests){ this.maxInFlightRequests =this;}"}
+{"time": "2021-01-20 05:13:22.424509", "n_pass": [103, 13, 8], "score": "0.5689", "loss": "14.7376", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests){this.maxInFlightRequests =this;}"}
+{"time": "2021-01-20 05:13:25.062914", "n_pass": [107, 15, 9], "score": "0.5689", "loss": "14.7376", "code": "Builder setMaxInFlightRequests(int maxInFlightRequests){this.maxInFlightRequests=this;}"}
+
+Minimal simplified code:
+Builder setMaxInFlightRequests(int maxInFlightRequests){this.maxInFlightRequests=this;}
+

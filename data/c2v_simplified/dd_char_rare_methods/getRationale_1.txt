@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/ItemContentsBean_getRationale.java
+method_name = getRationale
+method_body = public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, ""); }
+predict, score, loss = getRationale, 0.4218180179595947, 2.1692864894866943
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:23:27.015306", "n_pass": [1, 1, 1], "score": "0.4218", "loss": "2.1693", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:29.669886", "n_pass": [10, 2, 2], "score": "0.2855", "loss": "4.1858", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArrayintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:32.322745", "n_pass": [24, 3, 3], "score": "0.2746", "loss": "4.3407", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:40.639608", "n_pass": [46, 6, 4], "score": "0.2661", "loss": "4.2665", "code": "public String getRationale() { int count = getItemG.size(); if (count > 0) { ItemGradingintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:46.336078", "n_pass": [77, 8, 5], "score": "0.2661", "loss": "4.2665", "code": "public String getRationale() { int count = getItemG.size(); if (count > 0) { Igintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:48.966874", "n_pass": [79, 9, 6], "score": "0.291", "loss": "4.0982", "code": "public String getRationale() { int count = getItemG.size(); if (count > 0) { Igintext(dtionale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:23:51.616609", "n_pass": [80, 10, 7], "score": "0.2898", "loss": "4.0379", "code": "public String getRationale() { int count = getItemG.size(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:20.141693", "n_pass": [144, 20, 8], "score": "0.1512", "loss": "4.5199", "code": "public String getRationale() { iount = getItemG.size(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:22.766017", "n_pass": [145, 21, 9], "score": "0.1516", "loss": "4.417", "code": "public String getRationale() { i = getItemG.size(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:25.394076", "n_pass": [146, 22, 10], "score": "0.1629", "loss": "4.4743", "code": "public String getRationale() { ietItemG.size(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:28.023231", "n_pass": [147, 23, 11], "score": "0.1629", "loss": "4.4743", "code": "public String getRationale() { iemG.size(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:30.650152", "n_pass": [148, 24, 12], "score": "0.2223", "loss": "3.7283", "code": "public String getRationale() { isize(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:33.293275", "n_pass": [149, 25, 13], "score": "0.2067", "loss": "3.6986", "code": "public String getRationale() { i(); if (count > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:35.914182", "n_pass": [152, 26, 14], "score": "0.203", "loss": "3.5148", "code": "public String getRationale() { i(); if (t > 0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:38.527747", "n_pass": [153, 27, 15], "score": "0.3069", "loss": "2.6189", "code": "public String getRationale() { i(); if (0) { Igintext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:41.169861", "n_pass": [155, 28, 16], "score": "0.3775", "loss": "2.6949", "code": "public String getRationale() { i(); if (0) { ext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:24:56.906164", "n_pass": [168, 34, 17], "score": "0.3065", "loss": "3.1394", "code": "public Sg getRationale() { i(); if (0) { ext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:17.199317", "n_pass": [239, 40, 18], "score": "0.3461", "loss": "2.9633", "code": "public Sg getRationale() { i; if (0) { ext(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:22.452524", "n_pass": [245, 42, 19], "score": "0.245", "loss": "3.0534", "code": "public Sg getRationale() { i; if (0) { e(d); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:27.687395", "n_pass": [253, 44, 20], "score": "0.272", "loss": "3.0173", "code": "public Sg getRationale() { i; if (0) { e(d); } return idator.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:30.321740", "n_pass": [254, 45, 21], "score": "0.298", "loss": "3.8174", "code": "public Sg getRationale() { i; if (0) { e(d); } return tor.check(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:35.562016", "n_pass": [257, 47, 22], "score": "0.3079", "loss": "3.5587", "code": "public Sg getRationale() { i; if (0) { e(d); } return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:43.425044", "n_pass": [267, 50, 23], "score": "0.3283", "loss": "3.6689", "code": "publicg getRationale() { i; if (0) { e(d); } return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:48.876801", "n_pass": [277, 51, 24], "score": "0.33", "loss": "3.6606", "code": "publicg getRationale() {; if (0) { e(d); } return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:51.485906", "n_pass": [278, 52, 25], "score": "0.33", "loss": "3.6606", "code": "publicg getRationale() {if (0) { e(d); } return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:25:54.118450", "n_pass": [283, 53, 26], "score": "0.4129", "loss": "2.9683", "code": "publicg getRationale() {if (0) {(d); } return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:26:20.872548", "n_pass": [381, 61, 27], "score": "0.4129", "loss": "2.9683", "code": "publicg getRationale() {if (0) {(d);} return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:26:23.509031", "n_pass": [382, 62, 28], "score": "0.4129", "loss": "2.9683", "code": "publicg getRationale() {if (0) {(d);}return tor.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:26:28.730926", "n_pass": [390, 64, 29], "score": "0.2562", "loss": "3.5916", "code": "publicg getRationale() {if (0) {(d);}return or.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:26:31.338527", "n_pass": [391, 65, 30], "score": "0.3634", "loss": "2.254", "code": "publicg getRationale() {if (0) {(d);}return r.ch(rationale, \"\"); }"}
+{"time": "2021-01-23 16:26:36.564645", "n_pass": [394, 67, 31], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale() {if (0) {(d);}return r.h(rationale, \"\"); }"}
+{"time": "2021-01-23 16:27:13.577403", "n_pass": [428, 79, 32], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale(){if (0) {(d);}return r.h(rationale, \"\"); }"}
+{"time": "2021-01-23 16:27:16.199434", "n_pass": [432, 80, 33], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale(){if(0) {(d);}return r.h(rationale, \"\"); }"}
+{"time": "2021-01-23 16:27:18.817563", "n_pass": [436, 81, 34], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale(){if(0){(d);}return r.h(rationale, \"\"); }"}
+{"time": "2021-01-23 16:28:23.075888", "n_pass": [516, 103, 35], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale(){if(0){(d);}return r.h(rationale,\"\"); }"}
+{"time": "2021-01-23 16:28:25.705616", "n_pass": [521, 104, 36], "score": "0.3941", "loss": "2.1429", "code": "publicg getRationale(){if(0){(d);}return r.h(rationale,\"\");}"}
+
+Minimal simplified code:
+publicg getRationale(){if(0){(d);}return r.h(rationale,"");}
+

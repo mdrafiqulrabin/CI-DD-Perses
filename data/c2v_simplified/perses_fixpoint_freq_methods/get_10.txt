@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/collections/ManagedConcurrentWeakHashMap_get.java
+method_name = get
+method_body = @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 13:20:35.011634", "score": "0.965", "loss": "0.0442", "code": "class T { @Override public V get(Object key) { if (key == null) { return null; } return map.get(createLookupKey(key)); } }"}
+{"time": "2020-12-29 13:23:02.021873", "score": "0.573", "loss": "0.5888", "code": "class T { @Override public V get(Object key) { return null; } }"}
+{"time": "2020-12-29 13:24:17.640250", "score": "0.7335", "loss": "0.3456", "code": "class T { V get(Object key) { return null; } }"}
+{"time": "2020-12-29 13:25:36.713108", "score": "0.3492", "loss": "1.1433", "code": "class T { V get(Object key) { return ; } }"}
+
+Minimal simplified code:
+class T {
+                 V get(Object key)                    { return     ; }
+}
+
+

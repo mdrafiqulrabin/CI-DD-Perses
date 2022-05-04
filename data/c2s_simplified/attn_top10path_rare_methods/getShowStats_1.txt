@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/FeedbackComponent_getShowStats.java
+method_name = getShowStats
+method_body = public boolean getShowStats() { return this.showStats; }
+
+topk path-contexts for sub-token: get
+[0.1479] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.1333] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.1057] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.1034] this,ThisExpr0|FieldAccessExpr|NameExpr2,show|stats
+[0.0607] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0445] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: get
+['boolean', 'show|stats', 'METHOD_NAME', 'show|stats', 'boolean', 'METHOD_NAME', 'this', 'show|stats', 'boolean', 'this', 'METHOD_NAME', 'this']
+
+topk path-contexts for sub-token: show
+[0.2840] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.2624] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.2521] this,ThisExpr0|FieldAccessExpr|NameExpr2,show|stats
+[0.0163] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0077] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0077] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: show
+['METHOD_NAME', 'show|stats', 'boolean', 'show|stats', 'this', 'show|stats', 'boolean', 'METHOD_NAME', 'boolean', 'this', 'METHOD_NAME', 'this']
+
+topk path-contexts for sub-token: stats
+[0.3655] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.3537] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|NameExpr2,show|stats
+[0.2615] this,ThisExpr0|FieldAccessExpr|NameExpr2,show|stats
+[0.0025] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0003] boolean,PrimitiveType0|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+[0.0002] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|FieldAccessExpr0|ThisExpr0,this
+
+topk terminals for sub-token: stats
+['boolean', 'show|stats', 'METHOD_NAME', 'show|stats', 'this', 'show|stats', 'boolean', 'METHOD_NAME', 'boolean', 'this', 'METHOD_NAME', 'this']
+

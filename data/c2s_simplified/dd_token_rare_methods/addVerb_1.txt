@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bladecoder__bladecoder-adventure-engine/blade-engine/src/com/bladecoder/engine/model/VerbManager_addVerb.java
+method_name = addVerb
+method_body = public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }
+predict, score, loss = addVerb, 0.35578522, 1.4712824
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:20:06.131487", "n_pass": [1, 1, 1], "score": "0.3558", "loss": "1.4713", "code": "public void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-20 06:20:09.458024", "n_pass": [44, 3, 2], "score": "0.3558", "loss": "1.4713", "code": " void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-20 06:20:10.771383", "n_pass": [45, 4, 3], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v) { verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-20 06:20:17.459227", "n_pass": [92, 7, 4], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v){ verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-20 06:20:18.795417", "n_pass": [94, 8, 5], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v){verbs.put(v.getHashKey(), v); }"}
+{"time": "2021-01-20 06:20:22.761778", "n_pass": [105, 11, 6], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v){verbs.put(v.getHashKey(),v); }"}
+{"time": "2021-01-20 06:20:24.099530", "n_pass": [109, 12, 7], "score": "0.3558", "loss": "1.4713", "code": "void addVerb(Verb v){verbs.put(v.getHashKey(),v);}"}
+
+Minimal simplified code:
+void addVerb(Verb v){verbs.put(v.getHashKey(),v);}
+

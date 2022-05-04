@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.netty/src/main/java/org/kaazing/mina/core/service/AbstractIoService_getFilterChainBuilder.java
+method_name = getFilterChainBuilder
+method_body = @Override public final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }
+predict, score, loss = getFilterChainBuilder, 0.4668249, 1.4382051
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:09:14.868144", "n_pass": [1, 1, 1], "score": "0.4668", "loss": "1.4382", "code": "@Override public final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }"}
+{"time": "2021-01-20 06:09:16.210471", "n_pass": [8, 2, 2], "score": "0.5319", "loss": "1.2844", "code": "final IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }"}
+{"time": "2021-01-20 06:09:17.499164", "n_pass": [17, 3, 3], "score": "0.5319", "loss": "1.2844", "code": "IoFilterChainBuilder getFilterChainBuilder() { return filterChainBuilder; }"}
+{"time": "2021-01-20 06:09:22.126360", "n_pass": [38, 5, 4], "score": "0.5319", "loss": "1.2844", "code": "IoFilterChainBuilder getFilterChainBuilder(){ return filterChainBuilder; }"}
+{"time": "2021-01-20 06:09:31.024784", "n_pass": [59, 10, 5], "score": "0.5319", "loss": "1.2844", "code": "IoFilterChainBuilder getFilterChainBuilder(){ return filterChainBuilder;}"}
+{"time": "2021-01-20 06:09:33.375855", "n_pass": [66, 11, 6], "score": "0.5319", "loss": "1.2844", "code": "IoFilterChainBuilder getFilterChainBuilder(){return filterChainBuilder;}"}
+
+Minimal simplified code:
+IoFilterChainBuilder getFilterChainBuilder(){return filterChainBuilder;}
+

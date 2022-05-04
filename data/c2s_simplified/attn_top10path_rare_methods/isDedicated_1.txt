@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/base/Conversions_isDedicated.java
+method_name = isDedicated
+method_body = public static boolean isDedicated(Offer offer) { return FluentIterable.from(offer.getAttributesList()).transform(ATTRIBUTE_NAME).anyMatch(Predicates.equalTo(ConfigurationManager.DEDICATED_ATTRIBUTE)); }
+
+topk path-contexts for sub-token: is
+[0.2051] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0939] boolean,PrimitiveType0|MethodDeclaration|Parameter|VariableDeclaratorId0,offer
+[0.0906] boolean,PrimitiveType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,offer
+[0.0337] attribute|name,NameExpr2|MethodCallExpr0|NameExpr3,transform
+[0.0286] offer,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,any|match
+[0.0274] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,any|match
+[0.0256] offer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr3,any|match
+[0.0227] configuration|manager,NameExpr0|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0216] fluent|iterable,NameExpr0|MethodCallExpr0|MethodCallExpr2|NameExpr0,offer
+[0.0201] fluent|iterable,NameExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+
+topk terminals for sub-token: is
+['boolean', 'METHOD_NAME', 'boolean', 'offer', 'boolean', 'offer', 'attribute|name', 'transform', 'offer', 'any|match', 'METHOD_NAME', 'any|match', 'offer', 'any|match', 'configuration|manager', 'dedicated|attribute', 'fluent|iterable', 'offer', 'fluent|iterable', 'dedicated|attribute']
+
+topk path-contexts for sub-token: dedicated
+[0.1099] configuration|manager,NameExpr0|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0807] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0780] fluent|iterable,NameExpr0|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0702] offer,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0655] offer,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0602] attribute|name,NameExpr2|MethodCallExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0467] offer,NameExpr0|MethodCallExpr2|MethodCallExpr0|MethodCallExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0430] predicates,NameExpr0|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0328] transform,NameExpr3|MethodCallExpr0|MethodCallExpr|MethodCallExpr2|FieldAccessExpr2|NameExpr2,dedicated|attribute
+[0.0301] boolean,PrimitiveType0|MethodDeclaration|NameExpr1,METHOD_NAME
+
+topk terminals for sub-token: dedicated
+['configuration|manager', 'dedicated|attribute', 'METHOD_NAME', 'dedicated|attribute', 'fluent|iterable', 'dedicated|attribute', 'offer', 'dedicated|attribute', 'offer', 'dedicated|attribute', 'attribute|name', 'dedicated|attribute', 'offer', 'dedicated|attribute', 'predicates', 'dedicated|attribute', 'transform', 'dedicated|attribute', 'boolean', 'METHOD_NAME']
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/demo/src/androidTest/java/example/kurt/todo/TodoHelperTest_setUp.java
+method_name = setUp
+method_body = @Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }
+predict, score, loss = setUp, 0.9992044568061829, 0.0007961202645674348
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:20:52.138760", "n_pass": [1, 1, 1], "score": "0.9992", "loss": "0.0008", "code": "@Override protected void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }"}
+{"time": "2020-12-26 22:20:57.745514", "n_pass": [20, 3, 2], "score": "0.9994", "loss": "0.0006", "code": " void setUp() throws Exception { super.setUp(); resolver = getContext().getContentResolver(); }"}
+{"time": "2020-12-26 22:21:00.588768", "n_pass": [25, 4, 3], "score": "0.9997", "loss": "0.0003", "code": " void setUp() throws Exception { super.setUp();getContext().getContentResolver(); }"}
+{"time": "2020-12-26 22:21:06.182199", "n_pass": [45, 6, 4], "score": "0.9997", "loss": "0.0003", "code": " void setUp() throws Exception { super.setUp();getContextgetContentResolver(); }"}
+{"time": "2020-12-26 22:21:09.122404", "n_pass": [46, 7, 5], "score": "0.9998", "loss": "0.0002", "code": " void setUp() throws Exception { super.setUp();getContext; }"}
+{"time": "2020-12-26 22:21:14.948305", "n_pass": [77, 8, 6], "score": "0.9998", "loss": "0.0002", "code": " void setUp() throws Exception { super.setUp(); }"}
+{"time": "2020-12-26 22:21:17.730996", "n_pass": [79, 9, 7], "score": "0.9998", "loss": "0.0002", "code": "void setUp() throws Exception { super.setUp(); }"}
+{"time": "2020-12-26 22:21:21.515576", "n_pass": [85, 10, 8], "score": "0.9998", "loss": "0.0002", "code": "void setUp()throws Exception { super.setUp(); }"}
+{"time": "2020-12-26 22:21:24.430849", "n_pass": [89, 11, 9], "score": "0.9998", "loss": "0.0002", "code": "void setUp()throws Exception{ super.setUp(); }"}
+{"time": "2020-12-26 22:21:27.262281", "n_pass": [91, 12, 10], "score": "0.9998", "loss": "0.0002", "code": "void setUp()throws Exception{super.setUp(); }"}
+{"time": "2020-12-26 22:21:34.613272", "n_pass": [113, 14, 11], "score": "0.9998", "loss": "0.0002", "code": "void setUp()throws Exception{super.setUp();}"}
+
+Minimal simplified code:
+void setUp()throws Exception{super.setUp();}
+

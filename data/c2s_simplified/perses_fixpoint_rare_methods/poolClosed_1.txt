@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/main/java/org/apache/tomcat/jdbc/pool/interceptor/StatementCache_poolClosed.java
+method_name = poolClosed
+method_body = @Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:36:21.097329", "score": "0.4595", "loss": "0.8022", "code": "class T { @Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); } }"}
+{"time": "2021-01-24 04:37:20.001805", "score": "0.6001", "loss": "0.5287", "code": "class T { @Override public void poolClosed(ConnectionPool pool) { super.poolClosed(pool); } }"}
+{"time": "2021-01-24 04:37:41.325987", "score": "0.5079", "loss": "0.8257", "code": "class T { void poolClosed(ConnectionPool pool) { super.poolClosed(pool); } }"}
+{"time": "2021-01-24 04:37:51.982192", "score": "0.8774", "loss": "0.2668", "code": "class T { void poolClosed( ) { super.poolClosed(pool); } }"}
+
+Minimal simplified code:
+class T {
+                 void poolClosed(                   ) {                            super.poolClosed(pool); }
+}
+
+

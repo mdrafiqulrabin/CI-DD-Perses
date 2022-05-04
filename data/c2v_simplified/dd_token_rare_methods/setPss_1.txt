@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wso2-attic__product-emm/modules/mobile-agents/android/client/client/src/main/java/org/wso2/emm/agent/beans/Application_setPss.java
+method_name = setPss
+method_body = public void setPss(int pss) { this.pss = pss; }
+predict, score, loss = setPss, 0.3611820340156555, 2.843428611755371
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:37:32.577436", "n_pass": [1, 1, 1], "score": "0.3612", "loss": "2.8434", "code": "public void setPss(int pss) { this.pss = pss; }"}
+{"time": "2021-01-20 07:37:35.603013", "n_pass": [20, 2, 2], "score": "0.3612", "loss": "2.8434", "code": "void setPss(int pss) { this.pss = pss; }"}
+{"time": "2021-01-20 07:37:42.778531", "n_pass": [50, 4, 3], "score": "0.7405", "loss": "1.1107", "code": "void setPss(int pss) { pss = pss; }"}
+{"time": "2021-01-20 07:37:45.409319", "n_pass": [52, 5, 4], "score": "0.3083", "loss": "3.1473", "code": "void setPss(int pss) { pss pss; }"}
+{"time": "2021-01-20 07:37:53.329171", "n_pass": [76, 7, 5], "score": "0.3083", "loss": "3.1473", "code": "void setPss(int pss) { pss pss;}"}
+{"time": "2021-01-20 07:37:56.753149", "n_pass": [85, 8, 6], "score": "0.3083", "loss": "3.1473", "code": "void setPss(int pss){ pss pss;}"}
+{"time": "2021-01-20 07:37:59.396713", "n_pass": [87, 9, 7], "score": "0.3083", "loss": "3.1473", "code": "void setPss(int pss){pss pss;}"}
+
+Minimal simplified code:
+void setPss(int pss){pss pss;}
+

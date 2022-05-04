@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+predict, score, loss = onCreate, 0.5593332, 0.74711186
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:06:25.933143", "n_pass": [1, 1, 1], "score": "0.5593", "loss": "0.7471", "code": "@Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:27.659118", "n_pass": [22, 2, 2], "score": "0.6582", "loss": "0.5784", "code": "@Override public boolean onCreate() { getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:30.820730", "n_pass": [47, 4, 3], "score": "0.6947", "loss": "0.5447", "code": "@Override public boolean onCreate() { getContext(); mContentResolver =getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:32.510627", "n_pass": [54, 5, 4], "score": "0.353", "loss": "1.3669", "code": "public boolean onCreate() { getContext(); mContentResolver =getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:34.209627", "n_pass": [60, 6, 5], "score": "0.4144", "loss": "1.1873", "code": "public boolean onCreate() { getContext(); getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:38.928759", "n_pass": [95, 8, 6], "score": "0.4735", "loss": "1.1418", "code": "public boolean onCreate() { getContext(); getContentResolver; mOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:40.243553", "n_pass": [96, 9, 7], "score": "0.56", "loss": "1.1768", "code": "public boolean onCreate() { getContext(); getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:45.493712", "n_pass": [106, 13, 8], "score": "0.56", "loss": "1.1768", "code": " boolean onCreate() { getContext(); getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:46.815195", "n_pass": [107, 14, 9], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate() { getContext(); getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:58.200180", "n_pass": [155, 19, 10], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate(){ getContext(); getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:06:59.548614", "n_pass": [157, 20, 11], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate(){getContext(); getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:07:00.871029", "n_pass": [162, 21, 12], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper = new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:07:04.905520", "n_pass": [165, 24, 13], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper= new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:07:06.213039", "n_pass": [167, 25, 14], "score": "0.56", "loss": "1.1768", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=new VideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:07:08.858751", "n_pass": [169, 27, 15], "score": "0.5302", "loss": "1.9574", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper(context); return true; }"}
+{"time": "2020-12-27 04:07:10.154000", "n_pass": [172, 28, 16], "score": "0.7", "loss": "2.0938", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper(); return true; }"}
+{"time": "2020-12-27 04:07:11.497346", "n_pass": [175, 29, 17], "score": "0.7", "loss": "2.0938", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper();return true; }"}
+{"time": "2020-12-27 04:07:12.826300", "n_pass": [176, 30, 18], "score": "0.3575", "loss": "2.5493", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper(); true; }"}
+{"time": "2020-12-27 04:07:14.139455", "n_pass": [177, 31, 19], "score": "0.3575", "loss": "2.5493", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper();true; }"}
+{"time": "2020-12-27 04:07:16.751836", "n_pass": [180, 33, 20], "score": "0.3575", "loss": "2.5493", "code": "boolean onCreate(){getContext();getContentResolvermOpenHelper=newVideoDbHelper();true;}"}
+{"time": "2020-12-27 04:07:18.746901", "n_pass": [192, 34, 21], "score": "0.3279", "loss": "2.1472", "code": "boolean onCreate(){getContext();mOpenHelper=newVideoDbHelper();true;}"}
+{"time": "2020-12-27 04:07:21.332122", "n_pass": [195, 36, 22], "score": "0.3822", "loss": "2.0276", "code": "boolean onCreate(){getContext();mOpenHelper=VideoDbHelper();true;}"}
+
+Minimal simplified code:
+boolean onCreate(){getContext();mOpenHelper=VideoDbHelper();true;}
+

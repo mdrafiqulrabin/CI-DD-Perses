@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-federation/openam-federation-library/src/main/java/com/sun/identity/saml/protocol/Status_getStatusDetail.java
+method_name = getStatusDetail
+method_body = public Element getStatusDetail() { return statusDetail; }
+
+topk path-contexts:
+[0.4854] element,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),statusdetail
+[0.4355] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(NameExpr0),statusdetail
+[0.0791] element,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['element', 'statusdetail', 'METHOD_NAME', 'statusdetail', 'element', 'METHOD_NAME']
+

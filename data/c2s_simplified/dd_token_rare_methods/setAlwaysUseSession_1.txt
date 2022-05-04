@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/authenticator/TestNonLoginAndBasicAuthenticator_setAlwaysUseSession.java
+method_name = setAlwaysUseSession
+method_body = private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }
+predict, score, loss = setAlwaysUseSession, 0.43820143, 3.0313277
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:27:13.262887", "n_pass": [1, 1, 1], "score": "0.4382", "loss": "3.0313", "code": "private void setAlwaysUseSession() { ((AuthenticatorBase) basicContext.getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-20 05:27:14.614126", "n_pass": [22, 2, 2], "score": "0.3608", "loss": "3.4222", "code": "private void setAlwaysUseSession() { (getAuthenticator()).setAlwaysUseSession(true); ((AuthenticatorBase) nonloginContext.getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-20 05:27:15.963416", "n_pass": [24, 3, 3], "score": "0.2938", "loss": "3.503", "code": "private void setAlwaysUseSession() { (getAuthenticator()).setAlwaysUseSession(true); (getAuthenticator()).setAlwaysUseSession(true); }"}
+{"time": "2021-01-20 05:27:17.277366", "n_pass": [45, 4, 4], "score": "0.3693", "loss": "2.3356", "code": "private void setAlwaysUseSession() { (getAuthenticator()).setAlwaysUseSession(true); (getAuthenticator()).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:18.603745", "n_pass": [46, 5, 5], "score": "0.3693", "loss": "2.3356", "code": "void setAlwaysUseSession() { (getAuthenticator()).setAlwaysUseSession(true); (getAuthenticator()).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:19.896771", "n_pass": [52, 6, 6], "score": "0.4068", "loss": "2.0645", "code": "void setAlwaysUseSession() { (getAuthenticator()).setAlwaysUseSession; (getAuthenticator()).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:22.547872", "n_pass": [81, 7, 7], "score": "0.5195", "loss": "1.5904", "code": "void setAlwaysUseSession() { (getAuthenticator()); (getAuthenticator()).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:23.850123", "n_pass": [84, 8, 8], "score": "0.5646", "loss": "1.5988", "code": "void setAlwaysUseSession() { (getAuthenticator()); (getAuthenticator).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:25.867998", "n_pass": [93, 9, 9], "score": "0.5646", "loss": "1.5988", "code": "void setAlwaysUseSession(){ (getAuthenticator()); (getAuthenticator).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:27.174383", "n_pass": [95, 10, 10], "score": "0.5646", "loss": "1.5988", "code": "void setAlwaysUseSession(){(getAuthenticator()); (getAuthenticator).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:30.559955", "n_pass": [127, 11, 11], "score": "0.5646", "loss": "1.5988", "code": "void setAlwaysUseSession(){(getAuthenticator());(getAuthenticator).setAlwaysUseSession; }"}
+{"time": "2021-01-20 05:27:32.228887", "n_pass": [134, 12, 12], "score": "0.5646", "loss": "1.5988", "code": "void setAlwaysUseSession(){(getAuthenticator());(getAuthenticator).setAlwaysUseSession;}"}
+
+Minimal simplified code:
+void setAlwaysUseSession(){(getAuthenticator());(getAuthenticator).setAlwaysUseSession;}
+

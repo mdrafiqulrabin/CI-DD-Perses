@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/biz/common/i18n/impl/MessageResourceServiceImpl_get.java
+method_name = get
+method_body = public String get(String key, Object... args) { try { if (messageSource != null) { return messageSource.getMessage(key, args, key, LocaleUtil.getLocale()); } return key; } catch (NoSuchMessageException e) { return key; } }
+
+topk path-contexts:
+[0.1800] messagesource,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr6),getmessage
+[0.0693] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),nosuchmessageexception
+[0.0527] args,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(BlockStmt)_(ReturnStmt)_(NameExpr0),key
+[0.0450] null,(NullLiteralExpr1)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr6),getmessage
+[0.0434] key,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(ClassOrInterfaceType1),nosuchmessageexception
+[0.0412] e,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),nosuchmessageexception
+[0.0353] null,(NullLiteralExpr1)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(NameExpr2),getlocale
+[0.0342] null,(NullLiteralExpr1)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(NameExpr0),localeutil
+[0.0315] messagesource,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr4),key
+[0.0310] messagesource,(NameExpr0)^(BinaryExpr:notEquals)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(MethodCallExpr5)_(NameExpr2),getlocale
+
+topk terminals:
+['messagesource', 'getmessage', 'args', 'nosuchmessageexception', 'args', 'key', 'null', 'getmessage', 'key', 'nosuchmessageexception', 'e', 'nosuchmessageexception', 'null', 'getlocale', 'null', 'localeutil', 'messagesource', 'key', 'messagesource', 'getlocale']
+

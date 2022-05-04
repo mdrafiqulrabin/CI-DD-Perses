@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/test/java/org/apache/tomcat/jdbc/test/CreateTestTable_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }
+predict, score, loss = main, 0.99991775, 0.000111337475
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:35:59.232021", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) throws Exception { recreate = true; CreateTestTable test = new CreateTestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-27 23:36:00.634227", "n_pass": [10, 2, 2], "score": "0.9974", "loss": "0.0031", "code": "public static void main(String[] args) throws Exception { recreate = truestTable(); test.testPopulateData(); }"}
+{"time": "2020-12-27 23:36:02.015317", "n_pass": [19, 3, 3], "score": "0.9921", "loss": "0.0102", "code": "public static void main(String[] args) throws Exception { recreate = trustPopulateData(); }"}
+{"time": "2020-12-27 23:36:03.759589", "n_pass": [35, 4, 4], "score": "0.9766", "loss": "0.03", "code": "public static void main(String[] args) throws Exception { recreate = trueData(); }"}
+{"time": "2020-12-27 23:36:05.138684", "n_pass": [37, 5, 5], "score": "0.5975", "loss": "0.6897", "code": "public st main(String[] args) throws Exception { recreate = trueData(); }"}
+{"time": "2020-12-27 23:36:06.505671", "n_pass": [43, 6, 6], "score": "0.9011", "loss": "0.1768", "code": "public st main(String[] args) throws Exception { recreeData(); }"}
+{"time": "2020-12-27 23:36:08.231818", "n_pass": [65, 7, 7], "score": "0.8767", "loss": "0.2041", "code": "public st main(String[] args) throws Exception { recre(); }"}
+{"time": "2020-12-27 23:36:09.577562", "n_pass": [67, 8, 8], "score": "0.9371", "loss": "0.1008", "code": "publt main(String[] args) throws Exception { recre(); }"}
+{"time": "2020-12-27 23:36:11.294209", "n_pass": [70, 9, 9], "score": "0.8781", "loss": "0.1931", "code": "publt main(Sg[] args) throws Exception { recre(); }"}
+{"time": "2020-12-27 23:36:12.670002", "n_pass": [75, 10, 10], "score": "0.7713", "loss": "0.3434", "code": "publt main(Sg[] args) throws Exon { recre(); }"}
+{"time": "2020-12-27 23:36:14.022671", "n_pass": [79, 11, 11], "score": "0.7733", "loss": "0.3304", "code": "t main(Sg[] args) throws Exon { recre(); }"}
+{"time": "2020-12-27 23:36:19.654155", "n_pass": [120, 14, 12], "score": "0.9228", "loss": "0.123", "code": "t main(Sg[] args) throws Ex{ recre(); }"}
+{"time": "2020-12-27 23:36:21.002935", "n_pass": [122, 15, 13], "score": "0.9502", "loss": "0.0658", "code": "t main(Sg[] args) throws Ex{ re(); }"}
+{"time": "2020-12-27 23:36:22.381135", "n_pass": [123, 16, 14], "score": "0.8797", "loss": "0.2119", "code": "t main(Sg[] args) throws Ex{ r; }"}
+{"time": "2020-12-27 23:36:28.990903", "n_pass": [169, 19, 15], "score": "0.8104", "loss": "0.3184", "code": "t main(Sg[] args) throws Ex{  }"}
+{"time": "2020-12-27 23:36:32.527038", "n_pass": [178, 20, 16], "score": "0.7832", "loss": "0.4008", "code": "t main(g[] args) throws Ex{  }"}
+{"time": "2020-12-27 23:36:33.875253", "n_pass": [182, 21, 17], "score": "0.7832", "loss": "0.4008", "code": "t main(g[]args) throws Ex{  }"}
+{"time": "2020-12-27 23:36:35.223188", "n_pass": [183, 22, 18], "score": "0.2498", "loss": "2.4149", "code": "t main(g[]rgs) throws Ex{  }"}
+{"time": "2020-12-27 23:36:40.669733", "n_pass": [188, 26, 19], "score": "0.2498", "loss": "2.4149", "code": "t main(g[]rgs)throws Ex{  }"}
+{"time": "2020-12-27 23:36:42.035945", "n_pass": [196, 27, 20], "score": "0.3159", "loss": "2.1515", "code": "t main(g[]rgs)throws x{  }"}
+{"time": "2020-12-27 23:36:50.358774", "n_pass": [226, 31, 21], "score": "0.3159", "loss": "2.1515", "code": "t main(g[]rgs)throws x{ }"}
+{"time": "2020-12-27 23:36:51.724361", "n_pass": [227, 32, 22], "score": "0.3159", "loss": "2.1515", "code": "t main(g[]rgs)throws x{}"}
+
+Minimal simplified code:
+t main(g[]rgs)throws x{}
+

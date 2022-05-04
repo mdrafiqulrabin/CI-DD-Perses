@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Hemumu__RxSample/app/src/main/java/com/helin/rxsample/http/ProgressSubscriber_onCancelProgress.java
+method_name = onCancelProgress
+method_body = @Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }
+predict, score, loss = onCancelProgress, 0.4462784230709076, 0.9728826284408569
+
+Trace of simplified code(s):
+{"time": "2021-01-23 17:48:35.583119", "n_pass": [1, 1, 1], "score": "0.4463", "loss": "0.9729", "code": "@Override public void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:48:44.596541", "n_pass": [45, 4, 2], "score": "0.4519", "loss": "0.9793", "code": "@Overrblic void onCancelProgress() { if (!this.isUnsubscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:48:51.399275", "n_pass": [53, 6, 3], "score": "0.4783", "loss": "1.0626", "code": "@Overrblic void onCancelProgress() { if (!this.iscribed()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:48:54.017741", "n_pass": [54, 7, 4], "score": "0.4631", "loss": "1.0674", "code": "@Overrblic void onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:49:21.682694", "n_pass": [105, 17, 5], "score": "0.4631", "loss": "1.0674", "code": "@Ovblic void onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:49:24.285739", "n_pass": [106, 18, 6], "score": "0.4189", "loss": "1.3317", "code": "@Ovc void onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:49:53.556678", "n_pass": [179, 28, 7], "score": "0.5243", "loss": "0.925", "code": "@Oc void onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:50:04.333513", "n_pass": [184, 32, 8], "score": "0.2298", "loss": "2.508", "code": "@Oc vod onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:50:44.597458", "n_pass": [226, 45, 9], "score": "0.1521", "loss": "2.9156", "code": "@c vod onCancelProgress() { if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:51:34.792871", "n_pass": [324, 60, 10], "score": "0.1521", "loss": "2.9156", "code": "@c vod onCancelProgress(){ if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:51:37.411264", "n_pass": [325, 61, 11], "score": "0.1521", "loss": "2.9156", "code": "@c vod onCancelProgress(){if (!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:51:40.017682", "n_pass": [328, 62, 12], "score": "0.1521", "loss": "2.9156", "code": "@c vod onCancelProgress(){if(!this.id()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:51:58.253737", "n_pass": [336, 69, 13], "score": "0.1818", "loss": "2.7511", "code": "@c vod onCancelProgress(){if(!this.d()) { this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:52:00.847857", "n_pass": [341, 70, 14], "score": "0.1818", "loss": "2.7511", "code": "@c vod onCancelProgress(){if(!this.d()){ this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:52:03.470548", "n_pass": [343, 71, 15], "score": "0.1818", "loss": "2.7511", "code": "@c vod onCancelProgress(){if(!this.d()){this.unsubscribe(); } }"}
+{"time": "2021-01-23 17:52:47.613210", "n_pass": [363, 88, 16], "score": "0.1818", "loss": "2.7511", "code": "@c vod onCancelProgress(){if(!this.d()){this.unsubscribe();} }"}
+{"time": "2021-01-23 17:52:50.199754", "n_pass": [365, 89, 17], "score": "0.1818", "loss": "2.7511", "code": "@c vod onCancelProgress(){if(!this.d()){this.unsubscribe();}}"}
+
+Minimal simplified code:
+@c vod onCancelProgress(){if(!this.d()){this.unsubscribe();}}
+

@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/SessionBindingListenerAdapter_valueBound.java
+method_name = valueBound
+method_body = public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 23:03:12.538250", "score": "0.4852", "loss": "1.7213", "code": "class T { public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { public void run() { listener.valueBound(event); } }); } }"}
+{"time": "2021-01-24 23:08:56.690378", "score": "0.3373", "loss": "2.5725", "code": "class T { public void valueBound(final SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { { listener.valueBound(event); } }); } }"}
+{"time": "2021-01-24 23:11:35.309757", "score": "0.3373", "loss": "2.5725", "code": "class T { public void valueBound( SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { { listener.valueBound(event); } }); } }"}
+{"time": "2021-01-24 23:12:15.243762", "score": "0.5457", "loss": "2.1521", "code": "class T { public void valueBound( SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { { listener.valueBound( ); } }); } }"}
+{"time": "2021-01-24 23:12:55.058839", "score": "0.5457", "loss": "2.1521", "code": "class T { void valueBound( SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() { { listener.valueBound( ); } }); } }"}
+
+Minimal simplified code:
+class T {
+       void valueBound(      SSLSessionBindingEvent event) { CallbackUtil.safeCallback(new Runnable() {                   { listener.valueBound(     ); } }); }
+}
+
+

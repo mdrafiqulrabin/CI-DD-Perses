@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Stericson__RootShell/src/main/java/com/stericson/RootShell/RootShell_closeAllShells.java
+method_name = closeAllShells
+method_body = public static void closeAllShells() throws IOException { Shell.closeAll(); }
+predict, score, loss = closeAllShells, 0.48069921135902405, 0.7568879127502441
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:10:23.203641", "n_pass": [1, 1, 1], "score": "0.4807", "loss": "0.7569", "code": "public static void closeAllShells() throws IOException { Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:26.222983", "n_pass": [20, 2, 2], "score": "0.4807", "loss": "0.7569", "code": " void closeAllShells() throws IOException { Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:32.584688", "n_pass": [41, 4, 3], "score": "0.4807", "loss": "0.7569", "code": "void closeAllShells() throws IOException { Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:36.006924", "n_pass": [47, 5, 4], "score": "0.4807", "loss": "0.7569", "code": "void closeAllShells()throws IOException { Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:43.945078", "n_pass": [75, 7, 5], "score": "0.4807", "loss": "0.7569", "code": "void closeAllShells()throws IOException{ Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:46.535430", "n_pass": [77, 8, 6], "score": "0.4807", "loss": "0.7569", "code": "void closeAllShells()throws IOException{Shell.closeAll(); }"}
+{"time": "2021-01-20 08:10:51.761070", "n_pass": [84, 10, 7], "score": "0.4807", "loss": "0.7569", "code": "void closeAllShells()throws IOException{Shell.closeAll();}"}
+
+Minimal simplified code:
+void closeAllShells()throws IOException{Shell.closeAll();}
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/core/MatrixUtils_squaredError.java
+method_name = squaredError
+method_body = public static double squaredError(double[] vector1, double[] vector2) { double squaredError = 0; for (int i = 0; i < vector1.length; i++) { squaredError += (vector1[i] - vector2[i]) * (vector1[i] - vector2[i]); } return squaredError; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 06:00:50.052507", "score": "0.4459", "loss": "2.1769", "code": "class T { public static double squaredError(double[] vector1, double[] vector2) { double squaredError = 0; for (int i = 0; i < vector1.length; i++) { squaredError += (vector1[i] - vector2[i]) * (vector1[i] - vector2[i]); } return squaredError; } }"}
+{"time": "2021-01-24 06:02:10.143386", "score": "0.4285", "loss": "1.9951", "code": "class T { public static double squaredError(double[] vector1, double[] vector2) { double squaredError = 0; return squaredError; } }"}
+{"time": "2021-01-24 06:03:24.100093", "score": "0.4285", "loss": "1.9951", "code": "class T { double squaredError(double[] vector1, double[] vector2) { double squaredError = 0; return squaredError; } }"}
+
+Minimal simplified code:
+class T {
+              double squaredError(double[] vector1, double[] vector2) { double squaredError = 0;                                                                                                                     return squaredError; }
+}
+
+

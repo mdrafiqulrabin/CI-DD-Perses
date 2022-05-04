@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/classes/chat/ChatServlet_init.java
+method_name = init
+method_body = @Override public void init() throws ServletException { messageSender = new MessageSender(); Thread messageSenderThread = new Thread(messageSender, "MessageSender[" + getServletContext().getContextPath() + "]"); messageSenderThread.setDaemon(true); messageSenderThread.start(); }
+
+topk path-contexts:
+[0.1078] servletexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(ObjectCreationExpr)_(ClassOrInterfaceType0),messagesender
+[0.0888] messagesender,(NameExpr1)^(ObjectCreationExpr)_(BinaryExpr:plus)_(BinaryExpr:plus)_(StringLiteralExpr0),messagesender
+[0.0755] messagesender,(NameExpr1)^(ObjectCreationExpr)_(BinaryExpr:plus)_(BinaryExpr:plus)_(MethodCallExpr1)_(NameExpr2),getcontextpath
+[0.0737] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0693] servletexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0593] servletexception,(ClassOrInterfaceType3)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),messagesender
+[0.0307] messagesender,(NameExpr1)^(ObjectCreationExpr)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),start
+[0.0293] messagesender,(NameExpr1)^(ObjectCreationExpr)_(BinaryExpr:plus)_(StringLiteralExpr1),]
+[0.0271] messagesender,(NameExpr0)^(AssignExpr:assign)^(ExpressionStmt)^(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(ObjectCreationExpr)_(NameExpr1),messagesender
+[0.0258] messagesender,(NameExpr0)^(AssignExpr:assign)_(ObjectCreationExpr)_(ClassOrInterfaceType0),messagesender
+
+topk terminals:
+['servletexception', 'messagesender', 'messagesender', 'messagesender', 'messagesender', 'getcontextpath', 'METHOD_NAME', ']', 'servletexception', ']', 'servletexception', 'messagesender', 'messagesender', 'start', 'messagesender', ']', 'messagesender', 'messagesender', 'messagesender', 'messagesender']
+

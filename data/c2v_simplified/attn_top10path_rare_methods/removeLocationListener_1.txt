@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mucommander__mucommander/src/main/java/com/mucommander/ui/event/LocationManager_removeLocationListener.java
+method_name = removeLocationListener
+method_body = public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }
+
+topk path-contexts:
+[0.4753] locationlistener,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),locationlisteners
+[0.1761] listener,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),locationlisteners
+[0.1212] locationlistener,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+[0.0772] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),locationlisteners
+[0.0315] locationlistener,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),listener
+[0.0231] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),locationlistener
+[0.0230] listener,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+[0.0163] listener,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),locationlistener
+[0.0154] listener,(NameExpr2)^(MethodCallExpr)_(NameExpr3),remove
+[0.0127] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),remove
+
+topk terminals:
+['locationlistener', 'locationlisteners', 'listener', 'locationlisteners', 'locationlistener', 'remove', 'METHOD_NAME', 'locationlisteners', 'locationlistener', 'listener', 'void', 'locationlistener', 'listener', 'remove', 'listener', 'locationlistener', 'listener', 'remove', 'METHOD_NAME', 'remove']
+

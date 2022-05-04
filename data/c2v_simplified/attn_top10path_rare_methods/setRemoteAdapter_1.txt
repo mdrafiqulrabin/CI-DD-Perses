@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/udacity__Advanced_Android_Development/app/src/main/java/com/example/android/sunshine/app/widget/DetailWidgetProvider_setRemoteAdapter.java
+method_name = setRemoteAdapter
+method_body = @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH) private void setRemoteAdapter(Context context, @NonNull final RemoteViews views) { views.setRemoteAdapter(R.id.widget_list, new Intent(context, DetailWidgetRemoteViewsService.class)); }
+
+topk path-contexts:
+[0.4822] remoteviews,(ClassOrInterfaceType2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setremoteadapter
+[0.2379] views,(VariableDeclaratorId1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setremoteadapter
+[0.1009] context,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setremoteadapter
+[0.0772] context,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setremoteadapter
+[0.0160] nonnull,(NameExpr0)^(MarkerAnnotationExpr)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setremoteadapter
+[0.0125] remoteviews,(ClassOrInterfaceType2)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),widgetlist
+[0.0088] icecreamsandwich,(NameExpr2)^(FieldAccessExpr)^(SingleMemberAnnotationExpr)^(MethodDeclaration)_(VoidType1),void
+[0.0080] context,(NameExpr1)^(ObjectCreationExpr3)^(MethodCallExpr)_(NameExpr4),setremoteadapter
+[0.0044] detailwidgetremoteviewsservice,(ClassOrInterfaceType0)^(ClassExpr)^(ObjectCreationExpr3)^(MethodCallExpr)_(NameExpr4),setremoteadapter
+[0.0041] views,(VariableDeclaratorId1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(FieldAccessExpr2)_(NameExpr2),widgetlist
+
+topk terminals:
+['remoteviews', 'setremoteadapter', 'views', 'setremoteadapter', 'context', 'setremoteadapter', 'context', 'setremoteadapter', 'nonnull', 'setremoteadapter', 'remoteviews', 'widgetlist', 'icecreamsandwich', 'void', 'context', 'setremoteadapter', 'detailwidgetremoteviewsservice', 'setremoteadapter', 'views', 'widgetlist']
+

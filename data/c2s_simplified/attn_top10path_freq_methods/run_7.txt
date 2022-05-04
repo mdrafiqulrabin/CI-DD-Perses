@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/threads/TestLimitLatch_run.java
+method_name = run
+method_body = @Override public void run() { try { latch.countUpOrAwait(); Thread.sleep(holdTime); latch.countDown(); } catch (InterruptedException x) { x.printStackTrace(); } }
+
+topk path-contexts for sub-token: run
+[0.1429] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|VoidType1,void
+[0.1119] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0970] x,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,interrupted|exception
+[0.0598] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|ClassOrInterfaceType1,interrupted|exception
+[0.0397] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0351] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,latch
+[0.0351] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,latch
+[0.0297] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|CatchClause|Parameter|VariableDeclaratorId0,x
+[0.0286] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,sleep
+[0.0283] void,VoidType1|MethodDeclaration|BlockStmt|TryStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,hold|time
+
+topk terminals for sub-token: run
+['override', 'void', 'override', 'METHOD_NAME', 'x', 'interrupted|exception', 'void', 'interrupted|exception', 'void', 'METHOD_NAME', 'void', 'latch', 'void', 'latch', 'void', 'x', 'void', 'sleep', 'void', 'hold|time']
+

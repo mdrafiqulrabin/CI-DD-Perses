@@ -1,0 +1,30 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobmanager/JobManagerTestBase_createJobManager.java
+method_name = createJobManager
+method_body = protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }
+predict, score, loss = createJobManager, 0.46783176, 1.1320584
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:16:26.941621", "n_pass": [1, 1, 1], "score": "0.4678", "loss": "1.1321", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(UUID.randomUUID().toString()).build()); }"}
+{"time": "2021-01-20 06:16:28.633352", "n_pass": [25, 2, 2], "score": "0.3139", "loss": "1.7919", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id(toString()).build()); }"}
+{"time": "2021-01-20 06:16:29.993202", "n_pass": [46, 3, 3], "score": "0.3245", "loss": "1.8278", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application, configurationBuilder.id().build()); }"}
+{"time": "2021-01-20 06:16:33.042743", "n_pass": [57, 5, 4], "score": "0.3153", "loss": "1.6932", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.application.id().build()); }"}
+{"time": "2021-01-20 06:16:37.088978", "n_pass": [95, 7, 5], "score": "0.2309", "loss": "2.0786", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.id().build()); }"}
+{"time": "2021-01-20 06:16:39.735681", "n_pass": [97, 9, 6], "score": "0.3102", "loss": "1.8008", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.id.build()); }"}
+{"time": "2021-01-20 06:16:42.382228", "n_pass": [99, 11, 7], "score": "0.3067", "loss": "1.8144", "code": "protected JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:43.710760", "n_pass": [102, 12, 8], "score": "0.3067", "loss": "1.8144", "code": " JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:45.030515", "n_pass": [103, 13, 9], "score": "0.3067", "loss": "1.8144", "code": "JobManager createJobManager(Configuration.Builder configurationBuilder) { return new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:47.449592", "n_pass": [109, 14, 10], "score": "0.3817", "loss": "1.9371", "code": "JobManager createJobManager(ConfigurationBuilder configurationBuilder) { return new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:48.784791", "n_pass": [110, 15, 11], "score": "0.3796", "loss": "1.6728", "code": "JobManager createJobManager(Configuration configurationBuilder) { return new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:50.103276", "n_pass": [115, 16, 12], "score": "0.4518", "loss": "1.463", "code": "JobManager createJobManager(Configuration configurationBuilder) { new JobManager(Robolectric.id.build); }"}
+{"time": "2021-01-20 06:16:52.740954", "n_pass": [119, 18, 13], "score": "0.4974", "loss": "1.0913", "code": "JobManager createJobManager(Configuration configurationBuilder) { new JobManager(Robolectric.build); }"}
+{"time": "2021-01-20 06:16:54.060013", "n_pass": [120, 19, 14], "score": "0.4918", "loss": "1.2598", "code": "JobManager createJobManager(Configuration configurationBuilder) { new JobManager(Robolectric); }"}
+{"time": "2021-01-20 06:16:59.480012", "n_pass": [148, 21, 15], "score": "0.4918", "loss": "1.2598", "code": "JobManager createJobManager(Configuration configurationBuilder) { new JobManager(Robolectric);}"}
+{"time": "2021-01-20 06:17:01.903532", "n_pass": [157, 22, 16], "score": "0.4918", "loss": "1.2598", "code": "JobManager createJobManager(Configuration configurationBuilder){ new JobManager(Robolectric);}"}
+{"time": "2021-01-20 06:17:03.213604", "n_pass": [159, 23, 17], "score": "0.4918", "loss": "1.2598", "code": "JobManager createJobManager(Configuration configurationBuilder){new JobManager(Robolectric);}"}
+{"time": "2021-01-20 06:17:07.149160", "n_pass": [164, 26, 18], "score": "0.5786", "loss": "0.8217", "code": "JobManager createJobManager(Configuration configurationBuilder){new JobManager();}"}
+{"time": "2021-01-20 06:17:10.882634", "n_pass": [178, 28, 19], "score": "0.3384", "loss": "1.5299", "code": "JobManager createJobManager(Configuration configurationBuilder){newJobManager();}"}
+
+Minimal simplified code:
+JobManager createJobManager(Configuration configurationBuilder){newJobManager();}
+

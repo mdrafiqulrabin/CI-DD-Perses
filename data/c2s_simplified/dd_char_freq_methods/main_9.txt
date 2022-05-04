@@ -1,0 +1,66 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/georgewfraser__vscode-javac/src/main/java/org/javacs/Main_main.java
+method_name = main
+method_body = public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName("org.javacs.Main", true, langTools); Method run = main.getMethod("run"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, "Failed", e); } }
+predict, score, loss = main, 0.994693, 0.0068425997
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:58:58.163858", "n_pass": [1, 1, 1], "score": "0.9947", "loss": "0.0068", "code": "public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Method run = main.getMethod(\"run\"); run.invoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:58:59.556458", "n_pass": [25, 2, 2], "score": "0.9687", "loss": "0.0529", "code": "public static void main(String[] args) { try { ClassLoader langTools = LangTools.createLangToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:01.293424", "n_pass": [53, 3, 3], "score": "0.9502", "loss": "0.0886", "code": "public static void main(String[] args) { try { ClassLoangTools.createLangToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:02.641777", "n_pass": [54, 4, 4], "score": "0.9045", "loss": "0.1883", "code": "public static void main(String[] args) { try { ClassLogToolsClassLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:04.371834", "n_pass": [91, 5, 5], "score": "0.9055", "loss": "0.1814", "code": "public static void main(String[] args) { try { ClassLossLoader(); Class<?> main = Class.forName(\"org.javacs.Main\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:06.105353", "n_pass": [94, 6, 6], "score": "0.9466", "loss": "0.102", "code": "public static void main(String[] args) { try { ClassLossLoader(); Class<?> main =rName(\"org.javacs.Main\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:07.503926", "n_pass": [96, 7, 7], "score": "0.9676", "loss": "0.0643", "code": "public static void main(String[] args) { try { ClassLossLoader(); Class<?> main =rName(\"orMain\", true, langTools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:08.887305", "n_pass": [98, 8, 8], "score": "0.9565", "loss": "0.0943", "code": "public static void main(String[] args) { try { ClassLossLoader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(Level.SEVERE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:10.372438", "n_pass": [105, 9, 9], "score": "0.9395", "loss": "0.1142", "code": "public static void main(String[] args) { try { ClassLossLoader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:11.736197", "n_pass": [109, 10, 10], "score": "0.859", "loss": "0.275", "code": "public st main(String[] args) { try { ClassLossLoader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:14.352061", "n_pass": [166, 11, 11], "score": "0.7959", "loss": "0.3771", "code": "public st main(Sg[] args) { try { ClassLossLoader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:15.732440", "n_pass": [172, 12, 12], "score": "0.8988", "loss": "0.1694", "code": "public st main(Sg[] args) { try { ClossLoader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:17.128975", "n_pass": [173, 13, 13], "score": "0.9342", "loss": "0.1052", "code": "public st main(Sg[] args) { try { Cloader(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:18.497103", "n_pass": [174, 14, 14], "score": "0.9155", "loss": "0.1427", "code": "public st main(Sg[] args) { try { Clr(); Class<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:19.881143", "n_pass": [175, 15, 15], "score": "0.9029", "loss": "0.1554", "code": "public st main(Sg[] args) { try { ClClass<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:21.231248", "n_pass": [176, 16, 16], "score": "0.9029", "loss": "0.1554", "code": "public st main(Sg[] args) { try { Cl<?> main =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:22.584056", "n_pass": [177, 17, 17], "score": "0.918", "loss": "0.1288", "code": "public st main(Sg[] args) { try { Clain =rName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:23.959301", "n_pass": [178, 18, 18], "score": "0.8573", "loss": "0.2227", "code": "public st main(Sg[] args) { try { ClrName(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:25.298180", "n_pass": [179, 19, 19], "score": "0.9306", "loss": "0.1029", "code": "public st main(Sg[] args) { try { Cl(\"orMain\", trools); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:26.647286", "n_pass": [182, 20, 20], "score": "0.9484", "loss": "0.0738", "code": "public st main(Sg[] args) { try { Cl(\"orMain\",ls); Methodoke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:27.999929", "n_pass": [184, 21, 21], "score": "0.9484", "loss": "0.0738", "code": "public st main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exception e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:29.373176", "n_pass": [190, 22, 22], "score": "0.9051", "loss": "0.1466", "code": "public st main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) { LOG.log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:30.709669", "n_pass": [192, 23, 23], "score": "0.9351", "loss": "0.1039", "code": "public st main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) {log(LE, \"Failed\", e); } }"}
+{"time": "2020-12-28 00:59:32.074021", "n_pass": [195, 24, 24], "score": "0.9768", "loss": "0.0367", "code": "public st main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:33.433604", "n_pass": [199, 25, 25], "score": "0.9815", "loss": "0.03", "code": "publt main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:35.157876", "n_pass": [220, 26, 26], "score": "0.9835", "loss": "0.0256", "code": "t main(Sg[] args) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:38.022121", "n_pass": [287, 27, 27], "score": "0.5394", "loss": "1.1289", "code": "t main(Sg[] gs) { try { Cl(\"orMain\",ls); doke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:39.347796", "n_pass": [295, 28, 28], "score": "0.2879", "loss": "1.9093", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls); doke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:43.384046", "n_pass": [301, 31, 29], "score": "0.2471", "loss": "2.0121", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls);oke(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:44.720582", "n_pass": [302, 32, 30], "score": "0.3555", "loss": "1.6574", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls);e(null); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:46.050600", "n_pass": [304, 33, 31], "score": "0.309", "loss": "1.7563", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls);e(ll); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:47.397973", "n_pass": [305, 34, 32], "score": "0.3547", "loss": "1.6077", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\", e); } }"}
+{"time": "2020-12-28 00:59:48.758460", "n_pass": [317, 35, 33], "score": "0.3693", "loss": "1.5575", "code": "t main(Sg[] gs) { try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 00:59:59.790886", "n_pass": [428, 38, 34], "score": "0.3734", "loss": "1.6225", "code": "t main(g[] gs) { try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:01.134440", "n_pass": [432, 39, 35], "score": "0.3734", "loss": "1.6225", "code": "t main(g[]gs) { try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:02.443847", "n_pass": [433, 40, 36], "score": "0.4539", "loss": "1.458", "code": "t main(g[]s) { try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:03.812202", "n_pass": [436, 41, 37], "score": "0.4539", "loss": "1.458", "code": "t main(g[]s){ try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:05.128715", "n_pass": [438, 42, 38], "score": "0.4539", "loss": "1.458", "code": "t main(g[]s){try { Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:06.449710", "n_pass": [442, 43, 39], "score": "0.4539", "loss": "1.458", "code": "t main(g[]s){try{ Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:07.769596", "n_pass": [444, 44, 40], "score": "0.4539", "loss": "1.458", "code": "t main(g[]s){try{Cl(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:09.144510", "n_pass": [445, 45, 41], "score": "0.3869", "loss": "1.7081", "code": "t main(g[]s){try{l(\"Main\",ls);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:15.736580", "n_pass": [455, 50, 42], "score": "0.3299", "loss": "1.8025", "code": "t main(g[]s){try{l(\"Main\",s);e(); } catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:17.087318", "n_pass": [463, 51, 43], "score": "0.3299", "loss": "1.8025", "code": "t main(g[]s){try{l(\"Main\",s);e();} catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:18.412699", "n_pass": [465, 52, 44], "score": "0.3299", "loss": "1.8025", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch (Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:19.740358", "n_pass": [471, 53, 45], "score": "0.3299", "loss": "1.8025", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(Exce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:21.080745", "n_pass": [473, 54, 46], "score": "0.5107", "loss": "1.1371", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(xce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:22.375755", "n_pass": [474, 55, 47], "score": "0.446", "loss": "1.5933", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(ce e) {log(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:23.737555", "n_pass": [479, 56, 48], "score": "0.4406", "loss": "1.588", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(ce e) {l(LE, \"F\"); } }"}
+{"time": "2020-12-28 01:00:34.751767", "n_pass": [554, 61, 49], "score": "0.4529", "loss": "1.5085", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(ce e) {l(LE, \"\"); } }"}
+{"time": "2020-12-28 01:00:36.067825", "n_pass": [557, 62, 50], "score": "0.4529", "loss": "1.5085", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(ce e) {l(LE, \"\");} }"}
+{"time": "2020-12-28 01:00:37.419771", "n_pass": [559, 63, 51], "score": "0.4529", "loss": "1.5085", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(ce e) {l(LE, \"\");}}"}
+{"time": "2020-12-28 01:00:46.329434", "n_pass": [601, 68, 52], "score": "0.4234", "loss": "1.3445", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(e e) {l(LE, \"\");}}"}
+{"time": "2020-12-28 01:00:47.646172", "n_pass": [606, 69, 53], "score": "0.4234", "loss": "1.3445", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(e e){l(LE, \"\");}}"}
+{"time": "2020-12-28 01:00:48.966104", "n_pass": [610, 70, 54], "score": "0.3923", "loss": "1.278", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(e e){l(E, \"\");}}"}
+{"time": "2020-12-28 01:00:50.281602", "n_pass": [613, 71, 55], "score": "0.3923", "loss": "1.278", "code": "t main(g[]s){try{l(\"Main\",s);e();}catch(e e){l(E,\"\");}}"}
+
+Minimal simplified code:
+t main(g[]s){try{l("Main",s);e();}catch(e e){l(E,"");}}
+

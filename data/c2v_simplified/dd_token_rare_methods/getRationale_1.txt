@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/ItemContentsBean_getRationale.java
+method_name = getRationale
+method_body = public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, ""); }
+predict, score, loss = getRationale, 0.4218180179595947, 2.1692864894866943
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:01:38.099948", "n_pass": [1, 1, 1], "score": "0.4218", "loss": "2.1693", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray().get(count - 1); rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:01:40.758756", "n_pass": [24, 2, 2], "score": "0.3866", "loss": "2.5562", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data = getItemGradingDataArray; rationale = FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:01:43.400339", "n_pass": [46, 3, 3], "score": "0.2593", "loss": "4.5245", "code": "public String getRationale() { int count = getItemGradingDataArray().size(); if (count > 0) { ItemGradingData data =  FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:01:48.695283", "n_pass": [55, 5, 4], "score": "0.238", "loss": "4.4981", "code": "public String getRationale() { int count =size(); if (count > 0) { ItemGradingData data =  FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:01:51.338976", "n_pass": [59, 6, 5], "score": "0.1669", "loss": "5.3998", "code": "public String getRationale() { int count =size(); if (count > 0) {  FormattedText.convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:01:56.633979", "n_pass": [93, 8, 6], "score": "0.2459", "loss": "4.2946", "code": "public String getRationale() { int count =size(); if (count > 0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:01.943464", "n_pass": [102, 10, 7], "score": "0.2459", "loss": "4.2946", "code": "String getRationale() { int count =size(); if (count > 0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:04.990945", "n_pass": [111, 11, 8], "score": "0.4262", "loss": "3.4924", "code": "String getRationale() { int count =size(); if ( 0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:14.130272", "n_pass": [170, 13, 9], "score": "0.4262", "loss": "3.4924", "code": "String getRationale() { int count =size();if ( 0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:16.768149", "n_pass": [172, 14, 10], "score": "0.4262", "loss": "3.4924", "code": "String getRationale() { int count =size();if( 0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:19.417514", "n_pass": [174, 15, 11], "score": "0.4262", "loss": "3.4924", "code": "String getRationale() { int count =size();if(0) { convertFormattedTextToPlaintext(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:22.085320", "n_pass": [177, 16, 12], "score": "0.607", "loss": "2.7092", "code": "String getRationale() { int count =size();if(0) {(data.getRationale()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:24.721851", "n_pass": [179, 17, 13], "score": "0.6099", "loss": "2.6827", "code": "String getRationale() { int count =size();if(0) {(data()); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:27.359501", "n_pass": [180, 18, 14], "score": "0.6082", "loss": "2.6781", "code": "String getRationale() { int count =size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:36.515058", "n_pass": [196, 21, 15], "score": "0.6082", "loss": "2.6781", "code": "String getRationale(){ int count =size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:39.160662", "n_pass": [198, 22, 16], "score": "0.6082", "loss": "2.6781", "code": "String getRationale(){int count =size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:41.769963", "n_pass": [199, 23, 17], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){ count =size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:44.399580", "n_pass": [200, 24, 18], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count =size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:02:47.039492", "n_pass": [202, 25, 19], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0) {(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:03:01.746288", "n_pass": [258, 29, 20], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0){(data); } return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:03:04.361094", "n_pass": [263, 30, 21], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0){(data);} return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:03:06.973585", "n_pass": [265, 31, 22], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0){(data);}return Validator.check(rationale, \"\"); }"}
+{"time": "2021-01-20 07:03:17.441772", "n_pass": [274, 35, 23], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0){(data);}return Validator.check(rationale,\"\"); }"}
+{"time": "2021-01-20 07:03:20.056311", "n_pass": [279, 36, 24], "score": "0.3412", "loss": "3.2397", "code": "String getRationale(){count=size();if(0){(data);}return Validator.check(rationale,\"\");}"}
+
+Minimal simplified code:
+String getRationale(){count=size();if(0){(data);}return Validator.check(rationale,"");}
+

@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-heron/heron/api/src/java/org/apache/heron/api/topology/TopologyBuilder_setSpout.java
+method_name = setSpout
+method_body = public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }
+predict, score, loss = setSpout, 0.3595748245716095, 1.5657085180282593
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:39:39.783718", "n_pass": [1, 1, 1], "score": "0.3596", "loss": "1.5657", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName(id); SpoutDeclarer s = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-20 07:39:42.457958", "n_pass": [23, 2, 2], "score": "0.4645", "loss": "1.0104", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = new SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-20 07:39:51.205138", "n_pass": [87, 5, 3], "score": "0.9196", "loss": "0.1542", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(id, spout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-20 07:39:53.847078", "n_pass": [90, 6, 4], "score": "0.9037", "loss": "0.218", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint); spouts.put(id, s); return s; }"}
+{"time": "2021-01-20 07:39:56.472055", "n_pass": [95, 7, 5], "score": "0.9166", "loss": "0.1593", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint); spouts(id, s); return s; }"}
+{"time": "2021-01-20 07:39:59.125984", "n_pass": [97, 8, 6], "score": "0.9168", "loss": "0.1384", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint); spouts(ids); return s; }"}
+{"time": "2021-01-20 07:40:01.770116", "n_pass": [100, 9, 7], "score": "0.9314", "loss": "0.1095", "code": "public SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint); spouts(ids); ; }"}
+{"time": "2021-01-20 07:40:04.394945", "n_pass": [102, 10, 8], "score": "0.9314", "loss": "0.1095", "code": "SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint); spouts(ids); ; }"}
+{"time": "2021-01-20 07:40:07.420763", "n_pass": [120, 11, 9], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); ; }"}
+{"time": "2021-01-20 07:40:10.029526", "n_pass": [123, 12, 10], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id, IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:19.268312", "n_pass": [194, 13, 11], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout, Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:21.902573", "n_pass": [198, 14, 12], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint) { validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:24.535123", "n_pass": [203, 15, 13], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){ validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:27.160800", "n_pass": [205, 16, 14], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName = SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:29.807844", "n_pass": [207, 17, 15], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName= SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:32.420476", "n_pass": [209, 18, 16], "score": "0.9375", "loss": "0.0928", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName=SpoutDeclarer(idspout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:35.036033", "n_pass": [212, 19, 17], "score": "0.9284", "loss": "0.0957", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName=SpoutDeclarer(spout, parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:37.681899", "n_pass": [215, 20, 18], "score": "0.9284", "loss": "0.0957", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName=SpoutDeclarer(spout,parallelismHint);(ids); }"}
+{"time": "2021-01-20 07:40:40.304176", "n_pass": [220, 21, 19], "score": "0.9295", "loss": "0.0944", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName=SpoutDeclarer(spout,parallelismHint);(s); }"}
+{"time": "2021-01-20 07:40:44.176127", "n_pass": [243, 22, 20], "score": "0.9674", "loss": "0.0413", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentNameSpoutDeclarer(spout,parallelismHint);(s); }"}
+{"time": "2021-01-20 07:40:46.788189", "n_pass": [244, 23, 21], "score": "0.9674", "loss": "0.0413", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName(spout,parallelismHint);(s); }"}
+{"time": "2021-01-20 07:40:49.416399", "n_pass": [247, 24, 22], "score": "0.865", "loss": "0.1735", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName(spoutparallelismHint);(s); }"}
+{"time": "2021-01-20 07:40:52.048083", "n_pass": [248, 25, 23], "score": "0.8708", "loss": "0.1543", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){validateComponentName(spout);(s); }"}
+{"time": "2021-01-20 07:40:55.904971", "n_pass": [273, 26, 24], "score": "0.8864", "loss": "0.1364", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){(spout);(s); }"}
+{"time": "2021-01-20 07:41:00.554029", "n_pass": [302, 27, 25], "score": "0.8864", "loss": "0.1364", "code": "SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){(spout);(s);}"}
+
+Minimal simplified code:
+SpoutDeclarer setSpout(String id,IRichSpout spout,Number parallelismHint){(spout);(s);}
+

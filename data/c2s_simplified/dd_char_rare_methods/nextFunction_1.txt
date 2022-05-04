@@ -1,0 +1,44 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-services/src/java/org/sakaiproject/tool/assessment/osid/authz/impl/FunctionIteratorImpl_nextFunction.java
+method_name = nextFunction
+method_body = public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }
+predict, score, loss = nextFunction, 0.47785392, 1.1064124
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:34:45.092956", "n_pass": [1, 1, 1], "score": "0.4779", "loss": "1.1064", "code": "public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }"}
+{"time": "2021-01-23 11:34:48.126653", "n_pass": [26, 3, 2], "score": "0.8047", "loss": "0.7659", "code": "public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:34:52.795226", "n_pass": [53, 6, 3], "score": "0.9299", "loss": "0.4253", "code": "public Function nextFunction() throws Authorption { try { return (Function) functionIter.next(); } catch (Exception e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:34:55.475931", "n_pass": [63, 8, 4], "score": "0.9143", "loss": "0.6508", "code": "tion nextFunction() throws Authorption { try { return (Function) functionIter.next(); } catch (Exception e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:34:59.615488", "n_pass": [106, 10, 5], "score": "0.9589", "loss": "0.383", "code": "tion nextFunction() throws Autho { try { return (Function) functionIter.next(); } catch (Exception e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:35:00.928997", "n_pass": [110, 11, 6], "score": "0.9686", "loss": "0.6289", "code": "tion nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exception e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:35:04.875676", "n_pass": [117, 14, 7], "score": "0.9881", "loss": "0.6198", "code": "tion nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exc e) { throw ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:35:06.239591", "n_pass": [119, 15, 8], "score": "0.9907", "loss": "0.7271", "code": "tion nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exc e) { ion(e.getMessage()); } }"}
+{"time": "2021-01-23 11:35:07.551686", "n_pass": [121, 16, 9], "score": "0.9921", "loss": "0.7231", "code": "tion nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exc e) { ion(e.sage()); } }"}
+{"time": "2021-01-23 11:35:12.637973", "n_pass": [179, 19, 10], "score": "0.9932", "loss": "0.843", "code": "tion nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exc e) { ion(e.e()); } }"}
+{"time": "2021-01-23 11:35:15.259761", "n_pass": [183, 21, 11], "score": "0.9946", "loss": "0.6478", "code": "ti nextFunction() throws Autho { try { return (Fn) functionIter.next(); } catch (Exc e) { ion(e.e()); } }"}
+{"time": "2021-01-23 11:35:18.398687", "n_pass": [193, 22, 12], "score": "0.9969", "loss": "0.865", "code": "ti nextFunction() throws Au { try { return (Fn) functionIter.next(); } catch (Exc e) { ion(e.e()); } }"}
+{"time": "2021-01-23 11:35:26.328180", "n_pass": [214, 28, 13], "score": "0.9902", "loss": "0.6104", "code": "ti nextFunction() throws Au { try { return (Fn) functionIter.next(); } catch (Exc e) { (e.e()); } }"}
+{"time": "2021-01-23 11:35:39.095710", "n_pass": [320, 34, 14], "score": "0.9907", "loss": "0.7514", "code": "ti nextFunction() throws Au { try { return (Fn) functionIter.next(); } catch (Exc e) { (e()); } }"}
+{"time": "2021-01-23 11:35:40.405167", "n_pass": [321, 35, 15], "score": "0.9952", "loss": "0.764", "code": "ti nextFunction() throws Au { try { return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:49.094815", "n_pass": [342, 38, 16], "score": "0.9952", "loss": "0.764", "code": "ti nextFunction()throws Au { try { return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:50.409164", "n_pass": [350, 39, 17], "score": "0.975", "loss": "0.6114", "code": "ti nextFunction()throws u { try { return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:51.811424", "n_pass": [352, 40, 18], "score": "0.975", "loss": "0.6114", "code": "ti nextFunction()throws u{ try { return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:53.121786", "n_pass": [354, 41, 19], "score": "0.975", "loss": "0.6114", "code": "ti nextFunction()throws u{try { return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:54.432232", "n_pass": [358, 42, 20], "score": "0.975", "loss": "0.6114", "code": "ti nextFunction()throws u{try{ return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:35:55.741512", "n_pass": [360, 43, 21], "score": "0.975", "loss": "0.6114", "code": "ti nextFunction()throws u{try{return (Fn) functionIter.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:36:03.652016", "n_pass": [372, 49, 22], "score": "0.5898", "loss": "3.4316", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (Exc e) { (e); } }"}
+{"time": "2021-01-23 11:36:10.232757", "n_pass": [383, 54, 23], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (E e) { (e); } }"}
+{"time": "2021-01-23 11:36:34.811634", "n_pass": [496, 66, 24], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (E e){ (e); } }"}
+{"time": "2021-01-23 11:36:36.125059", "n_pass": [498, 67, 25], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (E e){(e); } }"}
+{"time": "2021-01-23 11:36:37.461459", "n_pass": [503, 68, 26], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (E e){(e);} }"}
+{"time": "2021-01-23 11:36:38.798609", "n_pass": [505, 69, 27], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return (Fn) functionIr.next(); } catch (E e){(e);}}"}
+{"time": "2021-01-23 11:36:47.561923", "n_pass": [543, 72, 28], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return(Fn) functionIr.next(); } catch (E e){(e);}}"}
+{"time": "2021-01-23 11:36:51.518210", "n_pass": [548, 75, 29], "score": "0.6097", "loss": "3.7853", "code": "ti nextFunction()throws u{try{return(Fn)functionIr.next(); } catch (E e){(e);}}"}
+{"time": "2021-01-23 11:37:08.687983", "n_pass": [561, 88, 30], "score": "0.2176", "loss": "5.4936", "code": "ti nextFunction()throws u{try{return(Fn)functionIr.nxt(); } catch (E e){(e);}}"}
+{"time": "2021-01-23 11:37:12.642551", "n_pass": [567, 91, 31], "score": "0.2176", "loss": "5.4936", "code": "ti nextFunction()throws u{try{return(Fn)functionIr.nxt();} catch (E e){(e);}}"}
+{"time": "2021-01-23 11:37:13.952903", "n_pass": [569, 92, 32], "score": "0.2176", "loss": "5.4936", "code": "ti nextFunction()throws u{try{return(Fn)functionIr.nxt();}catch (E e){(e);}}"}
+{"time": "2021-01-23 11:37:15.312660", "n_pass": [575, 93, 33], "score": "0.2176", "loss": "5.4936", "code": "ti nextFunction()throws u{try{return(Fn)functionIr.nxt();}catch(E e){(e);}}"}
+
+Minimal simplified code:
+ti nextFunction()throws u{try{return(Fn)functionIr.nxt();}catch(E e){(e);}}
+

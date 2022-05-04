@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/startup/Catalina_isAwait.java
+method_name = isAwait
+method_body = public boolean isAwait() { return await; }
+predict, score, loss = isAwait, 0.47734174, 0.791055
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:26:27.207834", "n_pass": [1, 1, 1], "score": "0.4773", "loss": "0.7911", "code": "public boolean isAwait() { return await; }"}
+{"time": "2021-01-23 09:27:07.268100", "n_pass": [146, 26, 2], "score": "0.4773", "loss": "0.7911", "code": "public boolean isAwait(){ return await; }"}
+{"time": "2021-01-23 09:27:08.589698", "n_pass": [147, 27, 3], "score": "0.4773", "loss": "0.7911", "code": "public boolean isAwait(){return await; }"}
+{"time": "2021-01-23 09:27:25.482296", "n_pass": [161, 40, 4], "score": "0.4773", "loss": "0.7911", "code": "public boolean isAwait(){return await;}"}
+
+Minimal simplified code:
+public boolean isAwait(){return await;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/jasper/compiler/Mark_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Mark) { Mark m = (Mark) other; return this.reader == m.reader && this.fileId == m.fileId && this.cursor == m.cursor && this.line == m.line && this.col == m.col; } return false; }
+
+topk path-contexts:
+[0.1499] m,(NameExpr0)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)^(BinaryExpr:and)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr1)_(NameExpr0),m
+[0.1411] cursor,(NameExpr2)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)^(BinaryExpr:and)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr0)_(NameExpr2),col
+[0.0876] reader,(NameExpr2)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr1)_(NameExpr0),m
+[0.0701] object,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(InstanceOfExpr)_(ClassOrInterfaceType1),mark
+[0.0456] m,(NameExpr0)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr0)_(ThisExpr0),this
+[0.0422] mark,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr0)_(NameExpr2),col
+[0.0411] this,(ThisExpr0)^(FieldAccessExpr)^(BinaryExpr:equals)_(FieldAccessExpr1)_(NameExpr0),m
+[0.0298] mark,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(VariableDeclarationExpr)_(VariableDeclarator)_(VariableDeclaratorId0),m
+[0.0260] m,(NameExpr0)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr0)_(NameExpr2),line
+[0.0188] this,(ThisExpr0)^(FieldAccessExpr)^(BinaryExpr:equals)^(BinaryExpr:and)^(BinaryExpr:and)^(BinaryExpr:and)_(BinaryExpr:equals)_(FieldAccessExpr1)_(NameExpr2),col
+
+topk terminals:
+['m', 'm', 'cursor', 'col', 'reader', 'm', 'object', 'mark', 'm', 'this', 'mark', 'col', 'this', 'm', 'mark', 'm', 'm', 'line', 'this', 'col']
+

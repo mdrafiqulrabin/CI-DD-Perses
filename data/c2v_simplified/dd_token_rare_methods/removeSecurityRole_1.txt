@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/core/TesterContext_removeSecurityRole.java
+method_name = removeSecurityRole
+method_body = @Override public void removeSecurityRole(String role) { securityRoles.remove(role); }
+predict, score, loss = removeSecurityRole, 0.4078701436519623, 1.1881389617919922
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:29:27.568848", "n_pass": [1, 1, 1], "score": "0.4079", "loss": "1.1881", "code": "@Override public void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:30.592289", "n_pass": [20, 2, 2], "score": "0.667", "loss": "0.5907", "code": "public void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:39.211347", "n_pass": [41, 5, 3], "score": "0.667", "loss": "0.5907", "code": " void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:41.843375", "n_pass": [42, 6, 4], "score": "0.667", "loss": "0.5907", "code": "void removeSecurityRole(String role) { securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:49.387131", "n_pass": [74, 8, 5], "score": "0.667", "loss": "0.5907", "code": "void removeSecurityRole(String role){ securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:52.000912", "n_pass": [75, 9, 6], "score": "0.667", "loss": "0.5907", "code": "void removeSecurityRole(String role){securityRoles.remove(role); }"}
+{"time": "2021-01-20 06:29:57.219103", "n_pass": [80, 11, 7], "score": "0.7851", "loss": "0.3187", "code": "void removeSecurityRole(String role){securityRoles.remove(); }"}
+{"time": "2021-01-20 06:29:59.853773", "n_pass": [83, 12, 8], "score": "0.7851", "loss": "0.3187", "code": "void removeSecurityRole(String role){securityRoles.remove();}"}
+
+Minimal simplified code:
+void removeSecurityRole(String role){securityRoles.remove();}
+

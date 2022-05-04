@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wasabeef__recyclerview-animators/animators/src/main/java/jp/wasabeef/recyclerview/animators/ScaleInRightAnimator_preAnimateRemoveImpl.java
+method_name = preAnimateRemoveImpl
+method_body = @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }
+predict, score, loss = preAnimateRemoveImpl, 0.44276681542396545, 0.9425487518310547
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:07:52.162100", "n_pass": [1, 1, 1], "score": "0.4428", "loss": "0.9425", "code": "@Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }"}
+{"time": "2021-01-23 19:07:58.219217", "n_pass": [44, 3, 2], "score": "0.6179", "loss": "0.582", "code": " protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }"}
+{"time": "2021-01-23 19:08:04.692531", "n_pass": [52, 5, 3], "score": "0.7376", "loss": "0.4649", "code": " protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { V.setPivotX(holder.itemView, holder.itemView.getWidth()); }"}
+{"time": "2021-01-23 19:08:09.934216", "n_pass": [55, 7, 4], "score": "0.7459", "loss": "0.4874", "code": " protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { V.setPivotX(holder.holder.itemView.getWidth()); }"}
+{"time": "2021-01-23 19:08:12.545777", "n_pass": [56, 8, 5], "score": "0.4968", "loss": "1.0767", "code": " protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { V.setPivotX(holder.mView.getWidth()); }"}
+{"time": "2021-01-23 19:08:15.173250", "n_pass": [57, 9, 6], "score": "0.8727", "loss": "0.2409", "code": " protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { V.setPivotX(holder.idth()); }"}
+{"time": "2021-01-23 19:08:24.228183", "n_pass": [95, 12, 7], "score": "0.8058", "loss": "0.5133", "code": " protectoid preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { V.setPivotX(holder.idth()); }"}
+{"time": "2021-01-23 19:08:34.521184", "n_pass": [105, 15, 8], "score": "0.8058", "loss": "0.5133", "code": " protectoid preAnimateRemoveImpl(RecyclerView.older holder) { V.setPivotX(holder.idth()); }"}
+{"time": "2021-01-23 19:08:42.376275", "n_pass": [112, 18, 9], "score": "0.8157", "loss": "0.5615", "code": " protectoid preAnimateRemoveImpl(RecyclerView.older holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:08:44.974105", "n_pass": [115, 19, 10], "score": "0.8157", "loss": "0.5615", "code": "tectoid preAnimateRemoveImpl(RecyclerView.older holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:08:47.573022", "n_pass": [116, 20, 11], "score": "0.7829", "loss": "0.6015", "code": "oid preAnimateRemoveImpl(RecyclerView.older holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:08:55.255965", "n_pass": [125, 22, 12], "score": "0.4026", "loss": "1.7233", "code": "oid preAnimateRemoveImpl(Recyclerolder holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:09:08.160713", "n_pass": [141, 26, 13], "score": "0.4026", "loss": "1.7233", "code": "oid preAnimateRemoveImpl(Recolder holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:09:21.133698", "n_pass": [187, 30, 14], "score": "0.4026", "loss": "1.7233", "code": "oid preAnimateRemoveImpl(Recder holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:09:23.721603", "n_pass": [188, 31, 15], "score": "0.4026", "loss": "1.7233", "code": "oid preAnimateRemoveImpl(Recr holder) { V.setPivotX(hoidth()); }"}
+{"time": "2021-01-23 19:09:44.545945", "n_pass": [200, 39, 16], "score": "0.4026", "loss": "1.7233", "code": "oid preAnimateRemoveImpl(Recr holder) { V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:09:47.148245", "n_pass": [203, 40, 17], "score": "0.2604", "loss": "2.1971", "code": "d preAnimateRemoveImpl(Recr holder) { V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:09:54.245173", "n_pass": [216, 41, 18], "score": "0.247", "loss": "2.0904", "code": "d preAnimateRemoveImpl(Rr holder) { V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:10:18.534615", "n_pass": [292, 48, 19], "score": "0.2896", "loss": "1.9079", "code": "d preAnimateRemoveImpl(R holder) { V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:10:36.804166", "n_pass": [300, 55, 20], "score": "0.2896", "loss": "1.9079", "code": "d preAnimateRemoveImpl(R holder){ V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:10:39.409686", "n_pass": [302, 56, 21], "score": "0.2896", "loss": "1.9079", "code": "d preAnimateRemoveImpl(R holder){V.setPivotX(hoi()); }"}
+{"time": "2021-01-23 19:11:02.903725", "n_pass": [313, 65, 22], "score": "0.2704", "loss": "1.8963", "code": "d preAnimateRemoveImpl(R holder){V.setPivotX(h()); }"}
+{"time": "2021-01-23 19:11:05.528160", "n_pass": [314, 66, 23], "score": "0.2461", "loss": "2.0228", "code": "d preAnimateRemoveImpl(R holder){V.setPivotX(h); }"}
+{"time": "2021-01-23 19:11:54.318547", "n_pass": [371, 81, 24], "score": "0.2461", "loss": "2.0228", "code": "d preAnimateRemoveImpl(R holder){V.setPivotX(h);}"}
+
+Minimal simplified code:
+d preAnimateRemoveImpl(R holder){V.setPivotX(h);}
+

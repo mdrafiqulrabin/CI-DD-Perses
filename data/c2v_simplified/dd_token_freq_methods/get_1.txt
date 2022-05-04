@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/io/FutureCallbacks_get.java
+method_name = get
+method_body = @Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException("Waiting " + timeout); } return value; }
+predict, score, loss = get, 0.9958781003952026, 0.004399027209728956
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:36:11.008423", "n_pass": [1, 1, 1], "score": "0.9959", "loss": "0.0044", "code": "@Override public V get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:13.721524", "n_pass": [22, 2, 2], "score": "0.688", "loss": "0.3846", "code": "@Override public V get(long timeout, TimeUnit unit) { if (!sync.tryAcquireSharedNanos(0, unit.toNanos(timeout))) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:16.417300", "n_pass": [47, 3, 3], "score": "0.5657", "loss": "0.5764", "code": "@Override public V get(long timeout, TimeUnit unit) { if (!sync.tryAcquireSharedNanos(0, unit)) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:24.438016", "n_pass": [87, 6, 4], "score": "0.6415", "loss": "0.4618", "code": "@Override public V get(long timeout, TimeUnit unit) { if (!sync.tryAcquireSharedNanos(0)) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:35.138189", "n_pass": [99, 10, 5], "score": "0.6415", "loss": "0.4618", "code": "@Override V get(long timeout, TimeUnit unit) { if (!sync.tryAcquireSharedNanos(0)) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:38.657862", "n_pass": [111, 11, 6], "score": "0.9834", "loss": "0.0296", "code": "@Override V get(long timeout, TimeUnit unit) { if (!sync(0)) { throw new TimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:41.309358", "n_pass": [115, 12, 7], "score": "0.731", "loss": "0.44", "code": "@Override V get(long timeout, TimeUnit unit) { if (!sync(0)) { throwTimeoutException(\"Waiting \" + timeout); } return value; }"}
+{"time": "2020-12-26 21:36:43.974601", "n_pass": [121, 13, 8], "score": "0.3194", "loss": "1.3445", "code": "@Override V get(long timeout, TimeUnit unit) { if (!sync(0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:36:50.213439", "n_pass": [134, 15, 9], "score": "0.7788", "loss": "0.3264", "code": "@Override V get(long timeout, TimeUnit unit) { if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:36:52.863128", "n_pass": [144, 16, 10], "score": "0.4647", "loss": "0.9713", "code": " V get(long timeout, TimeUnit unit) { if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:00.712631", "n_pass": [202, 17, 11], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout, TimeUnit unit) { if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:04.212856", "n_pass": [210, 18, 12], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit) { if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:06.861090", "n_pass": [215, 19, 13], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit){ if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:09.501880", "n_pass": [217, 20, 14], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit){if ((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:12.157853", "n_pass": [219, 21, 15], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit){if((0)) { throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:14.810667", "n_pass": [225, 22, 16], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit){if((0)){ throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:17.481495", "n_pass": [227, 23, 17], "score": "0.4647", "loss": "0.9713", "code": "V get(long timeout,TimeUnit unit){if((0)){throwTimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:20.139678", "n_pass": [228, 24, 18], "score": "0.6582", "loss": "0.4866", "code": "V get(long timeout,TimeUnit unit){if((0)){TimeoutException(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:22.771719", "n_pass": [229, 25, 19], "score": "0.8931", "loss": "0.17", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"Waiting \" + timeout); } ; }"}
+{"time": "2020-12-26 21:37:25.413749", "n_pass": [237, 26, 20], "score": "0.8931", "loss": "0.17", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"Waiting \" + timeout); } }"}
+{"time": "2020-12-26 21:37:31.724293", "n_pass": [280, 27, 21], "score": "0.8931", "loss": "0.17", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"Waiting \" + timeout); }}"}
+{"time": "2020-12-26 21:37:35.630595", "n_pass": [303, 28, 22], "score": "0.8967", "loss": "0.1695", "code": "V get(long timeout,TimeUnit unit){if((0)){(\" \" + timeout); }}"}
+{"time": "2020-12-26 21:37:38.252151", "n_pass": [304, 29, 23], "score": "0.9002", "loss": "0.1653", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"\" + timeout); }}"}
+{"time": "2020-12-26 21:37:40.873585", "n_pass": [306, 30, 24], "score": "0.9002", "loss": "0.1653", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"\"+ timeout); }}"}
+{"time": "2020-12-26 21:37:43.523075", "n_pass": [308, 31, 25], "score": "0.9002", "loss": "0.1653", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"\"+timeout); }}"}
+{"time": "2020-12-26 21:37:46.163323", "n_pass": [312, 32, 26], "score": "0.9002", "loss": "0.1653", "code": "V get(long timeout,TimeUnit unit){if((0)){(\"\"+timeout);}}"}
+
+Minimal simplified code:
+V get(long timeout,TimeUnit unit){if((0)){(""+timeout);}}
+

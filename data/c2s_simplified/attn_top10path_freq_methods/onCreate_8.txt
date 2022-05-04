@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/VerticalGridFragment_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); mVideoCursorAdapter.setMapper(new VideoCursorMapper()); setAdapter(mVideoCursorAdapter); setTitle(getString(R.string.vertical_grid_title)); if (savedInstanceState == null) { prepareEntranceTransition(); } setupFragment(); }
+
+topk path-contexts for sub-token: on
+[0.3858] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.2322] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.1863] saved|instance|state,NameExpr2|MethodCallExpr|NameExpr3,on|create
+[0.1308] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0105] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0070] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0064] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0051] super,SuperExpr0|MethodCallExpr|NameExpr2,saved|instance|state
+[0.0037] saved|instance|state,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,bundle
+[0.0035] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: on
+['bundle', 'on|create', 'METHOD_NAME', 'on|create', 'saved|instance|state', 'on|create', 'saved|instance|state', 'on|create', 'bundle', 'set|mapper', 'METHOD_NAME', 'set|mapper', 'saved|instance|state', 'set|mapper', 'super', 'saved|instance|state', 'saved|instance|state', 'bundle', 'saved|instance|state', 'null']
+
+topk path-contexts for sub-token: create
+[0.6198] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.2850] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0466] saved|instance|state,NameExpr2|MethodCallExpr|NameExpr3,on|create
+[0.0458] saved|instance|state,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,on|create
+[0.0006] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0006] on|create,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,set|adapter
+[0.0002] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0002] set|adapter,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0001] bundle,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|mapper
+[0.0001] set|title,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+
+topk terminals for sub-token: create
+['METHOD_NAME', 'on|create', 'bundle', 'on|create', 'saved|instance|state', 'on|create', 'saved|instance|state', 'on|create', 'on|create', 'set|mapper', 'on|create', 'set|adapter', 'METHOD_NAME', 'set|mapper', 'set|adapter', 'null', 'bundle', 'set|mapper', 'set|title', 'null']
+

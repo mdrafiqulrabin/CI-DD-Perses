@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/wasabeef__recyclerview-animators/animators/src/main/java/jp/wasabeef/recyclerview/animators/ScaleInRightAnimator_preAnimateRemoveImpl.java
+method_name = preAnimateRemoveImpl
+method_body = @Override protected void preAnimateRemoveImpl(RecyclerView.ViewHolder holder) { ViewCompat.setPivotX(holder.itemView, holder.itemView.getWidth()); }
+
+topk path-contexts:
+[0.1767] holder,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setpivotx
+[0.1278] holder,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),viewcompat
+[0.1115] recyclerview,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),setpivotx
+[0.0761] recyclerview,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),viewcompat
+[0.0573] recyclerview,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr3)_(NameExpr2),getwidth
+[0.0474] holder,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(MethodCallExpr3)_(FieldAccessExpr0)_(NameExpr2),itemview
+[0.0407] void,(VoidType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),holder
+[0.0367] holder,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),recyclerview
+[0.0316] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),recyclerview
+[0.0300] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),viewcompat
+
+topk terminals:
+['holder', 'setpivotx', 'holder', 'viewcompat', 'recyclerview', 'setpivotx', 'recyclerview', 'viewcompat', 'recyclerview', 'getwidth', 'holder', 'itemview', 'void', 'holder', 'holder', 'recyclerview', 'METHOD_NAME', 'recyclerview', 'METHOD_NAME', 'viewcompat']
+

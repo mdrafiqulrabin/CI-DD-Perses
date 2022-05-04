@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/pkix/src/main/java/org/bouncycastle/cert/jcajce/NamedCertHelper_createCertificateFactory.java
+method_name = createCertificateFactory
+method_body = protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }
+predict, score, loss = createCertificateFactory, 0.48339608311653137, 0.8357836008071899
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:43:12.656272", "n_pass": [1, 1, 1], "score": "0.4834", "loss": "0.8358", "code": "protected CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:18.700509", "n_pass": [44, 3, 2], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type) throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:36.429925", "n_pass": [97, 8, 3], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException, NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:39.066629", "n_pass": [101, 9, 4], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException { return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:41.678154", "n_pass": [103, 10, 5], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException{ return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:44.291694", "n_pass": [105, 11, 6], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException{return CertificateFactory.getInstance(type, providerName); }"}
+{"time": "2021-01-20 07:43:54.774048", "n_pass": [114, 15, 7], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException{return CertificateFactory.getInstance(type,providerName); }"}
+{"time": "2021-01-20 07:44:12.416999", "n_pass": [146, 21, 8], "score": "0.4834", "loss": "0.8358", "code": "CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException{return CertificateFactory.getInstance(type,providerName);}"}
+
+Minimal simplified code:
+CertificateFactory createCertificateFactory(String type)throws CertificateException,NoSuchProviderException{return CertificateFactory.getInstance(type,providerName);}
+

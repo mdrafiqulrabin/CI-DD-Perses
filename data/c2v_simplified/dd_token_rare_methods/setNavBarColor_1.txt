@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Blankj__AndroidUtilCode/utilcode/src/main/java/com/blankj/utilcode/util/BarUtils_setNavBarColor.java
+method_name = setNavBarColor
+method_body = @RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }
+predict, score, loss = setNavBarColor, 0.43738222122192383, 0.9106701612472534
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:19:30.991529", "n_pass": [1, 1, 1], "score": "0.4374", "loss": "0.9107", "code": "@RequiresApi(Build.VERSION_CODES.LOLLIPOP) public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:19:33.612758", "n_pass": [8, 2, 2], "score": "0.5365", "loss": "0.643", "code": "public static void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:19:39.131340", "n_pass": [35, 4, 3], "score": "0.5365", "loss": "0.643", "code": " void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:19:45.552991", "n_pass": [68, 6, 4], "score": "0.5365", "loss": "0.643", "code": "void setNavBarColor(@NonNull final Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:19:48.985641", "n_pass": [75, 7, 5], "score": "0.5722", "loss": "0.5765", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt final int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:19:51.607422", "n_pass": [81, 8, 6], "score": "0.5722", "loss": "0.5765", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt int color) { window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:20:01.125452", "n_pass": [129, 10, 7], "score": "0.5722", "loss": "0.5765", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt int color){ window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:20:03.744678", "n_pass": [130, 11, 8], "score": "0.5722", "loss": "0.5765", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt int color){window.setNavigationBarColor(color); }"}
+{"time": "2021-01-20 07:20:08.998250", "n_pass": [135, 13, 9], "score": "0.7998", "loss": "0.2414", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt int color){window.setNavigationBarColor(); }"}
+{"time": "2021-01-20 07:20:11.617814", "n_pass": [138, 14, 10], "score": "0.7998", "loss": "0.2414", "code": "void setNavBarColor(@NonNullfinal Window window, @ColorInt int color){window.setNavigationBarColor();}"}
+{"time": "2021-01-20 07:20:15.077192", "n_pass": [146, 15, 11], "score": "0.7751", "loss": "0.2758", "code": "void setNavBarColor(@NonNull Window window, @ColorInt int color){window.setNavigationBarColor();}"}
+{"time": "2021-01-20 07:20:17.703419", "n_pass": [152, 16, 12], "score": "0.7751", "loss": "0.2758", "code": "void setNavBarColor(@NonNull Window window,@ColorInt int color){window.setNavigationBarColor();}"}
+
+Minimal simplified code:
+void setNavBarColor(@NonNull Window window,@ColorInt int color){window.setNavigationBarColor();}
+

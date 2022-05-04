@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslUtils_get.java
+method_name = get
+method_body = @SuppressWarnings("unchecked") public static <T> Expression<T> get(Expression<?> path, String name) { try { Class<?> clazz = path.getClass(); Field field = clazz.getField(name); return (Expression<T>) field.get(path); } catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) { throw new IllegalStateException("failed get field " + path + "." + name, e); } }
+
+topk path-contexts:
+[0.1095] field,(VariableDeclaratorId0)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),t
+[0.0942] ?,(WildcardType0)^(ClassOrInterfaceType)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(MethodCallExpr1)_(NameExpr3),get
+[0.0706] clazz,(VariableDeclaratorId0)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),t
+[0.0560] field,(ClassOrInterfaceType0)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),t
+[0.0476] ?,(WildcardType0)^(ClassOrInterfaceType)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(ClassOrInterfaceType)_(ClassOrInterfaceType0),t
+[0.0405] ?,(WildcardType0)^(ClassOrInterfaceType)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(MethodCallExpr1)_(NameExpr2),path
+[0.0368] name,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(UnionType)_(ClassOrInterfaceType3),illegalaccessexception
+[0.0341] t,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),path
+[0.0335] field,(VariableDeclaratorId0)^(VariableDeclarator)^(VariableDeclarationExpr)^(ExpressionStmt)^(BlockStmt)_(ReturnStmt)_(CastExpr)_(MethodCallExpr1)_(NameExpr2),path
+[0.0307] path,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(TryStmt)_(CatchClause)_(Parameter)_(UnionType)_(ClassOrInterfaceType3),illegalaccessexception
+
+topk terminals:
+['field', 't', '?', 'get', 'clazz', 't', 'field', 't', '?', 't', '?', 'path', 'name', 'illegalaccessexception', 't', 'path', 'field', 'path', 'path', 'illegalaccessexception']
+

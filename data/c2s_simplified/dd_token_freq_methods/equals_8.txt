@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/naming/NamingEntry_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }
+predict, score, loss = equals, 0.9938698, 0.008028087
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:13:04.666659", "n_pass": [1, 1, 1], "score": "0.9939", "loss": "0.008", "code": "@Override public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-27 04:13:06.407175", "n_pass": [44, 2, 2], "score": "0.9784", "loss": "0.0299", "code": "public boolean equals(Object obj) { if (obj instanceof NamingEntry) { return name.equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-27 04:13:09.480476", "n_pass": [50, 4, 3], "score": "0.9929", "loss": "0.01", "code": "public boolean equals(Object obj) { if (obj) { return name.equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-27 04:13:10.812572", "n_pass": [52, 5, 4], "score": "0.992", "loss": "0.013", "code": "public boolean equals(Object obj) { if (obj) { equals(((NamingEntry) obj).name); } else { return false; } }"}
+{"time": "2020-12-27 04:13:12.140498", "n_pass": [58, 6, 5], "score": "0.9741", "loss": "0.0404", "code": "public boolean equals(Object obj) { if (obj) { equals(((NamingEntry) obj).name); } else {  } }"}
+{"time": "2020-12-27 04:13:13.859173", "n_pass": [62, 7, 6], "score": "0.7857", "loss": "0.4066", "code": "public boolean equals() { if (obj) { equals(((NamingEntry) obj).name); } else {  } }"}
+{"time": "2020-12-27 04:13:17.559734", "n_pass": [110, 9, 7], "score": "0.7857", "loss": "0.4066", "code": "public boolean equals() { if (obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:18.869673", "n_pass": [113, 10, 8], "score": "0.7857", "loss": "0.4066", "code": " boolean equals() { if (obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:20.201121", "n_pass": [114, 11, 9], "score": "0.7857", "loss": "0.4066", "code": "boolean equals() { if (obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:28.286485", "n_pass": [177, 13, 10], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){ if (obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:29.609968", "n_pass": [179, 14, 11], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if (obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:30.943112", "n_pass": [181, 15, 12], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj) { equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:32.260661", "n_pass": [185, 16, 13], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){ equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:33.558863", "n_pass": [187, 17, 14], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry) obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:36.175800", "n_pass": [194, 19, 15], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name); } {  } }"}
+{"time": "2020-12-27 04:13:38.865031", "n_pass": [201, 21, 16], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name);} {  } }"}
+{"time": "2020-12-27 04:13:40.188757", "n_pass": [203, 22, 17], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name);}{  } }"}
+{"time": "2020-12-27 04:13:41.500104", "n_pass": [205, 23, 18], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name);}{ } }"}
+{"time": "2020-12-27 04:13:42.807864", "n_pass": [206, 24, 19], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name);}{} }"}
+{"time": "2020-12-27 04:13:44.145400", "n_pass": [208, 25, 20], "score": "0.7857", "loss": "0.4066", "code": "boolean equals(){if(obj){equals(((NamingEntry)obj).name);}{}}"}
+
+Minimal simplified code:
+boolean equals(){if(obj){equals(((NamingEntry)obj).name);}{}}
+

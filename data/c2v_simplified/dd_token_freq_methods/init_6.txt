@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/coyote/http11/upgrade/TestUpgrade_init.java
+method_name = init
+method_body = @Override public void init(WebConnection connection) { try { sis = connection.getInputStream(); sos = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setReadListener(new EchoReadListener()); sos.setWriteListener(new EchoWriteListener()); }
+predict, score, loss = init, 0.9931509494781494, 0.007139053661376238
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:38:43.481255", "n_pass": [1, 1, 1], "score": "0.9932", "loss": "0.0071", "code": "@Override public void init(WebConnection connection) { try { sis = connection.getInputStream(); sos = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setReadListener(new EchoReadListener()); sos.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:38:46.288800", "n_pass": [22, 2, 2], "score": "0.9878", "loss": "0.0126", "code": "@Override public void init(WebConnection connection) { try { sis = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setReadListener(new EchoReadListener()); sos.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:38:49.089722", "n_pass": [26, 3, 3], "score": "0.9916", "loss": "0.0088", "code": "@Override public void init(WebConnection connection) { try { sis = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:38:51.898675", "n_pass": [47, 4, 4], "score": "0.9718", "loss": "0.0301", "code": "void init(WebConnection connection) { try { sis = connection.getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:38:54.691521", "n_pass": [51, 5, 5], "score": "0.966", "loss": "0.0375", "code": "void init(WebConnection connection) { try { getOutputStream(); } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:38:57.515893", "n_pass": [82, 6, 6], "score": "0.9557", "loss": "0.0476", "code": "void init(WebConnection connection) { try { ; } catch (IOException ioe) { throw new IllegalStateException(ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:00.322126", "n_pass": [87, 7, 7], "score": "0.9555", "loss": "0.0478", "code": "void init(WebConnection connection) { try { ; } catch (IOException ioe) { throwIllegalStateException(ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:07.597055", "n_pass": [145, 8, 8], "score": "0.956", "loss": "0.0474", "code": "void init(WebConnection connection) { try { ; } catch (IOException ioe) { (ioe); } sis.setWriteListener(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:10.392201", "n_pass": [150, 9, 9], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection) { try { ; } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:14.056340", "n_pass": [164, 10, 10], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){ try { ; } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:16.861459", "n_pass": [166, 11, 11], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try { ; } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:19.668513", "n_pass": [168, 12, 12], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{ ; } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:22.432435", "n_pass": [170, 13, 13], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{; } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:25.199235", "n_pass": [171, 14, 14], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{ } catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:27.983834", "n_pass": [172, 15, 15], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{} catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:30.788152", "n_pass": [174, 16, 16], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{}catch (IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:33.600021", "n_pass": [176, 17, 17], "score": "0.9999", "loss": "0.0001", "code": "void init(WebConnection connection){try{}catch(IOException ioe) { (ioe); } sis(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:36.396020", "n_pass": [184, 18, 18], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe) { (ioe); }(new EchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:43.296186", "n_pass": [234, 19, 19], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe) { (ioe); }(newEchoWriteListener()); }"}
+{"time": "2020-12-26 22:39:46.093872", "n_pass": [239, 20, 20], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe) { (ioe); }(newEchoWriteListener());}"}
+{"time": "2020-12-26 22:39:49.753922", "n_pass": [259, 21, 21], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe){ (ioe); }(newEchoWriteListener());}"}
+{"time": "2020-12-26 22:39:52.549626", "n_pass": [261, 22, 22], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe){(ioe); }(newEchoWriteListener());}"}
+{"time": "2020-12-26 22:39:55.343048", "n_pass": [266, 23, 23], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe){(ioe);}(newEchoWriteListener());}"}
+{"time": "2020-12-26 22:39:58.148883", "n_pass": [269, 24, 24], "score": "0.9998", "loss": "0.0002", "code": "void init(WebConnection connection){try{}catch(IOException ioe){(ioe);}(EchoWriteListener());}"}
+
+Minimal simplified code:
+void init(WebConnection connection){try{}catch(IOException ioe){(ioe);}(EchoWriteListener());}
+

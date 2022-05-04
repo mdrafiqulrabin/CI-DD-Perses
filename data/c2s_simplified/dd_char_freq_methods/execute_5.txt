@@ -1,0 +1,65 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+predict, score, loss = execute, 0.48775002, 0.86834794
+
+Trace of simplified code(s):
+{"time": "2020-12-28 00:06:14.325876", "n_pass": [1, 1, 1], "score": "0.408", "loss": "1.0307", "code": "@Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:15.712935", "n_pass": [10, 2, 2], "score": "0.4768", "loss": "0.8572", "code": "@Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:18.487366", "n_pass": [44, 4, 3], "score": "0.4515", "loss": "0.9325", "code": "@Override public void execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:19.850278", "n_pass": [53, 5, 4], "score": "0.2545", "loss": "2.5498", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:24.348868", "n_pass": [93, 8, 5], "score": "0.2763", "loss": "2.6307", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata)ValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:25.724530", "n_pass": [94, 9, 6], "score": "0.2381", "loss": "2.8797", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:27.071154", "n_pass": [97, 10, 7], "score": "0.2437", "loss": "2.8745", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuplees(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:28.526470", "n_pass": [99, 11, 8], "score": "0.2275", "loss": "2.9349", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuplees(url, meatus.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:29.890044", "n_pass": [100, 12, 9], "score": "0.1976", "loss": "3.0408", "code": "id execute(Tuple tuple) { String url =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuplees(url, meED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:33.021135", "n_pass": [107, 14, 10], "score": "0.2012", "loss": "2.8629", "code": "id execute(Tuple tuple) { S =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuplees(url, meED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:44.430639", "n_pass": [165, 22, 11], "score": "0.1591", "loss": "3.256", "code": "id execute(Tuple tuple) { S =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tuplees(urED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:06:59.357056", "n_pass": [246, 32, 12], "score": "0.1591", "loss": "3.256", "code": "id execute(Tuple tuple) { S =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 00:07:06.180163", "n_pass": [255, 37, 13], "score": "0.1752", "loss": "2.9816", "code": "id execute(Tuple tuple) { S =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:10.761151", "n_pass": [265, 39, 14], "score": "0.1575", "loss": "3.0168", "code": "id execute(Tup tuple) { S =ield(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:14.845642", "n_pass": [273, 42, 15], "score": "0.1638", "loss": "2.9732", "code": "id execute(Tup tuple) { S =id(\"url\"); Metadata metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:17.554563", "n_pass": [279, 44, 16], "score": "0.184", "loss": "2.8278", "code": "id execute(Tup tuple) { S =id(\"url\"); tadata metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:18.900619", "n_pass": [280, 45, 17], "score": "0.2009", "loss": "2.6697", "code": "id execute(Tup tuple) { S =id(\"url\"); data metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:20.234636", "n_pass": [281, 46, 18], "score": "0.1859", "loss": "2.6504", "code": "id execute(Tup tuple) { S =id(\"url\"); ta metadata = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:27.121129", "n_pass": [286, 51, 19], "score": "0.2547", "loss": "2.153", "code": "id execute(Tup tuple) { S =id(\"url\"); ta metada = (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:28.455249", "n_pass": [287, 52, 20], "score": "0.2128", "loss": "2.5544", "code": "id execute(Tup tuple) { S =id(\"url\"); ta metad= (Metadata)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:32.535224", "n_pass": [292, 55, 21], "score": "0.2663", "loss": "2.1805", "code": "id execute(Tup tuple) { S =id(\"url\"); ta metad= (Metada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:45.429065", "n_pass": [316, 63, 22], "score": "0.2079", "loss": "2.9368", "code": "id execute(T tuple) { S =id(\"url\"); ta metad= (Metada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:49.522172", "n_pass": [326, 66, 23], "score": "0.1883", "loss": "3.0635", "code": "id execute(T tuple) { S =id(\"u\"); ta metad= (Metada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:53.550165", "n_pass": [331, 69, 24], "score": "0.2327", "loss": "2.3555", "code": "id execute(T tuple) { S =id(\"u\"); ta mad= (Metada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:54.927742", "n_pass": [332, 70, 25], "score": "0.1845", "loss": "3.0222", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Metada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:56.287172", "n_pass": [335, 71, 26], "score": "0.147", "loss": "3.3623", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Mada)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:07:57.694076", "n_pass": [336, 72, 27], "score": "0.1466", "loss": "3.3882", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"metadata\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:00.412027", "n_pass": [340, 74, 28], "score": "0.174", "loss": "3.2302", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"metta\", tupl(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:01.762758", "n_pass": [343, 75, 29], "score": "0.1592", "loss": "3.3", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"metta\", t(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:20.795619", "n_pass": [452, 85, 30], "score": "0.1592", "loss": "3.3", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\", t(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:22.143786", "n_pass": [455, 86, 31], "score": "0.1592", "loss": "3.3", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\",t(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:23.488724", "n_pass": [456, 87, 32], "score": "0.1544", "loss": "3.2506", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\",(urED)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:24.839388", "n_pass": [458, 88, 33], "score": "0.1802", "loss": "2.8721", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\",(uD)); _collector.ack(le); }"}
+{"time": "2020-12-28 00:08:26.202492", "n_pass": [461, 89, 34], "score": "0.1802", "loss": "2.8721", "code": "id execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:38.331265", "n_pass": [473, 98, 35], "score": "0.1823", "loss": "2.8105", "code": "i execute(T tuple) { S =id(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:49.514239", "n_pass": [491, 104, 36], "score": "0.1823", "loss": "2.8105", "code": "i execute(T tuple){ S =id(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:50.867266", "n_pass": [493, 105, 37], "score": "0.1823", "loss": "2.8105", "code": "i execute(T tuple){S =id(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:52.286379", "n_pass": [495, 106, 38], "score": "0.1823", "loss": "2.8105", "code": "i execute(T tuple){S=id(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:53.641348", "n_pass": [496, 107, 39], "score": "0.1631", "loss": "2.9769", "code": "i execute(T tuple){Sid(\"u\"); ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:08:59.083111", "n_pass": [505, 111, 40], "score": "0.1631", "loss": "2.9769", "code": "i execute(T tuple){Sid(\"u\");ta m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:00.428716", "n_pass": [506, 112, 41], "score": "0.1693", "loss": "2.8967", "code": "i execute(T tuple){Sid(\"u\");a m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:01.791061", "n_pass": [507, 113, 42], "score": "0.1307", "loss": "3.5057", "code": "i execute(T tuple){Sid(\"u\"); m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:03.149096", "n_pass": [508, 114, 43], "score": "0.1307", "loss": "3.5057", "code": "i execute(T tuple){Sid(\"u\");m= (Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:04.480229", "n_pass": [511, 115, 44], "score": "0.1307", "loss": "3.5057", "code": "i execute(T tuple){Sid(\"u\");m=(Ma)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:05.826164", "n_pass": [513, 116, 45], "score": "0.1303", "loss": "3.5877", "code": "i execute(T tuple){Sid(\"u\");m=(a)ld(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:07.187072", "n_pass": [516, 117, 46], "score": "0.1655", "loss": "3.1257", "code": "i execute(T tuple){Sid(\"u\");m=(a)d(\"mett\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:09.863225", "n_pass": [521, 119, 47], "score": "0.1828", "loss": "2.977", "code": "i execute(T tuple){Sid(\"u\");m=(a)d(\"mtt\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:33.498215", "n_pass": [558, 134, 48], "score": "0.1829", "loss": "2.8408", "code": "i execute(T tuple){id(\"u\");m=(a)d(\"mtt\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:09:37.579644", "n_pass": [563, 137, 49], "score": "0.1894", "loss": "2.8634", "code": "i execute(T tuple){id(\"\");m=(a)d(\"mtt\",(uD));collector.ack(le); }"}
+{"time": "2020-12-28 00:10:06.581343", "n_pass": [643, 155, 50], "score": "0.1896", "loss": "2.8882", "code": "i execute(T tuple){id(\"\");m=(a)d(\"mtt\",(D));collector.ack(le); }"}
+{"time": "2020-12-28 00:10:21.404583", "n_pass": [658, 166, 51], "score": "0.1759", "loss": "3.1804", "code": "i execute(T tuple){id(\"\");m=(a)d(\"mtt\",(D));collector.ck(le); }"}
+{"time": "2020-12-28 00:10:28.120929", "n_pass": [666, 171, 52], "score": "0.1759", "loss": "3.1804", "code": "i execute(T tuple){id(\"\");m=(a)d(\"mtt\",(D));collector.ck(le);}"}
+{"time": "2020-12-28 00:10:39.682324", "n_pass": [687, 177, 53], "score": "0.1535", "loss": "3.3467", "code": "i execute(T tuple){d(\"\");m=(a)d(\"mtt\",(D));collector.ck(le);}"}
+{"time": "2020-12-28 00:10:41.030584", "n_pass": [688, 178, 54], "score": "0.1681", "loss": "3.1986", "code": "i execute(T tuple){(\"\");m=(a)d(\"mtt\",(D));collector.ck(le);}"}
+
+Minimal simplified code:
+i execute(T tuple){("");m=(a)d("mtt",(D));collector.ck(le);}
+

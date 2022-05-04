@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/bcgit__bc-java/tls/src/main/java/org/bouncycastle/jsse/provider/ContextData_getServerSessionContext.java
+method_name = getServerSessionContext
+method_body = ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }
+predict, score, loss = getServerSessionContext, 0.1494530737400055, 3.43217396736145
+
+Trace of simplified code(s):
+{"time": "2021-01-23 19:58:24.462668", "n_pass": [1, 1, 1], "score": "0.1495", "loss": "3.4322", "code": "ProvSSLSessionContext getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-23 19:58:30.430595", "n_pass": [20, 3, 2], "score": "0.1495", "loss": "3.4322", "code": "sionContext getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-23 19:58:41.497429", "n_pass": [42, 7, 3], "score": "0.1495", "loss": "3.4322", "code": "sionCt getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-23 19:58:58.921443", "n_pass": [81, 13, 4], "score": "0.1495", "loss": "3.4322", "code": "sion getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-23 19:59:29.133150", "n_pass": [105, 23, 5], "score": "0.185", "loss": "3.2404", "code": "on getServerSessionContext() { return serverSessionContext; }"}
+{"time": "2021-01-23 20:00:15.480686", "n_pass": [206, 35, 6], "score": "0.185", "loss": "3.2404", "code": "on getServerSessionContext(){ return serverSessionContext; }"}
+{"time": "2021-01-23 20:00:18.070919", "n_pass": [208, 36, 7], "score": "0.185", "loss": "3.2404", "code": "on getServerSessionContext(){return serverSessionContext; }"}
+{"time": "2021-01-23 20:02:04.529316", "n_pass": [300, 73, 8], "score": "0.185", "loss": "3.2404", "code": "on getServerSessionContext(){return serverSessionContext;}"}
+
+Minimal simplified code:
+on getServerSessionContext(){return serverSessionContext;}
+

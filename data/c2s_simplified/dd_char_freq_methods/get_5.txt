@@ -1,0 +1,54 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/governance/web/util/ContextUtil_get.java
+method_name = get
+method_body = public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }
+predict, score, loss = get, 0.9243531, 0.68475354
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:45:57.600249", "n_pass": [1, 1, 1], "score": "0.9244", "loss": "0.6848", "code": "public static Object get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:45:59.750278", "n_pass": [45, 2, 2], "score": "0.9107", "loss": "0.7757", "code": "public sta get(Map<String, Object> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:01.128318", "n_pass": [47, 3, 3], "score": "0.8968", "loss": "1.169", "code": "public sta get(Map<Sect> context, Object key, Object defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:02.477713", "n_pass": [50, 4, 4], "score": "0.9156", "loss": "1.5632", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Object res = context.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:03.812354", "n_pass": [53, 5, 5], "score": "0.7059", "loss": "3.1349", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objecntext.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:05.560680", "n_pass": [90, 6, 6], "score": "0.7956", "loss": "2.0219", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res == null) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:06.928258", "n_pass": [95, 7, 7], "score": "0.7829", "loss": "2.5934", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res =l) { res = defaultv; } return res; }"}
+{"time": "2020-12-27 23:46:08.254687", "n_pass": [97, 8, 8], "score": "0.8506", "loss": "3.3206", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res =l) { refaultv; } return res; }"}
+{"time": "2020-12-27 23:46:09.610653", "n_pass": [98, 9, 9], "score": "0.9006", "loss": "1.5703", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res =l) { rv; } return res; }"}
+{"time": "2020-12-27 23:46:11.012242", "n_pass": [100, 10, 10], "score": "0.9374", "loss": "2.1123", "code": "public sta get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res =l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:12.423134", "n_pass": [103, 11, 11], "score": "0.9312", "loss": "2.2752", "code": "publi get(Map<Sect> context, Objectct defaultv) { Objec.get(key); if (res =l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:13.750910", "n_pass": [107, 12, 12], "score": "0.9179", "loss": "0.9324", "code": "publi get(Map<Sect> xt, Objectct defaultv) { Objec.get(key); if (res =l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:15.078371", "n_pass": [109, 13, 13], "score": "0.8998", "loss": "0.569", "code": "publi get(Map<Sect> xt, Oct defaultv) { Objec.get(key); if (res =l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:16.430471", "n_pass": [111, 14, 14], "score": "0.9016", "loss": "0.4772", "code": "publi get(Map<Sect> xt, Oct dev) { Objec.get(key); if (res =l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:17.766651", "n_pass": [117, 15, 15], "score": "0.776", "loss": "0.5866", "code": "publi get(Map<Sect> xt, Oct dev) { Objec.get(key); if (l) { rv; } rres; }"}
+{"time": "2020-12-27 23:46:19.503768", "n_pass": [164, 16, 16], "score": "0.7668", "loss": "0.7001", "code": "publi get(Map<Sect> xt, Oct dev) { Objec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:20.874659", "n_pass": [165, 17, 17], "score": "0.8312", "loss": "0.8774", "code": "bli get(Map<Sect> xt, Oct dev) { Objec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:22.203668", "n_pass": [166, 18, 18], "score": "0.8292", "loss": "0.7606", "code": "i get(Map<Sect> xt, Oct dev) { Objec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:24.274992", "n_pass": [170, 19, 19], "score": "0.8292", "loss": "0.7606", "code": "i get(p<Sect> xt, Oct dev) { Objec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:25.620719", "n_pass": [172, 20, 20], "score": "0.7839", "loss": "0.699", "code": "i get(p<ct> xt, Oct dev) { Objec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:27.000423", "n_pass": [180, 21, 21], "score": "0.7658", "loss": "0.7432", "code": "i get(p<ct> xt, Oct dev) {jec.get(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:28.335188", "n_pass": [182, 22, 22], "score": "0.4501", "loss": "1.9463", "code": "i get(p<ct> xt, Oct dev) {ject(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:30.422560", "n_pass": [203, 23, 23], "score": "0.3303", "loss": "2.0319", "code": "i get(p<ct> xt, Oct dev) {t(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:34.604274", "n_pass": [264, 24, 24], "score": "0.4259", "loss": "1.8351", "code": "i get(p<ct> xt, Oct de) {t(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:35.951646", "n_pass": [266, 25, 25], "score": "0.4259", "loss": "1.8351", "code": "i get(p<ct> xt, Oct de){t(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:37.316890", "n_pass": [268, 26, 26], "score": "0.5489", "loss": "1.9149", "code": "i get(p<ct> xt, Oct de){(key); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:38.644592", "n_pass": [270, 27, 27], "score": "0.4889", "loss": "2.0253", "code": "i get(p<ct> xt, Oct de){(k); if (l) { rv; } r; }"}
+{"time": "2020-12-27 23:46:40.046107", "n_pass": [277, 28, 28], "score": "0.4089", "loss": "2.8664", "code": "i get(p<ct> xt, Oct de){(k); if (l) { ; } r; }"}
+{"time": "2020-12-27 23:46:41.369773", "n_pass": [278, 29, 29], "score": "0.4089", "loss": "2.8664", "code": "i get(p<ct> xt, Oct de){(k); if (l) { } r; }"}
+{"time": "2020-12-27 23:46:42.726145", "n_pass": [280, 30, 30], "score": "0.4516", "loss": "2.9898", "code": "i get(p<ct> xt, Oct de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:45.910754", "n_pass": [290, 31, 31], "score": "0.2687", "loss": "2.6919", "code": "i get(p<t> xt, Oct de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:47.230422", "n_pass": [293, 32, 32], "score": "0.2687", "loss": "2.6919", "code": "i get(p<t>xt, Oct de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:51.324313", "n_pass": [297, 35, 33], "score": "0.2687", "loss": "2.6919", "code": "i get(p<t>xt,Oct de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:52.661561", "n_pass": [298, 36, 34], "score": "0.687", "loss": "1.6102", "code": "i get(p<t>xt,ct de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:54.059003", "n_pass": [299, 37, 35], "score": "0.6358", "loss": "1.5066", "code": "i get(p<t>xt,t de){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:55.388238", "n_pass": [302, 38, 36], "score": "0.3117", "loss": "2.3785", "code": "i get(p<t>xt,t e){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:46:58.575342", "n_pass": [325, 39, 37], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k); if (l) { }  }"}
+{"time": "2020-12-27 23:47:04.191379", "n_pass": [374, 40, 38], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if (l) { }  }"}
+{"time": "2020-12-27 23:47:05.510990", "n_pass": [376, 41, 39], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if(l) { }  }"}
+{"time": "2020-12-27 23:47:06.835381", "n_pass": [380, 42, 40], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if(l){ }  }"}
+{"time": "2020-12-27 23:47:08.186710", "n_pass": [382, 43, 41], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if(l){}  }"}
+{"time": "2020-12-27 23:47:09.535160", "n_pass": [384, 44, 42], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if(l){} }"}
+{"time": "2020-12-27 23:47:10.880496", "n_pass": [385, 45, 43], "score": "0.2128", "loss": "2.8269", "code": "i get(p<t>t,t e){(k);if(l){}}"}
+
+Minimal simplified code:
+i get(p<t>t,t e){(k);if(l){}}
+

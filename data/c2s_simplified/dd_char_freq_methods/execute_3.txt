@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/ServerinfoTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute("/serverinfo"); }
+predict, score, loss = execute, 0.99842227, 0.0018000242
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:12:16.941834", "n_pass": [1, 1, 1], "score": "0.9984", "loss": "0.0018", "code": "@Override public void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 23:12:19.009310", "n_pass": [45, 2, 2], "score": "0.996", "loss": "0.0049", "code": "@Overrblic void execute() throws BuildException { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 23:12:21.068332", "n_pass": [51, 3, 3], "score": "0.994", "loss": "0.0078", "code": "@Overrblic void execute() throws Buiption { super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 23:12:22.396409", "n_pass": [52, 4, 4], "score": "0.9958", "loss": "0.0049", "code": "@Overrblic void execute() throws Bui{ super.execute(); execute(\"/serverinfo\"); }"}
+{"time": "2020-12-27 23:12:25.058922", "n_pass": [56, 6, 5], "score": "0.9933", "loss": "0.0077", "code": "@Overrblic void execute() throws Bui{ super.execute();te(\"/serverinfo\"); }"}
+{"time": "2020-12-27 23:12:26.390610", "n_pass": [58, 7, 6], "score": "0.994", "loss": "0.0073", "code": "@Overrblic void execute() throws Bui{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:31.070075", "n_pass": [95, 10, 7], "score": "0.994", "loss": "0.0073", "code": "@Ovblic void execute() throws Bui{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:32.396130", "n_pass": [96, 11, 8], "score": "0.9948", "loss": "0.0061", "code": "@Ovc void execute() throws Bui{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:34.075986", "n_pass": [98, 12, 9], "score": "0.9918", "loss": "0.01", "code": "@Ovc v execute() throws Bui{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:47.928506", "n_pass": [168, 18, 10], "score": "0.9918", "loss": "0.01", "code": "@Ovc v execute()throws Bui{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:49.271730", "n_pass": [173, 19, 11], "score": "0.9899", "loss": "0.0126", "code": "@Ovc v execute()throws i{ super.execute();te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:12:59.883573", "n_pass": [182, 27, 12], "score": "0.2589", "loss": "2.0891", "code": "@Ovc v execute()throws i{ super.execute;te(\"/sfo\"); }"}
+{"time": "2020-12-27 23:13:02.521242", "n_pass": [186, 29, 13], "score": "0.2066", "loss": "2.1765", "code": "@Ovc v execute()throws i{ super.execute;te(\"/o\"); }"}
+{"time": "2020-12-27 23:13:23.979493", "n_pass": [258, 41, 14], "score": "0.2066", "loss": "2.1765", "code": "@Ovc v execute()throws i{ super.execute;te(\"/o\");}"}
+{"time": "2020-12-27 23:13:33.019847", "n_pass": [284, 45, 15], "score": "0.2066", "loss": "2.1765", "code": "@Ovc v execute()throws i{super.execute;te(\"/o\");}"}
+{"time": "2020-12-27 23:13:53.098385", "n_pass": [299, 60, 16], "score": "0.2505", "loss": "1.8928", "code": "@Ovc v execute()throws i{super.execute;e(\"/o\");}"}
+{"time": "2020-12-27 23:13:55.776452", "n_pass": [303, 62, 17], "score": "0.2505", "loss": "1.8928", "code": "@Ovc v execute()throws i{super.execute;e(\"o\");}"}
+{"time": "2020-12-27 23:13:57.126398", "n_pass": [304, 63, 18], "score": "0.4173", "loss": "1.1861", "code": "@Ovc v execute()throws i{super.execute;e(\"\");}"}
+{"time": "2020-12-27 23:14:01.168044", "n_pass": [312, 66, 19], "score": "0.2505", "loss": "1.8318", "code": "@Ov v execute()throws i{super.execute;e(\"\");}"}
+{"time": "2020-12-27 23:14:26.428110", "n_pass": [356, 82, 20], "score": "0.2863", "loss": "1.6697", "code": "@v v execute()throws i{super.execute;e(\"\");}"}
+{"time": "2020-12-27 23:14:50.783459", "n_pass": [393, 97, 21], "score": "0.2535", "loss": "1.6653", "code": "@v v execute()throws i{super.execute;(\"\");}"}
+
+Minimal simplified code:
+@v v execute()throws i{super.execute;("");}
+

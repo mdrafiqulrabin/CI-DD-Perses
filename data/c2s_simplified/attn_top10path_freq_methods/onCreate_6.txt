@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/data/VideoProvider_onCreate.java
+method_name = onCreate
+method_body = @Override public boolean onCreate() { Context context = getContext(); mContentResolver = context.getContentResolver(); mOpenHelper = new VideoDbHelper(context); return true; }
+
+topk path-contexts for sub-token: on
+[0.0638] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0417] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|PrimitiveType1,boolean
+[0.0381] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0321] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|content|resolver
+[0.0280] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,get|context
+[0.0277] context,NameExpr0|MethodCallExpr1|NameExpr2,get|content|resolver
+[0.0273] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|open|helper
+[0.0246] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr2,get|content|resolver
+[0.0240] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|content|resolver
+[0.0203] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|MethodCallExpr1|NameExpr0,context
+
+topk terminals for sub-token: on
+['override', 'METHOD_NAME', 'override', 'boolean', 'boolean', 'METHOD_NAME', 'METHOD_NAME', 'm|content|resolver', 'METHOD_NAME', 'get|context', 'context', 'get|content|resolver', 'METHOD_NAME', 'm|open|helper', 'METHOD_NAME', 'get|content|resolver', 'boolean', 'm|content|resolver', 'METHOD_NAME', 'context']
+
+topk path-contexts for sub-token: create
+[0.0738] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,video|db|helper
+[0.0694] boolean,PrimitiveType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0619] m|open|helper,NameExpr0|AssignExpr:assign|ObjectCreationExpr|ClassOrInterfaceType0,video|db|helper
+[0.0338] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|open|helper
+[0.0305] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,video|db|helper
+[0.0299] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|open|helper
+[0.0212] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0142] context,VariableDeclaratorId0|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,video|db|helper
+[0.0124] context,ClassOrInterfaceType0|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|ObjectCreationExpr|ClassOrInterfaceType0,video|db|helper
+[0.0107] boolean,PrimitiveType1|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|NameExpr0,m|content|resolver
+
+topk terminals for sub-token: create
+['METHOD_NAME', 'video|db|helper', 'boolean', 'METHOD_NAME', 'm|open|helper', 'video|db|helper', 'METHOD_NAME', 'm|open|helper', 'boolean', 'video|db|helper', 'boolean', 'm|open|helper', 'override', 'METHOD_NAME', 'context', 'video|db|helper', 'context', 'video|db|helper', 'boolean', 'm|content|resolver']
+

@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_unlockDrawer.java
+method_name = unlockDrawer
+method_body = private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }
+predict, score, loss = unlockDrawer, 0.19100524, 2.6604183
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:33:14.870077", "n_pass": [1, 1, 1], "score": "0.191", "loss": "2.6604", "code": "private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:19.204990", "n_pass": [44, 4, 2], "score": "0.191", "loss": "2.6604", "code": " void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:20.898356", "n_pass": [48, 5, 3], "score": "0.2266", "loss": "3.0647", "code": " void unlockDrawer() { if (m!= null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:26.149814", "n_pass": [53, 9, 4], "score": "0.574", "loss": "2.3552", "code": " void unlockDrawer() { if (m!= null) { mDrawer.setDrawere(DrawerLayout.LOCK_MODE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:28.795813", "n_pass": [56, 11, 5], "score": "0.4206", "loss": "1.7048", "code": " void unlockDrawer() { if (m!= null) { mDrawer.setDrawere(DrawerLayout.E_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:36.053748", "n_pass": [68, 16, 6], "score": "0.2404", "loss": "2.9548", "code": " void unlockDrawer() { if (m!= null) { mDrawer.setDrawere(DraweE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:48.987893", "n_pass": [115, 24, 7], "score": "0.3908", "loss": "2.588", "code": " void unlockDrawer() { if (null) { mDrawer.setDrawere(DraweE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:33:55.456118", "n_pass": [123, 29, 8], "score": "0.2529", "loss": "2.1703", "code": " void unlockDrawer() { if (null) { mDrawer.setDrawere(DE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:34:06.400920", "n_pass": [142, 36, 9], "score": "0.2925", "loss": "1.8595", "code": " void unlockDrawer() { if (null) { mDrawer.setDre(DE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:34:17.941655", "n_pass": [200, 43, 10], "score": "0.2708", "loss": "1.8983", "code": " void unlockDrawer() { if (null) { mDrawer.setD(DE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:34:25.766299", "n_pass": [209, 49, 11], "score": "0.2708", "loss": "1.8983", "code": "void unlockDrawer() { if (null) { mDrawer.setD(DE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:34:35.187404", "n_pass": [227, 54, 12], "score": "0.1511", "loss": "2.7943", "code": "void unlockDrawer() { if (ll) { mDrawer.setD(DE_UNLOCKED); } }"}
+{"time": "2021-01-23 10:34:49.482040", "n_pass": [242, 65, 13], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer() { if (ll) { mDrawer.setD(DE_UNLOCK); } }"}
+{"time": "2021-01-23 10:35:14.498264", "n_pass": [331, 80, 14], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer() { if (ll) { mDrawer.setD(DE_UNLOCK);} }"}
+{"time": "2021-01-23 10:35:15.785029", "n_pass": [332, 81, 15], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer() { if (ll) { mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:26.939405", "n_pass": [353, 86, 16], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer(){ if (ll) { mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:28.252206", "n_pass": [355, 87, 17], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer(){if (ll) { mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:29.543740", "n_pass": [358, 88, 18], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer(){if(ll) { mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:33.424508", "n_pass": [363, 91, 19], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer(){if(ll){ mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:34.727770", "n_pass": [365, 92, 20], "score": "0.4867", "loss": "1.9552", "code": "void unlockDrawer(){if(ll){mDrawer.setD(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:50.235645", "n_pass": [377, 104, 21], "score": "0.3846", "loss": "1.8857", "code": "void unlockDrawer(){if(ll){mDrawer.set(DE_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:51.527622", "n_pass": [379, 105, 22], "score": "0.5763", "loss": "1.3298", "code": "void unlockDrawer(){if(ll){mDrawer.set(E_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:52.829375", "n_pass": [380, 106, 23], "score": "0.2749", "loss": "2.0197", "code": "void unlockDrawer(){if(ll){mDrawer.set(_UNLOCK);}}"}
+{"time": "2021-01-23 10:35:54.115983", "n_pass": [381, 107, 24], "score": "0.2749", "loss": "2.0197", "code": "void unlockDrawer(){if(ll){mDrawer.set(UNLOCK);}}"}
+{"time": "2021-01-23 10:36:12.882973", "n_pass": [415, 118, 25], "score": "0.5771", "loss": "1.0723", "code": "void unlockDrawer(){if(l){mDrawer.set(UNLOCK);}}"}
+{"time": "2021-01-23 10:36:14.159116", "n_pass": [419, 119, 26], "score": "0.531", "loss": "1.3785", "code": "void unlockDrawer(){if(l){Drawer.set(UNLOCK);}}"}
+
+Minimal simplified code:
+void unlockDrawer(){if(l){Drawer.set(UNLOCK);}}
+

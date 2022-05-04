@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_releaseObject.java
+method_name = releaseObject
+method_body = @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString("objectId"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 12:15:15.532700", "score": "0.4315", "loss": "1.8319", "code": "class T { @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); } }"}
+{"time": "2021-01-24 12:18:17.454134", "score": "0.5963", "loss": "1.1492", "code": "class T { @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); } }"}
+{"time": "2021-01-24 12:22:47.999358", "score": "0.6452", "loss": "0.9695", "code": "class T { void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); } }"}
+{"time": "2021-01-24 12:27:49.892208", "score": "0.2185", "loss": "2.1868", "code": "class T { void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId ; } }"}
+
+Minimal simplified code:
+class T {
+                             void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId                               ;                                                                             }
+}
+
+

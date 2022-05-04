@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/main/java/io/katharsis/utils/Optional_get.java
+method_name = get
+method_body = public T get() { if (value == null) { throw new NoSuchElementException("No value present"); } return value; }
+
+topk path-contexts:
+[0.1546] null,(NullLiteralExpr1)^(BinaryExpr:equals)^(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(StringLiteralExpr1),novaluepresent
+[0.1401] value,(NameExpr0)^(BinaryExpr:equals)^(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(StringLiteralExpr1),novaluepresent
+[0.1180] t,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(ClassOrInterfaceType0),nosuchelementexception
+[0.1105] t,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ThrowStmt)_(ObjectCreationExpr)_(StringLiteralExpr1),novaluepresent
+[0.0881] nosuchelementexception,(ClassOrInterfaceType0)^(ObjectCreationExpr)_(StringLiteralExpr1),novaluepresent
+[0.0802] novaluepresent,(StringLiteralExpr1)^(ObjectCreationExpr)^(ThrowStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),value
+[0.0513] nosuchelementexception,(ClassOrInterfaceType0)^(ObjectCreationExpr)^(ThrowStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(NameExpr0),value
+[0.0363] t,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.0337] t,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NameExpr0),value
+[0.0317] t,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+
+topk terminals:
+['null', 'novaluepresent', 'value', 'novaluepresent', 't', 'nosuchelementexception', 't', 'novaluepresent', 'nosuchelementexception', 'novaluepresent', 'novaluepresent', 'value', 'nosuchelementexception', 'value', 't', 'METHOD_NAME', 't', 'value', 't', 'null']
+

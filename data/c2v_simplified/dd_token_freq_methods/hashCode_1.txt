@@ -1,0 +1,28 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-core/src/main/java/com/timeyang/jkes/core/metadata/FieldMetadata_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }
+predict, score, loss = hashCode, 0.9997175335884094, 0.0003070359816774726
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:48:25.028473", "n_pass": [1, 1, 1], "score": "0.9997", "loss": "0.0003", "code": "@Override public int hashCode() { int result = method.hashCode(); result = 31 * result + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:27.693186", "n_pass": [9, 2, 2], "score": "0.9995", "loss": "0.0006", "code": "@Override public int hashCode() { int result = + field.hashCode(); result = 31 * result + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:30.356455", "n_pass": [10, 3, 3], "score": "1.0", "loss": "0.0", "code": "@Override public int hashCode() { int result = result + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:35.685597", "n_pass": [31, 5, 4], "score": "0.9795", "loss": "0.0221", "code": " int hashCode() { int result = result + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:41.393113", "n_pass": [57, 7, 5], "score": "0.9996", "loss": "0.0004", "code": " int hashCode() { result = result + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:44.030464", "n_pass": [59, 8, 6], "score": "0.9885", "loss": "0.0166", "code": " int hashCode() { result = + fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:46.697376", "n_pass": [60, 9, 7], "score": "0.9999", "loss": "0.0001", "code": " int hashCode() { result = fieldName.hashCode(); return result; }"}
+{"time": "2020-12-26 21:48:49.346054", "n_pass": [64, 10, 8], "score": "0.9999", "loss": "0.0001", "code": " int hashCode() { result = fieldName.hashCode(); ; }"}
+{"time": "2020-12-26 21:48:55.171511", "n_pass": [95, 11, 9], "score": "0.9999", "loss": "0.0001", "code": " int hashCode() { result = fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:48:57.810348", "n_pass": [97, 12, 10], "score": "0.9999", "loss": "0.0001", "code": "int hashCode() { result = fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:01.283781", "n_pass": [103, 13, 11], "score": "0.9999", "loss": "0.0001", "code": "int hashCode(){ result = fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:03.917809", "n_pass": [105, 14, 12], "score": "0.9999", "loss": "0.0001", "code": "int hashCode(){result = fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:06.548181", "n_pass": [107, 15, 13], "score": "0.9999", "loss": "0.0001", "code": "int hashCode(){result= fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:09.190125", "n_pass": [109, 16, 14], "score": "0.9999", "loss": "0.0001", "code": "int hashCode(){result=fieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:15.267921", "n_pass": [123, 18, 15], "score": "0.9987", "loss": "0.0015", "code": "int hashCode(){resultfieldName.hashCode(); }"}
+{"time": "2020-12-26 21:49:17.912963", "n_pass": [124, 19, 16], "score": "0.9996", "loss": "0.0004", "code": "int hashCode(){result.hashCode(); }"}
+{"time": "2020-12-26 21:49:24.804505", "n_pass": [143, 21, 17], "score": "0.9996", "loss": "0.0004", "code": "int hashCode(){result.hashCode();}"}
+
+Minimal simplified code:
+int hashCode(){result.hashCode();}
+

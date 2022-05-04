@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/el/lang/FunctionMapperImpl_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (obj instanceof Function) { return this.hashCode() == obj.hashCode(); } return false; }
+
+topk path-contexts:
+[0.1522] obj,(NameExpr0)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:equals)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0911] function,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:equals)_(MethodCallExpr0)_(NameExpr2),hashcode
+[0.0782] function,(ClassOrInterfaceType1)^(InstanceOfExpr)^(IfStmt)_(BlockStmt)_(ReturnStmt)_(BinaryExpr:equals)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0735] obj,(NameExpr0)^(InstanceOfExpr)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0697] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(ClassOrInterfaceType1),object
+[0.0665] this,(ThisExpr0)^(MethodCallExpr)^(BinaryExpr:equals)_(MethodCallExpr1)_(NameExpr2),hashcode
+[0.0488] boolean,(PrimitiveType1)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),obj
+[0.0450] obj,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0432] hashcode,(NameExpr2)^(MethodCallExpr)^(BinaryExpr:equals)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+[0.0432] hashcode,(NameExpr2)^(MethodCallExpr)^(BinaryExpr:equals)^(ReturnStmt)^(BlockStmt)^(IfStmt)^(BlockStmt)_(ReturnStmt)_(BooleanLiteralExpr0),false
+
+topk terminals:
+['obj', 'hashcode', 'function', 'hashcode', 'function', 'hashcode', 'obj', 'false', 'boolean', 'object', 'this', 'hashcode', 'boolean', 'obj', 'obj', 'false', 'hashcode', 'false', 'hashcode', 'false']
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/WebXml_addResourceRef.java
+method_name = addResourceRef
+method_body = public void addResourceRef(ContextResource resourceRef) { if (resourceRefs.containsKey(resourceRef.getName())) { throw new IllegalArgumentException(sm.getString("webXml.duplicateResourceRef", resourceRef.getName())); } resourceRefs.put(resourceRef.getName(), resourceRef); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 04:15:07.650636", "score": "0.4411", "loss": "1.3444", "code": "class T { public void addResourceRef(ContextResource resourceRef) { if (resourceRefs.containsKey(resourceRef.getName())) { throw new IllegalArgumentException(sm.getString(\"webXml.duplicateResourceRef\", resourceRef.getName())); } resourceRefs.put(resourceRef.getName(), resourceRef); } }"}
+{"time": "2021-01-24 04:16:17.249914", "score": "0.4745", "loss": "1.3489", "code": "class T { public void addResourceRef(ContextResource resourceRef) { resourceRefs.put(resourceRef.getName(), resourceRef); } }"}
+{"time": "2021-01-24 04:16:38.583345", "score": "0.3758", "loss": "2.3258", "code": "class T { public void addResourceRef(ContextResource resourceRef) { resourceRefs.put( ); } }"}
+{"time": "2021-01-24 04:16:59.853973", "score": "0.3758", "loss": "2.3258", "code": "class T { void addResourceRef(ContextResource resourceRef) { resourceRefs.put( ); } }"}
+
+Minimal simplified code:
+class T {
+       void addResourceRef(ContextResource resourceRef) {                                                                                                                                                                  resourceRefs.put(                                  ); }
+}
+
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-jpa/src/main/java/io/katharsis/jpa/internal/query/backend/querydsl/QuerydslTupleImpl_get.java
+method_name = get
+method_body = @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException("selection " + name + " not found"); } return get(index.intValue(), clazz); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 07:38:39.290737", "score": "0.9799", "loss": "0.028", "code": "class T { @Override public <T> T get(String name, Class<T> clazz) { Integer index = selectionBindings.get(name); if (index == null) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } return get(index.intValue(), clazz); } }"}
+{"time": "2020-12-29 07:41:07.005129", "score": "0.6702", "loss": "0.8351", "code": "class T { @Override public <T> T get(String name, Class<T> clazz) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } }"}
+{"time": "2020-12-29 07:43:01.327813", "score": "0.3574", "loss": "1.5847", "code": "class T { @Override public <T> T get( ) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } }"}
+{"time": "2020-12-29 07:45:38.078999", "score": "0.5671", "loss": "0.7712", "code": "class T { <T> T get( ) { throw new IllegalArgumentException(\"selection \" + name + \" not found\"); } }"}
+
+Minimal simplified code:
+class T {
+                 <T> T get(                           )                                                                   { throw new IllegalArgumentException("selection " + name + " not found"); }
+}
+
+

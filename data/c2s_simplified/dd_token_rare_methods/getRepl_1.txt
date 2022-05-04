@@ -1,0 +1,31 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_getRepl.java
+method_name = getRepl
+method_body = @Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }
+predict, score, loss = getRepl, 0.47673824, 1.816444
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:40:44.571363", "n_pass": [1, 1, 1], "score": "0.4767", "loss": "1.8164", "code": "@Nonnull private synchronized RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:45.908180", "n_pass": [20, 2, 2], "score": "0.5098", "loss": "1.8545", "code": " RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:50.989130", "n_pass": [83, 4, 3], "score": "0.5098", "loss": "1.8545", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory) { if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:53.439856", "n_pass": [92, 5, 4], "score": "0.5098", "loss": "1.8545", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){ if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:54.780309", "n_pass": [94, 6, 5], "score": "0.5098", "loss": "1.8545", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mRepl == null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:56.127078", "n_pass": [97, 7, 6], "score": "0.363", "loss": "2.0062", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mRepl= null) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:57.449323", "n_pass": [98, 8, 7], "score": "0.4077", "loss": "1.8294", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mReplnull) { mRepl = replFactory.newInstance(); } return mRepl; }"}
+{"time": "2021-01-20 05:40:58.761206", "n_pass": [104, 9, 8], "score": "0.4249", "loss": "2.2541", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mReplnull) { mRepl = replFactory(); } return mRepl; }"}
+{"time": "2021-01-20 05:41:01.461502", "n_pass": [108, 11, 9], "score": "0.5139", "loss": "1.7207", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mReplnull) { mRepl = replFactory(); } mRepl; }"}
+{"time": "2021-01-20 05:41:02.781424", "n_pass": [109, 12, 10], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mReplnull) { mRepl = replFactory(); }  }"}
+{"time": "2021-01-20 05:41:09.575156", "n_pass": [152, 14, 11], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if (mReplnull) { mRepl = replFactory(); } }"}
+{"time": "2021-01-20 05:41:11.976097", "n_pass": [163, 15, 12], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull) { mRepl = replFactory(); } }"}
+{"time": "2021-01-20 05:41:15.913227", "n_pass": [168, 18, 13], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){ mRepl = replFactory(); } }"}
+{"time": "2021-01-20 05:41:17.217805", "n_pass": [170, 19, 14], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mRepl = replFactory(); } }"}
+{"time": "2021-01-20 05:41:18.554155", "n_pass": [172, 20, 15], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mRepl= replFactory(); } }"}
+{"time": "2021-01-20 05:41:19.891039", "n_pass": [174, 21, 16], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mRepl=replFactory(); } }"}
+{"time": "2021-01-20 05:41:21.202523", "n_pass": [179, 22, 17], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mRepl=replFactory();} }"}
+{"time": "2021-01-20 05:41:22.515963", "n_pass": [181, 23, 18], "score": "0.3856", "loss": "2.3574", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mRepl=replFactory();}}"}
+{"time": "2021-01-20 05:41:27.538288", "n_pass": [199, 26, 19], "score": "0.4723", "loss": "2.9334", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(mReplnull){mReplreplFactory();}}"}
+{"time": "2021-01-20 05:41:31.283019", "n_pass": [217, 28, 20], "score": "0.396", "loss": "3.6149", "code": "RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(null){mReplreplFactory();}}"}
+
+Minimal simplified code:
+RuntimeRepl getRepl(RuntimeReplFactory replFactory){if(null){mReplreplFactory();}}
+

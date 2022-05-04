@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/helper/ObjectIdMapper_getIdForObject.java
+method_name = getIdForObject
+method_body = @Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 12:34:50.813457", "score": "0.2976", "loss": "2.555", "code": "class T { @Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { return mObjectToIdMap.get(object); } } }"}
+{"time": "2021-01-24 12:39:09.915329", "score": "0.28", "loss": "2.4585", "code": "class T { @Nullable public Integer getIdForObject(Object object) { synchronized (mSync) { } } }"}
+{"time": "2021-01-24 12:40:28.715642", "score": "0.28", "loss": "2.4585", "code": "class T { @Nullable Integer getIdForObject(Object object) { synchronized (mSync) { } } }"}
+
+Minimal simplified code:
+class T {
+@Nullable        Integer getIdForObject(Object object) { synchronized (mSync) {                                    } }
+}
+
+

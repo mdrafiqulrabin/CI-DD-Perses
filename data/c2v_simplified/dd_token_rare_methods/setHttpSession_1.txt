@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/iplanet/dpro/session/service/InternalSession_setHttpSession.java
+method_name = setHttpSession
+method_body = void setHttpSession(HttpSession hSession) { httpSession = hSession; }
+predict, score, loss = setHttpSession, 0.3167814016342163, 1.624656081199646
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:26:17.706377", "n_pass": [1, 1, 1], "score": "0.3168", "loss": "1.6247", "code": "void setHttpSession(HttpSession hSession) { httpSession = hSession; }"}
+{"time": "2021-01-20 07:26:21.118619", "n_pass": [26, 2, 2], "score": "0.3352", "loss": "1.6635", "code": "void setHttpSession(HttpSession hSession) { httpSession ; }"}
+{"time": "2021-01-20 07:26:29.472307", "n_pass": [58, 4, 3], "score": "0.3352", "loss": "1.6635", "code": "void setHttpSession(HttpSession hSession){ httpSession ; }"}
+{"time": "2021-01-20 07:26:32.079231", "n_pass": [59, 5, 4], "score": "0.3352", "loss": "1.6635", "code": "void setHttpSession(HttpSession hSession){httpSession ; }"}
+{"time": "2021-01-20 07:26:39.269668", "n_pass": [76, 7, 5], "score": "0.3352", "loss": "1.6635", "code": "void setHttpSession(HttpSession hSession){httpSession; }"}
+{"time": "2021-01-20 07:26:41.895184", "n_pass": [77, 8, 6], "score": "0.3352", "loss": "1.6635", "code": "void setHttpSession(HttpSession hSession){httpSession;}"}
+
+Minimal simplified code:
+void setHttpSession(HttpSession hSession){httpSession;}
+

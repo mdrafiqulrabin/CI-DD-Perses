@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/inspector/protocol/module/Runtime_releaseObject.java
+method_name = releaseObject
+method_body = @ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString("objectId"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }
+predict, score, loss = releaseObject, 0.4314937889575958, 1.8319059610366821
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:47:26.365973", "n_pass": [1, 1, 1], "score": "0.4315", "loss": "1.8319", "code": "@ChromeDevtoolsMethod public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-20 06:47:32.073271", "n_pass": [44, 3, 2], "score": "0.3794", "loss": "1.9612", "code": "public void releaseObject(JsonRpcPeer peer, JSONObject params) throws JSONException { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-20 06:47:37.764210", "n_pass": [49, 5, 3], "score": "0.288", "loss": "2.271", "code": "public void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params.getString(\"objectId\"); getSession(peer).getObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-20 06:47:43.067386", "n_pass": [55, 7, 4], "score": "0.4012", "loss": "1.8019", "code": "public void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params.getString(\"objectId\"); getSessiongetObjects().removeObjectById(Integer.parseInt(objectId)); }"}
+{"time": "2021-01-20 06:47:54.074317", "n_pass": [98, 11, 5], "score": "0.4773", "loss": "1.4511", "code": "public void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params.getString(\"objectId\"); getSessiongetObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:47:56.721106", "n_pass": [103, 12, 6], "score": "0.4773", "loss": "1.4511", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params.getString(\"objectId\"); getSessiongetObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:05.009814", "n_pass": [116, 15, 7], "score": "0.3377", "loss": "1.3034", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params(\"objectId\"); getSessiongetObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:07.668075", "n_pass": [120, 16, 8], "score": "0.3198", "loss": "1.4655", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) { String objectId = params(\"objectId\");getObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:10.714050", "n_pass": [136, 17, 9], "score": "0.2635", "loss": "2.5123", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) { objectId = params(\"objectId\");getObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:20.959245", "n_pass": [200, 19, 10], "score": "0.2635", "loss": "2.5123", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId = params(\"objectId\");getObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:23.597270", "n_pass": [201, 20, 11], "score": "0.2635", "loss": "2.5123", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId= params(\"objectId\");getObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:26.256886", "n_pass": [203, 21, 12], "score": "0.2635", "loss": "2.5123", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId=params(\"objectId\");getObjects().removeObjectById(parseInt(objectId)); }"}
+{"time": "2021-01-20 06:48:34.172837", "n_pass": [217, 24, 13], "score": "0.5104", "loss": "1.6087", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId=params(\"objectId\");getObjects().removeObjectById((objectId)); }"}
+{"time": "2021-01-20 06:48:36.815648", "n_pass": [223, 25, 14], "score": "0.5104", "loss": "1.6087", "code": " void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId=params(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:39.455500", "n_pass": [225, 26, 15], "score": "0.5104", "loss": "1.6087", "code": "void releaseObject(JsonRpcPeer peer, JSONObject params) {objectId=params(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:42.905079", "n_pass": [234, 27, 16], "score": "0.5104", "loss": "1.6087", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params) {objectId=params(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:45.527479", "n_pass": [239, 28, 17], "score": "0.5104", "loss": "1.6087", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params){objectId=params(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:48.183000", "n_pass": [242, 29, 18], "score": "0.4638", "loss": "1.341", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params){objectIdparams(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:50.801424", "n_pass": [243, 30, 19], "score": "0.4315", "loss": "1.0998", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params){objectId(\"objectId\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:53.424002", "n_pass": [246, 31, 20], "score": "0.5284", "loss": "2.1325", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params){objectId(\"\");getObjects().removeObjectById((objectId));}"}
+{"time": "2021-01-20 06:48:56.872100", "n_pass": [275, 32, 21], "score": "0.4708", "loss": "2.3021", "code": "void releaseObject(JsonRpcPeer peer,JSONObject params){(\"\");getObjects().removeObjectById((objectId));}"}
+
+Minimal simplified code:
+void releaseObject(JsonRpcPeer peer,JSONObject params){("");getObjects().removeObjectById((objectId));}
+

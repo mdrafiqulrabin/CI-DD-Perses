@@ -1,0 +1,39 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/six2six__fixture-factory/src/main/java/br/com/six2six/fixturefactory/Property_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }
+predict, score, loss = hashCode, 0.9995553, 0.00061186036
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:55:36.199610", "n_pass": [1, 1, 1], "score": "0.9996", "loss": "0.0006", "code": "@Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }"}
+{"time": "2020-12-27 23:55:37.549882", "n_pass": [9, 2, 2], "score": "0.9985", "loss": "0.0023", "code": "@Override public int hashCode() { finalt = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }"}
+{"time": "2020-12-27 23:55:39.316440", "n_pass": [23, 3, 3], "score": "0.9362", "loss": "0.1139", "code": "t hashCode() { finalt = prime * result + ((name == null) ? 0 : name.hashCode()); return result; }"}
+{"time": "2020-12-27 23:55:41.823148", "n_pass": [41, 4, 4], "score": "0.4163", "loss": "1.4168", "code": "t hashCode() { finalt = prit + ((name == null) ? 0 : name.hashCode()); return result; }"}
+{"time": "2020-12-27 23:55:48.066392", "n_pass": [78, 8, 5], "score": "0.6729", "loss": "0.9452", "code": "t hashCode() { finalt = prit + ((name == null) ? 0 : name.hashCode()); r result; }"}
+{"time": "2020-12-27 23:55:49.440838", "n_pass": [79, 9, 6], "score": "0.7774", "loss": "0.5985", "code": "t hashCode() { finalt = prit + ((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:55:51.533960", "n_pass": [85, 10, 7], "score": "0.8114", "loss": "0.6094", "code": "t hashCode() { fi= prit + ((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:55:56.713650", "n_pass": [132, 13, 8], "score": "0.202", "loss": "2.6426", "code": "t hashCode() { fi=rit + ((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:55:58.080205", "n_pass": [133, 14, 9], "score": "0.9458", "loss": "0.2561", "code": "t hashCode() { fi=t + ((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:55:59.446948", "n_pass": [134, 15, 10], "score": "0.9255", "loss": "0.3638", "code": "t hashCode() { fi=+ ((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:00.783252", "n_pass": [135, 16, 11], "score": "0.9774", "loss": "0.2502", "code": "t hashCode() { fi=((name == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:02.120343", "n_pass": [137, 17, 12], "score": "0.9806", "loss": "0.1348", "code": "t hashCode() { fi=((me == null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:03.482457", "n_pass": [139, 18, 13], "score": "0.9771", "loss": "0.2511", "code": "t hashCode() { fi=((me= null) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:04.844763", "n_pass": [140, 19, 14], "score": "0.7847", "loss": "0.688", "code": "t hashCode() { fi=((menull) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:06.216734", "n_pass": [141, 20, 15], "score": "0.8799", "loss": "0.3871", "code": "t hashCode() { fi=((mel) ? 0 : name.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:07.540522", "n_pass": [145, 21, 16], "score": "0.7229", "loss": "0.7749", "code": "t hashCode() { fi=((mel) ? 0 : e.hashCode()); rlt; }"}
+{"time": "2020-12-27 23:56:14.192523", "n_pass": [151, 26, 17], "score": "0.7375", "loss": "0.9313", "code": "t hashCode() { fi=((mel) ? 0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:17.381092", "n_pass": [160, 27, 18], "score": "0.9312", "loss": "0.3918", "code": "t hashCode() {i=((mel) ? 0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:18.700790", "n_pass": [161, 28, 19], "score": "0.5828", "loss": "1.1048", "code": "t hashCode() {((mel) ? 0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:20.026978", "n_pass": [163, 29, 20], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l) ? 0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:30.902197", "n_pass": [217, 34, 21], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l)? 0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:32.222911", "n_pass": [219, 35, 22], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l)?0 : e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:33.543002", "n_pass": [221, 36, 23], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l)?0: e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:34.897768", "n_pass": [223, 37, 24], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l)?0:e.hashCode()); ; }"}
+{"time": "2020-12-27 23:56:44.327962", "n_pass": [231, 44, 25], "score": "0.3586", "loss": "1.7248", "code": "t hashCode() {((l)?0:e.hashCode()); }"}
+{"time": "2020-12-27 23:56:49.363968", "n_pass": [245, 45, 26], "score": "0.3586", "loss": "1.7248", "code": "t hashCode(){((l)?0:e.hashCode()); }"}
+{"time": "2020-12-27 23:57:13.726831", "n_pass": [299, 60, 27], "score": "0.506", "loss": "1.3912", "code": "t hashCode(){((l)?0:e.hashCod()); }"}
+{"time": "2020-12-27 23:57:15.099466", "n_pass": [304, 61, 28], "score": "0.506", "loss": "1.3912", "code": "t hashCode(){((l)?0:e.hashCod());}"}
+
+Minimal simplified code:
+t hashCode(){((l)?0:e.hashCod());}
+

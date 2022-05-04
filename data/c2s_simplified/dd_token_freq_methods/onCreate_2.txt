@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/OnboardingActivity_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.onboarding); }
+predict, score, loss = onCreate, 0.99999475, 0.00010632991
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:45:49.135412", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0001", "code": "@Override public void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:45:50.441020", "n_pass": [20, 2, 2], "score": "1.0", "loss": "0.0002", "code": " void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:45:52.430969", "n_pass": [47, 3, 3], "score": "0.9697", "loss": "0.041", "code": " void onCreate(Bundle savedInstanceState) { onCreate(savedInstanceState); setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:45:57.713869", "n_pass": [88, 5, 4], "score": "0.9585", "loss": "0.057", "code": " void onCreate(Bundle savedInstanceState) { onCreate(); setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:45:59.026280", "n_pass": [90, 6, 5], "score": "0.9585", "loss": "0.057", "code": " void onCreate(Bundle savedInstanceState) { onCreate();setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:46:04.233186", "n_pass": [99, 10, 6], "score": "0.9585", "loss": "0.057", "code": "void onCreate(Bundle savedInstanceState) { onCreate();setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:46:06.269368", "n_pass": [108, 11, 7], "score": "0.9585", "loss": "0.057", "code": "void onCreate(Bundle savedInstanceState){ onCreate();setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:46:07.589240", "n_pass": [110, 12, 8], "score": "0.9585", "loss": "0.057", "code": "void onCreate(Bundle savedInstanceState){onCreate();setContentView(R.layout.onboarding); }"}
+{"time": "2020-12-27 03:46:15.542399", "n_pass": [142, 17, 9], "score": "0.9585", "loss": "0.057", "code": "void onCreate(Bundle savedInstanceState){onCreate();setContentView(R.layout.onboarding);}"}
+
+Minimal simplified code:
+void onCreate(Bundle savedInstanceState){onCreate();setContentView(R.layout.onboarding);}
+

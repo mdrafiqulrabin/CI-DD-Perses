@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_run.java
+method_name = run
+method_body = public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 11:38:54.390976", "score": "0.9317", "loss": "0.1117", "code": "class T { public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); } }"}
+{"time": "2020-12-29 11:41:57.420607", "score": "0.9634", "loss": "0.057", "code": "class T { public void run() { dataRefresh(); handler.postDelayed(this, delaytime); } }"}
+{"time": "2020-12-29 11:44:32.063124", "score": "0.9785", "loss": "0.024", "code": "class T { public void run() { dataRefresh(); handler.postDelayed( ); } }"}
+{"time": "2020-12-29 11:45:11.909980", "score": "0.9785", "loss": "0.024", "code": "class T { void run() { dataRefresh(); handler.postDelayed( ); } }"}
+
+Minimal simplified code:
+class T {
+       void run() { dataRefresh(); handler.postDelayed(               );                                                                             }
+}
+
+

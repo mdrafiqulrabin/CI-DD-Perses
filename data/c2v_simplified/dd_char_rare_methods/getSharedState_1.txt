@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/sun/identity/authentication/service/LoginState_getSharedState.java
+method_name = getSharedState
+method_body = public Map getSharedState() { return sharedState; }
+predict, score, loss = getSharedState, 0.3258972764015198, 2.2092971801757812
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:11:44.738087", "n_pass": [1, 1, 1], "score": "0.3259", "loss": "2.2093", "code": "public Map getSharedState() { return sharedState; }"}
+{"time": "2021-01-23 18:11:48.134392", "n_pass": [20, 2, 2], "score": "0.3259", "loss": "2.2093", "code": " Map getSharedState() { return sharedState; }"}
+{"time": "2021-01-23 18:12:14.921617", "n_pass": [83, 11, 3], "score": "0.3259", "loss": "2.2093", "code": "Map getSharedState() { return sharedState; }"}
+{"time": "2021-01-23 18:12:58.021150", "n_pass": [155, 24, 4], "score": "0.3259", "loss": "2.2093", "code": "Map getSharedState(){ return sharedState; }"}
+{"time": "2021-01-23 18:13:00.606414", "n_pass": [156, 25, 5], "score": "0.3259", "loss": "2.2093", "code": "Map getSharedState(){return sharedState; }"}
+{"time": "2021-01-23 18:13:49.951503", "n_pass": [176, 44, 6], "score": "0.3259", "loss": "2.2093", "code": "Map getSharedState(){return sharedState;}"}
+
+Minimal simplified code:
+Map getSharedState(){return sharedState;}
+

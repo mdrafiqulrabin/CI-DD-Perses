@@ -1,0 +1,33 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/SessionConfig_addSessionTrackingMode.java
+method_name = addSessionTrackingMode
+method_body = public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }
+predict, score, loss = addSessionTrackingMode, 0.45257187, 1.0878135
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:17:51.546949", "n_pass": [1, 1, 1], "score": "0.4526", "loss": "1.0878", "code": "public void addSessionTrackingMode(String sessionTrackingMode) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:17:58.643965", "n_pass": [50, 5, 2], "score": "0.601", "loss": "0.7411", "code": "public void addSessionTrackingMode(String sessionTra) { sessionTrackingModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:17:59.971072", "n_pass": [51, 6, 3], "score": "0.565", "loss": "0.7994", "code": "public void addSessionTrackingMode(String sessionTra) { sessigModes.add(SessionTrackingMode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:02.583910", "n_pass": [54, 8, 4], "score": "0.6178", "loss": "0.7666", "code": "public void addSessionTrackingMode(String sessionTra) { sessigModes.add(Sessionode.valueOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:03.887824", "n_pass": [55, 9, 5], "score": "0.7017", "loss": "1.0595", "code": "public void addSessionTrackingMode(String sessionTra) { sessigModes.add(SessionOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:08.916136", "n_pass": [64, 12, 6], "score": "0.5746", "loss": "1.315", "code": "public void addSessionTrackingMode(String s) { sessigModes.add(SessionOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:15.223080", "n_pass": [100, 16, 7], "score": "0.578", "loss": "1.6895", "code": "public void addSessionTrackingMode(String s) { sgModes.add(SessionOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:16.528077", "n_pass": [101, 17, 8], "score": "0.7911", "loss": "0.7021", "code": "public void addSessionTrackingMode(String s) { ss.add(SessionOf(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:19.140180", "n_pass": [104, 19, 9], "score": "0.7842", "loss": "0.7635", "code": "public void addSessionTrackingMode(String s) { ss.add(Sess(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:27.978145", "n_pass": [119, 24, 10], "score": "0.8551", "loss": "0.7903", "code": "public void addSessionTrackingMode(Sg s) { ss.add(Sess(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:38.041623", "n_pass": [177, 30, 11], "score": "0.8471", "loss": "0.725", "code": "public void addSessionTrackingMode(Sg s) {s.add(Sess(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:41.987928", "n_pass": [181, 33, 12], "score": "0.8561", "loss": "0.5538", "code": "public void addSessionTrackingMode(Sg s) {s.add(ss(sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:43.291831", "n_pass": [182, 34, 13], "score": "0.5955", "loss": "1.1461", "code": "public void addSessionTrackingMode(Sg s) {s.add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:18:59.503285", "n_pass": [213, 43, 14], "score": "0.6883", "loss": "1.1343", "code": "public void addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:09.968956", "n_pass": [228, 51, 15], "score": "0.5168", "loss": "1.6184", "code": "publicoid addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:11.263399", "n_pass": [229, 52, 16], "score": "0.5168", "loss": "1.6184", "code": "publicd addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:26.107950", "n_pass": [257, 60, 17], "score": "0.5168", "loss": "1.6184", "code": "blicd addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:27.403041", "n_pass": [258, 61, 18], "score": "0.4681", "loss": "1.7365", "code": "icd addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:28.734604", "n_pass": [259, 62, 19], "score": "0.5566", "loss": "1.5916", "code": "d addSessionTrackingMode(Sg s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:53.219965", "n_pass": [366, 70, 20], "score": "0.3281", "loss": "2.5862", "code": "d addSessionTrackingMode(g s) {add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:19:54.525297", "n_pass": [371, 71, 21], "score": "0.3281", "loss": "2.5862", "code": "d addSessionTrackingMode(g s){add((sessionTrackingMode)); }"}
+{"time": "2021-01-23 09:20:39.245807", "n_pass": [450, 98, 22], "score": "0.3281", "loss": "2.5862", "code": "d addSessionTrackingMode(g s){add((sessionTrackingMode));}"}
+
+Minimal simplified code:
+d addSessionTrackingMode(g s){add((sessionTrackingMode));}
+

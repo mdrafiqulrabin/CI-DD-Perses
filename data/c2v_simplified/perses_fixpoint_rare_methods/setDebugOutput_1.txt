@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/58code__Oceanus/oceanus-all/oceanus-exchange/oceanus-exchange-sqlparser/src/main/java/com/bj58/sql/parser/QueryTreeNode_setDebugOutput.java
+method_name = setDebugOutput
+method_body = public static void setDebugOutput(Writer writer) { debugOutput = writer; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 02:16:41.458484", "score": "0.4052", "loss": "1.0324", "code": "class T { public static void setDebugOutput(Writer writer) { debugOutput = writer; } }"}
+{"time": "2021-01-25 02:20:31.224189", "score": "0.4052", "loss": "1.0324", "code": "class T { void setDebugOutput(Writer writer) { debugOutput = writer; } }"}
+
+Minimal simplified code:
+class T {
+              void setDebugOutput(Writer writer) { debugOutput = writer; }
+}
+
+

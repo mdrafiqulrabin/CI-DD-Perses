@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/FeedbackComponent_getShowStats.java
+method_name = getShowStats
+method_body = public boolean getShowStats() { return this.showStats; }
+predict, score, loss = getShowStats, 0.48680267, 0.77516145
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:39:51.004378", "n_pass": [1, 1, 1], "score": "0.4868", "loss": "0.7752", "code": "public boolean getShowStats() { return this.showStats; }"}
+{"time": "2021-01-23 11:39:52.648213", "n_pass": [20, 2, 2], "score": "0.4868", "loss": "0.7752", "code": "boolean getShowStats() { return this.showStats; }"}
+{"time": "2021-01-23 11:39:54.269995", "n_pass": [24, 3, 3], "score": "0.365", "loss": "1.85", "code": "boolean getShowStats() { rets.showStats; }"}
+{"time": "2021-01-23 11:40:01.333843", "n_pass": [47, 8, 4], "score": "0.5494", "loss": "1.9742", "code": "lean getShowStats() { rets.showStats; }"}
+{"time": "2021-01-23 11:40:02.653044", "n_pass": [48, 9, 5], "score": "0.6657", "loss": "1.7882", "code": "n getShowStats() { rets.showStats; }"}
+{"time": "2021-01-23 11:40:12.336288", "n_pass": [89, 13, 6], "score": "0.7949", "loss": "1.5801", "code": "n getShowStats() {ets.showStats; }"}
+{"time": "2021-01-23 11:40:13.634253", "n_pass": [90, 14, 7], "score": "0.7726", "loss": "2.3212", "code": "n getShowStats() {s.showStats; }"}
+{"time": "2021-01-23 11:40:14.912042", "n_pass": [91, 15, 8], "score": "0.7679", "loss": "1.0468", "code": "n getShowStats() {showStats; }"}
+{"time": "2021-01-23 11:40:35.711764", "n_pass": [144, 28, 9], "score": "0.7679", "loss": "1.0468", "code": "n getShowStats() {showStats;}"}
+{"time": "2021-01-23 11:40:41.857274", "n_pass": [161, 29, 10], "score": "0.7679", "loss": "1.0468", "code": "n getShowStats(){showStats;}"}
+
+Minimal simplified code:
+n getShowStats(){showStats;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-admin/src/main/java/com/alibaba/dubbo/registry/common/route/RouteRule_hashCode.java
+method_name = hashCode
+method_body = @Override public int hashCode() { final int prime = 31; int result = 1; result = prime * result + ((matches == null) ? 0 : matches.hashCode()); result = prime * result + ((unmatches == null) ? 0 : unmatches.hashCode()); return result; }
+
+topk path-contexts:
+[0.0967] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(EnclosedExpr)_(ConditionalExpr)_(IntegerLiteralExpr1),0
+[0.0967] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(EnclosedExpr)_(ConditionalExpr)_(IntegerLiteralExpr1),0
+[0.0741] result,(NameExpr1)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0741] result,(NameExpr1)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0639] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(NameExpr0),prime
+[0.0639] int,(PrimitiveType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(BinaryExpr:plus)_(BinaryExpr:times)_(NameExpr0),prime
+[0.0544] 0,(IntegerLiteralExpr1)^(ConditionalExpr)_(MethodCallExpr2)_(NameExpr0),unmatches
+[0.0454] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0454] prime,(NameExpr0)^(BinaryExpr:times)^(BinaryExpr:plus1)_(EnclosedExpr)_(ConditionalExpr)_(MethodCallExpr2)_(NameExpr2),hashcode
+[0.0286] unmatches,(NameExpr0)^(MethodCallExpr)_(NameExpr2),hashcode
+
+topk terminals:
+['int', '0', 'int', '0', 'result', 'hashcode', 'result', 'hashcode', 'int', 'prime', 'int', 'prime', '0', 'unmatches', 'prime', 'hashcode', 'prime', 'hashcode', 'unmatches', 'hashcode']
+

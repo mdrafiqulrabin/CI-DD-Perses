@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/mucommander__mucommander/src/main/java/com/mucommander/ui/event/LocationManager_removeLocationListener.java
+method_name = removeLocationListener
+method_body = public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }
+predict, score, loss = removeLocationListener, 0.4701961576938629, 0.7735680341720581
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:47:29.276745", "n_pass": [1, 1, 1], "score": "0.4702", "loss": "0.7736", "code": "public synchronized void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }"}
+{"time": "2021-01-20 07:47:32.674944", "n_pass": [20, 2, 2], "score": "0.4702", "loss": "0.7736", "code": " void removeLocationListener(LocationListener listener) { locationListeners.remove(listener); }"}
+{"time": "2021-01-20 07:47:37.919160", "n_pass": [25, 4, 3], "score": "0.4566", "loss": "0.8328", "code": " void removeLocationListener(LocationListener listener) { locationListeners.remove; }"}
+{"time": "2021-01-20 07:47:44.330919", "n_pass": [46, 6, 4], "score": "0.4566", "loss": "0.8328", "code": "void removeLocationListener(LocationListener listener) { locationListeners.remove; }"}
+{"time": "2021-01-20 07:47:52.280414", "n_pass": [73, 8, 5], "score": "0.4566", "loss": "0.8328", "code": "void removeLocationListener(LocationListener listener){ locationListeners.remove; }"}
+{"time": "2021-01-20 07:47:54.877743", "n_pass": [75, 9, 6], "score": "0.4566", "loss": "0.8328", "code": "void removeLocationListener(LocationListener listener){locationListeners.remove; }"}
+{"time": "2021-01-20 07:48:00.106588", "n_pass": [80, 11, 7], "score": "0.4566", "loss": "0.8328", "code": "void removeLocationListener(LocationListener listener){locationListeners.remove;}"}
+
+Minimal simplified code:
+void removeLocationListener(LocationListener listener){locationListeners.remove;}
+

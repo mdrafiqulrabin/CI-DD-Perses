@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/org/apache/ibatis/session/Configuration_isUseGeneratedKeys.java
+method_name = isUseGeneratedKeys
+method_body = public boolean isUseGeneratedKeys() { return useGeneratedKeys; }
+predict, score, loss = isUseGeneratedKeys, 0.48286873, 0.79150325
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:19:18.148778", "n_pass": [1, 1, 1], "score": "0.4829", "loss": "0.7915", "code": "public boolean isUseGeneratedKeys() { return useGeneratedKeys; }"}
+{"time": "2021-01-20 06:19:20.132943", "n_pass": [20, 2, 2], "score": "0.4829", "loss": "0.7915", "code": "boolean isUseGeneratedKeys() { return useGeneratedKeys; }"}
+{"time": "2021-01-20 06:19:25.451653", "n_pass": [46, 4, 3], "score": "0.4829", "loss": "0.7915", "code": "boolean isUseGeneratedKeys(){ return useGeneratedKeys; }"}
+{"time": "2021-01-20 06:19:26.742372", "n_pass": [48, 5, 4], "score": "0.4829", "loss": "0.7915", "code": "boolean isUseGeneratedKeys(){return useGeneratedKeys; }"}
+{"time": "2021-01-20 06:19:31.919377", "n_pass": [53, 9, 5], "score": "0.4829", "loss": "0.7915", "code": "boolean isUseGeneratedKeys(){return useGeneratedKeys;}"}
+
+Minimal simplified code:
+boolean isUseGeneratedKeys(){return useGeneratedKeys;}
+

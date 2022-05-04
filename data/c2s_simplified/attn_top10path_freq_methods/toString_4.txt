@@ -1,0 +1,37 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/filters/ExampleFilter_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (filterConfig == null) return ("TimingFilter()"); StringBuilder sb = new StringBuilder("TimingFilter("); sb.append(filterConfig); sb.append(")"); return (sb.toString()); }
+
+topk path-contexts for sub-token: to
+[0.1653] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0730] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0583] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:equals|NullLiteralExpr1,null
+[0.0512] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,)
+[0.0402] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0371] ),StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0287] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr0,sb
+[0.0281] sb,NameExpr0|MethodCallExpr|NameExpr2,to|string
+[0.0273] filter|config,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0234] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0234] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+
+topk terminals for sub-token: to
+['string', 'METHOD_NAME', 'string', 'to|string', 'string', 'null', 'string', ')', 'METHOD_NAME', 'to|string', ')', 'to|string', 'string', 'sb', 'sb', 'to|string', 'filter|config', 'to|string', 'sb', 'to|string', 'sb', 'to|string']
+
+topk path-contexts for sub-token: string
+[0.0988] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0974] sb,NameExpr0|MethodCallExpr|NameExpr2,to|string
+[0.0939] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0885] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+[0.0684] filter|config,NameExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0600] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0551] ),StringLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0489] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0489] sb,NameExpr0|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0338] append,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+[0.0338] append,NameExpr3|MethodCallExpr|ExpressionStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr2,to|string
+
+topk terminals for sub-token: string
+['string', 'METHOD_NAME', 'sb', 'to|string', 'string', 'to|string', 'override', 'string', 'filter|config', 'to|string', 'METHOD_NAME', 'to|string', ')', 'to|string', 'sb', 'to|string', 'sb', 'to|string', 'append', 'to|string', 'append', 'to|string']
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+
+topk path-contexts:
+[0.5063] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),mnotifmanager
+[0.2228] super,(SuperExpr0)^(MethodCallExpr)_(NameExpr2),oncreate
+[0.1559] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NameExpr0),mnotifmanager
+[0.0663] oncreate,(NameExpr2)^(MethodCallExpr)^(ExpressionStmt)^(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NullLiteralExpr1),null
+[0.0140] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),oncreate
+[0.0094] METHOD_NAME,(NameExpr2)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),oncreate
+[0.0077] mnotifmanager,(NameExpr0)^(AssignExpr:assign)_(CastExpr)_(MethodCallExpr1)_(FieldAccessExpr1)_(NameExpr2),notificationservice
+[0.0042] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BinaryExpr:equals)_(NameExpr0),mnotifmanager
+[0.0037] void,(VoidType1)^(MethodDeclaration)_(BlockStmt)_(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr0),mnotifmanager
+[0.0022] mnotifmanager,(NameExpr0)^(BinaryExpr:equals)^(IfStmt)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(CastExpr)_(ClassOrInterfaceType0),notificationmanager
+
+topk terminals:
+['oncreate', 'mnotifmanager', 'super', 'oncreate', 'oncreate', 'mnotifmanager', 'oncreate', 'null', 'void', 'oncreate', 'METHOD_NAME', 'oncreate', 'mnotifmanager', 'notificationservice', 'void', 'mnotifmanager', 'void', 'mnotifmanager', 'mnotifmanager', 'notificationmanager']
+

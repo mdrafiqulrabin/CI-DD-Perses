@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/test/NioSenderTest_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }
+predict, score, loss = main, 0.99949837, 0.0006736226
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:47:15.422765", "n_pass": [1, 1, 1], "score": "0.9995", "loss": "0.0007", "code": "public static void main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:16.781215", "n_pass": [20, 2, 2], "score": "0.9982", "loss": "0.0021", "code": "id main(String[] args) throws Exception { NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:18.116431", "n_pass": [46, 3, 3], "score": "0.9987", "loss": "0.0016", "code": "id main(String[] args) throws Ex{ NioSenderTest sender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:19.460940", "n_pass": [47, 4, 4], "score": "0.9928", "loss": "0.0089", "code": "id main(String[] args) throws Ex{ NioSensender = new NioSenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:20.821099", "n_pass": [49, 5, 5], "score": "0.964", "loss": "0.0425", "code": "id main(String[] args) throws Ex{ NioSensender =SenderTest(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:22.171715", "n_pass": [50, 6, 6], "score": "0.9685", "loss": "0.04", "code": "id main(String[] args) throws Ex{ NioSensender =st(); sender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:23.528247", "n_pass": [51, 7, 7], "score": "0.955", "loss": "0.0611", "code": "id main(String[] args) throws Ex{ NioSensender =der.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:24.856022", "n_pass": [60, 8, 8], "score": "0.8765", "loss": "0.1459", "code": "id main(String[] args) throws Ex{ NioSender.init(); sender.run(); }"}
+{"time": "2020-12-27 23:47:26.206076", "n_pass": [85, 9, 9], "score": "0.8995", "loss": "0.1156", "code": "id main(String[] args) throws Ex{ NioSeninit(); sender.run(); }"}
+{"time": "2020-12-27 23:47:27.529355", "n_pass": [86, 10, 10], "score": "0.7822", "loss": "0.262", "code": "id main(String[] args) throws Ex{ NioSen(); sender.run(); }"}
+{"time": "2020-12-27 23:47:28.882277", "n_pass": [87, 11, 11], "score": "0.9334", "loss": "0.083", "code": "id main(String[] args) throws Ex{ NioSensender.run(); }"}
+{"time": "2020-12-27 23:47:30.204660", "n_pass": [88, 12, 12], "score": "0.9334", "loss": "0.083", "code": "id main(String[] args) throws Ex{ NioSenr.run(); }"}
+{"time": "2020-12-27 23:47:31.526429", "n_pass": [89, 13, 13], "score": "0.8853", "loss": "0.254", "code": "id main(String[] args) throws Ex{ NioSen(); }"}
+{"time": "2020-12-27 23:47:33.231633", "n_pass": [93, 14, 14], "score": "0.7533", "loss": "0.4202", "code": "id main(ng[] args) throws Ex{ NioSen(); }"}
+{"time": "2020-12-27 23:47:34.554318", "n_pass": [95, 15, 15], "score": "0.2599", "loss": "2.2901", "code": "id main(ng[]s) throws Ex{ NioSen(); }"}
+{"time": "2020-12-27 23:47:46.036737", "n_pass": [179, 21, 16], "score": "0.2599", "loss": "2.2901", "code": "id main(ng[]s)throws Ex{ NioSen(); }"}
+{"time": "2020-12-27 23:47:47.407718", "n_pass": [186, 22, 17], "score": "0.212", "loss": "2.6299", "code": "id main(ng[]s)throws x{ NioSen(); }"}
+{"time": "2020-12-27 23:47:48.732772", "n_pass": [189, 23, 18], "score": "0.212", "loss": "2.6299", "code": "id main(ng[]s)throws x{NioSen(); }"}
+{"time": "2020-12-27 23:47:55.479010", "n_pass": [194, 28, 19], "score": "0.4187", "loss": "1.7477", "code": "id main(ng[]s)throws x{NioSn(); }"}
+{"time": "2020-12-27 23:47:58.177269", "n_pass": [200, 30, 20], "score": "0.7264", "loss": "0.7276", "code": "d main(ng[]s)throws x{NioSn(); }"}
+{"time": "2020-12-27 23:48:03.144243", "n_pass": [209, 32, 21], "score": "0.6583", "loss": "0.7812", "code": "d main(n[]s)throws x{NioSn(); }"}
+{"time": "2020-12-27 23:48:04.489650", "n_pass": [223, 33, 22], "score": "0.657", "loss": "1.1213", "code": "d main(n[]s)throws x{ioSn(); }"}
+{"time": "2020-12-27 23:48:05.839893", "n_pass": [224, 34, 23], "score": "0.2748", "loss": "2.0555", "code": "d main(n[]s)throws x{oSn(); }"}
+{"time": "2020-12-27 23:48:07.180773", "n_pass": [225, 35, 24], "score": "0.4675", "loss": "1.5134", "code": "d main(n[]s)throws x{Sn(); }"}
+{"time": "2020-12-27 23:48:13.766099", "n_pass": [255, 38, 25], "score": "0.4675", "loss": "1.5134", "code": "d main(n[]s)throws x{Sn();}"}
+
+Minimal simplified code:
+d main(n[]s)throws x{Sn();}
+

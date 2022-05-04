@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Waikato__meka/src/main/java/meka/gui/dataviewer/DataTableModel_clearUndo.java
+method_name = clearUndo
+method_body = @Override public void clearUndo() { m_UndoList = new Vector<File>(); }
+predict, score, loss = clearUndo, 0.4909564256668091, 0.7136966586112976
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:10:12.860757", "n_pass": [1, 1, 1], "score": "0.491", "loss": "0.7137", "code": "@Override public void clearUndo() { m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:18.912762", "n_pass": [46, 3, 2], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo() { m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:31.456074", "n_pass": [93, 6, 3], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){ m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:34.075581", "n_pass": [94, 7, 4], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){m_UndoList = new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:39.299223", "n_pass": [96, 9, 5], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){mUndoList = new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:44.528878", "n_pass": [98, 11, 6], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){mUndoList= new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:47.145786", "n_pass": [100, 12, 7], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){mUndoList=new Vector<File>(); }"}
+{"time": "2021-01-20 07:10:52.385870", "n_pass": [110, 14, 8], "score": "0.491", "loss": "0.7137", "code": "@Override void clearUndo(){mUndoList=new Vector<File>();}"}
+
+Minimal simplified code:
+@Override void clearUndo(){mUndoList=new Vector<File>();}
+

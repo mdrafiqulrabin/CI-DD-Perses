@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__aurora/src/main/java/org/apache/aurora/scheduler/storage/durability/WriteRecorder_saveTasks.java
+method_name = saveTasks
+method_body = @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 03:20:06.039507", "score": "0.3414", "loss": "1.596", "code": "class T { @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); taskStore.saveTasks(newTasks); } }"}
+{"time": "2021-01-24 03:20:55.212429", "score": "0.3621", "loss": "1.4378", "code": "class T { @Override public void saveTasks(final Set<IScheduledTask> newTasks) { requireNonNull(newTasks); write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); } }"}
+{"time": "2021-01-24 03:21:27.225051", "score": "0.2388", "loss": "1.9553", "code": "class T { @Override public void saveTasks(final Set<IScheduledTask> newTasks) { write(Op.saveTasks(new SaveTasks(IScheduledTask.toBuildersSet(newTasks)))); } }"}
+{"time": "2021-01-24 03:22:43.867591", "score": "0.4109", "loss": "1.4155", "code": "class T { @Override public void saveTasks(final Set<IScheduledTask> newTasks) { write(Op.saveTasks(new SaveTasks( ))); } }"}
+{"time": "2021-01-24 03:23:08.599318", "score": "0.7241", "loss": "0.7194", "code": "class T { @Override public void saveTasks(final Set newTasks) { write(Op.saveTasks(new SaveTasks( ))); } }"}
+{"time": "2021-01-24 03:23:19.495397", "score": "0.8905", "loss": "0.3651", "code": "class T { void saveTasks(final Set newTasks) { write(Op.saveTasks(new SaveTasks( ))); } }"}
+{"time": "2021-01-24 03:23:30.153856", "score": "0.8905", "loss": "0.3651", "code": "class T { void saveTasks( Set newTasks) { write(Op.saveTasks(new SaveTasks( ))); } }"}
+{"time": "2021-01-24 03:24:39.638797", "score": "0.4891", "loss": "1.0449", "code": "class T { void saveTasks( Set newTasks) { write(Op.saveTasks( )); } }"}
+{"time": "2021-01-24 03:24:50.281787", "score": "0.9602", "loss": "0.5697", "code": "class T { void saveTasks( ) { write(Op.saveTasks( )); } }"}
+
+Minimal simplified code:
+class T {
+                 void saveTasks(                                  ) {                           write(Op.saveTasks(                                                     ));                                }
+}
+
+

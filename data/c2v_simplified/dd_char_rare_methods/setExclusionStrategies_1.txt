@@ -1,0 +1,47 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/json-iterator__java/src/main/java/com/jsoniter/extra/GsonCompatibilityMode_setExclusionStrategies.java
+method_name = setExclusionStrategies
+method_body = public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }
+predict, score, loss = setExclusionStrategies, 0.49522724747657776, 0.7061980366706848
+
+Trace of simplified code(s):
+{"time": "2021-01-23 18:43:50.034562", "n_pass": [1, 1, 1], "score": "0.4952", "loss": "0.7062", "code": "public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-23 18:43:53.078800", "n_pass": [44, 2, 2], "score": "0.874", "loss": "0.1422", "code": "der setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-23 18:43:56.136012", "n_pass": [47, 3, 3], "score": "0.8777", "loss": "0.5228", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-23 18:43:58.765404", "n_pass": [54, 4, 4], "score": "0.3375", "loss": "1.4313", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy strategy : strategies) { aionExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-23 18:44:01.396592", "n_pass": [55, 5, 5], "score": "0.6478", "loss": "0.9528", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy strategy : strategies) { aStrategy(strategy); } return this; }"}
+{"time": "2021-01-23 18:44:04.873431", "n_pass": [92, 6, 6], "score": "0.3375", "loss": "1.4313", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy strategy : strategies) { agy(strategy); } return this; }"}
+{"time": "2021-01-23 18:44:07.504985", "n_pass": [95, 7, 7], "score": "0.3417", "loss": "1.335", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy strategy : strategies) { agy(strategy); } rehis; }"}
+{"time": "2021-01-23 18:44:20.024234", "n_pass": [111, 11, 8], "score": "0.3428", "loss": "1.3322", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(strategy); } rehis; }"}
+{"time": "2021-01-23 18:44:43.035957", "n_pass": [182, 19, 9], "score": "0.3534", "loss": "1.3181", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(ategy); } rehis; }"}
+{"time": "2021-01-23 18:44:45.663189", "n_pass": [183, 20, 10], "score": "0.3356", "loss": "1.5816", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(gy); } rehis; }"}
+{"time": "2021-01-23 18:44:48.285626", "n_pass": [186, 21, 11], "score": "0.3336", "loss": "1.5939", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(gy); }his; }"}
+{"time": "2021-01-23 18:44:50.903248", "n_pass": [187, 22, 12], "score": "0.3316", "loss": "1.5905", "code": "der setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:44:53.505190", "n_pass": [189, 23, 13], "score": "0.9149", "loss": "0.2319", "code": "r setExclusionStrategies(Exclus... strategies) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:00.203351", "n_pass": [201, 24, 14], "score": "0.8111", "loss": "0.5325", "code": "r setExclusionStrategies(Eus... strategies) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:02.802313", "n_pass": [204, 25, 15], "score": "0.3329", "loss": "2.0232", "code": "r setExclusionStrategies(Eus... ategies) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:05.429327", "n_pass": [205, 26, 16], "score": "0.3329", "loss": "2.0232", "code": "r setExclusionStrategies(Eus... gies) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:08.033600", "n_pass": [206, 27, 17], "score": "0.3864", "loss": "1.8556", "code": "r setExclusionStrategies(Eus... s) { for (ExclusionStrategy st : strategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:23.684043", "n_pass": [218, 33, 18], "score": "0.2443", "loss": "2.2707", "code": "r setExclusionStrategies(Eus... s) { for (ExclusionStrategy st : ategies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:26.308411", "n_pass": [219, 34, 19], "score": "0.2443", "loss": "2.2707", "code": "r setExclusionStrategies(Eus... s) { for (ExclusionStrategy st : gies) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:28.912550", "n_pass": [220, 35, 20], "score": "0.2354", "loss": "2.309", "code": "r setExclusionStrategies(Eus... s) { for (ExclusionStrategy st : s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:45:50.547067", "n_pass": [312, 41, 21], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus... s) { for (ExclusionStrategy s: s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:46:16.070513", "n_pass": [354, 47, 22], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s) { for (ExclusionStrategy s: s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:46:18.682709", "n_pass": [357, 48, 23], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s){ for (ExclusionStrategy s: s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:46:21.303376", "n_pass": [359, 49, 24], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s: s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:47:34.758345", "n_pass": [472, 72, 25], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s) { agy(gy); }; }"}
+{"time": "2021-01-23 18:47:37.384568", "n_pass": [475, 73, 26], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ agy(gy); }; }"}
+{"time": "2021-01-23 18:47:40.011738", "n_pass": [477, 74, 27], "score": "0.2352", "loss": "2.3095", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){agy(gy); }; }"}
+{"time": "2021-01-23 18:47:47.856561", "n_pass": [480, 77, 28], "score": "0.3096", "loss": "2.3208", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag(gy); }; }"}
+{"time": "2021-01-23 18:47:50.470034", "n_pass": [482, 78, 29], "score": "0.6218", "loss": "0.9769", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag(y); }; }"}
+{"time": "2021-01-23 18:47:53.072278", "n_pass": [483, 79, 30], "score": "0.6569", "loss": "0.7984", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag(); }; }"}
+{"time": "2021-01-23 18:47:55.706537", "n_pass": [486, 80, 31], "score": "0.6569", "loss": "0.7984", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag();}; }"}
+{"time": "2021-01-23 18:47:58.311288", "n_pass": [488, 81, 32], "score": "0.6569", "loss": "0.7984", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag();} }"}
+{"time": "2021-01-23 18:48:00.913814", "n_pass": [489, 82, 33], "score": "0.6569", "loss": "0.7984", "code": "r setExclusionStrategies(Eus...s){for (ExclusionStrategy s:s){ag();}}"}
+{"time": "2021-01-23 18:48:13.318820", "n_pass": [516, 83, 34], "score": "0.3611", "loss": "1.2798", "code": "r setExclusionStrategies(us...s){for (ExclusionStrategy s:s){ag();}}"}
+{"time": "2021-01-23 18:48:21.184363", "n_pass": [528, 86, 35], "score": "0.3611", "loss": "1.2798", "code": "r setExclusionStrategies(us...s){for(ExclusionStrategy s:s){ag();}}"}
+{"time": "2021-01-23 18:49:08.159545", "n_pass": [553, 104, 36], "score": "0.2963", "loss": "1.4701", "code": "r setExclusionStrategies(us...s){for(ExclusionStrategy s:s){g();}}"}
+
+Minimal simplified code:
+r setExclusionStrategies(us...s){for(ExclusionStrategy s:s){g();}}
+

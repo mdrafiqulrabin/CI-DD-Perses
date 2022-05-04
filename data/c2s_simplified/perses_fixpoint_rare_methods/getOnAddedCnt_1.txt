@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/path__android-priority-jobqueue/jobqueue/test/com/path/android/jobqueue/test/jobs/DummyJob_getOnAddedCnt.java
+method_name = getOnAddedCnt
+method_body = public int getOnAddedCnt() { return onAddedCnt; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 08:30:38.495453", "score": "0.4794", "loss": "1.8054", "code": "class T { public int getOnAddedCnt() { return onAddedCnt; } }"}
+{"time": "2021-01-24 08:31:37.539312", "score": "0.4794", "loss": "1.8054", "code": "class T { int getOnAddedCnt() { return onAddedCnt; } }"}
+
+Minimal simplified code:
+class T {
+       int getOnAddedCnt() { return onAddedCnt; }
+}
+
+

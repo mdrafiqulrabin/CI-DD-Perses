@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/net/URL_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object obj) { if (!(obj instanceof URL)) return (false); URL other = (URL) obj; if (!sameFile(other)) return (false); return (compare(ref, other.getRef())); }
+
+topk path-contexts for sub-token: equals
+[0.0926] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|EnclosedExpr|BooleanLiteralExpr0,false
+[0.0926] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|EnclosedExpr|BooleanLiteralExpr0,false
+[0.0757] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|EnclosedExpr|BooleanLiteralExpr0,false
+[0.0757] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|IfStmt|ReturnStmt|EnclosedExpr|BooleanLiteralExpr0,false
+[0.0578] boolean,PrimitiveType1|MethodDeclaration|Parameter|ClassOrInterfaceType1,object
+[0.0445] obj,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,object
+[0.0388] obj,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr3,compare
+[0.0338] object,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr3,compare
+[0.0245] other,NameExpr1|MethodCallExpr|UnaryExpr:not|IfStmt|BlockStmt|ReturnStmt|EnclosedExpr|MethodCallExpr0|NameExpr3,compare
+[0.0218] boolean,PrimitiveType1|MethodDeclaration|Parameter|VariableDeclaratorId0,obj
+
+topk terminals for sub-token: equals
+['object', 'false', 'object', 'false', 'obj', 'false', 'obj', 'false', 'boolean', 'object', 'obj', 'object', 'obj', 'compare', 'object', 'compare', 'other', 'compare', 'boolean', 'obj']
+

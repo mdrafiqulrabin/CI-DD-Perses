@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/webapps/examples/WEB-INF/jsp/applet/Clock2_run.java
+method_name = run
+method_body = @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 08:55:28.213585", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void run() { Thread me = Thread.currentThread(); while (timer == me) { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } } }"}
+{"time": "2020-12-29 08:57:54.705486", "score": "0.9991", "loss": "0.0018", "code": "class T { @Override public void run() { try { Thread.sleep(100); } catch (InterruptedException e) { } repaint(); } }"}
+{"time": "2020-12-29 08:59:49.697762", "score": "0.9944", "loss": "0.0119", "code": "class T { @Override public void run() { try { Thread.sleep(100); } catch (InterruptedException e) { } } }"}
+{"time": "2020-12-29 09:01:46.181559", "score": "0.3431", "loss": "1.9008", "code": "class T { @Override public void run() { try { } catch (InterruptedException e) { } } }"}
+{"time": "2020-12-29 09:03:05.471359", "score": "0.3431", "loss": "1.9008", "code": "class T { @Override void run() { try { } catch (InterruptedException e) { } } }"}
+
+Minimal simplified code:
+class T {
+@Override        void run()                                                           { try {                    } catch (InterruptedException e) { }            }
+}
+
+

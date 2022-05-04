@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/facebook__stetho/stetho/src/main/java/com/facebook/stetho/Stetho_newInitializerBuilder.java
+method_name = newInitializerBuilder
+method_body = public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }
+predict, score, loss = newInitializerBuilder, 0.3480399, 4.8936768
+
+Trace of simplified code(s):
+{"time": "2021-01-23 10:24:07.852358", "n_pass": [1, 1, 1], "score": "0.348", "loss": "4.8937", "code": "public static InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }"}
+{"time": "2021-01-23 10:24:10.444130", "n_pass": [20, 3, 2], "score": "0.348", "loss": "4.8937", "code": "InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(context); }"}
+{"time": "2021-01-23 10:24:38.842480", "n_pass": [109, 22, 3], "score": "0.3467", "loss": "4.3647", "code": "InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(con); }"}
+{"time": "2021-01-23 10:25:46.305779", "n_pass": [332, 67, 4], "score": "0.3467", "loss": "4.3647", "code": "InitializerBuilder newInitializerBuilder(Context context) { return new InitializerBuilder(con);}"}
+{"time": "2021-01-23 10:26:23.007961", "n_pass": [377, 89, 5], "score": "0.377", "loss": "4.5514", "code": "InitializerBuilder newInitializerBuilder(Conext context) { return new InitializerBuilder(con);}"}
+{"time": "2021-01-23 10:26:30.830954", "n_pass": [384, 95, 6], "score": "0.3639", "loss": "4.6013", "code": "InitializerBuilder newInitializerBuilder(Conext cotext) { return new InitializerBuilder(con);}"}
+{"time": "2021-01-23 10:26:37.322615", "n_pass": [390, 100, 7], "score": "0.3639", "loss": "4.6013", "code": "InitializerBuilder newInitializerBuilder(Conext cotext){ return new InitializerBuilder(con);}"}
+{"time": "2021-01-23 10:26:38.623836", "n_pass": [392, 101, 8], "score": "0.3639", "loss": "4.6013", "code": "InitializerBuilder newInitializerBuilder(Conext cotext){return new InitializerBuilder(con);}"}
+{"time": "2021-01-23 10:27:04.749268", "n_pass": [423, 121, 9], "score": "0.361", "loss": "5.3468", "code": "InitializerBuilder newInitializerBuilder(Conext cotext){return new InitializerBuilder(on);}"}
+{"time": "2021-01-23 10:27:49.172954", "n_pass": [478, 149, 10], "score": "0.4413", "loss": "4.7146", "code": "InitializerBuilder newInitializerBuilder(Conext ctext){return new InitializerBuilder(on);}"}
+{"time": "2021-01-23 10:27:50.468146", "n_pass": [479, 150, 11], "score": "0.4327", "loss": "5.273", "code": "InitializerBuilder newInitializerBuilder(Conext cext){return new InitializerBuilder(on);}"}
+{"time": "2021-01-23 10:28:20.503717", "n_pass": [515, 173, 12], "score": "0.358", "loss": "4.9161", "code": "InitializerBuilder newInitializerBuilder(Conext cext){return new InitializerBuilder(n);}"}
+
+Minimal simplified code:
+InitializerBuilder newInitializerBuilder(Conext cext){return new InitializerBuilder(n);}
+

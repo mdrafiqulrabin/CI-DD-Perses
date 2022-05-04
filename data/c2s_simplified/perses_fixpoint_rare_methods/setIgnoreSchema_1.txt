@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreSchema.java
+method_name = setIgnoreSchema
+method_body = public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 02:10:29.581730", "score": "0.4317", "loss": "1.2877", "code": "class T { public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; return this; } }"}
+{"time": "2021-01-24 02:11:18.348885", "score": "0.6865", "loss": "1.5833", "code": "class T { public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; this.ignoreSchemaTopics = ignoreSchemaTopics; } }"}
+{"time": "2021-01-24 02:11:39.892910", "score": "0.6431", "loss": "0.8796", "code": "class T { public Builder setIgnoreSchema(boolean ignoreSchema, Set<String> ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; } }"}
+{"time": "2021-01-24 02:12:32.504451", "score": "0.7027", "loss": "0.9772", "code": "class T { public Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { this.ignoreSchema = ignoreSchema; } }"}
+{"time": "2021-01-24 02:12:43.183947", "score": "0.7316", "loss": "1.216", "code": "class T { public Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { ignoreSchema = ignoreSchema; } }"}
+{"time": "2021-01-24 02:12:53.986411", "score": "0.7316", "loss": "1.216", "code": "class T { Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { ignoreSchema = ignoreSchema; } }"}
+{"time": "2021-01-24 02:13:54.429132", "score": "0.3464", "loss": "2.5593", "code": "class T { Builder setIgnoreSchema(boolean ignoreSchema, Set ignoreSchemaTopics) { } }"}
+
+Minimal simplified code:
+class T {
+       Builder setIgnoreSchema(boolean ignoreSchema, Set         ignoreSchemaTopics) {                                                                                              }
+}
+
+

@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/launch/webapps/examples/WEB-INF/classes/async/Stockticker_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 08:30:24.232850", "score": "0.9912", "loss": "0.0115", "code": "class T { @Override public boolean equals(Object other) { if (other instanceof Stock) { return this.symbol.equals(((Stock) other).symbol); } return false; } }"}
+{"time": "2020-12-21 08:31:01.544478", "score": "0.9796", "loss": "0.0259", "code": "class T { @Override public boolean equals(Object other) { return this.symbol.equals(((Stock) other).symbol); } }"}
+{"time": "2020-12-21 08:31:12.328872", "score": "0.5429", "loss": "0.8584", "code": "class T { @Override public boolean equals(Object other) { } }"}
+{"time": "2020-12-21 08:31:22.846048", "score": "0.7651", "loss": "0.5366", "code": "class T { boolean equals(Object other) { } }"}
+
+Minimal simplified code:
+class T {
+                 boolean equals(Object other)                               {                                                    }
+}
+
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sandrios__sandriosCamera/sandriosCamera/src/main/java/com/sandrios/sandriosCamera/internal/ui/BaseSandriosActivity_startPreviewActivity.java
+method_name = startPreviewActivity
+method_body = private void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString(), cameraControlPanel.showCrop()); startActivityForResult(intent, REQUEST_PREVIEW_CODE); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-25 02:24:22.201538", "score": "0.1947", "loss": "3.1609", "code": "class T { private void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString(), cameraControlPanel.showCrop()); startActivityForResult(intent, REQUEST_PREVIEW_CODE); } }"}
+{"time": "2021-01-25 02:33:15.978307", "score": "0.1651", "loss": "3.2597", "code": "class T { private void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString() ); startActivityForResult(intent, REQUEST_PREVIEW_CODE); } }"}
+{"time": "2021-01-25 02:41:57.040903", "score": "0.1651", "loss": "3.2597", "code": "class T { void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString() ); startActivityForResult(intent, REQUEST_PREVIEW_CODE); } }"}
+
+Minimal simplified code:
+class T {
+        void startPreviewActivity() { Intent intent = PreviewActivity.newIntent(this, getMediaAction(), getCameraController().getOutputFile().toString()                               ); startActivityForResult(intent, REQUEST_PREVIEW_CODE); }
+}
+
+

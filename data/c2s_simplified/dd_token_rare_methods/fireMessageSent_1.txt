@@ -1,0 +1,24 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/polling/AbstractPollingIoProcessor_fireMessageSent.java
+method_name = fireMessageSent
+method_body = private void fireMessageSent(T session, WriteRequest req) { session.setCurrentWriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }
+predict, score, loss = fireMessageSent, 0.4561761, 2.322597
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:06:59.944060", "n_pass": [1, 1, 1], "score": "0.4562", "loss": "2.3226", "code": "private void fireMessageSent(T session, WriteRequest req) { session.setCurrentWriteRequest(null); IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:01.287824", "n_pass": [23, 2, 2], "score": "0.656", "loss": "1.4111", "code": "private void fireMessageSent(T session, WriteRequest req) { ; IoFilterChain filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:02.641723", "n_pass": [44, 3, 3], "score": "0.5889", "loss": "1.5539", "code": "private void fireMessageSent(T session, WriteRequest req) {  filterChain = session.getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:03.964788", "n_pass": [45, 4, 4], "score": "0.6027", "loss": "1.4617", "code": "private void fireMessageSent(T session, WriteRequest req) {  filterChain .getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:09.657419", "n_pass": [84, 7, 5], "score": "0.5447", "loss": "1.6216", "code": "private void fireMessageSent(T session, WriteRequest req) {  filterChaingetFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:12.342075", "n_pass": [92, 9, 6], "score": "0.5447", "loss": "1.6216", "code": " void fireMessageSent(T session, WriteRequest req) {  filterChaingetFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:13.679959", "n_pass": [93, 10, 7], "score": "0.5447", "loss": "1.6216", "code": "void fireMessageSent(T session, WriteRequest req) {  filterChaingetFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:15.728809", "n_pass": [102, 11, 8], "score": "0.5447", "loss": "1.6216", "code": "void fireMessageSent(T session,WriteRequest req) {  filterChaingetFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:17.047214", "n_pass": [107, 12, 9], "score": "0.5649", "loss": "1.4786", "code": "void fireMessageSent(T session,WriteRequest req) { getFilterChain(); filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:22.784111", "n_pass": [148, 14, 10], "score": "0.5649", "loss": "1.4786", "code": "void fireMessageSent(T session,WriteRequest req) { getFilterChain();filterChain.fireMessageSent(req); }"}
+{"time": "2021-01-20 06:07:26.782184", "n_pass": [155, 17, 11], "score": "0.5649", "loss": "1.4786", "code": "void fireMessageSent(T session,WriteRequest req) { getFilterChain();filterChain.fireMessageSent(req);}"}
+{"time": "2021-01-20 06:07:28.829643", "n_pass": [169, 18, 12], "score": "0.5649", "loss": "1.4786", "code": "void fireMessageSent(T session,WriteRequest req){ getFilterChain();filterChain.fireMessageSent(req);}"}
+{"time": "2021-01-20 06:07:30.145514", "n_pass": [171, 19, 13], "score": "0.5649", "loss": "1.4786", "code": "void fireMessageSent(T session,WriteRequest req){getFilterChain();filterChain.fireMessageSent(req);}"}
+
+Minimal simplified code:
+void fireMessageSent(T session,WriteRequest req){getFilterChain();filterChain.fireMessageSent(req);}
+

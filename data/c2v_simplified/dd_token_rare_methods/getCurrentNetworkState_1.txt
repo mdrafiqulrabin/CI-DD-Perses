@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/NetworkMonitorAutoDetect_getCurrentNetworkState.java
+method_name = getCurrentNetworkState
+method_body = public NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }
+predict, score, loss = getCurrentNetworkState, 0.47605785727500916, 1.2121829986572266
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:04:47.521396", "n_pass": [1, 1, 1], "score": "0.4761", "loss": "1.2122", "code": "public NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }"}
+{"time": "2021-01-20 08:04:50.168876", "n_pass": [20, 2, 2], "score": "0.4761", "loss": "1.2122", "code": "NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }"}
+{"time": "2021-01-20 08:04:58.513108", "n_pass": [47, 4, 3], "score": "0.4761", "loss": "1.2122", "code": "NetworkState getCurrentNetworkState(){ return connectivityManagerDelegate.getNetworkState(); }"}
+{"time": "2021-01-20 08:05:01.118681", "n_pass": [49, 5, 4], "score": "0.4761", "loss": "1.2122", "code": "NetworkState getCurrentNetworkState(){return connectivityManagerDelegate.getNetworkState(); }"}
+{"time": "2021-01-20 08:05:16.184366", "n_pass": [76, 10, 5], "score": "0.4761", "loss": "1.2122", "code": "NetworkState getCurrentNetworkState(){return connectivityManagerDelegate.getNetworkState();}"}
+
+Minimal simplified code:
+NetworkState getCurrentNetworkState(){return connectivityManagerDelegate.getNetworkState();}
+

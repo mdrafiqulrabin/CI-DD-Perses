@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+predict, score, loss = onCreate, 0.9996018, 0.00058880186
+
+Trace of simplified code(s):
+{"time": "2020-12-27 04:28:22.601947", "n_pass": [1, 1, 1], "score": "0.9996", "loss": "0.0006", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-27 04:28:25.643437", "n_pass": [25, 3, 2], "score": "0.9998", "loss": "0.0004", "code": "@Override public void onCreate() { super.onCreate(); if (mNotifManager == null) {  getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-27 04:28:28.675861", "n_pass": [50, 5, 3], "score": "0.9986", "loss": "0.0017", "code": "public void onCreate() { super.onCreate(); if (mNotifManager == null) {  getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-27 04:28:30.023304", "n_pass": [53, 6, 4], "score": "0.6177", "loss": "0.7131", "code": "public void onCreate() {onCreate(); if (mNotifManager == null) {  getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-27 04:28:33.735920", "n_pass": [101, 8, 5], "score": "0.7649", "loss": "0.7044", "code": "public void onCreate() {onCreate(); if (mNotifManager == null) { (Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-27 04:28:35.079512", "n_pass": [103, 9, 6], "score": "0.5535", "loss": "1.0311", "code": "public void onCreate() {onCreate(); if (mNotifManager == null) { (Context_SERVICE); } }"}
+{"time": "2020-12-27 04:28:36.394287", "n_pass": [104, 10, 7], "score": "0.5649", "loss": "1.0029", "code": "public void onCreate() {onCreate(); if (mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:37.715483", "n_pass": [108, 11, 8], "score": "0.5649", "loss": "1.0029", "code": " void onCreate() {onCreate(); if (mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:39.056459", "n_pass": [109, 12, 9], "score": "0.5649", "loss": "1.0029", "code": "void onCreate() {onCreate(); if (mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:44.763387", "n_pass": [157, 13, 10], "score": "0.5649", "loss": "1.0029", "code": "void onCreate(){onCreate(); if (mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:46.085698", "n_pass": [162, 14, 11], "score": "0.5649", "loss": "1.0029", "code": "void onCreate(){onCreate();if (mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:47.402307", "n_pass": [164, 15, 12], "score": "0.5649", "loss": "1.0029", "code": "void onCreate(){onCreate();if(mNotifManager == null) { (Context); } }"}
+{"time": "2020-12-27 04:28:48.735116", "n_pass": [167, 16, 13], "score": "0.5649", "loss": "1.0029", "code": "void onCreate(){onCreate();if(mNotifManager== null) { (Context); } }"}
+{"time": "2020-12-27 04:28:50.046410", "n_pass": [168, 17, 14], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager= null) { (Context); } }"}
+{"time": "2020-12-27 04:28:51.375864", "n_pass": [170, 18, 15], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager=null) { (Context); } }"}
+{"time": "2020-12-27 04:28:52.703085", "n_pass": [173, 19, 16], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager=null){ (Context); } }"}
+{"time": "2020-12-27 04:28:54.046460", "n_pass": [175, 20, 17], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager=null){(Context); } }"}
+{"time": "2020-12-27 04:28:55.358509", "n_pass": [180, 21, 18], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager=null){(Context);} }"}
+{"time": "2020-12-27 04:28:56.672711", "n_pass": [182, 22, 19], "score": "0.6717", "loss": "1.2594", "code": "void onCreate(){onCreate();if(mNotifManager=null){(Context);}}"}
+{"time": "2020-12-27 04:28:58.708438", "n_pass": [197, 23, 20], "score": "0.6003", "loss": "1.0437", "code": "void onCreate(){onCreate();if(mNotifManagernull){(Context);}}"}
+{"time": "2020-12-27 04:29:00.050346", "n_pass": [198, 24, 21], "score": "0.6467", "loss": "0.7676", "code": "void onCreate(){onCreate();if(mNotifManager){(Context);}}"}
+
+Minimal simplified code:
+void onCreate(){onCreate();if(mNotifManager){(Context);}}
+

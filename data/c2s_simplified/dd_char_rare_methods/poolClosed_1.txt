@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/jdbc-pool/src/main/java/org/apache/tomcat/jdbc/pool/interceptor/StatementCache_poolClosed.java
+method_name = poolClosed
+method_body = @Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }
+predict, score, loss = poolClosed, 0.4595199, 0.8021533
+
+Trace of simplified code(s):
+{"time": "2021-01-23 09:32:27.785812", "n_pass": [1, 1, 1], "score": "0.4595", "loss": "0.8022", "code": "@Override public void poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:31.508241", "n_pass": [46, 3, 2], "score": "0.467", "loss": "0.7949", "code": "@Override puoid poolClosed(ConnectionPool pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:33.537662", "n_pass": [50, 4, 3], "score": "0.4834", "loss": "0.7658", "code": "@Override puoid poolClosed(Conneol pool) { cacheSizeMap.remove(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:34.870861", "n_pass": [53, 5, 4], "score": "0.536", "loss": "0.6615", "code": "@Override puoid poolClosed(Conneol pool) { cacap.remove(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:36.161027", "n_pass": [54, 6, 5], "score": "0.8753", "loss": "0.1443", "code": "@Override puoid poolClosed(Conneol pool) { cacve(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:39.869963", "n_pass": [91, 8, 6], "score": "0.9205", "loss": "0.0951", "code": "@Override puoid poolClosed(Conneol pool) {cve(pool); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:41.175099", "n_pass": [93, 9, 7], "score": "0.873", "loss": "0.1522", "code": "@Override puoid poolClosed(Conneol pool) {cve(); super.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:42.475144", "n_pass": [95, 10, 8], "score": "0.4916", "loss": "1.6992", "code": "@Override puoid poolClosed(Conneol pool) {cve(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:47.699003", "n_pass": [102, 14, 9], "score": "0.4783", "loss": "2.4965", "code": "@Ovide puoid poolClosed(Conneol pool) {cve(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:53.050518", "n_pass": [110, 17, 10], "score": "0.4783", "loss": "2.4965", "code": "@Ovide puoid poolClosed(neol pool) {cve(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:54.354238", "n_pass": [111, 18, 11], "score": "0.5935", "loss": "1.7992", "code": "@Ovide puoid poolClosed(l pool) {cve(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:32:55.660957", "n_pass": [113, 19, 12], "score": "0.5053", "loss": "1.7939", "code": "@Ovide puoid poolClosed(l p) {cve(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:33:06.606926", "n_pass": [167, 26, 13], "score": "0.7978", "loss": "0.791", "code": "@Ovide puoid poolClosed(l p) {e(); s.poolClosed(pool); }"}
+{"time": "2021-01-23 09:33:15.703163", "n_pass": [177, 33, 14], "score": "0.326", "loss": "1.887", "code": "@Ovide puoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:17.020398", "n_pass": [181, 34, 15], "score": "0.363", "loss": "1.9992", "code": "@vide puoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:18.320837", "n_pass": [182, 35, 16], "score": "0.3067", "loss": "1.9685", "code": "@ide puoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:19.613002", "n_pass": [183, 36, 17], "score": "0.2434", "loss": "2.4455", "code": "@de puoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:20.915621", "n_pass": [184, 37, 18], "score": "0.4419", "loss": "1.3184", "code": "@e puoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:22.934505", "n_pass": [187, 38, 19], "score": "0.4276", "loss": "1.6495", "code": "@e uoid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:24.235677", "n_pass": [188, 39, 20], "score": "0.6107", "loss": "0.8024", "code": "@e oid poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:25.560392", "n_pass": [189, 40, 21], "score": "0.5289", "loss": "0.9886", "code": "@e id poolClosed(l p) {e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:43.890348", "n_pass": [275, 47, 22], "score": "0.5289", "loss": "0.9886", "code": "@e id poolClosed(l p){e(); s.poolClosed(po); }"}
+{"time": "2021-01-23 09:33:45.183812", "n_pass": [280, 48, 23], "score": "0.5289", "loss": "0.9886", "code": "@e id poolClosed(l p){e();s.poolClosed(po); }"}
+{"time": "2021-01-23 09:34:00.845918", "n_pass": [294, 60, 24], "score": "0.6832", "loss": "0.571", "code": "@e id poolClosed(l p){e();s.poolClosed(o); }"}
+{"time": "2021-01-23 09:34:03.455819", "n_pass": [298, 62, 25], "score": "0.6832", "loss": "0.571", "code": "@e id poolClosed(l p){e();s.poolClosed(o);}"}
+{"time": "2021-01-23 09:34:05.498134", "n_pass": [303, 63, 26], "score": "0.6714", "loss": "0.6561", "code": "@e d poolClosed(l p){e();s.poolClosed(o);}"}
+{"time": "2021-01-23 09:34:25.485209", "n_pass": [339, 75, 27], "score": "0.244", "loss": "2.5171", "code": "@e d poolClosed(l p){e();s.poolClosed();}"}
+
+Minimal simplified code:
+@e d poolClosed(l p){e();s.poolClosed();}
+

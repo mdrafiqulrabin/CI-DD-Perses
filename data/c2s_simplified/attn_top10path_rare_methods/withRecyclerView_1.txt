@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/drakeet__MultiType/sample/src/androidTest/java/me/drakeet/multitype/sample/RecyclerViewMatcher_withRecyclerView.java
+method_name = withRecyclerView
+method_body = public static RecyclerViewMatcher withRecyclerView(final int recyclerViewId) { return new RecyclerViewMatcher(recyclerViewId); }
+
+topk path-contexts for sub-token: with
+[0.0840] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0655] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0458] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0434] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0380] recycler|view|id,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0280] recycler|view|id,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+[0.0251] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0213] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,recycler|view|id
+[0.0196] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,recycler|view|id
+[0.0167] recycler|view|matcher,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,recycler|view|id
+
+topk terminals for sub-token: with
+['METHOD_NAME', 'recycler|view|matcher', 'int', 'recycler|view|matcher', 'METHOD_NAME', 'int', 'recycler|view|matcher', 'METHOD_NAME', 'recycler|view|id', 'recycler|view|matcher', 'recycler|view|id', 'int', 'recycler|view|matcher', 'int', 'METHOD_NAME', 'recycler|view|id', 'METHOD_NAME', 'recycler|view|id', 'recycler|view|matcher', 'recycler|view|id']
+
+topk path-contexts for sub-token: recycler
+[0.2443] recycler|view|id,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+[0.1420] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,recycler|view|id
+[0.0758] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0614] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0575] recycler|view|id,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0565] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0427] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0418] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0344] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,recycler|view|id
+[0.0280] recycler|view|matcher,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,recycler|view|id
+
+topk terminals for sub-token: recycler
+['recycler|view|id', 'int', 'METHOD_NAME', 'recycler|view|id', 'METHOD_NAME', 'int', 'METHOD_NAME', 'recycler|view|matcher', 'recycler|view|id', 'recycler|view|matcher', 'int', 'recycler|view|matcher', 'recycler|view|matcher', 'int', 'recycler|view|matcher', 'METHOD_NAME', 'recycler|view|matcher', 'recycler|view|id', 'recycler|view|matcher', 'recycler|view|id']
+
+topk path-contexts for sub-token: view
+[0.2722] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,recycler|view|id
+[0.1832] recycler|view|id,VariableDeclaratorId0|Parameter|PrimitiveType1,int
+[0.0490] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0474] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|PrimitiveType1,int
+[0.0418] recycler|view|id,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0373] int,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|ClassOrInterfaceType0,recycler|view|matcher
+[0.0194] recycler|view|matcher,ClassOrInterfaceType0|ObjectCreationExpr|NameExpr1,recycler|view|id
+[0.0173] recycler|view|matcher,ClassOrInterfaceType0|MethodDeclaration|Parameter|VariableDeclaratorId0,recycler|view|id
+[0.0129] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,recycler|view|id
+[0.0115] recycler|view|id,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ReturnStmt|ObjectCreationExpr|NameExpr1,recycler|view|id
+
+topk terminals for sub-token: view
+['METHOD_NAME', 'recycler|view|id', 'recycler|view|id', 'int', 'METHOD_NAME', 'recycler|view|matcher', 'METHOD_NAME', 'int', 'recycler|view|id', 'recycler|view|matcher', 'int', 'recycler|view|matcher', 'recycler|view|matcher', 'recycler|view|id', 'recycler|view|matcher', 'recycler|view|id', 'METHOD_NAME', 'recycler|view|id', 'recycler|view|id', 'recycler|view|id']
+

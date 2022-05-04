@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/erogenousbeef__BigReactors/src/api/java/powercrystals/minefactoryreloaded/api/rednet/connectivity/RedNetConnectionType_fromFlags.java
+method_name = fromFlags
+method_body = public static final RedNetConnectionType fromFlags(short flags) { return connections.get(flags); }
+
+topk path-contexts:
+[0.4142] rednetconnectiontype,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),flags
+[0.1451] rednetconnectiontype,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.1162] short,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),connections
+[0.1129] rednetconnectiontype,(ClassOrInterfaceType0)^(MethodDeclaration)_(Parameter)_(PrimitiveType1),short
+[0.0602] flags,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),connections
+[0.0442] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),connections
+[0.0263] flags,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),flags
+[0.0210] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),flags
+[0.0191] flags,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+[0.0117] short,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr3),get
+
+topk terminals:
+['rednetconnectiontype', 'flags', 'rednetconnectiontype', 'METHOD_NAME', 'short', 'connections', 'rednetconnectiontype', 'short', 'flags', 'connections', 'METHOD_NAME', 'connections', 'flags', 'flags', 'METHOD_NAME', 'flags', 'flags', 'get', 'short', 'get']
+

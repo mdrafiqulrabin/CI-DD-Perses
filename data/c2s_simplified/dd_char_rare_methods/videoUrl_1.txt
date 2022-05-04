@@ -1,0 +1,36 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/model/Video_videoUrl.java
+method_name = videoUrl
+method_body = public VideoBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; }
+predict, score, loss = videoUrl, 0.4674199, 0.8357728
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:18:49.773189", "n_pass": [1, 1, 1], "score": "0.4674", "loss": "0.8358", "code": "public VideoBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; }"}
+{"time": "2021-01-23 12:18:51.432785", "n_pass": [20, 2, 2], "score": "0.4966", "loss": "0.761", "code": "oBuilder videoUrl(String videoUrl) { this.videoUrl = videoUrl; return this; }"}
+{"time": "2021-01-23 12:18:56.052664", "n_pass": [46, 5, 3], "score": "0.4838", "loss": "0.7622", "code": "oBuilder videoUrl(String Url) { this.videoUrl = videoUrl; return this; }"}
+{"time": "2021-01-23 12:18:59.994275", "n_pass": [51, 8, 4], "score": "0.416", "loss": "0.9219", "code": "oBuilder videoUrl(String Url) { this.videoUrl = rl; return this; }"}
+{"time": "2021-01-23 12:19:08.474027", "n_pass": [92, 14, 5], "score": "0.6445", "loss": "0.4943", "code": "oBuilder videoUrl(String Url) { this.videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:17.421962", "n_pass": [102, 20, 6], "score": "0.6508", "loss": "0.4881", "code": "oBuilder videoUrl(Str Url) { this.videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:18.739042", "n_pass": [106, 21, 7], "score": "0.4285", "loss": "1.1321", "code": "oBuilder videoUrl(Str Url) { t.videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:36.454451", "n_pass": [170, 33, 8], "score": "0.504", "loss": "0.9176", "code": "oBuilder videoUrl(Str Ur) { t.videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:37.751448", "n_pass": [172, 34, 9], "score": "0.504", "loss": "0.9176", "code": "oBuilder videoUrl(Str Ur){ t.videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:39.070232", "n_pass": [174, 35, 10], "score": "0.6283", "loss": "0.5678", "code": "oBuilder videoUrl(Str Ur){ videoUrl = rl; return t; }"}
+{"time": "2021-01-23 12:19:46.889244", "n_pass": [180, 41, 11], "score": "0.748", "loss": "0.3636", "code": "oBuilder videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:19:53.412043", "n_pass": [188, 46, 12], "score": "0.8308", "loss": "0.2533", "code": "Builder videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:19:54.700119", "n_pass": [189, 47, 13], "score": "0.5738", "loss": "0.7123", "code": "uilder videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:19:55.986403", "n_pass": [190, 48, 14], "score": "0.5738", "loss": "0.7123", "code": "ilder videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:19:57.369128", "n_pass": [191, 49, 15], "score": "0.5738", "loss": "0.7123", "code": "lder videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:19:59.969966", "n_pass": [193, 51, 16], "score": "0.4722", "loss": "0.9552", "code": "ler videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:20:01.261190", "n_pass": [194, 52, 17], "score": "0.515", "loss": "0.8813", "code": "lr videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:20:02.563334", "n_pass": [195, 53, 18], "score": "0.6698", "loss": "0.5203", "code": "l videoUrl(Str Ur){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:20:11.005751", "n_pass": [210, 57, 19], "score": "0.672", "loss": "0.5982", "code": "l videoUrl(Str r){ videoUrl =l; return t; }"}
+{"time": "2021-01-23 12:20:41.605701", "n_pass": [273, 76, 20], "score": "0.672", "loss": "0.5982", "code": "l videoUrl(Str r){ videoUrl=l; return t; }"}
+{"time": "2021-01-23 12:20:42.922883", "n_pass": [276, 77, 21], "score": "0.672", "loss": "0.5982", "code": "l videoUrl(Str r){ videoUrl=l;return t; }"}
+{"time": "2021-01-23 12:20:53.349564", "n_pass": [284, 85, 22], "score": "0.5091", "loss": "0.8536", "code": "l videoUrl(Str r){ videoUrl=l;return ; }"}
+{"time": "2021-01-23 12:20:54.663438", "n_pass": [286, 86, 23], "score": "0.5091", "loss": "0.8536", "code": "l videoUrl(Str r){ videoUrl=l;return ;}"}
+{"time": "2021-01-23 12:21:03.484271", "n_pass": [306, 90, 24], "score": "0.5091", "loss": "0.8536", "code": "l videoUrl(Str r){videoUrl=l;return ;}"}
+{"time": "2021-01-23 12:21:25.542825", "n_pass": [324, 107, 25], "score": "0.5091", "loss": "0.8536", "code": "l videoUrl(Str r){videoUrl=l;return;}"}
+
+Minimal simplified code:
+l videoUrl(Str r){videoUrl=l;return;}
+

@@ -1,0 +1,27 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-core/src/test/java/io/katharsis/module/SimpleModuleTest_addSecurityProvider.java
+method_name = addSecurityProvider
+method_body = @Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }
+predict, score, loss = addSecurityProvider, 0.28158444, 1.8009379
+
+Trace of simplified code(s):
+{"time": "2021-01-23 12:28:56.473360", "n_pass": [1, 1, 1], "score": "0.2816", "loss": "1.8009", "code": "@Override public void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:00.152989", "n_pass": [45, 3, 2], "score": "0.3175", "loss": "2.0901", "code": "@Overrblic void addSecurityProvider(SecurityProvider securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:02.923654", "n_pass": [51, 4, 3], "score": "0.2908", "loss": "2.9926", "code": "@Overrblic void addSecurityProvider(tyProvider securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:04.235973", "n_pass": [52, 5, 4], "score": "0.4642", "loss": "1.5769", "code": "@Overrblic void addSecurityProvider(der securityProvider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:05.527701", "n_pass": [54, 6, 5], "score": "0.5332", "loss": "3.0409", "code": "@Overrblic void addSecurityProvider(der secovider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:10.862045", "n_pass": [91, 9, 6], "score": "0.5332", "loss": "3.0409", "code": "@Overrblic void addSecurityProvider(der seider) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:12.150161", "n_pass": [92, 10, 7], "score": "0.4676", "loss": "3.1093", "code": "@Overrblic void addSecurityProvider(der ser) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:18.610780", "n_pass": [102, 15, 8], "score": "0.4676", "loss": "3.1093", "code": "@Ovblic void addSecurityProvider(der ser) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:19.942035", "n_pass": [103, 16, 9], "score": "0.524", "loss": "3.2533", "code": "@Ovc void addSecurityProvider(der ser) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:30.953128", "n_pass": [164, 22, 10], "score": "0.559", "loss": "3.2745", "code": "@Oc void addSecurityProvider(der ser) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:43.483468", "n_pass": [184, 28, 11], "score": "0.5336", "loss": "3.323", "code": "@Oc void addSecurityProvider(r ser) { numSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:46.060596", "n_pass": [189, 30, 12], "score": "0.3651", "loss": "3.4153", "code": "@Oc void addSecurityProvider(r ser) {umSecurityProviders++; }"}
+{"time": "2021-01-23 12:29:59.012058", "n_pass": [203, 40, 13], "score": "0.3687", "loss": "3.0403", "code": "@c void addSecurityProvider(r ser) {umSecurityProviders++; }"}
+{"time": "2021-01-23 12:30:03.269043", "n_pass": [208, 43, 14], "score": "0.3704", "loss": "3.7587", "code": "@c vod addSecurityProvider(r ser) {umSecurityProviders++; }"}
+{"time": "2021-01-23 12:30:37.211402", "n_pass": [314, 60, 15], "score": "0.3704", "loss": "3.7587", "code": "@c vod addSecurityProvider(r ser){umSecurityProviders++; }"}
+{"time": "2021-01-23 12:31:03.155658", "n_pass": [337, 80, 16], "score": "0.3704", "loss": "3.7587", "code": "@c vod addSecurityProvider(r ser){umSecurityProviders++;}"}
+
+Minimal simplified code:
+@c vod addSecurityProvider(r ser){umSecurityProviders++;}
+

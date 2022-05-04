@@ -1,0 +1,51 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/buf/ByteChunk_toString.java
+method_name = toString
+method_body = @Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return ""; } return StringCache.toString(this); }
+predict, score, loss = toString, 0.9775976538658142, 0.0344972163438797
+
+Trace of simplified code(s):
+{"time": "2020-12-28 10:12:16.158727", "n_pass": [1, 1, 1], "score": "0.9776", "loss": "0.0345", "code": "@Override public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 10:12:21.413609", "n_pass": [44, 3, 2], "score": "0.9235", "loss": "0.1145", "code": " public String toString() { if (null == buff) { return null; } else if (end - start == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 10:12:24.438436", "n_pass": [52, 4, 3], "score": "0.9315", "loss": "0.0977", "code": " public String toString() { if (null == buff) { return null; } else if (rt == 0) { return \"\"; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 10:12:27.043248", "n_pass": [54, 5, 4], "score": "0.9388", "loss": "0.0865", "code": " public String toString() { if (null == buff) { return null; } else if (rt == 0) {; } return StringCache.toString(this); }"}
+{"time": "2020-12-28 10:12:29.652645", "n_pass": [56, 6, 5], "score": "0.5327", "loss": "0.8231", "code": " public String toString() { if (null == buff) { return null; } else if (rt == 0) {; } returnhe.toString(this); }"}
+{"time": "2020-12-28 10:12:37.891755", "n_pass": [93, 9, 6], "score": "0.2668", "loss": "2.0888", "code": " public String toString() { if (null == buff) { return null; } else if (rt == 0) {; } returnString(this); }"}
+{"time": "2020-12-28 10:12:46.580826", "n_pass": [108, 12, 7], "score": "0.5101", "loss": "1.3527", "code": " public String toString() { if (null == buff) { retull; } else if (rt == 0) {; } returnString(this); }"}
+{"time": "2020-12-28 10:12:49.219795", "n_pass": [110, 13, 8], "score": "0.2326", "loss": "2.6134", "code": " public String toString() { if (null == buff) { retull; } if (rt == 0) {; } returnString(this); }"}
+{"time": "2020-12-28 10:13:05.758750", "n_pass": [130, 19, 9], "score": "0.2391", "loss": "2.5844", "code": " public String toString() { if (null == buff) {ll; } if (rt == 0) {; } returnString(this); }"}
+{"time": "2020-12-28 10:13:22.293113", "n_pass": [202, 25, 10], "score": "0.2569", "loss": "2.5095", "code": " public String toString() { if (null == buff) {ll; } if (rt == 0) {; } urnString(this); }"}
+{"time": "2020-12-28 10:13:27.559747", "n_pass": [204, 27, 11], "score": "0.2569", "loss": "2.5095", "code": " public String toString() { if (null == buff) {ll; } if (rt == 0) {; } urning(this); }"}
+{"time": "2020-12-28 10:13:30.165916", "n_pass": [205, 28, 12], "score": "0.6694", "loss": "1.5527", "code": " public String toString() { if (null == buff) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:44.894547", "n_pass": [225, 33, 13], "score": "0.7978", "loss": "0.9799", "code": " public String toString() { if (ll == buff) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:47.517795", "n_pass": [227, 34, 14], "score": "0.7177", "loss": "1.2342", "code": " public String toString() { if (ll= buff) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:50.138758", "n_pass": [228, 35, 15], "score": "0.7727", "loss": "1.0052", "code": " public String toString() { if (llbuff) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:52.757572", "n_pass": [229, 36, 16], "score": "0.7727", "loss": "1.0052", "code": " public String toString() { if (llff) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:55.370096", "n_pass": [230, 37, 17], "score": "0.7806", "loss": "1.0244", "code": " public String toString() { if (ll) {ll; } if (rt == 0) {; } urn(this); }"}
+{"time": "2020-12-28 10:13:57.985160", "n_pass": [242, 38, 18], "score": "0.4376", "loss": "1.4694", "code": " public String toString() { if (ll) {ll; } if (rt == 0) {; } (this); }"}
+{"time": "2020-12-28 10:14:17.562564", "n_pass": [338, 43, 19], "score": "0.3778", "loss": "1.6618", "code": " public String toString() { if (ll) {ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:14:20.179352", "n_pass": [342, 44, 20], "score": "0.3778", "loss": "1.6618", "code": "public String toString() { if (ll) {ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:14:44.723733", "n_pass": [367, 52, 21], "score": "0.3778", "loss": "1.6618", "code": "public String toString(){ if (ll) {ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:14:47.362451", "n_pass": [369, 53, 22], "score": "0.3778", "loss": "1.6618", "code": "public String toString(){if (ll) {ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:14:49.974048", "n_pass": [372, 54, 23], "score": "0.3778", "loss": "1.6618", "code": "public String toString(){if(ll) {ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:14:57.840578", "n_pass": [377, 57, 24], "score": "0.3778", "loss": "1.6618", "code": "public String toString(){if(ll){ll; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:00.445628", "n_pass": [379, 58, 25], "score": "0.3693", "loss": "1.6785", "code": "public String toString(){if(ll){l; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:03.053838", "n_pass": [380, 59, 26], "score": "0.3771", "loss": "1.6275", "code": "public String toString(){if(ll){; } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:05.672156", "n_pass": [381, 60, 27], "score": "0.3771", "loss": "1.6275", "code": "public String toString(){if(ll){ } if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:08.291578", "n_pass": [382, 61, 28], "score": "0.3771", "loss": "1.6275", "code": "public String toString(){if(ll){} if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:10.891556", "n_pass": [384, 62, 29], "score": "0.3771", "loss": "1.6275", "code": "public String toString(){if(ll){}if (rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:13.503781", "n_pass": [387, 63, 30], "score": "0.3771", "loss": "1.6275", "code": "public String toString(){if(ll){}if(rt == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:16.100062", "n_pass": [389, 64, 31], "score": "0.5461", "loss": "1.0995", "code": "public String toString(){if(ll){}if(t == 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:18.692784", "n_pass": [391, 65, 32], "score": "0.5461", "loss": "1.0995", "code": "public String toString(){if(ll){}if(t== 0) {; } (is); }"}
+{"time": "2020-12-28 10:15:26.526952", "n_pass": [394, 68, 33], "score": "0.5461", "loss": "1.0995", "code": "public String toString(){if(ll){}if(t==0) {; } (is); }"}
+{"time": "2020-12-28 10:15:51.060338", "n_pass": [431, 76, 34], "score": "0.5549", "loss": "0.9811", "code": "public String toString(){if(l){}if(t==0) {; } (is); }"}
+{"time": "2020-12-28 10:16:23.067842", "n_pass": [493, 86, 35], "score": "0.5549", "loss": "0.9811", "code": "public String toString(){if(l){}if(t==0){; } (is); }"}
+{"time": "2020-12-28 10:16:25.663263", "n_pass": [495, 87, 36], "score": "0.5549", "loss": "0.9811", "code": "public String toString(){if(l){}if(t==0){ } (is); }"}
+{"time": "2020-12-28 10:16:28.282905", "n_pass": [496, 88, 37], "score": "0.5549", "loss": "0.9811", "code": "public String toString(){if(l){}if(t==0){} (is); }"}
+{"time": "2020-12-28 10:16:30.883047", "n_pass": [498, 89, 38], "score": "0.5549", "loss": "0.9811", "code": "public String toString(){if(l){}if(t==0){}(is); }"}
+{"time": "2020-12-28 10:16:33.495295", "n_pass": [500, 90, 39], "score": "0.6165", "loss": "0.8112", "code": "public String toString(){if(l){}if(t==0){}(s); }"}
+{"time": "2020-12-28 10:16:36.095835", "n_pass": [504, 91, 40], "score": "0.6165", "loss": "0.8112", "code": "public String toString(){if(l){}if(t==0){}(s);}"}
+
+Minimal simplified code:
+public String toString(){if(l){}if(t==0){}(s);}
+

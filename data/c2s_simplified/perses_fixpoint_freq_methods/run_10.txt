@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kevinkong__Emmagee/src/com/netease/qa/emmagee/service/EmmageeService_run.java
+method_name = run
+method_body = public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 12:02:34.365221", "score": "0.6192", "loss": "0.8244", "code": "class T { public void run() { dataRefresh(); handler.postDelayed(this, delaytime); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); } }"}
+{"time": "2020-12-21 12:03:43.390204", "score": "0.3455", "loss": "1.4651", "code": "class T { public void run() { dataRefresh(); if (isFloating) windowManager.updateViewLayout(viFloatingWindow, wmParams); } }"}
+{"time": "2020-12-21 12:04:39.405021", "score": "0.2584", "loss": "1.8047", "code": "class T { public void run() { dataRefresh(); if (isFloating) windowManager.updateViewLayout(viFloatingWindow ); } }"}
+{"time": "2020-12-21 12:04:50.046884", "score": "0.2584", "loss": "1.8047", "code": "class T { void run() { dataRefresh(); if (isFloating) windowManager.updateViewLayout(viFloatingWindow ); } }"}
+
+Minimal simplified code:
+class T {
+       void run() { dataRefresh();                                       if (isFloating) windowManager.updateViewLayout(viFloatingWindow          ); }
+}
+
+

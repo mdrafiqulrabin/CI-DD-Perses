@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/SimpleSQLProviderProcesor_init.java
+method_name = init
+method_body = @Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }
+predict, score, loss = init, 0.99727976, 0.0031995496
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:54:59.382196", "n_pass": [1, 1, 1], "score": "0.9973", "loss": "0.0032", "code": "@Override public synchronized void init(ProcessingEnvironment env) { super.init(env); messenger.init(env); helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:00.692177", "n_pass": [9, 2, 2], "score": "0.3539", "loss": "1.16", "code": "@Override public synchronized void init(ProcessingEnvironment env) {helper = new Helper(); filer = env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:05.068770", "n_pass": [39, 5, 3], "score": "0.2922", "loss": "1.3998", "code": "@Override public synchronized void init(ProcessingEnvironment env) {helper = new Helper(); env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:07.730381", "n_pass": [44, 7, 4], "score": "0.3871", "loss": "1.1787", "code": " synchronized void init(ProcessingEnvironment env) {helper = new Helper(); env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:09.418804", "n_pass": [50, 8, 5], "score": "0.3727", "loss": "1.1271", "code": " synchronized void init(ProcessingEnvironment env) {helper = new Helperenv.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:12.406922", "n_pass": [59, 10, 6], "score": "0.3227", "loss": "1.3986", "code": " synchronized void init(ProcessingEnvironment env) {helper =env.getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:15.397311", "n_pass": [84, 12, 7], "score": "0.3266", "loss": "1.3174", "code": " synchronized void init(ProcessingEnvironment env) {helper =getFiler(); elementUtils = env.getElementUtils(); }"}
+{"time": "2020-12-27 03:55:16.736515", "n_pass": [88, 13, 8], "score": "0.3395", "loss": "1.2512", "code": " synchronized void init(ProcessingEnvironment env) {helper =getFiler(); elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:18.045633", "n_pass": [91, 14, 9], "score": "0.3395", "loss": "1.2512", "code": " void init(ProcessingEnvironment env) {helper =getFiler(); elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:24.913868", "n_pass": [131, 17, 10], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env) {helper =getFiler(); elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:26.582984", "n_pass": [139, 18, 11], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env){helper =getFiler(); elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:27.900759", "n_pass": [142, 19, 12], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env){helper=getFiler(); elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:30.534908", "n_pass": [148, 21, 13], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env){helper=getFiler();elementUtils =getElementUtils(); }"}
+{"time": "2020-12-27 03:55:31.899661", "n_pass": [150, 22, 14], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env){helper=getFiler();elementUtils=getElementUtils(); }"}
+{"time": "2020-12-27 03:55:37.174227", "n_pass": [178, 25, 15], "score": "0.3395", "loss": "1.2512", "code": "void init(ProcessingEnvironment env){helper=getFiler();elementUtils=getElementUtils();}"}
+
+Minimal simplified code:
+void init(ProcessingEnvironment env){helper=getFiler();elementUtils=getElementUtils();}
+

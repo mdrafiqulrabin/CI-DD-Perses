@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/javamelody__javamelody/javamelody-core/src/test/java/net/bull/javamelody/TestJpa_assertCounter.java
+method_name = assertCounter
+method_body = private static void assertCounter(String method) { final Counter counter = JpaWrapper.getJpaCounter(); assertEquals("getRequestsCount", 1, counter.getRequestsCount()); assertEquals("requestName", method, counter.getRequests().get(0).getName()); counter.clear(); }
+
+topk path-contexts for sub-token: assert
+[0.0781] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0213] method,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,clear
+[0.0204] method,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,counter
+[0.0193] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,clear
+[0.0190] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr1,get|requests|count
+[0.0186] request|name,StringLiteralExpr1|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,clear
+[0.0186] void,VoidType0|MethodDeclaration|Parameter|ClassOrInterfaceType1,string
+[0.0185] 1,IntegerLiteralExpr2|MethodCallExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,clear
+[0.0177] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,clear
+[0.0161] method,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: assert
+['void', 'METHOD_NAME', 'method', 'clear', 'method', 'counter', 'string', 'clear', 'string', 'get|requests|count', 'request|name', 'clear', 'void', 'string', '1', 'clear', 'METHOD_NAME', 'clear', 'method', 'string']
+
+topk path-contexts for sub-token: counter
+[0.0712] counter,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,jpa|wrapper
+[0.0592] counter,VariableDeclaratorId0|VariableDeclarator|MethodCallExpr1|NameExpr0,jpa|wrapper
+[0.0565] method,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,jpa|wrapper
+[0.0543] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,jpa|wrapper
+[0.0489] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr0,jpa|wrapper
+[0.0315] jpa|wrapper,NameExpr0|MethodCallExpr|NameExpr2,get|jpa|counter
+[0.0239] string,ClassOrInterfaceType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr1,get|requests|count
+[0.0237] jpa|wrapper,NameExpr0|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr1,get|requests|count
+[0.0233] method,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr1,get|requests|count
+[0.0224] counter,ClassOrInterfaceType0|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr2,get|jpa|counter
+
+topk terminals for sub-token: counter
+['counter', 'jpa|wrapper', 'counter', 'jpa|wrapper', 'method', 'jpa|wrapper', 'METHOD_NAME', 'jpa|wrapper', 'string', 'jpa|wrapper', 'jpa|wrapper', 'get|jpa|counter', 'string', 'get|requests|count', 'jpa|wrapper', 'get|requests|count', 'method', 'get|requests|count', 'counter', 'get|jpa|counter']
+

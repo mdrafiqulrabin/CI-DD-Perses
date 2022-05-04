@@ -1,0 +1,25 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/json-iterator__java/src/main/java/com/jsoniter/extra/GsonCompatibilityMode_setExclusionStrategies.java
+method_name = setExclusionStrategies
+method_body = public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }
+predict, score, loss = setExclusionStrategies, 0.49522724747657776, 0.7061976790428162
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:30:52.763433", "n_pass": [1, 1, 1], "score": "0.4952", "loss": "0.7062", "code": "public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-20 07:30:55.434872", "n_pass": [44, 2, 2], "score": "0.4952", "loss": "0.7062", "code": "Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }"}
+{"time": "2021-01-20 07:30:58.477793", "n_pass": [58, 3, 3], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } ; }"}
+{"time": "2021-01-20 07:31:03.838818", "n_pass": [101, 4, 4], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-20 07:31:07.719990", "n_pass": [111, 5, 5], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-20 07:31:10.374143", "n_pass": [114, 6, 6], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){ for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-20 07:31:12.995762", "n_pass": [116, 7, 7], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-20 07:31:15.649149", "n_pass": [118, 8, 8], "score": "0.5074", "loss": "0.6811", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-20 07:31:18.271825", "n_pass": [125, 9, 9], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy : strategies) {(strategy); } }"}
+{"time": "2021-01-20 07:31:24.839412", "n_pass": [168, 10, 10], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy : strategies) {(strategy);} }"}
+{"time": "2021-01-20 07:31:27.467527", "n_pass": [169, 11, 11], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy : strategies) {(strategy);}}"}
+{"time": "2021-01-20 07:31:31.325540", "n_pass": [187, 12, 12], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy: strategies) {(strategy);}}"}
+{"time": "2021-01-20 07:31:33.974988", "n_pass": [189, 13, 13], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy:strategies) {(strategy);}}"}
+{"time": "2021-01-20 07:31:36.601530", "n_pass": [192, 14, 14], "score": "0.9976", "loss": "0.0028", "code": "Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy:strategies){(strategy);}}"}
+
+Minimal simplified code:
+Builder setExclusionStrategies(ExclusionStrategy...strategies){for(ExclusionStrategy strategy:strategies){(strategy);}}
+

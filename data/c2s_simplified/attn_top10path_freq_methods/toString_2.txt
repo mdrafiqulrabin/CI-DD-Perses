@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/http/Cookies_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringWriter sw = new StringWriter(); PrintWriter pw = new PrintWriter(sw); pw.println("=== Cookies ==="); int count = getCookieCount(); for (int i = 0; i < count; ++i) { pw.println(getCookie(i).toString()); } return sw.toString(); }
+
+topk path-contexts for sub-token: to
+[0.0795] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0747] string,ClassOrInterfaceType1|MethodDeclaration|NameExpr2,METHOD_NAME
+[0.0352] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|StringLiteralExpr2,===|cookies|===
+[0.0338] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0302] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0273] i,NameExpr0|UnaryExpr:preIncrement|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0271] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0243] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|MethodCallExpr1|NameExpr1,get|cookie|count
+[0.0235] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0219] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+
+topk terminals for sub-token: to
+['string', 'to|string', 'string', 'METHOD_NAME', 'METHOD_NAME', '===|cookies|===', 'METHOD_NAME', 'to|string', 'string', 'to|string', 'i', 'to|string', 'int', 'to|string', 'string', 'get|cookie|count', '0', 'to|string', 'override', 'string']
+
+topk path-contexts for sub-token: string
+[0.1646] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0694] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0667] int,PrimitiveType0|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0511] get|cookie|count,NameExpr1|MethodCallExpr|VariableDeclarator|VariableDeclarationExpr|ExpressionStmt|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+[0.0479] i,NameExpr0|UnaryExpr:preIncrement|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0466] pw,NameExpr0|MethodCallExpr|MethodCallExpr2|NameExpr2,to|string
+[0.0436] override,NameExpr0|MarkerAnnotationExpr|MethodDeclaration|ClassOrInterfaceType1,string
+[0.0416] get|cookie,NameExpr2|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0401] 0,IntegerLiteralExpr1|VariableDeclarator|VariableDeclarationExpr|ForStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr2|NameExpr2,to|string
+[0.0379] string,ClassOrInterfaceType1|MethodDeclaration|BlockStmt|ReturnStmt|MethodCallExpr0|NameExpr2,to|string
+
+topk terminals for sub-token: string
+['string', 'to|string', 'METHOD_NAME', 'to|string', 'int', 'to|string', 'get|cookie|count', 'to|string', 'i', 'to|string', 'pw', 'to|string', 'override', 'string', 'get|cookie', 'to|string', '0', 'to|string', 'string', 'to|string']
+

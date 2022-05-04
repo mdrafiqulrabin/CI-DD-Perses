@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ckurtm__simple-sql-provider/simple_sql_provider_processor/src/main/java/ckm/simple/sql_provider/processor/internal/Column_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; Column column = (Column) o; return name.equalsIgnoreCase(column.name); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 10:27:30.231830", "score": "0.9996", "loss": "0.0005", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; Column column = (Column) o; return name.equalsIgnoreCase(column.name); } }"}
+{"time": "2020-12-21 10:28:18.170465", "score": "0.9993", "loss": "0.0009", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; if (!(o instanceof Column)) return false; } }"}
+{"time": "2020-12-21 10:28:39.278888", "score": "0.952", "loss": "0.0674", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-21 10:29:10.857754", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override public boolean equals(Object o) { if ( o) return true; } }"}
+{"time": "2020-12-21 10:29:31.988821", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override boolean equals(Object o) { if ( o) return true; } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object o) { if (        o) return true;                                                                                                                  }
+}
+
+

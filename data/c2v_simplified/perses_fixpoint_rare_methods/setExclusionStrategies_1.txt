@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/json-iterator__java/src/main/java/com/jsoniter/extra/GsonCompatibilityMode_setExclusionStrategies.java
+method_name = setExclusionStrategies
+method_body = public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 20:33:47.471647", "score": "0.4952", "loss": "0.7062", "code": "class T { public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } return this; } }"}
+{"time": "2021-01-24 20:37:29.484049", "score": "0.5074", "loss": "0.6811", "code": "class T { public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) { addSerializationExclusionStrategy(strategy); } } }"}
+{"time": "2021-01-24 20:39:23.376543", "score": "0.6122", "loss": "0.4979", "code": "class T { public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) addSerializationExclusionStrategy(strategy); } }"}
+{"time": "2021-01-24 20:40:42.337417", "score": "0.9959", "loss": "0.0046", "code": "class T { public Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) addSerializationExclusionStrategy( ); } }"}
+{"time": "2021-01-24 20:41:21.759418", "score": "0.9959", "loss": "0.0046", "code": "class T { Builder setExclusionStrategies(ExclusionStrategy... strategies) { for (ExclusionStrategy strategy : strategies) addSerializationExclusionStrategy( ); } }"}
+{"time": "2021-01-24 20:44:23.675419", "score": "0.8174", "loss": "0.2056", "code": "class T { Builder setExclusionStrategies(ExclusionStrategy... strategies) { addSerializationExclusionStrategy( ); } }"}
+
+Minimal simplified code:
+class T {
+       Builder setExclusionStrategies(ExclusionStrategy... strategies) {                                                 addSerializationExclusionStrategy(        );                }
+}
+
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/XiaoMi__linden/linden-core/src/main/java/com/xiaomi/linden/core/LindenConfig_setWebapp.java
+method_name = setWebapp
+method_body = public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }
+predict, score, loss = setWebapp, 0.44376144, 0.92734325
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:46:10.719013", "n_pass": [1, 1, 1], "score": "0.4438", "loss": "0.9273", "code": "public LindenConfig setWebapp(String webapp) { this.webapp = webapp; return this; }"}
+{"time": "2021-01-20 05:46:15.051370", "n_pass": [26, 4, 2], "score": "0.9449", "loss": "0.1973", "code": "public LindenConfig setWebapp(String webapp) { this.webapp = webappthis; }"}
+{"time": "2021-01-20 05:46:20.039923", "n_pass": [50, 7, 3], "score": "0.9449", "loss": "0.1973", "code": " LindenConfig setWebapp(String webapp) { this.webapp = webappthis; }"}
+{"time": "2021-01-20 05:46:21.338873", "n_pass": [51, 8, 4], "score": "0.9449", "loss": "0.1973", "code": "LindenConfig setWebapp(String webapp) { this.webapp = webappthis; }"}
+{"time": "2021-01-20 05:46:23.363591", "n_pass": [60, 9, 5], "score": "0.9152", "loss": "0.2068", "code": "LindenConfig setWebapp(String webapp) { this.webapp =this; }"}
+{"time": "2021-01-20 05:46:29.128580", "n_pass": [92, 11, 6], "score": "0.9152", "loss": "0.2068", "code": "LindenConfig setWebapp(String webapp) { this.webapp =this;}"}
+{"time": "2021-01-20 05:46:31.518789", "n_pass": [101, 12, 7], "score": "0.9152", "loss": "0.2068", "code": "LindenConfig setWebapp(String webapp){ this.webapp =this;}"}
+{"time": "2021-01-20 05:46:32.842700", "n_pass": [103, 13, 8], "score": "0.9152", "loss": "0.2068", "code": "LindenConfig setWebapp(String webapp){this.webapp =this;}"}
+{"time": "2021-01-20 05:46:34.139257", "n_pass": [105, 14, 9], "score": "0.8264", "loss": "0.9654", "code": "LindenConfig setWebapp(String webapp){thiswebapp =this;}"}
+{"time": "2021-01-20 05:46:35.828144", "n_pass": [107, 15, 10], "score": "0.8264", "loss": "0.9654", "code": "LindenConfig setWebapp(String webapp){thiswebapp=this;}"}
+{"time": "2021-01-20 05:46:39.526791", "n_pass": [121, 17, 11], "score": "0.7985", "loss": "0.4868", "code": "LindenConfig setWebapp(String webapp){webapp=this;}"}
+
+Minimal simplified code:
+LindenConfig setWebapp(String webapp){webapp=this;}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/service/http.directory/src/main/java/org/kaazing/gateway/service/http/directory/cachecontrol/PatternCacheControl_setDirective.java
+method_name = setDirective
+method_body = public void setDirective(Directive directive, String value) { directives.put(directive, value); }
+
+topk path-contexts:
+[0.1985] directive,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),directive
+[0.1178] directive,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),directives
+[0.1020] directive,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),put
+[0.0858] directive,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr2),directive
+[0.0565] directive,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr4),put
+[0.0535] directive,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),directives
+[0.0435] directive,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr3),value
+[0.0393] directive,(VariableDeclaratorId0)^(Parameter)_(ClassOrInterfaceType1),directive
+[0.0300] directive,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),value
+[0.0286] string,(ClassOrInterfaceType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(MethodCallExpr0)_(NameExpr0),directives
+
+topk terminals:
+['directive', 'directive', 'directive', 'directives', 'directive', 'put', 'directive', 'directive', 'directive', 'put', 'directive', 'directives', 'directive', 'value', 'directive', 'directive', 'directive', 'value', 'string', 'directives']
+

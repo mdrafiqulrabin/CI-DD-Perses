@@ -1,0 +1,26 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/tomcat/util/descriptor/web/ContextTransaction_toString.java
+method_name = toString
+method_body = @Override public String toString() { StringBuilder sb = new StringBuilder("Transaction["); sb.append("]"); return (sb.toString()); }
+predict, score, loss = toString, 0.9997356534004211, 0.00028761065914295614
+
+Trace of simplified code(s):
+{"time": "2020-12-26 22:10:19.502214", "n_pass": [1, 1, 1], "score": "0.9997", "loss": "0.0003", "code": "@Override public String toString() { StringBuilder sb = new StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-26 22:10:22.728972", "n_pass": [22, 2, 2], "score": "0.9997", "loss": "0.0003", "code": "@Override public String toString() { new StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-26 22:10:28.704588", "n_pass": [44, 4, 3], "score": "0.9998", "loss": "0.0002", "code": "@Override public String toString() {StringBuilder(\"Transaction[\"); sb.append(\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-26 22:10:31.547949", "n_pass": [47, 5, 4], "score": "0.9747", "loss": "0.0451", "code": "@Override public String toString() {StringBuilder(\"Transaction[\"); (\"]\"); return (sb.toString()); }"}
+{"time": "2020-12-26 22:10:34.303957", "n_pass": [51, 6, 5], "score": "0.6063", "loss": "1.1267", "code": "@Override public String toString() {StringBuilder(\"Transaction[\"); (\"]\"); return (sb); }"}
+{"time": "2020-12-26 22:10:44.756012", "n_pass": [90, 9, 6], "score": "0.6063", "loss": "1.1267", "code": "@Override  String toString() {StringBuilder(\"Transaction[\"); (\"]\"); return (sb); }"}
+{"time": "2020-12-26 22:10:47.566608", "n_pass": [91, 10, 7], "score": "0.6063", "loss": "1.1267", "code": "@Override String toString() {StringBuilder(\"Transaction[\"); (\"]\"); return (sb); }"}
+{"time": "2020-12-26 22:10:51.489420", "n_pass": [104, 11, 8], "score": "0.5987", "loss": "1.2672", "code": "@Override String toString() {StringBuilder(\"Transaction[\"); (\"]\"); (sb); }"}
+{"time": "2020-12-26 22:10:59.242132", "n_pass": [154, 12, 9], "score": "0.5987", "loss": "1.2672", "code": "@Override String toString() {StringBuilder(\"Transaction[\"); (\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:04.161368", "n_pass": [163, 13, 10], "score": "0.5987", "loss": "1.2672", "code": "@Override String toString(){StringBuilder(\"Transaction[\"); (\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:06.934724", "n_pass": [165, 14, 11], "score": "0.4488", "loss": "1.1715", "code": "@Override String toString(){(\"Transaction[\"); (\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:09.721966", "n_pass": [168, 15, 12], "score": "0.4015", "loss": "1.2407", "code": "@Override String toString(){(\"[\"); (\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:12.518560", "n_pass": [169, 16, 13], "score": "0.47", "loss": "1.0467", "code": "@Override String toString(){(\"\"); (\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:15.297845", "n_pass": [173, 17, 14], "score": "0.47", "loss": "1.0467", "code": "@Override String toString(){(\"\");(\"]\"); (sb);}"}
+{"time": "2020-12-26 22:11:20.865295", "n_pass": [180, 19, 15], "score": "0.47", "loss": "1.0467", "code": "@Override String toString(){(\"\");(\"]\");(sb);}"}
+
+Minimal simplified code:
+@Override String toString(){("");("]");(sb);}
+

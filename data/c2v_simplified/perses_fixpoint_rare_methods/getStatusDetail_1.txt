@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-federation/openam-federation-library/src/main/java/com/sun/identity/saml/protocol/Status_getStatusDetail.java
+method_name = getStatusDetail
+method_body = public Element getStatusDetail() { return statusDetail; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:32:37.596039", "score": "0.4784", "loss": "1.1596", "code": "class T { public Element getStatusDetail() { return statusDetail; } }"}
+{"time": "2021-01-24 19:36:19.351418", "score": "0.4784", "loss": "1.1596", "code": "class T { Element getStatusDetail() { return statusDetail; } }"}
+
+Minimal simplified code:
+class T {
+       Element getStatusDetail() { return statusDetail; }
+}
+
+

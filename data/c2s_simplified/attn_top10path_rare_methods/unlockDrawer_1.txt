@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/MindorksOpenSource__android-mvvm-architecture/app/src/main/java/com/mindorks/framework/mvvm/ui/main/MainActivity_unlockDrawer.java
+method_name = unlockDrawer
+method_body = private void unlockDrawer() { if (mDrawer != null) { mDrawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED); } }
+
+topk path-contexts for sub-token: unlock
+[0.1090] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0884] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0507] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0408] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0367] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0347] m|drawer,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0280] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0265] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0248] m|drawer,NameExpr0|MethodCallExpr|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0190] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NullLiteralExpr1,null
+
+topk terminals for sub-token: unlock
+['void', 'METHOD_NAME', 'null', 'lock|mode|unlocked', 'METHOD_NAME', 'lock|mode|unlocked', 'null', 'set|drawer|lock|mode', 'void', 'lock|mode|unlocked', 'm|drawer', 'lock|mode|unlocked', 'METHOD_NAME', 'set|drawer|lock|mode', 'void', 'set|drawer|lock|mode', 'm|drawer', 'lock|mode|unlocked', 'METHOD_NAME', 'null']
+
+topk path-contexts for sub-token: drawer
+[0.0564] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NameExpr0,m|drawer
+[0.0518] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BinaryExpr:notEquals|NameExpr0,m|drawer
+[0.0471] m|drawer,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0432] void,VoidType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0429] null,NullLiteralExpr1|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0359] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0343] void,VoidType0|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr0,m|drawer
+[0.0342] METHOD_NAME,NameExpr1|MethodDeclaration|BlockStmt|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,set|drawer|lock|mode
+[0.0263] m|drawer,NameExpr0|MethodCallExpr|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+[0.0255] m|drawer,NameExpr0|BinaryExpr:notEquals|IfStmt|BlockStmt|ExpressionStmt|MethodCallExpr0|FieldAccessExpr2|NameExpr2,lock|mode|unlocked
+
+topk terminals for sub-token: drawer
+['void', 'm|drawer', 'METHOD_NAME', 'm|drawer', 'm|drawer', 'set|drawer|lock|mode', 'void', 'METHOD_NAME', 'null', 'set|drawer|lock|mode', 'void', 'set|drawer|lock|mode', 'void', 'm|drawer', 'METHOD_NAME', 'set|drawer|lock|mode', 'm|drawer', 'lock|mode|unlocked', 'm|drawer', 'lock|mode|unlocked']
+

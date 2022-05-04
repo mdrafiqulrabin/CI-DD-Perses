@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/Key_equals.java
+method_name = equals
+method_body = @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-21 11:58:07.767671", "score": "0.9989", "loss": "0.0013", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } Key that = (Key) o; return Objects.equals(index, that.index) && Objects.equals(type, that.type) && Objects.equals(id, that.id); } }"}
+{"time": "2020-12-21 11:59:06.361825", "score": "0.9896", "loss": "0.0133", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null || getClass() != o.getClass()) { return false; } } }"}
+{"time": "2020-12-21 11:59:27.540903", "score": "0.9158", "loss": "0.1291", "code": "class T { @Override public boolean equals(Object o) { if (this == o) { return true; } } }"}
+{"time": "2020-12-21 11:59:59.180733", "score": "0.952", "loss": "0.0674", "code": "class T { @Override public boolean equals(Object o) { if (this == o) return true; } }"}
+{"time": "2020-12-21 12:00:09.735773", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override public boolean equals(Object o) { if ( o) return true; } }"}
+{"time": "2020-12-21 12:00:30.797097", "score": "0.4139", "loss": "1.0971", "code": "class T { @Override boolean equals(Object o) { if ( o) return true; } }"}
+
+Minimal simplified code:
+class T {
+@Override        boolean equals(Object o) { if (        o)   return true;                                                                                                                                                                                                  }
+}
+
+

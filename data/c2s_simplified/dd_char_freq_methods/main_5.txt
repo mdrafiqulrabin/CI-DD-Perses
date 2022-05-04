@@ -1,0 +1,49 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/katharsis-project__katharsis-framework/katharsis-examples/jersey-example/src/main/java/io/katharsis/example/jersey/App_main.java
+method_name = main
+method_body = public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println("Press any key to close"); System.in.read(); server.shutdownNow(); }
+predict, score, loss = main, 0.99928206, 0.0009971377
+
+Trace of simplified code(s):
+{"time": "2020-12-27 23:50:08.681965", "n_pass": [1, 1, 1], "score": "0.9993", "loss": "0.001", "code": "public static void main(String[] args) throws IOException { final HttpServer server = GrizzlyHttpServerFactory.createHttpServer(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 23:50:10.035600", "n_pass": [9, 2, 2], "score": "0.9985", "loss": "0.0024", "code": "public static void main(String[] args) throws IOException { fier(BASE_URI, new JerseyApplication()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 23:50:11.395279", "n_pass": [37, 3, 3], "score": "0.9952", "loss": "0.0085", "code": "public static void main(String[] args) throws IOException { fier(BASE_URI, ntion()); System.out.println(\"Press any key to close\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 23:50:12.776015", "n_pass": [40, 4, 4], "score": "0.998", "loss": "0.0038", "code": "public static void main(String[] args) throws IOException { fier(BASE_URI, ntion()); System.out.println(\"Preose\"); System.in.read(); server.shutdownNow(); }"}
+{"time": "2020-12-27 23:50:14.159893", "n_pass": [42, 5, 5], "score": "0.9614", "loss": "0.0688", "code": "public static void main(String[] args) throws IOException { fier(BASE_URI, ntion()); System.out.println(\"Preose\"); System.inshutdownNow(); }"}
+{"time": "2020-12-27 23:50:15.531382", "n_pass": [44, 6, 6], "score": "0.7964", "loss": "0.3734", "code": "oid main(String[] args) throws IOException { fier(BASE_URI, ntion()); System.out.println(\"Preose\"); System.inshutdownNow(); }"}
+{"time": "2020-12-27 23:50:17.228295", "n_pass": [76, 7, 7], "score": "0.9456", "loss": "0.0962", "code": "oid main(String[] args) throws IOException { fier(BAStion()); System.out.println(\"Preose\"); System.inshutdownNow(); }"}
+{"time": "2020-12-27 23:50:18.552425", "n_pass": [78, 8, 8], "score": "0.9009", "loss": "0.1797", "code": "oid main(String[] args) throws IOException { fier(BAStion());out.println(\"Preose\"); System.inshutdownNow(); }"}
+{"time": "2020-12-27 23:50:21.285143", "n_pass": [82, 10, 9], "score": "0.7543", "loss": "0.365", "code": "oid main(String[] args) throws IOException { fier(BAStion());out.println(\"Preose\"); SshutdownNow(); }"}
+{"time": "2020-12-27 23:50:25.702293", "n_pass": [122, 13, 10], "score": "0.739", "loss": "0.3927", "code": "oid main(String[] args) throws IOException { fier(BAStion());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:27.777768", "n_pass": [128, 14, 11], "score": "0.8341", "loss": "0.2847", "code": "oid main(ng[] args) throws IOException { fier(BAStion());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:30.452172", "n_pass": [134, 16, 12], "score": "0.8383", "loss": "0.2764", "code": "oid main(ng[] args) throws IOption { fier(BAStion());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:31.790711", "n_pass": [135, 17, 13], "score": "0.8538", "loss": "0.2448", "code": "oid main(ng[] args) throws IOn { fier(BAStion());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:33.204599", "n_pass": [137, 18, 14], "score": "0.901", "loss": "0.1765", "code": "oid main(ng[] args) throws IOn { (BAStion());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:34.549412", "n_pass": [139, 19, 15], "score": "0.9233", "loss": "0.1222", "code": "oid main(ng[] args) throws IOn { (BAS());out.println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:35.925125", "n_pass": [141, 20, 16], "score": "0.8322", "loss": "0.244", "code": "oid main(ng[] args) throws IOn { (BAS());println(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:37.272017", "n_pass": [142, 21, 17], "score": "0.5655", "loss": "0.6734", "code": "oid main(ng[] args) throws IOn { (BAS());tln(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:42.057533", "n_pass": [197, 24, 18], "score": "0.6588", "loss": "0.5263", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Preose\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:45.041748", "n_pass": [200, 26, 19], "score": "0.6588", "loss": "0.5263", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Pree\"); SdownNow(); }"}
+{"time": "2020-12-27 23:50:46.384575", "n_pass": [203, 27, 20], "score": "0.8982", "loss": "0.1635", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Pree\");downNow(); }"}
+{"time": "2020-12-27 23:50:47.713572", "n_pass": [204, 28, 21], "score": "0.5852", "loss": "0.6703", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Pree\");wnNow(); }"}
+{"time": "2020-12-27 23:50:49.063217", "n_pass": [205, 29, 22], "score": "0.6438", "loss": "0.5629", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Pree\");Now(); }"}
+{"time": "2020-12-27 23:50:50.419401", "n_pass": [206, 30, 23], "score": "0.7169", "loss": "0.4159", "code": "oid main(ng[] args) throws IOn { (BAS());n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:50:51.754406", "n_pass": [210, 31, 24], "score": "0.8101", "loss": "0.2841", "code": "id main(ng[] args) throws IOn { (BAS());n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:50:53.082637", "n_pass": [211, 32, 25], "score": "0.8601", "loss": "0.203", "code": "d main(ng[] args) throws IOn { (BAS());n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:50:59.514769", "n_pass": [225, 36, 26], "score": "0.9566", "loss": "0.0642", "code": "d main(ng[] args) throws n { (BAS());n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:51:00.893887", "n_pass": [229, 37, 27], "score": "0.9287", "loss": "0.104", "code": "d main(ng[] args) throws n { (B());n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:51:02.265110", "n_pass": [230, 38, 28], "score": "0.9389", "loss": "0.1006", "code": "d main(ng[] args) throws n { (B);n(\"Pree\");w(); }"}
+{"time": "2020-12-27 23:51:03.624060", "n_pass": [234, 39, 29], "score": "0.8402", "loss": "0.371", "code": "d main(ng[] args) throws n { (B);n(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:06.085306", "n_pass": [245, 40, 30], "score": "0.3475", "loss": "1.6216", "code": "d main(ng args) throws n { (B);n(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:18.623619", "n_pass": [319, 46, 31], "score": "0.3475", "loss": "1.6216", "code": "d main(ng args)throws n { (B);n(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:19.977520", "n_pass": [327, 47, 32], "score": "0.3475", "loss": "1.6216", "code": "d main(ng args)throws n{ (B);n(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:21.335272", "n_pass": [329, 48, 33], "score": "0.3475", "loss": "1.6216", "code": "d main(ng args)throws n{(B);n(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:23.087441", "n_pass": [334, 49, 34], "score": "0.4112", "loss": "1.3577", "code": "d main(ng args)throws n{(B);(\"Pe\");w(); }"}
+{"time": "2020-12-27 23:51:24.420838", "n_pass": [337, 50, 35], "score": "0.3732", "loss": "1.27", "code": "d main(ng args)throws n{(B);(\"e\");w(); }"}
+{"time": "2020-12-27 23:51:25.758992", "n_pass": [338, 51, 36], "score": "0.5039", "loss": "1.0539", "code": "d main(ng args)throws n{(B);(\"\");w(); }"}
+{"time": "2020-12-27 23:51:27.109494", "n_pass": [346, 52, 37], "score": "0.5039", "loss": "1.0539", "code": "d main(ng args)throws n{(B);(\"\");w();}"}
+{"time": "2020-12-27 23:51:30.653742", "n_pass": [355, 53, 38], "score": "0.4792", "loss": "1.2439", "code": "d main(g args)throws n{(B);(\"\");w();}"}
+
+Minimal simplified code:
+d main(g args)throws n{(B);("");w();}
+

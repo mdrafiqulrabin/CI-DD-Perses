@@ -1,0 +1,32 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-services/src/java/org/sakaiproject/tool/assessment/osid/authz/impl/FunctionIteratorImpl_nextFunction.java
+method_name = nextFunction
+method_body = public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }
+predict, score, loss = nextFunction, 0.47785392, 1.1064124
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:56:37.377609", "n_pass": [1, 1, 1], "score": "0.4779", "loss": "1.1064", "code": "public Function nextFunction() throws AuthorizationException { try { return (Function) functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }"}
+{"time": "2021-01-20 05:56:39.100767", "n_pass": [50, 2, 2], "score": "0.6497", "loss": "1.3293", "code": "public Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw new AuthorizationException(e.getMessage()); } }"}
+{"time": "2021-01-20 05:56:40.454433", "n_pass": [56, 3, 3], "score": "0.8499", "loss": "1.0152", "code": "public Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw(e.getMessage()); } }"}
+{"time": "2021-01-20 05:56:42.836206", "n_pass": [100, 4, 4], "score": "0.9193", "loss": "2.7475", "code": "public Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw(e()); } }"}
+{"time": "2021-01-20 05:56:44.159460", "n_pass": [101, 5, 5], "score": "0.905", "loss": "0.7739", "code": "public Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw(e); } }"}
+{"time": "2021-01-20 05:56:45.487930", "n_pass": [105, 6, 6], "score": "0.905", "loss": "0.7739", "code": " Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw(e); } }"}
+{"time": "2021-01-20 05:56:46.825614", "n_pass": [106, 7, 7], "score": "0.905", "loss": "0.7739", "code": "Function nextFunction() throws AuthorizationException { try { return functionIter.next(); } catch (Exception e) { throw(e); } }"}
+{"time": "2021-01-20 05:56:48.896534", "n_pass": [116, 8, 8], "score": "0.9309", "loss": "0.956", "code": "Function nextFunction() throws AuthorizationException { try { functionIter.next(); } catch (Exception e) { throw(e); } }"}
+{"time": "2021-01-20 05:56:50.230510", "n_pass": [117, 9, 9], "score": "0.7881", "loss": "5.709", "code": "Function nextFunction() throws AuthorizationException { try { next(); } catch (Exception e) { throw(e); } }"}
+{"time": "2021-01-20 05:56:51.557139", "n_pass": [126, 10, 10], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction() throws AuthorizationException { try { next(); } catch (Exception e) {(e); } }"}
+{"time": "2021-01-20 05:56:58.698692", "n_pass": [190, 11, 11], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction() throws AuthorizationException { try { next(); } catch (Exception e) {(e);} }"}
+{"time": "2021-01-20 05:57:00.004598", "n_pass": [191, 12, 12], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction() throws AuthorizationException { try { next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:02.408103", "n_pass": [198, 13, 13], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException { try { next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:03.749111", "n_pass": [202, 14, 14], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{ try { next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:05.076330", "n_pass": [204, 15, 15], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try { next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:06.396676", "n_pass": [206, 16, 16], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{ next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:07.713135", "n_pass": [208, 17, 17], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{next(); } catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:09.042589", "n_pass": [213, 18, 18], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{next();} catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:10.372750", "n_pass": [215, 19, 19], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{next();}catch (Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:11.694361", "n_pass": [217, 20, 20], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{next();}catch(Exception e) {(e);}}"}
+{"time": "2021-01-20 05:57:13.012265", "n_pass": [223, 21, 21], "score": "0.5154", "loss": "6.7658", "code": "Function nextFunction()throws AuthorizationException{try{next();}catch(Exception e){(e);}}"}
+
+Minimal simplified code:
+Function nextFunction()throws AuthorizationException{try{next();}catch(Exception e){(e);}}
+

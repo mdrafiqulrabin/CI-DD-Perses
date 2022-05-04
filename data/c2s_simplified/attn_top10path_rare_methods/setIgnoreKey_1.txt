@@ -1,0 +1,50 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/chaokunyang__jkes/jkes-services/jkes-delete-connector/src/main/java/com/timeyang/jkes/delete/JkesDocumentDeleter_setIgnoreKey.java
+method_name = setIgnoreKey
+method_body = public Builder setIgnoreKey(boolean ignoreKey, Set<String> ignoreKeyTopics) { this.ignoreKey = ignoreKey; this.ignoreKeyTopics = ignoreKeyTopics; return this; }
+
+topk path-contexts for sub-token: set
+[0.1091] ignore|key,NameExpr2|FieldAccessExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0586] builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0522] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0402] builder,ClassOrInterfaceType0|MethodDeclaration|Parameter|PrimitiveType1,boolean
+[0.0386] ignore|key,NameExpr1|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0333] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0330] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0261] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0253] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|ExpressionStmt|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|ThisExpr0,this
+[0.0222] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+
+topk terminals for sub-token: set
+['ignore|key', 'this', 'builder', 'METHOD_NAME', 'this', 'ignore|key|topics', 'builder', 'boolean', 'ignore|key', 'this', 'boolean', 'ignore|key|topics', 'this', 'ignore|key', 'string', 'ignore|key|topics', 'this', 'this', 'boolean', 'ignore|key']
+
+topk path-contexts for sub-token: ignore
+[0.0544] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0516] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0436] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0355] builder,ClassOrInterfaceType0|MethodDeclaration|NameExpr1,METHOD_NAME
+[0.0286] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0283] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0253] this,ThisExpr0|FieldAccessExpr0|AssignExpr:assign|NameExpr1,ignore|key|topics
+[0.0240] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|key|topics
+[0.0221] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0217] ignore|key|topics,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+
+topk terminals for sub-token: ignore
+['this', 'ignore|key|topics', 'boolean', 'ignore|key|topics', 'string', 'ignore|key|topics', 'builder', 'METHOD_NAME', 'boolean', 'ignore|key', 'this', 'ignore|key', 'this', 'ignore|key|topics', 'METHOD_NAME', 'ignore|key|topics', 'string', 'ignore|key', 'ignore|key|topics', 'ignore|key|topics']
+
+topk path-contexts for sub-token: key
+[0.0772] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|key|topics
+[0.0558] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0508] METHOD_NAME,NameExpr1|MethodDeclaration|Parameter|VariableDeclaratorId0,ignore|key
+[0.0474] boolean,PrimitiveType1|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0429] ignore|key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0428] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0399] this,ThisExpr0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+[0.0319] ignore|key,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0319] string,ClassOrInterfaceType0|ClassOrInterfaceType|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key
+[0.0319] ignore|key|topics,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|AssignExpr:assign0|FieldAccessExpr0|NameExpr2,ignore|key|topics
+
+topk terminals for sub-token: key
+['METHOD_NAME', 'ignore|key|topics', 'boolean', 'ignore|key|topics', 'METHOD_NAME', 'ignore|key', 'boolean', 'ignore|key', 'ignore|key', 'ignore|key|topics', 'string', 'ignore|key|topics', 'this', 'ignore|key|topics', 'ignore|key', 'ignore|key', 'string', 'ignore|key', 'ignore|key|topics', 'ignore|key|topics']
+

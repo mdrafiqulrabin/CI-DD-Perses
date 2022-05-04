@@ -1,0 +1,18 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/SimpleMonitorService_run.java
+method_name = run
+method_body = public void run() { try { draw(); } catch (Throwable t) { logger.error("Unexpected error occur at draw stat chart, cause: " + t.getMessage(), t); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-28 22:21:58.823878", "score": "0.9248", "loss": "0.1011", "code": "class T { public void run() { try { draw(); } catch (Throwable t) { logger.error(\"Unexpected error occur at draw stat chart, cause: \" + t.getMessage(), t); } } }"}
+{"time": "2020-12-28 22:28:38.681495", "score": "0.5904", "loss": "0.5536", "code": "class T { public void run() { try { draw(); } catch (Throwable t) { logger.error( ); } } }"}
+{"time": "2020-12-28 22:29:18.965074", "score": "0.6754", "loss": "0.5709", "code": "class T { public void run() { try { } catch (Throwable t) { logger.error( ); } } }"}
+{"time": "2020-12-28 22:29:59.483694", "score": "0.6754", "loss": "0.5709", "code": "class T { void run() { try { } catch (Throwable t) { logger.error( ); } } }"}
+
+Minimal simplified code:
+class T {
+       void run() { try {         } catch (Throwable t) {                                                                                         } }
+}
+
+

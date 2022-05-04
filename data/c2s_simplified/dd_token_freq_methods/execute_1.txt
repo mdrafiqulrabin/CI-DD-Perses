@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/StartTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/start").toString()); }
+predict, score, loss = execute, 0.9991124, 0.0014739101
+
+Trace of simplified code(s):
+{"time": "2020-12-27 03:36:55.970858", "n_pass": [1, 1, 1], "score": "0.9991", "loss": "0.0015", "code": "@Override public void execute() throws BuildException { super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:36:57.302937", "n_pass": [20, 2, 2], "score": "0.9889", "loss": "0.0164", "code": "void execute() throws BuildException { super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:36:58.594886", "n_pass": [21, 3, 3], "score": "0.9736", "loss": "0.0389", "code": "void execute(){ super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:37:03.511318", "n_pass": [78, 5, 4], "score": "0.9736", "loss": "0.0389", "code": "void execute(){super.execute(); execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:37:06.088403", "n_pass": [84, 7, 5], "score": "0.9736", "loss": "0.0389", "code": "void execute(){super.execute();execute(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:37:07.374092", "n_pass": [85, 8, 6], "score": "0.9213", "loss": "0.1245", "code": "void execute(){super.execute();(createQueryString(\"/start\").toString()); }"}
+{"time": "2020-12-27 03:37:08.650353", "n_pass": [87, 9, 7], "score": "0.9606", "loss": "0.0582", "code": "void execute(){super.execute();((\"/start\").toString()); }"}
+{"time": "2020-12-27 03:37:09.925921", "n_pass": [89, 10, 8], "score": "0.9554", "loss": "0.0857", "code": "void execute(){super.execute();((\"\").toString()); }"}
+{"time": "2020-12-27 03:37:11.209545", "n_pass": [92, 11, 9], "score": "0.9494", "loss": "0.106", "code": "void execute(){super.execute();((\"\").toString); }"}
+{"time": "2020-12-27 03:37:14.486687", "n_pass": [110, 13, 10], "score": "0.9518", "loss": "0.0938", "code": "void execute(){super.execute();((\"\")); }"}
+{"time": "2020-12-27 03:37:18.368374", "n_pass": [137, 15, 11], "score": "0.9518", "loss": "0.0938", "code": "void execute(){super.execute();((\"\"));}"}
+
+Minimal simplified code:
+void execute(){super.execute();((""));}
+

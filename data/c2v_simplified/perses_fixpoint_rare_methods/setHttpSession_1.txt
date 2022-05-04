@@ -1,0 +1,15 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-core/src/main/java/com/iplanet/dpro/session/service/InternalSession_setHttpSession.java
+method_name = setHttpSession
+method_body = void setHttpSession(HttpSession hSession) { httpSession = hSession; }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 19:55:32.965570", "score": "0.3168", "loss": "1.6247", "code": "class T { void setHttpSession(HttpSession hSession) { httpSession = hSession; } }"}
+
+Minimal simplified code:
+class T { 
+void setHttpSession(HttpSession hSession) { httpSession = hSession; }
+}
+
+

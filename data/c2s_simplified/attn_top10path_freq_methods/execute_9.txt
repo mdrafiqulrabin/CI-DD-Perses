@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/java/org/apache/catalina/ant/SessionsTask_execute.java
+method_name = execute
+method_body = @Override public void execute() throws BuildException { super.execute(); execute(createQueryString("/sessions").toString()); }
+
+topk path-contexts for sub-token: execute
+[0.5008] super,SuperExpr0|MethodCallExpr|NameExpr2,execute
+[0.1106] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.1106] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0910] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0910] METHOD_NAME,NameExpr2|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,execute
+[0.0077] METHOD_NAME,NameExpr2|MethodDeclaration|ClassOrInterfaceType3,build|exception
+[0.0070] build|exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|MethodCallExpr1|NameExpr2,to|string
+[0.0070] to|string,NameExpr2|MethodCallExpr1|MethodCallExpr|NameExpr2,execute
+[0.0067] void,VoidType1|MethodDeclaration|ClassOrInterfaceType3,build|exception
+[0.0053] void,VoidType1|MethodDeclaration|NameExpr2,METHOD_NAME
+
+topk terminals for sub-token: execute
+['super', 'execute', 'build|exception', 'execute', 'build|exception', 'execute', 'METHOD_NAME', 'execute', 'METHOD_NAME', 'execute', 'METHOD_NAME', 'build|exception', 'build|exception', 'to|string', 'to|string', 'execute', 'void', 'build|exception', 'void', 'METHOD_NAME']
+

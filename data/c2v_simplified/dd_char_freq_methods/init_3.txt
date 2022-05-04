@@ -1,0 +1,62 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/tomcat/util/descriptor/TestLocalResolver_init.java
+method_name = init
+method_body = @Before public void init() { WEB_22_LOCAL = urlFor("resources/web-app_2_2.dtd"); WEB_31_LOCAL = urlFor("resources/web-app_3_1.xsd"); WEBCOMMON_31_LOCAL = urlFor("resources/web-common_3_1.xsd"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }
+predict, score, loss = init, 0.756347119808197, 0.3298738896846771
+
+Trace of simplified code(s):
+{"time": "2020-12-28 06:40:02.839845", "n_pass": [1, 1, 1], "score": "0.8115", "loss": "0.2495", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOCAL = urlFor(\"resources/web-app_3_1.xsd\"); WEBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:08.109737", "n_pass": [22, 3, 2], "score": "0.9297", "loss": "0.0873", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_22_PUBLIC, WEB_22_LOCAL); systemIds.put(XmlIdentifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:10.731121", "n_pass": [25, 4, 3], "score": "0.4923", "loss": "0.814", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_ntifiers.WEB_31_XSD, WEB_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:16.071016", "n_pass": [44, 6, 4], "score": "0.556", "loss": "0.6737", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOBCOMMON_31_LOCAL = urlFor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_B_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:19.120286", "n_pass": [51, 7, 5], "score": "0.6098", "loss": "0.5685", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resources/web-common_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_B_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:22.156973", "n_pass": [83, 8, 6], "score": "0.6098", "loss": "0.5685", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoummon_3_1.xsd\"); publicIds.put(XmlIdentifiers.WEB_B_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:24.775952", "n_pass": [84, 9, 7], "score": "0.6098", "loss": "0.5685", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIdentifiers.WEB_B_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:27.367905", "n_pass": [87, 10, 8], "score": "0.5237", "loss": "0.7425", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIEB_B_31_LOCAL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:29.999014", "n_pass": [88, 11, 9], "score": "0.5237", "loss": "0.7425", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOMMON_31_LOCAL, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:32.620789", "n_pass": [91, 12, 10], "score": "0.5237", "loss": "0.7425", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM, WEBCOMMON_31_LOCAL); }"}
+{"time": "2020-12-28 06:40:35.253370", "n_pass": [92, 13, 11], "score": "0.5217", "loss": "0.7474", "code": "@Before public void init() { WEB_22_LOCAL = urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:38.266790", "n_pass": [97, 14, 12], "score": "0.9256", "loss": "0.1014", "code": "@Before public void init() { WEB_urlFor(\"resources/web-app_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:40.879908", "n_pass": [99, 15, 13], "score": "0.9256", "loss": "0.1014", "code": "@Before public void init() { WEB_urlFor(\"resapp_2_2.dtd\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:43.504328", "n_pass": [100, 16, 14], "score": "0.9316", "loss": "0.0918", "code": "@Before public void init() { WEB_urlFor(\"res\"); WEB_31_LOor(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:46.539811", "n_pass": [136, 17, 15], "score": "0.9443", "loss": "0.0729", "code": "@Before public void init() { WEB_urlFor(\"res\"); WEB_3(\"resoud\"); publicIds.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:49.149954", "n_pass": [139, 18, 16], "score": "0.8496", "loss": "0.177", "code": "@Before public void init() { WEB_urlFor(\"res\"); WEB_3(\"resoud\"); Ids.put(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:51.744405", "n_pass": [140, 19, 17], "score": "0.8998", "loss": "0.1154", "code": "@Before public void init() { WEB_urlFor(\"res\"); WEB_3(\"resoud\"); t(XmlIL); systemIds.put(WEBCOM31_LOCAL); }"}
+{"time": "2020-12-28 06:40:56.958473", "n_pass": [146, 21, 18], "score": "0.8998", "loss": "0.1154", "code": "@Before public void init() { WEB_urlFor(\"res\"); WEB_3(\"resoud\"); t(XmlIL); systemIds.put(WEBCOMAL); }"}
+{"time": "2020-12-28 06:40:59.550576", "n_pass": [149, 22, 19], "score": "0.5512", "loss": "0.7159", "code": "@Befoblic void init() { WEB_urlFor(\"res\"); WEB_3(\"resoud\"); t(XmlIL); systemIds.put(WEBCOMAL); }"}
+{"time": "2020-12-28 06:41:02.944022", "n_pass": [154, 23, 20], "score": "0.5512", "loss": "0.7159", "code": "@Befoblic void init() { WlFor(\"res\"); WEB_3(\"resoud\"); t(XmlIL); systemIds.put(WEBCOMAL); }"}
+{"time": "2020-12-28 06:41:05.553320", "n_pass": [157, 24, 21], "score": "0.4605", "loss": "0.8534", "code": "@Befoblic void init() { WlFor(\"res\");(\"resoud\"); t(XmlIL); systemIds.put(WEBCOMAL); }"}
+{"time": "2020-12-28 06:41:10.773194", "n_pass": [164, 26, 22], "score": "0.4925", "loss": "0.7716", "code": "@Befoblic void init() { WlFor(\"res\");(\"resoud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:16.793859", "n_pass": [210, 28, 23], "score": "0.4925", "loss": "0.7716", "code": "@Boblic void init() { WlFor(\"res\");(\"resoud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:19.390590", "n_pass": [211, 29, 24], "score": "0.4925", "loss": "0.7716", "code": "@Blic void init() { WlFor(\"res\");(\"resoud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:21.981723", "n_pass": [212, 30, 25], "score": "0.4922", "loss": "0.7682", "code": "@Bc void init() { WlFor(\"res\");(\"resoud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:30.977128", "n_pass": [221, 33, 26], "score": "0.4923", "loss": "0.7752", "code": "@Bc void init() { WlFor(\"\");(\"resoud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:33.613186", "n_pass": [224, 34, 27], "score": "0.4923", "loss": "0.7752", "code": "@Bc void init() { WlFor(\"\");(\"rud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:41:57.904459", "n_pass": [294, 42, 28], "score": "0.4923", "loss": "0.7752", "code": "@Bc void init() { WlFo(\"\");(\"rud\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:42:00.530135", "n_pass": [300, 43, 29], "score": "0.4787", "loss": "0.8032", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(XmlIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:42:03.142949", "n_pass": [304, 44, 30], "score": "0.9957", "loss": "0.0046", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); systemIds.put(AL); }"}
+{"time": "2020-12-28 06:42:08.357974", "n_pass": [308, 46, 31], "score": "0.8608", "loss": "0.1521", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); stemIds.put(AL); }"}
+{"time": "2020-12-28 06:42:10.950407", "n_pass": [309, 47, 32], "score": "0.8608", "loss": "0.1521", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); emIds.put(AL); }"}
+{"time": "2020-12-28 06:42:13.556700", "n_pass": [310, 48, 33], "score": "0.7982", "loss": "0.2287", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); Ids.put(AL); }"}
+{"time": "2020-12-28 06:42:16.164990", "n_pass": [311, 49, 34], "score": "0.898", "loss": "0.1093", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); s.put(AL); }"}
+{"time": "2020-12-28 06:42:18.766001", "n_pass": [312, 50, 35], "score": "0.9001", "loss": "0.1062", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); put(AL); }"}
+{"time": "2020-12-28 06:42:21.364047", "n_pass": [313, 51, 36], "score": "0.8485", "loss": "0.1672", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); t(AL); }"}
+{"time": "2020-12-28 06:42:23.953772", "n_pass": [315, 52, 37], "score": "0.8751", "loss": "0.135", "code": "@Bc void init() { WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:26.547150", "n_pass": [319, 53, 38], "score": "0.8452", "loss": "0.17", "code": "@c void init() { WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:29.536298", "n_pass": [322, 54, 39], "score": "0.5823", "loss": "0.8567", "code": "@c oid init() { WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:37.362773", "n_pass": [325, 57, 40], "score": "0.9311", "loss": "0.0754", "code": "@c oi init() { WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:41.591098", "n_pass": [333, 58, 41], "score": "0.9311", "loss": "0.0754", "code": "@c oi init(){ WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:44.200747", "n_pass": [335, 59, 42], "score": "0.9311", "loss": "0.0754", "code": "@c oi init(){WlFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:46.808935", "n_pass": [336, 60, 43], "score": "0.2364", "loss": "2.4201", "code": "@c oi init(){lFo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:49.416385", "n_pass": [337, 61, 44], "score": "0.7865", "loss": "0.2492", "code": "@c oi init(){Fo(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:52.021407", "n_pass": [338, 62, 45], "score": "0.8928", "loss": "0.1231", "code": "@c oi init(){o(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:42:54.628946", "n_pass": [339, 63, 46], "score": "0.619", "loss": "0.5748", "code": "@c oi init(){(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:43:00.666312", "n_pass": [357, 65, 47], "score": "0.4626", "loss": "0.9071", "code": "@c i init(){(\"\");(\"r\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:43:11.283518", "n_pass": [413, 67, 48], "score": "0.4373", "loss": "0.9623", "code": "@c i init(){(\"\");(\"\"); t(lIL); t(); }"}
+{"time": "2020-12-28 06:43:13.887519", "n_pass": [417, 68, 49], "score": "0.4373", "loss": "0.9623", "code": "@c i init(){(\"\");(\"\");t(lIL); t(); }"}
+{"time": "2020-12-28 06:43:26.899499", "n_pass": [425, 73, 50], "score": "0.4373", "loss": "0.9623", "code": "@c i init(){(\"\");(\"\");t(lIL);t(); }"}
+{"time": "2020-12-28 06:43:29.537612", "n_pass": [430, 74, 51], "score": "0.4373", "loss": "0.9623", "code": "@c i init(){(\"\");(\"\");t(lIL);t();}"}
+
+Minimal simplified code:
+@c i init(){("");("");t(lIL);t();}
+

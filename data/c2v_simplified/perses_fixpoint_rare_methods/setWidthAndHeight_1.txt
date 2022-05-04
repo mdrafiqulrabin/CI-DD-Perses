@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/EleTeam__Shop-for-JavaWeb/src/main/java/com/iwc/shop/modules/act/service/ActTaskService_setWidthAndHeight.java
+method_name = setWidthAndHeight
+method_body = private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put("width", activity.getWidth()); activityInfo.put("height", activity.getHeight()); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 20:57:27.507271", "score": "0.3766", "loss": "1.6652", "code": "class T { private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); activityInfo.put(\"height\", activity.getHeight()); } }"}
+{"time": "2021-01-24 21:00:29.920278", "score": "0.5506", "loss": "1.6055", "code": "class T { private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\", activity.getWidth()); } }"}
+{"time": "2021-01-24 21:05:05.776998", "score": "0.4634", "loss": "1.6511", "code": "class T { private void setWidthAndHeight(ActivityImpl activity, Map<String, Object> activityInfo) { activityInfo.put(\"width\" ); } }"}
+{"time": "2021-01-24 21:05:45.470446", "score": "0.4626", "loss": "1.6947", "code": "class T { private void setWidthAndHeight(ActivityImpl activity, Map activityInfo) { activityInfo.put(\"width\" ); } }"}
+{"time": "2021-01-24 21:06:25.320324", "score": "0.4626", "loss": "1.6947", "code": "class T { void setWidthAndHeight(ActivityImpl activity, Map activityInfo) { activityInfo.put(\"width\" ); } }"}
+
+Minimal simplified code:
+class T {
+        void setWidthAndHeight(ActivityImpl activity, Map                 activityInfo) { activityInfo.put("width"                     );                                                   }
+}
+
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/dronekit__dronekit-android/ClientLib/src/main/java/com/o3dr/services/android/lib/drone/mission/item/complex/SurveyDetail_setOverlap.java
+method_name = setOverlap
+method_body = public void setOverlap(double overlap) { this.overlap = overlap; }
+
+topk path-contexts:
+[0.2617] overlap,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),overlap
+[0.1893] overlap,(NameExpr2)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),overlap
+[0.1494] double,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),overlap
+[0.1201] overlap,(VariableDeclaratorId0)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),overlap
+[0.0943] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(FieldAccessExpr0)_(NameExpr2),overlap
+[0.0497] double,(PrimitiveType1)^(Parameter)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),overlap
+[0.0321] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ExpressionStmt)_(AssignExpr:assign0)_(NameExpr1),overlap
+[0.0229] this,(ThisExpr0)^(FieldAccessExpr0)_(NameExpr2),overlap
+[0.0178] this,(ThisExpr0)^(FieldAccessExpr0)^(AssignExpr:assign)_(NameExpr1),overlap
+[0.0166] void,(VoidType0)^(MethodDeclaration)_(Parameter)_(VariableDeclaratorId0),overlap
+
+topk terminals:
+['overlap', 'overlap', 'overlap', 'overlap', 'double', 'overlap', 'overlap', 'overlap', 'METHOD_NAME', 'overlap', 'double', 'overlap', 'METHOD_NAME', 'overlap', 'this', 'overlap', 'this', 'overlap', 'void', 'overlap']
+

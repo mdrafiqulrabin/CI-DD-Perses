@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/rakam-io__rakam/rakam-parser/src/main/java/com/facebook/presto/sql/RakamExpressionFormatter_visitCharLiteral.java
+method_name = visitCharLiteral
+method_body = @Override protected String visitCharLiteral(CharLiteral node, Void context) { return "CHAR " + formatStringLiteral(node.getValue()); }
+predict, score, loss = visitCharLiteral, 0.4464840888977051, 2.000187635421753
+
+Trace of simplified code(s):
+{"time": "2021-01-20 08:06:13.280060", "n_pass": [1, 1, 1], "score": "0.4465", "loss": "2.0002", "code": "@Override protected String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:18.521371", "n_pass": [20, 3, 2], "score": "0.2576", "loss": "3.3244", "code": "String visitCharLiteral(CharLiteral node, Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:28.510385", "n_pass": [91, 5, 3], "score": "0.2576", "loss": "3.3244", "code": "String visitCharLiteral(CharLiteral node,Void context) { return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:31.151054", "n_pass": [95, 6, 4], "score": "0.2576", "loss": "3.3244", "code": "String visitCharLiteral(CharLiteral node,Void context){ return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:33.768147", "n_pass": [97, 7, 5], "score": "0.2576", "loss": "3.3244", "code": "String visitCharLiteral(CharLiteral node,Void context){return \"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:36.789921", "n_pass": [99, 8, 6], "score": "0.2576", "loss": "3.3244", "code": "String visitCharLiteral(CharLiteral node,Void context){return\"CHAR \" + formatStringLiteral(node.getValue()); }"}
+{"time": "2021-01-20 08:06:42.014945", "n_pass": [104, 10, 7], "score": "0.3703", "loss": "2.3311", "code": "String visitCharLiteral(CharLiteral node,Void context){return\"CHAR \" +(node.getValue()); }"}
+{"time": "2021-01-20 08:06:44.618239", "n_pass": [106, 11, 8], "score": "0.3695", "loss": "2.3227", "code": "String visitCharLiteral(CharLiteral node,Void context){return\"CHAR \" +(node()); }"}
+{"time": "2021-01-20 08:06:47.218982", "n_pass": [107, 12, 9], "score": "0.3695", "loss": "2.3223", "code": "String visitCharLiteral(CharLiteral node,Void context){return\"CHAR \" +(node); }"}
+{"time": "2021-01-20 08:06:51.467837", "n_pass": [125, 13, 10], "score": "0.3741", "loss": "1.9214", "code": "String visitCharLiteral(CharLiteral node,Void context){return\" \" +(node); }"}
+{"time": "2021-01-20 08:06:57.252470", "n_pass": [161, 14, 11], "score": "0.3741", "loss": "1.9214", "code": "String visitCharLiteral(CharLiteral node,Void context){return\" \" +(node);}"}
+{"time": "2021-01-20 08:07:04.099941", "n_pass": [179, 16, 12], "score": "0.3741", "loss": "1.9214", "code": "String visitCharLiteral(CharLiteral node,Void context){return\" \"+(node);}"}
+
+Minimal simplified code:
+String visitCharLiteral(CharLiteral node,Void context){return" "+(node);}
+

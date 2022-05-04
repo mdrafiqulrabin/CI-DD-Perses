@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/recommendation/UpdateRecommendationsService_onCreate.java
+method_name = onCreate
+method_body = @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 12:22:18.408829", "score": "1.0", "loss": "0.0", "code": "class T { @Override public void onCreate() { super.onCreate(); if (mNotifManager == null) { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } } }"}
+{"time": "2020-12-29 12:24:45.274164", "score": "0.9994", "loss": "0.0006", "code": "class T { @Override public void onCreate() { mNotifManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); } }"}
+{"time": "2020-12-29 12:27:18.497460", "score": "0.9986", "loss": "0.0022", "code": "class T { @Override public void onCreate() { mNotifManager = (NotificationManager) getSystemService( ); } }"}
+{"time": "2020-12-29 12:28:37.767645", "score": "0.9986", "loss": "0.0022", "code": "class T { @Override void onCreate() { mNotifManager = (NotificationManager) getSystemService( ); } }"}
+{"time": "2020-12-29 12:32:58.884298", "score": "0.8144", "loss": "0.3174", "code": "class T { @Override void onCreate() { mNotifManager = (NotificationManager) getSystemService ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        void onCreate()                                                { mNotifManager = (NotificationManager) getSystemService                              ; }
+}
+
+

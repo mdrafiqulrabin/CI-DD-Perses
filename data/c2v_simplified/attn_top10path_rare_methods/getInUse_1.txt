@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/modules/tomcat-lite/java/org/apache/tomcat/lite/http/HttpConnector_getInUse.java
+method_name = getInUse
+method_body = public int getInUse() { return inUse.get(); }
+
+topk path-contexts:
+[0.3305] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),inuse
+[0.3303] int,(PrimitiveType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),inuse
+[0.1472] int,(PrimitiveType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+[0.1164] int,(PrimitiveType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),get
+[0.0532] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),get
+[0.0223] inuse,(NameExpr0)^(MethodCallExpr)_(NameExpr2),get
+
+topk terminals:
+['METHOD_NAME', 'inuse', 'int', 'inuse', 'int', 'METHOD_NAME', 'int', 'get', 'METHOD_NAME', 'get', 'inuse', 'get']
+

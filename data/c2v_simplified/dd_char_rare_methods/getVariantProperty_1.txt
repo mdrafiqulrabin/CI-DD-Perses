@@ -1,0 +1,23 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/util/block/VariantPagingHelper_getVariantProperty.java
+method_name = getVariantProperty
+method_body = public PropertyEnum getVariantProperty(int pageNum) { return this.pageNumToProperty.get(pageNum); }
+predict, score, loss = getVariantProperty, 0.4637834429740906, 1.6677348613739014
+
+Trace of simplified code(s):
+{"time": "2021-01-23 16:57:24.196832", "n_pass": [1, 1, 1], "score": "0.4638", "loss": "1.6677", "code": "public PropertyEnum getVariantProperty(int pageNum) { return this.pageNumToProperty.get(pageNum); }"}
+{"time": "2021-01-23 16:57:30.624389", "n_pass": [25, 3, 2], "score": "0.5028", "loss": "1.6428", "code": "public PropertyEnum getVariantProperty(int pageNum) { returnToProperty.get(pageNum); }"}
+{"time": "2021-01-23 16:57:33.227024", "n_pass": [26, 4, 3], "score": "0.5367", "loss": "1.5418", "code": "public PropertyEnum getVariantProperty(int pageNum) { returnt(pageNum); }"}
+{"time": "2021-01-23 16:57:39.245416", "n_pass": [47, 6, 4], "score": "0.5367", "loss": "1.5418", "code": " PropertyEnum getVariantProperty(int pageNum) { returnt(pageNum); }"}
+{"time": "2021-01-23 16:57:45.686445", "n_pass": [55, 8, 5], "score": "0.5695", "loss": "1.4357", "code": " PropertyEnum getVariantProperty(int pageNum) { t(pageNum); }"}
+{"time": "2021-01-23 16:57:54.668496", "n_pass": [87, 11, 6], "score": "0.5737", "loss": "1.4342", "code": " PropertyEnum getVariantProperty(int pageNum) { t(pNum); }"}
+{"time": "2021-01-23 16:57:57.261992", "n_pass": [88, 12, 7], "score": "0.5863", "loss": "1.343", "code": " PropertyEnum getVariantProperty(int pageNum) { t(p); }"}
+{"time": "2021-01-23 16:58:16.061574", "n_pass": [145, 18, 8], "score": "0.5863", "loss": "1.343", "code": "PropertyEnum getVariantProperty(int pageNum) { t(p); }"}
+{"time": "2021-01-23 16:58:54.223577", "n_pass": [170, 31, 9], "score": "0.3869", "loss": "2.2052", "code": "PropertyEnum getVariantProperty(t pageNum) { t(p); }"}
+{"time": "2021-01-23 16:59:04.612200", "n_pass": [177, 35, 10], "score": "0.4137", "loss": "2.0817", "code": "PropertyEnum getVariantProperty(t pageNum) {(p); }"}
+{"time": "2021-01-23 16:59:52.193158", "n_pass": [248, 51, 11], "score": "0.4137", "loss": "2.0817", "code": "PropertyEnum getVariantProperty(t pageNum) {(p);}"}
+{"time": "2021-01-23 17:00:51.848806", "n_pass": [291, 71, 12], "score": "0.4137", "loss": "2.0817", "code": "PropertyEnum getVariantProperty(t pageNum){(p);}"}
+
+Minimal simplified code:
+PropertyEnum getVariantProperty(t pageNum){(p);}
+

@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/codefollower__Tomcat-Research/test/org/apache/catalina/tribes/demos/CoordinationDemo_main.java
+method_name = main
+method_body = public static void main(String[] args) throws Exception { CoordinationDemo demo = new CoordinationDemo(); run(args, demo); }
+
+topk path-contexts for sub-token: main
+[0.2187] args,VariableDeclaratorId0|Parameter|ArrayBracketPair2,[]
+[0.1578] args,VariableDeclaratorId0|Parameter|MethodDeclaration|ClassOrInterfaceType3,exception
+[0.1263] args,NameExpr1|MethodCallExpr|NameExpr3,run
+[0.0966] args,VariableDeclaratorId0|Parameter|ClassOrInterfaceType1,string
+[0.0629] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,run
+[0.0411] args,NameExpr1|MethodCallExpr|NameExpr2,demo
+[0.0290] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr2,demo
+[0.0246] string,ClassOrInterfaceType1|Parameter|ArrayBracketPair2,[]
+[0.0191] args,VariableDeclaratorId0|Parameter|MethodDeclaration|BlockStmt|ExpressionStmt|VariableDeclarationExpr|VariableDeclarator|VariableDeclaratorId0,demo
+[0.0166] exception,ClassOrInterfaceType3|MethodDeclaration|BlockStmt|ExpressionStmt|MethodCallExpr0|NameExpr3,run
+
+topk terminals for sub-token: main
+['args', '[]', 'args', 'exception', 'args', 'run', 'args', 'string', 'args', 'run', 'args', 'demo', 'args', 'demo', 'string', '[]', 'args', 'demo', 'exception', 'run']
+

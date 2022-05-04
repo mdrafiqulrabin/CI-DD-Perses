@@ -1,0 +1,21 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/transport/ws/src/main/java/org/kaazing/gateway/transport/ws/bridge/filter/WsCheckAliveFilter_onPreRemove.java
+method_name = onPreRemove
+method_body = @Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); }
+predict, score, loss = onPreRemove, 0.42957454919815063, 1.028591275215149
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:56:49.929115", "n_pass": [1, 1, 1], "score": "0.4296", "loss": "1.0286", "code": "@Override public void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); }"}
+{"time": "2021-01-20 06:57:03.109976", "n_pass": [45, 6, 2], "score": "0.4296", "loss": "1.0286", "code": "@Override void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) { filterChain.getSession().getConfig().setReaderIdleTime(0); }"}
+{"time": "2021-01-20 06:57:06.137031", "n_pass": [54, 7, 3], "score": "0.5285", "loss": "0.6668", "code": "@Override void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime(0); }"}
+{"time": "2021-01-20 06:57:08.767244", "n_pass": [58, 8, 4], "score": "0.5234", "loss": "0.6688", "code": "@Override void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime; }"}
+{"time": "2021-01-20 06:57:11.385925", "n_pass": [60, 9, 5], "score": "0.6886", "loss": "0.3854", "code": " void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime; }"}
+{"time": "2021-01-20 06:57:16.696177", "n_pass": [97, 10, 6], "score": "0.6886", "loss": "0.3854", "code": "void onPreRemove(IoFilterChain filterChain, String name, NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime; }"}
+{"time": "2021-01-20 06:57:19.728357", "n_pass": [105, 11, 7], "score": "0.6886", "loss": "0.3854", "code": "void onPreRemove(IoFilterChain filterChain,String name, NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime; }"}
+{"time": "2021-01-20 06:57:22.353117", "n_pass": [110, 12, 8], "score": "0.6886", "loss": "0.3854", "code": "void onPreRemove(IoFilterChain filterChain,String name,NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime; }"}
+{"time": "2021-01-20 06:57:27.331683", "n_pass": [161, 13, 9], "score": "0.6886", "loss": "0.3854", "code": "void onPreRemove(IoFilterChain filterChain,String name,NextFilter nextFilter) {getSession().getConfig().setReaderIdleTime;}"}
+{"time": "2021-01-20 06:57:30.776646", "n_pass": [178, 14, 10], "score": "0.6886", "loss": "0.3854", "code": "void onPreRemove(IoFilterChain filterChain,String name,NextFilter nextFilter){getSession().getConfig().setReaderIdleTime;}"}
+
+Minimal simplified code:
+void onPreRemove(IoFilterChain filterChain,String name,NextFilter nextFilter){getSession().getConfig().setReaderIdleTime;}
+

@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/basiclti/tsugi-util/src/java/org/tsugi/casa/objects/Original_getPropagate.java
+method_name = getPropagate
+method_body = @JsonProperty("propagate") public Boolean getPropagate() { return propagate; }
+predict, score, loss = getPropagate, 0.37435165, 1.0232955
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:22:51.402215", "n_pass": [1, 1, 1], "score": "0.3744", "loss": "1.0233", "code": "@JsonProperty(\"propagate\") public Boolean getPropagate() { return propagate; }"}
+{"time": "2021-01-23 11:22:52.703243", "n_pass": [3, 2, 2], "score": "0.923", "loss": "0.1177", "code": "an getPropagate() { return propagate; }"}
+{"time": "2021-01-23 11:23:10.366919", "n_pass": [94, 12, 3], "score": "0.8479", "loss": "0.1972", "code": "n getPropagate() { return propagate; }"}
+{"time": "2021-01-23 11:23:16.167843", "n_pass": [110, 13, 4], "score": "0.8479", "loss": "0.1972", "code": "n getPropagate(){ return propagate; }"}
+{"time": "2021-01-23 11:23:17.442428", "n_pass": [112, 14, 5], "score": "0.8479", "loss": "0.1972", "code": "n getPropagate(){return propagate; }"}
+{"time": "2021-01-23 11:23:51.592191", "n_pass": [168, 36, 6], "score": "0.8479", "loss": "0.1972", "code": "n getPropagate(){return propagate;}"}
+
+Minimal simplified code:
+n getPropagate(){return propagate;}
+

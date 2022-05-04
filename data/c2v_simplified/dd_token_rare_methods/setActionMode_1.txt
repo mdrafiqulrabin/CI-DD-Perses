@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/ui/bean/delivery/DeliveryBean_setActionMode.java
+method_name = setActionMode
+method_body = private void setActionMode(int actionMode) { this.actionMode = actionMode; }
+predict, score, loss = setActionMode, 0.3427821099758148, 1.1626203060150146
+
+Trace of simplified code(s):
+{"time": "2021-01-20 07:00:51.893922", "n_pass": [1, 1, 1], "score": "0.3428", "loss": "1.1626", "code": "private void setActionMode(int actionMode) { this.actionMode = actionMode; }"}
+{"time": "2021-01-20 07:00:54.878036", "n_pass": [20, 2, 2], "score": "0.3428", "loss": "1.1626", "code": "void setActionMode(int actionMode) { this.actionMode = actionMode; }"}
+{"time": "2021-01-20 07:01:02.076889", "n_pass": [50, 4, 3], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode) { actionMode = actionMode; }"}
+{"time": "2021-01-20 07:01:13.025567", "n_pass": [77, 7, 4], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode) { actionMode =actionMode; }"}
+{"time": "2021-01-20 07:01:15.627605", "n_pass": [80, 8, 5], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode) { actionMode =actionMode;}"}
+{"time": "2021-01-20 07:01:19.041433", "n_pass": [90, 9, 6], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode){ actionMode =actionMode;}"}
+{"time": "2021-01-20 07:01:21.639419", "n_pass": [92, 10, 7], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode){actionMode =actionMode;}"}
+{"time": "2021-01-20 07:01:24.238174", "n_pass": [94, 11, 8], "score": "0.2993", "loss": "1.2286", "code": "void setActionMode(int actionMode){actionMode=actionMode;}"}
+{"time": "2021-01-20 07:01:26.818742", "n_pass": [95, 12, 9], "score": "0.2531", "loss": "2.1653", "code": "void setActionMode(int actionMode){actionModeactionMode;}"}
+
+Minimal simplified code:
+void setActionMode(int actionMode){actionModeactionMode;}
+

@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/googlesamples__androidtv-Leanback/app/src/main/java/com/example/android/tvleanback/ui/SettingsActivity_onCreate.java
+method_name = onCreate
+method_body = @Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }
+predict, score, loss = onCreate, 1.0, 0.0
+
+Trace of simplified code(s):
+{"time": "2020-12-26 21:56:50.267820", "n_pass": [1, 1, 1], "score": "1.0", "loss": "0.0", "code": "@Override protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-26 21:56:52.943232", "n_pass": [20, 2, 2], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); }"}
+{"time": "2020-12-26 21:56:55.642614", "n_pass": [26, 3, 3], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(Rfragment); }"}
+{"time": "2020-12-26 21:56:58.762396", "n_pass": [53, 4, 4], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { onCreate(savedInstanceState); setContentView(Rfragment); }"}
+{"time": "2020-12-26 21:57:07.332471", "n_pass": [89, 6, 5], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { onCreate(); setContentView(Rfragment); }"}
+{"time": "2020-12-26 21:57:10.033528", "n_pass": [92, 7, 6], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { onCreate();setContentView(Rfragment); }"}
+{"time": "2020-12-26 21:57:12.717211", "n_pass": [94, 8, 7], "score": "1.0", "loss": "0.0", "code": " void onCreate(Bundle savedInstanceState) { onCreate();setContentView(); }"}
+{"time": "2020-12-26 21:57:15.393711", "n_pass": [97, 9, 8], "score": "1.0", "loss": "0.0", "code": "void onCreate(Bundle savedInstanceState) { onCreate();setContentView(); }"}
+{"time": "2020-12-26 21:57:19.105846", "n_pass": [106, 10, 9], "score": "1.0", "loss": "0.0", "code": "void onCreate(Bundle savedInstanceState){ onCreate();setContentView(); }"}
+{"time": "2020-12-26 21:57:21.782228", "n_pass": [108, 11, 10], "score": "1.0", "loss": "0.0", "code": "void onCreate(Bundle savedInstanceState){onCreate();setContentView(); }"}
+{"time": "2020-12-26 21:57:26.103567", "n_pass": [135, 12, 11], "score": "1.0", "loss": "0.0", "code": "void onCreate(Bundle savedInstanceState){onCreate();setContentView();}"}
+
+Minimal simplified code:
+void onCreate(Bundle savedInstanceState){onCreate();setContentView();}
+

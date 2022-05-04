@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+predict, score, loss = execute, 0.9927454590797424, 0.008417012169957161
+
+Trace of simplified code(s):
+{"time": "2020-12-28 08:21:58.533036", "n_pass": [1, 1, 1], "score": "0.9908", "loss": "0.0113", "code": "@Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:01.194216", "n_pass": [10, 2, 2], "score": "0.9166", "loss": "0.0957", "code": "@Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:03.863565", "n_pass": [41, 3, 3], "score": "0.7699", "loss": "0.3075", "code": "id execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:09.567113", "n_pass": [77, 5, 4], "score": "0.4722", "loss": "0.8318", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:17.522992", "n_pass": [82, 8, 5], "score": "0.8842", "loss": "0.1981", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = (Metadata) tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:20.175182", "n_pass": [84, 9, 6], "score": "0.7327", "loss": "0.3741", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata =  tuple.getValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:22.806389", "n_pass": [85, 10, 7], "score": "0.9669", "loss": "0.0525", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ValueByField(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:25.435326", "n_pass": [86, 11, 8], "score": "0.9738", "loss": "0.042", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ld(\"metadata\", tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:28.063021", "n_pass": [89, 12, 9], "score": "0.9642", "loss": "0.064", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ld(\"metadata\", tuplees(url, metadata, Status.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:30.709870", "n_pass": [91, 13, 10], "score": "0.9645", "loss": "0.0647", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ld(\"metadata\", tuplees(url, meatus.FETCHED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:33.326965", "n_pass": [92, 14, 11], "score": "0.9787", "loss": "0.0376", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ld(\"metadata\", tuplees(url, meED)); _collector.ack(tuple); }"}
+{"time": "2020-12-28 08:22:35.951118", "n_pass": [94, 15, 12], "score": "0.809", "loss": "0.3191", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Metadata = ld(\"metadata\", tuplees(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:22:44.211506", "n_pass": [103, 18, 13], "score": "0.647", "loss": "0.5739", "code": "id execute(Tuple tuple) { S = tuple.getStringByField(\"url\"); Meld(\"metadata\", tuplees(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:22:47.230470", "n_pass": [112, 19, 14], "score": "0.4366", "loss": "1.5384", "code": "id execute(Tuple tuple) { SgetStringByField(\"url\"); Meld(\"metadata\", tuplees(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:22:49.829051", "n_pass": [113, 20, 15], "score": "0.4366", "loss": "1.5384", "code": "id execute(Tuple tuple) { SByField(\"url\"); Meld(\"metadata\", tuplees(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:22:52.852825", "n_pass": [144, 21, 16], "score": "0.4366", "loss": "1.5384", "code": "id execute(Tuple tuple) {ield(\"url\"); Meld(\"metadata\", tuplees(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:23:00.747757", "n_pass": [151, 24, 17], "score": "0.353", "loss": "1.8562", "code": "id execute(Tuple tuple) {ield(\"url\"); Meld(\"metadata\", es(url, meED)); _col(tuple); }"}
+{"time": "2020-12-28 08:23:03.374075", "n_pass": [153, 25, 18], "score": "0.5384", "loss": "1.0663", "code": "id execute(Tuple tuple) {ield(\"url\"); Meld(\"metadata\", es(urED)); _col(tuple); }"}
+{"time": "2020-12-28 08:23:06.020502", "n_pass": [155, 26, 19], "score": "0.3788", "loss": "1.5498", "code": "id execute(Tuple tuple) {ield(\"url\"); Meld(\"metadata\", es(urED));(tuple); }"}
+{"time": "2020-12-28 08:23:17.676998", "n_pass": [205, 30, 20], "score": "0.284", "loss": "1.8769", "code": "id execute(Tuple tuple) {ield(\"url\"); Meld(\"metadata\", es(urED));(le); }"}
+{"time": "2020-12-28 08:23:38.031251", "n_pass": [227, 37, 21], "score": "0.398", "loss": "1.3233", "code": "id execute(Tuple tuple) {ield(\"url\"); ld(\"metadata\", es(urED));(le); }"}
+{"time": "2020-12-28 08:23:45.876757", "n_pass": [233, 40, 22], "score": "0.573", "loss": "0.9402", "code": "id execute(Tuple tuple) {ield(\"url\"); ld(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:24:03.535621", "n_pass": [252, 46, 23], "score": "0.3495", "loss": "1.6106", "code": "id execute(Tuple tuple) {id(\"url\"); ld(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:24:30.896521", "n_pass": [337, 55, 24], "score": "0.4648", "loss": "1.187", "code": "id execute(Tuple tuple) {i(\"url\"); ld(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:24:41.365229", "n_pass": [345, 59, 25], "score": "0.4648", "loss": "1.187", "code": "id execute(Tuple tuple) {i(\"url\");ld(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:24:43.971703", "n_pass": [346, 60, 26], "score": "0.1889", "loss": "2.2629", "code": "id execute(Tuple tuple) {i(\"url\");d(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:25:10.087079", "n_pass": [366, 70, 27], "score": "0.2486", "loss": "1.7956", "code": "d execute(Tuple tuple) {i(\"url\");d(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:25:42.554654", "n_pass": [389, 81, 28], "score": "0.2486", "loss": "1.7956", "code": "d execute(Tuple tuple){i(\"url\");d(\"metadata\",(urED));(le); }"}
+{"time": "2020-12-28 08:26:16.533949", "n_pass": [413, 94, 29], "score": "0.2836", "loss": "1.5607", "code": "d execute(Tuple tuple){i(\"url\");d(\"metadata\",(ur));(le); }"}
+{"time": "2020-12-28 08:27:18.842489", "n_pass": [480, 116, 30], "score": "0.3749", "loss": "1.2397", "code": "d execute(Tuple tuple){i(\"url\");d(\"metadata\",(ur));(e); }"}
+{"time": "2020-12-28 08:27:21.467381", "n_pass": [483, 117, 31], "score": "0.3749", "loss": "1.2397", "code": "d execute(Tuple tuple){i(\"url\");d(\"metadata\",(ur));(e);}"}
+{"time": "2020-12-28 08:28:25.205440", "n_pass": [531, 140, 32], "score": "0.2805", "loss": "1.5637", "code": "d execute(Tuple tuple){i(\"url\");d(\"metadata\",(r));(e);}"}
+
+Minimal simplified code:
+d execute(Tuple tuple){i("url");d("metadata",(r));(e);}
+

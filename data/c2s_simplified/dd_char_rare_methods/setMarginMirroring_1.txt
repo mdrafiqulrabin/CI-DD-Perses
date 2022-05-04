@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/samigo/samigo-app/src/java/org/sakaiproject/tool/assessment/pdf/itext/HTMLWorker_setMarginMirroring.java
+method_name = setMarginMirroring
+method_body = public boolean setMarginMirroring(boolean marginMirroring) { return true; }
+predict, score, loss = setMarginMirroring, 0.47218275, 1.5002272
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:37:46.413691", "n_pass": [1, 1, 1], "score": "0.4722", "loss": "1.5002", "code": "public boolean setMarginMirroring(boolean marginMirroring) { return true; }"}
+{"time": "2021-01-23 11:37:48.058510", "n_pass": [20, 2, 2], "score": "0.4481", "loss": "1.5494", "code": "olean setMarginMirroring(boolean marginMirroring) { return true; }"}
+{"time": "2021-01-23 11:37:50.998465", "n_pass": [41, 4, 3], "score": "0.485", "loss": "1.6805", "code": "n setMarginMirroring(boolean marginMirroring) { return true; }"}
+{"time": "2021-01-23 11:38:57.277008", "n_pass": [234, 44, 4], "score": "0.485", "loss": "1.6806", "code": "n setMarginMirroring(boolean marginMirroring){ return true; }"}
+{"time": "2021-01-23 11:38:58.562888", "n_pass": [236, 45, 5], "score": "0.485", "loss": "1.6805", "code": "n setMarginMirroring(boolean marginMirroring){return true; }"}
+{"time": "2021-01-23 11:39:06.310106", "n_pass": [249, 51, 6], "score": "0.485", "loss": "1.6805", "code": "n setMarginMirroring(boolean marginMirroring){return true;}"}
+
+Minimal simplified code:
+n setMarginMirroring(boolean marginMirroring){return true;}
+

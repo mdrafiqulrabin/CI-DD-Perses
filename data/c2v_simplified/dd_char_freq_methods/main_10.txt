@@ -1,0 +1,38 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/apache__incubator-dubbo-ops/dubbo-monitor-simple/src/main/java/com/alibaba/dubbo/monitor/simple/MonitorStarter_main.java
+method_name = main
+method_body = public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, "conf/dubbo.properties"); Main.main(args); }
+predict, score, loss = main, 0.9998675584793091, 0.00014709345123264939
+
+Trace of simplified code(s):
+{"time": "2020-12-28 11:19:14.298561", "n_pass": [1, 1, 1], "score": "0.9999", "loss": "0.0001", "code": "public static void main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-28 11:19:16.926936", "n_pass": [20, 2, 2], "score": "0.9996", "loss": "0.0004", "code": "d main(String[] args) { System.setProperty(Constants.DUBBO_PROPERTIES_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-28 11:19:19.544554", "n_pass": [23, 3, 3], "score": "0.9997", "loss": "0.0003", "code": "d main(String[] args) { System.setProperty(ConstantS_KEY, \"conf/dubbo.properties\"); Main.main(args); }"}
+{"time": "2020-12-28 11:19:22.183869", "n_pass": [44, 4, 4], "score": "0.9997", "loss": "0.0003", "code": "d main(String[] args) { System.setProperty(ConstantS_KEY, \"conf/durties\"); Main.main(args); }"}
+{"time": "2020-12-28 11:19:24.801195", "n_pass": [46, 5, 5], "score": "0.9989", "loss": "0.0012", "code": "d main(String[] args) { System.setProperty(ConstantS_KEY, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:27.405972", "n_pass": [51, 6, 6], "score": "0.9869", "loss": "0.022", "code": "d main(String[] args) { etProperty(ConstantS_KEY, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:30.012900", "n_pass": [52, 7, 7], "score": "0.9459", "loss": "0.2037", "code": "d main(String[] args) { ty(ConstantS_KEY, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:32.649286", "n_pass": [78, 8, 8], "score": "0.9459", "loss": "0.2037", "code": "d main(String[] args) { ty(CantS_KEY, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:35.256962", "n_pass": [79, 9, 9], "score": "0.8995", "loss": "0.3152", "code": "d main(String[] args) { ty(C_KEY, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:37.843238", "n_pass": [80, 10, 10], "score": "0.8915", "loss": "0.3347", "code": "d main(String[] args) { ty(C, \"conf/durties\"); (args); }"}
+{"time": "2020-12-28 11:19:40.467276", "n_pass": [82, 11, 11], "score": "0.8915", "loss": "0.3347", "code": "d main(String[] args) { ty(C, \"cdurties\"); (args); }"}
+{"time": "2020-12-28 11:19:43.075707", "n_pass": [83, 12, 12], "score": "0.9921", "loss": "0.0117", "code": "d main(String[] args) { ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:19:46.095641", "n_pass": [89, 13, 13], "score": "0.8245", "loss": "0.2175", "code": "d main(Sg[] args) { ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:01.178070", "n_pass": [180, 17, 14], "score": "0.7687", "loss": "0.3225", "code": "d main(S[] args) { ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:03.770402", "n_pass": [182, 18, 15], "score": "0.7687", "loss": "0.3225", "code": "d main(S[]args) { ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:16.850109", "n_pass": [188, 23, 16], "score": "0.7687", "loss": "0.3225", "code": "d main(S[]args){ ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:19.456569", "n_pass": [190, 24, 17], "score": "0.7687", "loss": "0.3225", "code": "d main(S[]args){ty(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:22.052725", "n_pass": [191, 25, 18], "score": "0.7341", "loss": "0.3549", "code": "d main(S[]args){y(C, \"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:24.674960", "n_pass": [196, 26, 19], "score": "0.7341", "loss": "0.3549", "code": "d main(S[]args){y(C,\"ces\"); (args); }"}
+{"time": "2020-12-28 11:20:29.894563", "n_pass": [199, 28, 20], "score": "0.5851", "loss": "0.6693", "code": "d main(S[]args){y(C,\"cs\"); (args); }"}
+{"time": "2020-12-28 11:20:32.502085", "n_pass": [200, 29, 21], "score": "0.5382", "loss": "0.7037", "code": "d main(S[]args){y(C,\"c\"); (args); }"}
+{"time": "2020-12-28 11:20:35.095096", "n_pass": [204, 30, 22], "score": "0.5382", "loss": "0.7037", "code": "d main(S[]args){y(C,\"c\");(args); }"}
+{"time": "2020-12-28 11:20:37.694624", "n_pass": [206, 31, 23], "score": "0.9657", "loss": "0.0459", "code": "d main(S[]args){y(C,\"c\");(rgs); }"}
+{"time": "2020-12-28 11:20:40.327419", "n_pass": [207, 32, 24], "score": "0.6699", "loss": "0.4718", "code": "d main(S[]args){y(C,\"c\");(gs); }"}
+{"time": "2020-12-28 11:20:55.918882", "n_pass": [232, 37, 25], "score": "0.3828", "loss": "1.1074", "code": "d main(S[]args){y(C,\"\");(gs); }"}
+{"time": "2020-12-28 11:21:12.187835", "n_pass": [267, 42, 26], "score": "0.4116", "loss": "1.0195", "code": "d main(S[]args){y(C,\"\");(s); }"}
+{"time": "2020-12-28 11:21:14.799750", "n_pass": [270, 43, 27], "score": "0.4116", "loss": "1.0195", "code": "d main(S[]args){y(C,\"\");(s);}"}
+
+Minimal simplified code:
+d main(S[]args){y(C,"");(s);}
+

@@ -1,0 +1,13 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/OpenRock__OpenAM/openam-schema/openam-liberty-schema/src/main/java/com/sun/identity/liberty/ws/meta/jaxb/impl/EntitiesDescriptorTypeImpl_getEntityDescriptor.java
+method_name = getEntityDescriptor
+method_body = public java.util.List getEntityDescriptor() { return _getEntityDescriptor(); }
+
+topk path-contexts:
+[0.7117] java,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(ClassOrInterfaceType)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr1),getentitydescriptor
+[0.2544] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr1),getentitydescriptor
+[0.0339] java,(ClassOrInterfaceType0)^(ClassOrInterfaceType)^(ClassOrInterfaceType)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['java', 'getentitydescriptor', 'METHOD_NAME', 'getentitydescriptor', 'java', 'METHOD_NAME']
+

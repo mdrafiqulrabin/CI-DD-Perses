@@ -1,0 +1,16 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Piasy__AppRTC-Android/libjingle_peerconnection/src/main/java/org/webrtc/NetworkMonitorAutoDetect_getCurrentNetworkState.java
+method_name = getCurrentNetworkState
+method_body = public NetworkState getCurrentNetworkState() { return connectivityManagerDelegate.getNetworkState(); }
+
+topk path-contexts:
+[0.5148] connectivitymanagerdelegate,(NameExpr0)^(MethodCallExpr)_(NameExpr2),getnetworkstate
+[0.2169] networkstate,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getnetworkstate
+[0.0946] networkstate,(ClassOrInterfaceType0)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),connectivitymanagerdelegate
+[0.0694] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr0),connectivitymanagerdelegate
+[0.0652] METHOD_NAME,(NameExpr1)^(MethodDeclaration)_(BlockStmt)_(ReturnStmt)_(MethodCallExpr0)_(NameExpr2),getnetworkstate
+[0.0391] networkstate,(ClassOrInterfaceType0)^(MethodDeclaration)_(NameExpr1),METHOD_NAME
+
+topk terminals:
+['connectivitymanagerdelegate', 'getnetworkstate', 'networkstate', 'getnetworkstate', 'networkstate', 'connectivitymanagerdelegate', 'METHOD_NAME', 'connectivitymanagerdelegate', 'METHOD_NAME', 'getnetworkstate', 'networkstate', 'METHOD_NAME']
+

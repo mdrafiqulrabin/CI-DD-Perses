@@ -1,0 +1,17 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/Glitchfiend__BiomesOPlenty/src/main/java/biomesoplenty/common/util/block/VariantPagingHelper_getVariantProperty.java
+method_name = getVariantProperty
+method_body = public PropertyEnum getVariantProperty(int pageNum) { return this.pageNumToProperty.get(pageNum); }
+
+Trace of simplified code(s):
+
+{"time": "2021-01-24 16:36:24.026152", "score": "0.4638", "loss": "1.6677", "code": "class T { public PropertyEnum getVariantProperty(int pageNum) { return this.pageNumToProperty.get(pageNum); } }"}
+{"time": "2021-01-24 16:39:26.376250", "score": "0.5957", "loss": "1.2682", "code": "class T { public PropertyEnum getVariantProperty(int pageNum) { return ; } }"}
+{"time": "2021-01-24 16:40:45.599280", "score": "0.5957", "loss": "1.2682", "code": "class T { PropertyEnum getVariantProperty(int pageNum) { return ; } }"}
+
+Minimal simplified code:
+class T {
+       PropertyEnum getVariantProperty(int pageNum) { return                                    ; }
+}
+
+

@@ -1,0 +1,35 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/server.spi/src/main/java/org/kaazing/gateway/server/spi/security/LoginResultCallback_setLoginResult.java
+method_name = setLoginResult
+method_body = public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException("A Login Result already exists in this callback and cannot be set again."); } }
+predict, score, loss = setLoginResult, 0.47101846, 1.0800811
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:10:53.233623", "n_pass": [1, 1, 1], "score": "0.471", "loss": "1.0801", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login Result already exists in this callback and cannot be set again.\"); } }"}
+{"time": "2021-01-20 06:10:54.579820", "n_pass": [25, 2, 2], "score": "0.4899", "loss": "1.1179", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login  callback and cannot be set again.\"); } }"}
+{"time": "2021-01-20 06:10:55.922238", "n_pass": [26, 3, 3], "score": "0.5874", "loss": "0.8948", "code": "public final void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login  again.\"); } }"}
+{"time": "2021-01-20 06:10:57.258841", "n_pass": [47, 4, 4], "score": "0.5874", "loss": "0.8948", "code": "void setLoginResult(LoginResult loginResult) { if (!this.loginResult.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login  again.\"); } }"}
+{"time": "2021-01-20 06:10:58.957237", "n_pass": [89, 5, 5], "score": "0.6696", "loss": "0.8089", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null, loginResult)) { throw new UnsupportedOperationException(\"A Login  again.\"); } }"}
+{"time": "2021-01-20 06:11:01.947241", "n_pass": [96, 7, 6], "score": "0.7911", "loss": "0.6262", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null, loginResult)) {  UnsupportedOperationException(\"A Login  again.\"); } }"}
+{"time": "2021-01-20 06:11:03.260004", "n_pass": [99, 8, 7], "score": "0.7081", "loss": "0.9255", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null, loginResult)) {  UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:05.301065", "n_pass": [113, 9, 8], "score": "0.5489", "loss": "1.8572", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(nullloginResult)) {  UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:10.052072", "n_pass": [168, 10, 9], "score": "0.6777", "loss": "1.2515", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)) {  UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:11.364050", "n_pass": [170, 11, 10], "score": "0.6777", "loss": "1.2515", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){  UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:12.687661", "n_pass": [172, 12, 11], "score": "0.6777", "loss": "1.2515", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){ UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:14.005043", "n_pass": [173, 13, 12], "score": "0.6777", "loss": "1.2515", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){UnsupportedOperationException(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:15.319841", "n_pass": [174, 14, 13], "score": "0.4776", "loss": "1.9603", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){(\"A again.\"); } }"}
+{"time": "2021-01-20 06:11:16.640144", "n_pass": [177, 15, 14], "score": "0.3565", "loss": "2.4347", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){(\" again.\"); } }"}
+{"time": "2021-01-20 06:11:17.958605", "n_pass": [178, 16, 15], "score": "0.5718", "loss": "1.3088", "code": "void setLoginResult(LoginResult loginResult) { if (!this.compareAndSet(null)){(\".\"); } }"}
+{"time": "2021-01-20 06:11:20.009638", "n_pass": [191, 17, 16], "score": "0.5718", "loss": "1.3088", "code": "void setLoginResult(LoginResult loginResult){ if (!this.compareAndSet(null)){(\".\"); } }"}
+{"time": "2021-01-20 06:11:21.329458", "n_pass": [193, 18, 17], "score": "0.5718", "loss": "1.3088", "code": "void setLoginResult(LoginResult loginResult){if (!this.compareAndSet(null)){(\".\"); } }"}
+{"time": "2021-01-20 06:11:22.641236", "n_pass": [195, 19, 18], "score": "0.5718", "loss": "1.3088", "code": "void setLoginResult(LoginResult loginResult){if(!this.compareAndSet(null)){(\".\"); } }"}
+{"time": "2021-01-20 06:11:25.289069", "n_pass": [199, 21, 19], "score": "0.289", "loss": "2.3142", "code": "void setLoginResult(LoginResult loginResult){if(!thiscompareAndSet(null)){(\".\"); } }"}
+{"time": "2021-01-20 06:11:26.955729", "n_pass": [202, 22, 20], "score": "0.3476", "loss": "1.8491", "code": "void setLoginResult(LoginResult loginResult){if(!thiscompareAndSet()){(\".\"); } }"}
+{"time": "2021-01-20 06:11:30.319822", "n_pass": [224, 24, 21], "score": "0.4053", "loss": "1.8002", "code": "void setLoginResult(LoginResult loginResult){if(!compareAndSet()){(\".\"); } }"}
+{"time": "2021-01-20 06:11:32.384684", "n_pass": [247, 25, 22], "score": "0.2779", "loss": "2.4398", "code": "void setLoginResult(LoginResult loginResult){if(compareAndSet()){(\".\"); } }"}
+{"time": "2021-01-20 06:11:36.812003", "n_pass": [282, 27, 23], "score": "0.2779", "loss": "2.4398", "code": "void setLoginResult(LoginResult loginResult){if(compareAndSet()){(\".\");} }"}
+{"time": "2021-01-20 06:11:38.125215", "n_pass": [283, 28, 24], "score": "0.2779", "loss": "2.4398", "code": "void setLoginResult(LoginResult loginResult){if(compareAndSet()){(\".\");}}"}
+
+Minimal simplified code:
+void setLoginResult(LoginResult loginResult){if(compareAndSet()){(".");}}
+

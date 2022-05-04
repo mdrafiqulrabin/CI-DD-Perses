@@ -1,0 +1,22 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/cloud-content/impl/src/main/java/coza/opencollab/sakai/cloudcontent/BlobStoreFileSystemHandler_deleteContainerIfEmpty.java
+method_name = deleteContainerIfEmpty
+method_body = private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }
+predict, score, loss = deleteContainerIfEmpty, 0.4757763, 1.6435585
+
+Trace of simplified code(s):
+{"time": "2021-01-20 05:55:43.286781", "n_pass": [1, 1, 1], "score": "0.4758", "loss": "1.6436", "code": "private void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-20 05:55:46.287495", "n_pass": [44, 3, 2], "score": "0.4758", "loss": "1.6436", "code": "void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore().deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-20 05:55:47.611467", "n_pass": [54, 4, 3], "score": "0.4338", "loss": "1.7119", "code": "void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore.deleteContainerIfEmpty(container); } }"}
+{"time": "2021-01-20 05:55:54.670052", "n_pass": [100, 7, 4], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container) { if (deleteEmptyContainers) { getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:55:56.721822", "n_pass": [113, 8, 5], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){ if (deleteEmptyContainers) { getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:55:58.043414", "n_pass": [115, 9, 6], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if (deleteEmptyContainers) { getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:55:59.362440", "n_pass": [117, 10, 7], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if(deleteEmptyContainers) { getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:56:00.686488", "n_pass": [121, 11, 8], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if(deleteEmptyContainers){ getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:56:02.003725", "n_pass": [123, 12, 9], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if(deleteEmptyContainers){getBlobStore.deleteContainerIfEmpty(); } }"}
+{"time": "2021-01-20 05:56:06.052848", "n_pass": [150, 14, 10], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if(deleteEmptyContainers){getBlobStore.deleteContainerIfEmpty();} }"}
+{"time": "2021-01-20 05:56:07.385160", "n_pass": [151, 15, 11], "score": "0.347", "loss": "2.9764", "code": "void deleteContainerIfEmpty(String container){if(deleteEmptyContainers){getBlobStore.deleteContainerIfEmpty();}}"}
+
+Minimal simplified code:
+void deleteContainerIfEmpty(String container){if(deleteEmptyContainers){getBlobStore.deleteContainerIfEmpty();}}
+

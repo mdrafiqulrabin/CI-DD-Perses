@@ -1,0 +1,20 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/ouya__ouya-sdk-examples/Twine/ControllerExample/src/content/public/android/java/src/org/chromium/content/browser/ContentView_checkIsAlive.java
+method_name = checkIsAlive
+method_body = void checkIsAlive() throws IllegalStateException { mContentViewCore.checkIsAlive(); }
+predict, score, loss = checkIsAlive, 0.3296016752719879, 1.7890691757202148
+
+Trace of simplified code(s):
+{"time": "2021-01-23 23:00:51.901519", "n_pass": [1, 1, 1], "score": "0.3296", "loss": "1.7891", "code": "void checkIsAlive() throws IllegalStateException { mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:00:54.913900", "n_pass": [23, 2, 2], "score": "0.3225", "loss": "2.0206", "code": "void checkIsAlive() throws Illception { mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:01:03.247707", "n_pass": [45, 5, 3], "score": "0.3225", "loss": "2.0206", "code": "void checkIsAlive() throws Illon { mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:01:20.079961", "n_pass": [85, 11, 4], "score": "0.3913", "loss": "1.9994", "code": "void checkIsAlive() throws on { mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:01:58.304805", "n_pass": [164, 24, 5], "score": "0.2112", "loss": "2.9335", "code": "void checkIsAlive() throws n { mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:02:00.922283", "n_pass": [166, 25, 6], "score": "0.2112", "loss": "2.9335", "code": "void checkIsAlive() throws n{ mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:02:03.609744", "n_pass": [168, 26, 7], "score": "0.2112", "loss": "2.9335", "code": "void checkIsAlive() throws n{mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:03:01.752611", "n_pass": [206, 46, 8], "score": "0.2112", "loss": "2.9335", "code": "void checkIsAlive()throws n{mContentViewCore.checkIsAlive(); }"}
+{"time": "2021-01-23 23:05:10.395507", "n_pass": [315, 93, 9], "score": "0.2112", "loss": "2.9335", "code": "void checkIsAlive()throws n{mContentViewCore.checkIsAlive();}"}
+
+Minimal simplified code:
+void checkIsAlive()throws n{mContentViewCore.checkIsAlive();}
+

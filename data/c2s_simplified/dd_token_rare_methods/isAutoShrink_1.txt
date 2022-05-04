@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/kaazing__gateway/mina.core/core/src/main/java/org/apache/mina/core/buffer/AbstractIoBuffer_isAutoShrink.java
+method_name = isAutoShrink
+method_body = @Override public final boolean isAutoShrink() { return autoShrink && recapacityAllowed; }
+predict, score, loss = isAutoShrink, 0.49824923, 1.0304691
+
+Trace of simplified code(s):
+{"time": "2021-01-20 06:08:16.971542", "n_pass": [1, 1, 1], "score": "0.4982", "loss": "1.0305", "code": "@Override public final boolean isAutoShrink() { return autoShrink && recapacityAllowed; }"}
+{"time": "2021-01-20 06:08:18.597147", "n_pass": [8, 2, 2], "score": "0.5346", "loss": "0.811", "code": " boolean isAutoShrink() { return autoShrink && recapacityAllowed; }"}
+{"time": "2021-01-20 06:08:22.595579", "n_pass": [36, 4, 3], "score": "0.5346", "loss": "0.811", "code": "boolean isAutoShrink() { return autoShrink && recapacityAllowed; }"}
+{"time": "2021-01-20 06:08:24.940474", "n_pass": [44, 5, 4], "score": "0.6553", "loss": "0.7742", "code": "boolean isAutoShrink() { return autoShrink& recapacityAllowed; }"}
+{"time": "2021-01-20 06:08:30.615272", "n_pass": [70, 7, 5], "score": "0.6553", "loss": "0.7742", "code": "boolean isAutoShrink() { return autoShrink&recapacityAllowed; }"}
+{"time": "2021-01-20 06:08:31.898817", "n_pass": [73, 8, 6], "score": "0.6553", "loss": "0.7742", "code": "boolean isAutoShrink() { return autoShrink&recapacityAllowed;}"}
+{"time": "2021-01-20 06:08:33.910242", "n_pass": [80, 9, 7], "score": "0.6553", "loss": "0.7742", "code": "boolean isAutoShrink(){ return autoShrink&recapacityAllowed;}"}
+{"time": "2021-01-20 06:08:35.224736", "n_pass": [82, 10, 8], "score": "0.6553", "loss": "0.7742", "code": "boolean isAutoShrink(){return autoShrink&recapacityAllowed;}"}
+
+Minimal simplified code:
+boolean isAutoShrink(){return autoShrink&recapacityAllowed;}
+

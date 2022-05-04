@@ -1,0 +1,43 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/sakaiproject__sakai/msgcntr/messageforums-app/src/java/org/sakaiproject/tool/messageforums/PrivateMessagesTool_isSendEmail.java
+method_name = isSendEmail
+method_body = public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true; } else { sendEmail = false; } return sendEmail; }
+predict, score, loss = isSendEmail, 0.46003482, 1.6663554
+
+Trace of simplified code(s):
+{"time": "2021-01-23 11:05:14.891926", "n_pass": [1, 1, 1], "score": "0.46", "loss": "1.6664", "code": "public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true; } else { sendEmail = false; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:19.230905", "n_pass": [26, 4, 2], "score": "0.4585", "loss": "1.7172", "code": "public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptional() && getBooleanEmailOut())) { sendEmail = true;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:22.264309", "n_pass": [32, 6, 3], "score": "0.4518", "loss": "1.6123", "code": "public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptionat())) { sendEmail = true;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:25.302382", "n_pass": [52, 8, 4], "score": "0.5877", "loss": "1.0388", "code": "public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways() || (isEmailCopyOptionat())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:29.653974", "n_pass": [61, 11, 5], "score": "0.4569", "loss": "2.2225", "code": "public boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways(lCopyOptionat())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:40.607958", "n_pass": [100, 19, 6], "score": "0.4569", "loss": "2.2225", "code": " boolean isSendEmail() { boolean sendEmail; if (isEmailCopyAlways(lCopyOptionat())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:47.866700", "n_pass": [109, 24, 7], "score": "0.4671", "loss": "1.6647", "code": " boolean isSendEmail() { boolean sendEmail; if (isEmailways(lCopyOptionat())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:49.178175", "n_pass": [111, 25, 8], "score": "0.5492", "loss": "1.6401", "code": " boolean isSendEmail() { boolean sendEmail; if (isEmailways(ptionat())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:50.495777", "n_pass": [112, 26, 9], "score": "0.6689", "loss": "1.1964", "code": " boolean isSendEmail() { boolean sendEmail; if (isEmailways(t())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:56.514243", "n_pass": [123, 30, 10], "score": "0.6547", "loss": "1.2395", "code": " boolean isSendEmail() {an sendEmail; if (isEmailways(t())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:05:59.137124", "n_pass": [125, 32, 11], "score": "0.4762", "loss": "1.4534", "code": " boolean isSendEmail() {an sen; if (isEmailways(t())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:09.113245", "n_pass": [171, 39, 12], "score": "0.4762", "loss": "1.4534", "code": " boolean isSendEmail() {an sen; if (isElways(t())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:10.449436", "n_pass": [172, 40, 13], "score": "0.4762", "loss": "1.4534", "code": " boolean isSendEmail() {an sen; if (isEys(t())) { send;se; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:14.418360", "n_pass": [178, 43, 14], "score": "0.5038", "loss": "1.4334", "code": " boolean isSendEmail() {an sen; if (isEys(t())) { send; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:27.742838", "n_pass": [195, 52, 15], "score": "0.6697", "loss": "1.3327", "code": " boolean isSendEmail() {an ; if (isEys(t())) { send; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:30.368702", "n_pass": [200, 54, 16], "score": "0.5813", "loss": "0.9559", "code": " boolean isSendEmail() {an ; if (isEys()) { send; } return sendEmail; }"}
+{"time": "2021-01-23 11:06:44.797492", "n_pass": [222, 64, 17], "score": "0.5824", "loss": "1.0562", "code": " boolean isSendEmail() {an ; if (ys()) { send; } return sendEmail; }"}
+{"time": "2021-01-23 11:07:01.547491", "n_pass": [297, 75, 18], "score": "0.5127", "loss": "1.4892", "code": " boolean isSendEmail() {an ; if (ys()) {end; } return sendEmail; }"}
+{"time": "2021-01-23 11:07:02.835130", "n_pass": [298, 76, 19], "score": "0.4806", "loss": "1.4471", "code": " boolean isSendEmail() {an ; if (ys()) {d; } return sendEmail; }"}
+{"time": "2021-01-23 11:07:04.126186", "n_pass": [299, 77, 20], "score": "0.5777", "loss": "1.0172", "code": " boolean isSendEmail() {an ; if (ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:15.807604", "n_pass": [311, 86, 21], "score": "0.5777", "loss": "1.0172", "code": "boolean isSendEmail() {an ; if (ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:45.864753", "n_pass": [396, 103, 22], "score": "0.5777", "loss": "1.0172", "code": "boolean isSendEmail(){an ; if (ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:49.769381", "n_pass": [399, 106, 23], "score": "0.5777", "loss": "1.0172", "code": "boolean isSendEmail(){an; if (ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:51.066485", "n_pass": [401, 107, 24], "score": "0.5777", "loss": "1.0172", "code": "boolean isSendEmail(){an;if (ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:52.355977", "n_pass": [404, 108, 25], "score": "0.5777", "loss": "1.0172", "code": "boolean isSendEmail(){an;if(ys()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:53.648062", "n_pass": [406, 109, 26], "score": "0.6502", "loss": "0.774", "code": "boolean isSendEmail(){an;if(s()) { } return sendEmail; }"}
+{"time": "2021-01-23 11:07:54.960755", "n_pass": [411, 110, 27], "score": "0.6502", "loss": "0.774", "code": "boolean isSendEmail(){an;if(s()){ } return sendEmail; }"}
+{"time": "2021-01-23 11:07:56.246974", "n_pass": [413, 111, 28], "score": "0.6502", "loss": "0.774", "code": "boolean isSendEmail(){an;if(s()){} return sendEmail; }"}
+{"time": "2021-01-23 11:07:57.546595", "n_pass": [415, 112, 29], "score": "0.6502", "loss": "0.774", "code": "boolean isSendEmail(){an;if(s()){}return sendEmail; }"}
+{"time": "2021-01-23 11:08:09.312613", "n_pass": [424, 121, 30], "score": "0.7229", "loss": "1.3414", "code": "boolean isSendEmail(){an;if(s()){}return sndEmail; }"}
+{"time": "2021-01-23 11:08:19.730227", "n_pass": [433, 129, 31], "score": "0.7229", "loss": "1.3414", "code": "boolean isSendEmail(){an;if(s()){}return sndEmail;}"}
+{"time": "2021-01-23 11:08:34.533737", "n_pass": [457, 137, 32], "score": "0.3697", "loss": "1.5855", "code": "boolean isSendEmail(){n;if(s()){}return sndEmail;}"}
+
+Minimal simplified code:
+boolean isSendEmail(){n;if(s()){}return sndEmail;}
+

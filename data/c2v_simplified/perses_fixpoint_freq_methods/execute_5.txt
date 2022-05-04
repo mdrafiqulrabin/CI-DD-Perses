@@ -1,0 +1,19 @@
+
+path = /scratch/rabin/data/code2vec/transforms/Methods_Test/java-large/test/DigitalPebble__storm-crawler/core/src/main/java/com/digitalpebble/stormcrawler/indexing/DummyIndexer_execute.java
+method_name = execute
+method_body = @Override public void execute(Tuple tuple) { String url = tuple.getStringByField("url"); Metadata metadata = (Metadata) tuple.getValueByField("metadata"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); }
+
+Trace of simplified code(s):
+
+{"time": "2020-12-29 04:19:34.530823", "score": "0.9667", "loss": "0.0361", "code": "class T { @Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\"); _collector.emit(com.digitalpebble.stormcrawler.Constants.StatusStreamName, tuple, new Values(url, metadata, Status.FETCHED)); _collector.ack(tuple); } }"}
+{"time": "2020-12-29 04:22:37.382883", "score": "0.999", "loss": "0.0012", "code": "class T { @Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); Metadata metadata = (Metadata) tuple.getValueByField(\"metadata\"); } }"}
+{"time": "2020-12-29 04:23:53.132572", "score": "0.9999", "loss": "0.0001", "code": "class T { @Override public void execute(Tuple tuple) { String url = tuple.getStringByField(\"url\"); } }"}
+{"time": "2020-12-29 04:25:49.332214", "score": "0.5597", "loss": "0.7167", "code": "class T { @Override public void execute(Tuple tuple) { String url ; } }"}
+{"time": "2020-12-29 04:27:08.788032", "score": "0.5597", "loss": "0.7167", "code": "class T { @Override void execute(Tuple tuple) { String url ; } }"}
+
+Minimal simplified code:
+class T {
+@Override        void execute(Tuple tuple) { String url                                ;                                                                                                                                                                                                                        }
+}
+
+
