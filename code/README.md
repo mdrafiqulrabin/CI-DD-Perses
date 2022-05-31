@@ -4,15 +4,15 @@ This folder contains the sample code for running [DD](https://doi.org/10.1109/32
 * Add [DD.py](https://github.com/mdrafiqulrabin/dd-py3) to `./CI_DD` folder (already given)
 * Add [perses_deploy.jar](https://github.com/perses-project/perses/releases/tag/v1.0) to `./CI_Perses` folder (already given)
 * Add [SVM_Handcrafted.model](https://github.com/mdrafiqulrabin/handcrafted-embeddings) to `./files` folder (already given with extractor)
-* Add a sample code to `./files/sample.java` file (already a sample `OnCreate` method is given)
+* Add a sample input program to `./files/sample.java` file (already a sample `OnCreate` method is given)
 
 # TODO
 * Update root path in `./CI_Perses/helper.py` and `./CI_Perses/perses_test_script.sh` files.
 
 # Run
-* To reduce sample code using DD:
+* To reduce sample input program using DD:
 > $ source run_dd.sh 
-* To reduce sample code using Perses:
+* To reduce sample input program using Perses:
 > $ source run_perses.sh
 
 # Results
@@ -21,7 +21,7 @@ This folder contains the sample code for running [DD](https://doi.org/10.1109/32
 
 # Remarks
 * To apply DD/Perses with other CI models, update `MODEL & EXTRACTOR` paths and `load_model & prediction_by_model` functions in `helper.py` file, according to the model.
-* To apply DD on any programming language dataset, update `is_parsable`, `code_to_deltas`, and `deltas_to_code` in the `./CI_DD/helper.py` file.
+* To apply DD on any programming language dataset, update `is_parsable`, `code_to_deltas`, and `deltas_to_code` in the `./CI_DD/helper.py` file, according to the language.
 
 # References
 * Delta Debugging (DD): https://www.st.cs.uni-saarland.de/dd/
