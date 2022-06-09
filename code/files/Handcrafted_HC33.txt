@@ -1,7 +1,0 @@
-
-Versions:
-- Python 3.7.7
-- Scikit-Learn 0.21.2
-
-Refs:
-https://github.com/mdrafiqulrabin/handcrafted-embeddings

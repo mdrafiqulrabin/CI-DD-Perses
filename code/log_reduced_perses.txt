@@ -19,10 +19,6 @@ Trace of reduced code(s): [preserving original prediction by model]
 
 Minimal reduced code:
 
-class T {
-                                                      {
-    super.onCreate(                  );
-}
-}
+class T { { super.onCreate( ); } }
 
 

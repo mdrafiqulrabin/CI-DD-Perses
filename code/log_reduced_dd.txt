@@ -2,33 +2,22 @@
 Sample code:
 
 class T {
-int f ( int n ) {
-    int fact = 1 ;
-    for ( int i = 2 ; i <= n ; i++ ) {
-        fact = fact * i ;
-    }
-    return fact;
+@Override protected void f(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.settings_fragment);
 }
 }
 
-Original prediction = get
+Original prediction = onCreate
 
 
 Trace of reduced code(s): [preserving original prediction by model]
 
-[1] class T { int f ( int n ) { int fact = 1 ; for ( int i = 2 ; i <= n ; i++ ) { fact = fact * i ; } return fact; } }
-[2] class T { int f ( int n ) { for ( int i = 2 ; i <= n ; i++ ) { fact = fact * i ; } return fact; } }
-[3] class T { int f ( int n ) { for ( int i = 2 ; ; i++ ) { fact = fact * i ; } return fact; } }
-[4] class T { int f ( ) { for ( int i = 2 ; ; i++ ) { fact = fact * i ; } return fact; } }
-[5] class T { int f ( ) { for ( i = 2 ; ; i++ ) { fact = fact * i ; } return fact; } }
-[6] class T { int f ( ) { for ( i = 2 ; ; ) { fact = fact * i ; } return fact; } }
-[7] class T { int f ( ) { for ( i = 2 ; ; ) { fact = fact ; } return fact; } }
-[8] class T { f ( ) { for ( i = 2 ; ; ) { fact = fact ; } return fact; } }
-[9] class T { f ( ) { for ( i = 2 ; ; ) { fact ; } return fact; } }
-[10] class T { f ( ) { for ( i = 2 ; ; ) { ; } return fact; } }
-[11] class T { f ( ) { for ( i = 2 ; ; ) { } return fact; } }
+[1] class T { @Override protected void f(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); } }
+[2] class T { f(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.settings_fragment); } }
+[3] class T { f(Bundle savedInstanceState) { setContentView(R.layout.settings_fragment); } }
 
 Minimal reduced code:
 
-class T { f ( ) { for ( i = 2 ; ; ) { } return fact; } }
+class T { f(Bundle savedInstanceState) { setContentView(R.layout.settings_fragment); } }
 
