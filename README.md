@@ -20,6 +20,16 @@ This repository contains the artifacts of our paper '[Syntax-Guided Program Redu
 
 ---
 
+## Provenance
+
+Syntax-Guided Program Reduction for Understanding Neural Code Intelligence Models.  
+Md Rafiqul Islam Rabin, Aftab Hussain, Mohammad Amin Alipour.  
+Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming (MAPS'22).  
+San Diego, California, USA.  
+DOI: https://doi.org/10.1145/3520312.3534869
+
+---
+
 ## Other Works:
 
 - [Understanding Neural Code Intelligence Through Program Simplification](https://doi.org/10.1145/3468264.3468539) [[arXiv](https://arxiv.org/abs/2106.03353), [GitHub](https://github.com/mdrafiqulrabin/SIVAND)]

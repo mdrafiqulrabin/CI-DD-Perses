@@ -18,3 +18,14 @@ The `summary_results.csv` file contains the summary results of all experiments, 
 * `final_tokens`: tokens in minimal program
 * `len_{initial/final/minimal/reduced}_tokens`: number of corresponding tokens
 * `per_removed_tokens`: percentage of removed tokens
+
+
+
+# References
+* Code2Vec: https://code2vec.org/
+
+> Uri Alon, Meital Zilberstein, Omer Levy, and Eran Yahav. 2019. Code2Vec: Learning Distributed Representations of Code. In Proceedings of the ACM on Programming Languages (PACMPL'19), Vol. 3, POPL, Article 40. DOI: https://doi.org/10.1145/3290353
+
+* Code2Seq: https://code2seq.org/
+
+> Uri Alon, Omer Levy, and Eran Yahav. 2019. Code2Seq: Generating Sequences from Structured Representations of Code. In International Conference on Learning Representations (ICLR'19). OpenReview.net. DOI: https://openreview.net/forum?id=H1gKYo09tX

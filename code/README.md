@@ -25,4 +25,9 @@ This folder contains the sample code for running [DD](https://doi.org/10.1109/32
 
 # References
 * Delta Debugging (DD): https://www.st.cs.uni-saarland.de/dd/
+
+> Andreas Zeller and Ralf Hildebrandt. 2002. Simplifying and Isolating Failure-Inducing Input. In IEEE Transactions on Software Engineering (TSE'02), Vol. 28, No. 2. IEEE Press, New York, NY, USA, 183–200. DOI: https://doi.org/10.1109/32.988498
+
 * Perses: https://github.com/perses-project/perses
+
+> Chengnian Sun, Yuanbo Li, Qirun Zhang, Tianxiao Gu, and Zhendong Su. 2018. Perses: Syntax-guided Program Reduction. In Proceedings of the 40th International Conference on Software Engineering (ICSE'18). Association for Computing Machinery, New York, NY, USA, 361–371. DOI: https://doi.org/10.1145/3180155.3180236
