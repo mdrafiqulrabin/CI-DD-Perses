@@ -2,6 +2,10 @@
 
 This repository contains the artifacts of our paper '[Syntax-Guided Program Reduction for Understanding Neural Code Intelligence Models](https://arxiv.org/abs/2205.14374)' accepted at [MAPS'22](https://pldi22.sigplan.org/details/maps-2022-papers/8/Syntax-Guided-Program-Reduction-for-Understanding-Neural-Code-Intelligence-Models) symposium, co-located with [PLDI'22](https://pldi22.sigplan.org/) conference.
 
+Artifact for Article (CI-DD-Perses):   
+- ~~ACM DL: https://doi.org/10.1145/3462322~~
+- Zenodo: https://doi.org/10.5281/zenodo.6630188
+
 ---
 
 ## Structure
@@ -22,11 +26,7 @@ This repository contains the artifacts of our paper '[Syntax-Guided Program Redu
 
 ## Provenance
 
-Syntax-Guided Program Reduction for Understanding Neural Code Intelligence Models.  
-Md Rafiqul Islam Rabin, Aftab Hussain, Mohammad Amin Alipour.  
-Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming (MAPS'22).  
-San Diego, California, USA.  
-DOI: https://doi.org/10.1145/3520312.3534869
+Md Rafiqul Islam Rabin, Aftab Hussain, Mohammad Amin Alipour. "Syntax-Guided Program Reduction for Understanding Neural Code Intelligence Models". Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming (MAPS'22). San Diego, California, USA. DOI: https://doi.org/10.1145/3520312.3534869
 
 ---
 
