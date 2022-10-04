@@ -1,0 +1,8 @@
+Perses: https://github.com/perses-project/perses
+
+Jar: perses_deploy.jar
+v1.0: https://github.com/perses-project/perses/releases/tag/v1.0
+License: GNU General Public License 3
+
+Reference:
+Chengnian Sun, Yuanbo Li, Qirun Zhang, Tianxiao Gu, and Zhendong Su. 2018. Perses: Syntax-guided Program Reduction. In Proceedings of the 40th International Conference on Software Engineering (ICSE'18). Association for Computing Machinery, New York, NY, USA, 361–371. DOI: https://doi.org/10.1145/3180155.3180236
