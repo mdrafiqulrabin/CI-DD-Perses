@@ -2,8 +2,12 @@
 
 This repository contains the artifacts of our paper '[Syntax-Guided Program Reduction for Understanding Neural Code Intelligence Models](https://arxiv.org/abs/2205.14374)' accepted at [MAPS'22](https://pldi22.sigplan.org/details/maps-2022-papers/8/Syntax-Guided-Program-Reduction-for-Understanding-Neural-Code-Intelligence-Models) symposium, co-located with [PLDI'22](https://pldi22.sigplan.org/) conference.
 
-Artifact for Article (CI-DD-Perses):   
+Artifact for Article (CI-DD-Perses):
+- ACM DL: https://dl.acm.org/do/10.5281/zenodo.6630188
 - Zenodo: https://doi.org/10.5281/zenodo.6630188
+
+Reproducible Capsule of FeatureExtractor:
+- CodeOcean: https://codeocean.com/capsule/7985340/tree/v1
 
 ---
 
